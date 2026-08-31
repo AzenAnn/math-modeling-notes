@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modeling-mastery.local/schemas/evidence-chunk.schema.json",
+  "title": "Chunk Evidence Extraction",
+  "type": "object",
+  "required": ["chunk_id", "evidence", "candidate_models", "candidate_algorithms"],
+  "additionalProperties": false,
+  "properties": {
+    "chunk_id": {"type": "string"},
+    "evidence": {"type": "array", "items": {"$ref": "paper.schema.json#/$defs/evidence"}},
+    "candidate_models": {"type": "array", "items": {"type": "object"}},
+    "candidate_algorithms": {"type": "array", "items": {"type": "object"}},
+    "assumptions": {"type": "array", "items": {"type": "object"}, "default": []},
+    "variables": {"type": "array", "items": {"type": "object"}, "default": []},
+    "validation_clues": {"type": "array", "items": {"type": "string"}, "default": []},
+    "warnings": {"type": "array", "items": {"type": "string"}, "default": []}
+  }
+}

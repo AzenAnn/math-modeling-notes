@@ -1,0 +1,17 @@
+kind: algorithm
+canonical_name: Floyd-Warshall Algorithm
+aliases: [Floyd, 弗洛伊德算法, 多源最短路]
+category: graph
+purpose: 计算稠密图或中小规模图的所有点对最短路径
+inputs: [weighted adjacency matrix]
+outputs: [all-pairs distance matrix, optional next matrix]
+pseudocode:
+  - 初始化距离矩阵和路径恢复矩阵
+  - 依次将每个节点作为允许经过的中间点
+  - 对所有 i,j 更新 dist[i,j] = min(dist[i,j], dist[i,k]+dist[k,j])
+  - 检查对角线判断负环
+stopping_criteria: [完成全部中间点迭代]
+complexity: {time: "O(V^3)", space: "O(V^2)", notes: ""}
+randomness: {uses_randomness: false, seed_required: false, notes: ""}
+implementation_notes: [无穷大相加前先检查可达性, 保存 next 矩阵以恢复路径]
+failure_modes: [V 过大导致超时, 未检测负环, 初始化缺少对角线零值]

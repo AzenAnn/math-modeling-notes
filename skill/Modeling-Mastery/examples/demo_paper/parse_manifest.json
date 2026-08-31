@@ -1,0 +1,9 @@
+{
+  "parser": "markdown",
+  "normalized_markdown": "examples/demo_paper/normalized_paper.md",
+  "structure_json": "examples/demo_paper/paper_structure.json",
+  "page_map_json": "examples/demo_paper/page_map.json",
+  "figures_dir": "examples/demo_paper/figures",
+  "manifest_json": "examples/demo_paper/parse_manifest.json",
+  "warnings": []
+}

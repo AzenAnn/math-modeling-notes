@@ -1,0 +1,21 @@
+kind: model
+canonical_name: ARIMA
+aliases: [差分整合移动平均模型, Autoregressive Integrated Moving Average]
+category: prediction
+task_types: [forecasting, time_series]
+role: 对平稳或差分后平稳的单变量时间序列建模和预测
+description: 用自回归、差分和移动平均项描述时间序列的线性动态结构。
+workflow:
+  - 绘图并检查缺失、异常和结构突变
+  - 进行平稳性检验并确定差分阶数 d
+  - 根据 ACF/PACF 或信息准则选择 p、q
+  - 拟合模型并进行残差白噪声检验
+  - 生成滚动或未来预测及区间
+strengths: [统计解释清晰, 适合线性时间依赖, 可给预测区间]
+weaknesses: [难以表达强非线性, 对结构突变和外生因素敏感]
+use_when: [单变量时间序列, 差分后近似平稳, 样本量足够]
+avoid_when: [序列很短, 强季节性未建模, 机制突变频繁]
+alternatives: [Exponential Smoothing, SARIMA, Prophet, Grey GM(1,1)]
+combinations: [Residual Diagnostics, Rolling Validation]
+complexity: {time: "implementation-dependent", space: "O(n)", notes: 与估计方法和参数阶数有关}
+validation_methods: [ADF/KPSS, Ljung-Box, 滚动预测, MAE/RMSE/MAPE]

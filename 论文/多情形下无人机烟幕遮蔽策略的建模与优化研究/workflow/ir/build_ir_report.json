@@ -1,0 +1,17 @@
+{
+  "chunks": [
+    {
+      "chunk_id": "CHUNK-001",
+      "evidence_count": 46,
+      "warning_count": 10
+    },
+    {
+      "chunk_id": "CHUNK-002",
+      "evidence_count": 35,
+      "warning_count": 6
+    }
+  ],
+  "provider": "codex",
+  "warnings": [],
+  "structural_evidence_count": 27
+}

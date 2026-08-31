@@ -1,0 +1,31 @@
+- fingerprint: [multi_indicator_evaluation, objective_weighting, ranking]
+  candidates:
+    - stack: [Entropy Weight Method, TOPSIS]
+      strengths: [客观赋权, 结果可排序, 代码短]
+      checks: [指标正负向, 归一化方式, 零值对数处理, 权重敏感性]
+    - stack: [CRITIC, TOPSIS]
+      strengths: [同时考虑指标变异与冲突]
+      checks: [相关系数稳定性, 共线性]
+- fingerprint: [forecasting, small_sample, monotonic_trend]
+  candidates:
+    - stack: [Grey GM(1,1)]
+      strengths: [小样本, 实现简单]
+      checks: [级比检验, 后验差检验, 单调趋势假设]
+    - stack: [ARIMA]
+      strengths: [时间序列统计解释清晰]
+      checks: [平稳性, 差分阶数, 残差白噪声]
+- fingerprint: [resource_allocation, linear_constraints]
+  candidates:
+    - stack: [Linear Programming]
+      strengths: [全局最优, 可解释, 求解成熟]
+      checks: [线性假设, 可行域, 单位一致]
+- fingerprint: [path_planning, nonnegative_edge_weight]
+  candidates:
+    - stack: [Shortest Path Model, Dijkstra Algorithm]
+      strengths: [高效, 适合稀疏非负权图]
+      checks: [负权边, 图方向性, 路径约束]
+- fingerprint: [uncertainty_simulation]
+  candidates:
+    - stack: [Monte Carlo Simulation]
+      strengths: [适用复杂随机系统, 易并行]
+      checks: [分布假设, 样本量, seed, 置信区间]

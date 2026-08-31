@@ -1,0 +1,103 @@
+{
+  "models": [
+    {
+      "from": "导弹—无人机—烟幕弹—云团运动学轨迹模型",
+      "to": "导弹—无人机—烟幕弹—云团运动学轨迹模型",
+      "id": "model-a23fd9606e",
+      "matched_reference": false
+    },
+    {
+      "from": "导弹视线—球形烟幕完全遮蔽判定模型",
+      "to": "导弹视线—球形烟幕完全遮蔽判定模型",
+      "id": "model-ccb34488ae",
+      "matched_reference": false
+    },
+    {
+      "from": "布尔遮蔽状态积分模型",
+      "to": "布尔遮蔽状态积分模型",
+      "id": "model-ec6b81be93",
+      "matched_reference": false
+    },
+    {
+      "from": "单机单弹有效遮蔽时长最大化模型",
+      "to": "单机单弹有效遮蔽时长最大化模型",
+      "id": "model-2b4181cfa0",
+      "matched_reference": false
+    },
+    {
+      "from": "单无人机三烟幕弹联合遮蔽优化模型",
+      "to": "单无人机三烟幕弹联合遮蔽优化模型",
+      "id": "model-ecc8419fa6",
+      "matched_reference": false
+    },
+    {
+      "from": "三无人机单弹协同遮蔽优化模型",
+      "to": "三无人机单弹协同遮蔽优化模型",
+      "id": "model-2631c20dcb",
+      "matched_reference": false
+    },
+    {
+      "from": "无人机—导弹烟幕资源整数线性分配模型",
+      "to": "无人机—导弹烟幕资源整数线性分配模型",
+      "id": "model-0e506a70f5",
+      "matched_reference": false
+    },
+    {
+      "from": "多机多弹多导弹分层遮蔽优化模型",
+      "to": "多机多弹多导弹分层遮蔽优化模型",
+      "id": "model-3c115f3bec",
+      "matched_reference": false
+    }
+  ],
+  "algorithms": [
+    {
+      "from": "圆柱轮廓圆周均匀离散化算法",
+      "to": "圆柱轮廓圆周均匀离散化算法",
+      "id": "algorithm-d6c457ae1d",
+      "matched_reference": false
+    },
+    {
+      "from": "有效遮蔽连续区间二分查找算法",
+      "to": "有效遮蔽连续区间二分查找算法",
+      "id": "algorithm-b0dc1f787d",
+      "matched_reference": false
+    },
+    {
+      "from": "多起点变步长坐标搜索算法",
+      "to": "多起点变步长坐标搜索算法",
+      "id": "algorithm-b034fba43b",
+      "matched_reference": false
+    },
+    {
+      "from": "粒子群优化验证算法",
+      "to": "粒子群优化验证算法",
+      "id": "algorithm-5234caba0c",
+      "matched_reference": false
+    },
+    {
+      "from": "差分进化算法",
+      "to": "差分进化算法",
+      "id": "algorithm-61d6e3b3c0",
+      "matched_reference": false
+    },
+    {
+      "from": "预测拦截点降维与局部网格搜索算法",
+      "to": "预测拦截点降维与局部网格搜索算法",
+      "id": "algorithm-dbf04f29e5",
+      "matched_reference": false
+    },
+    {
+      "from": "分支定界法",
+      "to": "分支定界法",
+      "id": "algorithm-67b83183a6",
+      "matched_reference": false
+    },
+    {
+      "from": "分层优化结合改进遗传算法",
+      "to": "分层优化结合改进遗传算法",
+      "id": "algorithm-bd1041c9c9",
+      "matched_reference": false
+    }
+  ],
+  "merged": []
+}

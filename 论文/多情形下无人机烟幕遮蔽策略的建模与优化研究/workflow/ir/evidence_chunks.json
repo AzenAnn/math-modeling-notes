@@ -1,0 +1,2854 @@
+{
+  "chunks": [
+    {
+      "chunk_id": "CHUNK-001",
+      "evidence": [
+        {
+          "id": "E001",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "model",
+          "locator": "摘要，问题一",
+          "quote": "代入模型准备时求得的运动学模型结合遮挡判定模型，对布尔函数在[0,∞]进行积分即可求得有效遮挡时长。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E002",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "result",
+          "locator": "摘要，问题一",
+          "quote": "之后通过二分查找法进行求解求得烟幕弹对M1的有效遮蔽时长为1.391643s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E003",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "model",
+          "locator": "摘要，问题二",
+          "quote": "建立了以无人机航向、速度，烟幕弹投放、爆炸时间四个参数为决策变量，最大化有效遮挡时间的单机单弹情况下的优化模型。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E004",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "result",
+          "locator": "摘要，问题二",
+          "quote": "此方案下有效遮蔽时长为4.5873s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E005",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "validation",
+          "locator": "摘要，问题二",
+          "quote": "本问用粒子群算法重新求解模型进行验证，发现两个算法的相对误差仅为0.01%。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E006",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "result",
+          "locator": "摘要，问题三",
+          "quote": "用差分进化算法对三枚烟幕弹的投放与起爆点进行了优化，求解出最大有效遮挡时间是6.93586s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E007",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "algorithm",
+          "locator": "摘要，问题四",
+          "quote": "提出了基于预测拦截点的协同优化算法，将12维决策空间降维处理，显著提升求解效率，并通过局部网格搜索进行精细优化。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E008",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "result",
+          "locator": "摘要，问题四",
+          "quote": "最终求出最大有效遮挡时间为11.125936s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E009",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "validation",
+          "locator": "摘要，问题四",
+          "quote": "利用差分进化算法进行验证求解得到总最大有效遮蔽时间是11.645260s，两者差距不大。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E010",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "algorithm",
+          "locator": "摘要，问题五",
+          "quote": "产生了进行分层次优化的想法，即先分配任务再优化参数。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E011",
+          "kind": "text",
+          "page": 1,
+          "section": "摘要",
+          "label": "result",
+          "locator": "摘要，问题五",
+          "quote": "最终求得的总最大有效遮蔽时间为 21.0770s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E012",
+          "kind": "text",
+          "page": 4,
+          "section": "三、模型假设",
+          "label": "assumption",
+          "locator": "模型假设第1条",
+          "quote": "将导弹、无人机、烟幕弹、烟幕云团中心以及假目标均视为质点进行运动学分析。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E013",
+          "kind": "text",
+          "page": 4,
+          "section": "三、模型假设",
+          "label": "assumption",
+          "locator": "模型假设第2条",
+          "quote": "不考虑空气阻力、风速等环境因素对无人机和导弹飞行的影响。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E014",
+          "kind": "text",
+          "page": 4,
+          "section": "三、模型假设",
+          "label": "assumption",
+          "locator": "模型假设第3条",
+          "quote": "烟幕云团形成后，球心在垂直方向以 3m-s-1的速度匀速下沉。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E015",
+          "kind": "text",
+          "page": 4,
+          "section": "三、模型假设",
+          "label": "assumption",
+          "locator": "模型假设第4条",
+          "quote": "无人机受领任务和调整飞行姿态的时间忽略不计。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E016",
+          "kind": "text",
+          "page": 4,
+          "section": "三、模型假设",
+          "label": "assumption",
+          "locator": "模型假设第5条",
+          "quote": "烟幕弹起爆瞬时形成一个半径为10米的理想球状云团，且在有效时间内(20 秒)其半径和遮蔽能力保持不变。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E017",
+          "kind": "table",
+          "page": 4,
+          "section": "四、符号说明",
+          "label": "variable",
+          "locator": "符号说明表，前5行",
+          "quote": "| Pm,i(t) | 导弹 i 在时刻 t 的位置向量 | m |；| vm,j | 导弹i的速度向量 | m/s |；| vm | 导弹速度大小 | m/s |；| Pfv,j(t) | 无人机j 在时刻t 的位置向量 | m |；| vfuj | 无人机j的速度向量 | m/s |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E018",
+          "kind": "table",
+          "page": 4,
+          "section": "四、符号说明",
+          "label": "variable",
+          "locator": "符号说明表，中部",
+          "quote": "| θj | 无人机j的航向角(与x轴夹角) | rad |；| P s,jk(t) | 无人机 j 投放的第 k 枚烟幕弹的位置 | m |；| tdjk | 烟幕弹投放时间 | s |；| tbjk | 烟幕弹起爆时间 | s |；| Pc,jk(t) | 烟幕弹爆炸后云团中心的位置 | m |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E019",
+          "kind": "table",
+          "page": 4,
+          "section": "四、符号说明",
+          "label": "variable",
+          "locator": "符号说明表，后部",
+          "quote": "| vsink | 云团下沉速度 | m/s |；| g | 重力加速度向量 | m/s² |；| Ω | 真实目标圆柱体表面区域 |；| Bool(t) | 遮蔽状态布尔函数(1为遮蔽，0为未遮蔽) |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E020",
+          "kind": "table",
+          "page": 4,
+          "section": "四、符号说明",
+          "label": "variable",
+          "locator": "符号说明表，时间变量",
+          "quote": "| tin | 有效遮蔽开始时刻 | s |；| tout | 有效遮蔽结束时刻 | s |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E021",
+          "kind": "table",
+          "page": 5,
+          "section": "四、符号说明",
+          "label": "variable",
+          "locator": "表1续表",
+          "quote": "| T | 总有效遮蔽时长 |；| ∆tb | 烟幕弹投放至起爆的时间间隔 |；| Yij | 无人机 j 投向导弹i的烟幕弹数量 |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E022",
+          "kind": "text",
+          "page": 6,
+          "section": "5.1.1 导弹轨迹",
+          "label": "parameter",
+          "locator": "导弹轨迹首段",
+          "quote": "所有的导弹均以300m/s的速度做匀速直线运动，速度的方向沿着导弹与原点的连线方向。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E023",
+          "kind": "text",
+          "page": 6,
+          "section": "5.1.2 无人机轨迹",
+          "label": "model",
+          "locator": "无人机轨迹首段",
+          "quote": "无人机将在等高度上沿着确定的航向做匀速直线运动，z方向上的速度分量为0。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E024",
+          "kind": "text",
+          "page": 6,
+          "section": "5.1.3 烟幕弹轨迹",
+          "label": "model",
+          "locator": "烟幕弹轨迹首段",
+          "quote": "烟幕弹投放后做抛体运动，忽略空气阻力的前提下，烟幕弹速度在xOy平面上的投影由于惯性的作用，将维持在此前无人机的速度vfgj。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E025",
+          "kind": "text",
+          "page": 7,
+          "section": "5.1.4 云团中心轨迹",
+          "label": "model",
+          "locator": "云团中心轨迹首段",
+          "quote": "烟幕弹爆炸后形成的云团将以团以3m/s的速度匀速下沉。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E026",
+          "kind": "text",
+          "page": 7,
+          "section": "5.2 有效遮挡判定式",
+          "label": "model",
+          "locator": "线段与球体相交判定说明",
+          "quote": "判断是否有效遮挡需要判断此线段是否与球体相交。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E027",
+          "kind": "equation",
+          "page": 8,
+          "section": "5.2 有效遮挡判定式",
+          "label": "model",
+          "locator": "线段参数方程的文字表达",
+          "quote": "同时线段 P1P2 上的任意点P(t) 可以表示为：",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.75
+        },
+        {
+          "id": "E028",
+          "kind": "text",
+          "page": 8,
+          "section": "5.2 有效遮挡判定式",
+          "label": "parameter",
+          "locator": "线段参数范围说明",
+          "quote": "s = 0 时，P(0) = P1；s = 1 时，P(1) = P2；0 < s < 1 时，P(t) 在线段内部。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E029",
+          "kind": "equation",
+          "page": 9,
+          "section": "5.2 有效遮挡判定式",
+          "label": "variable",
+          "locator": "真实目标区域定义",
+          "quote": "Ω = {(x,y, z) ∈ R3 |x2 + (y − 200)2 ≤ 72, 0 ≤ z ≤ 10} 表示圆柱的整个表面。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E030",
+          "kind": "text",
+          "page": 9,
+          "section": "5.2 有效遮挡判定式",
+          "label": "parameter",
+          "locator": "云团球体参数说明",
+          "quote": "C(Pc)表示以C为球心，半径为10m的球体。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E031",
+          "kind": "text",
+          "page": 10,
+          "section": "5.2.3 基于布尔函数的有效遮蔽条件表达",
+          "label": "innovation",
+          "locator": "布尔函数引入说明",
+          "quote": "为了便于后文中有效遮挡条件的表述，本文引入了遮蔽状态的布尔函数。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E032",
+          "kind": "text",
+          "page": 11,
+          "section": "5.2.3 基于布尔函数的有效遮蔽条件表达",
+          "label": "model",
+          "locator": "积分区间解释",
+          "quote": "时间t的积分区间为[0,∞]，这是因为在有效遮挡时间段布尔值才为1，积分即为这一段的时长。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E033",
+          "kind": "text",
+          "page": 12,
+          "section": "6.2.1 有效遮蔽时间区间是一段连续的区间",
+          "label": "model",
+          "locator": "连续区间命题",
+          "quote": "真目标被烟幕云团有效遮蔽的时间必为一段连续时间区间。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E034",
+          "kind": "text",
+          "page": 13,
+          "section": "6.2.2 求解定位圆周简化证明",
+          "label": "innovation",
+          "locator": "圆柱判定简化结论",
+          "quote": "只需判断圆柱体上下两个底面圆周是否被完全遮蔽，即可判定整个圆柱体是否被完全遮蔽。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E035",
+          "kind": "text",
+          "page": 14,
+          "section": "6.2.3 圆周离散化及采样点数的选取",
+          "label": "validation",
+          "locator": "表2前的误差说明",
+          "quote": "当n=300时，相对误差仅为0.0073%，此时正300边形在几何上已经能够很好地逼近圆。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E036",
+          "kind": "table",
+          "page": 14,
+          "section": "6.2.3 圆周离散化及采样点数的选取",
+          "label": "validation",
+          "locator": "表2",
+          "quote": "| 取点个数(n) | 100 | 200 | 300 | 500 | 1000 |；| 相对误差(%) | 0.06578 | 0.01645 | 0.00731 | 0.00263 | 0.00066 |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E037",
+          "kind": "text",
+          "page": 14,
+          "section": "6.2.4 二分法查找有效遮挡时间段的开始和结束时刻",
+          "label": "algorithm",
+          "locator": "二分查找算法概述",
+          "quote": "第一步，需要找到一个在有效遮蔽区间内部的时刻t；第二步，利用该时刻作为端点，通过二分法分别逼近有效遮蔽区间的开始时刻tn和结束时刻 tout。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E038",
+          "kind": "text",
+          "page": 14,
+          "section": "6.2.4 二分法查找有效遮挡时间段的开始和结束时刻",
+          "label": "parameter",
+          "locator": "二分查找初始化",
+          "quote": "定义初始点集S0={tb,tb+10,tb+20}，设置时间精度ε0=10−5，定义初始时间网格尺寸δ0=10。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E039",
+          "kind": "text",
+          "page": 15,
+          "section": "6.2.5 用二分查找法求解有效遮蔽区间的起始时刻tn",
+          "label": "algorithm",
+          "locator": "起始时刻二分区间更新",
+          "quote": "如果 C(mid)=1，说明 mid时刻仍在有效遮蔽期内，真正的起始时刻可能等于或早于mid。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E040",
+          "kind": "text",
+          "page": 16,
+          "section": "6.3 结果展示",
+          "label": "result",
+          "locator": "问题一最终结果",
+          "quote": "我们最终求得的烟幕干扰弹对 M1的有效遮蔽时长为1.391643s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E041",
+          "kind": "text",
+          "page": 16,
+          "section": "6.4.1 离散化点数 n 的敏感性分析",
+          "label": "validation",
+          "locator": "表3后的收敛分析",
+          "quote": "当n≥300时，计算得到的有效遮蔽时长在小数点后六位上保持一致，表明结果已经收敛。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E042",
+          "kind": "text",
+          "page": 17,
+          "section": "7.1.1 决策变量定义",
+          "label": "parameter",
+          "locator": "决策变量范围",
+          "quote": "θ∈[0,2π]覆盖所有可能的方向选择。飞行速度vfg:影响无人机到达投放点的时间，v[70,140]m/s反映了无人机的性能限制。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        },
+        {
+          "id": "E043",
+          "kind": "text",
+          "page": 17,
+          "section": "7.1.3 约束条件分析",
+          "label": "parameter",
+          "locator": "速度与高度约束",
+          "quote": "无人机 FY1的飞行速度 vfy 必须是一个在 70 m/s 到140 m/s的区间内的常数。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E044",
+          "kind": "text",
+          "page": 18,
+          "section": "7.1.3 约束条件分析",
+          "label": "parameter",
+          "locator": "有效窗口约束",
+          "quote": "烟幕云团仅在起爆后的20秒内可以提供有效遮蔽。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E045",
+          "kind": "text",
+          "page": 18,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "算法选择依据",
+          "quote": "目标函数有效遮蔽时长f(X)没有解析表达式，其函数值需要通过模拟仿真才能得到，这导致它的梯度信息难以计算。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        },
+        {
+          "id": "E046",
+          "kind": "text",
+          "page": 18,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "算法总体设计",
+          "quote": "通过在可行域内进行多次随机采样来保证解的全局探索性，并对每个采样点采用自适应变步长的坐标搜索方法进行局部寻优。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 1.0
+        }
+      ],
+      "candidate_models": [
+        {
+          "name": "四类对象运动学轨迹模型",
+          "category": "mechanism",
+          "role": "计算导弹、无人机、烟幕弹和爆炸后云团中心随时间变化的空间位置。",
+          "description": "导弹和无人机分别按匀速直线与等高度匀速直线运动；烟幕弹在忽略空气阻力时进行抛体运动；云团中心起爆后竖直匀速下沉。",
+          "equations": [],
+          "workflow": [
+            "根据初始坐标和速度计算导弹轨迹",
+            "根据航向角、速度和初始坐标计算无人机轨迹",
+            "以投放时无人机位置和速度作为烟幕弹初始状态计算抛体轨迹",
+            "在起爆点基础上计算云团中心的下沉轨迹"
+          ],
+          "parameters": [
+            {
+              "name": "导弹速度",
+              "value": 300,
+              "unit": "m/s",
+              "description": "所有导弹的匀速直线运动速度大小。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "云团下沉速度",
+              "value": 3,
+              "unit": "m/s",
+              "description": "爆炸后云团球心的竖直下沉速度。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "重力加速度大小",
+              "value": null,
+              "unit": "m/s²",
+              "description": "论文引入重力加速度向量，但本块未给出数值。",
+              "provenance": "AI_INFERRED"
+            }
+          ],
+          "evidence_quotes": [
+            "所有的导弹均以300m/s的速度做匀速直线运动",
+            "无人机将在等高度上沿着确定的航向做匀速直线运动",
+            "烟幕弹投放后做抛体运动",
+            "烟幕弹爆炸后形成的云团将以团以3m/s的速度匀速下沉"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "线段—球体有效遮挡判定模型",
+          "category": "mechanism",
+          "role": "判断导弹到真实目标各点的视线是否被球形烟幕云团截断，从而判定圆柱目标是否完全遮蔽。",
+          "description": "将导弹位置和圆柱目标点连接成线段，通过线段与球体的相交关系判断单点遮挡；圆柱整体遮挡要求目标区域中的点均满足判定条件。",
+          "equations": [
+            "P(s)=P_1+s(P_2-P_1),\\quad 0\\le s\\le 1",
+            "\\Omega=\\{(x,y,z)\\in\\mathbb{R}^3\\mid x^2+(y-200)^2\\le 7^2,\\ 0\\le z\\le10\\}"
+          ],
+          "workflow": [
+            "确定时刻t的导弹位置P1和云团球心C",
+            "从真实目标区域Ω选取目标点P2",
+            "建立线段P1P2的参数方程",
+            "通过二次方程判别式及根是否位于线段参数区间判断相交",
+            "要求目标区域的待检点均满足遮挡条件"
+          ],
+          "parameters": [
+            {
+              "name": "烟幕球半径",
+              "value": 10,
+              "unit": "m",
+              "description": "用于线段—球体相交判定的云团半径。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "线段参数s",
+              "value": "[0,1]",
+              "unit": "",
+              "description": "s位于该区间时参数点在线段P1P2上。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "判断是否有效遮挡需要判断此线段是否与球体相交。",
+            "只有当两个实数解满足以下其中一个条件：至少一个交点在线段上",
+            "而要使整个圆柱被有效遮挡，则圆柱上的任意一点P2都应该满足该条件"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "name": "布尔函数有效遮蔽时长模型",
+          "category": "simulation",
+          "role": "用二值遮蔽状态表示各时刻是否完全遮蔽，并通过时间积分计算总有效遮蔽时长。",
+          "description": "有效遮蔽时Bool(t)=1，否则为0；在非遮蔽时段积分贡献为零，因此可在[0,∞]上积分并兼容多个潜在有效区间。",
+          "equations": [
+            "T=\\int_{0}^{\\infty}\\mathrm{Bool}(t)\\,dt",
+            "\\mathrm{Bool}(t)\\in\\{0,1\\}"
+          ],
+          "workflow": [
+            "按运动学模型计算时刻t的对象位置",
+            "调用有效遮挡判定式得到Bool(t)",
+            "在时间轴上积分Bool(t)得到总有效遮蔽时长"
+          ],
+          "parameters": [
+            {
+              "name": "Bool(t)",
+              "value": "0或1",
+              "unit": "",
+              "description": "1表示遮蔽，0表示未遮蔽。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "积分上限",
+              "value": "∞",
+              "unit": "s",
+              "description": "论文采用[0,∞]作为形式积分区间。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "本文引入了遮蔽状态的布尔函数",
+            "时间t的积分区间为[0,∞]",
+            "在有效遮挡时间段布尔值才为1，积分即为这一段的时长"
+          ],
+          "provenance": "PAPER_DERIVED",
+          "confidence": 0.99
+        },
+        {
+          "name": "单机单弹非线性策略优化模型",
+          "category": "optimization",
+          "role": "优化FY1的飞行方向、速度、投弹时间和起爆时间，以最大化对M1的有效遮蔽时长。",
+          "description": "模型以四项策略参数为决策变量，以布尔遮挡模型计算的有效遮蔽时长为目标，并施加速度、方向、高度、投放—起爆时序及20秒有效窗口约束。",
+          "equations": [
+            "X=(\\theta,v_{fy},t_d,t_b)",
+            "\\max_X\\ T(X)"
+          ],
+          "workflow": [
+            "定义四维决策空间",
+            "按轨迹与遮挡判定模型仿真候选策略",
+            "计算候选策略的有效遮蔽时长",
+            "在物理与时间约束下最大化有效遮蔽时长"
+          ],
+          "parameters": [
+            {
+              "name": "航向角θ",
+              "value": "[0,2π]",
+              "unit": "rad",
+              "description": "覆盖水平面内所有航向。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "飞行速度vfy",
+              "value": "[70,140]",
+              "unit": "m/s",
+              "description": "FY1的恒定飞行速度范围。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "投放时间td",
+              "value": null,
+              "unit": "s",
+              "description": "要求任务开始后投放，本块未给出有限上界。",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "起爆时间tb",
+              "value": null,
+              "unit": "s",
+              "description": "要求不早于投放时间，本块未给出独立数值范围。",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "云团有效时间",
+              "value": 20,
+              "unit": "s",
+              "description": "起爆后的有效遮蔽窗口长度。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "建立了以无人机航向、速度，烟幕弹投放、爆炸时间四个参数为决策变量",
+            "选取最大化有效遮挡时间作为目标函数",
+            "无人机 FY1的飞行速度 vfy 必须是一个在 70 m/s 到140 m/s的区间内的常数"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "单无人机多烟幕弹优化模型",
+          "category": "optimization",
+          "role": "协调三枚烟幕弹的投放与起爆时序，以延长对单枚导弹的总有效遮蔽时间。",
+          "description": "模型考虑同一无人机投放的多个云团在时间上的重叠、遗漏以及空间耦合，并优化投放和起爆点。",
+          "equations": [],
+          "workflow": [
+            "设置多枚烟幕弹的投放与起爆变量",
+            "评估单云团及多云团耦合遮挡",
+            "优化投放和起爆时序",
+            "最大化总有效遮蔽时间"
+          ],
+          "parameters": [
+            {
+              "name": "烟幕弹数量",
+              "value": 3,
+              "unit": "枚",
+              "description": "摘要所述问题三优化三枚烟幕弹。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "需协调多枚烟幕弹的投放与起爆时序，避免时间重叠或遗漏",
+            "用差分进化算法对三枚烟幕弹的投放与起爆点进行了优化"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        },
+        {
+          "name": "多无人机单烟幕弹协同优化模型",
+          "category": "optimization",
+          "role": "协调三架无人机各投放一枚烟幕弹，对同一枚导弹形成空间和时间协同遮蔽。",
+          "description": "模型要求云团避免过度空间重叠并在时间上保持连续，以整体有效遮蔽时间最大化为目标。",
+          "equations": [],
+          "workflow": [
+            "分别设置各无人机的独立策略变量",
+            "评估多个云团的空间叠加和时间连续性",
+            "通过预测拦截点降低决策空间维度",
+            "局部网格搜索精细优化"
+          ],
+          "parameters": [
+            {
+              "name": "原决策空间维度",
+              "value": 12,
+              "unit": "维",
+              "description": "预测拦截点算法处理前的决策空间维度。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "无人机数量",
+              "value": 3,
+              "unit": "架",
+              "description": "问题四由三架无人机分别投放一枚烟幕弹。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "问题四的核心在于多无人机之间的空间协同和时间协调",
+            "将12维决策空间降维处理",
+            "并通过局部网格搜索进行精细优化"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.97
+        },
+        {
+          "name": "多机多弹多目标分层优化模型",
+          "category": "optimization",
+          "role": "联合处理无人机—导弹任务分配、烟幕弹资源调度及各导弹遮蔽时间协调。",
+          "description": "因直接模型维度过大，论文先分配任务再优化参数，分别求解M1、M2、M3的最长遮蔽区间后进行区间交集处理。",
+          "equations": [],
+          "workflow": [
+            "确定无人机与导弹之间的任务分配",
+            "分别优化针对M1、M2、M3的投放参数",
+            "获得三个有效遮蔽时间区间",
+            "对三个时间区间取交集"
+          ],
+          "parameters": [
+            {
+              "name": "目标导弹数量",
+              "value": 3,
+              "unit": "枚",
+              "description": "分解后的子问题分别对应M1、M2和M3。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "即先分配任务再优化参数",
+            "分别对导弹M1,M2,M3的最长有效遮蔽时间进行求解",
+            "再对这三个子问题得到的三个有效遮蔽时间区间取交集"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        }
+      ],
+      "candidate_algorithms": [
+        {
+          "name": "圆周均匀离散化",
+          "category": "numerical",
+          "purpose": "用有限采样点近似圆柱上下底面连续圆周，以执行完全遮蔽判定。",
+          "pseudocode": [
+            "在圆柱上下底面圆周分别均匀生成n个采样点",
+            "逐点判断导弹—目标点线段是否与烟幕球相交",
+            "所有采样点均被遮挡时近似判定圆柱完全遮蔽",
+            "比较不同n下的面积误差和有效时长以选择n"
+          ],
+          "parameters": [
+            {
+              "name": "n",
+              "value": 300,
+              "unit": "点/圆周",
+              "description": "论文最终选取的每个底面圆周采样点数。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "n=300面积相对误差",
+              "value": 0.00731,
+              "unit": "%",
+              "description": "正300边形相对圆的面积误差。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "time_complexity": "论文未说明；按逐点判定流程可推为每个时刻O(n)",
+          "space_complexity": "论文未说明；若显式保存采样点可推为O(n)",
+          "evidence_quotes": [
+            "在圆周上均匀选取有限个采样点来近似模拟连续的圆周",
+            "在上下底面圆周上各均匀取300个点进行遮蔽判断"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "有效遮蔽区间二分查找法",
+          "category": "search",
+          "purpose": "定位单一连续有效遮蔽区间的开始时刻tin和结束时刻tout。",
+          "pseudocode": [
+            "以S0={tb,tb+10,tb+20}为初始测试点集",
+            "逐次将时间网格尺寸减半，寻找满足C(t)=1的内部时刻t*",
+            "在[tb,t*]上二分搜索开始时刻tin",
+            "在[t*,tb+20]上二分搜索结束时刻tout",
+            "当区间宽度小于ε时终止",
+            "计算T=tout-tin"
+          ],
+          "parameters": [
+            {
+              "name": "ε0",
+              "value": "10^-5",
+              "unit": "s",
+              "description": "寻找有效区间内部点时的时间精度。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "δ0",
+              "value": 10,
+              "unit": "s",
+              "description": "初始时间网格尺寸。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "ε",
+              "value": "10^-5",
+              "unit": "s",
+              "description": "边界二分查找的终止精度。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "右端有效窗口",
+              "value": 20,
+              "unit": "s",
+              "description": "结束时刻搜索区间的上界为tb+20。",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "time_complexity": "论文未说明；每个边界的二分迭代次数可推为O(log((b-a)/ε))，单次遮挡判定成本另计",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "通过二分法分别逼近有效遮蔽区间的开始时刻tn和结束时刻 tout",
+            "循环迭代直至区间宽度 right-left < ε",
+            "初始搜索区间设定为 [left, right] = [t*, tb + 20]"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "多起点变步长坐标搜索算法",
+          "category": "optimization",
+          "purpose": "在无法获得解析目标函数及梯度的四维策略空间内搜索单机单弹最优投放策略。",
+          "pseudocode": [
+            "在整个可行解空间随机生成N个初始解",
+            "将每个初始解作为局部搜索起点",
+            "沿各决策坐标采用自适应变步长搜索",
+            "比较各起点的局部寻优结果",
+            "返回有效遮蔽时长最大的策略"
+          ],
+          "parameters": [
+            {
+              "name": "初始解数量N",
+              "value": null,
+              "unit": "个",
+              "description": "论文提及生成N个初始解，但本块未给出N的具体数值。",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "局部步长设置",
+              "value": null,
+              "unit": "",
+              "description": "本块只说明自适应变步长，未给出初始步长和更新系数。",
+              "provenance": "AI_INFERRED"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "我们设计了一种多起点变步长搜索算法",
+            "在整个可行解空间内进行全局随机抽样，生成N个初始解作为局部搜索的起点",
+            "采用自适应变步长的坐标搜索方法进行局部寻优"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "name": "粒子群算法验证",
+          "category": "optimization",
+          "purpose": "独立重新求解问题二优化模型，以验证多起点变步长搜索结果。",
+          "pseudocode": [
+            "使用粒子群算法重新求解同一优化模型",
+            "比较粒子群结果与主算法结果",
+            "计算两个算法结果的相对误差"
+          ],
+          "parameters": [],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "本问用粒子群算法重新求解模型进行验证，发现两个算法的相对误差仅为0.01%"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "差分进化算法",
+          "category": "optimization",
+          "purpose": "优化问题三的三枚烟幕弹投放与起爆点，并作为问题四协同优化结果的验证方法。",
+          "pseudocode": [
+            "编码烟幕弹投放与起爆决策",
+            "使用差分进化操作搜索候选策略",
+            "以有效遮蔽时间评价候选策略",
+            "输出最大有效遮蔽时间"
+          ],
+          "parameters": [],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "用差分进化算法对三枚烟幕弹的投放与起爆点进行了优化",
+            "利用差分进化算法进行验证求解得到总最大有效遮蔽时间是 11.645260s"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        },
+        {
+          "name": "基于预测拦截点的协同优化算法",
+          "category": "optimization",
+          "purpose": "降低问题四的12维多无人机协同决策空间并提高求解效率。",
+          "pseudocode": [
+            "分析导弹与目标视线的几何关系",
+            "构造预测拦截点以降低决策空间维度",
+            "求解降维后的协同策略",
+            "使用局部网格搜索精细优化"
+          ],
+          "parameters": [
+            {
+              "name": "原决策空间维度",
+              "value": 12,
+              "unit": "维",
+              "description": "论文明确指出被降维处理的决策空间维度。",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "降维后维度",
+              "value": null,
+              "unit": "维",
+              "description": "本块未说明降维后的具体维数。",
+              "provenance": "AI_INFERRED"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "提出了基于预测拦截点的协同优化算法，将12维决策空间降维处理",
+            "并通过局部网格搜索进行精细优化"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "name": "分层次优化",
+          "category": "optimization",
+          "purpose": "将高维多机多弹多目标问题拆为任务分配和参数优化，并协调三枚导弹的遮蔽区间。",
+          "pseudocode": [
+            "先确定无人机—导弹任务分配",
+            "分别优化M1、M2、M3的最长有效遮蔽时间",
+            "获得三个有效遮蔽时间区间",
+            "对三个区间取交集并计算总有效遮蔽时间"
+          ],
+          "parameters": [],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "即先分配任务再优化参数",
+            "把问题分成了三个子问题",
+            "对这三个子问题得到的三个有效遮蔽时间区间取交集"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        }
+      ],
+      "assumptions": [
+        {
+          "id": "A001",
+          "statement": "导弹、无人机、烟幕弹、烟幕云团中心及假目标均按质点处理。",
+          "rationale": "用于进行运动学分析。",
+          "impact": "忽略各对象自身尺寸、姿态和形状对运动轨迹及遮挡关系的影响。",
+          "evidence_ids": [
+            "E012"
+          ],
+          "evidence_quotes": [
+            "将导弹、无人机、烟幕弹、烟幕云团中心以及假目标均视为质点进行运动学分析。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A002",
+          "statement": "忽略空气阻力和风速等环境因素对无人机与导弹飞行的影响。",
+          "rationale": "论文未说明。",
+          "impact": "轨迹模型不包含气动阻力、风场扰动及其不确定性。",
+          "evidence_ids": [
+            "E013"
+          ],
+          "evidence_quotes": [
+            "不考虑空气阻力、风速等环境因素对无人机和导弹飞行的影响。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A003",
+          "statement": "烟幕云团形成后，其球心以恒定速度竖直下沉。",
+          "rationale": "论文未说明。",
+          "impact": "云团中心的水平漂移和下沉速度变化被忽略。",
+          "evidence_ids": [
+            "E014",
+            "E025"
+          ],
+          "evidence_quotes": [
+            "烟幕云团形成后，球心在垂直方向以 3m-s-1的速度匀速下沉。",
+            "烟幕弹爆炸后形成的云团将以团以3m/s的速度匀速下沉。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A004",
+          "statement": "忽略无人机受领任务和调整飞行姿态所需时间。",
+          "rationale": "论文未说明。",
+          "impact": "无人机被视为可在任务开始时立即进入指定匀速航向。",
+          "evidence_ids": [
+            "E015"
+          ],
+          "evidence_quotes": [
+            "无人机受领任务和调整飞行姿态的时间忽略不计。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A005",
+          "statement": "烟幕弹起爆后瞬时形成半径10米的理想球状云团，并在20秒有效期内保持半径和遮蔽能力不变。",
+          "rationale": "论文未说明。",
+          "impact": "忽略云团形成过程、扩散、浓度衰减和形状变形。",
+          "evidence_ids": [
+            "E016"
+          ],
+          "evidence_quotes": [
+            "烟幕弹起爆瞬时形成一个半径为10米的理想球状云团，且在有效时间内(20 秒)其半径和遮蔽能力保持不变。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A006",
+          "statement": "问题一的完全遮蔽时间构成单一连续区间。",
+          "rationale": "论文以导弹和云团运动连续、单调且无振荡或往复为理由。",
+          "impact": "允许使用一个内部有效时刻配合两次二分查找定位全部有效区间。",
+          "evidence_ids": [
+            "E033",
+            "E037"
+          ],
+          "evidence_quotes": [
+            "真目标被烟幕云团有效遮蔽的时间必为一段连续时间区间。",
+            "上文已经说明了有效遮挡的时间段是一段单一连续的时间段"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        }
+      ],
+      "variables": [
+        {
+          "symbol": "P_{m,i}(t)",
+          "meaning": "导弹i在时刻t的位置向量",
+          "unit": "m",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E017"
+          ],
+          "evidence_quotes": [
+            "Pm,i(t) | 导弹 i 在时刻 t 的位置向量 | m"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "v_{m,j}",
+          "meaning": "导弹速度向量；表中下标写作j而含义写作导弹i",
+          "unit": "m/s",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E017"
+          ],
+          "evidence_quotes": [
+            "vm,j | 导弹i的速度向量 | m/s"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "v_m",
+          "meaning": "导弹速度大小",
+          "unit": "m/s",
+          "domain": "非负实数",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E017",
+            "E022"
+          ],
+          "evidence_quotes": [
+            "vm | 导弹速度大小 | m/s",
+            "所有的导弹均以300m/s的速度做匀速直线运动"
+          ],
+          "provenance": "PAPER_DERIVED"
+        },
+        {
+          "symbol": "P_{fv,j}(t)",
+          "meaning": "无人机j在时刻t的位置向量",
+          "unit": "m",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E017"
+          ],
+          "evidence_quotes": [
+            "Pfv,j(t) | 无人机j 在时刻t 的位置向量 | m"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "v_{fu,j}",
+          "meaning": "无人机j的速度向量",
+          "unit": "m/s",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E017"
+          ],
+          "evidence_quotes": [
+            "vfuj | 无人机j的速度向量 | m/s"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "θ_j",
+          "meaning": "无人机j航向与x轴正方向的夹角",
+          "unit": "rad",
+          "domain": "[0,2π]",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E018",
+            "E042"
+          ],
+          "evidence_quotes": [
+            "θj | 无人机j的航向角(与x轴夹角) | rad",
+            "θ∈[0,2π]覆盖所有可能的方向选择"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "P_{s,jk}(t)",
+          "meaning": "无人机j投放的第k枚烟幕弹的位置",
+          "unit": "m",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E018"
+          ],
+          "evidence_quotes": [
+            "P s,jk(t) | 无人机 j 投放的第 k 枚烟幕弹的位置 | m"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_{d,jk}",
+          "meaning": "烟幕弹投放时间",
+          "unit": "s",
+          "domain": "非负",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E018",
+            "E042"
+          ],
+          "evidence_quotes": [
+            "tdjk | 烟幕弹投放时间 | s",
+            "td≥0表示在受领任务后的某个时间点投放"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_{b,jk}",
+          "meaning": "烟幕弹起爆时间",
+          "unit": "s",
+          "domain": "不早于对应投放时间",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E018"
+          ],
+          "evidence_quotes": [
+            "tbjk | 烟幕弹起爆时间 | s",
+            "烟幕弹的起爆时间t必须晚于或等于其投放时间td"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "P_{c,jk}(t)",
+          "meaning": "烟幕弹爆炸后云团中心的位置",
+          "unit": "m",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E018"
+          ],
+          "evidence_quotes": [
+            "Pc,jk(t) | 烟幕弹爆炸后云团中心的位置 | m"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "v_{sink}",
+          "meaning": "云团下沉速度",
+          "unit": "m/s",
+          "domain": "非负",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E019",
+            "E025"
+          ],
+          "evidence_quotes": [
+            "vsink | 云团下沉速度 | m/s",
+            "烟幕弹爆炸后形成的云团将以团以3m/s的速度匀速下沉"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度向量",
+          "unit": "m/s²",
+          "domain": "",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E019"
+          ],
+          "evidence_quotes": [
+            "g | 重力加速度向量 | m/s²"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "Ω",
+          "meaning": "真实目标圆柱体表面区域",
+          "unit": "",
+          "domain": "R³中的目标区域",
+          "data_type": "set",
+          "evidence_ids": [
+            "E019",
+            "E029"
+          ],
+          "evidence_quotes": [
+            "Ω | 真实目标圆柱体表面区域",
+            "Ω = {(x,y, z) ∈ R3 |x2 + (y − 200)2 ≤ 72, 0 ≤ z ≤ 10}"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "Bool(t)",
+          "meaning": "时刻t的遮蔽状态布尔函数",
+          "unit": "",
+          "domain": "{0,1}",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E019",
+            "E031"
+          ],
+          "evidence_quotes": [
+            "Bool(t) | 遮蔽状态布尔函数(1为遮蔽，0为未遮蔽)",
+            "本文引入了遮蔽状态的布尔函数"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_{in}",
+          "meaning": "有效遮蔽开始时刻",
+          "unit": "s",
+          "domain": "非负",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E020"
+          ],
+          "evidence_quotes": [
+            "tin | 有效遮蔽开始时刻 | s"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_{out}",
+          "meaning": "有效遮蔽结束时刻",
+          "unit": "s",
+          "domain": "不早于tin",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E020",
+            "E040"
+          ],
+          "evidence_quotes": [
+            "tout | 有效遮蔽结束时刻 | s",
+            "T=tout-tin"
+          ],
+          "provenance": "PAPER_DERIVED"
+        },
+        {
+          "symbol": "T",
+          "meaning": "总有效遮蔽时长",
+          "unit": "s",
+          "domain": "非负",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E021",
+            "E040"
+          ],
+          "evidence_quotes": [
+            "T | 总有效遮蔽时长",
+            "有效遮蔽时长T=tout-tin"
+          ],
+          "provenance": "PAPER_DERIVED"
+        },
+        {
+          "symbol": "Δt_b",
+          "meaning": "烟幕弹投放至起爆的时间间隔",
+          "unit": "s",
+          "domain": "非负",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E021"
+          ],
+          "evidence_quotes": [
+            "∆tb | 烟幕弹投放至起爆的时间间隔"
+          ],
+          "provenance": "PAPER_DERIVED"
+        },
+        {
+          "symbol": "Y_{ij}",
+          "meaning": "无人机j投向导弹i的烟幕弹数量",
+          "unit": "枚",
+          "domain": "非负整数",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E021"
+          ],
+          "evidence_quotes": [
+            "Yij | 无人机 j 投向导弹i的烟幕弹数量"
+          ],
+          "provenance": "PAPER_DERIVED"
+        },
+        {
+          "symbol": "P_1",
+          "meaning": "某一时刻的导弹位置，即视线线段起点",
+          "unit": "m",
+          "domain": "R³",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E026"
+          ],
+          "evidence_quotes": [
+            "P1表示的是导弹在某一时刻的位置"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "P_2",
+          "meaning": "真实目标圆柱上的任意一点，即视线线段终点",
+          "unit": "m",
+          "domain": "Ω",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E026",
+            "E029"
+          ],
+          "evidence_quotes": [
+            "P2表示真实目标圆柱上的任意一点"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "C",
+          "meaning": "烟幕云团球体的球心",
+          "unit": "m",
+          "domain": "R³",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E030"
+          ],
+          "evidence_quotes": [
+            "C(Pc)表示以C为球心，半径为10m的球体"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "s",
+          "meaning": "线段P1P2参数方程的参数",
+          "unit": "",
+          "domain": "[0,1]表示线段内部及端点",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E028"
+          ],
+          "evidence_quotes": [
+            "0 < s < 1 时，P(t) 在线段内部"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "n",
+          "meaning": "每个圆周的均匀离散采样点数",
+          "unit": "点",
+          "domain": "正整数",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E035",
+            "E036"
+          ],
+          "evidence_quotes": [
+            "采样点数（记为n)",
+            "暂时选取n=300"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "ε",
+          "meaning": "二分查找的时间精度",
+          "unit": "s",
+          "domain": "正实数",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E038"
+          ],
+          "evidence_quotes": [
+            "设置时间精度ε0=10−5"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        }
+      ],
+      "validation_clues": [
+        "问题一对n={100,200,300,500,1000}重复完整求解，并声称n≥300时有效遮蔽时长在小数点后六位保持一致。",
+        "表2给出正n边形相对圆的面积误差；n=300时列值为0.00731%。",
+        "问题二使用粒子群算法重新求解，报告与多起点变步长搜索结果的相对误差为0.01%。",
+        "问题四的预测拦截点协同算法得到11.125936s，差分进化验证结果为11.645260s；论文仅评价为“两者差距不大”。",
+        "问题一最终报告有效遮蔽时长1.391643s，可由所述T=tout-tin关系及实现结果复核。"
+      ],
+      "warnings": [
+        "大量关键公式以“<!-- formula-not-decoded -->”出现，无法从本块核验公式的精确符号、系数和编号。",
+        "摘要中的问题二最优速度文本为“136 3663m/s”，存在明显解析或OCR歧义，未将其规范化为具体数值。",
+        "表3的有效时长数据在首个单元格中发生粘连，其余列为空，无法可靠恢复每个n对应的精确数值。",
+        "Ω被文字称为“圆柱体表面区域”，但给出的不等式x²+(y−200)²≤7²描述包含内部的实体区域；定义与名称可能不一致。",
+        "符号表及正文存在下标和命名不一致，例如vm,j与“导弹i”、vfuj/vfgj/vfy、Pfv,j/Pf.j，以及tin在部分位置被识别为tn。",
+        "第9页判别式根的讨论文字出现缺失和错序，不能据此完整核验直线—球体相交分类。",
+        "第14页Step 2的新测试点集公式缺失，导致寻找有效区间内部点的完整生成规则无法恢复。",
+        "当前文本块在问题二多起点变步长搜索的Step 1中途截断，后续步长更新、停止条件及全部数值参数未包含在本块。",
+        "“有效遮蔽时间必为单一连续区间”是论文明确主张；本块给出的连续性和单调性论述不等同于对所有参数情形的普遍证明，应用二分法前仍需独立核验。",
+        "问题四两种算法结果11.125936s与11.645260s的绝对差为0.519324s；本块未提供相对误差、容差标准或统计检验来支撑“两者差距不大”。"
+      ]
+    },
+    {
+      "chunk_id": "CHUNK-002",
+      "evidence": [
+        {
+          "id": "E01",
+          "kind": "text",
+          "page": 17,
+          "section": "7.1.3 约束条件分析",
+          "label": "assumption",
+          "locator": "本块开头，等高度飞行约束",
+          "quote": "无人机须在初始高度1800米进行等高度飞行，其飞行速度的垂直分量为0。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E02",
+          "kind": "text",
+          "page": 17,
+          "section": "7.1.3 约束条件分析",
+          "label": "parameter",
+          "locator": "时间约束段",
+          "quote": "烟幕弹的起爆时间t必须晚于或等于其投放时间td",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E03",
+          "kind": "text",
+          "page": 18,
+          "section": "7.1.3 约束条件分析",
+          "label": "parameter",
+          "locator": "有效遮蔽窗口约束段",
+          "quote": "烟幕云团仅在起爆后的20秒内可以提供有效遮蔽。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E04",
+          "kind": "text",
+          "page": 18,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "算法选择依据段",
+          "quote": "目标函数有效遮蔽时长f(X) 没有解析表达式，其函数值需要通过模拟仿真才能得到，这导致它的梯度信息难以计算",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E05",
+          "kind": "text",
+          "page": 18,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "算法总体说明",
+          "quote": "我们设计了一种多起点变步长搜索算法。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E06",
+          "kind": "text",
+          "page": 18,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "Step 1",
+          "quote": "在整个可行解空间内进行全局随机抽样，生成N个初始解作为局部搜索的起点。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E07",
+          "kind": "text",
+          "page": 19,
+          "section": "7.2.1 多起点变步长搜索寻优",
+          "label": "algorithm",
+          "locator": "Step 2至Step 4",
+          "quote": "通过比较这N个点的目标函数值，选取其中最大者，即为最终求得的全局最优投放策略。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E08",
+          "kind": "text",
+          "page": 19,
+          "section": "7.2.2 单个无人机单个干扰弹的投放最优策略",
+          "label": "result",
+          "locator": "问题二求解结果段",
+          "quote": "最长有效遮蔽时长为4.5873s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E09",
+          "kind": "text",
+          "page": 19,
+          "section": "7.2.2 单个无人机单个干扰弹的投放最优策略",
+          "label": "result",
+          "locator": "问题二求解结果段",
+          "quote": "飞行方向：5.168°(0.0902弧度)",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E10",
+          "kind": "text",
+          "page": 19,
+          "section": "7.2.2 单个无人机单个干扰弹的投放最优策略",
+          "label": "result",
+          "locator": "问题二求解结果段",
+          "quote": "飞行速度为136.3663m/s",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E11",
+          "kind": "table",
+          "page": 20,
+          "section": "7.3 结果的分析与验证",
+          "label": "validation",
+          "locator": "表4：两种优化算法最优策略对比",
+          "quote": "| 最长有效遮蔽时长(s)  |      4.587300 |     4.587772 |",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E12",
+          "kind": "text",
+          "page": 20,
+          "section": "7.3 结果的分析与验证",
+          "label": "validation",
+          "locator": "表4后验证结论",
+          "quote": "两种截然不同的优化算法所求得的最长有效遮蔽时长分别为 4.5873 秒和4.5878 秒，相对误差仅为0.01%。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E13",
+          "kind": "text",
+          "page": 21,
+          "section": "8.1.2 目标函数设置",
+          "label": "model",
+          "locator": "多云团遮挡条件说明",
+          "quote": "至少与这3个烟幕云团中的一个相交。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.97
+        },
+        {
+          "id": "E14",
+          "kind": "text",
+          "page": 21,
+          "section": "8.1.2 目标函数设置",
+          "label": "variable",
+          "locator": "Bool(t)与集合T定义段",
+          "quote": "令 T 为所有满足 Bool(t) =1 的时刻t的集合。这个集合可能是由多个不连续的时间段组成的。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E15",
+          "kind": "text",
+          "page": 22,
+          "section": "8.1.3 约束条件分析",
+          "label": "parameter",
+          "locator": "投放延迟约束段",
+          "quote": "同一架无人机投放多枚烟幕弹，其投放间隔必须在1s以上",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E16",
+          "kind": "text",
+          "page": 22,
+          "section": "8.2 优化模型求解",
+          "label": "algorithm",
+          "locator": "差分进化算法选择依据",
+          "quote": "由于差分进化算法能够处理高维、非线性优化问题同时不依赖梯度信息，适合复杂仿真计算的特点，本问选择利用差分进化法进行求解。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E17",
+          "kind": "text",
+          "page": 23,
+          "section": "8.2.1 差分进化算法",
+          "label": "parameter",
+          "locator": "Step 1 初始化",
+          "quote": "设定种群规模 N = 100、最大迭代次数 G = 500、变异因子 F = 0.5 及交叉概率 CR = 0.9",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E18",
+          "kind": "text",
+          "page": 23,
+          "section": "8.2.1 差分进化算法",
+          "label": "algorithm",
+          "locator": "Step 2",
+          "quote": "采用惩罚函数法处理约束，将约束违反度整合到适应度评估中",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E19",
+          "kind": "text",
+          "page": 24,
+          "section": "8.2.2 求解结果",
+          "label": "result",
+          "locator": "问题三结果段",
+          "quote": "最大有效遮挡时间是 6.93586s，无人机航向方向角为： 13.57377°，无人机速度大小为：116.81318m/s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E20",
+          "kind": "text",
+          "page": 24,
+          "section": "8.2.2 求解结果",
+          "label": "limitation",
+          "locator": "表5后结果分析",
+          "quote": "在其他的初始位置可能可以找到真正的全局最优的投放策略达到最大的有效遮挡时长。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        },
+        {
+          "id": "E21",
+          "kind": "text",
+          "page": 26,
+          "section": "9.2.1 基于预测拦截点的协同优化策略",
+          "label": "model",
+          "locator": "预测拦截点策略说明",
+          "quote": "在某一时刻t，烟幕干扰弹的中心与导弹的位置完全重合。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E22",
+          "kind": "equation",
+          "page": 26,
+          "section": "9.2.1 基于预测拦截点的协同优化策略",
+          "label": "variable",
+          "locator": "比例系数s定义段",
+          "quote": "投放时间 tdj 可表示为 tdj = t(1− s)。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E23",
+          "kind": "text",
+          "page": 28,
+          "section": "9.2.1 基于预测拦截点的协同优化策略",
+          "label": "parameter",
+          "locator": "局部网格搜索Step 2",
+          "quote": "航向角θ在弧度区间[θ0-0.2,θ0+0.2]内以0.008弧度为步长进行采样。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E24",
+          "kind": "text",
+          "page": 28,
+          "section": "9.2.1 基于预测拦截点的协同优化策略",
+          "label": "parameter",
+          "locator": "局部网格搜索Step 2",
+          "quote": "飞行速度 vfy在区间 [max{vfv,0−20,70},min{vfy,o+ 20,140}] m/s 内均匀采样 50 个点。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.94
+        },
+        {
+          "id": "E25",
+          "kind": "text",
+          "page": 28,
+          "section": "9.2.2 求解结果",
+          "label": "result",
+          "locator": "问题四结果段",
+          "quote": "最终利用局部网格搜索求解出最大总有效遮蔽时间达到11.125936s",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E26",
+          "kind": "text",
+          "page": 29,
+          "section": "9.3 结果的验证",
+          "label": "validation",
+          "locator": "差分进化对比结果段",
+          "quote": "用差分进化算法求解得到的总最大有效遮蔽时间是11.645260s，相对误差为 4.46%",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E27",
+          "kind": "text",
+          "page": 29,
+          "section": "10.1.1 决策变量的定义",
+          "label": "assumption",
+          "locator": "问题五简化假设段",
+          "quote": "每架无人机如果参与任务，都会确定一个飞行方向和速度，并在该方向和速度下投放所有烟幕弹，而不会在飞行途中临时改变飞行参数。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E28",
+          "kind": "text",
+          "page": 30,
+          "section": "10.1.3 约束条件分析",
+          "label": "variable",
+          "locator": "任务分配约束定义段",
+          "quote": "其中aij为二进制变量，表示无人机j是否干扰导弹i；bk表示无人机j是否投放第k枚烟幕弹。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E29",
+          "kind": "text",
+          "page": 31,
+          "section": "10.2 模型求解",
+          "label": "model",
+          "locator": "问题五算法选择段",
+          "quote": "问题五的决策变量维度非常高（最多可达到45维)，约束复杂，属于大规模组合优化问题",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E30",
+          "kind": "text",
+          "page": 31,
+          "section": "10.2 模型求解",
+          "label": "algorithm",
+          "locator": "问题五算法选择段",
+          "quote": "本文采用分层优化策略结合改进的遗传算法进行求解。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E31",
+          "kind": "text",
+          "page": 32,
+          "section": "10.2.1 任务分配说明",
+          "label": "model",
+          "locator": "任务分配模型结论",
+          "quote": "这是一个整数线性规划模型，可以利用分支定界法对其进行求解得到Yij。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E32",
+          "kind": "text",
+          "page": 33,
+          "section": "10.2.2 投放策略求解",
+          "label": "algorithm",
+          "locator": "子问题合并方式",
+          "quote": "对这三个子问题得到的三个有效遮蔽时间区间取交集，最终的总有效遮蔽时间为这三个集合交集的总长度。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E33",
+          "kind": "text",
+          "page": 33,
+          "section": "10.2.3 求解结果",
+          "label": "result",
+          "locator": "问题五结果段",
+          "quote": "求解得到总最长有效遮蔽时间为21.0770s。",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "id": "E34",
+          "kind": "text",
+          "page": 33,
+          "section": "11.1 模型的评价",
+          "label": "innovation",
+          "locator": "模型优点第2点",
+          "quote": "创新性地引入了布尔函数来清晰地定义遮蔽状态",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "id": "E35",
+          "kind": "text",
+          "page": 33,
+          "section": "11.2 模型的推广",
+          "label": "limitation",
+          "locator": "模型推广段",
+          "quote": "本文的模型是在理想情况下进行，没有考虑到空气的阻力、云团的扩散",
+          "char_start": null,
+          "char_end": null,
+          "content_hash": "",
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        }
+      ],
+      "candidate_models": [
+        {
+          "name": "单机单弹有效遮蔽时长优化模型",
+          "category": "optimization",
+          "role": "优化FY1的航向、速度、投放时间和起爆时间，以最大化对M1的有效遮蔽时长。",
+          "description": "目标函数没有解析表达式，需要通过模拟仿真计算，并受等高度飞行、投放与起爆时序、20秒有效窗口及布尔遮挡判定约束。",
+          "equations": [
+            "t_b\\ge t_d",
+            "[t_{in},t_{out}]\\subseteq[t_b,t_b+20]",
+            "\\max_X f(X)"
+          ],
+          "workflow": [
+            "定义四维决策向量",
+            "通过仿真计算有效遮蔽时长",
+            "在可行域内搜索目标函数最大值"
+          ],
+          "parameters": [
+            {
+              "name": "初始飞行高度",
+              "value": 1800,
+              "unit": "m",
+              "description": "无人机等高度飞行高度",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "云团有效期",
+              "value": 20,
+              "unit": "s",
+              "description": "起爆后可提供有效遮蔽的时间",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "无人机须在初始高度1800米进行等高度飞行",
+            "烟幕云团仅在起爆后的20秒内可以提供有效遮蔽。",
+            "目标函数有效遮蔽时长f(X) 没有解析表达式"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        },
+        {
+          "name": "单机三弹联合遮蔽优化模型",
+          "category": "optimization",
+          "role": "联合优化一架无人机投放三枚烟幕弹的时序与飞行参数，最大化多个云团产生的总有效遮蔽时间。",
+          "description": "以Bool(t)描述任意有效云团对目标视线的遮挡，目标是最大化满足Bool(t)=1的时刻集合T的总长度。",
+          "equations": [
+            "T=\\{t\\mid Bool(t)=1\\}",
+            "\\max |T|",
+            "t_{d,k+1}-t_{d,k}\\ge 1"
+          ],
+          "workflow": [
+            "定义8维决策向量",
+            "仿真判断各时刻是否被至少一个云团遮挡",
+            "合并可能不连续的有效时间段",
+            "最大化有效时刻集合总长度"
+          ],
+          "parameters": [
+            {
+              "name": "烟幕弹数量",
+              "value": 3,
+              "unit": "枚",
+              "description": "FY1投放的烟幕弹数量",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "最小投弹间隔",
+              "value": 1,
+              "unit": "s",
+              "description": "同一无人机连续投弹的最小间隔",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "至少与这3个烟幕云团中的一个相交。",
+            "令 T 为所有满足 Bool(t) =1 的时刻t的集合。",
+            "同一架无人机投放多枚烟幕弹，其投放间隔必须在1s以上"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.97
+        },
+        {
+          "name": "多机单弹协同遮蔽优化模型",
+          "category": "optimization",
+          "role": "为FY1、FY2、FY3分别规划航向、速度、投放时间和引爆时间，最大化三枚烟幕弹的总有效遮蔽时间。",
+          "description": "目标函数沿用问题三的总有效遮蔽时间定义，先利用预测拦截点构造近似解，再进行局部网格微调。",
+          "equations": [
+            "P_{s,j}(t)=P_{m1}(t)",
+            "t_{d,j}=t(1-s)"
+          ],
+          "workflow": [
+            "构造烟幕中心与导弹位置重合的预测拦截点",
+            "由运动学约束求可行时刻",
+            "选取较早的可行时刻作为初始解",
+            "使用局部网格搜索微调"
+          ],
+          "parameters": [
+            {
+              "name": "无人机数量",
+              "value": 3,
+              "unit": "架",
+              "description": "参与问题四协同投放的无人机数量",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "比例系数s下界",
+              "value": 0,
+              "unit": "",
+              "description": "自由落体时间占总飞行时间比例的下界",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "比例系数s上界",
+              "value": 1,
+              "unit": "",
+              "description": "自由落体时间占总飞行时间比例的上界",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "问题四要求利用FY1、FY2、FY3三架无人机各投放一枚烟幕弹",
+            "在某一时刻t，烟幕干扰弹的中心与导弹的位置完全重合。",
+            "投放时间 tdj 可表示为 tdj = t(1− s)。"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.97
+        },
+        {
+          "name": "多机多弹任务分配与投放分层优化模型",
+          "category": "optimization",
+          "role": "为5架无人机分配3枚来袭导弹的干扰任务和投弹数量，并优化各子任务的投放策略。",
+          "description": "先以理论最大遮蔽时长cij建立整数线性任务分配模型，再按导弹分解为三个投放优化子问题，最终计算三个有效遮蔽时间集合的交集长度。",
+          "equations": [
+            "a_{ij}\\in\\{0,1\\}",
+            "0\\le y_j\\le3",
+            "\\max\\sum_{i,j}c_{ij}y_{ij}"
+          ],
+          "workflow": [
+            "估计无人机—导弹配对的理论最大遮蔽时长cij",
+            "求解整数线性任务分配模型",
+            "将原问题分解为M1、M2、M3三个子问题",
+            "分别优化各导弹的有效遮蔽时长",
+            "对三个有效时间集合取交集"
+          ],
+          "parameters": [
+            {
+              "name": "无人机数量",
+              "value": 5,
+              "unit": "架",
+              "description": "问题五中的无人机总数",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "来袭导弹数量",
+              "value": 3,
+              "unit": "枚",
+              "description": "需要同时考虑的来袭导弹数量",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "单机最大投弹量",
+              "value": 3,
+              "unit": "枚",
+              "description": "每架无人机最多投放的烟幕弹数量",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "最大决策维度",
+              "value": 45,
+              "unit": "维",
+              "description": "论文给出的最大决策变量维度",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "evidence_quotes": [
+            "对于每架无人机 j ∈{1,...,5}",
+            "每架无人机最多投放3枚烟幕弹",
+            "问题五的决策变量维度非常高（最多可达到45维)",
+            "这是一个整数线性规划模型"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.96
+        }
+      ],
+      "candidate_algorithms": [
+        {
+          "name": "多起点变步长坐标搜索算法",
+          "category": "search",
+          "purpose": "求解无解析目标函数的单机单弹有效遮蔽时长最大化问题。",
+          "pseudocode": [
+            "在可行域内独立均匀随机生成N个初始解",
+            "对每个初始解沿四个决策维度分别生成正、负方向测试解",
+            "若测试解更优则更新当前最优解",
+            "若一轮搜索无改进则衰减步长并提高等级k",
+            "对全部初始点完成局部搜索后，选取目标函数值最大的解"
+          ],
+          "parameters": [
+            {
+              "name": "初始点数量N",
+              "value": null,
+              "unit": "个",
+              "description": "论文提到N个初始点，但未给出数值",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "最大步长衰减等级Kmax",
+              "value": null,
+              "unit": "",
+              "description": "论文提到最大预设值，但未给出数值",
+              "provenance": "AI_INFERRED"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "在整个可行解空间内进行全局随机抽样，生成N个初始解",
+            "依次遍历四个决策变量维度(j=1,2,3,4)",
+            "选取其中最大者，即为最终求得的全局最优投放策略。"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.97
+        },
+        {
+          "name": "粒子群优化算法（PSO）",
+          "category": "optimization",
+          "purpose": "独立复算问题二，用于验证多起点变步长搜索结果。",
+          "pseudocode": [
+            "在解空间中执行全局搜索",
+            "求得问题二的最优投放策略",
+            "与本文算法的最优遮蔽时长及决策变量比较"
+          ],
+          "parameters": [],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "我们采用粒子群优化算法对问题二进行独立的再次求解。",
+            "粒子群优化(PSO)"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "差分进化算法",
+          "category": "optimization",
+          "purpose": "求解单机三弹高维、非线性、无梯度的仿真优化问题，并独立验证问题四的解。",
+          "pseudocode": [
+            "在可行域内随机初始化8维个体组成的种群",
+            "通过仿真计算总有效遮蔽时长并用惩罚函数处理约束",
+            "随机选择三个不同个体生成变异向量",
+            "执行二项式交叉生成试验向量",
+            "若试验向量更优则替换目标个体",
+            "迭代至最大代数并输出历史最优个体"
+          ],
+          "parameters": [
+            {
+              "name": "种群规模N",
+              "value": 100,
+              "unit": "个体",
+              "description": "差分进化种群规模",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "最大迭代次数G",
+              "value": 500,
+              "unit": "代",
+              "description": "差分进化最大迭代次数",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "变异因子F",
+              "value": 0.5,
+              "unit": "",
+              "description": "差分进化变异因子",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "交叉概率CR",
+              "value": 0.9,
+              "unit": "",
+              "description": "二项式交叉概率",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "设定种群规模 N = 100、最大迭代次数 G = 500、变异因子 F = 0.5 及交叉概率 CR = 0.9",
+            "采用惩罚函数法处理约束",
+            "本文采用二项式交叉"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "预测拦截点与局部网格搜索",
+          "category": "search",
+          "purpose": "缩小问题四的搜索空间，并对理想化拦截解进行局部微调。",
+          "pseudocode": [
+            "令烟幕中心在时刻t与导弹位置重合",
+            "由Z轴方程求自由落体时间比例s",
+            "由X、Y轴方程求无人机速度和航向",
+            "从可行时刻集合中选取较小的t形成近似初始解",
+            "围绕初始解离散航向、速度、投放时间和引爆延迟",
+            "逐点仿真并保留有效遮蔽时长最大的策略"
+          ],
+          "parameters": [
+            {
+              "name": "航向角搜索半径",
+              "value": 0.2,
+              "unit": "rad",
+              "description": "以θ0为中心的双侧搜索范围",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "航向角步长",
+              "value": 0.008,
+              "unit": "rad",
+              "description": "航向角网格采样步长",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "速度搜索半径",
+              "value": 20,
+              "unit": "m/s",
+              "description": "以初始速度为中心的双侧搜索范围，并截断到70至140m/s",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "速度采样点数",
+              "value": 50,
+              "unit": "点",
+              "description": "速度维度均匀采样点数",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "投放时间搜索半径",
+              "value": 5,
+              "unit": "s",
+              "description": "以初始投放时间为中心的双侧搜索范围",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "投放时间采样点数",
+              "value": 80,
+              "unit": "点",
+              "description": "投放时间维度采样点数",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "引爆延迟搜索半径",
+              "value": 5,
+              "unit": "s",
+              "description": "以初始引爆延迟为中心的双侧搜索范围",
+              "provenance": "PAPER_EXPLICIT"
+            },
+            {
+              "name": "引爆延迟采样点数",
+              "value": 80,
+              "unit": "点",
+              "description": "引爆延迟维度采样点数",
+              "provenance": "PAPER_EXPLICIT"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "烟幕干扰弹的中心与导弹的位置完全重合",
+            "我们采用精细化的局部网格搜索",
+            "对于网格中的每一个策略Xcnd进行模拟仿真"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.98
+        },
+        {
+          "name": "分支定界法",
+          "category": "optimization",
+          "purpose": "求解问题五的整数线性任务分配模型并得到分配矩阵Yij。",
+          "pseudocode": [
+            "构建无人机—导弹理论遮蔽收益cij",
+            "建立满足任务覆盖和投弹数量限制的整数线性模型",
+            "使用分支定界法搜索最优整数分配矩阵Yij"
+          ],
+          "parameters": [],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "这是一个整数线性规划模型，可以利用分支定界法对其进行求解得到Yij。"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.99
+        },
+        {
+          "name": "分层优化结合改进遗传算法",
+          "category": "optimization",
+          "purpose": "求解最多45维的多机多弹大规模组合优化问题。",
+          "pseudocode": [
+            "先确定无人机与导弹之间的任务分配及投弹数量",
+            "将原问题分解为三个单导弹子问题",
+            "结合问题三的思路优化各子问题",
+            "对三个有效遮蔽时间集合取交集"
+          ],
+          "parameters": [
+            {
+              "name": "遗传算法种群规模",
+              "value": null,
+              "unit": "个体",
+              "description": "论文未说明",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "遗传算法迭代次数",
+              "value": null,
+              "unit": "代",
+              "description": "论文未说明",
+              "provenance": "AI_INFERRED"
+            },
+            {
+              "name": "遗传算法改进方式",
+              "value": null,
+              "unit": "",
+              "description": "当前文本块未给出具体改进机制",
+              "provenance": "AI_INFERRED"
+            }
+          ],
+          "time_complexity": "unknown",
+          "space_complexity": "unknown",
+          "evidence_quotes": [
+            "本文采用分层优化策略结合改进的遗传算法进行求解。",
+            "最初的优化问题可以分解为3个独立的规模更小的子问题。"
+          ],
+          "provenance": "PAPER_EXPLICIT",
+          "confidence": 0.87
+        }
+      ],
+      "assumptions": [
+        {
+          "id": "A01",
+          "statement": "无人机在1800米初始高度进行等高度飞行，垂直速度分量为0。",
+          "rationale": "作为问题二的飞行运动约束。",
+          "impact": "将无人机运动限制为固定高度的平面运动。",
+          "evidence_ids": [
+            "E01"
+          ],
+          "evidence_quotes": [
+            "无人机须在初始高度1800米进行等高度飞行，其飞行速度的垂直分量为0。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A02",
+          "statement": "烟幕云团仅在起爆后20秒内有效。",
+          "rationale": "论文将其作为有效遮蔽窗口约束。",
+          "impact": "所有有效遮蔽区间必须落在对应云团的20秒寿命内。",
+          "evidence_ids": [
+            "E03"
+          ],
+          "evidence_quotes": [
+            "烟幕云团仅在起爆后的20秒内可以提供有效遮蔽。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A03",
+          "statement": "问题四以烟幕中心在某时刻与导弹位置完全重合作为理想化寻优起点。",
+          "rationale": "用于缩小高维协同优化的搜索空间并构造初始解。",
+          "impact": "得到的解仍需局部网格搜索微调。",
+          "evidence_ids": [
+            "E21"
+          ],
+          "evidence_quotes": [
+            "在某一时刻t，烟幕干扰弹的中心与导弹的位置完全重合。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A04",
+          "statement": "问题五中参与任务的每架无人机保持固定航向和速度，并在该状态下投放全部烟幕弹。",
+          "rationale": "论文明确称该假设用于简化模型。",
+          "impact": "排除了飞行途中改变航向或速度的策略。",
+          "evidence_ids": [
+            "E27"
+          ],
+          "evidence_quotes": [
+            "不会在飞行途中临时改变飞行参数。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "id": "A05",
+          "statement": "模型未考虑空气阻力和云团扩散。",
+          "rationale": "论文在推广部分承认模型建立于理想条件。",
+          "impact": "实际环境中的轨迹和遮蔽效果可能与模型预测不同。",
+          "evidence_ids": [
+            "E35"
+          ],
+          "evidence_quotes": [
+            "没有考虑到空气的阻力、云团的扩散"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        }
+      ],
+      "variables": [
+        {
+          "symbol": "\\theta",
+          "meaning": "无人机飞行航向角",
+          "unit": "rad或°",
+          "domain": "受对应问题物理约束限制",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E09",
+            "E23"
+          ],
+          "evidence_quotes": [
+            "飞行方向：5.168°(0.0902弧度)",
+            "航向角θ在弧度区间"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "v_{fy}",
+          "meaning": "无人机飞行速度",
+          "unit": "m/s",
+          "domain": "局部搜索中截断到[70,140] m/s",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E10",
+            "E24"
+          ],
+          "evidence_quotes": [
+            "飞行速度为136.3663m/s",
+            "飞行速度 vfy在区间"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_d",
+          "meaning": "烟幕弹投放时间",
+          "unit": "s",
+          "domain": "任务开始后且不晚于起爆时间",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E02"
+          ],
+          "evidence_quotes": [
+            "投放时间td必须在任务开始后"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_b",
+          "meaning": "烟幕弹起爆时间",
+          "unit": "s",
+          "domain": "t_b不早于t_d",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E02",
+            "E03"
+          ],
+          "evidence_quotes": [
+            "烟幕弹的起爆时间t必须晚于或等于其投放时间td",
+            "[tb,tb + 20]"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "t_{in},t_{out}",
+          "meaning": "有效遮蔽时间区间的起点和终点",
+          "unit": "s",
+          "domain": "[t_in,t_out]位于[t_b,t_b+20]内",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E03"
+          ],
+          "evidence_quotes": [
+            "有效遮蔽时间区间[tin,tout]必须完全包含在 [tb,tb + 20]"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "Bool(t)",
+          "meaning": "时刻t是否形成有效遮蔽的布尔函数",
+          "unit": "",
+          "domain": "{0,1}",
+          "data_type": "categorical",
+          "evidence_ids": [
+            "E14",
+            "E34"
+          ],
+          "evidence_quotes": [
+            "Bool(t) = 1 的时刻t",
+            "引入了布尔函数来清晰地定义遮蔽状态"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "T",
+          "meaning": "所有满足Bool(t)=1的时刻组成的集合",
+          "unit": "s",
+          "domain": "可能由多个不连续时间段组成",
+          "data_type": "set",
+          "evidence_ids": [
+            "E14"
+          ],
+          "evidence_quotes": [
+            "令 T 为所有满足 Bool(t) =1 的时刻t的集合。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "N(t)",
+          "meaning": "时刻t处于有效期内的云团总数",
+          "unit": "个",
+          "domain": "非负整数",
+          "data_type": "scalar",
+          "evidence_ids": [],
+          "evidence_quotes": [
+            "N(t) 表示在时刻 t 处于有效期内的云团总数。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "s",
+          "meaning": "烟幕弹自由落体时间占无人机总飞行时间t的比例",
+          "unit": "",
+          "domain": "[0,1]",
+          "data_type": "scalar",
+          "evidence_ids": [
+            "E22"
+          ],
+          "evidence_quotes": [
+            "引入比例系数s∈[0,1]，定义为烟幕弹自由落体时间占无人机总飞行时间 t的比值。"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "a_{ij}",
+          "meaning": "无人机j是否干扰导弹i的二进制任务分配变量",
+          "unit": "",
+          "domain": "{0,1}",
+          "data_type": "categorical",
+          "evidence_ids": [
+            "E28"
+          ],
+          "evidence_quotes": [
+            "aij为二进制变量，表示无人机j是否干扰导弹i"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "b_k",
+          "meaning": "无人机是否投放第k枚烟幕弹的二进制变量",
+          "unit": "",
+          "domain": "{0,1}",
+          "data_type": "categorical",
+          "evidence_ids": [
+            "E28"
+          ],
+          "evidence_quotes": [
+            "bk表示无人机j是否投放第k枚烟幕弹"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "y_{ij}",
+          "meaning": "无人机j面向导弹i投放的烟幕弹数量",
+          "unit": "枚",
+          "domain": "整数，受单机最多3枚约束",
+          "data_type": "matrix",
+          "evidence_ids": [
+            "E31"
+          ],
+          "evidence_quotes": [
+            "如果把无人机j发射向导弹 i的烟幕弹数量记为yij"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "c_{ij}",
+          "meaning": "无人机j干扰导弹i时理论上的最大有效遮挡时长",
+          "unit": "s",
+          "domain": "非负",
+          "data_type": "matrix",
+          "evidence_ids": [
+            "E31"
+          ],
+          "evidence_quotes": [
+            "令这个理论上最大的有效遮挡时长为cij"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        },
+        {
+          "symbol": "X_{best}",
+          "meaning": "算法记录的当前或全程最优决策变量组合",
+          "unit": "",
+          "domain": "对应问题的可行决策空间",
+          "data_type": "vector",
+          "evidence_ids": [
+            "E07"
+          ],
+          "evidence_quotes": [
+            "输出整个进化过程中记录下的最优个体Xbest"
+          ],
+          "provenance": "PAPER_EXPLICIT"
+        }
+      ],
+      "validation_clues": [
+        "问题二使用PSO独立复算：本文算法与PSO的最长有效遮蔽时长分别为4.587300s和4.587772s，论文报告相对误差0.01%。",
+        "问题四使用差分进化独立复算：局部网格搜索结果为11.125936s，差分进化结果为11.645260s，论文报告相对误差4.46%。",
+        "问题二两种算法得到的飞行方向、速度和投放时间具有相近的核心特征。"
+      ],
+      "warnings": [
+        "大量关键公式被标记为“formula-not-decoded”，无法核验完整目标函数、遮挡判定式和约束表达式。",
+        "表5存在明显的抽取或排版异常，包括重复列名、空白序号以及“23”合并行，相关逐弹数据需回查原表。",
+        "表5正文称第二枚烟幕弹从1s持续至5.07793s并贡献4.07793s，但表格显示有效干扰时长4.37985s，二者不一致。",
+        "问题四正文称三枚烟幕弹形成连续遮蔽，但表6给出的区间3.49922–8.02193s、16.51588–20.41043s和35.41727–38.12596s彼此不连续，需核对“连续”的含义或原始数据。",
+        "问题五仅声明使用“改进的遗传算法”，当前文本块未说明具体改进机制、参数或收敛验证。",
+        "问题三正文承认第三枚烟幕弹未发挥作用，并指出其他初始位置可能产生真正的全局最优解，因此6.93586s不应视为已严格证明的全局最优值。"
+      ]
+    }
+  ],
+  "diagnostics": {
+    "chunks": [
+      {
+        "chunk_id": "CHUNK-001",
+        "evidence_count": 46,
+        "warning_count": 10
+      },
+      {
+        "chunk_id": "CHUNK-002",
+        "evidence_count": 35,
+        "warning_count": 6
+      }
+    ],
+    "provider": "codex",
+    "warnings": [],
+    "structural_evidence_count": 27
+  }
+}

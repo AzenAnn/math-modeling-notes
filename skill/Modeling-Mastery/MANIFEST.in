@@ -1,0 +1,6 @@
+include README.md LICENSE
+recursive-include modeling_mastery/assets *
+recursive-include schemas *.json
+recursive-include templates *.md
+recursive-include references *.yaml *.md
+recursive-include skills SKILL.md

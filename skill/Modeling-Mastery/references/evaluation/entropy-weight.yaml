@@ -1,0 +1,25 @@
+kind: model
+canonical_name: Entropy Weight Method
+aliases: [熵权法, 信息熵权重法, entropy weighting]
+category: evaluation
+task_types: [indicator_weighting, objective_weighting]
+role: 根据指标的信息差异程度计算客观权重
+description: 指标在样本间差异越大，信息熵越小，差异系数和最终权重通常越大。
+inputs:
+  - {name: normalized_matrix, description: 非负归一化指标矩阵, shape: "n×m", unit: "", required: true}
+outputs:
+  - {name: weights, description: 指标权重, shape: "m", unit: "", required: true}
+workflow:
+  - 统一指标方向并归一化
+  - 计算每个指标下各样本占比
+  - 计算信息熵
+  - 计算差异系数
+  - 归一化得到权重
+strengths: [客观, 实现简单, 适合指标差异明显的数据]
+weaknesses: [受极端值影响, 零值和对数需要处理, 差异大不等于业务重要]
+use_when: [希望减少主观赋权, 有多样本指标数据]
+avoid_when: [样本过少, 指标波动由噪声主导]
+alternatives: [CRITIC, Coefficient of Variation Weighting, AHP]
+combinations: [TOPSIS]
+complexity: {time: "O(nm)", space: "O(nm)", notes: ""}
+validation_methods: [权重扰动, 与 CRITIC/AHP 对比, 极端值稳健性]

@@ -1,0 +1,9 @@
+# High-quality PDF parser alternatives. Install one or both as needed.
+# MinerU follows its own environment and hardware requirements:
+#   uv pip install -U "mineru[all]"
+docling>=2.70
+anthropic>=0.40
+pytest>=8.2
+pytest-cov>=5.0
+ruff>=0.6
+mypy>=1.11

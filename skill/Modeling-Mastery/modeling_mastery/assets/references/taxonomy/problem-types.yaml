@@ -1,0 +1,32 @@
+- id: multi_indicator_evaluation
+  keywords: [综合评价, 多指标, 指标体系, 排名, 评分, 权重, TOPSIS, comprehensive evaluation, ranking]
+  categories: [evaluation]
+  tasks: [ranking, scoring, indicator_weighting, multi_criteria_decision]
+- id: objective_weighting
+  keywords: [客观赋权, 熵权, CRITIC, 变异系数, objective weighting]
+  categories: [evaluation]
+  tasks: [indicator_weighting]
+- id: forecasting
+  keywords: [预测, 时间序列, 趋势, 未来, forecast, time series, ARIMA, 灰色预测]
+  categories: [prediction, statistics]
+  tasks: [forecasting, time_series]
+- id: resource_allocation
+  keywords: [资源分配, 调度, 排产, 成本最小, 收益最大, allocation, scheduling, optimization]
+  categories: [optimization]
+  tasks: [allocation, scheduling, minimization, maximization]
+- id: path_planning
+  keywords: [最短路径, 路径规划, 路网, 运输, routing, shortest path, Dijkstra]
+  categories: [graph, optimization]
+  tasks: [shortest_path, routing]
+- id: uncertainty_simulation
+  keywords: [蒙特卡洛, 随机模拟, 不确定性, 概率分布, Monte Carlo, uncertainty]
+  categories: [simulation, statistics]
+  tasks: [uncertainty_propagation, scenario_analysis]
+- id: parameter_estimation
+  keywords: [参数估计, 回归, 拟合, 最小二乘, regression, fitting, estimation]
+  categories: [statistics, prediction]
+  tasks: [regression, estimation]
+- id: network_analysis
+  keywords: [网络, 图论, 节点, 边, 中心性, 连通性, graph, network, centrality]
+  categories: [graph]
+  tasks: [connectivity, centrality, flow]

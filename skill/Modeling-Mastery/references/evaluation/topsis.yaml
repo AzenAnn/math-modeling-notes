@@ -1,0 +1,28 @@
+kind: model
+canonical_name: TOPSIS
+aliases: [优劣解距离法, 逼近理想解排序法, Technique for Order Preference by Similarity to Ideal Solution]
+category: evaluation
+task_types: [ranking, scoring, multi_criteria_decision]
+role: 对多个方案进行综合评分与排序
+description: 通过比较各方案到正理想解和负理想解的距离，计算相对贴近度并排序。
+inputs:
+  - {name: decision_matrix, description: 方案×指标矩阵, shape: "n×m", unit: "", required: true}
+  - {name: weights, description: 指标权重向量, shape: "m", unit: "", required: true}
+outputs:
+  - {name: closeness, description: 各方案相对贴近度, shape: "n", unit: "", required: true}
+  - {name: ranking, description: 方案排序, shape: "n", unit: "", required: true}
+workflow:
+  - 指标正向化并检查量纲
+  - 对决策矩阵进行归一化
+  - 乘以权重得到加权矩阵
+  - 构造正理想解与负理想解
+  - 计算到两类理想解的距离
+  - 计算相对贴近度并排序
+strengths: [思路直观, 能同时处理多个指标, 输出可直接排名]
+weaknesses: [结果依赖归一化和权重, 欧氏距离可能忽略指标相关性]
+use_when: [方案需要多指标排序, 指标可数值化, 权重可获得]
+avoid_when: [指标高度依赖且距离度量失真, 数据主要为定性描述]
+alternatives: [VIKOR, PROMETHEE, PCA Composite Evaluation]
+combinations: [Entropy Weight Method, AHP, CRITIC]
+complexity: {time: "O(nm)", space: "O(nm)", notes: n 为方案数，m 为指标数}
+validation_methods: [权重敏感性分析, 归一化方法对比, 排名稳定性]

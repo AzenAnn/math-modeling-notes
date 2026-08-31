@@ -1,0 +1,22 @@
+kind: model
+canonical_name: Grey GM(1,1)
+aliases: [GM(1,1), 灰色预测模型, 灰色系统 GM11]
+category: prediction
+task_types: [forecasting, small_sample]
+role: 对小样本、近似指数趋势的非负序列进行预测
+description: 对原序列进行一次累加生成，建立一阶常微分方程并估计发展系数和灰作用量。
+workflow:
+  - 检查序列非负性和级比
+  - 一次累加生成 1-AGO
+  - 构造紧邻均值序列
+  - 最小二乘估计参数
+  - 写出时间响应函数并还原预测
+  - 进行后验差或相对误差检验
+strengths: [小样本可用, 计算简单, 对平滑单调趋势有效]
+weaknesses: [对波动和结构突变敏感, 长期预测易偏离]
+use_when: [样本较少, 数据非负, 趋势近似指数]
+avoid_when: [序列剧烈振荡, 明显季节性, 级比检验不通过]
+alternatives: [ARIMA, Exponential Smoothing]
+combinations: [Residual Correction, Rolling Update]
+complexity: {time: "O(n)", space: "O(n)", notes: 核心参数估计规模很小}
+validation_methods: [级比检验, 相对误差, 后验差比, 小误差概率]

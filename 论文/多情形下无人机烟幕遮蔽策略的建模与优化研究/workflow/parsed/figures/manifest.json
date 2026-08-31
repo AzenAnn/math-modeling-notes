@@ -1,0 +1,345 @@
+{
+  "source": "C:\\Users\\28962\\Desktop\\数模\\高教社杯全国大学生数学建模竞赛优秀论文\\2025年高教社杯全国大学生数学建模竞赛优秀论文\\A196.pdf",
+  "figures": [
+    {
+      "id": "FIG-001",
+      "page": 1,
+      "path": "page_001_img_001.jpeg",
+      "xref": 5,
+      "width": 700,
+      "height": 989,
+      "sha256": "996b38f0a40965e39c2ae1c7f931fb8101709ae0eedfa145c13063c3c6328cd2",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-002",
+      "page": 2,
+      "path": "page_002_img_001.jpeg",
+      "xref": 8,
+      "width": 700,
+      "height": 1654,
+      "sha256": "4df61b5ef7a96373e6e1cf972e258f6d89f9e2a5b76b1168005b2b6688d7930c",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-003",
+      "page": 3,
+      "path": "page_003_img_001.jpeg",
+      "xref": 11,
+      "width": 700,
+      "height": 989,
+      "sha256": "09bc20eaa1648ca76506a00d94a5a3f3413dd8bdb1ec28bcfd711eca84d9d793",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-004",
+      "page": 4,
+      "path": "page_004_img_001.jpeg",
+      "xref": 14,
+      "width": 700,
+      "height": 989,
+      "sha256": "e907fc07bad12aaf03e8cc263b6a093c241cd4b5c53f5f7ab9d1ddb93065fc84",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-005",
+      "page": 5,
+      "path": "page_005_img_001.jpeg",
+      "xref": 17,
+      "width": 700,
+      "height": 989,
+      "sha256": "7479078552367c513d3a2e4b168164ff9f07d3a5666f727c1d1d5917cc22034a",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-006",
+      "page": 6,
+      "path": "page_006_img_001.jpeg",
+      "xref": 20,
+      "width": 700,
+      "height": 989,
+      "sha256": "5487964e3fb02263b93bc83af84c372c20d21978f13692e21a58147c32896c8e",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-007",
+      "page": 7,
+      "path": "page_007_img_001.jpeg",
+      "xref": 23,
+      "width": 700,
+      "height": 989,
+      "sha256": "bca0285cfd57e2e30ecf4d49a999a250c4d765171fd5dd507b78804c812d6c63",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-008",
+      "page": 8,
+      "path": "page_008_img_001.jpeg",
+      "xref": 26,
+      "width": 700,
+      "height": 989,
+      "sha256": "f3830c782d8d8fc5e5f1cb4ee5bb37fbd0d08e0847e93eb9f68c385d1f34e98b",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-009",
+      "page": 9,
+      "path": "page_009_img_001.jpeg",
+      "xref": 29,
+      "width": 700,
+      "height": 989,
+      "sha256": "dba7430b6805c68fa52ebcc11dd0f60a6c2579b00df4a11ece2c59253ecee0f8",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-010",
+      "page": 10,
+      "path": "page_010_img_001.jpeg",
+      "xref": 32,
+      "width": 700,
+      "height": 989,
+      "sha256": "7f14ae9f2e2f13359a0b0aed931ec9d0b9b05749cba92b8c13e07fdbfb4f4988",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-011",
+      "page": 11,
+      "path": "page_011_img_001.jpeg",
+      "xref": 35,
+      "width": 700,
+      "height": 989,
+      "sha256": "22afeda8f171ef638fc4b595d8f4008fe11c395f36aa87f34021fcca7e21448e",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-012",
+      "page": 12,
+      "path": "page_012_img_001.jpeg",
+      "xref": 38,
+      "width": 700,
+      "height": 989,
+      "sha256": "245d1306734ddcb3fc3a679d40d6979296026b88db862af86d0cbe433f1590ec",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-013",
+      "page": 13,
+      "path": "page_013_img_001.jpeg",
+      "xref": 41,
+      "width": 700,
+      "height": 989,
+      "sha256": "064d48434d5b6293f81938b511e9fbddb4ddf10c499ef5595e893ab0ef7b4994",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-014",
+      "page": 14,
+      "path": "page_014_img_001.jpeg",
+      "xref": 44,
+      "width": 700,
+      "height": 989,
+      "sha256": "634dd88c59c81e145c827e9495f53df411e5bdf706e9b0fc143a4086a539b934",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-015",
+      "page": 15,
+      "path": "page_015_img_001.jpeg",
+      "xref": 47,
+      "width": 700,
+      "height": 989,
+      "sha256": "8e4111b6eeb3b044ebe73be7398793f47eb67601d310e6f52b358c4ee4e25e8a",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-016",
+      "page": 16,
+      "path": "page_016_img_001.jpeg",
+      "xref": 50,
+      "width": 700,
+      "height": 989,
+      "sha256": "5e52f74cbd3e41ebdd93407216cbbfac5a9f66bd4d642225a72a272ae864615b",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-017",
+      "page": 17,
+      "path": "page_017_img_001.jpeg",
+      "xref": 53,
+      "width": 700,
+      "height": 989,
+      "sha256": "7a873b723b47f75c2c1d93cfbd360793d8716443c0a24c7762a901890fb34ff7",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-018",
+      "page": 18,
+      "path": "page_018_img_001.jpeg",
+      "xref": 56,
+      "width": 700,
+      "height": 989,
+      "sha256": "de961bc90fb56629d925ffafc07bc02897ae2cd1dd42b08f12f41f989c2453a0",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-019",
+      "page": 19,
+      "path": "page_019_img_001.jpeg",
+      "xref": 59,
+      "width": 700,
+      "height": 989,
+      "sha256": "69303148a139808cc8b82097f2ceb6deef9cddc3320decb4dbe789673f5a0b55",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-020",
+      "page": 20,
+      "path": "page_020_img_001.jpeg",
+      "xref": 62,
+      "width": 700,
+      "height": 989,
+      "sha256": "ba11ab3ea01d73d9baa10e9bea0223a4aa8e8fe43b6dd2818c2c3c101bb1693a",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-021",
+      "page": 21,
+      "path": "page_021_img_001.jpeg",
+      "xref": 65,
+      "width": 700,
+      "height": 989,
+      "sha256": "7c0a2350d7934b1928ebf5c561c962a2e932f37d3608fedbb285b71e949ae1f2",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-022",
+      "page": 22,
+      "path": "page_022_img_001.jpeg",
+      "xref": 68,
+      "width": 700,
+      "height": 989,
+      "sha256": "70ae92919e486dcd666b46aa866c4299c8b4d7cba51627df54ecefa3843806b1",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-023",
+      "page": 23,
+      "path": "page_023_img_001.jpeg",
+      "xref": 71,
+      "width": 700,
+      "height": 989,
+      "sha256": "097ab82db25b302819d3ee7a1ae90bc32c810248b3d2e6a7c6ba9e587af8d10e",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-024",
+      "page": 24,
+      "path": "page_024_img_001.jpeg",
+      "xref": 74,
+      "width": 700,
+      "height": 989,
+      "sha256": "4a2ccd5b8c3dd596444ef0da23ba2f3e87cbfbe9d8e732f404f5fcac91b3a950",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-025",
+      "page": 25,
+      "path": "page_025_img_001.jpeg",
+      "xref": 77,
+      "width": 700,
+      "height": 989,
+      "sha256": "5f94867ac0cfb2850cff449c243ad1d91c59b00f64035544c5be848f755026c7",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-026",
+      "page": 26,
+      "path": "page_026_img_001.jpeg",
+      "xref": 80,
+      "width": 700,
+      "height": 989,
+      "sha256": "263689115b0cec907f5988938381e22a61cc5f27a2bbae07dc2ac36cfabad469",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-027",
+      "page": 27,
+      "path": "page_027_img_001.jpeg",
+      "xref": 83,
+      "width": 700,
+      "height": 989,
+      "sha256": "80027fb186074597dc0fa17d7690f450782912c7373bb8e115f8f89e9a1b8627",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-028",
+      "page": 28,
+      "path": "page_028_img_001.jpeg",
+      "xref": 86,
+      "width": 700,
+      "height": 989,
+      "sha256": "ae832d366f0750c2d1ebfe5eb67911d71358fdec17189348f556618fdfb4e832",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-029",
+      "page": 29,
+      "path": "page_029_img_001.jpeg",
+      "xref": 89,
+      "width": 700,
+      "height": 989,
+      "sha256": "2ce5fba4ad9b3ce7330c27fb8ad6e882f82ae3a6ec5edf3d200fa4ed1a3653e9",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-030",
+      "page": 30,
+      "path": "page_030_img_001.jpeg",
+      "xref": 92,
+      "width": 700,
+      "height": 989,
+      "sha256": "61108a177ed6c6da092b46ac6f209a33650563f7639ae6ffbb3486c88fbe8cf5",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-031",
+      "page": 31,
+      "path": "page_031_img_001.jpeg",
+      "xref": 95,
+      "width": 700,
+      "height": 989,
+      "sha256": "3a3a548b4268478914c156a630283e7c250bdf50f8ce677be0d5049c501ecff2",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-032",
+      "page": 32,
+      "path": "page_032_img_001.jpeg",
+      "xref": 98,
+      "width": 700,
+      "height": 989,
+      "sha256": "179d5104ae23f1f374266f1353dc135c929a117056fa6d29d9d7edf3e4f369bc",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-033",
+      "page": 33,
+      "path": "page_033_img_001.jpeg",
+      "xref": 101,
+      "width": 700,
+      "height": 989,
+      "sha256": "71f6259581e7e983cb8a54785eed7c93d9d8637ff142eacebd26aa40775684c0",
+      "source": "pymupdf-embedded-image"
+    },
+    {
+      "id": "FIG-034",
+      "page": 34,
+      "path": "page_034_img_001.jpeg",
+      "xref": 104,
+      "width": 700,
+      "height": 989,
+      "sha256": "ea025610e8496bc2bdba3e17b586259e88ebee5c98a3c59d9886d44f7cd0eb0f",
+      "source": "pymupdf-embedded-image"
+    }
+  ]
+}

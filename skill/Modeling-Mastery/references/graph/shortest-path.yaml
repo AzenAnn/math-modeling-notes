@@ -1,0 +1,26 @@
+kind: model
+canonical_name: Shortest Path Model
+aliases: [最短路径模型, shortest path problem]
+category: graph
+task_types: [shortest_path, routing, path_planning]
+role: 在带权图中寻找总代价最小的路径
+inputs:
+  - {name: graph, description: 节点、边与边权, shape: graph, unit: "", required: true}
+  - {name: source_target, description: 起点与终点, shape: pair, unit: "", required: true}
+outputs:
+  - {name: path, description: 最短路径节点或边序列, shape: sequence, unit: "", required: true}
+  - {name: distance, description: 最短路径总权重, shape: scalar, unit: "", required: true}
+workflow:
+  - 将实体和连接抽象为图
+  - 定义边权及其单位
+  - 检查方向性、负权和额外约束
+  - 选择 Dijkstra、Bellman-Ford、Floyd-Warshall 或 A*
+  - 还原路径并验证可行性
+strengths: [抽象清晰, 算法成熟, 可扩展到路由问题]
+weaknesses: [多约束路径可能不再是普通最短路, 边权定义决定结果]
+use_when: [目标可表示为边权和, 路径具有可加代价]
+avoid_when: [路径代价强依赖历史状态且无法扩展状态图]
+alternatives: [Minimum Cost Flow, Vehicle Routing Problem]
+combinations: [Dijkstra Algorithm, Floyd-Warshall Algorithm]
+complexity: {time: "algorithm-dependent", space: "O(V+E)", notes: ""}
+validation_methods: [小图手算, 路径可行性, 与替代算法交叉验证]

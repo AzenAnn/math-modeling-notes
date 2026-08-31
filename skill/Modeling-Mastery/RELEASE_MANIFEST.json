@@ -1,0 +1,31 @@
+{
+  "project": "Modeling-Mastery",
+  "version": "0.2.0",
+  "built_on": "2026-08-26",
+  "python_requirement": ">=3.11",
+  "verification": {
+    "tests_passed": 32,
+    "compileall": true,
+    "pymupdf_pdf_end_to_end": true,
+    "markdown_multi_page_end_to_end": true,
+    "obsidian_vault_and_retrieval": true,
+    "mock_codegen_python_tests": true,
+    "local_codex_cli_protocol_mocked": true,
+    "local_claude_code_cli_protocol_mocked": true,
+    "local_agent_fallback_mocked": true,
+    "dual_host_skill_install": true,
+    "wheel_isolated_smoke": true,
+    "mineru_runtime_tested": false,
+    "docling_runtime_tested": false,
+    "real_llm_api_tested": false,
+    "real_authenticated_codex_cli_tested": false,
+    "real_authenticated_claude_code_cli_tested": false,
+    "octave_runtime_tested": false
+  },
+  "wheel": {
+    "path": "dist/modeling_mastery-0.2.0-py3-none-any.whl",
+    "sha256": "38007de6f78529c0ad25453fb60d34f2e6454436ad776eb1dce087430f6fdc39",
+    "size_bytes": 118833
+  },
+  "notes": "See docs/verification.md for exact scope and limitations. Real logged-in Codex/Claude Code calls must be accepted on the target machine."
+}

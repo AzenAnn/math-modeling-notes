@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "from": "Entropy Weight Method",
+      "to": "Entropy Weight Method",
+      "id": "model-entropyweightmethod-253909652b",
+      "matched_reference": true
+    },
+    {
+      "from": "TOPSIS",
+      "to": "TOPSIS",
+      "id": "model-topsis-8da9a0ca06",
+      "matched_reference": true
+    }
+  ],
+  "algorithms": [
+    {
+      "from": "Dijkstra Algorithm",
+      "to": "Dijkstra Algorithm",
+      "id": "algorithm-dijkstraalgorithm-c1bad58445",
+      "matched_reference": true
+    }
+  ],
+  "merged": []
+}

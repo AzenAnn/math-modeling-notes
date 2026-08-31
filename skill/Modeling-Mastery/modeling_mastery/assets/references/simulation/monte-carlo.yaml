@@ -1,0 +1,21 @@
+kind: model
+canonical_name: Monte Carlo Simulation
+aliases: [蒙特卡洛模拟, Monte Carlo Method, 随机模拟]
+category: simulation
+task_types: [uncertainty_propagation, scenario_analysis, probability_estimation]
+role: 通过重复随机采样近似复杂系统的分布、概率或期望
+workflow:
+  - 定义随机输入和联合分布
+  - 明确输出指标与事件
+  - 固定随机种子并生成样本
+  - 对每个样本运行模型
+  - 统计均值、方差、分位数和置信区间
+  - 检查样本量收敛与分布假设敏感性
+strengths: [适用复杂非线性系统, 实现灵活, 易并行]
+weaknesses: [收敛速度通常为 O(N^-1/2), 结果依赖分布假设, 计算量可能大]
+use_when: [解析求解困难, 输入具有不确定性, 关注风险或概率]
+avoid_when: [随机输入分布完全无法合理设定, 单次仿真极其昂贵且无代理模型]
+alternatives: [Latin Hypercube Sampling, Quasi-Monte Carlo, Bootstrap]
+combinations: [Sensitivity Analysis, Surrogate Model]
+complexity: {time: "O(N·C_f)", space: "O(N) or streaming O(1)", notes: N 为样本数}
+validation_methods: [重复 seed, 样本量收敛, 置信区间, 分布敏感性]

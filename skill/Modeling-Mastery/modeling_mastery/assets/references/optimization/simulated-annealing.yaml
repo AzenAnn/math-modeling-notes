@@ -1,0 +1,22 @@
+kind: algorithm
+canonical_name: Simulated Annealing
+aliases: [模拟退火, SA]
+category: optimization
+purpose: 允许以一定概率接受劣解，从而跳出局部最优
+inputs: [objective function, initial solution, neighborhood, cooling schedule]
+outputs: [best solution, best objective, history]
+pseudocode:
+  - 生成初始解并设定初始温度
+  - 在邻域中生成候选解
+  - 更优则接受，较差则按 Metropolis 概率接受
+  - 按降温策略更新温度
+  - 达到停止条件后返回历史最优解
+parameters:
+  - {name: initial_temperature, value: null, description: 初始温度, range: "paper-specific", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: cooling_rate, value: null, description: 降温系数, range: "(0,1)", evidence_ids: [], provenance: AI_INFERRED}
+initialization: 生成一个可行初始解
+stopping_criteria: [温度低于阈值, 达到最大迭代数, 长期无改进]
+complexity: {time: "O(K·C_f)", space: "O(d)", notes: K 为候选解评估次数}
+randomness: {uses_randomness: true, seed_required: true, notes: 多次运行检查稳定性}
+implementation_notes: [邻域设计决定搜索能力, 温度尺度要与目标差值匹配]
+failure_modes: [降温过快, 初始温度过低, 邻域无法覆盖可行域]

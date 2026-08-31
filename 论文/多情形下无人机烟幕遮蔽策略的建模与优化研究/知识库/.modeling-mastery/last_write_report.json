@@ -1,0 +1,25 @@
+{
+  "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\多情形下无人机烟幕遮蔽策略的建模与优化研究\\知识库",
+  "created_or_updated": [
+    "50_Papers/多情形下无人机烟幕遮蔽策略的建模与优化研究.md",
+    "40_Competition-Cases/多情形下无人机烟幕遮蔽策略的建模与优化研究-案例.md",
+    "10_Models/mechanism/导弹—无人机—烟幕弹—云团运动学轨迹模型.md",
+    "10_Models/other/导弹视线—球形烟幕完全遮蔽判定模型.md",
+    "10_Models/evaluation/布尔遮蔽状态积分模型.md",
+    "10_Models/optimization/单机单弹有效遮蔽时长最大化模型.md",
+    "10_Models/optimization/单无人机三烟幕弹联合遮蔽优化模型.md",
+    "10_Models/optimization/三无人机单弹协同遮蔽优化模型.md",
+    "10_Models/other/无人机—导弹烟幕资源整数线性分配模型.md",
+    "10_Models/optimization/多机多弹多导弹分层遮蔽优化模型.md",
+    "20_Algorithms/numerical/圆柱轮廓圆周均匀离散化算法.md",
+    "20_Algorithms/search/有效遮蔽连续区间二分查找算法.md",
+    "20_Algorithms/optimization/多起点变步长坐标搜索算法.md",
+    "20_Algorithms/optimization/粒子群优化验证算法.md",
+    "20_Algorithms/optimization/差分进化算法.md",
+    "20_Algorithms/search/预测拦截点降维与局部网格搜索算法.md",
+    "20_Algorithms/other/分支定界法.md",
+    "20_Algorithms/optimization/分层优化结合改进遗传算法.md",
+    "00_Home/Modeling-Mastery 首页.md"
+  ],
+  "warnings": []
+}

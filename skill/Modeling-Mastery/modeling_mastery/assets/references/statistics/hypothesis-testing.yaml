@@ -1,0 +1,20 @@
+kind: model
+canonical_name: Hypothesis Testing
+aliases: [假设检验, 显著性检验, statistical hypothesis test]
+category: statistics
+task_types: [hypothesis_testing, inference, comparison]
+role: 在给定显著性水平下判断样本证据是否反对原假设
+workflow:
+  - 定义原假设与备择假设
+  - 选择与数据和假设匹配的检验统计量
+  - 检查独立性、分布和方差等前提
+  - 计算统计量与 p 值或临界域
+  - 报告效应量和置信区间
+strengths: [统计推断框架清晰, 可量化证据强度]
+weaknesses: [p 值容易误读, 多重比较和低检验功效会误导]
+use_when: [需要比较群体或验证关系, 有明确可检验假设]
+avoid_when: [样本选择偏差严重, 检验前提不满足且无稳健替代]
+alternatives: [Bootstrap, Permutation Test, Bayesian Inference]
+combinations: [Effect Size, Confidence Interval, Multiple Testing Correction]
+complexity: {time: "test-dependent", space: "O(n)", notes: ""}
+validation_methods: [前提检验, 效应量, 检验功效, 多重比较校正]

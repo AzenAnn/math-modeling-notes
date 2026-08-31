@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modeling-mastery.local/schemas/algorithm.schema.json",
+  "title": "Algorithm Card",
+  "type": "object",
+  "required": ["id", "canonical_name", "category", "purpose", "pseudocode", "complexity", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "canonical_name": {"type": "string", "minLength": 1},
+    "display_name": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+    "category": {"type": "string", "enum": ["optimization", "graph", "numerical", "statistics", "machine_learning", "simulation", "search", "data_processing", "other"]},
+    "purpose": {"type": "string"},
+    "inputs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "outputs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "pseudocode": {"type": "array", "items": {"type": "string"}},
+    "parameters": {"type": "array", "items": {"$ref": "#/$defs/parameter"}, "default": []},
+    "initialization": {"type": "string", "default": ""},
+    "stopping_criteria": {"type": "array", "items": {"type": "string"}, "default": []},
+    "complexity": {
+      "type": "object",
+      "required": ["time", "space"],
+      "additionalProperties": false,
+      "properties": {
+        "time": {"type": "string"},
+        "space": {"type": "string"},
+        "notes": {"type": "string", "default": ""}
+      }
+    },
+    "randomness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "uses_randomness": {"type": "boolean", "default": false},
+        "seed_required": {"type": "boolean", "default": false},
+        "notes": {"type": "string", "default": ""}
+      },
+      "default": {"uses_randomness": false, "seed_required": false, "notes": ""}
+    },
+    "implementation_notes": {"type": "array", "items": {"type": "string"}, "default": []},
+    "failure_modes": {"type": "array", "items": {"type": "string"}, "default": []},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+    "provenance": {"$ref": "#/$defs/provenance"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1, "default": 0.5}
+  },
+  "$defs": {
+    "provenance": {
+      "type": "string",
+      "enum": ["PAPER_EXPLICIT", "PAPER_DERIVED", "AI_INFERRED", "EXTERNAL_REFERENCE", "HEURISTIC"]
+    },
+    "parameter": {
+      "type": "object",
+      "required": ["name", "value", "provenance"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "value": {},
+        "description": {"type": "string", "default": ""},
+        "range": {"type": "string", "default": ""},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      }
+    }
+  }
+}

@@ -1,0 +1,649 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "paper-topsis-dd258dd6094dfadd-86cc353ebd",
+  "source": {
+    "path": "examples/demo_paper/source_paper.md",
+    "sha256": "dd258dd6094dfadd89cb9bc3fb0b32573de2b356910fb0734f609c5226fe294e",
+    "parser": "markdown",
+    "parsed_at": "2026-08-25T21:41:23+00:00",
+    "normalized_markdown": "examples/demo_paper/normalized_paper.md",
+    "structure_json": "examples/demo_paper/paper_structure.json"
+  },
+  "bibliographic": {
+    "title": "基于熵权-TOPSIS与最短路径的应急设施评价示例",
+    "authors": [],
+    "year": null,
+    "competition": "",
+    "award": "",
+    "problem_id": "",
+    "abstract": "本文针对候选应急设施的综合评价和运输路径规划问题,首先使用熵权法从指标数据中计算客观权重,再使用 TOPSIS 对候选设施进行排序;随后将道路网络抽象为非负权图,并用 Dijkstra 算法求解最短运输路径。最后通过权重扰动进行敏感性分析。",
+    "keywords": [
+      "Entropy Weight Method",
+      "TOPSIS",
+      "Dijkstra Algorithm"
+    ],
+    "language": "zh-CN"
+  },
+  "problem": {
+    "background": "<!-- Modeling-Mastery normalized document | parser=markdown | source_sha256=dd258dd6094dfadd89cb9bc3fb0b32573de2b356910fb0734f609c5226fe294e --> <!-- MM_PAGE: 1 --> # 基于熵权-TOPSIS与最短路径的应急设施评价示例 ## 摘要 本文针对候选应急设施的综合评价和运输路径规划问题,首先使用熵权法从指标数据中计算客观权重,再使用 TOPSIS 对候选设施进行排序;随后将道路网络抽象为非负权图,并用 Dijkstra 算法求解最短运输路径。最后通过权重扰动进行敏感性分析。 ## 1 问题与假设 问题一要求根据响应时间、建设成本、覆盖人口和环境风险对候选设施进行综合排序。问题二要求在道路边权均非负的前提下,求物资仓库到选定设施的最短运输路径。 假设各评价指标在研究期内保持稳定,且道路通行时间可由给定边权表示。 <!-- MM_PAGE: 2 --> ## 2 熵权法与 TOPSIS 采用熵权法计算指标的客观权重。对非负归一化矩阵 $x_{ij}$,定义 $$ p_{ij}=\\frac{x_{ij}}{\\sum_{i=1}^{n}x_{ij}},\\qquad e_j=-\\frac{1}{\\ln n}\\sum_{i=1}^{n}p_{ij}\\ln p_{ij}. $$ 差异系数为 $d_j=1-e_j$,最终权重为 $w_j=d_j/\\sum_j d_j$。当 $p_{ij}=0$ 时约定 $p_{ij}\\ln p_{ij}=0$。 使用 TOPSIS 构造正理想解与负理想解,并计算方案 $i$ 的相对贴近度 $$ C_i=\\frac{D_i^-}{D_i^+ + D_i^-}. $$ 按照 $C_i$ 从大到小对候选设",
+    "overall_objective": "启发式模式未可靠抽取总体目标。",
+    "subproblems": [
+      {
+        "id": "Q1",
+        "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "task_types": [
+          "indicator_weighting",
+          "objective_weighting",
+          "ranking",
+          "scoring",
+          "multi_criteria_decision"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "constraints": [],
+        "evidence_ids": []
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E-TEXT-P001-e652146605",
+      "kind": "text",
+      "page": 1,
+      "section": "1 问题与假设",
+      "label": "assumption",
+      "locator": "char:412-445",
+      "quote": "假设各评价指标在研究期内保持稳定,且道路通行时间可由给定边权表示。",
+      "char_start": 412,
+      "char_end": 445,
+      "content_hash": "e65214660508c7f74cc52b898976a014ccbe5ab06f0d3a4a1e5bab5ee6ce3db7",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-23d842890d",
+      "kind": "text",
+      "page": 1,
+      "section": "摘要",
+      "label": "model",
+      "locator": "char:202-306",
+      "quote": "本文针对候选应急设施的综合评价和运输路径规划问题,首先使用熵权法从指标数据中计算客观权重,再使用 TOPSIS 对候选设施进行排序;随后将道路网络抽象为非负权图,并用 Dijkstra 算法求解最短运输路径。",
+      "char_start": 202,
+      "char_end": 306,
+      "content_hash": "23d842890d89e118859448beea1bfdb7853538b2e9c379105c98c1ffe057a1cc",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-d4df44c121",
+      "kind": "text",
+      "page": 2,
+      "section": "2 熵权法与 TOPSIS",
+      "label": "model",
+      "locator": "char:485-500",
+      "quote": "采用熵权法计算指标的客观权重。",
+      "char_start": 485,
+      "char_end": 500,
+      "content_hash": "d4df44c1212a412ff5f740f89361aba43d21403912f0f8f7bf915c80c0be6e98",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-8e53aa7cb8",
+      "kind": "text",
+      "page": 3,
+      "section": "3 最短路径算法",
+      "label": "model",
+      "locator": "char:877-943",
+      "quote": "使用 Dijkstra 算法:初始化源点距离为 0,其余为无穷大;每次取出当前距离最小的未确定节点并松弛其出边,直至目标节点被确定。",
+      "char_start": 877,
+      "char_end": 943,
+      "content_hash": "8e53aa7cb8c2229a6eb43b86339c7f773bd1b03a74e336dfb43d2ec8046a2584",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-8aa4712e2e",
+      "kind": "text",
+      "page": 1,
+      "section": "摘要",
+      "label": "validation",
+      "locator": "char:306-322",
+      "quote": "最后通过权重扰动进行敏感性分析。",
+      "char_start": 306,
+      "char_end": 322,
+      "content_hash": "8aa4712e2e2ad6e2ec25177e21b8285c3bddbe44739f4f125c525d5d44fa215b",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-EQUATION-P002-e140cbe914",
+      "kind": "equation",
+      "page": 2,
+      "section": "2 熵权法与 TOPSIS",
+      "label": "EQ-001",
+      "locator": "EQ-001",
+      "quote": "p_{ij}=\\frac{x_{ij}}{\\sum_{i=1}^{n}x_{ij}},\\qquad e_j=-\\frac{1}{\\ln n}\\sum_{i=1}^{n}p_{ij}\\ln p_{ij}.",
+      "char_start": 522,
+      "char_end": 629,
+      "content_hash": "e140cbe91436df2bfc96ec593df95217a91000dd660127e0a15b45b74e19ae50",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.98
+    },
+    {
+      "id": "E-EQUATION-P002-33edde07af",
+      "kind": "equation",
+      "page": 2,
+      "section": "2 熵权法与 TOPSIS",
+      "label": "EQ-002",
+      "locator": "EQ-002",
+      "quote": "C_i=\\frac{D_i^-}{D_i^+ + D_i^-}.",
+      "char_start": 756,
+      "char_end": 794,
+      "content_hash": "33edde07af8a04f094a7fd4651e744fae0bd9484fa582b4f3c971f2617528a36",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.98
+    },
+    {
+      "id": "E-TEXT-P001-678558df09",
+      "kind": "text",
+      "page": 1,
+      "section": "摘要",
+      "label": "model",
+      "locator": "page:1",
+      "quote": "本文针对候选应急设施的综合评价和运输路径规划问题,首先使用熵权法从指标数据中计算客观权重,再使用 TOPSIS 对候选设施进行排序;",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "678558df09d40a6391aeb4a51800269c23d6dabbd1c22a4af5772e4ca3fcabf6",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    },
+    {
+      "id": "E-TEXT-P001-dc4214217b",
+      "kind": "text",
+      "page": 1,
+      "section": "摘要",
+      "label": "algorithm",
+      "locator": "page:1",
+      "quote": "随后将道路网络抽象为非负权图,并用 Dijkstra 算法求解最短运输路径。",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "dc4214217bb22b166649e8ad4e93a225650763b72a5717d2a20bd6bcceedead4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "假设各评价指标在研究期内保持稳定,且道路通行时间可由给定边权表示。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P001-e652146605"
+      ],
+      "provenance": "HEURISTIC"
+    }
+  ],
+  "variables": [],
+  "data": {
+    "sources": [],
+    "fields": [],
+    "data_types": [],
+    "preprocessing": [],
+    "missing_value_strategy": "",
+    "outlier_strategy": "",
+    "evidence_ids": []
+  },
+  "modeling_chain": [
+    {
+      "order": 1,
+      "subproblem_id": "Q1",
+      "model_id": "model-entropyweightmethod-253909652b",
+      "algorithm_ids": [
+        "algorithm-dijkstraalgorithm-c1bad58445"
+      ],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P001-678558df09"
+      ]
+    },
+    {
+      "order": 2,
+      "subproblem_id": "Q1",
+      "model_id": "model-topsis-8da9a0ca06",
+      "algorithm_ids": [
+        "algorithm-dijkstraalgorithm-c1bad58445"
+      ],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P001-678558df09"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "model-entropyweightmethod-253909652b",
+      "canonical_name": "Entropy Weight Method",
+      "display_name": "Entropy Weight Method",
+      "aliases": [
+        "熵权法",
+        "信息熵权重法",
+        "entropy weighting"
+      ],
+      "category": "evaluation",
+      "task_types": [
+        "indicator_weighting",
+        "objective_weighting"
+      ],
+      "role": "根据指标的信息差异程度计算客观权重",
+      "description": "指标在样本间差异越大，信息熵越小，差异系数和最终权重通常越大。",
+      "assumptions": [],
+      "inputs": [
+        {
+          "name": "normalized_matrix",
+          "description": "非负归一化指标矩阵",
+          "shape": "n×m",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "weights",
+          "description": "指标权重",
+          "shape": "m",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "统一指标方向并归一化",
+          "description": "统一指标方向并归一化",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "计算每个指标下各样本占比",
+          "description": "计算每个指标下各样本占比",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "计算信息熵",
+          "description": "计算信息熵",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "计算差异系数",
+          "description": "计算差异系数",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "归一化得到权重",
+          "description": "归一化得到权重",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "客观",
+        "实现简单",
+        "适合指标差异明显的数据"
+      ],
+      "weaknesses": [
+        "受极端值影响",
+        "零值和对数需要处理",
+        "差异大不等于业务重要"
+      ],
+      "use_when": [
+        "希望减少主观赋权",
+        "有多样本指标数据"
+      ],
+      "avoid_when": [
+        "样本过少",
+        "指标波动由噪声主导"
+      ],
+      "alternatives": [
+        "CRITIC",
+        "Coefficient of Variation Weighting",
+        "AHP"
+      ],
+      "combinations": [
+        "TOPSIS"
+      ],
+      "complexity": {
+        "time": "O(nm)",
+        "space": "O(nm)",
+        "notes": ""
+      },
+      "validation_methods": [
+        "权重扰动",
+        "与 CRITIC/AHP 对比",
+        "极端值稳健性"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P001-678558df09"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    },
+    {
+      "id": "model-topsis-8da9a0ca06",
+      "canonical_name": "TOPSIS",
+      "display_name": "TOPSIS",
+      "aliases": [
+        "优劣解距离法",
+        "逼近理想解排序法",
+        "Technique for Order Preference by Similarity to Ideal Solution"
+      ],
+      "category": "evaluation",
+      "task_types": [
+        "ranking",
+        "scoring",
+        "multi_criteria_decision"
+      ],
+      "role": "对多个方案进行综合评分与排序",
+      "description": "通过比较各方案到正理想解和负理想解的距离，计算相对贴近度并排序。",
+      "assumptions": [],
+      "inputs": [
+        {
+          "name": "decision_matrix",
+          "description": "方案×指标矩阵",
+          "shape": "n×m",
+          "unit": "",
+          "required": true
+        },
+        {
+          "name": "weights",
+          "description": "指标权重向量",
+          "shape": "m",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "closeness",
+          "description": "各方案相对贴近度",
+          "shape": "n",
+          "unit": "",
+          "required": true
+        },
+        {
+          "name": "ranking",
+          "description": "方案排序",
+          "shape": "n",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "指标正向化并检查量纲",
+          "description": "指标正向化并检查量纲",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "对决策矩阵进行归一化",
+          "description": "对决策矩阵进行归一化",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "乘以权重得到加权矩阵",
+          "description": "乘以权重得到加权矩阵",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "构造正理想解与负理想解",
+          "description": "构造正理想解与负理想解",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "计算到两类理想解的距离",
+          "description": "计算到两类理想解的距离",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "计算相对贴近度并排序",
+          "description": "计算相对贴近度并排序",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-678558df09"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "思路直观",
+        "能同时处理多个指标",
+        "输出可直接排名"
+      ],
+      "weaknesses": [
+        "结果依赖归一化和权重",
+        "欧氏距离可能忽略指标相关性"
+      ],
+      "use_when": [
+        "方案需要多指标排序",
+        "指标可数值化",
+        "权重可获得"
+      ],
+      "avoid_when": [
+        "指标高度依赖且距离度量失真",
+        "数据主要为定性描述"
+      ],
+      "alternatives": [
+        "VIKOR",
+        "PROMETHEE",
+        "PCA Composite Evaluation"
+      ],
+      "combinations": [
+        "Entropy Weight Method",
+        "AHP",
+        "CRITIC"
+      ],
+      "complexity": {
+        "time": "O(nm)",
+        "space": "O(nm)",
+        "notes": "n 为方案数，m 为指标数"
+      },
+      "validation_methods": [
+        "权重敏感性分析",
+        "归一化方法对比",
+        "排名稳定性"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P001-678558df09"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "algorithm-dijkstraalgorithm-c1bad58445",
+      "canonical_name": "Dijkstra Algorithm",
+      "display_name": "Dijkstra Algorithm",
+      "aliases": [
+        "Dijkstra",
+        "迪杰斯特拉算法"
+      ],
+      "category": "graph",
+      "purpose": "计算非负边权图中的单源最短路径",
+      "inputs": [
+        "weighted graph with nonnegative edges",
+        "source vertex"
+      ],
+      "outputs": [
+        "distance array",
+        "predecessor array"
+      ],
+      "pseudocode": [
+        "将源点距离设为 0，其余为无穷大",
+        "将所有候选节点加入最小优先队列",
+        "取出当前距离最小的未确定节点",
+        "松弛该节点的所有出边",
+        "队列为空或目标点确定后结束"
+      ],
+      "parameters": [],
+      "initialization": "",
+      "stopping_criteria": [
+        "优先队列为空",
+        "目标节点被确定"
+      ],
+      "complexity": {
+        "time": "O((V+E) log V)",
+        "space": "O(V+E)",
+        "notes": "使用邻接表与二叉堆"
+      },
+      "randomness": {
+        "uses_randomness": false,
+        "seed_required": false,
+        "notes": ""
+      },
+      "implementation_notes": [
+        "遇到过期堆条目时跳过",
+        "使用前检查负权边",
+        "保存 predecessor 还原路径"
+      ],
+      "failure_modes": [
+        "图中存在负权边",
+        "无穷大设置溢出",
+        "有向/无向边处理错误"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P001-dc4214217b"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "validation": {
+    "methods": [],
+    "metrics": [],
+    "results": [],
+    "sensitivity_analysis": [],
+    "robustness_checks": [],
+    "evidence_ids": []
+  },
+  "limitations": [
+    "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+  ],
+  "innovations": [],
+  "case": {
+    "id": "case-topsis-25a5ee8f11",
+    "title": "基于熵权-TOPSIS与最短路径的应急设施评价示例",
+    "domain": "unknown",
+    "competition": "",
+    "year": null,
+    "award": "",
+    "problem_id": "",
+    "problem_fingerprint": {
+      "problem_types": [
+        "indicator_weighting",
+        "objective_weighting",
+        "ranking",
+        "scoring",
+        "multi_criteria_decision"
+      ],
+      "data_types": [],
+      "targets": [],
+      "constraints": [],
+      "domain_keywords": []
+    },
+    "subproblem_mapping": [
+      {
+        "subproblem_id": "Q1",
+        "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "model_ids": [
+          "model-entropyweightmethod-253909652b",
+          "model-topsis-8da9a0ca06"
+        ],
+        "algorithm_ids": [
+          "algorithm-dijkstraalgorithm-c1bad58445"
+        ],
+        "data_flow": "",
+        "rationale": "启发式占位映射",
+        "evidence_ids": []
+      }
+    ],
+    "results": [],
+    "transferable_insights": [
+      "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+    ],
+    "pitfalls": [
+      "仅根据名称命中可能产生误判。"
+    ],
+    "innovations": [],
+    "evidence_ids": []
+  },
+  "code_recipes": [],
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton."
+    ],
+    "review_required": true
+  }
+}

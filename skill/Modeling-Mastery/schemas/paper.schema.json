@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modeling-mastery.local/schemas/paper.schema.json",
+  "title": "Modeling-Mastery Paper IR",
+  "type": "object",
+  "required": ["schema_version", "paper_id", "source", "bibliographic", "problem", "evidence", "models", "algorithms", "case", "quality"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "paper_id": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "required": ["path", "sha256", "parser", "parsed_at"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string"},
+        "parser": {"type": "string", "enum": ["mineru", "docling", "pymupdf", "markdown", "unknown"]},
+        "parsed_at": {"type": "string", "format": "date-time"},
+        "normalized_markdown": {"type": "string", "default": ""},
+        "structure_json": {"type": "string", "default": ""}
+      }
+    },
+    "bibliographic": {
+      "type": "object",
+      "required": ["title", "authors", "keywords"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string"},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "year": {"type": ["integer", "null"]},
+        "competition": {"type": "string", "default": ""},
+        "award": {"type": "string", "default": ""},
+        "problem_id": {"type": "string", "default": ""},
+        "abstract": {"type": "string", "default": ""},
+        "keywords": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "language": {"type": "string", "default": "zh-CN"}
+      }
+    },
+    "problem": {
+      "type": "object",
+      "required": ["background", "overall_objective", "subproblems"],
+      "additionalProperties": false,
+      "properties": {
+        "background": {"type": "string"},
+        "overall_objective": {"type": "string"},
+        "subproblems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "statement", "task_types"],
+            "additionalProperties": false,
+            "properties": {
+              "id": {"type": "string"},
+              "statement": {"type": "string"},
+              "task_types": {"type": "array", "items": {"type": "string"}},
+              "inputs": {"type": "array", "items": {"type": "string"}, "default": []},
+              "outputs": {"type": "array", "items": {"type": "string"}, "default": []},
+              "constraints": {"type": "array", "items": {"type": "string"}, "default": []},
+              "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+            }
+          }
+        }
+      }
+    },
+    "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "assumptions": {"type": "array", "items": {"$ref": "#/$defs/assumption"}, "default": []},
+    "variables": {"type": "array", "items": {"$ref": "#/$defs/variable"}, "default": []},
+    "data": {"$ref": "#/$defs/dataProfile"},
+    "modeling_chain": {"type": "array", "items": {"$ref": "#/$defs/modelingStep"}, "default": []},
+    "models": {"type": "array", "items": {"$ref": "model.schema.json"}},
+    "algorithms": {"type": "array", "items": {"$ref": "algorithm.schema.json"}},
+    "validation": {"$ref": "#/$defs/validation"},
+    "limitations": {"type": "array", "items": {"type": "string"}, "default": []},
+    "innovations": {"type": "array", "items": {"type": "string"}, "default": []},
+    "case": {"$ref": "case.schema.json"},
+    "code_recipes": {"type": "array", "items": {"$ref": "code.schema.json"}, "default": []},
+    "quality": {
+      "type": "object",
+      "required": ["evidence_coverage", "completeness", "code_reproducibility", "warnings"],
+      "additionalProperties": false,
+      "properties": {
+        "evidence_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+        "completeness": {"type": "number", "minimum": 0, "maximum": 1},
+        "code_reproducibility": {"type": "number", "minimum": 0, "maximum": 1},
+        "warnings": {"type": "array", "items": {"type": "string"}},
+        "review_required": {"type": "boolean", "default": true}
+      }
+    }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "string",
+      "enum": ["PAPER_EXPLICIT", "PAPER_DERIVED", "AI_INFERRED", "EXTERNAL_REFERENCE", "HEURISTIC"]
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["id", "kind", "locator", "quote", "provenance", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {"type": "string", "enum": ["text", "section", "equation", "figure", "table", "code", "metadata"]},
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "section": {"type": "string", "default": ""},
+        "label": {"type": "string", "default": ""},
+        "locator": {"type": "string"},
+        "quote": {"type": "string"},
+        "char_start": {"type": ["integer", "null"], "minimum": 0},
+        "char_end": {"type": ["integer", "null"], "minimum": 0},
+        "content_hash": {"type": "string", "default": ""},
+        "provenance": {"$ref": "#/$defs/provenance"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "assumption": {
+      "type": "object",
+      "required": ["id", "statement", "rationale", "provenance"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string"},
+        "statement": {"type": "string"},
+        "rationale": {"type": "string"},
+        "impact": {"type": "string", "default": ""},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      }
+    },
+    "variable": {
+      "type": "object",
+      "required": ["symbol", "meaning", "data_type", "provenance"],
+      "additionalProperties": false,
+      "properties": {
+        "symbol": {"type": "string"},
+        "meaning": {"type": "string"},
+        "unit": {"type": "string", "default": ""},
+        "domain": {"type": "string", "default": ""},
+        "data_type": {"type": "string", "enum": ["scalar", "vector", "matrix", "tensor", "set", "categorical", "unknown"]},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []},
+        "provenance": {"$ref": "#/$defs/provenance"}
+      }
+    },
+    "dataProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sources": {"type": "array", "items": {"type": "string"}, "default": []},
+        "fields": {"type": "array", "items": {"type": "string"}, "default": []},
+        "data_types": {"type": "array", "items": {"type": "string"}, "default": []},
+        "preprocessing": {"type": "array", "items": {"type": "string"}, "default": []},
+        "missing_value_strategy": {"type": "string", "default": ""},
+        "outlier_strategy": {"type": "string", "default": ""},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+      },
+      "default": {"sources": [], "fields": [], "data_types": [], "preprocessing": [], "missing_value_strategy": "", "outlier_strategy": "", "evidence_ids": []}
+    },
+    "modelingStep": {
+      "type": "object",
+      "required": ["order", "subproblem_id", "model_id", "input", "output", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "order": {"type": "integer", "minimum": 1},
+        "subproblem_id": {"type": "string"},
+        "model_id": {"type": "string"},
+        "algorithm_ids": {"type": "array", "items": {"type": "string"}, "default": []},
+        "input": {"type": "string"},
+        "output": {"type": "string"},
+        "rationale": {"type": "string"},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "methods": {"type": "array", "items": {"type": "string"}, "default": []},
+        "metrics": {"type": "array", "items": {"type": "string"}, "default": []},
+        "results": {"type": "array", "items": {"type": "string"}, "default": []},
+        "sensitivity_analysis": {"type": "array", "items": {"type": "string"}, "default": []},
+        "robustness_checks": {"type": "array", "items": {"type": "string"}, "default": []},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+      },
+      "default": {"methods": [], "metrics": [], "results": [], "sensitivity_analysis": [], "robustness_checks": [], "evidence_ids": []}
+    }
+  }
+}

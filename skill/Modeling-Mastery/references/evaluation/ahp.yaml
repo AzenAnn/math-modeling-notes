@@ -1,0 +1,21 @@
+kind: model
+canonical_name: AHP
+aliases: [层次分析法, Analytic Hierarchy Process]
+category: evaluation
+task_types: [subjective_weighting, multi_criteria_decision]
+role: 将复杂决策分层，并由成对比较矩阵得到主观权重
+description: 通过目标层、准则层和方案层结构组织决策，利用判断矩阵特征向量计算权重，并进行一致性检验。
+workflow:
+  - 建立层次结构
+  - 构造两两比较判断矩阵
+  - 计算权重向量
+  - 完成一致性检验
+  - 汇总层级权重
+strengths: [结构清晰, 可融合专家判断, 解释性强]
+weaknesses: [主观性强, 指标多时比较负担大, 判断矩阵可能不一致]
+use_when: [定性与定量因素混合, 可获得专家判断]
+avoid_when: [缺少可信专家, 指标数量过多]
+alternatives: [Entropy Weight Method, CRITIC]
+combinations: [TOPSIS, Fuzzy Comprehensive Evaluation]
+complexity: {time: "O(m^3)", space: "O(m^2)", notes: 主要来自特征值分解}
+validation_methods: [一致性比率 CR, 专家权重敏感性]

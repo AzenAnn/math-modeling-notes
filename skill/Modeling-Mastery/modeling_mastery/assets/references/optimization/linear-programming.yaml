@@ -1,0 +1,26 @@
+kind: model
+canonical_name: Linear Programming
+aliases: [线性规划, LP]
+category: optimization
+task_types: [allocation, scheduling, minimization, maximization]
+role: 在线性目标和线性约束下求最优决策变量
+inputs:
+  - {name: objective_coefficients, description: 目标函数系数, shape: "n", unit: "", required: true}
+  - {name: constraint_matrix, description: 约束系数矩阵, shape: "m×n", unit: "", required: true}
+outputs:
+  - {name: decision_variables, description: 最优决策变量, shape: "n", unit: "", required: true}
+  - {name: objective_value, description: 最优目标值, shape: scalar, unit: "", required: true}
+workflow:
+  - 定义决策变量及单位
+  - 写出目标函数
+  - 将业务规则转换为线性约束
+  - 检查可行域与变量边界
+  - 调用求解器并解释影子价格或松弛量
+strengths: [可获得全局最优, 求解器成熟, 解释性较强]
+weaknesses: [要求线性, 整数决策需扩展为 MILP, 对参数误差可能敏感]
+use_when: [目标和约束可线性表达, 决策变量连续]
+avoid_when: [明显非线性关系无法合理线性化]
+alternatives: [Integer Programming, Nonlinear Programming]
+combinations: [Sensitivity Analysis, Scenario Analysis]
+complexity: {time: "problem-dependent", space: "O(mn)", notes: 单纯形法最坏指数级，内点法有多项式界}
+validation_methods: [可行性检查, 对偶/松弛分析, 参数敏感性]

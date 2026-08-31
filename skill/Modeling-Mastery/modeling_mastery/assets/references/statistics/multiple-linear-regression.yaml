@@ -1,0 +1,20 @@
+kind: model
+canonical_name: Multiple Linear Regression
+aliases: [多元线性回归, 线性回归, MLR]
+category: statistics
+task_types: [regression, estimation, explanation, prediction]
+role: 估计多个解释变量与连续响应变量之间的线性关系
+workflow:
+  - 明确响应变量和解释变量
+  - 清洗数据并检查缺失和异常
+  - 拟合最小二乘模型
+  - 检查显著性、残差和共线性
+  - 进行交叉验证或留出验证
+strengths: [可解释, 基线强, 计算快]
+weaknesses: [依赖线性和误差假设, 对异常值和共线性敏感]
+use_when: [响应连续, 关系可近似线性, 需要解释系数]
+avoid_when: [强非线性, 高维小样本且无正则化]
+alternatives: [Ridge Regression, Lasso, Random Forest]
+combinations: [VIF, Residual Analysis, Feature Selection]
+complexity: {time: "O(np^2+p^3)", space: "O(np)", notes: n 样本数，p 特征数}
+validation_methods: [R²/Adjusted R², RMSE/MAE, 残差诊断, VIF, 交叉验证]

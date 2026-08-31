@@ -1,0 +1,22 @@
+kind: algorithm
+canonical_name: Monte Carlo Sampling
+aliases: [蒙特卡洛采样, 随机采样算法]
+category: simulation
+purpose: 从指定分布重复采样并估计统计量
+inputs: [random distributions, sample size, simulation function, seed]
+outputs: [samples, estimates, uncertainty intervals]
+pseudocode:
+  - 初始化可复现随机数生成器
+  - 从输入联合分布生成样本
+  - 批量或流式运行仿真函数
+  - 累积目标统计量
+  - 计算标准误、分位数或置信区间
+  - 增加样本量并检查收敛
+parameters:
+  - {name: sample_size, value: null, description: 模拟次数, range: "accuracy-dependent", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: seed, value: null, description: 随机种子, range: integer, evidence_ids: [], provenance: AI_INFERRED}
+stopping_criteria: [达到样本量, 估计标准误低于阈值]
+complexity: {time: "O(N·C_f)", space: "O(N) or O(1) streaming", notes: ""}
+randomness: {uses_randomness: true, seed_required: true, notes: 报告随机数生成器和 seed}
+implementation_notes: [优先使用向量化或分批计算, 记录置信区间]
+failure_modes: [样本量不足, 错误独立性假设, 极端尾部事件采样不足]

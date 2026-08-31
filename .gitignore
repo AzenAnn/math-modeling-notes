@@ -17,3 +17,6 @@ venv/
 
 # MATLAB 自动备份
 *.asv
+
+# 文档处理中间文件
+tmp/

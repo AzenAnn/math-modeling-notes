@@ -1,0 +1,18 @@
+kind: algorithm
+canonical_name: Dijkstra Algorithm
+aliases: [Dijkstra, 迪杰斯特拉算法]
+category: graph
+purpose: 计算非负边权图中的单源最短路径
+inputs: [weighted graph with nonnegative edges, source vertex]
+outputs: [distance array, predecessor array]
+pseudocode:
+  - 将源点距离设为 0，其余为无穷大
+  - 将所有候选节点加入最小优先队列
+  - 取出当前距离最小的未确定节点
+  - 松弛该节点的所有出边
+  - 队列为空或目标点确定后结束
+stopping_criteria: [优先队列为空, 目标节点被确定]
+complexity: {time: "O((V+E) log V)", space: "O(V+E)", notes: 使用邻接表与二叉堆}
+randomness: {uses_randomness: false, seed_required: false, notes: ""}
+implementation_notes: [遇到过期堆条目时跳过, 使用前检查负权边, 保存 predecessor 还原路径]
+failure_modes: [图中存在负权边, 无穷大设置溢出, 有向/无向边处理错误]

@@ -1,0 +1,24 @@
+kind: algorithm
+canonical_name: Genetic Algorithm
+aliases: [遗传算法, GA]
+category: optimization
+purpose: 通过选择、交叉和变异在复杂搜索空间中寻找近似最优解
+inputs: [fitness function, encoding, constraints, population settings]
+outputs: [best solution, best fitness, convergence history]
+pseudocode:
+  - 初始化种群并修复不可行个体
+  - 计算适应度
+  - 根据选择策略生成父代
+  - 执行交叉与变异
+  - 进行精英保留与约束处理
+  - 达到停止条件后输出最优个体
+parameters:
+  - {name: population_size, value: null, description: 种群规模, range: "paper-specific", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: crossover_rate, value: null, description: 交叉概率, range: "[0,1]", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: mutation_rate, value: null, description: 变异概率, range: "[0,1]", evidence_ids: [], provenance: AI_INFERRED}
+initialization: 按编码和约束生成初始可行种群
+stopping_criteria: [最大迭代数, 连续若干代最优值无改进]
+complexity: {time: "O(G·P·C_f)", space: "O(P·d)", notes: G 迭代数，P 种群规模，C_f 适应度计算代价}
+randomness: {uses_randomness: true, seed_required: true, notes: 固定 seed 并多次独立运行}
+implementation_notes: [约束处理必须明确, 保存收敛曲线, 多次运行报告均值和方差]
+failure_modes: [早熟收敛, 编码不合理, 适应度尺度失衡, 参数未报告]

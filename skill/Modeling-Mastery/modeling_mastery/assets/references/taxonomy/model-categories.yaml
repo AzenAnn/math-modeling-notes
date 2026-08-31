@@ -1,0 +1,40 @@
+- id: evaluation
+  name: 综合评价与决策
+  typical_tasks: [ranking, scoring, multi_criteria_decision, indicator_weighting]
+  typical_models: [AHP, Entropy Weight Method, CRITIC, TOPSIS, PCA Composite Evaluation]
+- id: optimization
+  name: 优化
+  typical_tasks: [minimization, maximization, scheduling, allocation, routing]
+  typical_models: [Linear Programming, Integer Programming, Nonlinear Programming, Multi-objective Optimization]
+- id: prediction
+  name: 预测
+  typical_tasks: [forecasting, regression, time_series, trend_extrapolation]
+  typical_models: [Multiple Linear Regression, ARIMA, Grey GM(1,1)]
+- id: statistics
+  name: 统计推断
+  typical_tasks: [estimation, hypothesis_testing, correlation, uncertainty]
+  typical_models: [Regression, Hypothesis Testing, Bootstrap]
+- id: graph
+  name: 图与网络
+  typical_tasks: [shortest_path, connectivity, centrality, flow, matching]
+  typical_models: [Shortest Path Model, Maximum Flow, Minimum Spanning Tree]
+- id: simulation
+  name: 仿真与随机模拟
+  typical_tasks: [uncertainty_propagation, stochastic_process, scenario_analysis]
+  typical_models: [Monte Carlo Simulation, Discrete Event Simulation, Cellular Automata]
+- id: mechanism
+  name: 机理模型
+  typical_tasks: [differential_equation, conservation_law, dynamical_system]
+  typical_models: [ODE, PDE, Compartment Model]
+- id: clustering
+  name: 聚类与分群
+  typical_tasks: [segmentation, unsupervised_learning, pattern_discovery]
+  typical_models: [K-Means, Hierarchical Clustering, DBSCAN]
+- id: machine_learning
+  name: 机器学习
+  typical_tasks: [classification, regression, feature_learning]
+  typical_models: [Random Forest, SVM, Neural Network]
+- id: game_theory
+  name: 博弈论
+  typical_tasks: [strategy, equilibrium, competition, cooperation]
+  typical_models: [Nash Equilibrium, Evolutionary Game]

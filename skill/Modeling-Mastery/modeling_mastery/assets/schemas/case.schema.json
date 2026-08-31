@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modeling-mastery.local/schemas/case.schema.json",
+  "title": "Competition Case Card",
+  "type": "object",
+  "required": ["id", "title", "domain", "problem_fingerprint", "subproblem_mapping", "transferable_insights"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "domain": {"type": "string"},
+    "competition": {"type": "string", "default": ""},
+    "year": {"type": ["integer", "null"]},
+    "award": {"type": "string", "default": ""},
+    "problem_id": {"type": "string", "default": ""},
+    "problem_fingerprint": {
+      "type": "object",
+      "required": ["problem_types", "data_types", "targets"],
+      "additionalProperties": false,
+      "properties": {
+        "problem_types": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "data_types": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "targets": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "constraints": {"type": "array", "items": {"type": "string"}, "default": []},
+        "domain_keywords": {"type": "array", "items": {"type": "string"}, "default": []}
+      }
+    },
+    "subproblem_mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subproblem_id", "task", "model_ids", "algorithm_ids"],
+        "additionalProperties": false,
+        "properties": {
+          "subproblem_id": {"type": "string"},
+          "task": {"type": "string"},
+          "model_ids": {"type": "array", "items": {"type": "string"}},
+          "algorithm_ids": {"type": "array", "items": {"type": "string"}},
+          "data_flow": {"type": "string", "default": ""},
+          "rationale": {"type": "string", "default": ""},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+        }
+      }
+    },
+    "results": {"type": "array", "items": {"type": "string"}, "default": []},
+    "transferable_insights": {"type": "array", "items": {"type": "string"}},
+    "pitfalls": {"type": "array", "items": {"type": "string"}, "default": []},
+    "innovations": {"type": "array", "items": {"type": "string"}, "default": []},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "default": []}
+  }
+}

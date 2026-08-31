@@ -1,0 +1,22 @@
+kind: algorithm
+canonical_name: Particle Swarm Optimization
+aliases: [粒子群优化, 粒子群算法, PSO]
+category: optimization
+purpose: 利用个体最优和群体最优引导连续空间搜索
+inputs: [objective function, bounds, swarm settings]
+outputs: [global best position, global best value, history]
+pseudocode:
+  - 初始化粒子位置与速度
+  - 计算每个粒子的目标值
+  - 更新个体最优与全局最优
+  - 更新速度和位置并执行边界处理
+  - 达到停止条件后返回全局最优
+parameters:
+  - {name: inertia_weight, value: null, description: 惯性权重, range: "paper-specific", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: cognitive_coefficient, value: null, description: 个体学习因子, range: "paper-specific", evidence_ids: [], provenance: AI_INFERRED}
+  - {name: social_coefficient, value: null, description: 社会学习因子, range: "paper-specific", evidence_ids: [], provenance: AI_INFERRED}
+stopping_criteria: [最大迭代数, 全局最优长期无改进]
+complexity: {time: "O(G·P·C_f)", space: "O(P·d)", notes: ""}
+randomness: {uses_randomness: true, seed_required: true, notes: 固定 seed 并报告多次运行}
+implementation_notes: [边界处理方式必须说明, 记录收敛曲线]
+failure_modes: [群体过早聚集, 速度爆炸, 参数尺度与变量范围不匹配]
