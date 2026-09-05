@@ -1,0 +1,54 @@
+{
+  "paper": {
+    "code": "E061",
+    "title": "基于多目标优化的交通管理评估分析",
+    "pages": 32,
+    "source_file": "E061.pdf",
+    "title_source": "page_1"
+  },
+  "finished_at": "2026-09-04T18:08:24+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 46,
+    "models": 0,
+    "algorithms": 1,
+    "vault_notes": 4
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/基于多目标优化的交通管理评估分析.md",
+      "40_Competition-Cases/基于多目标优化的交通管理评估分析-案例.md",
+      "20_Algorithms/optimization/Particle Swarm Optimization.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\知识库",
+    "note_count": 3,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\知识库",
+    "note_count": 4,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

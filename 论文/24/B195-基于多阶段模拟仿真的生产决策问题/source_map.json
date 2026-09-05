@@ -1,0 +1,2114 @@
+{
+  "paper": {
+    "title": "基于多阶段模拟仿真的生产决策问题",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\B195.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P003-fb035b701b",
+      "page": 3,
+      "type": "text",
+      "order": 1,
+      "original_text": "产品数 ( 假设 ), 可以考虑生成一组正态分布数据 , 并根据标准正态分布、 给定的次品率得到",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P004-fe346f825e",
+      "page": 4,
+      "type": "text",
+      "order": 2,
+      "original_text": "(1) 假设零件的次品和正品随机分布 , 以避免次品的集中扎堆情形、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P004-61756e7d91",
+      "page": 4,
+      "type": "text",
+      "order": 3,
+      "original_text": "(2) 假设半成品和产品的制作过程中 , 由于工艺出现次品的概率是随机的。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P004-1dfafb53c0",
+      "page": 4,
+      "type": "text",
+      "order": 4,
+      "original_text": "(4) 假设若不能回收零件、 半成品和产品的次品 , 则直接丢弃不会造成环境污染等回收",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P004-d534af5e76",
+      "page": 4,
+      "type": "text",
+      "order": 5,
+      "original_text": "(5) 假设生产环境中的多个环节都会影响半成品、 成品的次品率 , 但均抽象成一个次品",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P004-b095b27a7c",
+      "page": 4,
+      "type": "text",
+      "order": 6,
+      "original_text": "(6) 假设生产规模较大 , 本文仿真起始均使用 10000 套零件。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P006-a269900cda",
+      "page": 6,
+      "type": "text",
+      "order": 7,
+      "original_text": "首先假设样本总数为 100000, 次品率为 0.11。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P006-59c77070da",
+      "page": 6,
+      "type": "text",
+      "order": 8,
+      "original_text": "对于正态分布数据 , 采用 z 检验和零检验假设 , 并设定 a 值作为判据 , 且",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P006-167720fbae",
+      "page": 6,
+      "type": "text",
+      "order": 9,
+      "original_text": "同理 , 假设次品率为 0.09, 如果棠抽样方法理想 , 得出的结果应为 : 没有足够证据认为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P018-0f78487924",
+      "page": 18,
+      "type": "text",
+      "order": 10,
+      "original_text": "假设若根据简单随机抽样得到某次品率 , 可以使用贝叶斯统计推断来估计零件的真实次",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P019-ad9f1077d5",
+      "page": 19,
+      "type": "text",
+      "order": 11,
+      "original_text": "首先假设真实的次品率服从 Beta 分布 , 即先验分布。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P031-7df8661d23",
+      "page": 31,
+      "type": "text",
+      "order": 12,
+      "original_text": "e £ print “ 拒细霁假设 : 卯认为有 958 的把提认为次品率低于 10%5“)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P031-7a910a85ed",
+      "page": 31,
+      "type": "text",
+      "order": 13,
+      "original_text": "sl Print(“ 接受零假设 : 卿没有足够的证据认为次品主大于 10 刊 “",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P001-a6a7272be0",
+      "page": 1,
+      "type": "text",
+      "order": 14,
+      "original_text": "望、 贝叶斯理论等数理统计方法 , 建立多阶段优化模型 , 运用模拟仿真、 线性模拟退火算法完成了",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P001-d40129b760",
+      "page": 1,
+      "type": "text",
+      "order": 15,
+      "original_text": "结果表明实际应用过程中经常使用的 (n, o) 抽样法给优 ( 判断 n 件产品中次口数是否超",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P002-9110306ef9",
+      "page": 2,
+      "type": "text",
+      "order": 16,
+      "original_text": "请建立数学模型优化其生产过",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P003-ddfcbd043e",
+      "page": 3,
+      "type": "text",
+      "order": 17,
+      "original_text": "由此可以考忠采用实际应用过程中经常使用的 (n,c) 抽样法 , 该法同时具有国家标准 , 具",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P009-7c128bc3c7",
+      "page": 9,
+      "type": "text",
+      "order": 18,
+      "original_text": "结果表朋实际应用过程中经常使用的 (n,c) 抽样法较简单随机抽样优 ((m,c) 数对的意思",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P014-f5c7fc0221",
+      "page": 14,
+      "type": "text",
+      "order": 19,
+      "original_text": "对于多变量决策问题 , 可以采用模拟退火算法来优化变量矩阵 X, 对于某个 X, 每一轮",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P018-32cb47c7fb",
+      "page": 18,
+      "type": "text",
+      "order": 20,
+      "original_text": "求解过程依旧采用退火算法 ( 设置初始零件为 10000 套 ), 求得最优结果如下",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P021-8cf9314e15",
+      "page": 21,
+      "type": "text",
+      "order": 21,
+      "original_text": "(2) 问题三更改了模拟退火算法中一些关键函数 , 从而可以使用优化后的遗传算法 , 即",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P021-cae2a6c04d",
+      "page": 21,
+      "type": "text",
+      "order": 22,
+      "original_text": "(3) 预期在这两个算法的基础上 , 使用最速粒子群算法得到一个更好的快速迭代方法 -",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P021-139ed4b9af",
+      "page": 21,
+      "type": "text",
+      "order": 23,
+      "original_text": "(2) 模型的灵敏性 : 问题一使用模拟退火算法可以收敛到局部最优解 ; 通过多次使用模",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P022-db9efe1b39",
+      "page": 22,
+      "type": "text",
+      "order": 24,
+      "original_text": "舫在生产中会优先使用检测出来的正品 , 但模型中存在检测到的是正品 , 又对其拆解的情况。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P032-c09629a4c6",
+      "page": 32,
+      "type": "text",
+      "order": 25,
+      "original_text": "木此处使用法一 〔 全稚国定 ) 选行循环处理",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P053-4f7543fd20",
+      "page": 53,
+      "type": "text",
+      "order": 26,
+      "original_text": "朱此处使用法一 〔 全程国定 ) 进行榆环处理",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P053-5c1894120b",
+      "page": 53,
+      "type": "text",
+      "order": 27,
+      "original_text": "非 print [“ 此处使用法一 〔 全程图定 ) 迹行冒环处理 “)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P001-0ff29a5647",
+      "page": 1,
+      "type": "text",
+      "order": 28,
+      "original_text": "本文绍合侃设检验、 收益翟",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P001-e8e3fee25e",
+      "page": 1,
+      "type": "text",
+      "order": 29,
+      "original_text": "列出情形一的答案如下 : 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P001-db78f54fa8",
+      "page": 1,
+      "type": "text",
+      "order": 30,
+      "original_text": "司格成口进行拆解 , 不检验拆解后得到的零配件 1, 检验拆解后得到的零配件 2。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P001-4e6af11d07",
+      "page": 1,
+      "type": "text",
+      "order": 31,
+      "original_text": "可能决策方案 , 得到两个最优的决策矩阵 (1 代表检验或拆根 ,0 代表不检验或不拆解 ) 和浑盈利",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P002-faba3ced88",
+      "page": 2,
+      "type": "text",
+      "order": 32,
+      "original_text": "到生产过程的监控、 检验和测试 , 以确保产品的质量可靠。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-TEXT-P003-4c88bafddf",
+      "page": 3,
+      "type": "text",
+      "order": 33,
+      "original_text": "用整群抽样 , 即以箱为单位划分产品 , 对部分箱子运用简单随机抽样或全部进行检验 ( 取决",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-TEXT-P004-ab3c25db5b",
+      "page": 4,
+      "type": "text",
+      "order": 34,
+      "original_text": "数 , 即是否检验 , 对于三种半成品、 成品存在是否拆解的决策参数、 第一次循环拆解成品后",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-TEXT-P004-efad2220be",
+      "page": 4,
+      "type": "text",
+      "order": 35,
+      "original_text": "得到的半成品、 组装成成品前剩下的半成品 ( 已检验或未检验 )、 组装成半成品前剩下的零",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-TEXT-P004-6de63b74dc",
+      "page": 4,
+      "type": "text",
+      "order": 36,
+      "original_text": "件 ( 已检验或未检验 ) 则进人第二个循环 , 得到第二个盈利值 , 最后得到次品并重新进入循",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-TEXT-P005-f548b3c2b9",
+      "page": 5,
+      "type": "text",
+      "order": 37,
+      "original_text": "自行生成产品数据进行模拟检验、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-TEXT-P005-5c99e3df85",
+      "page": 5,
+      "type": "text",
+      "order": 38,
+      "original_text": "箱 , 对这些箱内的产品全部进行检验。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-TEXT-P006-1901ac42a5",
+      "page": 6,
+      "type": "text",
+      "order": 39,
+      "original_text": "对于三种抽样方法 , 抽样比仍为 0.1, 所得次品数分别为 872、899、908,z 检验下所得结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-TEXT-P007-06181cbd2c",
+      "page": 7,
+      "type": "text",
+      "order": 40,
+      "original_text": "从整批产品中随机抽取 n 件产品进行检验 ( 即检验次数为 n) , 其中次品的件数记为 v。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-TEXT-P007-be6bf5eb52",
+      "page": 7,
+      "type": "text",
+      "order": 41,
+      "original_text": "即对给定的、Pl、a、, 给出检验次数 n、 检验判据 c, 使之滢足以上两个约束条件。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-TEXT-P008-b4308d277f",
+      "page": 8,
+      "type": "text",
+      "order": 42,
+      "original_text": "人为规定误差为 1%, 那么可以列出",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TEXT-P010-0f8ee3d99e",
+      "page": 10,
+      "type": "text",
+      "order": 43,
+      "original_text": "对于决策 1, 有四种情况 , 即两种零配件都检验、 都不检验、 只检验零配件 1、 只检验零",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TEXT-P010-d4821f0624",
+      "page": 10,
+      "type": "text",
+      "order": 44,
+      "original_text": "并对每项决策都设计检验参数来模拟是否检验产品。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TEXT-P010-426c43523b",
+      "page": 10,
+      "type": "text",
+      "order": 45,
+      "original_text": "对于零配件 1, 其检验参数设为 z1, 其值为 1 则对零配件 1 检验 , 其值为 0 则不对零配",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TEXT-P010-7826ccec63",
+      "page": 10,
+      "type": "text",
+      "order": 46,
+      "original_text": "对于零配件 2, 其检验参数设为 z2, 意义同理 ;",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-TEXT-P010-6dcb758ddc",
+      "page": 10,
+      "type": "text",
+      "order": 47,
+      "original_text": "成品的检验参数设为 zs, 由于决策 2 考虑的是每件成品 , 故该参数应为介于 0 到 1 中",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-TEXT-P010-85243289d4",
+      "page": 10,
+      "type": "text",
+      "order": 48,
+      "original_text": "的菪个值 , 其实际意义为对占比为 zs 的成品进行检验。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-TEXT-P012-e5b86f211e",
+      "page": 12,
+      "type": "text",
+      "order": 49,
+      "original_text": "5.2.4 生产过程中检验与否的讨论",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-TEXT-P014-a5cad4376f",
+      "page": 14,
+      "type": "text",
+      "order": 50,
+      "original_text": "z 二是否对零件 1 进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-TEXT-P014-b126bbdc10",
+      "page": 14,
+      "type": "text",
+      "order": 51,
+      "original_text": "z 二是否对零件 2 进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-TEXT-P014-ffa2d156e2",
+      "page": 14,
+      "type": "text",
+      "order": 52,
+      "original_text": "zs 二是否对成品进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-TEXT-P014-52594a1022",
+      "page": 14,
+      "type": "text",
+      "order": 53,
+      "original_text": "z 二是否对检验过的成品中的次品进行拆解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-TEXT-P014-adf0c8ba9e",
+      "page": 14,
+      "type": "text",
+      "order": 54,
+      "original_text": "z5 二是否对拆解后得到的零件 1 进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-TEXT-P014-854b6db803",
+      "page": 14,
+      "type": "text",
+      "order": 55,
+      "original_text": "二是否对拆解后得到的零件 2 进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-TEXT-P015-af86b4fdfa",
+      "page": 15,
+      "type": "text",
+      "order": 56,
+      "original_text": "(1) 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不合格成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-TEXT-P015-16962c0652",
+      "page": 15,
+      "type": "text",
+      "order": 57,
+      "original_text": "验拆解后得到的零配件 1, 检验拆解后得到的零配件 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TEXT-P015-8ec4410e09",
+      "page": 15,
+      "type": "text",
+      "order": 58,
+      "original_text": "(2) 对零配件 1,2 都检验 , 不检验成品 , 对所有不合格成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-TEXT-P015-e30118bd6d",
+      "page": 15,
+      "type": "text",
+      "order": 59,
+      "original_text": "(3) 对零配件 1,2 都不检验 , 检验全部成品 , 对所有不合格成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-TEXT-P015-01b7f140a4",
+      "page": 15,
+      "type": "text",
+      "order": 60,
+      "original_text": "(4) 对零配件 1、2 都检验 , 检验全部成品 , 对所有不合格成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S061",
+      "evidence_id": "E-TEXT-P015-934d079934",
+      "page": 15,
+      "type": "text",
+      "order": 61,
+      "original_text": "(5) 不检验零配件 1, 只检验零配件 2, 检验全部成品 , 对所有不合格成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S062",
+      "evidence_id": "E-TEXT-P015-a8ae9f5a00",
+      "page": 15,
+      "type": "text",
+      "order": 62,
+      "original_text": "验拆解后得到的零配件 1, 不检验拆解后得到的零配件 2.",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S063",
+      "evidence_id": "E-TEXT-P015-f7abc7a1bd",
+      "page": 15,
+      "type": "text",
+      "order": 63,
+      "original_text": "(6) 对零配件 1、2 都不检验 , 不检验成品 , 不拆解所有不合格成品。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S064",
+      "evidence_id": "E-TEXT-P016-aa276da317",
+      "page": 16,
+      "type": "text",
+      "order": 64,
+      "original_text": "这些决策变量分别代表是否对 8 个零配件进行检验、 是否对 3 个半成品进行检验、 是否",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S065",
+      "evidence_id": "E-TEXT-P016-4e7e71cd6f",
+      "page": 16,
+      "type": "text",
+      "order": 65,
+      "original_text": "对成品进行检验、 是否对三个半成品进行拆解、 是否对成品进行拆解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S066",
+      "evidence_id": "E-TEXT-P017-9ccc5ccba0",
+      "page": 17,
+      "type": "text",
+      "order": 66,
+      "original_text": "成品同样分为正品和次品 ( 或者检验部分和不检验部分 )。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S067",
+      "evidence_id": "E-TEXT-P017-92e2dc81b1",
+      "page": 17,
+      "type": "text",
+      "order": 67,
+      "original_text": "每一步都包含是否检验的决策参",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S068",
+      "evidence_id": "E-TEXT-P017-b4fcecb36a",
+      "page": 17,
+      "type": "text",
+      "order": 68,
+      "original_text": "成品中加人第一次循环得到的多余半成品 , 并决定是否对这些半成品迹行检验和拆解 , 对拆",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S069",
+      "evidence_id": "E-TEXT-P017-f5ebfcd8ab",
+      "page": 17,
+      "type": "text",
+      "order": 69,
+      "original_text": "该决策 , 而是只对已经检验出来的半成品次品进行拆解 , 在第二次组成半成品时加人这些半",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S070",
+      "evidence_id": "E-TEXT-P017-c715292dc7",
+      "page": 17,
+      "type": "text",
+      "order": 70,
+      "original_text": "零件进行检验、 是否对 3 个半成品进行检验 )。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S071",
+      "evidence_id": "E-TEXT-P017-592cb98abc",
+      "page": 17,
+      "type": "text",
+      "order": 71,
+      "original_text": "品迹行检验 , 在第二次循环中不必进行再次检验 , 反之亦然。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S072",
+      "evidence_id": "E-TEXT-P017-b5c8de8436",
+      "page": 17,
+      "type": "text",
+      "order": 72,
+      "original_text": "件、 半成品、 成品进行检验 , 而是否拆解的决策重要性平不强。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S073",
+      "evidence_id": "E-TEXT-P022-a82c3e3f25",
+      "page": 22,
+      "type": "text",
+      "order": 73,
+      "original_text": "计数标准型一次抽样检验方案设计方法探讨 “ 薛议 GB/T 13262",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S074",
+      "evidence_id": "E-TEXT-P028-00105c0eb2",
+      "page": 28,
+      "type": "text",
+      "order": 74,
+      "original_text": "| 华截人数搬芯建检验数猝",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S075",
+      "evidence_id": "E-TEXT-P029-84fca8971a",
+      "page": 29,
+      "type": "text",
+      "order": 75,
+      "original_text": "s 干载人数据英建检验数据",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S076",
+      "evidence_id": "E-TEXT-P031-f35f43a1ac",
+      "page": 31,
+      "type": "text",
+      "order": 76,
+      "original_text": "usa| 林 print(“ 检验一 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S077",
+      "evidence_id": "E-TEXT-P031-afdd48cf5b",
+      "page": 31,
+      "type": "text",
+      "order": 77,
+      "original_text": "ss|# print (“ 检验二 “",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S078",
+      "evidence_id": "E-TEXT-P035-34e3e4b65f",
+      "page": 35,
+      "type": "text",
+      "order": 78,
+      "original_text": "183 彦 todo: 对于拆解册到的零件 , 此处讨论是否进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S079",
+      "evidence_id": "E-TEXT-P039-a15ecd7be2",
+      "page": 39,
+      "type": "text",
+      "order": 79,
+      "original_text": "#todo: 对于拆鲜得到皇雪件 , 化处讨论是否进行检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S080",
+      "evidence_id": "E-TEXT-P048-b33117715e",
+      "page": 48,
+      "type": "text",
+      "order": 80,
+      "original_text": "根 todo: 稠到当莲未检验举成品数目 , ( 多余与拆除之后 }",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S081",
+      "evidence_id": "E-TEXT-P065-a675e5422e",
+      "page": 65,
+      "type": "text",
+      "order": 81,
+      "original_text": "1 #todo: 得到当获未检验学或酝数目 , ( 多余与掀除之后 }",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S082",
+      "evidence_id": "E-FIGURE-P008-2e8f4df637",
+      "page": 8,
+      "type": "figure",
+      "order": 82,
+      "original_text": "图 1",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S083",
+      "evidence_id": "E-FIGURE-P009-92c9d423c9",
+      "page": 9,
+      "type": "figure",
+      "order": 83,
+      "original_text": "图 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S084",
+      "evidence_id": "E-FIGURE-P010-3f68d34f43",
+      "page": 10,
+      "type": "figure",
+      "order": 84,
+      "original_text": "图 3",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S085",
+      "evidence_id": "E-FIGURE-P012-38bb6caaaf",
+      "page": 12,
+      "type": "figure",
+      "order": 85,
+      "original_text": "图 4",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S086",
+      "evidence_id": "E-FIGURE-P016-b485b90cf6",
+      "page": 16,
+      "type": "figure",
+      "order": 86,
+      "original_text": "图 6",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S087",
+      "evidence_id": "E-FIGURE-P018-7a6b165f5f",
+      "page": 18,
+      "type": "figure",
+      "order": 87,
+      "original_text": "图 9",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S088",
+      "evidence_id": "E-FIGURE-P020-b62449be49",
+      "page": 20,
+      "type": "figure",
+      "order": 88,
+      "original_text": "图 10",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S089",
+      "evidence_id": "E-FIGURE-P036-01285caa3a",
+      "page": 36,
+      "type": "figure",
+      "order": 89,
+      "original_text": "sao| plt . title ( “ 糖报退火优化可裙图 1)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S090",
+      "evidence_id": "E-FIGURE-P040-c73a34f1b6",
+      "page": 40,
+      "type": "figure",
+      "order": 90,
+      "original_text": "s plt title ( “ 伯嘱锴环可祸图 1)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S091",
+      "evidence_id": "E-TABLE-P015-764831ce34",
+      "page": 15,
+      "type": "table",
+      "order": 91,
+      "original_text": "表 1",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S092",
+      "evidence_id": "E-TABLE-P018-de53c604cb",
+      "page": 18,
+      "type": "table",
+      "order": 92,
+      "original_text": "表 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S093",
+      "evidence_id": "E-TEXT-P022-030bcd650a",
+      "page": 22,
+      "type": "text",
+      "order": 93,
+      "original_text": "swap_n = quantile_value(l — alpha) = math.sqrt(p0 = (1 — p0)) — quantile_value(belta)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S014",
+        "S015",
+        "S028",
+        "S029",
+        "S030",
+        "S031"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S016",
+        "S032"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S001",
+        "S017",
+        "S033"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S002",
+        "S003",
+        "S004",
+        "S005",
+        "S006",
+        "S034",
+        "S035",
+        "S036"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S037",
+        "S038"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S007",
+        "S008",
+        "S009",
+        "S039"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S040",
+        "S041"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S042",
+        "S082"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S018",
+        "S083"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S043",
+        "S044",
+        "S045",
+        "S046",
+        "S047",
+        "S048",
+        "S084"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S049",
+        "S085"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": []
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S019",
+        "S050",
+        "S051",
+        "S052",
+        "S053",
+        "S054",
+        "S055"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S056",
+        "S057",
+        "S058",
+        "S059",
+        "S060",
+        "S061",
+        "S062",
+        "S063",
+        "S091"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S064",
+        "S065",
+        "S086"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S066",
+        "S067",
+        "S068",
+        "S069",
+        "S070",
+        "S071",
+        "S072"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S010",
+        "S020",
+        "S087",
+        "S092"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S011"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S088"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S021",
+        "S022",
+        "S023"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S024",
+        "S073",
+        "S093"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": []
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": [
+        "S074"
+      ]
+    },
+    {
+      "page": 29,
+      "block_ids": [
+        "S075"
+      ]
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": [
+        "S012",
+        "S013",
+        "S076",
+        "S077"
+      ]
+    },
+    {
+      "page": 32,
+      "block_ids": [
+        "S025"
+      ]
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": [
+        "S078"
+      ]
+    },
+    {
+      "page": 36,
+      "block_ids": [
+        "S089"
+      ]
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": [
+        "S079"
+      ]
+    },
+    {
+      "page": 40,
+      "block_ids": [
+        "S090"
+      ]
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": [
+        "S080"
+      ]
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": [
+        "S026",
+        "S027"
+      ]
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": []
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": []
+    },
+    {
+      "page": 59,
+      "block_ids": []
+    },
+    {
+      "page": 60,
+      "block_ids": []
+    },
+    {
+      "page": 61,
+      "block_ids": []
+    },
+    {
+      "page": 62,
+      "block_ids": []
+    },
+    {
+      "page": 63,
+      "block_ids": []
+    },
+    {
+      "page": 64,
+      "block_ids": []
+    },
+    {
+      "page": 65,
+      "block_ids": [
+        "S081"
+      ]
+    },
+    {
+      "page": 66,
+      "block_ids": []
+    },
+    {
+      "page": 67,
+      "block_ids": []
+    },
+    {
+      "page": 68,
+      "block_ids": []
+    },
+    {
+      "page": 69,
+      "block_ids": []
+    },
+    {
+      "page": 70,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Linear Programming",
+      "translation": "Linear Programming",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    },
+    {
+      "term": "Genetic Algorithm",
+      "translation": "Genetic Algorithm",
+      "note": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解"
+    },
+    {
+      "term": "Particle Swarm Optimization",
+      "translation": "Particle Swarm Optimization",
+      "note": "利用个体最优和群体最优引导连续空间搜索"
+    },
+    {
+      "term": "Simulated Annealing",
+      "translation": "Simulated Annealing",
+      "note": "允许以一定概率接受劣解，从而跳出局部最优"
+    }
+  ]
+}

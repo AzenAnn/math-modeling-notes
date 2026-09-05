@@ -125,7 +125,7 @@ python -m modeling_mastery skill-run "<input>" \
 - 单篇论文 workspace，缺省为 `<library-root>/论文/<论文题目>/workflow`；
 - 单篇论文 Vault，缺省为 `<library-root>/论文/<论文题目>/知识库`；
 - 只有共享建库任务才接受用户显式给出的独立 workspace 与 Vault；
-- PDF backend，缺省 `auto`；
+- PDF backend，缺省 `auto`；扫描件可显式使用 `pymupdf-ocr`；
 - 是否复现代码；
 - 语义引擎：`auto|codex|claude|API provider|none`；
 - 是否运行 pytest 和 Octave 检查。

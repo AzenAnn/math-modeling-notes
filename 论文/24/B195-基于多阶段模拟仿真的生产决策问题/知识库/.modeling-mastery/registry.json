@@ -1,0 +1,2476 @@
+{
+  "schema_version": "1.0.0",
+  "papers": {
+    "paper-2024-b195": {
+      "ir": {
+        "schema_version": "1.0.0",
+        "paper_id": "paper-2024-b195",
+        "source": {
+          "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\B195.pdf",
+          "sha256": "f87724ff3838f1be7bfdee09b7c2e7e60b34f13c953ec5291ffe3fa7bc952813",
+          "parser": "pymupdf-ocr",
+          "parsed_at": "2026-09-04T17:36:29+00:00",
+          "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B195-基于多阶段模拟仿真的生产决策问题\\workflow\\parsed\\normalized_paper.md",
+          "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B195-基于多阶段模拟仿真的生产决策问题\\workflow\\parsed\\paper_structure.json"
+        },
+        "bibliographic": {
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "authors": [],
+          "year": 2024,
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "award": "优秀论文",
+          "problem_id": "B",
+          "abstract": "企业生产过程中需要考虑次品押祥、 生产流程质量控制中的决策等问题。 这些是关乎企业效益 的极其经济价值的关键难题 , 而其本质上是一个多阶段策略优化问题。 本文绍合侃设检验、 收益翟 望、 贝叶斯理论等数理统计方法 , 建立多阶段优化模型 , 运用模拟仿真、 线性模拟退火算法完成了 模型汪解 , 得到了不间情况下的最优决策 .",
+          "keywords": [
+            "Linear Programming",
+            "Genetic Algorithm",
+            "Particle Swarm Optimization",
+            "Simulated Annealing"
+          ],
+          "language": "zh-CN"
+        },
+        "problem": {
+          "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=f87724ff3838f1be7bfdee09b7c2e7e60b34f13c953ec5291ffe3fa7bc952813 --> # 基于多阶段模拟仿真的生产决策问题 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 基于多阶段模拟仿真的生产决策问题 摘要 企业生产过程中需要考虑次品押祥、 生产流程质量控制中的决策等问题。 这些是关乎企业效益 的极其经济价值的关键难题 , 而其本质上是一个多阶段策略优化问题。 本文绍合侃设检验、 收益翟 望、 贝叶斯理论等数理统计方法 , 建立多阶段优化模型 , 运用模拟仿真、 线性模拟退火算法完成了 模型汪解 , 得到了不间情况下的最优决策 . 对于问题一 ( 以及之后的所有问题 ), 在计算机上进行模批仿真。 根据实际现象规律 , 生成一组 正态分布数摇 , 并根撷标准正态分布、 给定的次品率得到次口的数据范图 , 再比给不间的抽拮结果 得出优劣。 结果表明实际应用过程中经常使用的 (n, o) 抽样法给优 ( 判断 n 件产品中次口数是否超 过 c, 若超过则不接受 , 若不超过则接受 ), 该法同时具有国家标准 , 具有较好的可信度 . 本文采用 两种计算方法得出了一系列 (n,c) 值 , 列举一部分值如下 ; (1)(78, 12|.[85, 13):(2)(65,10],(65, 切 [78, 创 - 对于问题二 , 分析生产全流程 , 利用送代怡想将流程决策问题转化为多阶段问题 , 降低仿真难 度。 利用全概率公式考虑零件组合或为正品的概率 , 将拆",
+          "overall_objective": "启发式模式未可靠抽取总体目标。",
+          "subproblems": [
+            {
+              "id": "Q1",
+              "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "task_types": [
+                "allocation",
+                "scheduling",
+                "minimization",
+                "maximization"
+              ],
+              "inputs": [],
+              "outputs": [],
+              "constraints": [],
+              "evidence_ids": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "E-TEXT-P003-fb035b701b",
+            "kind": "text",
+            "page": 3,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:3402-3451",
+            "quote": "产品数 ( 假设 ), 可以考虑生成一组正态分布数据 , 并根据标准正态分布、 给定的次品率得到",
+            "char_start": 3402,
+            "char_end": 3451,
+            "content_hash": "fb035b701b13df7a631444697475648d8d2b2308657ce5fa194f6c8a3aa67317",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-fe346f825e",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:4973-5008",
+            "quote": "(1) 假设零件的次品和正品随机分布 , 以避免次品的集中扎堆情形、",
+            "char_start": 4973,
+            "char_end": 5008,
+            "content_hash": "fe346f825e0a3c957053fb9cca1cd4d3e8f81c1c1d2350533d0b86c400fcced1",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-61756e7d91",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:5009-5046",
+            "quote": "(2) 假设半成品和产品的制作过程中 , 由于工艺出现次品的概率是随机的。",
+            "char_start": 5009,
+            "char_end": 5046,
+            "content_hash": "61756e7d9117d497153c44c78ebebff37e8c0a3c4877d67a89b32116b547ce46",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-1dfafb53c0",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:5089-5133",
+            "quote": "(4) 假设若不能回收零件、 半成品和产品的次品 , 则直接丢弃不会造成环境污染等回收",
+            "char_start": 5089,
+            "char_end": 5133,
+            "content_hash": "1dfafb53c05a68ff7e49c0a8f7f6a3db43b9dfc6b7b8a42529d8797dae1a589b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-d534af5e76",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:5137-5181",
+            "quote": "(5) 假设生产环境中的多个环节都会影响半成品、 成品的次品率 , 但均抽象成一个次品",
+            "char_start": 5137,
+            "char_end": 5181,
+            "content_hash": "d534af5e76197fc5dab9215a9ec1afb9b6330d4d5048a7b7136bd636262e1fc9",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-b095b27a7c",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:5185-5220",
+            "quote": "(6) 假设生产规模较大 , 本文仿真起始均使用 10000 套零件。",
+            "char_start": 5185,
+            "char_end": 5220,
+            "content_hash": "b095b27a7cb2251d0a1bb7b5741266c2d5bc84c6079fdad44afe983e7a26075f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-a269900cda",
+            "kind": "text",
+            "page": 6,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:6138-6166",
+            "quote": "首先假设样本总数为 100000, 次品率为 0.11。",
+            "char_start": 6138,
+            "char_end": 6166,
+            "content_hash": "a269900cdabb7ba2755e14c20f5168da64b95e1a9ccdf91c036437a79c7d2cff",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-59c77070da",
+            "kind": "text",
+            "page": 6,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:6248-6292",
+            "quote": "对于正态分布数据 , 采用 z 检验和零检验假设 , 并设定 a 值作为判据 , 且",
+            "char_start": 6248,
+            "char_end": 6292,
+            "content_hash": "59c77070da8ad47c8a6cf78bb0766e8a80896dadf7534425252adc4790e677cd",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-167720fbae",
+            "kind": "text",
+            "page": 6,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:6608-6657",
+            "quote": "同理 , 假设次品率为 0.09, 如果棠抽样方法理想 , 得出的结果应为 : 没有足够证据认为",
+            "char_start": 6608,
+            "char_end": 6657,
+            "content_hash": "167720fbae58fb6dbbc12c3cb929150b38b9d8acbb27c79ccb0e5c224e3d4134",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-0f78487924",
+            "kind": "text",
+            "page": 18,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:15942-15983",
+            "quote": "假设若根据简单随机抽样得到某次品率 , 可以使用贝叶斯统计推断来估计零件的真实次",
+            "char_start": 15942,
+            "char_end": 15983,
+            "content_hash": "0f784879241ac66828b6ed91cf362487fb34332bb2a014c88e2987b08be795ef",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-ad9f1077d5",
+            "kind": "text",
+            "page": 19,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "assumption",
+            "locator": "char:16093-16122",
+            "quote": "首先假设真实的次品率服从 Beta 分布 , 即先验分布。",
+            "char_start": 16093,
+            "char_end": 16122,
+            "content_hash": "ad9f1077d593e6c4edf77baa638151b0ab84a7d9ae1625a47dea68d411fd3ba4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P031-7df8661d23",
+            "kind": "text",
+            "page": 31,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "assumption",
+            "locator": "char:31402-31449",
+            "quote": "e £ print “ 拒细霁假设 : 卯认为有 958 的把提认为次品率低于 10%5“)",
+            "char_start": 31402,
+            "char_end": 31449,
+            "content_hash": "7df8661d2376d1cd5a042af50ec3a1b6fb10a38699b621845ef89de58e77bd89",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P031-7a910a85ed",
+            "kind": "text",
+            "page": 31,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "assumption",
+            "locator": "char:31843-31885",
+            "quote": "sl Print(“ 接受零假设 : 卿没有足够的证据认为次品主大于 10 刊 “",
+            "char_start": 31843,
+            "char_end": 31885,
+            "content_hash": "7a910a85edc23ba6fea92f2ba114508cb12bb5ab2299d34fe93d42863aa9ea13",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-a6a7272be0",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:366-416",
+            "quote": "望、 贝叶斯理论等数理统计方法 , 建立多阶段优化模型 , 运用模拟仿真、 线性模拟退火算法完成了",
+            "char_start": 366,
+            "char_end": 416,
+            "content_hash": "a6a7272be0a1cc148749ea7754b72d73730ec668b72291b7b735dc52c86a628b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-d40129b760",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:544-593",
+            "quote": "结果表明实际应用过程中经常使用的 (n, o) 抽样法给优 ( 判断 n 件产品中次口数是否超",
+            "char_start": 544,
+            "char_end": 593,
+            "content_hash": "d40129b760c260580ad6aee21184503997fde3974024ea317960159f78e4dfd0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-9110306ef9",
+            "kind": "text",
+            "page": 2,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:2159-2174",
+            "quote": "请建立数学模型优化其生产过",
+            "char_start": 2159,
+            "char_end": 2174,
+            "content_hash": "9110306ef93b3461c9d07ce4c65e349ece666e176ac15a9f0e823384bcacf936",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-ddfcbd043e",
+            "kind": "text",
+            "page": 3,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:3576-3624",
+            "quote": "由此可以考忠采用实际应用过程中经常使用的 (n,c) 抽样法 , 该法同时具有国家标准 , 具",
+            "char_start": 3576,
+            "char_end": 3624,
+            "content_hash": "ddfcbd043e46f7c3d28a47f6e786b1613695340e2de10ace6093f369c472f160",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P009-7c128bc3c7",
+            "kind": "text",
+            "page": 9,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:9629-9677",
+            "quote": "结果表朋实际应用过程中经常使用的 (n,c) 抽样法较简单随机抽样优 ((m,c) 数对的意思",
+            "char_start": 9629,
+            "char_end": 9677,
+            "content_hash": "7c128bc3c7fdce5b3d9a6496b71696d22f37b6861dc0e8c5f8d3080e353d488b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-f5c7fc0221",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:12933-12978",
+            "quote": "对于多变量决策问题 , 可以采用模拟退火算法来优化变量矩阵 X, 对于某个 X, 每一轮",
+            "char_start": 12933,
+            "char_end": 12978,
+            "content_hash": "f5c7fc02214d27aa55596ac538499e5b3fb10e3bf3e4353a2f1812d0460dc6d4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-32cb47c7fb",
+            "kind": "text",
+            "page": 18,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:15478-15521",
+            "quote": "求解过程依旧采用退火算法 ( 设置初始零件为 10000 套 ), 求得最优结果如下",
+            "char_start": 15478,
+            "char_end": 15521,
+            "content_hash": "32cb47c7fb5cd68b667abd11d2cfa7211c21c49489113acd492788d5c3ec0b3c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P021-8cf9314e15",
+            "kind": "text",
+            "page": 21,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:18050-18095",
+            "quote": "(2) 问题三更改了模拟退火算法中一些关键函数 , 从而可以使用优化后的遗传算法 , 即",
+            "char_start": 18050,
+            "char_end": 18095,
+            "content_hash": "8cf9314e1546be984e0c11a0778d7b2a5ad2b8f0f1be2eb8efb306c0c27c8810",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P021-cae2a6c04d",
+            "kind": "text",
+            "page": 21,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:18148-18192",
+            "quote": "(3) 预期在这两个算法的基础上 , 使用最速粒子群算法得到一个更好的快速迭代方法 -",
+            "char_start": 18148,
+            "char_end": 18192,
+            "content_hash": "cae2a6c04d7f22a8f43595d568ae1a3eb32242b690947a67006f48b78934bc3e",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P021-139ed4b9af",
+            "kind": "text",
+            "page": 21,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:18356-18401",
+            "quote": "(2) 模型的灵敏性 : 问题一使用模拟退火算法可以收敛到局部最优解 ; 通过多次使用模",
+            "char_start": 18356,
+            "char_end": 18401,
+            "content_hash": "139ed4b9af5889abc88bdd71f05120a0a79fc6a8820e5436cef4adc46a2215ae",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P022-db9efe1b39",
+            "kind": "text",
+            "page": 22,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "char:18681-18726",
+            "quote": "舫在生产中会优先使用检测出来的正品 , 但模型中存在检测到的是正品 , 又对其拆解的情况。",
+            "char_start": 18681,
+            "char_end": 18726,
+            "content_hash": "db9efe1b398244c227211c639d39d769fb2b41f07b9bfd3a5079fab347dc99e3",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P032-c09629a4c6",
+            "kind": "text",
+            "page": 32,
+            "section": "todo: 过程函数",
+            "label": "model",
+            "locator": "char:33832-33856",
+            "quote": "木此处使用法一 〔 全稚国定 ) 选行循环处理",
+            "char_start": 33832,
+            "char_end": 33856,
+            "content_hash": "c09629a4c66b3ea55b45631eb4381d4cd4055d4bd18cb8c3fb1a00e136b96887",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P053-4f7543fd20",
+            "kind": "text",
+            "page": 53,
+            "section": "椿环仿瞠直至不胺监利",
+            "label": "model",
+            "locator": "char:70304-70328",
+            "quote": "朱此处使用法一 〔 全程国定 ) 进行榆环处理",
+            "char_start": 70304,
+            "char_end": 70328,
+            "content_hash": "4f7543fd207333e983d6b45bb8de623c048119c2f38edbd626bfb4edfac4ed46",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P053-5c1894120b",
+            "kind": "text",
+            "page": 53,
+            "section": "椿环仿瞠直至不胺监利",
+            "label": "model",
+            "locator": "char:70329-70366",
+            "quote": "非 print [“ 此处使用法一 〔 全程图定 ) 迹行冒环处理 “)",
+            "char_start": 70329,
+            "char_end": 70366,
+            "content_hash": "5c1894120b8068d8b0141e2b13e3462014ea555c4340d602a493cd0f698bcc9f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-0ff29a5647",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:351-366",
+            "quote": "本文绍合侃设检验、 收益翟",
+            "char_start": 351,
+            "char_end": 366,
+            "content_hash": "0ff29a56475c5dd7c974aba1d0c779853c5e13f768944dfdb19644b3dfc0f4b3",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-e8e3fee25e",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:1096-1143",
+            "quote": "列出情形一的答案如下 : 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不",
+            "char_start": 1096,
+            "char_end": 1143,
+            "content_hash": "e8e3fee25e32219e4bb8ffc9e99a3519c806368ce361ed6754e691a97d6f54e0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-db78f54fa8",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:1143-1184",
+            "quote": "司格成口进行拆解 , 不检验拆解后得到的零配件 1, 检验拆解后得到的零配件 2。",
+            "char_start": 1143,
+            "char_end": 1184,
+            "content_hash": "db78f54fa8c6ab6e48f4a3414c3fb032ea6e0624752cddd7bc2dc41a80d631f7",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-4e6af11d07",
+            "kind": "text",
+            "page": 1,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:1395-1447",
+            "quote": "可能决策方案 , 得到两个最优的决策矩阵 (1 代表检验或拆根 ,0 代表不检验或不拆解 ) 和浑盈利",
+            "char_start": 1395,
+            "char_end": 1447,
+            "content_hash": "4e6af11d070ec4d07d5bc90b4f01e7e4c0904b4e2d43e8a4148ad64920a392ae",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-faba3ced88",
+            "kind": "text",
+            "page": 2,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:1944-1973",
+            "quote": "到生产过程的监控、 检验和测试 , 以确保产品的质量可靠。",
+            "char_start": 1944,
+            "char_end": 1973,
+            "content_hash": "faba3ced881c3040c102a0f30cad0b863f3ef955bff811091ef63606fa8ae4f2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-4c88bafddf",
+            "kind": "text",
+            "page": 3,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:3285-3332",
+            "quote": "用整群抽样 , 即以箱为单位划分产品 , 对部分箱子运用简单随机抽样或全部进行检验 ( 取决",
+            "char_start": 3285,
+            "char_end": 3332,
+            "content_hash": "4c88bafddf09e80bd182a7a1f015a2c65eea40bf4214a39af3e9e009d4cd596b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-ab3c25db5b",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:4354-4401",
+            "quote": "数 , 即是否检验 , 对于三种半成品、 成品存在是否拆解的决策参数、 第一次循环拆解成品后",
+            "char_start": 4354,
+            "char_end": 4401,
+            "content_hash": "ab3c25db5b358795cd2881d1acd101dcd402ca0f4faca878157fe058f369b76b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-efad2220be",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:4401-4447",
+            "quote": "得到的半成品、 组装成成品前剩下的半成品 ( 已检验或未检验 )、 组装成半成品前剩下的零",
+            "char_start": 4401,
+            "char_end": 4447,
+            "content_hash": "efad2220be789c19ae4f420eff44ab9353937a58308d363ce734958e21c6afca",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-6de63b74dc",
+            "kind": "text",
+            "page": 4,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:4447-4496",
+            "quote": "件 ( 已检验或未检验 ) 则进人第二个循环 , 得到第二个盈利值 , 最后得到次品并重新进入循",
+            "char_start": 4447,
+            "char_end": 4496,
+            "content_hash": "6de63b74dccb948d9670f5e91b89a06eb7289db068f7fdb003c729f8388f2f65",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-f548b3c2b9",
+            "kind": "text",
+            "page": 5,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:5566-5582",
+            "quote": "自行生成产品数据进行模拟检验、",
+            "char_start": 5566,
+            "char_end": 5582,
+            "content_hash": "f548b3c2b920258fc1e86b6d35561d46b719c5b6860eb7680018c3b0c978d5fb",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-5c99e3df85",
+            "kind": "text",
+            "page": 5,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:5879-5898",
+            "quote": "箱 , 对这些箱内的产品全部进行检验。",
+            "char_start": 5879,
+            "char_end": 5898,
+            "content_hash": "5c99e3df853d03e9c12aa590e0b6533fee4e4001567ee4cd5bd1bd694b569dd7",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-1901ac42a5",
+            "kind": "text",
+            "page": 6,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:6708-6761",
+            "quote": "对于三种抽样方法 , 抽样比仍为 0.1, 所得次品数分别为 872、899、908,z 检验下所得结果",
+            "char_start": 6708,
+            "char_end": 6761,
+            "content_hash": "1901ac42a59b32c129dfb4eed3f8cac1225779d1fd0645787307f54d3710e8d3",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-06181cbd2c",
+            "kind": "text",
+            "page": 7,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:7428-7475",
+            "quote": "从整批产品中随机抽取 n 件产品进行检验 ( 即检验次数为 n) , 其中次品的件数记为 v。",
+            "char_start": 7428,
+            "char_end": 7475,
+            "content_hash": "06181cbd2c0a01b79c0aa028d60c01ab8a61a725016237f01c4f3037f8df52ed",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-be6bf5eb52",
+            "kind": "text",
+            "page": 7,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:7782-7826",
+            "quote": "即对给定的、Pl、a、, 给出检验次数 n、 检验判据 c, 使之滢足以上两个约束条件。",
+            "char_start": 7782,
+            "char_end": 7826,
+            "content_hash": "be6bf5eb526c4d3b6468882ec9d3f4f82de654644b09ac22c1151faa0f45bf5b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P008-b4308d277f",
+            "kind": "text",
+            "page": 8,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:8768-8787",
+            "quote": "人为规定误差为 1%, 那么可以列出",
+            "char_start": 8768,
+            "char_end": 8787,
+            "content_hash": "b4308d277f45097eceaf50d38670bd64562be925c76471c012f91c18651538e1",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-0f8ee3d99e",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:9768-9816",
+            "quote": "对于决策 1, 有四种情况 , 即两种零配件都检验、 都不检验、 只检验零配件 1、 只检验零",
+            "char_start": 9768,
+            "char_end": 9816,
+            "content_hash": "0f8ee3d99e3135aed587bc21e4f43b066b4c76085a347780a45923780038a3e0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-d4821f0624",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:9871-9894",
+            "quote": "并对每项决策都设计检验参数来模拟是否检验产品。",
+            "char_start": 9871,
+            "char_end": 9894,
+            "content_hash": "d4821f0624d06185c1a7ad7a37d56a8cb844c19302ac53e9a1ceccd189f83916",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-426c43523b",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:9896-9948",
+            "quote": "对于零配件 1, 其检验参数设为 z1, 其值为 1 则对零配件 1 检验 , 其值为 0 则不对零配",
+            "char_start": 9896,
+            "char_end": 9948,
+            "content_hash": "426c43523ba144eb5d21b7a9fa4dfb5790805fca963da14443fd911440db0eaa",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-7826ccec63",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:9958-9986",
+            "quote": "对于零配件 2, 其检验参数设为 z2, 意义同理 ;",
+            "char_start": 9958,
+            "char_end": 9986,
+            "content_hash": "7826ccec63214937f9c6173524c8d7f0e039799cc37d42b2097419fa5d3ba044",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-6dcb758ddc",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:9987-10036",
+            "quote": "成品的检验参数设为 zs, 由于决策 2 考虑的是每件成品 , 故该参数应为介于 0 到 1 中",
+            "char_start": 9987,
+            "char_end": 10036,
+            "content_hash": "6dcb758ddcda3c3fa7302efd0af7149b849ac19491c44dc7b5aa05eb361c943a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P010-85243289d4",
+            "kind": "text",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:10036-10065",
+            "quote": "的菪个值 , 其实际意义为对占比为 zs 的成品进行检验。",
+            "char_start": 10036,
+            "char_end": 10065,
+            "content_hash": "85243289d481a5a1a4c6c4f4d1ff4a15033284d5e68c3c6d7bbec1f4d95f646d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P012-e5b86f211e",
+            "kind": "text",
+            "page": 12,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:11113-11132",
+            "quote": "5.2.4 生产过程中检验与否的讨论",
+            "char_start": 11113,
+            "char_end": 11132,
+            "content_hash": "e5b86f211e62ebb16bd8d7e3e1b396ff2ff3322cae45bf2c52ad438fdc92aecb",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-a5cad4376f",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12784-12800",
+            "quote": "z 二是否对零件 1 进行检验",
+            "char_start": 12784,
+            "char_end": 12800,
+            "content_hash": "a5cad4376f1e3fc60ab1c803fe2769157fe40284404a2c76c79faeaadb7f4690",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-b126bbdc10",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12801-12817",
+            "quote": "z 二是否对零件 2 进行检验",
+            "char_start": 12801,
+            "char_end": 12817,
+            "content_hash": "b126bbdc1037976da51e19fb262b713dc95b94b9e2020ec9be51bb5e3508f813",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-ffa2d156e2",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12818-12832",
+            "quote": "zs 二是否对成品进行检验",
+            "char_start": 12818,
+            "char_end": 12832,
+            "content_hash": "ffa2d156e27dd8976196af9c1282be1c9b1f684c538c4ae8e6cefce9f0a09a76",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-52594a1022",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12833-12854",
+            "quote": "z 二是否对检验过的成品中的次品进行拆解",
+            "char_start": 12833,
+            "char_end": 12854,
+            "content_hash": "52594a1022fbd774f3980816142b147684f55d0c5cf653f5ff8315c6457de766",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-adf0c8ba9e",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12873-12896",
+            "quote": "z5 二是否对拆解后得到的零件 1 进行检验",
+            "char_start": 12873,
+            "char_end": 12896,
+            "content_hash": "adf0c8ba9ece99f4d75bee104fdf16b1960e5166cc22e4fbb4309f7d35dd6079",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-854b6db803",
+            "kind": "text",
+            "page": 14,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:12897-12917",
+            "quote": "二是否对拆解后得到的零件 2 进行检验",
+            "char_start": 12897,
+            "char_end": 12917,
+            "content_hash": "854b6db803f703b382b94e371dab2f14e221af2630ffd391f852795b51a21183",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-af86b4fdfa",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:13748-13793",
+            "quote": "(1) 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不合格成品进行拆解。",
+            "char_start": 13748,
+            "char_end": 13793,
+            "content_hash": "af86b4fdfa8242ec6d4257a5cabc129fcbccd47d7f67fd7a3eabdce8c5d5aeb4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-16962c0652",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:13797-13825",
+            "quote": "验拆解后得到的零配件 1, 检验拆解后得到的零配件 2",
+            "char_start": 13797,
+            "char_end": 13825,
+            "content_hash": "16962c0652b65a42624dfd7a8bbced9f99c620ecee10712fca4548090740fea8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-8ec4410e09",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:13826-13866",
+            "quote": "(2) 对零配件 1,2 都检验 , 不检验成品 , 对所有不合格成品进行拆解。",
+            "char_start": 13826,
+            "char_end": 13866,
+            "content_hash": "8ec4410e099ba84668aa9d2177c7a3e65843746ca95cb7eab54ff8c69fa3a4e1",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-e30118bd6d",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:13883-13925",
+            "quote": "(3) 对零配件 1,2 都不检验 , 检验全部成品 , 对所有不合格成品进行拆解。",
+            "char_start": 13883,
+            "char_end": 13925,
+            "content_hash": "e30118bd6da5c7509751b0f75e20bb607eb4a449c95cf7e7d0e968ea5a0bc448",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-01b7f140a4",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:13945-13986",
+            "quote": "(4) 对零配件 1、2 都检验 , 检验全部成品 , 对所有不合格成品进行拆解。",
+            "char_start": 13945,
+            "char_end": 13986,
+            "content_hash": "01b7f140a42258298af5d89620bc3b608d00d050baee15eb9146b02591625f95",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-934d079934",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14003-14049",
+            "quote": "(5) 不检验零配件 1, 只检验零配件 2, 检验全部成品 , 对所有不合格成品进行拆解。",
+            "char_start": 14003,
+            "char_end": 14049,
+            "content_hash": "934d07993496994d8bb76e2e4408f59cc20639bdfed339e9c7a64d30596af2ac",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-a8ae9f5a00",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14052-14082",
+            "quote": "验拆解后得到的零配件 1, 不检验拆解后得到的零配件 2.",
+            "char_start": 14052,
+            "char_end": 14082,
+            "content_hash": "a8ae9f5a0055dfbd1b1e0e4863ee43bdf3190821f6206ec5692441d8b6735ebc",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-f7abc7a1bd",
+            "kind": "text",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14083-14122",
+            "quote": "(6) 对零配件 1、2 都不检验 , 不检验成品 , 不拆解所有不合格成品。",
+            "char_start": 14083,
+            "char_end": 14122,
+            "content_hash": "f7abc7a1bd7143c3947c100a7d76b4118b21930d044c7275f5659360caf7d7c0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P016-aa276da317",
+            "kind": "text",
+            "page": 16,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14377-14422",
+            "quote": "这些决策变量分别代表是否对 8 个零配件进行检验、 是否对 3 个半成品进行检验、 是否",
+            "char_start": 14377,
+            "char_end": 14422,
+            "content_hash": "aa276da3179d31a3fbe6ead0277cb81429b7193f3de5a7fc78e3b5a5f389b25d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P016-4e7e71cd6f",
+            "kind": "text",
+            "page": 16,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14422-14455",
+            "quote": "对成品进行检验、 是否对三个半成品进行拆解、 是否对成品进行拆解。",
+            "char_start": 14422,
+            "char_end": 14455,
+            "content_hash": "4e7e71cd6f13b6c19729ee489149aff89dc4e6ae76053ed8f053777fb20ffa52",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-9ccc5ccba0",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14648-14677",
+            "quote": "成品同样分为正品和次品 ( 或者检验部分和不检验部分 )。",
+            "char_start": 14648,
+            "char_end": 14677,
+            "content_hash": "9ccc5ccba0c578eec816a9a3524571e78b1d1a81d7b14e115f1740ef53c32570",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-92e2dc81b1",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14677-14693",
+            "quote": "每一步都包含是否检验的决策参",
+            "char_start": 14677,
+            "char_end": 14693,
+            "content_hash": "92e2dc81b1162c7b54d884d391eb84fb04dc034e32bcca7b6449fb24aa8b8e88",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-b4fcecb36a",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:14808-14853",
+            "quote": "成品中加人第一次循环得到的多余半成品 , 并决定是否对这些半成品迹行检验和拆解 , 对拆",
+            "char_start": 14808,
+            "char_end": 14853,
+            "content_hash": "b4fcecb36adf74ea85c9cf037e523ebd59139affb62e00937e972738a22b8ecc",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-f5ebfcd8ab",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:15122-15167",
+            "quote": "该决策 , 而是只对已经检验出来的半成品次品进行拆解 , 在第二次组成半成品时加人这些半",
+            "char_start": 15122,
+            "char_end": 15167,
+            "content_hash": "f5ebfcd8abb50e1a1d9abe3de5536a10f3a141bfdebd65558e67814a233944cc",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-c715292dc7",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:15254-15279",
+            "quote": "零件进行检验、 是否对 3 个半成品进行检验 )。",
+            "char_start": 15254,
+            "char_end": 15279,
+            "content_hash": "c715292dc7f6de42bb4411207fe951d4e224698b6853e4cb6f3121622eb4fcb6",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-592cb98abc",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:15303-15334",
+            "quote": "品迹行检验 , 在第二次循环中不必进行再次检验 , 反之亦然。",
+            "char_start": 15303,
+            "char_end": 15334,
+            "content_hash": "592cb98abc9b00108800b97447ee954589fdfd0702841a480ff308f73625263c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-b5c8de8436",
+            "kind": "text",
+            "page": 17,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:15404-15436",
+            "quote": "件、 半成品、 成品进行检验 , 而是否拆解的决策重要性平不强。",
+            "char_start": 15404,
+            "char_end": 15436,
+            "content_hash": "b5c8de843618c4143569a03de43331a34c8127d2dc5870a06e302c4a39337a1d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P022-a82c3e3f25",
+            "kind": "text",
+            "page": 22,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "validation",
+            "locator": "char:18854-18891",
+            "quote": "计数标准型一次抽样检验方案设计方法探讨 “ 薛议 GB/T 13262",
+            "char_start": 18854,
+            "char_end": 18891,
+            "content_hash": "a82c3e3f25c5408b19f1c87c7dc974b68fc1007ba0f03f38a26018315880b971",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P028-00105c0eb2",
+            "kind": "text",
+            "page": 28,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "validation",
+            "locator": "char:27218-27232",
+            "quote": "| 华截人数搬芯建检验数猝",
+            "char_start": 27218,
+            "char_end": 27232,
+            "content_hash": "00105c0eb277b53d32385e0003046836b42fdc34b5c51b63ef8ff5076663ef48",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P029-84fca8971a",
+            "kind": "text",
+            "page": 29,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "validation",
+            "locator": "char:29181-29195",
+            "quote": "s 干载人数据英建检验数据",
+            "char_start": 29181,
+            "char_end": 29195,
+            "content_hash": "84fca8971a31607c25a2b7954e90d514280fe0cf13684b11efaef89f342a143a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P031-f35f43a1ac",
+            "kind": "text",
+            "page": 31,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "validation",
+            "locator": "char:31138-31159",
+            "quote": "usa| 林 print(“ 检验一 )",
+            "char_start": 31138,
+            "char_end": 31159,
+            "content_hash": "f35f43a1ac814f0bd942108408f16cc158986ba391bdf7820692dd9677c9df2e",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P031-afdd48cf5b",
+            "kind": "text",
+            "page": 31,
+            "section": "data_0_num = int(data_num « cipin_lv) x T",
+            "label": "validation",
+            "locator": "char:31526-31546",
+            "quote": "ss|# print (“ 检验二 “",
+            "char_start": 31526,
+            "char_end": 31546,
+            "content_hash": "afdd48cf5ba7184dbd3ee7a50e272bb67a77c258c0ab75eb2407395fd48cf3a2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P035-34e3e4b65f",
+            "kind": "text",
+            "page": 35,
+            "section": "print(n_partl_newl + n_partl_ex)",
+            "label": "validation",
+            "locator": "char:37837-37872",
+            "quote": "183 彦 todo: 对于拆解册到的零件 , 此处讨论是否进行检验",
+            "char_start": 37837,
+            "char_end": 37872,
+            "content_hash": "34e3e4b65f96e34297c42f7a854006c0f31087a6d5d8a298b96f3ec6afad52fc",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P039-a15ecd7be2",
+            "kind": "text",
+            "page": 39,
+            "section": "print{n_partl_newl, n_part2_newl, p_partl_newl, p_part2_newl)",
+            "label": "validation",
+            "locator": "char:45329-45359",
+            "quote": "#todo: 对于拆鲜得到皇雪件 , 化处讨论是否进行检验",
+            "char_start": 45329,
+            "char_end": 45359,
+            "content_hash": "a15ecd7be260457c723f08c938629b140a4f3ac6293794e0139c45735da86a4b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P048-b33117715e",
+            "kind": "text",
+            "page": 48,
+            "section": "todo: 计算抹解赏",
+            "label": "validation",
+            "locator": "char:60380-60415",
+            "quote": "根 todo: 稠到当莲未检验举成品数目 , ( 多余与拆除之后 }",
+            "char_start": 60380,
+            "char_end": 60415,
+            "content_hash": "b33117715e65c0eddc2ea7ac5894ebfe177d714401d2803760011f90bd4d9707",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P065-a675e5422e",
+            "kind": "text",
+            "page": 65,
+            "section": "认 W_1_new 一 w_t <= w_1» 0.001 or p_product_dismantle == 0:",
+            "label": "validation",
+            "locator": "char:91415-91451",
+            "quote": "1 #todo: 得到当获未检验学或酝数目 , ( 多余与掀除之后 }",
+            "char_start": 91415,
+            "char_end": 91451,
+            "content_hash": "a675e5422eeed7ce5d375c787e7f5ae7458fc053c226bb5277753c11fa709832",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-FIGURE-P008-2e8f4df637",
+            "kind": "figure",
+            "page": 8,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 1",
+            "locator": "FIGURE-001",
+            "quote": "图 1",
+            "char_start": 8448,
+            "char_end": 8451,
+            "content_hash": "2e8f4df637887bd8900ee1bf729d5cca7ad71d2e46f3452b828ea0e64da55fbd",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P009-92c9d423c9",
+            "kind": "figure",
+            "page": 9,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 2",
+            "locator": "FIGURE-002",
+            "quote": "图 2",
+            "char_start": 9292,
+            "char_end": 9295,
+            "content_hash": "92c9d423c93302d23bae97a199608452b8dfc329c13de54ef29c8ac592d3191d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P010-3f68d34f43",
+            "kind": "figure",
+            "page": 10,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 3",
+            "locator": "FIGURE-003",
+            "quote": "图 3",
+            "char_start": 10330,
+            "char_end": 10333,
+            "content_hash": "3f68d34f4364fe888b77de596d23898b02b22f41b81569bbf025febdb0d08c7b",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P012-38bb6caaaf",
+            "kind": "figure",
+            "page": 12,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 4",
+            "locator": "FIGURE-004",
+            "quote": "图 4",
+            "char_start": 11108,
+            "char_end": 11111,
+            "content_hash": "38bb6caaaf6272504d84d61fdb55fa7a2e0274cd23df1028ee77fd46676719f5",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P016-b485b90cf6",
+            "kind": "figure",
+            "page": 16,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 6",
+            "locator": "FIGURE-005",
+            "quote": "图 6",
+            "char_start": 14256,
+            "char_end": 14259,
+            "content_hash": "b485b90cf6664512146649c9f5a211347039ae37ee0665f4c1bd4dc4909b176c",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P018-7a6b165f5f",
+            "kind": "figure",
+            "page": 18,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 9",
+            "locator": "FIGURE-006",
+            "quote": "图 9",
+            "char_start": 15848,
+            "char_end": 15851,
+            "content_hash": "7a6b165f5faecbddaab6a5aec97467ca3faf4dd7f1f49c16b310fbbe09987998",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P020-b62449be49",
+            "kind": "figure",
+            "page": 20,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "图 10",
+            "locator": "FIGURE-007",
+            "quote": "图 10",
+            "char_start": 17422,
+            "char_end": 17426,
+            "content_hash": "b62449be49bb9a2d9741802f6531d944cd0df7ebd03775f4df5af0a5e10cd382",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P036-01285caa3a",
+            "kind": "figure",
+            "page": 36,
+            "section": "print(n_partl_newl + n_partl_ex)",
+            "label": "图 1",
+            "locator": "FIGURE-008",
+            "quote": "sao| plt . title ( “ 糖报退火优化可裙图 1)",
+            "char_start": 40696,
+            "char_end": 40699,
+            "content_hash": "01285caa3a41a1503cef925c25becde1a13d63ae75ddc1ffb74b5727a376b698",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P040-c73a34f1b6",
+            "kind": "figure",
+            "page": 40,
+            "section": "print(n_part2_new, p_part2_new n_part2_test)",
+            "label": "图 1",
+            "locator": "FIGURE-009",
+            "quote": "s plt title ( “ 伯嘱锴环可祸图 1)",
+            "char_start": 46348,
+            "char_end": 46351,
+            "content_hash": "c73a34f1b6f9755e53a39bcf9445ffcdda01e63cae931180af0028ae0217df5d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P015-764831ce34",
+            "kind": "table",
+            "page": 15,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "表 1",
+            "locator": "TABLE-001",
+            "quote": "表 1",
+            "char_start": 13622,
+            "char_end": 13625,
+            "content_hash": "764831ce34b195403bfab971d042ae8d62765f94f670922f803f351ba4acc425",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P018-de53c604cb",
+            "kind": "table",
+            "page": 18,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "表 2",
+            "locator": "TABLE-002",
+            "quote": "表 2",
+            "char_start": 15521,
+            "char_end": 15524,
+            "content_hash": "de53c604cbcc694c586f7499be934fece4da929f2b0c21ae1039abe708a92cc9",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TEXT-P022-030bcd650a",
+            "kind": "text",
+            "page": 22,
+            "section": "基于多阶段模拟仿真的生产决策问题",
+            "label": "model",
+            "locator": "page:22",
+            "quote": "swap_n = quantile_value(l — alpha) = math.sqrt(p0 = (1 — p0)) — quantile_value(belta)",
+            "char_start": null,
+            "char_end": null,
+            "content_hash": "030bcd650ad451452ff940a448dd91941a7146ef518206f0fbfa6b32fe41365e",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.82
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "A-001",
+            "statement": "产品数 ( 假设 ), 可以考虑生成一组正态分布数据 , 并根据标准正态分布、 给定的次品率得到",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-fb035b701b"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-002",
+            "statement": "(1) 假设零件的次品和正品随机分布 , 以避免次品的集中扎堆情形、",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-fe346f825e"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-003",
+            "statement": "(2) 假设半成品和产品的制作过程中 , 由于工艺出现次品的概率是随机的。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-61756e7d91"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-004",
+            "statement": "(4) 假设若不能回收零件、 半成品和产品的次品 , 则直接丢弃不会造成环境污染等回收",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-1dfafb53c0"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-005",
+            "statement": "(5) 假设生产环境中的多个环节都会影响半成品、 成品的次品率 , 但均抽象成一个次品",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-d534af5e76"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-006",
+            "statement": "(6) 假设生产规模较大 , 本文仿真起始均使用 10000 套零件。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-b095b27a7c"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-007",
+            "statement": "首先假设样本总数为 100000, 次品率为 0.11。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-a269900cda"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-008",
+            "statement": "同理 , 假设次品率为 0.09, 如果棠抽样方法理想 , 得出的结果应为 : 没有足够证据认为",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-167720fbae"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-009",
+            "statement": "假设若根据简单随机抽样得到某次品率 , 可以使用贝叶斯统计推断来估计零件的真实次",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P018-0f78487924"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-010",
+            "statement": "首先假设真实的次品率服从 Beta 分布 , 即先验分布。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P019-ad9f1077d5"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-011",
+            "statement": "e £ print “ 拒细霁假设 : 卯认为有 958 的把提认为次品率低于 10%5“)",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P031-7df8661d23"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-012",
+            "statement": "sl Print(“ 接受零假设 : 卿没有足够的证据认为次品主大于 10 刊 “",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P031-7a910a85ed"
+            ],
+            "provenance": "HEURISTIC"
+          }
+        ],
+        "variables": [],
+        "data": {
+          "sources": [],
+          "fields": [],
+          "data_types": [],
+          "preprocessing": [],
+          "missing_value_strategy": "",
+          "outlier_strategy": "",
+          "evidence_ids": []
+        },
+        "modeling_chain": [
+          {
+            "order": 1,
+            "subproblem_id": "Q1",
+            "model_id": "model-linearprogramming-5c5372fcf9",
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c",
+              "algorithm-particleswarmoptimization-1f1996630f",
+              "algorithm-simulatedannealing-8fb5c5797e"
+            ],
+            "input": "论文数据",
+            "output": "模型结果",
+            "rationale": "启发式检测到模型名称，建模链需人工核对。",
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          }
+        ],
+        "models": [
+          {
+            "id": "model-linearprogramming-5c5372fcf9",
+            "canonical_name": "Linear Programming",
+            "display_name": "Linear Programming",
+            "aliases": [
+              "线性规划",
+              "LP"
+            ],
+            "category": "optimization",
+            "task_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "role": "在线性目标和线性约束下求最优决策变量",
+            "description": "由参考目录识别，需结合论文证据复核。",
+            "assumptions": [],
+            "inputs": [
+              {
+                "name": "objective_coefficients",
+                "description": "目标函数系数",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "constraint_matrix",
+                "description": "约束系数矩阵",
+                "shape": "m×n",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "name": "decision_variables",
+                "description": "最优决策变量",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "objective_value",
+                "description": "最优目标值",
+                "shape": "scalar",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "equations": [],
+            "workflow": [
+              {
+                "order": 1,
+                "name": "定义决策变量及单位",
+                "description": "定义决策变量及单位",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-030bcd650a"
+                ]
+              },
+              {
+                "order": 2,
+                "name": "写出目标函数",
+                "description": "写出目标函数",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-030bcd650a"
+                ]
+              },
+              {
+                "order": 3,
+                "name": "将业务规则转换为线性约束",
+                "description": "将业务规则转换为线性约束",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-030bcd650a"
+                ]
+              },
+              {
+                "order": 4,
+                "name": "检查可行域与变量边界",
+                "description": "检查可行域与变量边界",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-030bcd650a"
+                ]
+              },
+              {
+                "order": 5,
+                "name": "调用求解器并解释影子价格或松弛量",
+                "description": "调用求解器并解释影子价格或松弛量",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-030bcd650a"
+                ]
+              }
+            ],
+            "parameters": [],
+            "solver_algorithm_ids": [],
+            "strengths": [
+              "可获得全局最优",
+              "求解器成熟",
+              "解释性较强"
+            ],
+            "weaknesses": [
+              "要求线性",
+              "整数决策需扩展为 MILP",
+              "对参数误差可能敏感"
+            ],
+            "use_when": [
+              "目标和约束可线性表达",
+              "决策变量连续"
+            ],
+            "avoid_when": [
+              "明显非线性关系无法合理线性化"
+            ],
+            "alternatives": [
+              "Integer Programming",
+              "Nonlinear Programming"
+            ],
+            "combinations": [
+              "Sensitivity Analysis",
+              "Scenario Analysis"
+            ],
+            "complexity": {
+              "time": "problem-dependent",
+              "space": "O(mn)",
+              "notes": "单纯形法最坏指数级，内点法有多项式界"
+            },
+            "validation_methods": [
+              "可行性检查",
+              "对偶/松弛分析",
+              "参数敏感性"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "algorithms": [
+          {
+            "id": "algorithm-geneticalgorithm-82b827f16c",
+            "canonical_name": "Genetic Algorithm",
+            "display_name": "Genetic Algorithm",
+            "aliases": [
+              "遗传算法",
+              "GA"
+            ],
+            "category": "optimization",
+            "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+            "inputs": [
+              "fitness function",
+              "encoding",
+              "constraints",
+              "population settings"
+            ],
+            "outputs": [
+              "best solution",
+              "best fitness",
+              "convergence history"
+            ],
+            "pseudocode": [
+              "初始化种群并修复不可行个体",
+              "计算适应度",
+              "根据选择策略生成父代",
+              "执行交叉与变异",
+              "进行精英保留与约束处理",
+              "达到停止条件后输出最优个体"
+            ],
+            "parameters": [
+              {
+                "name": "population_size",
+                "value": null,
+                "description": "种群规模",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "crossover_rate",
+                "value": null,
+                "description": "交叉概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "mutation_rate",
+                "value": null,
+                "description": "变异概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "按编码和约束生成初始可行种群",
+            "stopping_criteria": [
+              "最大迭代数",
+              "连续若干代最优值无改进"
+            ],
+            "complexity": {
+              "time": "O(G·P·C_f)",
+              "space": "O(P·d)",
+              "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "固定 seed 并多次独立运行"
+            },
+            "implementation_notes": [
+              "约束处理必须明确",
+              "保存收敛曲线",
+              "多次运行报告均值和方差"
+            ],
+            "failure_modes": [
+              "早熟收敛",
+              "编码不合理",
+              "适应度尺度失衡",
+              "参数未报告"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P021-8cf9314e15"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          },
+          {
+            "id": "algorithm-particleswarmoptimization-1f1996630f",
+            "canonical_name": "Particle Swarm Optimization",
+            "display_name": "Particle Swarm Optimization",
+            "aliases": [
+              "粒子群优化",
+              "粒子群算法",
+              "PSO"
+            ],
+            "category": "optimization",
+            "purpose": "利用个体最优和群体最优引导连续空间搜索",
+            "inputs": [
+              "objective function",
+              "bounds",
+              "swarm settings"
+            ],
+            "outputs": [
+              "global best position",
+              "global best value",
+              "history"
+            ],
+            "pseudocode": [
+              "初始化粒子位置与速度",
+              "计算每个粒子的目标值",
+              "更新个体最优与全局最优",
+              "更新速度和位置并执行边界处理",
+              "达到停止条件后返回全局最优"
+            ],
+            "parameters": [
+              {
+                "name": "inertia_weight",
+                "value": null,
+                "description": "惯性权重",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "cognitive_coefficient",
+                "value": null,
+                "description": "个体学习因子",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "social_coefficient",
+                "value": null,
+                "description": "社会学习因子",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "",
+            "stopping_criteria": [
+              "最大迭代数",
+              "全局最优长期无改进"
+            ],
+            "complexity": {
+              "time": "O(G·P·C_f)",
+              "space": "O(P·d)",
+              "notes": ""
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "固定 seed 并报告多次运行"
+            },
+            "implementation_notes": [
+              "边界处理方式必须说明",
+              "记录收敛曲线"
+            ],
+            "failure_modes": [
+              "群体过早聚集",
+              "速度爆炸",
+              "参数尺度与变量范围不匹配"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P021-cae2a6c04d"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          },
+          {
+            "id": "algorithm-simulatedannealing-8fb5c5797e",
+            "canonical_name": "Simulated Annealing",
+            "display_name": "Simulated Annealing",
+            "aliases": [
+              "模拟退火",
+              "SA"
+            ],
+            "category": "optimization",
+            "purpose": "允许以一定概率接受劣解，从而跳出局部最优",
+            "inputs": [
+              "objective function",
+              "initial solution",
+              "neighborhood",
+              "cooling schedule"
+            ],
+            "outputs": [
+              "best solution",
+              "best objective",
+              "history"
+            ],
+            "pseudocode": [
+              "生成初始解并设定初始温度",
+              "在邻域中生成候选解",
+              "更优则接受，较差则按 Metropolis 概率接受",
+              "按降温策略更新温度",
+              "达到停止条件后返回历史最优解"
+            ],
+            "parameters": [
+              {
+                "name": "initial_temperature",
+                "value": null,
+                "description": "初始温度",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "cooling_rate",
+                "value": null,
+                "description": "降温系数",
+                "range": "(0,1)",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "生成一个可行初始解",
+            "stopping_criteria": [
+              "温度低于阈值",
+              "达到最大迭代数",
+              "长期无改进"
+            ],
+            "complexity": {
+              "time": "O(K·C_f)",
+              "space": "O(d)",
+              "notes": "K 为候选解评估次数"
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "多次运行检查稳定性"
+            },
+            "implementation_notes": [
+              "邻域设计决定搜索能力",
+              "温度尺度要与目标差值匹配"
+            ],
+            "failure_modes": [
+              "降温过快",
+              "初始温度过低",
+              "邻域无法覆盖可行域"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P001-a6a7272be0"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "validation": {
+          "methods": [],
+          "metrics": [],
+          "results": [],
+          "sensitivity_analysis": [],
+          "robustness_checks": [],
+          "evidence_ids": []
+        },
+        "limitations": [
+          "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+        ],
+        "innovations": [],
+        "case": {
+          "id": "case-2024-b195",
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "domain": "unknown",
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "year": 2024,
+          "award": "优秀论文",
+          "problem_id": "B",
+          "problem_fingerprint": {
+            "problem_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "data_types": [],
+            "targets": [],
+            "constraints": [],
+            "domain_keywords": []
+          },
+          "subproblem_mapping": [
+            {
+              "subproblem_id": "Q1",
+              "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "model_ids": [
+                "model-linearprogramming-5c5372fcf9"
+              ],
+              "algorithm_ids": [
+                "algorithm-geneticalgorithm-82b827f16c",
+                "algorithm-particleswarmoptimization-1f1996630f",
+                "algorithm-simulatedannealing-8fb5c5797e"
+              ],
+              "data_flow": "",
+              "rationale": "启发式占位映射",
+              "evidence_ids": []
+            }
+          ],
+          "results": [],
+          "transferable_insights": [
+            "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+          ],
+          "pitfalls": [
+            "仅根据名称命中可能产生误判。"
+          ],
+          "innovations": [],
+          "evidence_ids": []
+        },
+        "code_recipes": [],
+        "quality": {
+          "evidence_coverage": 0.25,
+          "completeness": 0.25,
+          "code_reproducibility": 0.0,
+          "warnings": [
+            "LLM disabled: generated a heuristic IR skeleton.",
+            "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+            "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+          ],
+          "review_required": true
+        }
+      },
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "models": {
+    "model-linearprogramming-5c5372fcf9": {
+      "card": {
+        "id": "model-linearprogramming-5c5372fcf9",
+        "canonical_name": "Linear Programming",
+        "display_name": "Linear Programming",
+        "aliases": [
+          "线性规划",
+          "LP"
+        ],
+        "category": "optimization",
+        "task_types": [
+          "allocation",
+          "scheduling",
+          "minimization",
+          "maximization"
+        ],
+        "role": "在线性目标和线性约束下求最优决策变量",
+        "description": "由参考目录识别，需结合论文证据复核。",
+        "assumptions": [],
+        "inputs": [
+          {
+            "name": "objective_coefficients",
+            "description": "目标函数系数",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "constraint_matrix",
+            "description": "约束系数矩阵",
+            "shape": "m×n",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "outputs": [
+          {
+            "name": "decision_variables",
+            "description": "最优决策变量",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "objective_value",
+            "description": "最优目标值",
+            "shape": "scalar",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "equations": [],
+        "workflow": [
+          {
+            "order": 1,
+            "name": "定义决策变量及单位",
+            "description": "定义决策变量及单位",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          },
+          {
+            "order": 2,
+            "name": "写出目标函数",
+            "description": "写出目标函数",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          },
+          {
+            "order": 3,
+            "name": "将业务规则转换为线性约束",
+            "description": "将业务规则转换为线性约束",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          },
+          {
+            "order": 4,
+            "name": "检查可行域与变量边界",
+            "description": "检查可行域与变量边界",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          },
+          {
+            "order": 5,
+            "name": "调用求解器并解释影子价格或松弛量",
+            "description": "调用求解器并解释影子价格或松弛量",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-030bcd650a"
+            ]
+          }
+        ],
+        "parameters": [],
+        "solver_algorithm_ids": [],
+        "strengths": [
+          "可获得全局最优",
+          "求解器成熟",
+          "解释性较强"
+        ],
+        "weaknesses": [
+          "要求线性",
+          "整数决策需扩展为 MILP",
+          "对参数误差可能敏感"
+        ],
+        "use_when": [
+          "目标和约束可线性表达",
+          "决策变量连续"
+        ],
+        "avoid_when": [
+          "明显非线性关系无法合理线性化"
+        ],
+        "alternatives": [
+          "Integer Programming",
+          "Nonlinear Programming"
+        ],
+        "combinations": [
+          "Sensitivity Analysis",
+          "Scenario Analysis"
+        ],
+        "complexity": {
+          "time": "problem-dependent",
+          "space": "O(mn)",
+          "notes": "单纯形法最坏指数级，内点法有多项式界"
+        },
+        "validation_methods": [
+          "可行性检查",
+          "对偶/松弛分析",
+          "参数敏感性"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P022-030bcd650a"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b195",
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "evidence_ids": [
+            "E-TEXT-P022-030bcd650a"
+          ]
+        }
+      ]
+    }
+  },
+  "algorithms": {
+    "algorithm-geneticalgorithm-82b827f16c": {
+      "card": {
+        "id": "algorithm-geneticalgorithm-82b827f16c",
+        "canonical_name": "Genetic Algorithm",
+        "display_name": "Genetic Algorithm",
+        "aliases": [
+          "遗传算法",
+          "GA"
+        ],
+        "category": "optimization",
+        "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+        "inputs": [
+          "fitness function",
+          "encoding",
+          "constraints",
+          "population settings"
+        ],
+        "outputs": [
+          "best solution",
+          "best fitness",
+          "convergence history"
+        ],
+        "pseudocode": [
+          "初始化种群并修复不可行个体",
+          "计算适应度",
+          "根据选择策略生成父代",
+          "执行交叉与变异",
+          "进行精英保留与约束处理",
+          "达到停止条件后输出最优个体"
+        ],
+        "parameters": [
+          {
+            "name": "population_size",
+            "value": null,
+            "description": "种群规模",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "crossover_rate",
+            "value": null,
+            "description": "交叉概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "mutation_rate",
+            "value": null,
+            "description": "变异概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "按编码和约束生成初始可行种群",
+        "stopping_criteria": [
+          "最大迭代数",
+          "连续若干代最优值无改进"
+        ],
+        "complexity": {
+          "time": "O(G·P·C_f)",
+          "space": "O(P·d)",
+          "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "固定 seed 并多次独立运行"
+        },
+        "implementation_notes": [
+          "约束处理必须明确",
+          "保存收敛曲线",
+          "多次运行报告均值和方差"
+        ],
+        "failure_modes": [
+          "早熟收敛",
+          "编码不合理",
+          "适应度尺度失衡",
+          "参数未报告"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P021-8cf9314e15"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b195",
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "evidence_ids": [
+            "E-TEXT-P021-8cf9314e15"
+          ]
+        }
+      ]
+    },
+    "algorithm-particleswarmoptimization-1f1996630f": {
+      "card": {
+        "id": "algorithm-particleswarmoptimization-1f1996630f",
+        "canonical_name": "Particle Swarm Optimization",
+        "display_name": "Particle Swarm Optimization",
+        "aliases": [
+          "粒子群优化",
+          "粒子群算法",
+          "PSO"
+        ],
+        "category": "optimization",
+        "purpose": "利用个体最优和群体最优引导连续空间搜索",
+        "inputs": [
+          "objective function",
+          "bounds",
+          "swarm settings"
+        ],
+        "outputs": [
+          "global best position",
+          "global best value",
+          "history"
+        ],
+        "pseudocode": [
+          "初始化粒子位置与速度",
+          "计算每个粒子的目标值",
+          "更新个体最优与全局最优",
+          "更新速度和位置并执行边界处理",
+          "达到停止条件后返回全局最优"
+        ],
+        "parameters": [
+          {
+            "name": "inertia_weight",
+            "value": null,
+            "description": "惯性权重",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "cognitive_coefficient",
+            "value": null,
+            "description": "个体学习因子",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "social_coefficient",
+            "value": null,
+            "description": "社会学习因子",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "",
+        "stopping_criteria": [
+          "最大迭代数",
+          "全局最优长期无改进"
+        ],
+        "complexity": {
+          "time": "O(G·P·C_f)",
+          "space": "O(P·d)",
+          "notes": ""
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "固定 seed 并报告多次运行"
+        },
+        "implementation_notes": [
+          "边界处理方式必须说明",
+          "记录收敛曲线"
+        ],
+        "failure_modes": [
+          "群体过早聚集",
+          "速度爆炸",
+          "参数尺度与变量范围不匹配"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P021-cae2a6c04d"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b195",
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "evidence_ids": [
+            "E-TEXT-P021-cae2a6c04d"
+          ]
+        }
+      ]
+    },
+    "algorithm-simulatedannealing-8fb5c5797e": {
+      "card": {
+        "id": "algorithm-simulatedannealing-8fb5c5797e",
+        "canonical_name": "Simulated Annealing",
+        "display_name": "Simulated Annealing",
+        "aliases": [
+          "模拟退火",
+          "SA"
+        ],
+        "category": "optimization",
+        "purpose": "允许以一定概率接受劣解，从而跳出局部最优",
+        "inputs": [
+          "objective function",
+          "initial solution",
+          "neighborhood",
+          "cooling schedule"
+        ],
+        "outputs": [
+          "best solution",
+          "best objective",
+          "history"
+        ],
+        "pseudocode": [
+          "生成初始解并设定初始温度",
+          "在邻域中生成候选解",
+          "更优则接受，较差则按 Metropolis 概率接受",
+          "按降温策略更新温度",
+          "达到停止条件后返回历史最优解"
+        ],
+        "parameters": [
+          {
+            "name": "initial_temperature",
+            "value": null,
+            "description": "初始温度",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "cooling_rate",
+            "value": null,
+            "description": "降温系数",
+            "range": "(0,1)",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "生成一个可行初始解",
+        "stopping_criteria": [
+          "温度低于阈值",
+          "达到最大迭代数",
+          "长期无改进"
+        ],
+        "complexity": {
+          "time": "O(K·C_f)",
+          "space": "O(d)",
+          "notes": "K 为候选解评估次数"
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "多次运行检查稳定性"
+        },
+        "implementation_notes": [
+          "邻域设计决定搜索能力",
+          "温度尺度要与目标差值匹配"
+        ],
+        "failure_modes": [
+          "降温过快",
+          "初始温度过低",
+          "邻域无法覆盖可行域"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P001-a6a7272be0"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b195",
+          "title": "基于多阶段模拟仿真的生产决策问题",
+          "evidence_ids": [
+            "E-TEXT-P001-a6a7272be0"
+          ]
+        }
+      ]
+    }
+  },
+  "cases": {
+    "case-2024-b195": {
+      "card": {
+        "id": "case-2024-b195",
+        "title": "基于多阶段模拟仿真的生产决策问题",
+        "domain": "unknown",
+        "competition": "高教社杯全国大学生数学建模竞赛",
+        "year": 2024,
+        "award": "优秀论文",
+        "problem_id": "B",
+        "problem_fingerprint": {
+          "problem_types": [
+            "allocation",
+            "scheduling",
+            "minimization",
+            "maximization"
+          ],
+          "data_types": [],
+          "targets": [],
+          "constraints": [],
+          "domain_keywords": []
+        },
+        "subproblem_mapping": [
+          {
+            "subproblem_id": "Q1",
+            "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+            "model_ids": [
+              "model-linearprogramming-5c5372fcf9"
+            ],
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c",
+              "algorithm-particleswarmoptimization-1f1996630f",
+              "algorithm-simulatedannealing-8fb5c5797e"
+            ],
+            "data_flow": "",
+            "rationale": "启发式占位映射",
+            "evidence_ids": []
+          }
+        ],
+        "results": [],
+        "transferable_insights": [
+          "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+        ],
+        "pitfalls": [
+          "仅根据名称命中可能产生误判。"
+        ],
+        "innovations": [],
+        "evidence_ids": []
+      },
+      "paper_id": "paper-2024-b195",
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "codes": {},
+  "updated_at": "2026-09-04T18:08:23+00:00"
+}

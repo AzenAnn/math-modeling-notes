@@ -1,0 +1,824 @@
+{
+  "paper": {
+    "title": "基于随机优化的农作物种植策略模型",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\C094.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P002-36616adc78",
+      "page": 2,
+      "type": "text",
+      "order": 1,
+      "original_text": "问题一 : 假设各类农作物后续预期销量、 售价、 种植成本和留产量相较于 2023 年保持稚定 , 且当",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P004-9e5bfbdae1",
+      "page": 4,
+      "type": "text",
+      "order": 2,
+      "original_text": "1 假设当季种植的农作物在当季销售 , 无库存。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P004-08437e3d93",
+      "page": 4,
+      "type": "text",
+      "order": 3,
+      "original_text": "2, 假设问题一中每种农作物的未来预期销量、 种柳成本、 亩产量和唯价相较于 2023 年保持租定。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P004-56fcca25cc",
+      "page": 4,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设问题二相羔销量、 售价等变量波动符合正态分布、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P006-2775a312d8",
+      "page": 6,
+      "type": "text",
+      "order": 5,
+      "original_text": "根搬问题一假设 , 各类农作物后续预期销量、 售价、 种植成本和亩产量相较于 2023 年保持穆定 , 因",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P006-c8d0c636a7",
+      "page": 6,
+      "type": "text",
+      "order": 6,
+      "original_text": "分析附件 2 中 2023 年销量与售价 , 可知不合情形下种裳得作物单价相等 , 即假设不合情形作物生",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P019-be127d3b95",
+      "page": 19,
+      "type": "text",
+      "order": 7,
+      "original_text": "固面做出假设 , 如果农作物的预期销售量变化幅度与农作物的销售价格真同 -",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P019-9625d1af65",
+      "page": 19,
+      "type": "text",
+      "order": 8,
+      "original_text": "销量与种粹成本成负粉关、 从而做出假设 : 农作物的预期销售量变化与农作物种植虎本变化憨度成相反",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P022-cf821204d2",
+      "page": 22,
+      "type": "text",
+      "order": 9,
+      "original_text": "本模型基于合理的假设和现实中的约不条件 , 充分考悟了不同地块类型、 作物特性、 种植或本、 市",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-2bbe2d4267",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "本文研究最大化利用土地资源 , 建立栽种策珠优化模型 , 利用贪心算法、 随机抢动、 蔡",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-49607a8f8d",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "对于超过部分滞销情况 , 使用藏特卡洛算法生或 100 组符合正态分布的随机",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P003-415d7903f2",
+      "page": 3,
+      "type": "text",
+      "order": 12,
+      "original_text": "闭题三中 , 基于问题二构建的增加变量扰动的优化模型 , 进一步考虑农作物之闵的可替代性和互补",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P003-db9b39d82e",
+      "page": 3,
+      "type": "text",
+      "order": 13,
+      "original_text": "性 , 并线合考虑预期销售量与销售价格、 种植成本之间的相关性 , 从而使构建的种植笺略优化模型更加",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P022-1fb065b390",
+      "page": 22,
+      "type": "text",
+      "order": 14,
+      "original_text": "灾霁求等多种回素 , 构建了线性规划和随机优化模型、 通过求解器和责心算法两种方法 , 能够在有限土",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P001-a3eee51b28",
+      "page": 1,
+      "type": "text",
+      "order": 15,
+      "original_text": "特卡洛、 灵数度检验等方法求解科学土地管理、 超额出售、 多因素时间波动 , 农作物替代",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P001-f9e938b91e",
+      "page": 1,
+      "type": "text",
+      "order": 16,
+      "original_text": "目标函数对其晴换程序的灵敏度检测其替代性 , 最终选择用小麦替代谷子 , 青椒曾代辣椒 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-FIGURE-P003-b8d354ec28",
+      "page": 3,
+      "type": "figure",
+      "order": 17,
+      "original_text": "图 2 名题分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-FIGURE-P014-58e23a9f33",
+      "page": 14,
+      "type": "figure",
+      "order": 18,
+      "original_text": "图 5 贺心策略",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-FIGURE-P017-215088e4c4",
+      "page": 17,
+      "type": "figure",
+      "order": 19,
+      "original_text": "图 8 前十个变量序列结果可描化",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-FIGURE-P019-99c13cc4ec",
+      "page": 19,
+      "type": "figure",
+      "order": 20,
+      "original_text": "图 7 相关性分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-FIGURE-P021-c7243baaae",
+      "page": 21,
+      "type": "figure",
+      "order": 21,
+      "original_text": "图 8 前十个变量序列结果可视化",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TABLE-P007-526233ed3b",
+      "page": 7,
+      "type": "table",
+      "order": 22,
+      "original_text": "表 2 作物衫狞与对应缪号",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TABLE-P013-2dee25368f",
+      "page": 13,
+      "type": "table",
+      "order": 23,
+      "original_text": "表 3 8、 4 对目标结黑影响 ( 情况一 ) 表 4 P、q 对目标结木影响 [ 情况二 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TABLE-P015-ccf49281dd",
+      "page": 15,
+      "type": "table",
+      "order": 24,
+      "original_text": "表 5 两种情况下两种求解方招总收入比较",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TABLE-P018-5d083091e5",
+      "page": 18,
+      "type": "table",
+      "order": 25,
+      "original_text": "表 7 可晟代性分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TABLE-P018-0eb89722a5",
+      "page": 18,
+      "type": "table",
+      "order": 26,
+      "original_text": "表 8 可晃代性分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TABLE-P021-57979d0b55",
+      "page": 21,
+      "type": "table",
+      "order": 27,
+      "original_text": "表 9 变量序列及其对应偷",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TABLE-P021-095a9e5c23",
+      "page": 21,
+      "type": "table",
+      "order": 28,
+      "original_text": "表 10 闯题二秒问题三的求解结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P024-6ca6399c17",
+      "page": 24,
+      "type": "text",
+      "order": 29,
+      "original_text": "史 gp quicksu=(Price[1] [x] » Z[t, 1, ¥] - gp.quicksu=(Cont[1)[§1[k] » X[t, &, 扎 , 知 for j ln ranga(J))",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S010",
+        "S011",
+        "S015",
+        "S016"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S001"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S012",
+        "S013",
+        "S017"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S002",
+        "S003",
+        "S004"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": []
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S005",
+        "S006"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S022"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": []
+    },
+    {
+      "page": 9,
+      "block_ids": []
+    },
+    {
+      "page": 10,
+      "block_ids": []
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": []
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S023"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S018"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S024"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": []
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S019"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S025",
+        "S026"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S007",
+        "S008",
+        "S020"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": []
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S021",
+        "S027",
+        "S028"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S009",
+        "S014"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S029"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": []
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Linear Programming",
+      "translation": "Linear Programming",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    },
+    {
+      "term": "Genetic Algorithm",
+      "translation": "Genetic Algorithm",
+      "note": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解"
+    }
+  ]
+}

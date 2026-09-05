@@ -1,0 +1,1863 @@
+{
+  "schema_version": "1.0.0",
+  "papers": {
+    "paper-2024-b159": {
+      "ir": {
+        "schema_version": "1.0.0",
+        "paper_id": "paper-2024-b159",
+        "source": {
+          "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\B159.pdf",
+          "sha256": "bced3c19c5b9b5ecca93c1f000075eb11e7308c214a013726c30782d9ec45112",
+          "parser": "pymupdf-ocr",
+          "parsed_at": "2026-09-04T17:34:46+00:00",
+          "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B159-生产过程中的决策优化设计\\workflow\\parsed\\normalized_paper.md",
+          "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B159-生产过程中的决策优化设计\\workflow\\parsed\\paper_structure.json"
+        },
+        "bibliographic": {
+          "title": "生产过程中的决策优化设计",
+          "authors": [],
+          "year": 2024,
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "award": "优秀论文",
+          "problem_id": "B",
+          "abstract": "本文针对某企业在生产电子产品过程中所面胡的次品率、 检测及拆解等一系列决策问题 展开研究。 通过优化生产过程中的抽样、 检测和拆解策略 , 最大化企业利涧和生产效率。 本 文的研究旨在为企业提供一套基于数学建模的决策方案 , 帮助其在面对不同生产条件时合理 选择抽样、 检测和拆解策略 , 提升资源利用率和经济效益。",
+          "keywords": [
+            "Linear Programming",
+            "Hypothesis Testing"
+          ],
+          "language": "zh-CN"
+        },
+        "problem": {
+          "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=bced3c19c5b9b5ecca93c1f000075eb11e7308c214a013726c30782d9ec45112 --> # 生产过程中的决策优化设计 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 生产过程中的决策优化设计 摘要 本文针对某企业在生产电子产品过程中所面胡的次品率、 检测及拆解等一系列决策问题 展开研究。 通过优化生产过程中的抽样、 检测和拆解策略 , 最大化企业利涧和生产效率。 本 文的研究旨在为企业提供一套基于数学建模的决策方案 , 帮助其在面对不同生产条件时合理 选择抽样、 检测和拆解策略 , 提升资源利用率和经济效益。 针对问题一 , 为通过抽样检测判明次品率是否超过标称值 , 本文分别针对 (1) (2) 情形建 立了假设检验问题 , 进而得到了是否接收零配件的条件。 为确定合适的抽桦样本量 , 本文利 用检测花销与假设检验效昂 ( 运用假设检验功效函数衡量 ) 之间相互制约的关系 , 建立决策函 数 , 得到了最优样本量 - 针对问题二 , 为针对六种不同情况做出决策 , 本研究运用二项分布和几何分布的性质 , 在不同决策方桐下 , 用各罕件检测成本、 次昊率、 调换成本等值表示出每生产一个合格成吹 的利涧期望值再依次将六种情况的具体数值带入到表达式之中 , 将利浪期望最大化作为决 策标准 , 得到六种情况下的最优决策。 针对问题三 , 为解决多工序制造系统中的零件、 半成昂与成品的次哀检测和拆解决策问 愚 , 求解目标在于合理设计检测与回收策略及最大化系统的期",
+          "overall_objective": "启发式模式未可靠抽取总体目标。",
+          "subproblems": [
+            {
+              "id": "Q1",
+              "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "task_types": [
+                "allocation",
+                "scheduling",
+                "minimization",
+                "maximization",
+                "hypothesis_testing",
+                "inference",
+                "comparison"
+              ],
+              "inputs": [],
+              "outputs": [],
+              "constraints": [],
+              "evidence_ids": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "E-TEXT-P001-ae4b9ddd5e",
+            "kind": "text",
+            "page": 1,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:475-502",
+            "quote": "立了假设检验问题 , 进而得到了是否接收零配件的条件。",
+            "char_start": 475,
+            "char_end": 502,
+            "content_hash": "ae4b9ddd5e2749f7d3966cffbd041b7fe11fe92c69444c64ce39f251392a27db",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-1961bbddbc",
+            "kind": "text",
+            "page": 1,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:521-569",
+            "quote": "用检测花销与假设检验效昂 ( 运用假设检验功效函数衡量 ) 之间相互制约的关系 , 建立决策函",
+            "char_start": 521,
+            "char_end": 569,
+            "content_hash": "1961bbddbc18b5dbbb802d3423027ba28fd34003ea9f098e98aecfddb2ebe041",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-2be1d4b0d2",
+            "kind": "text",
+            "page": 1,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:1171-1208",
+            "quote": "关键识 : 假设检验状态 - 决策模型动态规划算法贝叶斯估计共轻先验分布",
+            "char_start": 1171,
+            "char_end": 1208,
+            "content_hash": "2be1d4b0d2e79018a7a1aec9556fff7bc6058730d110024696bcfdb7bf42a39c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-405260abde",
+            "kind": "text",
+            "page": 3,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:2632-2674",
+            "quote": "的假设检验问题可使用简单陆机抽样抽取检测样本 , 由于企业需要做检测成本与格测效果",
+            "char_start": 2632,
+            "char_end": 2674,
+            "content_hash": "405260abde6a2f6626e99edf64a203e5ba0a21e7d9a8c6220dbecb818e346aff",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-3386f83da5",
+            "kind": "text",
+            "page": 3,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:2721-2766",
+            "quote": "假设检验的功效函数表现假设检验的效果 , 将二者线性组合为决策函数 , 寻找使得决策函数",
+            "char_start": 2721,
+            "char_end": 2766,
+            "content_hash": "3386f83da5b73b9303cf1e3b80dbf5c61e9db823285d62001ba1ae5cfd3e5e51",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-238915ed47",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:3616-3649",
+            "quote": "假设一 : 所有决策为确定性决策 , 适用于生产线上所有相庆节点。",
+            "char_start": 3616,
+            "char_end": 3649,
+            "content_hash": "238915ed47dea93018db590a045aa71cb23c38cf394c7c5c54e5e3e17bf44880",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-ef84fdb2dd",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:3794-3839",
+            "quote": "假设二 : 退回成品拆解后 , 若无法确定相应雾件或半成品是否为次品 , 则必须进行检测。",
+            "char_start": 3794,
+            "char_end": 3839,
+            "content_hash": "ef84fdb2dded5870266cf63b241b5c7280eb1d937b670b96a71c735efafeb7c8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-aecac7cd10",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4158-4201",
+            "quote": "在颖率学派偷设检验的理论体系下 , 原假设和备择偎设的地位存在差异 , 本问题中企业",
+            "char_start": 4158,
+            "char_end": 4201,
+            "content_hash": "aecac7cd1016de569cfd1b3f74f56e0e7b789b2050a6faeadd6081a95d9aa6f2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-25f4c0cb8c",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4201-4252",
+            "quote": "对于拒收与接收的态度也存在差异 , 故可以利用假设检验的思想处理该问题以 , 而 (1) 和 (2)",
+            "char_start": 4201,
+            "char_end": 4252,
+            "content_hash": "25f4c0cb8c93bb320a44dae2f1be8223ba0e3baf1e1d755709faaff643750e65",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-90c49f9703",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:4252-4299",
+            "quote": "两个情形下 , 不仅仅只有显著性水平的差别 , 原假设与备择假设互相相反 , 故在下文中分开",
+            "char_start": 4252,
+            "char_end": 4299,
+            "content_hash": "90c49f970395925977f67cf00a205795ea20497eb1fd33acd6f0518ee02012cd",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-57f3717f83",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4540-4562",
+            "quote": "收这批零件 “ , 可得到假设检验问题 :",
+            "char_start": 4540,
+            "char_end": 4562,
+            "content_hash": "57f3717f837ed628ffdb8dd395351421cbe3c13ef6eaac48b115416ae9a261c8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-af3038f04e",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4579-4602",
+            "quote": "该假设检验问题的旺著性水平 u = 0.05。",
+            "char_start": 4579,
+            "char_end": 4602,
+            "content_hash": "af3038f04e63be899ba90af7fddfd6caff02026701a97b4716bf05cb7ec1fd65",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-f7f9d7abf5",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4602-4631",
+            "quote": "根据假设检验的思想 , 次品率不超过 10% 的标称值",
+            "char_start": 4602,
+            "char_end": 4631,
+            "content_hash": "f7f9d7abf56e40b4304b4cb15934b271940cbb5ff4fe3d5e531fed1c5c0040fe",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-fb996521ae",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:4631-4684",
+            "quote": "但是拒绝了原假设的概率 ( 即犯第一类错误的概家 ) 必须控制在 u = 0.05 之下 , 满趸以上耐",
+            "char_start": 4631,
+            "char_end": 4684,
+            "content_hash": "fb996521ae3c66368da02b9d33f390d340325e49ebcecc63c1738fa53356dd95",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-258efc7731",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:4685-4733",
+            "quote": "求的前提下 , 尽量控例次品率超过 10% 的标称值但是接受原假设的概率 ( 印犯第二类锦误的",
+            "char_start": 4685,
+            "char_end": 4733,
+            "content_hash": "258efc773191f257726b9fa9c52b63de330c1dc9979a2e939ae2669d2c4e38fc",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-ca93637576",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:4903-4932",
+            "quote": "原假设成立的边界条件为 p = 0.1, 在此条件下 :",
+            "char_start": 4903,
+            "char_end": 4932,
+            "content_hash": "ca936375768c6e043f55151df684a3b2deb2cb1c2dd91f15f6271dbf479d5020",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-c50a21336d",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:5036-5083",
+            "quote": "武式为判定方法 , 若根据样本计算出的 X 落入上述集合中 , 则拒绝原假设 , 拒收这批零",
+            "char_start": 5036,
+            "char_end": 5083,
+            "content_hash": "c50a21336d459969eba9f4ff4cee9eb53ea79df4419224f4fae5af22e66304f7",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-4dc66868b6",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:5127-5163",
+            "quote": "为衡量假设检验的好坏 , 下计算该假设检验的功效函数 K(n, 办 :",
+            "char_start": 5127,
+            "char_end": 5163,
+            "content_hash": "4dc66868b65d63eaac48e5c5d2399893ca271c276f82d366d085052c89952c8a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-1952d5a904",
+            "kind": "text",
+            "page": 6,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:5595-5646",
+            "quote": "若根据样本计算出的 R 落入上述集合中 , 则拒绝原假设 , 拒收这批零件 ; 反之 , 若 R 蔬",
+            "char_start": 5595,
+            "char_end": 5646,
+            "content_hash": "1952d5a904671c355dc9ec7da7bf32886c59c4db5cd4c8cc2b5769c6f7cb70d4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-329918d636",
+            "kind": "text",
+            "page": 6,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:5646-5674",
+            "quote": "入上述集合的补集中 , 则接受原假设 , 接收这批零件。",
+            "char_start": 5646,
+            "char_end": 5674,
+            "content_hash": "329918d6364d4863980fcb815ccddace3b0ed3656e1c4214a95ef8f37185eba0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-86ffde0160",
+            "kind": "text",
+            "page": 6,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:5726-5770",
+            "quote": "上文提到 , n 的迪取实际上就是检测花销与假设检验效果之间的权衡 , 为衡量假设检验",
+            "char_start": 5726,
+            "char_end": 5770,
+            "content_hash": "86ffde0160e8840d32d3eceb8a417f198285c1fe5b8585f266989ff653583c01",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-89e412e57a",
+            "kind": "text",
+            "page": 7,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:5902-5926",
+            "quote": "作为样本量为 n 时假设检验效果的街量因素 :",
+            "char_start": 5902,
+            "char_end": 5926,
+            "content_hash": "89e412e57a40e7d3bd9a8206fd347495a7080774df2713fdb7e2e741da518443",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-8178ccd485",
+            "kind": "text",
+            "page": 7,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:5964-6021",
+            "quote": "其中 , 81 表示备择假设的参数空间 , f(p) 为 p 的先验分布密度函数 , 在本文中可侵定 p 的先骋",
+            "char_start": 5964,
+            "char_end": 6021,
+            "content_hash": "8178ccd48558b563f6f9e19d88d6644749c8633d5a53dcab8763e695ad716f20",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-339668256c",
+            "kind": "text",
+            "page": 7,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:6472-6492",
+            "quote": "备择假设历 5 一 01 Hyp<01",
+            "char_start": 6472,
+            "char_end": 6492,
+            "content_hash": "339668256c4397ea675e341d13e505a93bee864b9fd3437896f21ce0c6a644f9",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P008-bec3d25fee",
+            "kind": "text",
+            "page": 8,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:7100-7144",
+            "quote": "零配件的次品会永远处于流水线中永远不会袖丢弃 , 故做出如下假设 : 当企业的决策为对",
+            "char_start": 7100,
+            "char_end": 7144,
+            "content_hash": "bec3d25fee4c78e200e60ea53c2d7b388e9be1f14a5182afa0fa59171006e3c2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P008-5cb2ca493e",
+            "kind": "text",
+            "page": 8,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:7259-7306",
+            "quote": "检测戏本、 装配成本以及调换损失、 拆解费用的关系 , 由于上述假设的存在 , 是否对不合格",
+            "char_start": 7259,
+            "char_end": 7306,
+            "content_hash": "5cb2ca493e0b47cb36af2aa897818ffdab3b6f5b24c757e533cb7a71c71f3c42",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P015-4c500e1b95",
+            "kind": "text",
+            "page": 15,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:14615-14638",
+            "quote": "假设零件刑采购成本为 A 则总采购成本为 :",
+            "char_start": 14615,
+            "char_end": 14638,
+            "content_hash": "4c500e1b95e0a641165036879c924060065aabbe66d455a8f3c35b67159e3404",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-1ae1fe2112",
+            "kind": "text",
+            "page": 18,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:17852-17897",
+            "quote": "在问题四的假设下 , 为衡量次品率真值的不确定性 , 本文运用贝叶斯统计 “ 的思想 ,",
+            "char_start": 17852,
+            "char_end": 17897,
+            "content_hash": "1ae1fe21122d1405acfc04db33d67bd471e7c56b9b1975117ddc2d90d8ad0ee8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-0ff461e715",
+            "kind": "text",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "assumption",
+            "locator": "char:19168-19213",
+            "quote": "运用 R 语言计算积分 , 得到在问题四假设下 , 各种决策策略生成一个合格成品的平炊利",
+            "char_start": 19168,
+            "char_end": 19213,
+            "content_hash": "0ff461e71584cb049ecbcf2b8ed869d9a37ae52b1dd90db9245a12e833df4999",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P022-014c59c40b",
+            "kind": "text",
+            "page": 22,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:21303-21340",
+            "quote": "优点 : 综合考虑了假设检验效果与检测花费 , 得到的最佳样本量较为合理。",
+            "char_start": 21303,
+            "char_end": 21340,
+            "content_hash": "014c59c40bd0a68afdd090b2adcea13cdca31843bf713ea87ca4c04a45d60787",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-15614d5b6a",
+            "kind": "text",
+            "page": 2,
+            "section": "生产过程中的决策优化设计",
+            "label": "model",
+            "locator": "char:1834-1879",
+            "quote": "捷收这批零配件 , 企业需要使用抽祥检测方法进行验证干自行承拙检测费用 . 现需设计标称",
+            "char_start": 1834,
+            "char_end": 1879,
+            "content_hash": "15614d5b6a1e0454020c21c208ae8e229cc8e03c110379ff695481d42daddced",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-3b55ff7cc7",
+            "kind": "text",
+            "page": 3,
+            "section": "生产过程中的决策优化设计",
+            "label": "model",
+            "locator": "char:3108-3154",
+            "quote": "出的 8 个零配件和 3 个半成品 , 问题二使用的对每种决策方案求利润期望的方法对应的决",
+            "char_start": 3108,
+            "char_end": 3154,
+            "content_hash": "3b55ff7cc7cdde76329963f845b99b08107ed3aba400a186f0a9e9b9126f157d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-a2476fac3c",
+            "kind": "text",
+            "page": 3,
+            "section": "生产过程中的决策优化设计",
+            "label": "model",
+            "locator": "char:3202-3249",
+            "quote": "一个多阶段决策问题 , 建立状态 - 决策模城 , 并通过动态规划算法来求鲆最优策路及决策指",
+            "char_start": 3202,
+            "char_end": 3249,
+            "content_hash": "a2476fac3cedc0b7f551035e1d8d1d4a99df102ae1bb7383091eef44dc6dbb76",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-516c2dca85",
+            "kind": "text",
+            "page": 1,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:1136-1161",
+            "quote": "经过灵敏度检验 , 先验分布超参数的选取对利涧",
+            "char_start": 1136,
+            "char_end": 1161,
+            "content_hash": "516c2dca857c2a2408c2fd9720be9efc864e206ead00261276beaa9b27fe4672",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-44da13eb6a",
+            "kind": "text",
+            "page": 2,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:1789-1834",
+            "quote": "问题一 “ 为了检验供应商供应的雳酣件次品率是否超过供应商给出的标称值 , 进而决定是否",
+            "char_start": 1789,
+            "char_end": 1834,
+            "content_hash": "44da13eb6ac2e88ffe709ba692425fcf0f040567e7001d632e4261249d0fbe12",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-17f3df3153",
+            "kind": "text",
+            "page": 3,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:3254-3304",
+            "quote": "间题四为衡量次品率取值可能存在的 “ 误差 “, 可利用贝叶斯估计 , 选用共绊先验分布 Beta",
+            "char_start": 3254,
+            "char_end": 3304,
+            "content_hash": "17f3df31533b5c31c996ab87437eed3412aeba360771465d060205ba129dbc4a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-a233dfcfb6",
+            "kind": "text",
+            "page": 4,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4322-4365",
+            "quote": "使用简单随机抽样检验次咬率 , 俊定共抽取 n 个样本东每一个样本是否为次品独立吟分",
+            "char_start": 4322,
+            "char_end": 4365,
+            "content_hash": "a233dfcfb6e7e19c902052ec79c926755172f9617f3720b84f954cac4adafafb",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-cfc4e7040b",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4763-4787",
+            "quote": "如果检验的次数较小 , 则蛟然节省了花费 ,",
+            "char_start": 4763,
+            "char_end": 4787,
+            "content_hash": "cfc4e7040bf049fdec67663afda8f64f3b1dd0c4e0dce909c366168df2727575",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-da3262977a",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4787-4831",
+            "quote": "但是导致犯第二类错误的概率较大 , 可见 , 选择合适的检验次数实际上是在检测花销与犯",
+            "char_start": 4787,
+            "char_end": 4831,
+            "content_hash": "da3262977a80623ce21445a2c1b6ad305bb88d18d0390c26070c49962a861ef2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-988cffa1f8",
+            "kind": "text",
+            "page": 5,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:4847-4887",
+            "quote": "甾于 n 的取傲较大 , 可根据如下方式构造检验统计量亘利用其淋进正态性质 :",
+            "char_start": 4847,
+            "char_end": 4887,
+            "content_hash": "988cffa1f8a603886936bc24c95e18a7180bb9f29dc90456c02f207fde961934",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-669a75dfc8",
+            "kind": "text",
+            "page": 6,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:5827-5861",
+            "quote": "K(n,p) 越大则犯第二类错误的概率越低 , 信设检验的效果越好。",
+            "char_start": 5827,
+            "char_end": 5861,
+            "content_hash": "669a75dfc8b9c1c1a469f55882f4cafdfc55cd122ba4977de71b9b0d08b9b5f4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P009-7858e4a787",
+            "kind": "text",
+            "page": 9,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:7610-7634",
+            "quote": "根据是否检验零配件分为如下两种情况 GXG):",
+            "char_start": 7610,
+            "char_end": 7634,
+            "content_hash": "7858e4a787bf340db58d035443a0d70cd8324c1a29ee34e7c602811834d0c4e4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P009-14eb3951b8",
+            "kind": "text",
+            "page": 9,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:7634-7681",
+            "quote": "团若对零配件 i 进行检验 , 则生产出能够进入下一流程的零配件 ( 对于检验雳配件而言 ,",
+            "char_start": 7634,
+            "char_end": 7681,
+            "content_hash": "14eb3951b8e316239260db7105c3d1580efcddaac28fe0c20bdd1e5f59b864d0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P009-516549db8c",
+            "kind": "text",
+            "page": 9,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:7781-7827",
+            "quote": "@ 若不对雾配件进行检验 , 则生产出能够进入下一流程的零醉件所需的生产次数 5t = 1。",
+            "char_start": 7781,
+            "char_end": 7827,
+            "content_hash": "516549db8c7a82c51603b1fdd13ce93f3e3e46ca201e1bc73124251f0ca4f1fd",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-504470285f",
+            "kind": "text",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:18783-18843",
+            "quote": "其中 nl,nz,ma 分别表示零配件 1、 零配件 2、 成昂的检验样本量 , 决定 p,pz,Ps 的后验分布 ;",
+            "char_start": 18783,
+            "char_end": 18843,
+            "content_hash": "504470285f88746f9f2d703806156fd268dcf31481889476e5131a50527e8804",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-997edc026f",
+            "kind": "text",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:18920-18954",
+            "quote": "K(miP) 为问题一中便设检验的功效函数 , r(p) 为 p",
+            "char_start": 18920,
+            "char_end": 18954,
+            "content_hash": "997edc026f92090d7582164d35429dedf506869b10cbff3fd856b414e2d2a92a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P024-b3470b3195",
+            "kind": "text",
+            "page": 24,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:22145-22164",
+            "quote": "灵敏度检验代码 .R 灵敏度检验代码",
+            "char_start": 22145,
+            "char_end": 22164,
+            "content_hash": "b3470b31953c8c88696af710d00d03a1528d963be9409e6a0a699cdf9035a2e4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P024-1d2c954631",
+            "kind": "text",
+            "page": 24,
+            "section": "生产过程中的决策优化设计",
+            "label": "validation",
+            "locator": "char:22249-22262",
+            "quote": "附录 6 灵敏度检验代码",
+            "char_start": 22249,
+            "char_end": 22262,
+            "content_hash": "1d2c954631f6da58a2066edda7b2b7a0470cb0cc4e1d500b97eae9130dc333c4",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-FIGURE-P022-6bf9fe34f1",
+            "kind": "figure",
+            "page": 22,
+            "section": "生产过程中的决策优化设计",
+            "label": "图 2",
+            "locator": "FIGURE-001",
+            "quote": "图 2 q 变动对期望影响裕",
+            "char_start": 21114,
+            "char_end": 21117,
+            "content_hash": "6bf9fe34f1c93316f643648947c0580624efe5a71f03e8e1e0664e744eb93675",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P022-957f1ffa9a",
+            "kind": "figure",
+            "page": 22,
+            "section": "生产过程中的决策优化设计",
+            "label": "图 3",
+            "locator": "FIGURE-002",
+            "quote": "图 3 『 变动对期望影响表",
+            "char_start": 21208,
+            "char_end": 21211,
+            "content_hash": "957f1ffa9ac781971ead73a0c7340a62b83e688b482de694eea6a91a25d9f655",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P036-5362ad7745",
+            "kind": "figure",
+            "page": 36,
+            "section": "Beta &8 npl [ 或厉水颜 ) . 0 - npd ( 伟莲沥斯",
+            "label": "图\n\n171",
+            "locator": "FIGURE-003",
+            "quote": "170 # 将绽果诚剖成敞点图 171 plot(beta0_values,results,",
+            "char_start": 44666,
+            "char_end": 44672,
+            "content_hash": "5362ad7745efcc297d014bbef011145be618b8b62a377078d6fdce449c0a3ba5",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P007-66c55ec26b",
+            "kind": "table",
+            "page": 7,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 1",
+            "locator": "TABLE-001",
+            "quote": "表 1 问题一结果总结表",
+            "char_start": 6401,
+            "char_end": 6404,
+            "content_hash": "66c55ec26b4e779474f396fc6498006eba51f5d520a26a332d9df6f295870ccf",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P008-762128c000",
+            "kind": "table",
+            "page": 8,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 2",
+            "locator": "TABLE-002",
+            "quote": "表 2 16 种决策方案及对应编号表",
+            "char_start": 6858,
+            "char_end": 6861,
+            "content_hash": "762128c000d02af4e34e91648791c5f89817bd07a46d16f66af824318a44d70e",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P011-a2d522aa2d",
+            "kind": "table",
+            "page": 11,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 3",
+            "locator": "TABLE-003",
+            "quote": "表 3 16 种决策方案生成单件合格成响总花销期望表达式",
+            "char_start": 11097,
+            "char_end": 11100,
+            "content_hash": "a2d522aa2de27797dfebc362c9fd0a07954e984340112c6b84ca615585f08517",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P013-e5b79eb076",
+            "kind": "table",
+            "page": 13,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 4",
+            "locator": "TABLE-004",
+            "quote": "表 4 6 积情况 16 种决策方案对应的利涧期望值袍",
+            "char_start": 12561,
+            "char_end": 12564,
+            "content_hash": "e5b79eb07613ee2dbec363a0a71e267975a0c17f1b611421e714dba9e126b77b",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P013-bf4400f9bc",
+            "kind": "table",
+            "page": 13,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 5",
+            "locator": "TABLE-005",
+            "quote": "表 5 6 种情况最终冲策方案及决策指标值表",
+            "char_start": 12707,
+            "char_end": 12710,
+            "content_hash": "bf4400f9bc8c44dbb972a90a1cc60e55d7a5ec5b48993bacb9da54a90a897a64",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P018-e71b0599c6",
+            "kind": "table",
+            "page": 18,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 6",
+            "locator": "TABLE-006",
+            "quote": "表 6 春终决策方案表",
+            "char_start": 17626,
+            "char_end": 17629,
+            "content_hash": "e71b0599c6eecfe3d7da98e5c90aca1894264b72b6ab44f23e379f3c7128383d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P019-4c4e4e0b08",
+            "kind": "table",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 7",
+            "locator": "TABLE-007",
+            "quote": "表 7 问题二 6 种情况 16 种决策方案对应的利消期望值表",
+            "char_start": 19236,
+            "char_end": 19239,
+            "content_hash": "4c4e4e0b08a2927d59449dd1161b582218a418012a511110392d6d3031849a86",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P019-e58b6454eb",
+            "kind": "table",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "表\n\n19",
+            "locator": "TABLE-008",
+            "quote": "表 7 问题二 6 种情况 16 种决策方案对应的利消期望值表 19",
+            "char_start": 19266,
+            "char_end": 19271,
+            "content_hash": "e58b6454ebd07e898ecec158207585655f705219d4afa5ef5278748ba332d1e5",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P020-fac7dfdcf0",
+            "kind": "table",
+            "page": 20,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 8",
+            "locator": "TABLE-009",
+            "quote": "表 8 问题二 6 种情况最终决策方案及决策指标值表",
+            "char_start": 19388,
+            "char_end": 19391,
+            "content_hash": "fac7dfdcf0c6df88f0aa2e83997d7a2b986d411247e60a299c6b0c9b7dcec6c9",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P024-c5c62eac82",
+            "kind": "table",
+            "page": 24,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 1",
+            "locator": "TABLE-010",
+            "quote": "表 1 支捧文件目录",
+            "char_start": 22018,
+            "char_end": 22021,
+            "content_hash": "c5c62eac82570412b9962c60d1b192c621bb5b3557d97d724860f7e7cafa5356",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P024-44e68ddad9",
+            "kind": "table",
+            "page": 24,
+            "section": "生产过程中的决策优化设计",
+            "label": "表 2",
+            "locator": "TABLE-011",
+            "quote": "表 2 附录目录",
+            "char_start": 22164,
+            "char_end": 22167,
+            "content_hash": "44e68ddad9721dba8f4117a60cbe3a7cf4738a14ca10d4da1d65ff6d8b8d5c28",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P033-1ecf6f1ed5",
+            "kind": "table",
+            "page": 33,
+            "section": "生产过程中的决策优化设计",
+            "label": "表\n\n202",
+            "locator": "TABLE-012",
+            "quote": "201 & 国数列表 202 “functions <- list(jjjc, jjbe, jijb, jjbb, jbjb, jbbb, bjjb, bjbb. bbjb, bbbb,",
+            "char_start": 39030,
+            "char_end": 39036,
+            "content_hash": "1ecf6f1ed590c337554f2c0cc6ee62d02f4048e8b95773dd5a901afb723782b7",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P033-3468e331e6",
+            "kind": "table",
+            "page": 33,
+            "section": "生产过程中的决策优化设计",
+            "label": "表\n\n236",
+            "locator": "TABLE-013",
+            "quote": "235 多添加一个工作表 236 addworksheet(wb, \"Results\")",
+            "char_start": 40117,
+            "char_end": 40123,
+            "content_hash": "3468e331e67b9bb1d6ec96952d6ae912ff51a7441a343a525f54f7b768a1817d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P033-4fd3416da5",
+            "kind": "table",
+            "page": 33,
+            "section": "生产过程中的决策优化设计",
+            "label": "表\n\n238",
+            "locator": "TABLE-014",
+            "quote": "237 # 驰入矩降到工作表 238 writeData(wb, “Results”, results_matrix)",
+            "char_start": 40166,
+            "char_end": 40172,
+            "content_hash": "4fd3416da5043aec30a642425662c19f40b4fe20a8e2c667556ab106245852bd",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TEXT-P019-165d7f7a51",
+            "kind": "text",
+            "page": 19,
+            "section": "生产过程中的决策优化设计",
+            "label": "model",
+            "locator": "page:19",
+            "quote": "′薯`(′_I(】'll翼,2,薹)3))=_[ / j, (plpz,p3) Pl(pl)9z(pz)pa(pa)dpldpzdps",
+            "char_start": null,
+            "char_end": null,
+            "content_hash": "165d7f7a516bf9c15a80b852d44991e431c7048d8b14cab52c0fbdeb1db2c73c",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.82
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "A-001",
+            "statement": "假设一 : 所有决策为确定性决策 , 适用于生产线上所有相庆节点。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-238915ed47"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-002",
+            "statement": "假设二 : 退回成品拆解后 , 若无法确定相应雾件或半成品是否为次品 , 则必须进行检测。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-ef84fdb2dd"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-003",
+            "statement": "两个情形下 , 不仅仅只有显著性水平的差别 , 原假设与备择假设互相相反 , 故在下文中分开",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-90c49f9703"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-004",
+            "statement": "但是拒绝了原假设的概率 ( 即犯第一类错误的概家 ) 必须控制在 u = 0.05 之下 , 满趸以上耐",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P005-fb996521ae"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-005",
+            "statement": "求的前提下 , 尽量控例次品率超过 10% 的标称值但是接受原假设的概率 ( 印犯第二类锦误的",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P005-258efc7731"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-006",
+            "statement": "原假设成立的边界条件为 p = 0.1, 在此条件下 :",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P005-ca93637576"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-007",
+            "statement": "武式为判定方法 , 若根据样本计算出的 X 落入上述集合中 , 则拒绝原假设 , 拒收这批零",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P005-c50a21336d"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-008",
+            "statement": "若根据样本计算出的 R 落入上述集合中 , 则拒绝原假设 , 拒收这批零件 ; 反之 , 若 R 蔬",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-1952d5a904"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-009",
+            "statement": "入上述集合的补集中 , 则接受原假设 , 接收这批零件。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-329918d636"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-010",
+            "statement": "其中 , 81 表示备择假设的参数空间 , f(p) 为 p 的先验分布密度函数 , 在本文中可侵定 p 的先骋",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P007-8178ccd485"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-011",
+            "statement": "备择假设历 5 一 01 Hyp<01",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P007-339668256c"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-012",
+            "statement": "零配件的次品会永远处于流水线中永远不会袖丢弃 , 故做出如下假设 : 当企业的决策为对",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P008-bec3d25fee"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-013",
+            "statement": "检测戏本、 装配成本以及调换损失、 拆解费用的关系 , 由于上述假设的存在 , 是否对不合格",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P008-5cb2ca493e"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-014",
+            "statement": "假设零件刑采购成本为 A 则总采购成本为 :",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P015-4c500e1b95"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-015",
+            "statement": "在问题四的假设下 , 为衡量次品率真值的不确定性 , 本文运用贝叶斯统计 “ 的思想 ,",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P018-1ae1fe2112"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-016",
+            "statement": "运用 R 语言计算积分 , 得到在问题四假设下 , 各种决策策略生成一个合格成品的平炊利",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P019-0ff461e715"
+            ],
+            "provenance": "HEURISTIC"
+          }
+        ],
+        "variables": [],
+        "data": {
+          "sources": [],
+          "fields": [],
+          "data_types": [],
+          "preprocessing": [],
+          "missing_value_strategy": "",
+          "outlier_strategy": "",
+          "evidence_ids": []
+        },
+        "modeling_chain": [
+          {
+            "order": 1,
+            "subproblem_id": "Q1",
+            "model_id": "model-linearprogramming-5c5372fcf9",
+            "algorithm_ids": [],
+            "input": "论文数据",
+            "output": "模型结果",
+            "rationale": "启发式检测到模型名称，建模链需人工核对。",
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          },
+          {
+            "order": 2,
+            "subproblem_id": "Q1",
+            "model_id": "model-hypothesistesting-cfe3d9969d",
+            "algorithm_ids": [],
+            "input": "论文数据",
+            "output": "模型结果",
+            "rationale": "启发式检测到模型名称，建模链需人工核对。",
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          }
+        ],
+        "models": [
+          {
+            "id": "model-linearprogramming-5c5372fcf9",
+            "canonical_name": "Linear Programming",
+            "display_name": "Linear Programming",
+            "aliases": [
+              "线性规划",
+              "LP"
+            ],
+            "category": "optimization",
+            "task_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "role": "在线性目标和线性约束下求最优决策变量",
+            "description": "由参考目录识别，需结合论文证据复核。",
+            "assumptions": [],
+            "inputs": [
+              {
+                "name": "objective_coefficients",
+                "description": "目标函数系数",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "constraint_matrix",
+                "description": "约束系数矩阵",
+                "shape": "m×n",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "name": "decision_variables",
+                "description": "最优决策变量",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "objective_value",
+                "description": "最优目标值",
+                "shape": "scalar",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "equations": [],
+            "workflow": [
+              {
+                "order": 1,
+                "name": "定义决策变量及单位",
+                "description": "定义决策变量及单位",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P019-165d7f7a51"
+                ]
+              },
+              {
+                "order": 2,
+                "name": "写出目标函数",
+                "description": "写出目标函数",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P019-165d7f7a51"
+                ]
+              },
+              {
+                "order": 3,
+                "name": "将业务规则转换为线性约束",
+                "description": "将业务规则转换为线性约束",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P019-165d7f7a51"
+                ]
+              },
+              {
+                "order": 4,
+                "name": "检查可行域与变量边界",
+                "description": "检查可行域与变量边界",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P019-165d7f7a51"
+                ]
+              },
+              {
+                "order": 5,
+                "name": "调用求解器并解释影子价格或松弛量",
+                "description": "调用求解器并解释影子价格或松弛量",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P019-165d7f7a51"
+                ]
+              }
+            ],
+            "parameters": [],
+            "solver_algorithm_ids": [],
+            "strengths": [
+              "可获得全局最优",
+              "求解器成熟",
+              "解释性较强"
+            ],
+            "weaknesses": [
+              "要求线性",
+              "整数决策需扩展为 MILP",
+              "对参数误差可能敏感"
+            ],
+            "use_when": [
+              "目标和约束可线性表达",
+              "决策变量连续"
+            ],
+            "avoid_when": [
+              "明显非线性关系无法合理线性化"
+            ],
+            "alternatives": [
+              "Integer Programming",
+              "Nonlinear Programming"
+            ],
+            "combinations": [
+              "Sensitivity Analysis",
+              "Scenario Analysis"
+            ],
+            "complexity": {
+              "time": "problem-dependent",
+              "space": "O(mn)",
+              "notes": "单纯形法最坏指数级，内点法有多项式界"
+            },
+            "validation_methods": [
+              "可行性检查",
+              "对偶/松弛分析",
+              "参数敏感性"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          },
+          {
+            "id": "model-hypothesistesting-cfe3d9969d",
+            "canonical_name": "Hypothesis Testing",
+            "display_name": "Hypothesis Testing",
+            "aliases": [
+              "假设检验",
+              "显著性检验",
+              "statistical hypothesis test"
+            ],
+            "category": "statistics",
+            "task_types": [
+              "hypothesis_testing",
+              "inference",
+              "comparison"
+            ],
+            "role": "在给定显著性水平下判断样本证据是否反对原假设",
+            "description": "由参考目录识别，需结合论文证据复核。",
+            "assumptions": [],
+            "inputs": [],
+            "outputs": [],
+            "equations": [],
+            "workflow": [
+              {
+                "order": 1,
+                "name": "定义原假设与备择假设",
+                "description": "定义原假设与备择假设",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P001-1961bbddbc"
+                ]
+              },
+              {
+                "order": 2,
+                "name": "选择与数据和假设匹配的检验统计量",
+                "description": "选择与数据和假设匹配的检验统计量",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P001-1961bbddbc"
+                ]
+              },
+              {
+                "order": 3,
+                "name": "检查独立性、分布和方差等前提",
+                "description": "检查独立性、分布和方差等前提",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P001-1961bbddbc"
+                ]
+              },
+              {
+                "order": 4,
+                "name": "计算统计量与 p 值或临界域",
+                "description": "计算统计量与 p 值或临界域",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P001-1961bbddbc"
+                ]
+              },
+              {
+                "order": 5,
+                "name": "报告效应量和置信区间",
+                "description": "报告效应量和置信区间",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P001-1961bbddbc"
+                ]
+              }
+            ],
+            "parameters": [],
+            "solver_algorithm_ids": [],
+            "strengths": [
+              "统计推断框架清晰",
+              "可量化证据强度"
+            ],
+            "weaknesses": [
+              "p 值容易误读",
+              "多重比较和低检验功效会误导"
+            ],
+            "use_when": [
+              "需要比较群体或验证关系",
+              "有明确可检验假设"
+            ],
+            "avoid_when": [
+              "样本选择偏差严重",
+              "检验前提不满足且无稳健替代"
+            ],
+            "alternatives": [
+              "Bootstrap",
+              "Permutation Test",
+              "Bayesian Inference"
+            ],
+            "combinations": [
+              "Effect Size",
+              "Confidence Interval",
+              "Multiple Testing Correction"
+            ],
+            "complexity": {
+              "time": "test-dependent",
+              "space": "O(n)",
+              "notes": ""
+            },
+            "validation_methods": [
+              "前提检验",
+              "效应量",
+              "检验功效",
+              "多重比较校正"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "algorithms": [],
+        "validation": {
+          "methods": [],
+          "metrics": [],
+          "results": [],
+          "sensitivity_analysis": [],
+          "robustness_checks": [],
+          "evidence_ids": []
+        },
+        "limitations": [
+          "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+        ],
+        "innovations": [],
+        "case": {
+          "id": "case-2024-b159",
+          "title": "生产过程中的决策优化设计",
+          "domain": "unknown",
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "year": 2024,
+          "award": "优秀论文",
+          "problem_id": "B",
+          "problem_fingerprint": {
+            "problem_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization",
+              "hypothesis_testing",
+              "inference",
+              "comparison"
+            ],
+            "data_types": [],
+            "targets": [],
+            "constraints": [],
+            "domain_keywords": []
+          },
+          "subproblem_mapping": [
+            {
+              "subproblem_id": "Q1",
+              "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "model_ids": [
+                "model-linearprogramming-5c5372fcf9",
+                "model-hypothesistesting-cfe3d9969d"
+              ],
+              "algorithm_ids": [],
+              "data_flow": "",
+              "rationale": "启发式占位映射",
+              "evidence_ids": []
+            }
+          ],
+          "results": [],
+          "transferable_insights": [
+            "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+          ],
+          "pitfalls": [
+            "仅根据名称命中可能产生误判。"
+          ],
+          "innovations": [],
+          "evidence_ids": []
+        },
+        "code_recipes": [],
+        "quality": {
+          "evidence_coverage": 0.25,
+          "completeness": 0.25,
+          "code_reproducibility": 0.0,
+          "warnings": [
+            "LLM disabled: generated a heuristic IR skeleton.",
+            "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+            "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+          ],
+          "review_required": true
+        }
+      },
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "models": {
+    "model-linearprogramming-5c5372fcf9": {
+      "card": {
+        "id": "model-linearprogramming-5c5372fcf9",
+        "canonical_name": "Linear Programming",
+        "display_name": "Linear Programming",
+        "aliases": [
+          "线性规划",
+          "LP"
+        ],
+        "category": "optimization",
+        "task_types": [
+          "allocation",
+          "scheduling",
+          "minimization",
+          "maximization"
+        ],
+        "role": "在线性目标和线性约束下求最优决策变量",
+        "description": "由参考目录识别，需结合论文证据复核。",
+        "assumptions": [],
+        "inputs": [
+          {
+            "name": "objective_coefficients",
+            "description": "目标函数系数",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "constraint_matrix",
+            "description": "约束系数矩阵",
+            "shape": "m×n",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "outputs": [
+          {
+            "name": "decision_variables",
+            "description": "最优决策变量",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "objective_value",
+            "description": "最优目标值",
+            "shape": "scalar",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "equations": [],
+        "workflow": [
+          {
+            "order": 1,
+            "name": "定义决策变量及单位",
+            "description": "定义决策变量及单位",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          },
+          {
+            "order": 2,
+            "name": "写出目标函数",
+            "description": "写出目标函数",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          },
+          {
+            "order": 3,
+            "name": "将业务规则转换为线性约束",
+            "description": "将业务规则转换为线性约束",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          },
+          {
+            "order": 4,
+            "name": "检查可行域与变量边界",
+            "description": "检查可行域与变量边界",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          },
+          {
+            "order": 5,
+            "name": "调用求解器并解释影子价格或松弛量",
+            "description": "调用求解器并解释影子价格或松弛量",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P019-165d7f7a51"
+            ]
+          }
+        ],
+        "parameters": [],
+        "solver_algorithm_ids": [],
+        "strengths": [
+          "可获得全局最优",
+          "求解器成熟",
+          "解释性较强"
+        ],
+        "weaknesses": [
+          "要求线性",
+          "整数决策需扩展为 MILP",
+          "对参数误差可能敏感"
+        ],
+        "use_when": [
+          "目标和约束可线性表达",
+          "决策变量连续"
+        ],
+        "avoid_when": [
+          "明显非线性关系无法合理线性化"
+        ],
+        "alternatives": [
+          "Integer Programming",
+          "Nonlinear Programming"
+        ],
+        "combinations": [
+          "Sensitivity Analysis",
+          "Scenario Analysis"
+        ],
+        "complexity": {
+          "time": "problem-dependent",
+          "space": "O(mn)",
+          "notes": "单纯形法最坏指数级，内点法有多项式界"
+        },
+        "validation_methods": [
+          "可行性检查",
+          "对偶/松弛分析",
+          "参数敏感性"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P019-165d7f7a51"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b159",
+          "title": "生产过程中的决策优化设计",
+          "evidence_ids": [
+            "E-TEXT-P019-165d7f7a51"
+          ]
+        }
+      ]
+    },
+    "model-hypothesistesting-cfe3d9969d": {
+      "card": {
+        "id": "model-hypothesistesting-cfe3d9969d",
+        "canonical_name": "Hypothesis Testing",
+        "display_name": "Hypothesis Testing",
+        "aliases": [
+          "假设检验",
+          "显著性检验",
+          "statistical hypothesis test"
+        ],
+        "category": "statistics",
+        "task_types": [
+          "hypothesis_testing",
+          "inference",
+          "comparison"
+        ],
+        "role": "在给定显著性水平下判断样本证据是否反对原假设",
+        "description": "由参考目录识别，需结合论文证据复核。",
+        "assumptions": [],
+        "inputs": [],
+        "outputs": [],
+        "equations": [],
+        "workflow": [
+          {
+            "order": 1,
+            "name": "定义原假设与备择假设",
+            "description": "定义原假设与备择假设",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          },
+          {
+            "order": 2,
+            "name": "选择与数据和假设匹配的检验统计量",
+            "description": "选择与数据和假设匹配的检验统计量",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          },
+          {
+            "order": 3,
+            "name": "检查独立性、分布和方差等前提",
+            "description": "检查独立性、分布和方差等前提",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          },
+          {
+            "order": 4,
+            "name": "计算统计量与 p 值或临界域",
+            "description": "计算统计量与 p 值或临界域",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          },
+          {
+            "order": 5,
+            "name": "报告效应量和置信区间",
+            "description": "报告效应量和置信区间",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P001-1961bbddbc"
+            ]
+          }
+        ],
+        "parameters": [],
+        "solver_algorithm_ids": [],
+        "strengths": [
+          "统计推断框架清晰",
+          "可量化证据强度"
+        ],
+        "weaknesses": [
+          "p 值容易误读",
+          "多重比较和低检验功效会误导"
+        ],
+        "use_when": [
+          "需要比较群体或验证关系",
+          "有明确可检验假设"
+        ],
+        "avoid_when": [
+          "样本选择偏差严重",
+          "检验前提不满足且无稳健替代"
+        ],
+        "alternatives": [
+          "Bootstrap",
+          "Permutation Test",
+          "Bayesian Inference"
+        ],
+        "combinations": [
+          "Effect Size",
+          "Confidence Interval",
+          "Multiple Testing Correction"
+        ],
+        "complexity": {
+          "time": "test-dependent",
+          "space": "O(n)",
+          "notes": ""
+        },
+        "validation_methods": [
+          "前提检验",
+          "效应量",
+          "检验功效",
+          "多重比较校正"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P001-1961bbddbc"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-b159",
+          "title": "生产过程中的决策优化设计",
+          "evidence_ids": [
+            "E-TEXT-P001-1961bbddbc"
+          ]
+        }
+      ]
+    }
+  },
+  "algorithms": {},
+  "cases": {
+    "case-2024-b159": {
+      "card": {
+        "id": "case-2024-b159",
+        "title": "生产过程中的决策优化设计",
+        "domain": "unknown",
+        "competition": "高教社杯全国大学生数学建模竞赛",
+        "year": 2024,
+        "award": "优秀论文",
+        "problem_id": "B",
+        "problem_fingerprint": {
+          "problem_types": [
+            "allocation",
+            "scheduling",
+            "minimization",
+            "maximization",
+            "hypothesis_testing",
+            "inference",
+            "comparison"
+          ],
+          "data_types": [],
+          "targets": [],
+          "constraints": [],
+          "domain_keywords": []
+        },
+        "subproblem_mapping": [
+          {
+            "subproblem_id": "Q1",
+            "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+            "model_ids": [
+              "model-linearprogramming-5c5372fcf9",
+              "model-hypothesistesting-cfe3d9969d"
+            ],
+            "algorithm_ids": [],
+            "data_flow": "",
+            "rationale": "启发式占位映射",
+            "evidence_ids": []
+          }
+        ],
+        "results": [],
+        "transferable_insights": [
+          "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+        ],
+        "pitfalls": [
+          "仅根据名称命中可能产生误判。"
+        ],
+        "innovations": [],
+        "evidence_ids": []
+      },
+      "paper_id": "paper-2024-b159",
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "codes": {},
+  "updated_at": "2026-09-04T18:08:23+00:00"
+}

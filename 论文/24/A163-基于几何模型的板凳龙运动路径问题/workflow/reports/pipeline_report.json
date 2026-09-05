@@ -1,0 +1,53 @@
+{
+  "paper": {
+    "code": "A163",
+    "title": "基于几何模型的板凳龙运动路径问题",
+    "pages": 45,
+    "source_file": "A163.pdf",
+    "title_source": "page_1_ocr_corrected"
+  },
+  "finished_at": "2026-09-04T18:08:23+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 72,
+    "models": 0,
+    "algorithms": 0,
+    "vault_notes": 3
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/基于几何模型的板凳龙运动路径问题.md",
+      "40_Competition-Cases/基于几何模型的板凳龙运动路径问题-案例.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\知识库",
+    "note_count": 2,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\知识库",
+    "note_count": 3,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

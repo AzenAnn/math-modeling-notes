@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import shutil
 import subprocess
@@ -24,6 +25,7 @@ from .io_utils import (
 
 LOGGER = logging.getLogger(__name__)
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"}
+_CJK = r"\u3400-\u4dbf\u4e00-\u9fff"
 
 
 @dataclass(slots=True)
@@ -106,12 +108,73 @@ def _pages_from_markdown(text: str) -> list[dict[str, Any]]:
     ]
 
 
-def _extract_page_map(pdf_path: Path) -> list[dict[str, Any]]:
+def _configure_tessdata() -> None:
+    """Help PyMuPDF/Tesseract find the bundled language data on Windows."""
+    if os.getenv("TESSDATA_PREFIX"):
+        return
+    candidates = [
+        Path(r"C:\Program Files\Tesseract-OCR\tessdata"),
+        Path(r"C:\Program Files (x86)\Tesseract-OCR\tessdata"),
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            os.environ["TESSDATA_PREFIX"] = str(candidate)
+            return
+
+
+def _normalize_ocr_text(text: str) -> str:
+    """Remove Tesseract's artificial spacing while preserving paragraphs."""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(rf"(?<=[{_CJK}])[ \t]+(?=[{_CJK}，。！？；：、）】》])", "", text)
+    text = re.sub(rf"(?<=[（【《])[ \t]+(?=[{_CJK}])", "", text)
+    text = re.sub(r"[ \t]+([，。！？；：、）】》])", r"\1", text)
+    text = re.sub(r"([（【《])[ \t]+", r"\1", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return "\n".join(line.rstrip() for line in text.splitlines()).strip()
+
+
+def _ocr_page_text(page: Any, *, language: str = "chi_sim+eng", dpi: int = 180) -> str:
+    executable = shutil.which("tesseract")
+    if not executable:
+        raise ParserUnavailableError("Tesseract CLI was not found in PATH.")
+    _configure_tessdata()
+    scale = dpi / 72.0
+    fitz = _require_pymupdf()
+    pixmap = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
+    completed = subprocess.run(
+        [executable, "stdin", "stdout", "-l", language, "--psm", "3"],
+        input=pixmap.tobytes("png"),
+        capture_output=True,
+        timeout=180,
+        check=False,
+    )
+    if completed.returncode != 0:
+        stderr = completed.stderr.decode("utf-8", errors="replace")
+        raise DocumentParseError(f"Tesseract failed with exit code {completed.returncode}: {stderr[-1000:]}")
+    return _normalize_ocr_text(completed.stdout.decode("utf-8", errors="replace"))
+
+
+def _extract_page_map(
+    pdf_path: Path,
+    *,
+    force_ocr: bool = False,
+    ocr_language: str = "chi_sim+eng",
+    ocr_dpi: int = 180,
+) -> list[dict[str, Any]]:
     fitz = _require_pymupdf()
     pages: list[dict[str, Any]] = []
     with fitz.open(pdf_path) as document:
         for index, page in enumerate(document, start=1):
             text = page.get_text("text", sort=True) or ""
+            ocr_used = force_ocr
+            ocr_error = ""
+            if force_ocr:
+                try:
+                    text = _ocr_page_text(page, language=ocr_language, dpi=ocr_dpi)
+                except Exception as exc:
+                    text = ""
+                    ocr_error = f"{type(exc).__name__}: {exc}"
             pages.append(
                 {
                     "page": index,
@@ -121,6 +184,10 @@ def _extract_page_map(pdf_path: Path) -> list[dict[str, Any]]:
                     "normalized_text": normalize_space(text),
                     "content_hash": sha256_text(normalize_space(text)),
                     "char_count": len(text),
+                    "ocr_used": ocr_used,
+                    "ocr_language": ocr_language if ocr_used else "",
+                    "confidence": "medium" if ocr_used and text else ("low" if ocr_used else "high"),
+                    "ocr_error": ocr_error,
                 }
             )
     return pages
@@ -268,12 +335,28 @@ def _merge_markdown_pages_with_geometry(
 
 
 def _parse_with_pymupdf(input_path: Path, pages: list[dict[str, Any]]) -> tuple[str, dict[str, Any], Path]:
+    if not any(normalize_space(str(page.get("text") or "")) for page in pages):
+        raise DocumentParseError("PyMuPDF found no usable text layer; OCR is required.")
     parts = ["<!-- generated-by: Modeling-Mastery/PyMuPDF -->", ""]
     for page in pages:
         parts.append(f"<!-- MM_PAGE: {page['page']} -->")
         parts.append(page["text"].rstrip())
         parts.append("")
     return "\n".join(parts).strip() + "\n", {"pages": pages}, input_path
+
+
+def _parse_with_pymupdf_ocr(input_path: Path) -> tuple[str, dict[str, Any], Path, list[dict[str, Any]]]:
+    pages = _extract_page_map(input_path, force_ocr=True)
+    if not any(normalize_space(str(page.get("text") or "")) for page in pages):
+        errors = [str(page.get("ocr_error")) for page in pages if page.get("ocr_error")]
+        detail = errors[0] if errors else "OCR produced no text"
+        raise DocumentParseError(detail)
+    parts = ["<!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR -->", ""]
+    for page in pages:
+        parts.append(f"<!-- MM_PAGE: {page['page']} -->")
+        parts.append(str(page.get("text") or "").rstrip())
+        parts.append("")
+    return "\n".join(parts).strip() + "\n", {"pages": pages}, input_path, pages
 
 
 def _extract_sections(markdown: str) -> list[dict[str, Any]]:
@@ -368,6 +451,7 @@ def parse_document(
     backend: str = "auto",
     mineru_backend: str = "pipeline",
     parser_timeout: int = 3600,
+    title_hint: str | None = None,
 ) -> ParseResult:
     input_path = input_path.expanduser().resolve()
     output_dir = output_dir.expanduser().resolve()
@@ -395,7 +479,7 @@ def parse_document(
     backend_structure: dict[str, Any] = {}
     selected_source = input_path
     parser_used = "unknown"
-    attempts = [backend] if backend != "auto" else ["mineru", "docling", "pymupdf"]
+    attempts = [backend] if backend != "auto" else ["mineru", "docling", "pymupdf", "pymupdf-ocr"]
     if suffix != ".pdf":
         attempts = ["markdown"]
 
@@ -415,6 +499,16 @@ def parse_document(
                 elif candidate == "pymupdf":
                     markdown, backend_structure, selected_source = _parse_with_pymupdf(input_path, pages)
                     parser_used = "pymupdf"
+                elif candidate == "pymupdf-ocr":
+                    markdown, backend_structure, selected_source, pages = _parse_with_pymupdf_ocr(input_path)
+                    parser_used = "pymupdf-ocr"
+                    failed_pages = [page["page"] for page in pages if page.get("ocr_error") or not page.get("text")]
+                    warnings.append(
+                        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); "
+                        "formulae, symbols, and numeric values require source-image verification."
+                    )
+                    if failed_pages:
+                        warnings.append(f"OCR failed or returned empty text on pages: {failed_pages}")
                 elif candidate == "markdown":
                     markdown = input_path.read_text(encoding="utf-8", errors="replace")
                     backend_structure = {"pages": pages}
@@ -444,14 +538,20 @@ def parse_document(
         f"<!-- Modeling-Mastery normalized document | parser={parser_used} | "
         f"source_sha256={sha256_file(input_path)} -->\n\n"
     )
-    atomic_write_text(normalized_path, header + markdown.strip() + "\n")
+    title_preamble = f"# {title_hint.strip()}\n\n" if title_hint and title_hint.strip() else ""
+    atomic_write_text(normalized_path, header + title_preamble + markdown.strip() + "\n")
 
     embedded_images: list[dict[str, Any]] = []
-    if suffix == ".pdf":
+    if suffix == ".pdf" and parser_used != "pymupdf-ocr":
         try:
             embedded_images = _extract_embedded_images(input_path, figures_dir)
         except Exception as exc:
             warnings.append(f"Embedded image extraction failed: {exc}")
+    elif suffix == ".pdf" and parser_used == "pymupdf-ocr":
+        warnings.append(
+            "Full-page scan images were not copied into figures/ as figure crops; "
+            "use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+        )
 
     image_by_hash: dict[str, dict[str, Any]] = {}
     for image in [*backend_images, *embedded_images]:

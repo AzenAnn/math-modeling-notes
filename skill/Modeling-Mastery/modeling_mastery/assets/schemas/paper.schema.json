@@ -15,7 +15,7 @@
       "properties": {
         "path": {"type": "string"},
         "sha256": {"type": "string"},
-        "parser": {"type": "string", "enum": ["mineru", "docling", "pymupdf", "markdown", "unknown"]},
+        "parser": {"type": "string", "enum": ["mineru", "docling", "pymupdf", "pymupdf-ocr", "markdown", "unknown"]},
         "parsed_at": {"type": "string", "format": "date-time"},
         "normalized_markdown": {"type": "string", "default": ""},
         "structure_json": {"type": "string", "default": ""}

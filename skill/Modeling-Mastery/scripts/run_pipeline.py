@@ -18,7 +18,7 @@ def main() -> None:
     parser.add_argument("--vault", type=Path)
     parser.add_argument("--library-root", type=Path)
     parser.add_argument("--paper-title")
-    parser.add_argument("--backend", choices=["auto", "mineru", "docling", "pymupdf"], default="auto")
+    parser.add_argument("--backend", choices=["auto", "mineru", "docling", "pymupdf", "pymupdf-ocr"], default="auto")
     parser.add_argument("--provider", choices=["none", "mock", "openai-compatible", "anthropic", "codex", "claude-code", "local-agent"], default=None)
     parser.add_argument("--reproduce-code", action="store_true")
     parser.add_argument("--max-code-targets", type=int, default=8)
@@ -51,6 +51,7 @@ def main() -> None:
         check_octave=args.check_octave,
         project_root=PROJECT_ROOT,
         obsidian_root=obsidian_root,
+        paper_title_hint=args.paper_title,
     )
     if args.library_root:
         report["paper_workspace"] = layout.as_dict()

@@ -1,0 +1,4843 @@
+<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=f87724ff3838f1be7bfdee09b7c2e7e60b34f13c953ec5291ffe3fa7bc952813 -->
+
+# 基于多阶段模拟仿真的生产决策问题
+
+<!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR -->
+
+<!-- MM_PAGE: 1 -->
+基于多阶段模拟仿真的生产决策问题
+
+摘要
+
+企业生产过程中需要考虑次品押祥、 生产流程质量控制中的决策等问题。 这些是关乎企业效益
+的极其经济价值的关键难题 , 而其本质上是一个多阶段策略优化问题。 本文绍合侃设检验、 收益翟
+望、 贝叶斯理论等数理统计方法 , 建立多阶段优化模型 , 运用模拟仿真、 线性模拟退火算法完成了
+模型汪解 , 得到了不间情况下的最优决策 .
+
+对于问题一 ( 以及之后的所有问题 ), 在计算机上进行模批仿真。 根据实际现象规律 , 生成一组
+正态分布数摇 , 并根撷标准正态分布、 给定的次品率得到次口的数据范图 , 再比给不间的抽拮结果
+得出优劣。 结果表明实际应用过程中经常使用的 (n, o) 抽样法给优 ( 判断 n 件产品中次口数是否超
+过 c, 若超过则不接受 , 若不超过则接受 ), 该法同时具有国家标准 , 具有较好的可信度 . 本文采用
+两种计算方法得出了一系列 (n,c) 值 , 列举一部分值如下 ; (1)(78, 12|.[85, 13):(2)(65,10],(65, 切 [78,
+创 -
+
+对于问题二 , 分析生产全流程 , 利用送代怡想将流程决策问题转化为多阶段问题 , 降低仿真难
+度。 利用全概率公式考虑零件组合或为正品的概率 , 将拆解决策转换为不同阶段参数 , 把其余所有
+决策转化为噪率事件 , 从而将传策对应的价值朝望转化为净利浮的比给 , 建立以最大盐利值为目标
+的单目标决策途数优化模型 . 考愚成品中次品检滔与退换的等价性 , 改进决策蛭数 , 确定 6 个决策
+变量 : 货买我得的零配件 1、 2 的检测率 , 成品检测玄、 拆解率 , 拆解芋得的零配件 1. 2 的检洁率 ,
+并且通过线性模拟退火寻找最优的欧策变量 , 得到不间情形下最优决策 , 发现所有决策结果讹为 0、
+1 事件。 一当溥浚贺用远大于或品裔查费用时 , 期望进行成品检查 , 当次品率较大时 , 焦望检查购
+买所得零件。 列出情形一的答案如下 : 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不
+司格成口进行拆解 , 不检验拆解后得到的零配件 1, 检验拆解后得到的零配件 2。
+
+对于问题三 , 生产流程添加半放咤环节 , 通过对半成品进行分类 , 修改间题二的多阶段闭题 , 从
+而解决对半或品的处理闭题 , 通过新增不同阶段参数 , 按照问题二所述方法 , 将所有新增决策转化
+为浑利涌的比较 , 对应优化单目标决策函数优化模型 , 考虑模型实际意义 , 改进决策函数 , 确定 16
+个欧策变量 , 将其担颂序排成新的决策短阵 , 沿用问题二结论 , 所有决策为 0,1 事件 , 比较所有
+可能决策方案 , 得到两个最优的决策矩阵 (1 代表检验或拆根 ,0 代表不检验或不拆解 ) 和浑盈利
+值 ( 仿真初始配似数为各 10000 件 ): [1111111100011111],448518; [1111111111100001] 435188,
+
+对于问题四 , 对于把动问题 , 本文使用贝叶斯统计公式 , 结合先验信息 ( 可能的次品率分布 ) 和
+抽挟数据 ( 似然概率分布 , 在本题中为二项分布 ) 米计算后验概辟分布 , 即零件真实的次品率分布。
+得到最大可能的置信区间 , 对点信区间内的最大和最小次品率重新代人二三问的模型 , 给出新决策 ,
+从而得出引人干抗后的决策范图 . 结果表明在 095 的置信区间内 , 二三题的决策不变 , 利涓值产生
+教小改变 , 如第三题的两种方案利润值分别变为 : 48492、436620 (0.95 置信区闭左侧值 ) ;425154、
+421235 (0.95 置信区问的右侠值 )。
+
+关锭词 : 线性桓拟退火 “ 多阶段决策 “ 模报仿真 “ 贝叶斯统计
+
+<!-- MM_PAGE: 2 -->
+1 问题重述
+
+1.1 问题背景
+
+企业生产产品需要考虑许多重要因素 , 首先需要酸保生产的零件符合质量标准 , 这涉及
+到生产过程的监控、 检验和测试 , 以确保产品的质量可靠。 在保持质量的同时 , 努力降低生
+产成本 , 提高生产效率。 此外还需要建立健全供应链体系 , 确保原材料、 零部件和其他必要
+物资的供应及时并具有稳定性。 且在生产过程中要考虑生产对环境的影响 , 遵守相关的环境
+法规 , 采取可持续的生产方式 , 湘少对环境的负面影响。 棠企业需要分别购买两种或多种零
+配件以装配成成品 , 对于不合格成品 , 可以选择拆解或报废。 请建立数学模型优化其生产过
+程中的决策问题。
+
+1.2 问题提出
+1.2.1 问题一
+
+公司零部件供应商所提供的零部件不合格牵不得高于某一定值 , 为了检查零部件的合格
+率 , 企业采取了一种抽样测试的方式来确定是否从供应商处购买此类零部件。 因为测试会产
+生测试成本 , 故应以最小测试次数的方式进行测试。 特别是在下面的两个例子中 , 假设频定
+值是 10%, 提供一个方案 :
+
+(1) 在 95% 的信度下认定零配件次品率超过标称值 , 则拒收这批零配件 ;
+
+(2) 在 90% 的信度下认定零配件次品率不超过标称值 , 则接收这批零配件。
+
+1.2.2 问题二
+
+在这两种零配件和成品的次品率已知的情形下 , 对企业生产过程的四个阶段作出决策 :
+
+(1) 对零配件 ( 零配件 1 和 / 或零配件 2) 是否进行检测 , 如果对某种零配件不检测 , 这
+种零配件将直接进人到装配环节 ; 否则将检测出的不合格零配件丢弃 ; ( 即总共四种情况 )
+
+(2) 对装配好的每一件成品是否进行检测 , 如果不检测 , 装配后的成品直接进人到市场 ;
+否则只有检测合格的成品进入到市场 ; ( 对每件成品的决策 )
+
+(3) 对检测出的不合格成品是否进行拆舞 , 如果不拆解 , 直接将不合格成品丢弃 ; 否则
+对拆解后的零配件 , 重复步骗 (1) 和步骗 (2); ( 对每件不合格成品的决策 )
+
+(4) 对用户购买的不合格品 , 企业将无条件予以调换 , 并产生一定的调换损失 ( 包括了
+物流成本、 企业信誉等 )。 对退回的不合格品 , 重复步骤 (3)。( 该决筏包含在步骤三中 , 即
+对每件退回的不合格品是否拆解或丢弃 )
+
+其中零配件具有次品率、 购买单价、 检测成本 ; 成品具有次品率、 装配成本、 检测成本、
+市场售价 ; 不合格成品具有调换损失和拆解费用。 题目给出六种情况 , 请对这些情形给出具
+体方案。
+
+1.2.3 问题三
+
+对 m 道工序、n 个零配件 , 已知零配件、 半成品和成品的次品率 , 仿照问题二 , 给出决
+策方案。 并在图三给出的一种具体情况下 (m=2,n=8) 给出其体决策方案、 决策依据、 相应
+
+2
+
+<!-- MM_PAGE: 3 -->
+指标。
+
+1.2.4 问题四
+若第 2、3 问各工序中产品的次品率均由抽样检测方法得到 , 请重新完成问题 2、3。
+
+2 问题分析
+
+2.1 问题一的分析
+
+抽样整体差异性较小 , 为等概率抽样。 对于等概率抽样 , 简单随机抽样具有较好的代表
+性 , 故直接的思路是将简单随机抽样应用到合理选择的抽样样本上。 对于大规模抽样可以采
+用整群抽样 , 即以箱为单位划分产品 , 对部分箱子运用简单随机抽样或全部进行检验 ( 取决
+于箱子大小 )。 也可以采用多重抽样以降低样本数。
+
+由于题目并未给出实际的产品样本 , 故需要在程序上进行模拟仿真 , 对于以万为单位的
+产品数 ( 假设 ), 可以考虑生成一组正态分布数据 , 并根据标准正态分布、 给定的次品率得到
+次品的数据范围 , 再比较不同抽样的仿真结果得出优劣。
+
+简单随机抽样具有较明显的局限性 , 对于理想的抽样 , 抽样样本数应当控制在数百以内 ,
+而且不随整体产品总量的增多而增大。 当然简单随机抽样的结果可以作为检测仿真数据准确
+性的有力判据。
+
+由此可以考忠采用实际应用过程中经常使用的 (n,c) 抽样法 , 该法同时具有国家标准 , 具
+有较好的可信度。 在理想情况下 , 对具有一定次品率的整批产品 , 选取抽样样本为 p, 则数
+学上相当于 n 重伯努利分布、 对于菜次品辜 p、 样本判据 e ( 即 n 件产品中次品数 v 是否小
+于等于 c)、 标称值 W ( 在本题中等于 0.1)、 人为给定的次品率 pl, 以及最关键的判断接受
+与否的置信度 a、8 , 可以得到包括以上变量的不等式 ( 即约束条件 ) , 由此可以求出合适的
+(o) 数对作为较为可行的抽样方案 , 其最明显的优点便是 : 有较为严谨的推导公式、 有相应
+的国家标准可以直接查阅合适的 n、c 值 . 除去直接查阅国家标准 , 本题考虔采用两种不同方
+法进行直接计算 , 可以更有效率地得到期望值。
+
+2.2 问题二的分析
+
+分析决策图、 将决策转换为决策参数后 , 可以将企业生产流程从零件的检查与装配开始
+分析到拆解环节 , 本题中不存在多目标规划 , 或者说存在一个最重要的指标 : 直接盈利值。 除
+此之外 , 分析题干知 , 还有环保性指标 ( 即丢弃产品的价值 )、 调换费用 ( 包括信誉等较难量
+化的指标 )。
+
+但是决策设计拆解环节必定要求对产品进行二次利用 , 于是有了对循环生产的要求。 故
+如果有拆解得到的配件 , 便在程序上设计循环直至直接盆利值饱和 , 由此可以得到某种决策
+的重要性不同的三个衡量指标 .
+
+则题目目标转化为优化决策参数矩阵使衡量指标达到最优 , 最后人为等选最优的兀个解
+并翻译成文字决策 , 即决策方案。
+
+<!-- MM_PAGE: 4 -->
+2.3 “ 问题三的分析
+
+显然问题三是对问题二的推广 , 对于每种零配件、 每种半成品、 成品都存在一个决策参
+数 , 即是否检验 , 对于三种半成品、 成品存在是否拆解的决策参数、 第一次循环拆解成品后
+得到的半成品、 组装成成品前剩下的半成品 ( 已检验或未检验 )、 组装成半成品前剩下的零
+件 ( 已检验或未检验 ) 则进人第二个循环 , 得到第二个盈利值 , 最后得到次品并重新进入循
+环。 设立决策变量矩阵后 , 再仿照问题二的思路进行模拟退火 , 得到最优的决策矩阵。
+
+2.4 问题四的分析
+
+直接的愚路便是利用贝叶斯公式从先验概率、 似然概率求出后验概率。 先验概率一般选
+择为 Beta 分布 , 且其与二项分布 ( 即似然概率函数 ) 有一定相似性。 在仿真中设定抽样整体
+值 n, 随机抽样次品率 6, 若出现 c 个次品 , 则后验概率密度函数即为
+
+一 Oljp(0)
+PO Tolgp(0)9
+
+根据后验概率密度函数 , 可以得到最大可能的概率区间 , 对区间内的次品率重新代入问
+题二、 三的模型 , 从而给出新的决策。
+
+若棠批零件有一定的次品率 , 即不能 100% 确定它是正品还是次品。 如果由某零件生产
+的产品是次品 , 那么也无法确定该产品拆解得到的零件是否为次品。 进一步讲即使检测了一
+部分 , 但生产时又将检测出来的正品零件和未知质量的零件混合 , 即使拆解也无法确定邵些
+是正品 , 郅些是次品了 . 故不能省去关键的检测步骤。( 与问题三的第二个小循环的情形存在
+姜异 )
+
+3 “ 模型假设
+
+(1) 假设零件的次品和正品随机分布 , 以避免次品的集中扎堆情形、
+
+(2) 假设半成品和产品的制作过程中 , 由于工艺出现次品的概率是随机的。
+
+(3) 检测产品半成品和零件时 , 若部分检测 , 则随机地选择部分零件检测。
+
+(4) 假设若不能回收零件、 半成品和产品的次品 , 则直接丢弃不会造成环境污染等回收
+费用。
+(5) 假设生产环境中的多个环节都会影响半成品、 成品的次品率 , 但均抽象成一个次品
+率。
+
+(6) 假设生产规模较大 , 本文仿真起始均使用 10000 套零件。
+
+<!-- MM_PAGE: 5 -->
+4 符号说明与名词解释
+
+符号含义
+T(pmo) 次品率为 P 的整批产品 , 选取抽样敏为 n, 则其中次品件数 u < c 的概率
+M; 零配件 i 的购买单价
+心零配件 i 的检测成本
+P; 零配件 i 的次品辜
+史零配件 i 的购买个数
+Mo 成品的售价
+Ty 成品的检测成本
+Py 成品的次品辜
+Co 成哈的调换涉失
+Do 成品的拆解费用
+Hy 成品的装配成本
+或检验参敬或拆解参敬
+ni 衡量指标
+
+5 “ 模型建立与求解
+
+5.1 问题一的求解
+
+企业的产品检测一般不存在非等概率现象 , 对于分类较少的大样本等概率检测 , 采用三
+种可行思路 : 简单随机抽样、 整群抽样、 二重抽样 , 由于题目考虑理想情况且未给出数据 , 故
+自行生成产品数据进行模拟检验、
+
+5.1.1 “ 简单随机抽样
+
+定义及操作 ; 从 N 个单元的总体中抽取 n 个单元组成样本 , 如果抽样是不放回的 , 则所
+有可能的样本有 C# 个 , 每个样本被抽中的概率为立 , 该方法精度中等 , 但对总体的代表性
+并不荣。
+
+5.1.2 整羧抽样
+
+对于大样本 , 直接采用筱单随机抽样成本过大且在实际情况中操作较为麻烦、 考虑到企
+业生产的产品多以箱的形式构成群体 , 故可以采用整群抽样。
+
+定义及濑作 : 对于某产品总体 , 先将其分成很多不重合的子总体或群 , 然后以群为抽样
+单元 , 随机抽取若于个群 , 对群内所有单元全部进行调查。 实际意义为随机抽取若于个产品
+箱 , 对这些箱内的产品全部进行检验。
+
+5.1.8 二重抽样
+同整群抽样的目标 , 即降低抽样样本规模 ,
+
+5
+
+<!-- MM_PAGE: 6 -->
+定义及操作 : 从总体中抽取一个样本量较大的样本 , 即第一重样本 , 在对第一重样本进
+行筱卑清查或分析 , 并从第一重样本中抽样出第二重样本。 最后对第二重样本采用其他随机
+抽样方法、
+
+5.1.4 _ 模拟仿真与求解
+
+采用生成正态分布数据模拟供应商生产的零配件质量 , 设正态分布数据的均值为 0、 标
+准差为 1, 并初步规定样本总数、 次品率。
+
+首先假设样本总数为 100000, 次品率为 0.11。 如果棣抽样方法理想 , 得出的结果应为 :
+在 95% 的可信度下认定零件次品率超过 10%; 没有足够证据认为在 90% 的信度下零配件次
+品率不超过 10%。 对于正态分布数据 , 采用 z 检验和零检验假设 , 并设定 a 值作为判据 , 且
+在程序上可以设定随机种子的值来模拟多次的随机抽样。 以下给出棣次抽样的结果。
+
+对于简单随机抽样 , 设抽样比例为 0.1, 即抽取 10000 个配件 , 其中次品个数为 1085; 对
+于整群抽样 , 设定每个群的大小为 10,、 整体抽样比例仍为 10000, 其中次品个数为 1086; 对
+于二重抽样 , 两次抽样的比例分别为 0.5 和 0.2, 总抽样比例为 0.1, 抽样方法为简单随机抽
+样 , 其中次品个数为 1088。 这三种抽样方法在抽样比例均为 0.1 的情况下 , 得出的结果均为 :
+有 95% 的把握认为次品率大于 10 克 , 没有足够证据认为在 90% 的信度下零配件次品率不超
+过 10%.
+
+同理 , 假设次品率为 0.09, 如果棠抽样方法理想 , 得出的结果应为 : 没有足够证据认为
+在 95% 的可信度下零件次品率超过 10%; 在 90% 的信度下认定零配件次品率不超过 10%。
+对于三种抽样方法 , 抽样比仍为 0.1, 所得次品数分别为 872、899、908,z 检验下所得结果
+为 : 有 90% 的把握认为次品率低于 10%, 没有足够证据认为在 95% 的可信度下零件次品率
+超过 10%.
+
+从以上数据来看 , 在抽样比例为 0-1 的情况下 , 三种抽样方法均有较大的可信度 , 次品
+概辟也相当准确。
+
+5.1.5 (pc) 抽样法
+
+在实际生活中 , 根据产品的生产和使用需要 , 一般定出两个正数 pp,pu 作为检测指标 ,
+其中 P 跟大于、 在本题中 Po = 0.1, 即标称值。 显然 , 若产品的次品率 p < Po, 则接受这
+批产品出厂 ; 若 p , 则拒绝这批产品出厂。 将以上两个事件分别记作 Ho 和历。
+
+但在判断为 Ho 事件还是 Hy 事件时 , 存在判断错误的可能 , 即置信度 . 故除了给定 n 与
+c, 还需要给定两个数 o, B, 其含义分别为 : 对于事件 Ho, 将其判断为 H 的概率不大于 a;
+对于事件厉 , 将其判断为 Ho 的概率不大于 6. 在此题 (1) 中 ,a 的值未知 ,6 的值已确定
+为 0.05i 在此题 (2) 中 ,a 的值已确定为 0.1,6 的值未知。
+
+接下来进行模拟抽样。 显然森个配件不是正品就是次品 , 教符合二项分布。 对次品辜为
+p 的整汾产品 , 选取抽样数为 n, 则其中次品件数 y < c 的概率为
+
+Lmmg = 3 (st -t
+k=0
+
+<!-- MM_PAGE: 7 -->
+在给定 n、c 的情况下 , 将 L(P,n,c) 筱记为 L(p)。 由此可以将问题一转化为以下数学问
+题 :
+
+从整批产品中随机抽取 n 件产品进行检验 ( 即检验次数为 n) , 其中次品的件数记为 v。
+若 9 三 e 时 , 接受 Ho 事件 i 若 > e 时 , 拒绝 Ho 事件 , 即接受 Hy 事件。 若这批产品的次
+品率 P 三 , 则理想情况下应当出现 Hy 事件 , 而 L(p) 的值为判断成 Ho 事件的概率 , 亦即
+判断错误的概率。 由题知 , 该概率应当小于等于 6, 即
+
+Lip) < L{p) <8
+
+同理 , 若这批产品的次品率 p < po, 则理想情况下应当出现 Ho 事件 , 而 L(p) 的值为判
+断成 Ho 事件的概率 , 则错判为 Hy 事件的概率为 1 一 L(p)。 由题知 , 该概率应当小于等于
+, 即
+
+1 一 L(po) 三 1 一 L(D) 三 a
+
+即对给定的、Pl、a、, 给出检验次数 n、 检验判据 c, 使之滢足以上两个约束条件。
+因为 L 的表达式较复杂 , 精确求解以上两式较为回难 , 当 n 较大时 , 可以利用
+
+v—np
+Vap(l = p)
+渐近于 W(0,1) 标准正态分布作近似处理 , 因为在实际应用中 , 当样本容量较大时 ( 通常大于
+30) ,t 分布的 t 值会逼近于标准正态分布的 z 值 , 因此可以使用正态分布表中的值来近似 t
+分布的计算。 由于 n 较大的情况下 , 二项分布 B(n,p) 也近似于正态分布 , 则所给约束条件
+可进行如下转化
+
+了 =
+
+L(m) < B+ T(n,e.p) < Z(1 - B)
+L(p) 21 —a < T(n,e,po) = Z(a)
+
+解得
+Rp 十 L 一 B)y npu(1 一 Pl) = ¢ = npo + Z{a)vVnpo(1 一 Po)
+
+英 Z(@)vpo(l —p) — Z(1 = B)Vm(l — p1)
+
+办一 Po
+
+5.1.6 问题 1 (1) 的求解
+
+未知数为 p 和 a。
+方法一
+通过道历 p 和 o 得到 n 的最小值
+
+因为
+Jis Z(a)Vm(l —m) - Z(1 - B)Vn(l - p1)
+
+力一 Po
+
+_ IZ(ajypo(L-P) - 2(1L 一日 Vp(1 一 PjF
+哟 (Pt 一八
+为便于分析 , 以 pl 和 a 为横、 纵坐标 ,n 为纵坐标 , 作出二维函数图。
+
+7
+
+故
+
+<!-- MM_PAGE: 8 -->
+图 1
+
+理想情况下 ,pi 应当控制在 0.13-0.15 左右 , 而 n 宏当小于 100。 求得 (n,c) 数对如下 :
+(65, 4], [42,2), [28,1], [91,7]
+
+方法二 :
+
+若 p= 0.1 < pl, 则错判为拒收的概率应当小于 5%, B
+1 一 (p,ynyc) <P
+
+亦即
+
+E(pymc) =P(X 三 d = 置二 G〉鲈0 -PJ“-*> 1 一 = 0.95
+
+J6
+那么对于桅个 n,c 应当有一个极限值 co, 使上式取等 , 由于 n 重伯努利分布对应的朱
+
+坐标为整数 , 故 c 也为整数 , 合格的 c0 所对应的抽桔概率 T(p,n,co) 应当尽可能接近 0.95,
+人为规定误差为 1%, 那么可以列出
+
+L(p,n,c) > 095.....(c > co)
+L(p, n,;ug)s 0% o1
+由此邋历 n 值 ( 一般小于 100 较为合适 ), 若存在 co 滢足以上不等式 , 则对应的 (n,c)
+数对即为所得抽样方案。 所有可行的 (n,c0) 数对如下 :
+[14,3], [20,4], [27,5], [33,6], [34, 6], [40,7], [41,7], [47, 8], [48, 8], [55,9],[56,9], [62,10],
+(63,10}, [70,11), {71, 11}, [r7, 12], 78,12, [79, 12), [85, 13], 86, 13], (93, 14}, [94, 14]
+
+5.1.7 问题 1 (2) 的求解
+
+未知数为 p 和 6.
+方法一 :
+
+<!-- MM_PAGE: 9 -->
+通过遍历 p 和 6 得到 n 的最小值。 同理
+S [2(e) V(1 — po) — Z(1 = B)Veu(1 — p)
+ol (pt 一 j
+同样 , 以 p 和 6 为横、 纵坐标 ,n 为纵坐标 , 作出二维函数图 .
+
+图 2
+
+同理 , 理想情况下 , Pu 应当控制在 0.15 左右 , 而 n 应当小于 100. 求得 (n,c) 数对如下 :
+
+[68,10), [52,8), [55,13|
+方法二 :
+同问题一 (1), 若 p = 0.1 > po, 则错判为接受的概率宇当小于 10%, 即
+Lip,n,c) 三 a
+亦即
+
+ng =pP(x <) = 工 (Drra-o—*<a=o1
+
+k=0
+
+同样的 , 对于某个 n 值 , 应当存在一个。 值 , 漪足下述不等式
+
+L(p,n,¢) <0.1....(c € )
+
+0.1 - L(p,n, o)
+01 <001
+
+道历 n, 求得 (m,c) 数对如下 :
+(65, 3], [78, 4]
+5.1.8 小结
+
+结果表朋实际应用过程中经常使用的 (n,c) 抽样法较简单随机抽样优 ((m,c) 数对的意思
+为判断 n 件产品中次品数是否超过 c, 若超过则不接受 , 若不超过则接受 ).
+
+9
+
+<!-- MM_PAGE: 10 -->
+5.2 问题二的求解
+5.2.1 未知数腾设
+
+对于决策 1, 有四种情况 , 即两种零配件都检验、 都不检验、 只检验零配件 1、 只检验零
+配件 2。 考虑到从决策 2 开始 , 都只考虔成品 , 决策过程相似 , 故将决策 1 的四种情况合并 ,
+并对每项决策都设计检验参数来模拟是否检验产品。
+
+对于零配件 1, 其检验参数设为 z1, 其值为 1 则对零配件 1 检验 , 其值为 0 则不对零配
+件 1 检验 ;
+
+对于零配件 2, 其检验参数设为 z2, 意义同理 ;
+
+成品的检验参数设为 zs, 由于决策 2 考虑的是每件成品 , 故该参数应为介于 0 到 1 中
+的菪个值 , 其实际意义为对占比为 zs 的成品进行检验。
+
+5.2.2 模型建立
+
+Stepl.
+首先 , 对于两种零配件 , 企业花费的购买价格为
+
+My = ny My 卜 52
+两种零配件的检验个数为
+"ll = nlzl,n; = 7iaz2
+两种零配件的检验成本为
+My, = ma Ty 十动仁
+最终进人成品装配的两种零配件的个数为
+
+ny = (1 =) + may (1= Py)
+ny = my(1 = 23) 十 naza(1 一又 )
+
+两种零配件丢弈的个数为
+oy o B g e R
+零件更新流程图如下。
+= (== )
+) (o) [{omere)
+&3
+
+图 3
+
+<!-- MM_PAGE: 11 -->
+其中两种零配件的合格数为
+炎二 L 不 ) 成二 m(t - 办 )
+
+则两种零配件的新次品率为
+s _P(l-z) pe _ P(1 一 za)
+oy 1 一 z 不 3 一 1 一叉
+成品个数为
+n = min(ny,ny)
+
+因为现在零配件 | 的次品率为乃 , 零配件 2 的次品玄为及 , 两个正品零配件装配成功
+的概率为 ! 一又 , 则这些成品的正品率为
+
+( 乓 )4 一及 ) 一及 )
+这些成品的次品率为
+乔 =1- ( 一乓 )(L 一及 )(1 一叉 )
+Step2.
+检测成品的个数为
+r】'′ = nry
+成品的检测成本为
+M = nzsTp
+则可以直接售卖并盈利的成品个数为
+ny = nza(l — P§) +n(l — z3)(1 — P})
+盈利的收入为
+M, = [nz3(1 — P§) +n(l — z3)(1 — P§)| Mo
+检测过的成品中 , 不合格数为
+n' =nzsP}
+Step3.
+
+设其中需要拆解的比例为 z:, 则拆解的数目为
+d 二 z3 月 Z
+
+拆解花费为
+"″″f′^_ = nng;:nDo
+
+直接丢弃的数目为
+Nge, = nasPy (1 一 Z4)
+
+Step4.
+
+<!-- MM_PAGE: 12 -->
+未检测过的成品个数为
+
+疗二 R(1 一 )
+其中不合格成品数为
+o 二 n(1 —25) Py
+这些不合格产品产生的调换费用为
+M, = n(l — z3)P;C,
+
+调换回企业后 , 设这些不合格产品决定拆解的比例为 z5, 则拆解费用为
+Mam = n(1 一 ) 庞动历
+
+直接丢弃的数目为
+dcs = n(1 = 23) Py (1 一 )
+
+5.2.3 成品决策的流程图
+
+RSB
+L 财 | 不 |
+
+图 4
+
+5.2.4 生产过程中检验与否的讨论
+
+若树批零件有一定的次品率 , 即不能 100% 确定它是正品还是次品。 如果由某零件生产
+的产品是次品 , 那么也无法确定该产品拆解得到的零件是否为次品。 进一步讲即使检测了一 -
+部分 , 但生产时又将检测出来的正品零件和未知质量的零件混合 , 即使拆解也无法确定哪些
+是正品 , 哪些是次品了 , 故不能省去关键的检测步骤。( 与问题三的第二个小循环的情形存在
+差异 )
+
+5.2.5 决策指标计算
+在这个过程中 , 销售收入 ( 即盈利收入 ) 为
+M, = n(1— P})M,
+检测费用为
+
+My = ny Ty 十 aza72 十 ag
+
+12
+
+<!-- MM_PAGE: 13 -->
+装配成本为
+M, =nH,
+
+拆解成本为
+Min = nzs P4 Do + n(1 — z3) Pjas Do
+
+考虑三个决策指标 : 直接盈利值 ( 销售收人 - 检测成本 - 产品购买成本 - 拆解成本 - 装配成本 )、
+不合格成品调换费用 ( 包括了物流成本、 企业信誉等 )、 环保性 ( 丢弃产品的价值 )。
+
+其中调换费用虽然直接包含了有形的金钱损失 , 但也包括了无形的企业信誉 , 所以单独
+作为一个指标衡量。 分别设为 mu、ma、ma。 则
+
+my 二 R(1 一内 )Mo 一 (nizl + nag Ty + nazsTs)—
+(nuhM 十 malf) — [nxsPixy Do + n(1 — x3) Pias Do| 一 H
+
+my =n(l - z3) P;Cy
+
+mg =y PLMy + ngey Py My + [neaPy (1 — 24) + 01 — 23) Py (1 — 25))( My + My 十玑 )
+
+5.2.6 “ 整体流程图
+
+END1: 次品数 =0 1
+
+5.2.7 拆解后的处理
+
+前述的讨论可以视作首次循环 , 为了最大化利用拆解后的产品 , 可以把拆解后的产品重
+新投入使用。 对此又产生了新的决策分支 : 1. 对这些拆解后的产品全部进行检浏 , 若检测合
+
+13
+
+<!-- MM_PAGE: 14 -->
+格则重新装配出售 ; 2. 不检测 , 直接重新投人使用 , 但这些拆解后的产品次品率必然较大 , 故
+通过购买更多零配件以降下次品率 , 即进人第二层次循环。
+
+对于决策 1, 可以对首次循环的检测情况作出优化 : 如果对零配件 1、 零配件 2 都检测 ,
+则进入参与成品生产的零配件均为正品 , 拆解后不需要进行检测 , 直接重新装配出售 , 节省
+了二次检测成本 ; 对于其他三种情况 , 无法确定拆解后的零配件是否为次品 , 需要进行二次
+检测 ,
+
+以上为理论最优情形 , 但在仿真过程中 , 考虑到现实处理的便利与变量分析的统一 , 对
+所有不合格产品 ( 包括直接检测的和用户退回的 ) 设定一个统一的拆解比例 z = z4 = zs, 再
+对拆解后得到的零件 1 和零件 2 分别设置一个频外的检测比例 ze,zr, 并且从程序可行性角
+度出发 , 不严格设定 zt、z2 的值为 0 或 1, 而是等同于其他检测比例 , 可以在 0 ~ 1 间变动。
+
+5.2.8 进一步的循环与退火算法
+
+由于拆解这一步骤影响下一个循环 , 所以将第 n 轮循环最后的拆解步骑并人第 n + 1 轮
+循环的起始步骗以便分析与处理。 第 n + 1 轮循环起始所具有的零配件应当为第 n 轮循环起
+始所余下的零配件和第 ? 轮循环末尾拆解所得到的零配件 , 在该模型中 , 并不接续加人新零
+配件 , 即不考虑决策 2。 那么循环应当迅速收敛 , 因为每一轮循环后配件数会大大减少 , 三
+个指标值也会迅速减少。 该猜想符合实际的仿真过程、
+
+其体算法上 , 现在有三个决策指标 u、ma、Ina, 需要进行优化的变量可以写成如下数
+组形式
+
+克一 [rl 22,3, 24, X5, %5 ]
+
+其中
+
+z 二是否对零件 1 进行检验
+
+z 二是否对零件 2 进行检验
+
+zs 二是否对成品进行检验
+
+z 二是否对检验过的成品中的次品进行拆解
+
+25 二是否对退回的成品进行拆解
+
+z5 二是否对拆解后得到的零件 1 进行检验
+
+二是否对拆解后得到的零件 2 进行检验
+且一舫假定 zs = 250
+
+对于多变量决策问题 , 可以采用模拟退火算法来优化变量矩阵 X, 对于某个 X, 每一轮
+循环都会得到三个指标值 , 即直接盅利值、 调换费用、 环保性 , 将这三个值累加到最终决策
+指标 ml、ma、ma 上。 这三个指标中 ,ma 的重要性最大 , 而且数值比重也最大 , 教将中止
+循环的条件设为
+
+Hn4+l < 1.001m,
+
+( 意为盈利达到饱和 , 继续循环的意义不大 , 如若继续循环 , 甚至会亏本 )
+
+第 n 次循环拆解数 = 0
+
+<!-- MM_PAGE: 15 -->
+放对于树个 X, 在进行若干轮循环后 , 盆利值达到饱和 ( 实际 3 ~ 8 轮即接近饱和 ), 同
+时对应一个调换费用和一个环保性 ( 这两个指标越低越好 ), 仿真的目标即为我到一个 X, 俭
+盆利值尽可能大 , 调换费用和环保性尽可能小。
+
+5.2.9 “ 仿真结果分析
+
+仿真结果非常理想 , 而且存在以下特点 :
+
+L 尽管初始设定 zl、z2 的值可变 , 但结果值总取在 0 或 1, 即决策 1 的四种情况。
+
+2.z3、z4 ( 或 zs8) 的结果值同样取在 0 或 1, 即要么都检测要么都不检测
+
+3.z8、zr 的值对最终结果影响非常小 , 大约在 2 ~ 3%、 同时题干也并未要求对此进行讨
+论 , 可以视作过程量翻化其讨论结果 , 忽略不计 -
+
+5.2.10 最终结果与决策
+
+仿真初始的两种零配件数量级设为 10000, 所得最优的 6 个 X 与对应的企业净盈利值如
+下表 , ( 将 zs、zs 合并后 X 的长度由 7 变为 6)
+
+表 1
+
+情况 1 2 3 4 5 6
+X 100101 110100 001111 111100 011110 000011
+浑盈利值 168993.2 95005 147804 117979 186483 185867
+
+该表的对应决策如下 :
+
+(1) 只检验零配件 1, 不检验零配件 2, 不检验成品 , 对所有不合格成品进行拆解。 不检
+验拆解后得到的零配件 1, 检验拆解后得到的零配件 2
+
+(2) 对零配件 1,2 都检验 , 不检验成品 , 对所有不合格成品进行拆解。 不检验拆解后得
+到的零配件、
+
+(3) 对零配件 1,2 都不检验 , 检验全部成品 , 对所有不合格成品进行拆解。 检验所有拆
+解后得到的两种零配件。
+
+(4) 对零配件 1、2 都检验 , 检验全部成品 , 对所有不合格成品进行拆解。 不检验拆解后
+得到的零配件。
+
+(5) 不检验零配件 1, 只检验零配件 2, 检验全部成品 , 对所有不合格成品进行拆解。 检
+验拆解后得到的零配件 1, 不检验拆解后得到的零配件 2.
+
+(6) 对零配件 1、2 都不检验 , 不检验成品 , 不拆解所有不合格成品。
+
+5.2.11 小结
+
+从结果中可见 , 当调换费用远大于成品检查费用时 , 期望进行成品检查 , 当次品辜较大
+时 , 期望检查购买所得零件
+
+<!-- MM_PAGE: 16 -->
+5.2.12 算法台理性解标
+模拟退火的标次优化过程如下图。
+
+梁大兄吴国
+
+图 6
+从图中可见 , 只有当 2 取到极值 (0 58 1) 时 , 才会达到最优的收敛值。
+
+5.3 问题三的求解
+5.3.1 决策模型的建立
+分析过程同问题二 , 区别在于决策变量 x 增多 , 令决策矩阵
+
+龙二 [5l..26|
+
+这些决策变量分别代表是否对 8 个零配件进行检验、 是否对 3 个半成品进行检验、 是否
+对成品进行检验、 是否对三个半成品进行拆解、 是否对成品进行拆解。 同理 , 优化后的决策
+变量很可能只取 0 或 1, 但为了完成模拟退火的优化过程 , 允许其值在 0 ~ 1 之间浮动。
+
+具体决策过程如下。
+
+1
+I
+END1:<1.001 ; 辜
+END2: 无次品 k「 )
+
+<!-- MM_PAGE: 17 -->
+5.3.2 第一次小循环
+
+首先在零件组成半成品时 , 会有多余的零件 ; 在半成品组成成品时 . 会有多余的半成品 ;
+成品同样分为正品和次品 ( 或者检验部分和不检验部分 )。 每一步都包含是否检验的决策参
+数。 对于成品中的正品 , 可以直接出售盐利、 并视作第一次循环停止 , 算出该循环内的直接
+盅利值 W -
+
+5.3.3 第二次小循环
+
+对于成品中的次品 , 可以决定是否拆解 , 拆解得到的半戏品进人第二次循环 , 在这些半
+成品中加人第一次循环得到的多余半成品 , 并决定是否对这些半成品迹行检验和拆解 , 对拆
+解出木的零件 ( 并加入第一次循环多余的零件 ) 重新组成半成品 , 再组妓或品 , 最后正品出
+售盅利 , 次品重新迹人循环。 在第二次循环中吾样可以得到一个直接数利值 W2a, 这两个盈
+利值之和为一个大循环得到的总直接数利值 Hs, 判晤是否进人下一个循环的条件类似题二 ,
+即 Ws,, 是否小于 1.001M s 或者是否产生了次品。
+
+5.3.4 _ 模垒的优化
+但该模型存在需要优化的地方 , 经过仔细分析后 , 将模型优化如下。
+
+在优化前的模型中 , 进入第二个小循环的半成品拆解再组装 , 是一个重复步骤 , 故去掉
+该决策 , 而是只对已经检验出来的半成品次品进行拆解 , 在第二次组成半成品时加人这些半
+成品 , 再组装成成品进行第二次出售
+
+5.3.5 决策变量的优化
+
+显然以上步驱并不止 16 个决策变量 , 而是 27 个 ( 需要加上第二次循环中 , 是否对 8 个
+零件进行检验、 是否对 3 个半成品进行检验 )。 但通过分析可以发现 , 若第一次循环已经对产
+品迹行检验 , 在第二次循环中不必进行再次检验 , 反之亦然。 所以实际上只需考虑 16 个决策
+变量。
+
+在求解过程中发现 , 这些变量中 , 起到决定性作用的变量只有前 12 个 ; 邱是否对零配
+件、 半成品、 成品进行检验 , 而是否拆解的决策重要性平不强。
+
+17
+
+<!-- MM_PAGE: 18 -->
+5.3.6 线性退火算法求解
+求解过程依旧采用退火算法 ( 设置初始零件为 10000 套 ), 求得最优结果如下
+表 2
+
+茹根 1 3
+X 1111111100011111 1111111111100001
+净数利值 448518 435188
+
+转化为文字决策 , 即
+
+(U8 种零件都检测 ,3 种半成品都不检测 , 检测全部成品。 次品 ( 包括 3 种半成品以及
+成品 ) 全部拆解。
+
+(2)8 种零件都检测 ,3 种半成品都检测 , 不检测成品。 对于次品 , 不拆解半成品 , 拆解
+全部成品 -
+
+5.3.7 小结
+
+以上给出的两种最优方案有细微差别 , 最终盈利值较小 ( 即第二种 ) 的方案收敛较快 , 可
+以视作短期决策。 最终盆利值较大 〔 即第一种 ) 的方案收敛较慢 , 可以视作长期决策。 两种
+决策的利润曲线如下。
+
+s
+
+n
+
+图 9
+
+从图中可见 , 方案二在第三轮循环即达到收敛 , 方案一在第十轮循环后达到收敛。 即企
+业若想达到量大利涧 , 不考虔循环的时间成本 , 方案一较优。
+
+5.4 问题四的求解
+
+假设若根据简单随机抽样得到某次品率 , 可以使用贝叶斯统计推断来估计零件的真实次
+品率。 该方法结合先验信息 ( 可能的次品率分布 ) 和抽样数据的似然函数来 ( 二项分布 ) 计
+算后验概率分布 , 从而得到零仲真实的次品率。
+
+<!-- MM_PAGE: 19 -->
+5.4.1 “ 先验分布
+
+首先假设真实的次品率服从 Beta 分布 , 即先验分布。(Beta 分布具有较好的性质 , 适于
+表示在 |0,1| 区间上各种形状的概率分布。 因为它具有良好的形状灵活性 , 能够很好地描述对
+参数的先验认识 , 在贝叶斯统计中 ,Beta 分布常常被用作先验分布。.) Beta 函数的定义为
+
+B(a,8) = /】 w1 一山 8-ldu
+0
+Beta 分布的均值和方差分别为
+
+o
+iy
+o B。
+(o + B2+ B+ 1)
+归一化后得到的次品概率密度分布函数
+
+伟
+
+( - 9P
+
+p() = 100, 8) < 一 B 切
+
+5.4.2 似然函数
+抽样数据服从二项分布 , 若次品率为 06, 抽样 n 次 , 则出现 c 次次品的概率可以表示为
+
+L(8,c) = (") 0°(1 一 9jn-e
+C
+
+5.4.8 “ 后验概率
+
+最后利用贝叶斯公式计算后验分布 , 并通过后验均值 ( 即后验分布的最可能值 ) 来佼计
+
+真实的次品率 , 从而得到可能的真实次品率以及对应的置信度。 积分形式下贝叶斯公式为
+一 (lc)p(0)
+
+s S L(Blc)p(0)do
+
+对于连续的参数变量 0, 其后验概率密度即为 P(9|c)。
+
+为计算以上公式 , 需要设定 ao、 的初始值。 其取值大小取决于对参数的信心程度。 取
+值较小时 , 即对参数的先验知识不强 , 从而准许更多可能性 ; 取值较大时 , 即对参数的先验
+性较强 , 对概率分布情况更有信心、 参数的选择可以显著影响最终的后验分布 , 从而影响对
+真实参数的估计结果。
+
+在贝叶斯推断中 , 通常会根据先验信息和信念程度来选择合适的先验分布参数 alpha 和
+beta。 根据似然原则 , 令先验函数与似然函数成比例 , 则
+
+一 1 二 c
+B-l=n—c
+带入贝叶排公式 , 得到二项分布数据的后验概率密度函数
+
+094(1 -0
+_ 6G, 月
+
+19
+
+P(olc)
+
+<!-- MM_PAGE: 20 -->
+其中
+仪二 Q 十 e
+
+月二户十 R 一 C
+
+5.4.4 “ 模拟仿真求解不同次品率的后验概率分布
+
+例如 , 令 n = 10000.6 = 500, 则抽样得到的次品率为 5.0%, 可能的真实次品率均值为
+0.05008980243464378, 赉信度为 0.95 可能的真实次品率贻信区间为 |0.04590519.0.05444447| .
+同样若抽样得到的次品率为 20.0 元 , 可能的真实次品率均值为 0.19976052684094991, 誉信
+度为 0.95 的可能的真实次品玄置信区间为 |0.19199026.0.20764429]|。 若抽样得到的次品辜为
+10.0%, 可能的真实次品率均值为 0.09998004390341249, 置信度为 0.95 的可能的真实次品率
+赓信区间为 |0.09418352,0.10592778]
+
+抽样后次品率为 5.0%、10% 和 20% 的后验概率分布图如下
+
+个 64 丑
+
+(a) 次品率为 0.05 (b) 次品率为 0.1
+
+(¢) 次品率为 0.2
+
+图 10
+
+5.4.5 “ 重新求解问题一、 三
+
+最终的结果相当于在原有确定概率上加人了微扰 . 将扰动后的 0.95 概率罢信区间的两个
+端点值作为新的次品率 , 重新进行问题一、 问题三的操作 , 所得结果如下 :
+
+(1) 对于问题二 , 在 0.95 訾信区间下 , 所得决策不变 , 即 5.2.10 的六种决策方案。
+
+(2) 对于问题三 , 在 0.95 置信区间下 , 所得决策亦不变 , 即 5.3.6 的两种决策方案 . 决策矩
+阵分别为 [L1.111L1L0.0.0.1.1.1.11 小 , [LLl1.1.1.1L LLL0.070:0,1], 荫带入置
+
+20
+
+<!-- MM_PAGE: 21 -->
+信区间的左侧值 , 两种决策方案所得利涧值分别为 : 448491.9298575758、436619.5888。 若带
+人置信区间的右侧值 , 两种决策方案所得利润值分别为 : 425153.86094869545、421234.6082。
+
+(3) 对于问题三 , 靥出两种不同扰动的利润上升曲线如下 , 可见特征依旧符合原米问题三
+的结论。
+
+5.4.6 小结
+
+在 0.95 置信区间下 , 决策并未发生显著改变 , 说明本题的随机抽样不会对决策结果、 净
+利润有较大影响 ,
+
+6 “ 模型改进
+
+(1) 问题三决策变量较多 , 传统的模拟退火、 禁志搜索蚁群算法、 遗传算法等 , 效果无法
+达到预期。
+
+(2) 问题三更改了模拟退火算法中一些关键函数 , 从而可以使用优化后的遗传算法 , 即
+类似于最速粒子群算法和飞蜇扑火算法 , 但即使这两个算法在特定情况下结果比较好 , 情况
+依然非常多。
+
+(3) 预期在这两个算法的基础上 , 使用最速粒子群算法得到一个更好的快速迭代方法 -
+
+7 模型优欣点评价
+
+7.1 模型优点
+
+(1) 模型的稳定性 : 第二问和第三问分成两个模块 , 多个步骤 , 不待要考虑扰动的问题 ,
+本文的模型给出了期望值 , 并东十分准确。 第四问加人挝动 , 但决策结果不变 , 证明模型至
+少有 95% 以上的抗扰动能力。 且槲型随着加工的零件和产品数目上升 , 越来越稳定。
+
+(2) 模型的灵敏性 : 问题一使用模拟退火算法可以收敛到局部最优解 ; 通过多次使用模
+拟退火可以籁选出一两个备用的决策 , 发现在儿个情况下最优的决策比次优的决策仅仅高出
+0.012 的利润。
+
+<!-- MM_PAGE: 22 -->
+(3) 算法 : 本文模型是一个线性进程 , 有多个步骤 , 每个步骗都是一个循环。 于是可以无
+限循环迭代。 而且使用了非传统的线性模拟退火。 篓选出最优解以及几个备用决策 , 把备用
+的决策再验算 , 便得出正确的解、
+
+7.2 模型缺点
+
+(1) 迭代过程中有部分决策过程不合适 , 但是最终结果正确。
+
+(2) 通过模型 , 整个仿真过程转化成不断迪代的线性进程 . 但该模型忽视了一种情况 , 一
+舫在生产中会优先使用检测出来的正品 , 但模型中存在检测到的是正品 , 又对其拆解的情况。
+但最后迭代得出的结果表明该现象为算法区域机制 , 对于最终结果不存在任何影响。
+
+(3) 生产规模很小的情况下 , 决策不一定最好 , 因为模型建立在 10000 套的基础上 , 更
+适用于常规规模。
+
+8 参考文献
+
+参考文献
+门孙小素 , 尚书钰 . 计数标准型一次抽样检验方案设计方法探讨 “ 薛议 GB/T 13262
+2008 改进问题门山东工商学院学报 ,2024,38(01):69-76.
+9 附录
+
+9.1 程序结果汇总
+9.2 “ 代码汇总
+
+from scipy , stats import norm
+import math
+
+import random
+
+« import matplotlib.pyplot as plt
+| import numpy as np
+
+plt.rcParams| | “font sans—sorif | = ["KaiTi’|
+plt.rcParams| | “hxes unicode_minus ] 二 Palse
+
+I| def quantile_value [pj:
+
+半计算标雌正态分布的第 p 分位数值
+value = norm.ppf(p)
+
+return value
+
+| def get_n(p0, pl, alpha, belta):
+
+swap_n = quantile_value(l — alpha) = math.sqrt(p0 = (1 — p0)) — quantile_value(belta)
+w math.sqrt(pl « (1 一 p1)】
+
+swap_n /= pl 一 p0
+
+return swap_n s 2 if swap_n == 2 < 100 else 100
+
+22
+
+<!-- MM_PAGE: 23 -->
+| def get_c(p0, pl, alpha, belta n):
+
+a
+
+# print(p0,pl alpha, belta, n)
+
+L_value = n = pl + quantile_value(belta) = math.sqrt(n = pl = (1 — pl))
+r_value = n « p0 + quantile_value(l — alpha) « math.sqrt(n + p0 « (1 — p0))
+return 1_value r_value
+
+洁 def get_ans(pl, belta):
+
+n = get_n(p0d, pl, alpha, belta)
+
+c_l, c_r = get_c(p0, pl, alpha, belta, n)
+# print(n, c_1, c_r)
+
+return n, el
+
+| def get_ans_n(pl, belta):
+
+n = get_n(pd, pl, alpha, belta)
+
+e 1, c_r=get_c(p0, pl, alpha, belta, n)
+# print(n, c_l, c_r)
+
+return n
+
+= # todo: 问题一 , 法一
+
+w柏l('~.二 . I着】')
+fl = open("H & —, #& —. txt”, mode="w", encoding="utf-8")
+po = 0.1
+
+才 belta = 0
+引 pl = 0
+
+alpha = 0.1
+
+引 for p1 训 [0.001 « _ for _ in range(1, 1000) if 0.001 » _ 氏 p0]:
+
+for belta in [0.01 « _ for _ in range(1, 100)]:
+n, ¢ = get_ans(pl, belta)
+if e<0:
+continue
+f . write(f"pl = {p1}, belta 二 【beltaj , 此时 n 为 ; tn} ,e 为 1 {c}\n")
+水 print(f? 解为 : pl 井 {p1},alpha = {alpha}”)
+# print[f“ 正时 n 为 : ta} cH: {c}")
+
+才 x = np.array ([0.001 = _ for _ in range(1,1000) if 0.001 = - 已 p0])
+
+3 = np.array ([0.01 * _ for _ in range(1, 100)])
+
+引 x,3 = np.meshgrid (x, y)
+
+custom_function_vectorized = np.vectorize (get_nans_n)
+
+‘|z = custom_function_vectorized(x, y)
+
+十创建三维图形对象
+
+o| fig 井 plt figure()
+|ax 二 fig -add_subplot(111,projection= )
+
+# 绘制三继图形
+引 ax plot_surface(x, y, 2z, cmap='vicidis ')
+
+|# 设置坐标勒标娘
+
+ax set_xlabel( 711
+
+目 ax.set_ylabel( " belta')
+
+ax.set_zlabel( )
+ax.set_titla( 「 间题二方波一 )
+plt.show()
+
+23
+
+<!-- MM_PAGE: 24 -->
+a
+
+i0
+
+1
+
+113
+
+118
+
+114
+
+| from scipy.stats import norm
+| import math
+
+import random
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.rcParams| “font .sans—serif '] = ["KaiTi’|
+plt.rcParams| 'nxes unicode _minus'| 二 Palse
+
+def quantile_value(p):
+# 计算标雕正态分布的第 p 分位数借
+value = norm.ppf(p)
+return value
+
+def get_n(p0, pl, alpha, belta):
+swap_n = quantile_value(l — alpha) « math.sqrt(p0 = (1 — p0)) — quantile_value(belta)
+= math.sqrt(pl = (1 — pl))
+swap_n /= pl 一 p0
+return swap_n ss 2 if swap_n s« 2 < 100 else 100
+
+i def get_c(p0, pl, alpha, belta, n):
+
+1_value 二 n = pl + quantile_value(belta) = math.sqrt(n = pl = (1 — pl))
+r_value = n 气 p0 + quantile_value(l — alpha) 主 math.sqrt{n * p0 « (1 一 p0))
+return 1_value r_value
+
+5| def get_new_ans(pl, alpha, t):
+
+pl 4= 2 « random.random()。 math.exp(t — 1000) — math.exp(t 一 1000)
+alpha 4= 2 = random.random() = math.exp(t — 1000) 一 math.exp(t — 1000)
+return pl, alpha
+
+| def get_ans(pl, alpha):
+
+n = get_n(pd, pl, alpha, belta)
+
+e 1, c_r=get_c(p0, pl, alpha, belta, n)
+# print{n, c_l, c_r)
+
+return n, el
+
+‘| def get_ans_n(pl, alpha):
+
+n = get_n(p0, pl, alpha, belta)
+
+e_l, c_r=get_c(p0, pl, alpha, belta, n)
+# print{n, c_1, c_x)
+
+return n
+
+def is_ans(pl, alpha):
+if pl < 0.13 or pl > 0.19 or pl <= p0:
+return Pll'e
+if alpha < 0 or alpha > 1:
+return False
+return True
+
+<!-- MM_PAGE: 25 -->
+| def get_p(delta t):
+
+133 # 返回一个无限小的正数 , 苑围为 0 到 1
+
+133 升随着退火次数增加而蕴树蕃小
+
+a4 return math.exp(—delta/t)
+
+124
+
+6| # # todo: 问题一 , 拓一
+
+w|# print(“ 阿题一 , 法一口
+
+4153 木 f 二 open(“ 胡颜一 , 法一 ,txt “, mode="w", encoding="utf-8")
+
+1o # p0 = 0.1
+ol # belta = 0.05
+wil# p1 二 0.15
+
+12| # alpha = 0.1
+1o # for pl in [0.001 « _ for _ in range(l, 1000) if 0.001 « _ 氏 p0]:
+1l # for alpha in [0.01 « _ for _ in range(1, 100)]:
+
+a 莲 n, ¢ = get_ans(pl, alpha)
+
+i if 一
+
+1 木 continue
+
+1 林 f ,write(fwpl = {p1}, alpha 井 《alphaj , 就时 n 为 : tn} ,e 为 ; {c}\n")
+ol # # print( 吊解为 ; pl = {p1}, alpha = {alpha}”)
+
+E 非 print( 臼此时 n 江 : tn} ,e 为 : tcj7)
+
+wil# x 二 np.array(|0.001 * _ for _ tn range(1, 1000) if 0.001 * _ = p0j]
+wil# y 二 np -array ([0.01 = _ for _ in range(1, 100}])
+
+wi|# x, y = op. meshgrid (x, y)
+
+144| 非 custom_function_vectorized = np.vectorize (get_ans_n)
+a 靠 2 = custom_function_vectorized(x, y)
+
+w4 判建三维图形对象
+
+war|# fig = plt.figure()
+
+1s|# ax = fig . add_subplot(111, projection="3d")
+
+ol #
+
+wol# # 给制三继图形
+
+wif# ax.plot_surface(x, y, z, cmap="viridis’)
+
+|
+
+t| 华非设置坐标轶标笼
+
+u 木 ax.set_xlabel('p1’)
+
+5s 木 ax ,set_ylabel ( 「alpha 1
+
+e # ax.set_zlabel('n’)
+
+wii# ax.set_title("HM— 方招一 1)
+
+15 梁木 ax .set_zlim (0, 10)
+
+10| # plt.show()
+
+E
+
+wi|# # t = 1000 # 初始化渥度值
+
+wil## min =980 # 设置源庆下深
+
+sl # k = 1000 # 设置迩任次数 ( 有用吗 }
+…藁藁
+
+1eo|# # while (t > t_min):
+1004 # for 王记 range(500):
+
+| # n, ¢ = get_ans(pl, alpha)
+
+ol # # pl_, alpha_ = get_new_ans(pl, alpha, t)
+wal# # if is_ans(pl_, alpha_):
+
+ol # # n_, - = get_ans(pl_, alpha_)
+
+| # delta 三 n_ 一
+
+<!-- MM_PAGE: 26 -->
+il # # D 最小
+
+sl # # if c_> 0:
+
+il # # if delta < 0:
+
+el # # pl, alpha = pl_, slpha_
+
+17 日非 # else:
+
+E p = got_p(delta, t)
+
+mal# # if (p > random.random()):
+ol# # pl, alpha = pl_, alpha_
+wl# #
+
+wl# # print ("4 MMEM A pl = (p1), alphs = {alpha}”)
+w|f # print(f" & ofn%: [n ,e 为 : {}")
+
+el # #t=1t«alpha # 温度下陈
+
+™ P 【- 一 0.01
+
+| # 非
+
+we|# # n, ¢ = get_ans(pl, alpha)
+
+|4 # print (f“ 增优解为 : pl = tp1} alpha = (alpha)}")
+
+ins| 棣棣 print(f“ 此时 n 为 ; 《史 , 为 : 《c}7)
+
+wol# 闭题一
+
+190| import scipy .stats as stats
+
+E
+E 月
+
+i n_values 二 range(10,101)
+
+14| valid_n_values = []
+
+| for n in n_values:
+
+E binom_dist = stats.binom(n, p)
+
+107 e0 = binom_dist. ppf(0.95)
+
+j P_X_leq o0 = binom_dist.cdf(c0)
+
+199) diff = (P_X_leq c0 — 0.95) / 0.95
+
+00| if diff < 0.01:
+
+201 valid_n_values.append([n, ¢0])
+
+print (f“ 答合条件皙所有 n 为 ; [watid_n_values} )
+
+| 木间题二
+
+| valid_n_values = []
+
+| for n in n_values:
+
+207 binom_dist = stats.binom(n, p)
+
+208 e0 = binom_dist. ppf(0.1) 一 1
+
+29 P_X_leq 0 = binom_dist.cdf(c0)
+
+00 # print(P_X_leq_c0)
+
+m diff = (0.1 = P_X_leq_c0) / 0.1
+
+13 if diff < 0.01:
+
+3 valid_n_values.append (|n, ¢0])
+
+su| print (" H &R FQF Aok {valid_no_values}”)
+21| import numpy 8 np
+
+w10l import pandas s pd
+
+| import random
+
+from statsmodels ,stats . proportion import proportions_ztest
+
+诊 | def ztest_fanc(data_getj :
+
+<!-- MM_PAGE: 27 -->
+aal
+234
+E
+E
+E
+223
+29
+220
+231
+33|
+E
+E
+E
+
+ald
+
+238
+6
+E
+1
+E
+E
+E
+41|
+E
+E
+244
+249)
+
+250
+
+E
+E
+
+E
+
+| 非木样本生煅 〔 岑当是二项分布 )
+
+传人一维列表 , 表示样本
+:pParam datn_get:
+
+FetHTH
+w
+
+# todo: 对揣样改据进行检验检验
+
+data_get = np.array (data_get, dtypes i 7
+
+# 进行 z 检验
+
+wanna_p0 = 0.1
+
+no_num = int ((data_get = 0).sum())
+
+all_num = len (data_get)
+
+print (f W@ % (vo_num}, 整体数日 : fall_nutm]“)
+
+# 检验一
+Print “ 棉验一】
+斧 smaller 「 代表佗于 alpha 时成立 ,
+
+z_stat, p_val = proportions_ztest(no_num, all_num ,Wanna_p0, alternative 一 3 门 8
+print ( 余 statistic: {z_stat}, P-value:{p_val}")
+
+# 判断厥信设
+alpha = 0.10
+if p_val < alpha:
+print(“ 拔绅雹健设 : 郑认为有 90K% 纳拒提认为次咤率佗于 10K )
+else:
+print(“ 捷受零馀设 : 即认为设晟 90% 的把搀仆为次品真低于 108 )
+
+木检验二
+
+Print “ 缘盎二 “)
+
+木 “larger 「 代表高于 alpha 时成立 ,
+
+z_stat, p_val = proportions_ztest(no_num, all_num, wanna_p0, alternative='lurger’)
+print (f"Z statistic: {z_stat}, P-value:{p_val}")
+
+# 判断压信设
+alpha 二 0.05
+if p_val < alpha:
+print(“ 拒趁需俊设 : 邕认为有 95% 的押现认为次品率大于 10X%7 )
+else :
+print(“ 裨受需余设 : 邸认为设有 95% 的把提认为欣品率大于 10X%7 )
+
+np .random .seed (12845425)
+random.seed (10524) # 设置随机数积子 , 付确保结果可重复
+
+非 todo: 生妮合理的棣本
+朱根本忱数确定
+
+data_num = 100000
+cipin_lv = 0.11
+
+# data_0_num = int(data_num « cipin_lv) x T
+
+3| # data_1_num = int (data_num — dats_0_num) 《史
+
+米 data_get = pp,concatenate((np . zeros(data_0_numj) np. ′，Il矗.懈.___】|′__】)】
+
+27
+
+<!-- MM_PAGE: 28 -->
+274{# np.random . shuffle (data_get)
+
+ri| 木木 print(f 生成数据 : 【data_get]} )
+¢
+wrlf 样本生成 〔 正态分布 , 较大的 90% 主正品 , 荪余为次品 )
+
+2o/ data_get = np.random.normal (loc=0, scale=1, size=data_num) # 坂值为 0, 标凄差为 1
+ri| threshold = np.percentile (data_get cipin_lv * 100)
+
+20| data_get |data_get >= threshold| = 1
+
+河 |data_get[data_get 土 1] =0
+
+sal# print [f 生成数据 : {data_get) )
+
+| 木样本保存
+
+| df 二 pd .DataFrame(data_get ,coltmns=[ 「 惟标 10 为欣暨 ,1 为合桂 ] 1])
+sso| fl 二 / 第一阮 / 葛题一数据 .xtsx“
+
+| df,to_excel(fl index=False)
+
+s| print(f“ 样札巴成加生成莲保存到 (N} 文件中。“)
+
+24| no_num 二 int((data_get = 0) ,sumf) )
+
+sof all_num 井 len(data_get)
+
+wi| print(f“ 欣菲个戢 ; too_num} , 蟒体数目 ; [all_numj )
+
+s:| 子 todo: 尝试不同的抽样方法
+ssl| 朱简单随机拉样 , 整群抽样 , 二重拉桃
+
+| 华截人数搬芯建检验数猝
+s:| df = pd read_excel( 「 箬一闰 / 名屠一数据 xlax ', sheet_name='Sheetl')
+
+ag| data_get 二 df[ 「 样本 【0 为次咤 ,1 为合格】
+
+ol priat(f“ 首先迹才数撞樨验 , 此淼产品中合格率为 : tnp ,sum(datn_get)/ len (data_get)}")
+soof print(f“ 此抓产品中次荣犁为 : {(1 一 ap sum(data_get)/ lan (data_get)) + 100}%")
+
+i| 子 todo: 简单随机拙样
+
+| 木磷定拙样比候
+
+sox| data_get 二 df[ 「 植本 [0 为次菲 ,1 为合格】 |
+aia|no_num = int((data_get == 0j ,sum() ]
+
+吊小 allL_num = len(data_get)
+
+308 umph_nnm = l"_hum « 0.1
+
+wol # 迹行抽样
+
+3id| random_indices 井 randoml .Saumple(range(allL_num ) int(sample_num) }
+a 木 print (random_indices】
+
+| sample = |data_get[i| for i in random_indices|
+| print(“ 随拷拙梯烟捶木为 ; “,samplej
+
+4 ‖。-喜_丨‖nc(“m鼬。)
+
+5Li| 木 tedo: 整羧推移
+
+wiid 依据排序迹行分织、10 个位一蝎
+
+s 引 dat_get 二 df[ 「 样本 【0 为次莉 ,1 为合格 ) ')
+
+ia|alL_num = len(data_get)
+
+| data_get = |[[data_get| _+ _ « 10| for _ in range(10)] for _ in range(int(all_num / 10))
+1
+
+| 札刑建划分好皇产品群体
+
+| alL_nam = len(data_get)
+
+i|sample_num = all_num « 0.1
+
+<!-- MM_PAGE: 29 -->
+sample_indices 二 random .sample(range(all_num) int(sample_num))
+
+B s 2
+
+朱招取整个群的产品作为样本
+|sample = []
+
+t for indices in sample_indices:
+129 sample += data_get|indices |
+
+s:i|# 打印抹样绪晰
+| print(“ 政羡抽样皆捶本为 ; “,sample)
+i| ztest_func(sample j
+
+s 木 tedo: 二重推根
+
+ssd|## 簸一阶段拉样
+
+ssi|data_get 二 Qf[ 「 梁本 10 为次品 ,1 为合指 ) ')
+
+引吴 L_num = len(data_get)
+
+河 | sample_num = all_num « 0.5
+
+| random__indices = random . sample(range (all_num), int(sample_num))
+i| data_get = [data_get|[i] for i in random_indicesj
+
+ssi| 木 print (“ 一置拉样的样本为 ; “,data_get)
+
+| 十笙二陨段拙样
+
+w44/ data_get 二 np .array (data_get)
+
+| L_num = len(data_get)
+
+日 sample_num = all_num 主 0.2
+
+| random_indices 二 random ,sample( range (all_num), int(sample_num))
+vl sample = |data_get[i] for i in random_indices|
+
+sso| print(“ 二重拐样刹最姚样林为 : “,sample)
+
+| ztest_func(sample)
+
+s
+an:| 木 tedo: 姬试不同继招样方沼
+
+il 简卖随机拐样 , 敷群抽样 , 二重轶祥
+364
+ssi| import numpy as np
+
+wwol import pandas as pd
+
+2| from statsmodels .stats .proportion import proportions_ztest
+s import random
+
+E
+
+s 干载人数据英建检验数据
+
+s1| df = pd ,read_excelt 「 第一问 / 君腕一数揪 ,xlsx ', sheet_name='Sheet]')
+
+03| data_get 二 df| 「 样本 10 为次函 ,! 为合案 } 「|
+
+sea| print(f“ 首光迹行数据桧验 , 此批产茵中合根率为 : tup sum(data_got)/len (datm_get]j)
+
+s|random .seed (1024) # 设置随机数积子 , 以确保锡果可重复
+
+| 木 todo: 简单随机拙根
+
+ssi| 林确定拙样比供
+
+wo|data_get 二 df| 「 棣本 (0 为次品 ,1 为合格 ) ']
+
+5ni|no_num 一 int(( data_get == 0).sum())
+
+| alL_num = len(data_get)
+
+吊 |sample_numl = all_num « 0.1
+
+ri 孩迸行拾样
+
+| random_indices 三 random .sample( range(all_numj) int(sample_num) }
+
+29
+
+<!-- MM_PAGE: 30 -->
+an 木 print (random_indices }
+ri| sample = |data_get[i] for i in random_indices|
+
+| print(“ 随机押样等祥本为 ; “,sample)
+
+saq| 木 todo: 整群拖样
+
+wilf 依撞排府迹行分组 ,10 个位一组
+
+=l data_get 二 df| 「 样本 (0 为次呼 ,1 主合案 ) 「|
+
+| allL_num = len(data_get)
+
+| data_get = |[data_get| _+ _ * 10] for _ in range(10)] for _ in range(int(allL_num / 10))
+1
+
+sae| ORI E I IK
+
+sl all_num = len(data_get)
+
+| sample_num = all_num « 0.1
+
+| sample_indices = random.sample(range(all_num), int(sample_num))
+
+E
+sool e 拓取敲个群的产品作为样永
+
+法 i| sample = []
+
+| for indices in sample_indices :
+E sample 4= data_get|indices |
+E
+e # 打印拙样绪果
+
+soe| print(“ 整群拙挂等祥本为 : “,samplej
+
+5 木 tedo: 二重掷样
+
+wol# 篝一阶段抽样
+
+woldata_get 二 df| 「 样本 (0 为次品 ,1 为合指 } '|
+
+吊 i| alL_num 二 len( data_get】
+
+| sample_num = all_num = 0.5
+
+的 i| random_indices = random . sample(range (all_num), int(sample_num))
+wi|data_get = [data_get[i] for i in random_indices|
+
+hos| print ("~ WM AL ", data_get)
+
+wol B B AT
+
+知 | data_get = np.array (data_get)
+
+wolall_num = len(data_get)
+
+ol sample_num = all_num = 0.2
+
+| random_indices 二 random . sample( range (all_num), int(sample_num))
+4i|sample = |data_get[i]| for i in random_indices|
+
+t:| print(“ 二圣拙样的最娆弯本为 : “,sample)
+
+4
+4
+E
+E
+4i7
+
+4
+
+挂
+
+| 英 data_get = np.array (sample)
+
+:|## 木进行 # 检骏
+
+| 林 Wanna_p0 = 0.1
+
+24| # no_mum = int ({data_get == 0).sum())
+
+<!-- MM_PAGE: 31 -->
+wi|# all_num 二 len [ data_get )
+
+wol# prtnt( 多次品个数 : no_nuam} , 整体数目 : 《allL_num ]
+
+i 芸华
+
+wl# # 检验一
+
+usa| 林 print(“ 检验一 )
+
+wold @ Csmaller 「 任表侥于 alpha 时成立 ,
+
+训 | 米 z_stat, p_val = proportions_ztest(no_num, all_num, wanna_p0, alternative="smaller')
+| 林 print(f"Z statistic: {z_stat}, P~value:{p_val}")
+
+s 棣
+
+| # # 刻斯原循设
+
+wi|# alpha = 0.05
+
+wold# if p_val < alpha:
+
+e £ print “ 拒细霁假设 : 卯认为有 958 的把提认为次品率低于 10%5“)
+4 一 alae:
+
+a 荣 print (“ 授受零偎设 : 惠设有足够的证据认为次品根低于 10 知 )
+wol|# 邦技
+
+wilf # 检验二
+
+ss|# print (“ 检验二 “
+
+sts| 木朱 “larger 「 代表窖于 alpha 时成立 ,
+
+4 ' z_stat, P__V..l = proyorﬁn-l_llnl(n_m. In__m, m__ﬂ. .l"l’-llivlﬂ'|‘l:.l ′】
+E 鼻 ′r【_l〕(′'z statistic : (】___`_〕】, F—vllm:(p_vnl)")
+
+ol #
+
+i 华李刹斯原侃设
+
+sil# alpha = 0.10
+
+wol# if p_val < alpha:
+
+anol # print ("ERF M WL KA 00V IS A A K & E KT 10%7)
+a1 # else:
+
+sl Print(“ 接受零假设 : 卿没有足够的证据认为次品主大于 10 刊 “
+
+sl # todo: 坂战合理的样本
+
+t import numpy as np
+4:| import pandas as pd
+
+wol# 祥本总数确定
+
+| data_num = 1000
+
+诉川 data_0_num = int(data_num = 0.12)
+
+i/ data_1_num = int(data_num 一 data_0_num }
+
+wil# 样本生成
+
+i| np .random .seed (1024)
+
+| data_get = np.concatenate ((np .zeros (data_0_numj} np.ones(data_1_num)))
+| np.random . shaffle(data_get )
+
+| 非样本保存
+
+wildf = pd , DataFrame(data_get ,columns=| 「 惊标 10 江欣暨 ,1 丹史栗 | “])
+4o| fl 二 “ 第一闰 / 闰题一数据 .xlsx 「
+
+i| df.to_excel(fL index=False)
+
+il print(f“ 样本已成动生成并保存到 (M) 文件中。“)
+
+H 7
+
+31
+
+<!-- MM_PAGE: 32 -->
+import numpy as np
+
+引 import pandas as pd
++| import random
+
+import math
+
+| import matplotlib.pyplot as plt
+
+import numpy as np
+
+plt.rcParams| 1font sans—serif '] = | "KaiTi’|
+plt.rcParams| “axes .uaicode_minusa ] = False
+
+| def get_w(data_list):
+
+# 此处迹行仿真 , 为时间角度考怀 , 仅循环两次
+ans_list = ||
+# todo: 过程函数
+def get_new_part{n_part_ori, p_part_make, p_part_test):
+朱雳件检详函数 , 输人零件数、 次品率、 格测率 , 得到新雳件数、 新次品率、 检测数
+n_part_good = n_part_ori « (1 — p_part_make)
+n_part_bad = n_part_ori « p_part_make
+n_part_bad_test = n_part_bad 一 p_part_test
+n_part_new = n_part_ori — n_part_bad_test
+p_part_new = 1 — n_part_good / n_part_new
+return n_part_new, p_part_new, n_part_ori = p_part_test
+
+def ;ll_producl(n_p.ru. P_Parts , p__prodncl._mnk.):
+考输人每种零件的个数 , 得到产品生产数、 次品数、 正品数
+p_good = 1 — p_product_make
+for enum in p_parts:
+p_good = 1 — enum
+n_parts = np.array (n_parts)
+n_product = np.min(n_parts)
+n_product_good = n_product * p_good
+n_product_bad = n_product 一 n_product_good
+return n_product, n_product_good, n_product_bad
+
+def deal_product_bad2(n_product_bad p_parts):
+
+水鳄人次酝数、 每个零仲的次咤率 , 得到每种新的零件个数 , 每种新的零件的次启率 ( 一个
+或口由两个需件构成 )
+
+R_part_1 二 n_product_bad
+
+n_part_2 = n_product_bad
+
+p_swap = p_parts [0] 十 p_parts[1] — p_parts[0] * P_parts|1] + (1 — p_parts[0]) = (
+
+1 — p_parts[1]) = p_product_make
+
+P_part_1 = p_parts [0] / p_swap
+
+p_part_2 = p_parts[1] / p_swap
+
+return n_part_1, n_part_2, p_part_1, p_part_2
+
+表搀环仿瞠直至不龛监利
+
+木此处使用法一 〔 全稚国定 ) 选行循环处理
+朱 print [“ 此处倬用法一 ( 全程国定 ) 迹行循环处理 “)
+
+32
+
+<!-- MM_PAGE: 33 -->
+园 # todo: 决策取量
+
+日孩总蒋利值、 丢弈成本 , 调换成本
+5 1 一 0
+
+晓觉 2 一 0
+
+4 W_8 一 0
+
+日朱 todo: 汪策方案变蒋
+
+心十检源率、 拆触标
+
+n P__partl_test 二 data_list |0|
+
+口 P__part2_test = data_list[1]
+
+d P_product_test = data_list 32|
+
+0 p_product_dismantle = data_list[3]
+日
+
+0 P__partl_test0 = data_list[4]
+
+幻 P__part2_test0 = data_list[5]
+
+纳 # todo: 环境变量
+
+@ 木次品辜
+
+a P_Partl_make = 0,05
+
+o P__part2_make = 0,05
+
+吊 p_product_make 二 0.05
+
+a # 劣买或者制作单价
+
+20 m__p-n.l_huy 一 4
+
+4 m_part2_buy = 18
+
+i m_product_buy = 6 # 刘作单价
+il # 剧试单价
+
+™| m_partl_test = 2
+匹 m_part2_test = 3
+n m_product_test = 3
+
+" # 售价、 拆解价格 , 调换价格
+n M__product_aale = 56
+r m_product_dismantle = 40
+
+0 m_product_exchange = 10
+
+旦非零件数 〔 怔暮希望利用率最大 }
+. n_partl_ori = 10000
+
+| n_part2_ori = 10000
+
+" #todo: 仿瞠交换变董
+
+跃 n_partl_swap = 0
+
+s p_partl_swap = 0
+吊 n_part2_swap = 0
+明 P__Part2_swap = 0
+a # todo: 仿嶂逊程 ( 每欣仿瞠得到绘新的决策变量应当在筱一次的萧础上改变 )
+
+%0 count = 0
+
+o while True:
+
+o # print("asd”)
+
+o 朱纳承上次铸环决策变量
+
+a4 w_l1_new, w_2 pew, w_3 pew = w_1, w_ 2, W 3
+
+吊 count 4= 1
+
+明木 print(f“ 当前是第 {count} 次循环 “)
+
+| # todo: 雳件检洙
+
+a if count = 1:
+
+L 非首次迹行时 , 霭计算雷件成永 , 计算零件检调成本
+
+E w_1_new —= n_partl_ori = m_partl_buy + n_part2_ori » m_pan2_buy
+
+33
+
+<!-- MM_PAGE: 34 -->
+lad
+
+120}
+
+140)
+
+141
+
+143
+
+143
+
+144
+
+义零件检鸿函数 , 物人雪会数、 次品率、 检剂率 , 得刻新零件数、 新次品率、 格谭数
+n_partl_new p_partl_new, n_partl_test = get_new_part(n_partl_ori,
+p_partl_make, p_part]_test)
+n_part2_new, p_part2_new, n_part2_test = get_new_part(n_part2_ori,
+p_part2_make, p_part2_test)
+w_1_new - 一 n_partl_test » m_partl_test 十 n_part2_test 主 m_part2_test
+w_2_new 4= (n_partl_ori — n_partl_new) = m_partl_buy + (n_part2_ori 一
+n_part2_new) » m_part2_buy
+# print("asd")
+# print(n_partl_new, p_partl_new, n_partl_test)
+# print(n_part2_new, p_part2_new, n_part2_test)
+else:
+升其倌愈诉 , 产品雷件在最后一步进行处理 , 此处进行继技
+n_partl_new, p_partl_new = n_partl_swap, p_partl_swap
+n_part2_new, p_part2_new = n_part2_swap, p_part2_swap
+# todo: 生成产品
+R__product n_product_good, n_product_bad = get_product ([n_partl_new n_part2_new
+|+ [p_partl_new, p_part2_new|,
+p_product_make )
+n_partl_ex = n_partl_new 一 n_product
+n_part2_ex = n_part2_new — n_product
+p_partl_ex = p_partl_new
+p_part2_ex = p_part2_new
+# print(n_partl_ex, n_psrt2_ex)
+# print(p_partl_ex, p_part2_ex)
+# print(n_product, n_product_good, n_product_bad)
+w_1_new —= n_product + m_product_buy
+# todo: 计算决策变量 〔 次品歇认丢弈 ) , 区分产品正品与次品
+w_l_new += n_product_good = m_product_sale — n_product_good = p_product_test 一
+m_product_test
+w_1_new —= n_product_bad « p_product_test « m_product_test + n_product_bad « (
+1 一 p_product_test) * m_product_exchange
+# print(n_product_bad * p_product_test)
+# print(n_product_bad 【
+= 1 — p_product_test))
+w_2_new += n_product_bad = (m_partl_buy 十 m_part2_buy 十 m_product_buy)
+w_3_new 4= n_product_bad » m_product_exchange
+# w_3 new += n_product_bad a (1 一 p_product_test】 a m_product_exchange
+# print (4RGP (v_Lnow), FRRE: tw_2_new} , 信周奶本 : fw_S_newj)
+ans_list ,append ([w_1_new, w_2_new, w_3 new|)
+考 print(f“ 上一翅得到的净利清 : (w1}, FRRE: (w2}, WHRE: (w3)")
+考 todo: 判断循环是吻铨束
+if W_L_new 一 w_1<=w_1+« 0.001 or p_product_dismantle == 0:
+break
+# todo: 处通产茜次荫
+n_partl_newl, n_part2_newl, p_partl_newl, ,P_part2_new1 二 deal_product_bad2(
+R_product_bad * p_product_dismantle ,
+
+p_partl_new, P_part2_new ])
+
+# print(n_partl_newl, n_part2_newl, p_part]_newl, p_part2 newl)
+# print(n_partl_newl + n_partl_ex)
+
+<!-- MM_PAGE: 35 -->
+E # print(n_part2_newl 十 n_part2_exj
+
+E p_partl_newl = (n_partl_newl « p_partl_newl 十 n_partl_ex » p_partl_ex) / (
+n_partl_newl + n_partl_ex)
+
+14| n_partl_newl = n_partl_newl + n_partl_ex
+
+148 p_part2_newl = (n_part2_newl * p_part2_newl + n_part2_ex 气 p_part2_ex) / (
+n_part2_newl + n_part2_ex)
+
+i n_part2_newl = n_part2_newl 十 TL_part2_ex
+
+180 # print(n_partl_newl, n_part?_newl, p_partl_newl, p_part2 newl)
+
+H W_1_new - 一 (n_product_bad * p_product_dismantle) * m_product_dismantle
+
+1 W_8_pew - 一 (n_product_bad # p_product_dismantle) « (m_partl_buy 十 m_part2_buy 十
+
+m__product_buy )
+
+183 彦 todo: 对于拆解册到的零件 , 此处讨论是否进行检验
+
+184 孕零件检测函数 , 输人零件数、 次品率、 检测率 , 得到新零件数 , 新次品率、 检拮数
+
+s R_partl_new p_partl_new, n_partl_test = get_new_part(n_part]_newl, p_partl_newl,
+p_partl_test0)
+
+158 n_part2_new, p_part? new, n_part2_test = get_new_part(n_part2 newl, p_part2_newl,
+p_part2_test0)
+
+1 # print(n_partl_new ,P_payt]_new, n_partl_test)
+
+3 # print(n_part2_new, p_part2_new, n_part2_test)
+
+159
+
+E w_1_new —= n_partl_test + m_partl_test 十 n_part2_test 气 m_part2_test
+
+w1 W_2_pew += (n_partl_newl — n_part]l_new) 气 m_partl_buy + (n_part2_newl 一
+n_part2_new) « m_part2 buy
+
+183 # todo: 保鼬迭代值
+
+103 w_l, w.2, w3 =w_l_new, w_2 new, w_3_new
+
+184 n_partl_swap, p_partl_swap, n_part2_swap, p_part2_swap = n_partl_new, p_partl_new
+
+, n_part2_new, p_part2_new
+
+108 朱 print(f“ 最鲅得到的净利调 : fw_i_newj} , 环境成本 : {w_2_new} , 信命战本 : tw_3_new] “)
+
+len if len(ans_list) 一 1:
+108 return ans_list [0]
+E if ans_list[ 一 2|[0] > ans_list|-1][0]:
+170) return ans_list[-2|
+
+un return ans_list[-1]
+
+11| def get_p(delta, t):
+1" return math.exp(delta/t)
+
+i 日 def get_new_ans_list{ans_list, t):
+E swap_list = |[|
+1 for i in range(len(ans_list)):
+
+179 # print(+ 2 « random.random() * math.exp(t 一 1000) 一 math.exp(t — 1000))
+
+180) swap_list .append (ans_list[i]| + 2 * random.random() * math.exp(t — 1000) 一 math.
+exp(t — 1000))
+
+H # print{swap_list)
+
+183 # swap_list = [enum 卜 2 random.random () * math.exp{t — 1000) — math.exp(t — 1000)
+for enum in ans_list|
+
+u return swap_list
+
+u
+1 def is_ans_list(ans_list_new):
+186 for enum in ans_list_new:
+
+<!-- MM_PAGE: 36 -->
+H ‖'_疃矗<。。'凰魍疃>h
+183 return False
+
+E return True
+
+wol# todo: AW &K
+
+wilt = 1000 # 初始化渥度值
+wit_min 井 100 # 设置谥瓶下林
+wi# alpha = 0.99 考设置渥度下陈辜
+1ok = 10000 4 设置迭代次数
+Iss|## tedo: 证定一个初始解 ,
+
+10¢| ams_list = [0.5, 0.2, 0.1, 0.1, 0.1, 0.1]
+jor| ans_w = 0
+
+ws| ans_all = []
+
+0ol # todo: 开始退火过程
+
+| 才 while (t > L_minj ;
+
+wi|for i in range(50) :
+
+3 for i in range(k):
+
+203 ans_w = get_w(ans_list)
+
+204 ans_list_new = get_new_ans_list(ans_list, t)
+200 if is_ans_list(ans_list_new):
+
+E # print("ok”)
+
+E ans_w_new = get_w(ans_list_new)
+08 delta = ans_w_new[0] — ans_w|[0]
+200} if delta > 0:
+
+310 ans_list = ans_list_new
+
+2 # else ;
+
+3 心 p = get_p(delta, t)
+
+s # # print(p)
+
+04 # if (p 一 nndom .random () ) :
+E # ans_list = ans_list_new
+E 木一二王 « alpha
+
+a t—= 0.2
+
+usl print (" HF M E: (an_w(0]), FMME: tans_w|1]] , 信用或本 ; tans_w|12]]7)
+
+uo| print(fT MM % (wos_list[0]),{ ans_list[1]],(ans_list[2]} { ans_list|3]} { anx_list
+[4]} . nns_list[5]}")
+李 print(f 最优解为 : 《ans_list101} ,Eans_ltst [11} ,《ans_Hst [3]} fans_list 81
+ans_all .append (ans_W [9 |
+
+print(f“ 坤蛟携到的净利啸 ; fans_m|0]} , 环摸成本 ; fam_%|1|} , 信胜或本 ; {ans_w|2]] 0)
+
+E
+
+iteration = list(range(1, len(ans_all) + 1))
+
+plt. figure()
+
+s plt.plot(iteration, ans_all, marker="", color="0", linestyle=" ")
+2ss| plt.xlabel( 1 巡伟欣敲 )
+
+20| plt.ylabel( 「 淅刹谚 “)
+
+sao| plt . title ( “ 糖报退火优化可裙图 1)
+
+21| Plt .grid (True)
+
+| plt.show ()
+
+E
+4| import putmpy as np
+| import pandas as pd
+54| import random
+
+<!-- MM_PAGE: 37 -->
+| import matplotlib .pyplot as plt
+import numpy as np
+
+E
+
+E
+
+Plt.rcParams | “font . sans—serif '] = ['KaiTi']
+plt.rcParams| “hxes unicode _minus'| = False
+
+E
+
+203
+5
+# todo: 过程函数
+
+i| def get_new_part(n_part_ori, p_part_make, p_part_test):
+
+z 朱零件检潘函数 , 轶人雷件数、 次品率、 检洙率 , 得刻新零件数、 新次品率、 检谚数
+
+E n_part_good = n_part_ori = (1 — p_part_make)
+
+E n_part_bad = n_part_ori 干 p_part_make
+
+o) n_part_bad_test = n_part_bad « p_part_test
+
+280 n_part_new = n_part_ori — n_part_bad_test
+
+81 p_part_new = 1 — n_part_good / n_part_new
+
+283 return n_part_new, p_part_new, n_part_ori = p_part_test
+
+| def get_product(n_parts, p_parts, p_product_make):
+E 木输人每种零件皎个数 , 得到产品生产数、 次品数、 正品数
+
+E p_good = 1 一 p_product_make
+
+E for enum in p_parts:
+
+E P_good »= 1 一 enum
+
+280 n_parts = np.array (n_parts)
+
+21 n_product = np.min(n_parts)
+
+3 n_product_good = n_product = p_good
+
+23 n_product_bad = n_product 一 n_product_good
+
+84, return n_product, n_product_good, n_product_bad
+
+河 | def deal_product_bad2(n_product_bad p_parts):
+z 江骜人次品数、 每个零件的次品定 , 徙到每种新的雷件个数 , 每种新的需仰纺次品窄 ( 一个成品
+
+凸两个雾件松成 }
+
+E n_part_1 = n_product_bad
+
+70 n_part_2 = n_product_bad
+
+E p_swap = p_parts[0] + p_parts[1] 一 p_parts [0] = p_parts[1] + (1 — p_parts[0]) = (1 一
+p_parts[1]) = p_product_make
+
+E 【′__,l-，'_l 心 Lp"“阊 / P_SWap
+
+P__part_2 二 p_parts[1| / p_swap
+return n_part_1, n_part_2, p_part_1, p_part_2
+
+vl 锴环仿真直至不能监剧
+
+a 米此处锋用法一 ( 全程固定 } 进行梅环处理
+
+g[ print(“ 此处信诊其一 ( 全程国定 ) 选行檐环处理 “)
+wo|# todo: 泷策变量
+
+|## 总盅利值、 丢奔战本 , 调换成本
+
+[w_1 二 0
+|w_2 二 0
+|w_3 二 0
+
+a 木 tedo: 决策方案变重
+
+37
+
+<!-- MM_PAGE: 38 -->
+E
+
+E
+
+2oa
+
+木检测举、 拆解事
+p_partl_test = 0.1
+
+p_part2_test = 0.1
+p_product_test = 0.1
+
+| p_product_dismantle = 0.1
+
+引 p_Partl_test0 = 0.1
+
+p_part2_test0 = 0.1
+# todo: 环境变量
+
+s|# 次品率
+
+p_partl_make = 0.1
+
+沛 p_part2_make = 0.1
+命 | p_product_make = 0.1
+of# 赐买或者制作单价
+
+m_partl_buy = 4
+
+| m_part2_buy = 18
+
+m_product_buy = 6 “ 木制作单价
+
+ol # 澈试单价
+
+m_partl_test = 2
+m_part2_test = 3
+
+| m_product_test = 3
+
+# 售价、 拆解价格、 调换价格
+
+江 | m_product_sale = 56
+
+30
+
+241
+
+sn
+
+1y
+
+sid
+
+E
+
+a
+
+219
+
+E
+
+s
+
+E
+
+E
+
+m_product_dismantle = 5
+m_product_exchange = 6
+
+;|# 需件数 〔 总是希望利用率最大 )
+
+n__partl_ori = 10000
+n_part2_ori = 10000
+
+of# todo: 仿瞠交换变量
+
+n_partl_swap = 0
+p_partl_swap = 0
+n_part2_swap = 0
+p_part2_swap = 0
+
+w|# todo: 伙真过程 ( 每次仿真得到红新纺决策变量应当在剧一次的增础上改变 ]
+
+| count = 0
+22| ans_all = 目
+
+while True:
+朱维承上次箱环决策变量
+w_1_new, w_2 new, w_3 _new = w_1, w_2, w.3
+count 4= 1
+Print(f 当前是筵 tcount} 次猪环 “)
+# todo: 零件格澈
+if count = 1:
+朵首次进行时 , 霁计算零件我本 , 计算雹件检谭成本
+w_l_new - 一 n_partl_ori » m_partl_buy 十 n_part2_ori » m_part2_buy
+# 雪件格测函数 , 输人雾件数、 次品肇、 检测冼 , 得到新雪件数、 新次品率 . 格持数
+
+n_partl_new, p_partl_new, n_partl_test = get_new_part(n_partl_ori, p_partl_make,
+
+p_partl_test)
+
+n_part?_new, p_part2_new, n_part2_test = get_new_part(n_part2_ori, p_part2_make,
+
+p_part2_test)
+
+<!-- MM_PAGE: 39 -->
+sao
+
+351
+
+s
+
+E
+
+354
+
+ss
+
+w_1_new —= n_partl_test + m_partl_test 十 n_part2_test » m_part2_test
+
+w_2 new 4= (n_partl_ori — n_partl_new) + m_partl_buy + (n_part2_ori — n_part2_new
+) = m_part2_buy
+
+print(n_partl_new, p_part]l_new, n_partl_test)
+
+print(n_part2_new, p_part2_new, n_part2_test)
+else:
+
+木其他情况 , 产品雾件坤最后一步迹行处理 , 此处迹行纳承
+
+R_partl_new, p_partl_new = n_partl_swap, p_partl_swap
+
+n_part2_new, p_part2_new = n_part2_swap, p_part2_swap
+# todo: 生威产品
+RL__ Product n_product_good, n_product_bad 二 get_product (|n_partl_new, n_part2_new|, |
+】，-l>-′囊】-ll"v' !,一!】-′t鏖_】】′'v| 1
+
+p__product_mabkej
+
+Print (n_product, n_product_good, n_product_bad)
+w_1_new — n_product 一 m_product_buy
+十 todo: 计算决策变量 ( 次品戢认丢弈 ) , 区分产咤正品与次品
+W_1L_new 4= n_product_good = m_product_sale — n_product_good = p_product_test »
+m_product_test
+w_1_new —= n_product_bad « p_product_test 口 m_product_test + n_product_bad « (1 一
+p__product_test} « m_product_exchange
+w_2_new 4= n_product_bad + (m_partl_buy 十 m_part2_buy 十 m_product_buy)
+w_3 new 4= n_product_bad * (1 — p_product_test) * m_product_exchange
+print (f“ 当削稠到的净利调 ; fw_1_mew| , 环塔或本 : (w2 new), @WHRE: fw_8_newj )
+ans_all.append (w_1_new)
+东 print(f“ 上一转得到纳净利涓 : tw_ 山 , 环境成本 ; (w2}, WARE: (w3}")
+# todo: 判断循环是否锡束
+
+# if w_1l new 一伟 1 <= 仪一气 0.05 or p_product_dismantle — 0:
+
+#
+# break
+if count > 5:
+
+break
+# todo: 处理产品次荣
+n_partl_newl, n_part2_newl, p_partl_newl, p_part2_newl = deal_product_bad2(
+n_product_bad = p_product_dismantle,
+
+p_partl_new, p_part2_new]|)
+
+# print{n_partl_newl, n_part2_newl, p_partl_newl, p_part2_newl)
+
+w_1_new —= (n_product_bad 口 p_product_dismantle) * m_product_dismantle
+
+w_2 _new —= (n_product_bad « p_product_dismantle) « (m_partl_buy 十 m_part2_buy 十
+m_product_buy )
+
+#todo: 对于拆鲜得到皇雪件 , 化处讨论是否进行检验
+
+木零件检潘函数 , 鳄人雪件歇、 次品率、 检澈率 , 得刻新零件数、 新次品率、 格洁数
+n_part]l_new, p_partl_new, n_partl_test = get_new_part(n_partl_newl, p_partl_newl,
+p_partl_test0)
+
+n_part2_new, p_part2_new, n_part2_test = get_new_part{n_part2_newl, p_part2_newl,
+p_part2_test0】
+
+# print(n_part]l_new, p_partl_new, n_partl_test)
+
+# print(n_part2_new, p_part2_new n_part2_test)
+
+w_1_new - 一 n_partl_test 氛 m_partl_test 十 n_part2_test 气 m_part2_test
+2_new 4= 【n_partl_new1 — n_partl_new) » m_partl_buy + (n_part2_newl — n_part2_new)
+
+39
+
+<!-- MM_PAGE: 40 -->
+吊 m_part2_buy
+
+an # todo: 保国选代值
+
+2n '_】' __簪_ w_! = w_】_置" w_2_镳. '_3_腩′
+
+s9 n_pml_ 3p p_putl_sw‘p. n_pcn!_l'up.，_'_rt2_′'_P = D_Fﬂl_llﬂ, '」."′__慵'′,
+_._P_'【'霍___。~l P_】鳙'【麾_】′w
+
+ss:| print(f“ 最妮探到的净利霜 : {w_1L_new} , 环境奶本 : fw_2_new} , 信用或本 : [w_3_newj“)
+s| iteration = list(range(1, len(ans_all) + 1))
+
+34| ple. figure()
+
+wel plt.plot(iteration, ans_all, marker='", color="L", linestyle=" ')
+
+sss| plt .xlabel( / 蓉环欣数 )
+
+s plt.ylabel( 「 浩前谚 ')
+
+s plt title ( “ 伯嘱锴环可祸图 1)
+
+| plt -grid (True)
+
+泓 | plt .show()
+
+题二代码
+1 import matplotlib .pyplot as plt
+斗 import numpy as np
+‘| from itertools import product
+4
+日 plt .rcParams [ “font sans—serif '] = ['KaiTi')
+弘 plt .rcParams | 「axes .unicode_minus | = False
+
+引 def get_ans( X_list ] :
+
+10 # todo: B BN
+
+1 def get_new_part{n_part_ori, p_part_make, p_part_test):
+
+13 十零件检刻函数 , 输人零件数、 次品率、 格测率 , 稠到新雹件数、 新次品率、 检裂数
+13 n_part_good = n_part_ori « (1 — p_part_make)
+
+1| n_part_bad = n_part_ori = p_part_make
+
+1 n_part_bad_test = n_part_bad « p_part_test
+
+仪 n_part_new = n_part_ori 一 _part_bad_test
+
+t p_part_new = | 一 n_part_good / n_part_new
+
+18 return n_part_new, p_part_new, n_part_ori * p_part_test
+
+30 def get_product(n_parts, p_parts, p_product_make):
+3 米输人每秋零件的个数 , 得到产品生产数、 次品数、 正品数
+a P_good = 1 — p_product_make
+33 for enum in p_parts:
+p_good == 1 一 enum
+a n_parts = np,array (n_parts)
+a n_product = np.min(n_parts)
+
+<!-- MM_PAGE: 41 -->
+T__product_good 二 n_product 口 p_good
+I__product_bad 二 n_product 一 n_product_good
+return n_product, n_product_good, n_product_bad
+
+def deal_product_bad2(n_product_bad, p_parts, p_product_make):
+
+柿骅人次荣数、 每个零件的次品率 , 制作工艺 , 得到每种新的零件个数 , 每种新的零件的次
+品睾 ( 一个成品由两个零件构成 )
+
+n_part_1 = n_product_bad
+
+n_part_2 二 n_product_bad
+
+P_Swap = p_parts [0] 十 p_parts[1] 一 p_parts[0| = p_parts[1] + (1 — p_parts[0]) (
+
+1 — p_parts[1]) * p_product_make
+
+p_part_1 = p_parts[0] / p_swap
+
+p_part_2 = p_parts|1] / p_swap
+
+return n_part_1, n_part_2, p_part_1, p_part_2
+
+def deal_product_bad3(n_product_bad p_parts, p_product_make):
+
+札辖人次苏数、 每个零件的次品率 , 得到每种新的零件个数 , 每种新的零件的次品率 ( 一个
+成咤由三个零件构成 }
+
+n_part_1 二 n_product_bad
+
+n_part_2 二 n_product_bad
+
+n_part_3 = n_product_bad
+
+p_good = 1 一 P_product_make
+for enum in p_parts:
+P_good == 1 — enum
+p_swap = 1 — p_good
+p_part_1 = p_parts[0] / p_swap
+p_part_2 = p_parts[1] / p_swap
+p_part_3 = p_parts[2] / p_swap
+return n_part_1, n_part_2, n_part_3, p_part_1, p_part_2, p_part_3
+
+# todo: 泓筏变量
+
+非总盟利值
+
+w_1=10
+
+# todo: 决策方案变董
+
+升检滔率、 拆躲率
+
+p_partl_test = X_list [0]
+P__part2_test = x_list[1]
+p_partd_test = x_list[2]
+p_partd_test = x_list [3]
+p_part5_test = x_list [4]
+p_part6_test = x_list[5]
+p_part?_test = X_list |6]
+p_partS_test = X_list
+p_half_product]_test = x_list[8]
+p_half_product2_test = x_list[9]
+p_half_product3_test = x_list[10]
+p_product_test = x_list[11]
+
+# p_half_productl_dismantle = 0
+# p_half_product2_dismantle = 0
+# p_half_productd_dismantle = 0
+
+41
+
+<!-- MM_PAGE: 42 -->
+r 根 p_product_dismantle = 0
+
+r p__half_productl_dismantle = x_list [12]
+™ p_half_product2_dismantle = x_list [13]
+19 P__half_product3_dismantle 二 x_list [14]
+国 P__product_dismantle = x_list[15]
+
+′】 #todo: 新的参数 , 用于符二次及以后的选代
+
+x| P_partl_test0 = 1 if x_list[0] 一 0 slse 0
+
+53 P__part2_test0 = 1 if x_list[1] = 0 0 alse 0
+
+a4 P_part3_test0 = 1 if x_list|2] = 0 alse 0
+
+- p_partd_testd = 1 if x_list[3] = 0 else 0
+
+- P_part5_test0 = 1 if x_list[4] = 0 0
+
+面 P_part6_test0 = 1 if x_list[5] = 0 0
+
+. P_part7_test0 = 1 if x_list[6] == 0 0
+
+% p_partS_test = 1 if x_list|7] == 0 else 0
+
+国 # p_half_productl_test0 二 x_list [16]
+
+% # p_half_product?_testd 二 x_list [17]
+
+o3 # p_half_product3_test0 = x_list [18]
+
+o3| P_half_productl_test0 = 1 if x_list |8] = 0 else 0
+a P_half_product2_test0 = 1 if x_list |9] = 0 else 0
+o p_half_productS_test0 = 1 if x_list[10] == 0 else 0
+o # p_partl_test0 = x_list[16]
+
+s # p_part2_test0 = x_list[17]
+
+aa # p_partd_testd = x_list[18]
+屹 # p_partd_test0 = x_list[19]
+E # p_partS_test0 = x_list[20]
+101 木 p_part6_test0 二 x_list|21|
+E 木 p_part7_test0 二 x_list [22]
+Ioa # p_part8_test0 = x_list [23]
+E 木 p_half_productl_test0 二 x_list [24]
+108 木 p_half_product?_testd = x_list [25]
+非 p_half_productS_test 二 x_list |26|
+
+。 # todo: 环境变量
+108) # 次品率
+
+ws| p_partl_make = 0.1
+| p_part2_make = 0.1
+
+1 p_part3_make = 0,1
+
+13 p_partd_make = 0.1
+
+1 p_part5_make = 0.1
+
+14 p_part6_make = 0.1
+
+18 P_part7_make = 0.1
+
+E p_partS_make = 0.1
+
+1 p_half_product]_make = 0.1
+E P_haif_product2_make = 0.1
+E P_haif_product3_make = 0.1
+120 p_product_make = 0.1
+
+131 朱货买或考制作单价
+m_part]_buy = 2
+m_pant2_buy = 8
+
+154 m_part3_buy = 12
+
+128 m_partd_buy = 2
+
+130 m_part5_buy = 8
+
+42
+
+<!-- MM_PAGE: 43 -->
+m_parté_buy = 12
+m_part7_buy = 8§
+
+129 m_part8_buy = 12
+
+120) m_half_productl_buy = §
+1 m_half_product2_buy =
+133 m_half_product3_buy = 8
+123 m_product_buy = 8
+
+134 # 副试单价
+
+138 m_part]l_test = 1
+
+136 m_part2_test = 1
+
+i m_part3_test = 2
+
+138 m_partd_test = 1
+
+130 m_part5_test = 1
+
+140) m_part6_test = 2
+
+1 m_part7_test = 1
+
+143 Im_partS_test = 2
+
+143 m_half_productl _test = 4
+184 m_half_product2_test = 4
+148 m_half_product3_test = 4
+145 m_product_test = 6
+
+i # 售纺、 拆解价格、 清换价格
+143 m_product_sale = 200
+
+14} m_product_exchange = 40
+180 m_half_productl_dismantle = 6
+
+i m_half_product2_dismantle = 6
+153 m_half_product3_dismantle = 6
+153 m_product_dismantle = 10
+
+184 # todo: 招始零仰数
+
+1 n_partl_ori = 10000
+
+i n_part2_ori = 10000
+1 n_part3_ori = 10000
+E n_partd_ori = 10000
+i R_Part5__ori = 10000
+180 n_parté_ori = 10000
+
+101 n_part7_ori = 10000
+
+163 R_partS__ori = 10000
+
+16 木 todo: 猎环逄程变量 ( 为于继护选代 }
+4 n_partl_swap = 0
+
+168 n_part2_swap = 0
+
+106 n_part3_swap = 0
+
+E n_partd_swap = 0
+
+168 n_parts_swap = 0
+
+140 n_parté_swap = 0
+170 n_part7_swap = 0
+i n_part8_swap = 0
+173 H__half_productl_swap = 0
+in H__half_product2_swap = 0
+14| n_half_product3_swap = 0
+t p_partl_swap = 0
+i p_part2_swap = 0
+177 P__partS_swap = 0
+
+<!-- MM_PAGE: 44 -->
+E p_partd_swap 二 0
+E p_parts_swap = 0
+
+1o p_parté_swap = 0
+
+H ′_'p.r〕7_,"_P =0
+
+u P_partS_swap = 0
+
+163 p_half_productl_swap = 0
+
+1 P_half_product2_swap = 0
+P_half_product3_swap = 0
+# todo: 弃始橡环
+
+187 ans_list = ||
+
+H count = 0
+
+189) while True:
+
+190 # todo: 纳承椿环
+
+0 W_1Lnew = w_1
+
+193 count 4= 1
+
+163 朱 print(f“ 当前是第 {count} 次循环 “
+
+194 木 todo: 零件检刹
+
+H5 if count = 1:
+
+10 # todo: 计算零件成本
+
+w_1_new —= n_partl_ori » m_partl_buy + n_part2_ori 中 Im_part2_buy
+m_part3_buy 十 n_partd_ori » m_partd_buy
+m_parth_buy 卜 n_part6_ori + m_part6_buy
+m_part7_buy 十 n_partS_ori + m_partS_buy
+
+198 w_1_new —= n_part3_ori
+109 w_1_new —= n_part5_ori
+E w_1_new — n_part7_ori
+01 # print(w_1_new)
+o3 # todo; 雳件迹行检制 , 更新数据
+203 n_partl_new, p_partl _make new, n_partl_test = get_new_part(n_partl_ori,
+p_partl_make, p_partl_test)
+204 n_part2_new, p_part? make_new, n_part2_test = get_new_part(n_part2_ori,
+p_part2_make, p_part2_test)
+208 n_part3_new, p_partd_make_new, n_partd_test = get_new_part{n_part3_ori,
+p_part3_make, p_part3_test)
+
+n_partd_new, p_partd_make_new, n_partd_test = get_new_part(n_partd_ori,
+p_partd_make, p_partd_test)
+E n_part5_new, p_part5_make new, T_part5_test = get new_part{n_part5_ori,
+p_part5_make, p_partd_test)
+
+»
+
+E n_part6_new, ,p_part6_imake_hewW , n__PrtG_test = get_new_part(n_parté_ori,
+P_part6_make, p_part6_test)
+29 n_Part7_new p_partT_make_new, n_part7_test = get_new_part(n_part7_ori,
+
+P_part7_make,p_part7_test j
+
+20| n_partS_new, p_partS_make_new, n_partS_test = get_new_part(n_partS_ori,
+p_partS_make, p_part8_test)
+
+21 n_balf_productl_new p_half productl _new = 0, 0
+
+n_balf_product2_new p_half_product2_new = 0, 0
+
+E n_half_product3_new ,p_half_product3_new = 0, 0
+
+E # todo: 计算检澈费
+
+E w_1_new —= n_partl_test
+
+-
+.
+
+m_partl_test 十 n_part2_test » m_part2_test
+m_part3_test 十 n_partd_test 氛 m_partd_test
+m_part5_test 十 h_part6_test « m_part6_test
+
+m_part7_test + n_partS_test = m_partS_test
+
+210 w_1_new —= n_part3_test
+
+f w_1_new — n_part5_test
+
+W_1_new - 一 B_part7_test
+E 非 pyint (w_L_new j
+220。丨'矗:
+
+<!-- MM_PAGE: 45 -->
+E n_partl_new, p_partl_new = n_partl_swap, p_partl_swap
+E n_part2_new ,p_Part2_heW = n_part2_swap, p_part2_swap
+n_part3_new, p_partd_new = n_part3_swap, p_partd_swap
+234 n_partd_new, p_partd_new = n_partd_swap, p_partd_swap
+n_part5_new, p_part5_new = D_part5_SWap p_part5_swap
+n_part6_new, p_part6_new = n_part6_swap, p_part6_swap
+22 n_part7_new, p_part?_new = n_part7_swap, p_part7_swap
+n_partS_new, p_partS8_new = n_part8_swap, p_partS_swap
+n_half_productl_new , p_half_productl_new = n_half_product]l _swap,
+p_half_product]_swap
+E n_halt_product2_new , p_half_product2_new 二 n_half_product2_swaip ,
+P_half_product2_swap
+n_half_product3_newW ,p_balf_product3_new = n_half_product3_swap,
+p_half_product3_swap
+23 祥 todo: £™HRE
+22 半输人每种零件的个数 , 妮种零件的次品率 , 工艺纳次品牵 , 返囡得到的产品总数、 次品
+数、 正荫数
+# print(f“ 雾件数 : [n_partl_new) )
+n_balf_product1 ,n__half_productl_good ,n__half_productl_bad = \
+236 get_product ([n_partl_new, n_part2_new, n_part3_new|, |p_partl_make new,
+p_part2_make_new, p_part3_make_new|,
+P_half_productl_make )
+a_half_product2 , n_half_product2_good n_half product2 bad =\
+230 get_product ([n_partd_new, n_part5_new, _part6_newW ] , [p_partd_make new,
+p_part5_make_new, p_part6_make_new|,
+p_half_product2_make)
+n_half_product3, n_half_product3_good, n_half productd_bad = \
+3 get_product ([n_part7_new n_part8_new|, |p_part7_make_new ,P_partS_make_newy| ,
+p_half_product3_make }
+= # print(n_half_productl, n_half _product2, ,n_half_product3 )
+E # todo: 订算制作费用
+E W_1_new —= n_half_productl 氙 m_half_productl_buy
+w_l_new —= n_half_product? 主 m_half_product2_buy
+w_1_new —= n_half_productd 氛 m_half product3_buy
+48] # print(w_1_new)
+9 #todo: 得到剃余零件数 , 得到剩余需件数次品率
+。 R__Partl_ex1 = n_partl_new — n_half_productl
+a8y R__part2_ex1 = n_part2_new — n_half_productl
+
+n_partd_ex] 二 n_part3_new — n_half_productl
+n_partd_exl = n_partd_new 一 n_balf_product2
+R__Part5_exl = n_part5_new — n_half_product2
+n_part6_ex] 二 n_part6_new 一 n_balf_product2
+n_part?_ex1 = _part7_new 一 n_balf_product3
+981, n_part8_exl = n_partS_new — n_half_product3
+E p_partl_ex = p_partl_make_new
+289 p_part2_ex = p_part2_make new
+P__Part3_ex = p_part3_make_new
+41 p_partd_ex = p_partd_make_new
+吊 P_Part5_eX = p_part5_make_new
+E P__Part6_ex 二 P_part6_make_new
+E p_part?_ex = P_PartT_Imake_new
+
+45
+
+<!-- MM_PAGE: 46 -->
+E p_partS_ex = p_partS_make_new
+
+206 #todo: 得到当前半成品数 , 得到当前半成品次品事
+
+2 P_half_productl_make_new 二 〔n_halt_productl_bad 十 n_haif_productl_new =
+p_half_productl_new) / (
+
+208 n_half_productl 十 n_half_product]_new)
+
+29 n__half_productl_new = n_half_product]l + n_half_product] _new
+
+210 p_half_product?_make new = (n_half product2_bad + n_half product2_new =
+P__half_product2_new) / (
+
+a n_half_product2 + n_half_product?_new)
+
+2 n_half_product2_new = n_half_product2 + n_half_product2_new
+
+2 p_half_product3_make_new 二 (n_halt_product3_bad + n_half_product3_new =
+p_half_productd_new) / (
+
+E n_half_product3 十 n_half_product3_new )
+
+E R__half_product3_new = n_half_productd + n_half_product3_new
+
+2r6 # print(f"{n_half_product]_new}, {n_half product2_new}, {n_half_product3_new}")
+
+277 if count = 1:
+
+ar| # todo: 保留半成品次藩
+
+E D__half_productl_ex2 = p_balf_product1_make_pew 主 n_balf_productl_new =
+P__half_productl_test
+
+280 n_half_product2_ex? 二 p_half_product2_make_new « n_half_product2_new «
+p_half_product2_test
+
+E n_half_product3_ex2? 二 p_halt_product3__make_pew + n_half_product3_new «
+p_half_productd_test
+
+3 # todo: 检鹫升成品
+
+281 n_half_product]_new, p_half_product]_make_new, n_half_productl_test =
+get_new_part(n_half_productl_new,
+
+p_half_product]l _make_ new,
+P_half_productl_test )
+
+284 n_half_product2_new, p_half_product2_make_new, n_half_product2_test
+get_new_part(n_half_product2_new,
+
+p_half_product2_make new,
+
+p_half_product2_test)
+a n_half_product3_new, p_half_product3_make_new, n_half_product3_test =
+&et_newW_part (n_bhalf_product3_new ,
+
+p__half_product3_make_new,
+P__half_product3_test )
+
+20| else:
+
+# todo: 保留半成品次函
+
+204 n_half_productl_ex2 = p_half_product]_make_new * n_half_product]_new +
+p__half_productl_test0
+E n_half_product2_ex? = p_half_product?_make_new * n_half_product2__new »
+
+p_half_product2_test0
+
+n_half_product3_ex2? = p_half_productd_make_new » n_half_productd_new »
+p_half_product3_test0
+207, # todo: 格测半成荣
+
+<!-- MM_PAGE: 47 -->
+8 n_half_productl_new ,p_half_productl_make_new , n_half_productl_test
+get_newW_part(n_half_productl_new ,
+
+p_half_productl_make_new ,
+p_half_productl_test0)
+
+o1 n_half_product2_new, p_half_product?_make_new, _half_product2_test
+get_new_part(n_half_product2_new,
+
+p_half_product2_mnke_new,
+
+p_half_product?_test0)
+204 n_half_product3_new, p_half_product3_make_new, n_half_product3_test =
+get_new_part(n_half_product3_new ,
+
+P_half_product3_make_new,
+
+P_half_product3_test0】
+
+# todo: 订算程测费
+w_1_new - 一 n_half_productl_test * m_half_productl_test 十 n_half_product2_test «
+
+m_half_product2_test + n_half_product3_test 气 m_half_ product3__test
+200 # print (w_L_newj
+
+51 # todo: 生产产蒙
+
+a3 升输人每种零件的个数 , 每种零件的次品率 , 工艺的次品率 , 返回得到的产品总数、 次恩
+数、 正品数
+
+a o_product, n_product_good, n_product_bad = \
+
+sn4 get_product ([n_half_product1_new ,m_balf_product2_new , n_half_product3__new | ,
+sie 【p_half_productl_make_new p_half_product2_make_new ,
+P_half_product3_make_new | p_product_make)
+
+314 #todo: 得到剩余半成品敷 , 得到剩余半成品次品率
+
+a n_half_productl_ex = n_half_productl_new 一 n_product
+318 n_half_product?_ex = n_half_product2_new — n_product
+a1l n_half_productd_ex 二 n_half_product3_new 一 n_product
+320 p_half_productl_ex 二 pP_half_productl_make_new
+
+a p_half_product2_ex = p_half_product2_make_new
+323 p_half_product3_ex = p_half_product3_make_new
+E # todo: 订算制作赏用
+a4 w_1_new - 一 n_product » m_product_buy
+E # todo: 订算决策变量
+220 W_1_new += n_product_good » m_product_sale — n_product_good » p_product_test «
+m__product_test
+W_1_new —= n_product_bad « p_product_test * m_product_test + n_product_bad = (
+1 一 p_product_test】 = m_product_exchange
+229 ans_list .append (w_1_new)
+220 升 print(f“ 当前第 {count} 轮得到的净利涓 : tw_L_newj“)
+l # todo: 判断献环是否结来
+莲订 W_L_mew — w_1<=w_1 « 0.001 or p_product_dismantle — 0:
+E # if p_product_dismantle — 0:
+34 # if count > 1 and W_1L_new < w_1 « 1.001:
+E # # print “ 谌环结来 “)
+
+a7
+
+<!-- MM_PAGE: 48 -->
+# break
+if count > 20:
+break
+# todo: 照品次品拆成半成品
+o_half_product]_newl, n_half_product2_newl, n_half_product3_newl,
+P__half_productl_newl p_half_product2_newl, p_half_product3_newl = \
+deal_product_bad3(n_product_bad * p_product_dismantle ,
+|p_half_productl_make_new ,p_half_product2_make_new ,
+P_half_productS__make_new | ,
+p_product_make)
+# todo: 计算抹解赏
+w_1_new - 一 I_half_productl_new1 * m_product_dismantle
+义非 todo: 处理半娆品次品 ( 前方道留半或咤有格测不合桓和多余 , 此处检澈不合格应当不迷
+行检灏 , 数目多余与拥赈之后皇进行检摊进行检裂 )
+根 todo: 稠到当莲未检验举成品数目 , ( 多余与拆除之后 }
+if n_half_productl_new1 十 n_half_productl_ex = 0:
+p_halt_productl_new1 = 0
+n_half_productl_new1 = 0
+.l'Q:
+p_half_productl_new1 = (n_half_product]l_newl s p_half_productl_new1 十
+n_half_productl_ex * p_half_productl_ex) / (n_half_productl_newl 十 n_half_productl_ex
+)
+n_half_product]_newl 二 n_half_productl_new1 十 n_half_productl_ex
+if n_half_product2_new1 十 n_half_product2_ex == 0:
+p_half_product2_new1 = 0
+n_half_product2_new1 = 0
+else:
+p_half_product2_new1 = (n_half_product2_newl « p_half_product2_newl 十
+n_half_product2_ex = p_half_product2_ex) / (n_half_product2_newl + n_half_product2_ex
+)
+n_half_product2_newl = n_half_product2_newl + n_half_product2_ex
+if n_half_product3_newl 十 n_half_product3_ex == 0:
+p_half_product3_newl = 0
+o_half_product3_newl = 0
+else:
+p_half_product3_newl = (n_half_product3_newl = p_half_product3_newl 十
+n_half_product3_ex = p_half_product3_ex) / (n_half_product3_newl 十 n_half_product3_ex
+)
+n_half_product3_newl = n_half_product3_newl 十 n_half_product3_ex
+米 tedo: 半成荫挨成零件 ( 仅拆前方留下半段息次荣 )
+n_partl_newl, n_part2_newl, n_partd_newl, p_partl_newl, p_part2_newl,
+p_part3_newl =\
+deal_product_bad3(n_half_productl_ex2 * p_half_productl_dismantle,
+[p_partl_make, p_partl_make, p_partl_make|,
+P__half_productL_make )
+n_p-ru_ncwl, nJ-nS_newl, n_pu-l&_nnwl, p_p-ru_newl, p_puls_newl,
+deal_product_bad3(n_half_product2_ex2 * p_half_product2_dismantle ,
+|p_partd_make, p_part5_make, p_part6_make|,
+p_half_product2_make)
+n_part?_newl, n_part8_newl, p_part7_newl, p_part8_newl = \
+
+48
+
+<!-- MM_PAGE: 49 -->
+184
+
+sn
+
+E
+
+deal_product_bad2(n_half_product3_ex2 « p_half_product3_dismantle, |
+p_part?_make, p_part8_make|,
+p_half_product3_mnke)
+# todo: 订算半殴品拆解费
+W_1_new —= n_partl_newl « m_half_productl_dismantle 十 n_part4_new1 «
+m_half_product2_dismantle + n_part?_newl » m_half_product3_dismantle
+# todo: 得到当莲零件数 , 得到当前零件次品玄
+if n_partl_newl 十 n_partl_exl = 0:
+p_partl_new1 = 0
+n_partl_new1 = 0
+else:
+p_partl_newl = (n_partl_newl * p_partl_new1 十 n_partl_ex1 « p_partl_ex) / (
+n_partl_newl + n_partl_exl)
+n_partl_new1 = n_partl_newl 十 n_partl_ex1
+if n_part2_new 十 n_part2_exl — 0:
+p_part2_newl = 0
+n_part2_newl = 0
+else:
+p_part?_newl = (n_part2_newl » p_part2_new1 十 n_part2_exl 口 p_part2_ex) / (
+n_part2_newl 十 n_part2_exl)
+n_part2_newl = n_part2_newl 十 n_part2_ex1
+if n_part3_newl + n_part3_exl — 0:
+p_partd_newl = 0
+n_part3_new1 = 0
+else j
+p_part3_newl 二 (n_part3_new1 主 p_PartS_new1 + n_part3_exl = p_part3_ex) / {
+n_part3_newl + n_part3_exl)
+n_part3_new1 = n_part3_newl 十 n_part3_ex]
+if n_partd_newl 十 n_partd_ex1 = 0:
+p_partd_newl = 0
+n_partd_newl = 0
+else:
+p_partd_newl = (n_partd_newl « p_partd_newl 十 n_partd_ex1 = p_partd_ex) / (
+n_partd_newl 十 n_partd_exl)
+n_partd_newl = n_partd_newl 十 n_partd_exl
+if n_part5_newl 十 D_part5_exl = 0:
+P_part5_new1 = 0
+n_part5_new1 = 0
+else:
+p_pPart5_new1 二 (n_part5_new1 « p_part5_new1 十 n_part5_ex1 = p_part5_ex) / (
+n_part5_newl + n_part5_exl)
+n_parth_newl = n_parth_newl 十 R_Part5_ex]
+if n_part6_new1 十 n_part6_exl == 0:
+p_part6_new1 = 0
+n_part6_new1 = 0
+else H
+p_part6_new1 = (n_part6_newl 主 p_part6_new1 4+ n_parté_exl * p_part6_exj / {
+n_part6_newl + n_part6_exl)
+n_part_newl = n_part6_newl 卜 R_part6_ex1
+if n_part7_newl 十 n_part7_ex1 == 0:
+P_part7_new1 = 0
+
+49
+
+<!-- MM_PAGE: 50 -->
+E
+
+439)
+
+40|
+
+4
+
+443
+
+4
+
+Wy
+
+s
+
+E
+
+s
+
+440
+
+E
+
+uo
+
+n_part7_new1 = 0
+else:
+p_part7_newl 二 (n_part7_new1 « p_part7_newl 十 _part7_ex1 = p_part7_ex) / (
+n_part7_newl + n_part7_exl)
+n_part7_newl = n_part7_newl 十 n_part7_ex1
+if n_partS_newl 十 n_partS_ex1 == 0:
+p_part8_new1 = 0
+n_partS__new1 = 0
+else:
+p_part8_newl = (n_part8_newl = p_part8_newl 十 n_partS_ex1 = p_partS_ex) / (
+n_partS_newl + n_partS_exl)
+n_part8_newl = n_part8_newl 十 n_partS_ex1
+if n_partl_new + n_part2_new 十 n_part3_new + n_partd_new 十 n_part5_new 十
+n_parté_new + n_part?_new 十 n_partS_new == 0 and n_half_productl_swap 十
+D__half_product2_swap 十 n_half_product3_swap — 0:
+break
+# print(n_partl_new1)
+木 todo: 处运需件
+if n_partl_new1 > 0:
+n_partl_new ,p_partl_make_new n__partl_test = get_new_part{n_partl_newl,
+p_partl_newl, p_partl_test0)
+else:
+n_part]l_new, p_partl _make new, n__partl_test = 0, 0, 0
+if n_part2_newl > O:n_part2_new, p_part2_make new, n_part2_test = get_new_part(
+n_part2_newl, p_part2_newl, p_part2_test0)
+else:
+n_part2_new, p_part?_make_new, n__part2_test = 0, 0, 0
+if n_partd_newl > O:n_part3_new, p_part3_make_new, n_part3_test = get_new_part(
+n_part3_newl, p_part3_newl, p_part3_test0)
+else:
+n_partd_new, p_partd_make_new, n_partd_test = 0, 0, 0
+if n_partd_newl > O:n_partd_new, p_partd_make_new, n_partd_test = get_new_part(
+n_partd_newl, p_partd_newl, p_partd_test0)
+else:
+n_partd_new, p_partd_make new, n_partd_test = 0, 0, 0
+if n_part5_newl > O:n_part5_new, p_part5_make_new, n_part5_test = get_new_part(
+n_part5_newl, p_part5_newl, p_part5_test0)
+else:
+n_part5_new, p_part5_make_new, n__part5_test = 0, 0, 0
+if n_part6_new > 0:n_part6_new , p__part6_make_new, n_part6_test = get_new_part(
+TL_part6_new1 p_parté_newl, p_part6_test0)
+dao:
+n_parté_new, p_parté_make_new, n__part6_test = 0, 0, 0
+if n_part7_new1 > O:n_part?_new, p_part7_make_new, n_part7_test
+n_part7_newl, p_Part7_new1 , p_part7_test0)
+els
+
+Ret_new_part(
+
+n_partT_new p_part7_make_new, n__part7_test = 0, 0, 0
+if n_partS_newl > O:n_partS_new, P_partS_make_new, n_partS_test = get_new_part(
+n_partS_newl, p_partS_newl, p_part8_test0)
+else:
+n_partS_new, p_partS_make_new, n_partS_test = 0, 0, 0
+
+50
+
+<!-- MM_PAGE: 51 -->
+se # todo: 计算检测资
+
+E # print(n_part]_test « m_part]_test)
+E W _1L_new - 一 n_partl_test « m_part]l_test 十 n_part2_test = m_part2_test
+24 W_1L_new —= n_part3_test 一 m_part3_test 十 n_partd_test 口 m_partd_test
+40| w_l_new - 一 n_part5_test 干 m_part5_test 十 n_part6_test 气 m_part6_test
+铁 1 _1L_new —= n_part?_test « m_part7_test 十 n_partS_test « m_partS_test
+许
+43 # todo: 处班选代
++ # if n_partl_new 十 __part2_newy + n_part3_new + n_partd_new 十 _part5__neW +
+n_partC_new 十 n_part7_new 十 n_part8_new — 0:
+toi # break
+b # if n_half_produetl_swap + n_half_product2_awap 十 n_half_product3_awap == 0:
+4r 孪 break
+) # print(n_partl_new)
+40 n_part]l_swap = n_part]l_new
+4 n_part2_swap = n_part2_new
+4ri n_part3_swap = n_part3_new
+n_partd_swap = n_partd_new
+n_parts_swap = n_part5_new
+4 D_part6_swap 二 n_part6_new
+are n_part7_swap = n_part7_new
+4re n_part8_swap = n_partS_new
+4 a_half_productl_swap 二 n_half_productl_new1
+4 n_half_product2_swap = n_half_product2_newl
+419l n_half_product3_swap = n_half_product3_newl
+ta0 P_partl_swap 二 P_PartL_make_new
+4ai p_part2_swap 二 P_Part2_make_newy
+E p_partd_swap 二 p_partd_make new
+u p_partd_swap = p_partd_make_new
+E P_Part5_Swap 二 P_Part5_make_new
+a8t P_part6_swap = p_part6_make_new
+E p_part?_swap 二 P_part7_make_new
+E p_part8_swap = p_part8_make new
+E p_half_productl_swap 二 p_half_productl_new1
+E p_half_product2_swap = p_half_product2_newl
+p p_half_product3_swap = p_half_product3_newl
+标 1 w_l = w_l_new
+
+t 志 print( f 最怯得到的净利调 : fw_1_new} )
+E print (" & W5 % (count)")
+494 # print{ans_list)
+
+08 # if len(ans_list) — 1:
+
+e # return ans_list [0]
+
+t # 识 ans_list|[-2] > ans_list[-1]:
+w8 # return ans_list|-2]
+
+499 # return ans_list[—1]
+
+soo return ans_list
+
+print(get_ans({1, 1, 1, 1,1, 1, 1,1, l l L 0,0,0,0,11))
+print([1, 1, 1, 1,1, 1,.1, 1, 1, 1, 1, 0,0, 0, 0, 1})
+# print(get_ans([1, 1, 1, 1, 1, 1, 1,1, 0,0, 0, 1, 1, 1, 15 1]))
+
+51
+
+<!-- MM_PAGE: 52 -->
+we|# ans_maybe_list 二 list (product ([0, 1|, repeat=16))
+wr# ans_list = 月
+
+cos|# count = 0
+
+wal# for maybe_list in ans_maybe list:
+
+10| # count 4= 1
+
+的 print{count)
+
+a 木 ans_list .append (| maybe_list, get ans({maybe list)|)
+日引木木 print [sorted (ans_list , key=lambda x: x ) )
+
+咤弘羊 ans_list = [enum for enum in ans_list if enum(1| >0]
+sio|# ans_list = sorted (ans_list, key=lambda x: x|[1])
+we|# for enum in ans_list:
+
+E # if enum[1] 一 2000000:
+
+史引莲 Print (enum)
+
+sls| printf 白故逊收箱 : (1, 1, 0, 3, 0, 工 1 1,1, 卯一
+
+sl priat《f“ 銮尿冕辅 : {[2, 1, 8, 2, h L 1 0,0,0, 1, L 1 L 刃
+
+&
+sufx = [ 十 1 for _ in range(21)]
+
+syl 二 get_anst[1 1,1, 1,1, 1, 1, 1,1, 1,1, 0, 0, 0, 0, 1]) # 最途收敏
+sy2 = get_ans([1, 1, 1,1, 1, 1, 1,1, 0,0,0, 1, 1, 1, 1, 1]) # 金局最侩
+soof plt figure( figsize=(10, 6))
+
+wo0| plt . subplot (111)
+
+sai| plt.plot(x, yl, 'red’, label="Mt ik 2% ', marker='0")
+
+| plt.plot (x, y2, color="blue", label="4% M ", marker="D")
+
+| plt.legend ()
+
+aao| plt . title ( 闰题三欧筑初梅上升龄线 “)
+
+ssi| plt .xlabel( 「 描环欣数 )
+
+s 才 plt .ylabel( / 净制葛 ')
+
+| plt .xticks (x)
+
+| plt .grid (True)
+
+| plt .show()
+
+sad
+
+题三代码
+
+import random
+import math
+import matplotHib .pyplot as plt
+
+import numpy as np
+
+& o 浩
+
+Plt .rcParams [ “fant . sans—serif '] 二 "KaiTi’]
+生 plt .rcParams | axos unicode minus'| = False
+
+11| def get_w(data_list):
+
+1 东此处进行仿嘧 , 为时间角度考虑 , 仅循环两次
+
+1 ans_list = 一
+
+14 # todo: : 过程函敷
+
+1 def get_new_part(n_part_ori, p_part_make, p_part_test):
+
+i 千零件检测函数 , 输人雷件数、 次咸窄、 检制率 , 得到新零件数 :】丨"薯I爹被测数
+1 n_part_good = n_part_ori = (1 — p_part_make)
+
+52
+
+<!-- MM_PAGE: 53 -->
+a
+
+24
+
+a
+
+«
+
+4
+
+a
+
+4
+
+ds
+
+80|
+
+5
+
+1)
+
+54l
+
+[
+
+E
+
+4
+
+)
+
+1
+
+|
+
+e
+
+5
+
+n_part_bad = n_part_ori + p_part_make
+
+n_part_bad_test = n_part_bad « p_part_test
+
+n_part_new = n_part_ori — n_part_bad_test
+
+p_part_new = 1 — n_part_good / n_part_new
+
+return n_part_new, p_part_new, n_part_ori 吊 p_part_test
+
+def get_product(n_parts, p_parts, p_product_make):
+半输人每种零件的个数 , 得到产品生产数、 次品数、 正品数
+P_good = 1 一 P_product_make
+for enum in p_parts:
+p_good 矿 1 — enum
+n_parts = np.array (n_parts)
+n_product = np.min(n_parts)
+R__product_good = n_product 氙 p_good
+n_product_bad = n_product — n_product_good
+return n_product, n_product_good, n_product_bad
+
+def deal_product_bad2(n_product_bad ,p_parts ) :
+
+江输人次咤数、 常个雪件约次品率 , 得到每种新的雹件个数 , 钗种新的零件的次品家 ( 一个
+或品由两个雾件构成 j
+
+n_part_1 = n_product_bad
+
+n_part_2 = n_product_bad
+
+p_swap = p_parts [0] + p_parts[1] — p_parts[0] * p_parts|1] 4+ (1 — p_parts[0]) = {
+
+1 — p_parts[1]) = p_product_make
+
+P_part_1 = p_parts[0] / p_swap
+
+p_part_2 = p_parts[1] / p_swap
+
+return n_part_1, n_part_2, p_part_1, p_part_2
+
+# 椿环仿瞠直至不胺监利
+
+朱此处使用法一 〔 全程国定 ) 进行榆环处理
+
+非 print [“ 此处使用法一 〔 全程图定 ) 迹行冒环处理 “)
+# todo: 泓筏变量
+
+非总瑜利值、 丢弃成本 , 调换成本
+
+W_3 井 0
+# todo: 欧策方案变量
+志检瀛率、 拆解率
+
+p_partl_test = data_list|0]
+P__part2_test = data_list|1]
+p_product_test = data_list|2]
+P__product_dismantle 二 data_list [3|
+
+P_partl_test0 = data_list[4]
+P__part2_test0 = data_list [5]
+# todo: 环境变量
+
+朱次品率
+
+P__Partl_make 二 0.10592778
+P__Part2_make 二 0.10592778
+P__product_make = 0.1
+
+# 贤买或者制作单价
+
+53
+
+<!-- MM_PAGE: 54 -->
+a mm_partl_buy = 4
+
+E m_part2_buy = 18
+
+™0 m_product_buy = 6 斧制作南价
+1 # 翻试单价
+
+T m_part]l_test = 2
+
+n m_part2_test = 3
+
+74| m_product_test = 3
+
+T # 售价、 拆解优格、 调换价格
+n m_product_sale = 56
+m_product_dismantle = 5
+
+a m_product_exchange = 6
+
+™9 # 零件敷 ( 总是希望利用率最大 )
+ao n_partl_ori = 10000
+
+1 n_part2_ori = 10000
+
+= #todo: 仿瞠变换变量
+
+园 n_partl_swap = 0
+
+= p_partl_swap = 0
+
+明 ll_l，-l't霍_"'.'′ =0
+
+a p_part2_swap = 0
+
+a 木 todo ; 仿瞠逆程 ( 每次仿瞠得到的新的决策取量应当在剧一次的基础上改取 )
+
+a count = 0
+
+) while True:
+
+%0 # print("asd”)
+
+" # 纳艺上次描环决策变蛊
+
+o w_1_new, w_2 new, w 3 mew = w_l, w 2, w3
+
+o count 4= 1
+
+团十 print(f“ 当前是第 {count} 次循环 “)
+
+o8 # todo: 零件检测
+
+吊 if count = 1:
+
+or 升首次迹行时 , 霞计算零件成本 , 计算零似检深成本
+
+山 w_1_new - 一 n_partl_ori » m_partl_buy + n_part2_ori « Im_part2_buy
+
+o 秀零件检鸿丽数 , 鳃人雪件数、 次品挂、 检刻率 , 得到新雷件数、 新次品率、 检裴数
+
+100) n_partl_new, p_partl_new, n_part]l_test = get_new_part{n_partl_ori,
+p_partl_make, p_partl_test)
+
+101 R_part2_newg p_part2_new, n_part2_test = get_new_part(n_part2_ori,
+
+p_part2_make, p_part2_test)
+103 w_l_new - 一 n_partl_test = m_partl_test 十 n_part2_test = m_part2_test
+103 w_2_new 4= (n_partl_ori 一 n_partl_new) « m_partl_buy + (n_part2_ori 一
+n_part2_new) 主 m_part2_buy
+
+104 # print("asd")
+
+108 # print(n_part]_new, p_partl_new, n_partl_test)
+
+108 # print(n_part2_new, p_part2_new, n_part2_test)
+
+107, else:
+
+108 节其俱情况 , 产品零件在最后一步进行处理 , 此处进行继承
+
+109 n_partl_new, p_partl_new = n_partl_swap, p_partl_swap
+
+110 n_part2_new p_part2_new = n_part2_swap, p_part2_swap
+
+11 i! todo: 生_产I晨
+
+13 R__product n_product_good, n_product_bad = get_product ([n_partl_new, n_part2_new
+
+| , [p_partl_new, P_Part2_new ] ,
+P_product_make )
+
+114 n_partl_ex = n_partl_new — n_product
+
+54
+
+<!-- MM_PAGE: 55 -->
+118 D__Part2_ex = n_part2_new — n_product
+
+E P_Partl_ex 二 P_partl_new
+t P_part2_ex = p_part2_new
+E # print(n_partl_ex, n_part2_ex)
+
+E # print(p_partl_ex, p_part2_ex)
+130 # print(n_product, n_product_good, n_product_bad)
+w_1_new —= n_product » m_product_buy
+#todo: 计算诀策变量 〔 次品歌认丢弈 ) , 区分产品正品与次品
+W_1_new 4= n_product_good » m_product_sale 一 n_product_good « p_product_test «
+m_product_test
+124 W_1L_new - 一 n_product_bad = p_product_test * m_product_test 十 n_product_bad = (
+128 1 一 p_product_test) * m_product_exchange
+# print[n_product_bad « p_product_test j
+# print(n_product_bad « [
+
+128 # 1 — p_product_test))
+
+129 w_2 new 4= n_product_bad « (m_partl buy + m_part2_buy 十 m_product_buy)
+10 w_3_new 4= n_product_bad = m_product_exchange
+
+133 # w_3_mew += n_product_bad s (1 — p_product_test) « m_product_exchange
+
+3 木 print(f* 当前得到的浑利渊 : tw_1_mew} , 环境成本 : {w 2 new}, WHRE: {w 3 new)")
+13 ans_list .append {[w_1_new, w_2_new, w_3_new])
+
+14 水 print(f“ 上一转得到的净利诗 : (w1}, FRRE: (w2}, WHARE: fw_3}9
+
+18 # todo: 刻断循环是否结束
+
+13¢] if w_ 1 new 一 w 1 <=w_1+ 0.001 or p_product_dismantle = 0:
+
+187 break
+
+138 # todo: 处理产品次品
+
+10 n_partl_newl, n_part2_newl, p_partl_newl, p_part2 newl 二 deal_product_bad2(
+
+n_product_bad * p_product_dismantle,
+w|
+
+P_Parti_new, p_part2_new|)
+Wi # print(n_partl_newl, n_part2_newl, p_partl_newl, p_part2_newl)
+
+E # print(n_partl_newl + n_partl_ex)
+14 # print(n_part2_newl 十 n_part2_ex)
+14 p_partl_newl = (n_partl_newl + p_partl_newl + n_partl_ex * p_partl_ex) / (
+
+n_partl_newl + n_partl_ex)
+140 n_partl_newl = n_partl_newl 十 D_partl_ex
+
+e P_part2_new1 = (n_part2_newl 一 p_part2_new1 + n_part2_ex = p_part2_ex) / (
+n_part2_newl 十 n_part2_ex)
+
+147 n_part2_newl = n_part2_newl 十 n_part2_ex
+
+18 # print(n_partl_newl, n_part?_newl, p_partl_newl, p_part2_newl)
+
+149) w_l_new —= (n_product_bad * p_product_dismantle) * m_product_dismantle
+
+180 w_2 new — (n_product_bad + p_product_dismantle) « (m_partl_buy 十 m_part2_buy 十
+
+m_product_buy )
+10 #todo: 对于拼解稠到的霉件 , 此处讨论是否进行检骏
+
+13 朱零件检副丽数 , 输人雳件数、 次品率、 检测率 , 得到新零件数 . 新次品率、 检测数
+
+164 n_part]l_new, p_partl_new, n_partl_test = get_new_part(n_part]_newl, p_partl_newl,
+p_partl_test0)
+
+184) n_part2_new, p_part2_new, n_part2_test = get_new_part(n_part2_newl, p_part2_newl,
+p_part2_testd)
+
+1 # print(n_partl_new, p_partl_new, n_partl_test)
+
+184 # print(n_part2_new, p_part2_new, n_part2_test)
+
+E
+
+55
+
+<!-- MM_PAGE: 56 -->
+E w_l_new - 一 n_part]l_test + m_partl_test 十 n_part2_test s m_part2_test
+
+E w_2_new 升一 【n_partl_new1 一 n_part]_new】 = m_partl_buy + (n_part2_newl 一
+
+160 # todo: 保留迫代值
+
+161 w_l, w2, w8 =w_l_new, w_2 new, w_3_new
+
+143 n_partl_swap, p_partl_swap, n_part2_swap, p_part2_swap = n_partl_new, p_partl_new
+
+1 D_part2_new, p_part2_new
+
+163
+
+194 心 print(f“ 最怪得到的浑利浪 : fw_1_new} , 环境成本 : {w_2_new} , 信周朗本 : {w 3 _new}")
+108 if len(ans_list) = 1:
+
+E return ans_list [0]
+
+E if ans_list[ 一 3][0] > ans_list|—1][0]:
+109 return ans_list[-2]
+
+E return ans_list[-1]
+
+i def get_p(delta, t):
+113 return math.exp(delta/t)
+
+in| def get_new_ans_list{ans_list, t):
+
+E swap_list = ||
+
+178 for i in range(len(ans_list)):
+
+E # print(+ 2 * random ,random(】 * math.exp(t 一 1000) 一 math.exp(t — 1000))
+
+E swap_list .append[ans_list | 认 + 2 # random.random() * math.exp(t 一 1000) 一 math.
+exp(t — 1000))
+
+119 # print (swap_list)
+
+E # swap_list 二 |enum + 2 气 random .famdom () « math .exp(t 一 1000) 一 math exp(t 一 1000)
+
+for enum in ans_list |
+H return swap_list
+
+u
+
+1| def is_ans_list[ans_list_new ) :
+
+184 for enum in ans_list_new:
+
+188 if enum < 0 or enum > 1:
+18 return False
+
+E return True
+
+el # todo: 设定命始值
+
+源 | = 1000 木初始化温度值
+
+wolt_min 二 100 “ 朱设置温亮下根
+
+wil# alpha = 0.99 # 设置泊廖下陆率
+102k = 10000 # 设置送代次数
+
+wal# todo: 给定一个韩始解 ,
+
+wi|ans_list = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+or|ans_w = 0
+
+90| ans_all = []
+
+1wi|# todo: 开始退火进程
+
+i 荣 while (t > t_min):
+
+wil for i in range(50):
+
+20 for i in range(k):
+
+1 ans_w = get_w(ans_list)
+
+203 ans_list_new = get_new_ans_list(ans_list, t)
+203 if is_ans_list(ans_list_new):
+
+204 # print("ok")
+
+<!-- MM_PAGE: 57 -->
+08 ans_w_new = get_w(ans_list_new)
+
+200 delta = ans_w_new[0] — ans_w|[0]
+
+E if delta > 0:
+
+E ans_list = ans_list_new
+
+g else ;
+
+10| p = get_p(delta, t)
+
+E 木 print [p)
+
+E if (p < random.random()):
+
+3| ans_list = ans_list_new
+
+E t - 一 0.2
+
+E Print(f9 排到的净利罡 : [ans_w|0]} , 环境成本 : [ans_w|1]} , 信用战本 ; tuns_w|2]] 7)
+
+214 print (F' M IEM %: {ans_list[0]), ans_list[1]},{ ans_list [2]] { ans_list|3]} ,{ ans_list
+[4)} ams_ltst [5]}")
+
+a # print(f“ 最俨解为 ; {ans_lst[0]}, {ans_list[1]),{ans_list[2]} ,{ans_list[3]}")
+
+E ans_all -append (ans_w|[0])
+a| print(f“ 最姝探到的净利倩 : funs_[0]} , 环塔成来 : fans_mw|1|} , 畜用砺本 ; fnns_w|2]} “)
+230
+
+o
+
+223|# iteration = list(range(l, len(ans_all) 十 1))
+
+| # plt. figure()
+
+24f# plt.plot(iteration, ans_all, marker="', color="b", linestyle='~")
+
+2ae|# plt.xlabel 「 选代次数 )
+
+| 木 plt .ylabsl (" ")
+
+s:| 水 plt , title (“ 模报退火优化可视图 “)
+
+aaf# pHt .grid ( 工 rue )
+
+20# plt . show()
+
+2a0
+
+| 华我们抽样得到的次品辜 10.0 古
+
+wol# 可能的瞠实次酮率圳值 : 0.09998004390341249
+
+sai| 子可能的真实次品率置信区间 : |0.09418352 0.10592773|
+
+el 我们拗样得到的次品辜 5.0%5
+
+el 可能的瞠实次品率址值 : 0.05008980243464378
+
+| 华可能的瞠实次品率置信区间 : |0.04590519 0.05444447|
+
+si|# 我们拉样得到的次品率 20.0 义
+
+a 山可能的瞿实次品玄均值 : 0.19976052684094991
+
+ol 可能的瞠实次品率置俏区间 : |0.19199026 0.20764429|
+
+E
+
+i 木情记一 :
+
+wil# 鹰小拼动 ; [1,0,0,1,0, 1)
+
+ol 鹄大拥动 : [L,0,0,1,0, 1]
+
+4
+
+i| import matplotlib .pyplot as plt
+
+| import numpy as np
+
+i| from itertools import product
+
+E
+
+20| plt .zcParama | font sans—serif | = | 'KaiTi'| 阡
+20| plt .rcParams | “axas unicode _minus'| = False o
+路 ! ™
+283 % 5
+河 | def get_ans(X_list ) ; 李义二′`′′"`
+04 # todo: 过程函数 ] 4
+
+57
+
+<!-- MM_PAGE: 58 -->
+def get_new_part(n_part_ori ,p_part_make , p_part_test):
+十雷件检洁函数 , 输人雷件数、 次品穴、 检测家 , 得到新零件数 , 新次品家、 检洁数
+n_part_good = n_part_ori 交 (1 — p_part_make)
+R_part_bad = n_part_ori 一 p_part_make
+n_part_bad_test = n_part_bad « p_part_test
+n_part_new = n_part_ori — n_part_bad_test
+p_part_new = 1 — n_part_good / n_part_new
+return n_part_new, p_part_new, n_part_ori 吊 p_part_test
+
+def get_product(n_parts, p_parts, p_product_make) ;
+朱输入每种零件的个数 , 得到产品生产数、 次品数、 正品数
+p_good = 1 一 P_product_make
+for enum in p_parts:
+p_good 如 1 — enum
+n_parts = np.array(n_parts)
+n_product = np.min(n_parts)
+n_product_good = n_product * p_good
+R_product_bad = n_product — n_product_good
+return n_product, n_product_good, n_product_bad
+
+def deal_product_bad2(n_product_bad p_parts, p_product_make):
+
+汀输人次咤数、 每个零件的次品事 , 制作工艺 , 得到每种新的零件个数 , 每种新的雹件红次
+咬率 【一个成品由两个雪件构成 }
+
+n_part_1 = p_product_bad
+
+n_part_2 = n_product_bad
+
+p_swap = p_parts[0] 十 p_parts|1| — p_parts[0] * p_parts|1] + (1 — p_parts[0]) = (
+
+1 一 P_parts |1|) * p_product_make
+
+p_part_1 = p_parts[0] / p_swap
+
+p_part_2 = p_parts[1] / p_swap
+
+return n_part_1, n_part_2, p_part_1, p_part_2
+
+def deal_product_bad3 (n_product_bad p_parts, p_product_make):
+
+朱辖人次咤数、 每个零件红次品率 , 得到每种新的零件个数 , 每种新皇雳件的次品率 ( 一个
+览商由三个零件构成】
+
+n_part_1 = n_product_bad
+
+n_part_2 = n_product_bad
+
+n_part_3 = n_product_bad
+
+P_good = 1 一 p_product_make
+for enum in _p_parts:
+p_good * 1 — enum
+p_swap = 1 — p_good
+P_part_1 = p_parts[0] / p_swap
+P_part_2 = p_parts|1] / p_swap
+p_part_3 = p_parts[2] / p_swap
+return n_part_1, n_part_2, n_part_3, p_part_1, p_part_2, p_part_3
+
+# todo: 决策变量
+# 总薯利俺
+
+W_1 五 0
+
+# todo: 汪策方案变量
+
+<!-- MM_PAGE: 59 -->
+木检源率、 拆解争
+p_partl_test = x_list |0]
+p_part2_test = x_list[1]
+
+p_part3_test = x_list[2]
+p_partd_test = x_list[3]
+P__part5_test = x_list[4]
+
+p_parté_test = x_list[5]
+
+P__part7_test = x_list 6]
+
+P__partS__test = x_list[7]
+
+p_half_product]_test 二 x_list ]
+
+P__halt_product2_test = X_list |9|
+
+P_half_product3__test = x_list[10]
+
+p_product_test = x_list[11]
+
+# p_half_product]_dismantle = 0
+
+# p_half_product2_dismantle = 0
+
+# p_half_productd_dismantle = 0
+
+# p_product_dismantle = 0
+
+p_half_productl_dismantle = x_list [12]
+
+p_half_product?_dismantle = x_list [13]
+
+P_half_product&_dismantle = x_list [14]
+
+p_product_dismantle = x_list[15]
+
+朱 todo: 新的参数 , 用于第二次及以后的选代
+
+p_partl_testd = 1 if x_list|0] 一 0 alse
+
+P_part2_test0 = 1 if x_list[1] == 0 0 else
+
+P__part3_test0 = 1 if x_list[2] == 0 else
+
+P__partd_test0 = 1 if x_list|3| 二 else
+
+p_parts_testd = 1 if x_list[d] = 0 else
+1
+1
+1
+
+P_Part6_test0 = else
+P_pPart7_test0 = 1 if x_list[6] 一 0 alse
+P_partS_test0 二 1 if x_list17] 一 0 slse
+棣 p_half_productl_test0 二 x_list [16|
+
+# p_half_product2_test0 = x_list [17|
+
+# p_half_product3_test0 = x_list [18]
+P_half_productl_test0 = 1 if x_list[8] = 0 else 0
+P_half_product2_test0 = 1 if x_list |9] 一 else 0
+P_half_productS_test0 = 1 if x_list[10] == 0 else 0
+# p_partl_test0 = x_list[16]
+
+# p_part2_test0 = x_list[17]
+
+# p_part3_testd = x_list[18]
+
+# p_partd_testd = x_list[19]
+
+木 p_part5__test0 = x_ list |20|
+
+# p_parté_test0 = x_list|21]
+
+# p_part?_test0 = x_list[22]
+
+# p_part8_test0 = x_list[23]
+
+# p_balf_productl_test0 = x_list [24]
+
+# p_half_product?_test0d = x_list [25]
+
+# p_half_productd_test0 = x_list |26]
+
+# todo: 环境变量
+
+木次品率
+
+p_partl_make 二 0.10592778
+
+P__part2_make 二 0.10592778
+
+口 . 口口
+
+<!-- MM_PAGE: 60 -->
+p_part3_make 二 0.10592778
+p_partd_make 二 0.10592778
+p_pant5_make 二 0.10592778
+P__Part6_make 一 0.10592778
+P__part7_make 二 0.10592778
+P_Part8_make = 0.10592778
+p_half_productl_make = 0.1
+p_half_product2_make = 0.1
+p_half_product3_make = 0.1
+P_product_make = 0.1
+朱货买或者制作单价
+m_partl_buy = 2
+m_part2_buy = §
+m_part3_buy = 12
+w_partd_buy = 2
+m_parts_buy = 8
+m_part6_buy = 12
+m_part7_buy = §
+m_partS_buy = 12
+m_balf_productl_buy
+m_half_product2_buy = 8
+m_half_product3_buy = §
+m_product_buy = §
+
+# 剧试单价
+m_part]l_test =
+m_part2_test =
+m_part3_test =
+m_partd_test
+m_parts_test =
+m_part6_test =
+m_part7_test =
+m_part8_test =
+m_half_product]l _test = 4
+m_half_product2_test
+m_half_product3_test =
+m_product_test = 6
+
+# 售价、 拆解优格、 调换价格
+lll_l，'【，(I'lct_'l.丨。 = 200
+m_prndncl_sxchlnga = 40
+m_half_productl_dismantle = &
+m_half_product2_dismantle = 6
+m_half_product3_dismantle = &
+m_product_dismantle = 10
+
+# todo: 扑妹需体数
+n_partl_ori = 10000
+n_part2_ori = 10000
+R__partS_ori = 10000
+n_partd_ori = 10000
+n_parth_ori = 10000
+n_parté_ori = 10000
+n_part7_ori = 10000
+
+D D e e 1D e
+
+]
+血血
+
+<!-- MM_PAGE: 61 -->
+n_part8_ori = 10000
+
+# todo: 猬环过程受量 〔 用于纳护选代 )
+w0l n_partl_swap = 0
+
+409 n_part2_swap = 0
+410 n_part3_swap = 0
+41 n_partd_swap = 0
+l n_part5_swap = 0
+4 n_parté_swap = 0
+14 n_partT_swap = 0
+e n_part8_swap = 0
+ae R_half_productl_swap = 0
+
+A n_half_product2_swap = 0
+a1 n_half_product3_swap = 0
+419 p_partl_swap = 0
+
+420 p_part2_swap = 0
+4 p_partd_swap = 0
+455 p_partd_swap = 0
+
+p_part5_swap = 0
+424 p_parté_swap = 0
+4 p_part?_swap = 0
+4 p_part8_swap = 0
+
+4 P_half_productl_swap = 0
+E P_half_product2_swap = 0
+E p_half_product3_swap = 0
+aa0 # todo; 开始循环
+
+421 ans_list = ||
+
+ll count = 0
+
+t 'l.i】” True:
+
+o # todo: 纳芬循环
+
+a w_1_pew 二 w_1
+
+E count += 1
+
+E 水 print(f“ 当前慧箩 {count} 次循环 7)
+
+d 朱 todo: 零件检测
+
+429 if count = 1:
+
+w0 # todo: 计算雹件成本
+
+A w_1_new - 一 n_partl_ori * m_partl_buy + n_part2_ori = m_part2_buy
+
+t w_1_new —= n_part3_ori * m_part3_buy + n_partd_ori 生 m_partd_buy
+
+4 w_1_new —= n_part5_ori 口 m_part5_buy + n_part6_ori + Im_part6_buy
+
+a w_1_new —= n_part7_ori 口 m_part7_buy + n_partS_ori « m_partS_buy
+
+o # print(w_1_new)
+
+b #todo: 零件选行检鸽 , 更新数据
+
+E n_part]l_new, p_partl _make_new, n_partl_test = get_neW_part( n_partl_oxi ,
+p_partl_make, p_partl_test)
+
+48 n_part2_new, p_part2_make_new, n_part2_test = get_new_part(n_part2_ori,
+p_part2_make, p_part2_test)
+
+4 n_part3_new ,p_part3_Imake_new , n_partd_test = get_new_part(n_part3_ori,
+p_partd_make, p_part3_test)
+
+480 n_partd_new, p_partd_make_new, n_partd_test = get_new_part{n_partd_ori,
+p_partd_make, p_partd_test)
+
+4 n_part5_new, p_part5_make_new, n__partS_test = get_new_part(n_part5_ori,
+
+p_part5_make, p_part5_test)
+
+61
+
+<!-- MM_PAGE: 62 -->
+E
+
+E
+
+2
+
+u
+
+t
+
+t
+
+a1
+
+n_parté_new, ,p_part6_make_new , n_part6_test = get_new_part(n_parté_ori,
+P_part6_make,p_part6_testj
+
+n_part7_new, p_part7_make_new, n_part7_test = get_new_part{n_part7_ori,
+p_part7_make, p_part7_test)
+
+n_partS_new, p_partS_make_new, n_partS_test = get_new_part(n_partS_ori,
+p_partS_make, p_partS_test)
+
+n_half_productl_new ,p_half_productl_new
+
+n_half_product2_new ,p_half_product2_new
+
+n_half_product3_new p_half_productd_new
+
+# todo: 计算检傅赏
+
+W_1L_hew — n_partl_test = m_part]l_test + n_part2_test 个 m_part2_test
+
+1
+
+1
+口口口
+口口口
+
+w_1_new - 一 n_part3_test » m_part3_test 十 n_partd_test
+w_1_new - 一 n_part5_test = m_part5_test 十 n_part6_test
+w_1_new —= n_part7_test « m_part7_test 十 n_partS_test
+# print(w_1_new)
+else:
+n_partl_new, p_partl_new = n_partl_swap, p_partl_swap
+n_part2_new, p_part2_new = n_part2_swap, p_part2_swap
+n_pArt&_new, p_pnd_naw = n_pnﬂ_-wnp, p_pm&_lw-p
+Il_pll’“_ﬂw, p_pnu_ncw = n_puu__nvhp. p__per_mp
+n_part5_new, p_part5_new = n_part_swap, p_part3_swap
+n_part6_new, p_part6_new = n_partG_swap, p_part6_swap
+n_part?_new, p_part?T_new = n_part7_swap, p_part7_swap
+n_part8_new, p_partS_new = n_part8_swap, p_part8_swap
+a_half_product]_new , p_half_productl_new = n_half_productl_swap,
+P__half_productl_swap
+n_half_product2_new p_half_product2_new 二 n_half_product2_swaip ,
+P__half_product2_swap
+n_half_product3_new p_half_product3_new = n_half_product3_Swagp ,
+p_half_product3_swap
+# todo: 生产升妮葛
+沥输人每种霁件的个数 , 每种零件的次品挂 , 工艺皇次咤率 , 返团得到的产品总数、 次品
+数、 正酮数
+# print (("FH R {n_partl_new}")
+n_half_productl, n_half_productl_good, n_half_productl _bad =\
+&et_product ([n_partl_new, n_part2_new, n_part3_new], [p_partl_make new,
+ppart2_make_new, p_part3_make new|,
+p_lnlf_product】_‖lll】【Q)
+m__half_product2 ,n_half_product2_good ,n_half_product2_bad =\
+get_product ([n_partd_new, n_part5_new, _part6_new ] , |p_partd_make_new ,
+P_Part5_make_new,P_part6_make_ney| ,
+l，_llll'_l，r!)(|'ll:l2_llll|【e)
+n_half_productd, n_half_product3_good, n_half_product3_bad 三飞
+get_product (|n_part7_new , n_part8_new|, , |p_part7_make_new ,P_partS_Imake_hew]。
+P_half_product3_make }
+根 print(n_haif_productl ,n_half_product2 ,n_half_pzoduct3 )
+# todo: 计算制作费用
+w_1_pew - 一 n_half_productl 5 m_half_productl_buy
+W_1_new - 一 _half_product2 x m_half_product2_buy
+W_1L_new - 一 n_half_product3 « m_half_productd_buy
+# print (w_1_new)
+
+m__partd_test
+m__part6_test
+m_partS_test
+
+.
+
+62
+
+<!-- MM_PAGE: 63 -->
+@ #todo: 得到剩余雪件数 , 得到刻余雪件数次品率
+d n_partl_ex1 = n_partl_new 一 n_balf_productd
+n_part2_ex] 二 _part2_new — n_half_productl
+n_part3_ex] = n_part3_new — n_half_productl
+
+t R__partd_ex1 = n_partd_new — n_half_product2
+E R__Part5_ex1 = n_part5_new — n_half_product2
+469 R_PartG_ex1 = n_part6_new — n_half product2
+
+soo n_part7_exl
+w0} n_part8_exl
+p_partl_ex = p_part]_make_new
+p_part2_ex = p_part2_make_new
+ol p_partd_ex 二 P_part3_make_new
+we p_partd_ex 二 P_partd_Imake_newy
+P_Part5_ex = p_part5_make_new
+P_P"ls_ﬁ! = p_pnrls_mtke_m
+P__PartT_ex 二 P_PartT_make_new
+09 p_part8_ex = p_part8_make_new
+810 # todo: 得到当获半成哌数 , 得到当萧华成品次咤率
+51 P_half_productl_make_new 二 (n_half_productl_bad 十 n_half_productl_now。
+p_half_productl_new) / (
+s m__half_productl 4 n_half_product]l_new)
+R__half_productl_new = n_half_product]l + n_half_product]l _new
+P_half_product2_make_new 二 〔n_half_pzoduct2_bad 十 n_half_product2_new =
+p_half_product2_new) / (
+n_half_product2 + n_half_product2_new)
+R__half_product2_new = n_half_product2 卜 n_half_product2_new
+P_half_product3_make_new 二 〔n_half_product3_bad 十 n_half_productS_new »
+p_half_productd_new) / (
+619 n_half_product3 十 n_half_product3_new)
+519 R__half_product3_new = n_half_productd + n_half_product3d_new
+530 # print(f"{n_half_productl_new}, {n_half product?_new}, {n_half_products_new}")
+a1 if count == 1:
+# todo: 保留半成咤次品
+n__half_pyoductl_ex2 二 p_halt_productl_make_pew + n_half_productl_new »
+P__half_productl_test
+s n_half_product2_ex2 = p_half_product2_make_pew = n_half_product2_new =
+P__haif_product2_test
+e n__half_product3_ex2 二 p_half_product3_make_new « n_half_product3_new 中
+p_half_product3_test
+# todo: 检测半成酮
+n_half_productl_new , p_half_productl_make_new, n_halt_productl_test =
+get_new_part{n_half_product]_new,
+
+n_part7_new — n_half_product3
+n_partS_new — n_half_product3
+
+]
+
+p_lull_producll_m-ke_ne' N
+p_half_product]_test)
+5 a_half_product2_new p_half_product?_make_new, n_half_product2_test =
+
+get_new_part(n_half_product2_new,
+
+P_half_product2_make_new ,
+
+63
+
+<!-- MM_PAGE: 64 -->
+ea4
+
+E
+
+a
+
+49|
+
+551
+
+553
+
+e
+
+P__half_product2_test ]
+n_half_product3_new ,p_half_product3_make_new , n_half_product3_test =
+get_new_part(n_half_product3_new,
+
+p_half_product3_make_new,
+
+p_half_product3_test)
+else:
+
+# todo: 保留半成品次品
+
+n_half_productl_ex2 = p_half_product]_make_new * n_half_productl_new 一
+p_half_productl_test0
+
+n__half_product2_ex2 二 p_half_product2_make_pew » n_half_product2_new »
+p__haif_product2_test0
+
+n_half_product3_ex2 = p_half_product3_make_new » n_half_product3_new «
+P_half_product3_test0
+
+# todo: 检测升成品
+
+n_half_product]_new , p_half_product1_make_new , n_half_productl_test
+get_new_part(n_half_productl_new,
+
+p_half_productl _make_new,
+
+p_half_productl_test0)
+n_half_product?_new, p_half product? make new, n_half product2 test =
+get_new_part(n_half_product2_new ,
+
+P_half_product2_make_new,
+
+P__half_product2_test0】
+n_half_product3_new ,p_halt_product3_make_new , B_half_product3_test =
+get_new_part(n_half_productd_new,
+
+p_half_product3_make_new,
+
+p_half_product3_test0)
+# todo: 计算检测赏
+w_l_new —= n_half_productl_test = m_half_productl_test 十 h_half_produck2_teat =
+m_half_product2_test + n_half_product3_test = m_half_product3_test
+# print(w_1_new)
+
+# todo: 生产产咤
+
+考输人每种零件的个数 , 每种零件的次品率 , 工艺的次品率 , 返团得到的产品总数、 次品
+数、 正品数
+
+n_product, n_product_good, ,n_product_bad = \
+
+get_product ([n_half_product]l_new, n_half_product2_new, n_half_product3_new|,
+[p_haif_productl_make_new p_half_product2_make_new,
+
+P_half_product3_make_new | p_product_make)
+
+#todo: 得制剥余半成品数 , 得到剽余半成品次品率
+
+R_halt_productl_ex 二 n_half_productl_new 一 n_product
+
+9_half_product2_ex 二 n_half_product2_new — n_product
+
+n_half_product3_ex 二 n_half_product3_new 一 n_product
+
+p_half_productl_ex = p_half_product1_make_new
+
+64
+
+<!-- MM_PAGE: 65 -->
+s p_half_product?_ex = p_half_product?_make_new
+
+zed p_half_product3_ex 二 p_half_product3_make_new
+v # todo: 计算制作焰用
+
+ey W_1L_new — n_product » m_product_buy
+
+o9 # todo: 计算决策变垄
+
+wro W_1L_new 4= n_product_good * m_product_sale 一 n_product_good » p_product_test «
+m__product_test
+
+o1 w_1_new - 一 H_product_bad « p_product_test « m_product_test + n_product_bad s (
+n 1 一 P_product_test】 » m_product_exchange
+
+enl ans_list .append (w_1_new)
+
+e 朱 ptint[“ 当前第 {count} 轮得到的浑利该 : tw_L_newj} “)
+
+# todo: 判断循环是否结束
+
+# 认 W_1_new 一 w_t <= w_1» 0.001 or p_product_dismantle == 0:
+如 # if p_product_dismantle == 0:
+
+s # if count > 1 and W_1_new < w_1 « 1.001:
+
+r # # print “ 缘环线束 “)
+
+sao # break
+
+i if count > 20:
+
+£82] b'蟹_量
+
+e # todo: 妙恩次荣拆成十成品
+
+84 n_half_productl_newl, n_half_product2_newl, n_half product3_newl,
+p_half_productl_newl, p_half_product2_newl, p_half_productd _newl =\
+
+E deal_product_bad3[n_product_bad # p_product_dismantle ,
+
+580 | p_half_product]_make_new, ,p_half_product2_make_new ,
+p_half_product3_make_new]|,
+
+ssr p_product_make)
+
+553 # todo: 计算拴解赏
+
+w_1_new - 一 n_half_productl_new1 * m_product_dismantle
+
+n ## todo: 处理半戢品次荫 ( 前方遂酥半或品有检测不合格和多余 , 此处检谭不合格应当不迹
+行检崴 , 敏目多余与拥烛之后皇迹行检播进行检劾 )
+
+1 #todo: 得到当获未检验学或酝数目 , ( 多余与掀除之后 }
+
+tn if n_half_productl_new1 十 n_half_productl_ex == 0:
+
+c p_half_productl_new1 = 0
+
+504 o_half_productl_newl = 0
+
+p else:
+
+e p_halt_productl_new1 井 〔n_half_productl_new1 = p_half_productl_new1 十
+
+R__half_productl_ex = p_half_productl_ex) / {(n_half_productl _newl 十 n_half_productl_ex
+)
+
+e n_half_productl_new1 二 n_half_productl_new1 十 n_balf_productl_ex
+
+n if n_half_product2_new1 十 n_half_product2_ex == 0:
+
+%09 p_half_product2_newl = 0
+
+e n_halt_product2_new1 = 0
+
+ool else:
+
+ol p_half_product2_newl = (n_half_product2_newl = p_half_product2_newl 十
+
+o_half_product2_ex = p_half_product2_ex) / (n_half_product2_newl + n_half_product2_ex
+)
+
+P n_half_product2_newl = n_half_product?_newl + n_half_product2_ex
+
+的 4 if n_half_product3_new1 十 n_half_product3_ex = 0:
+e p_half_product3_newl = 0
+
+d n_half_product3_newl = 0
+
+1。l_黔 H
+
+65
+
+<!-- MM_PAGE: 66 -->
+“o
+
+1
+
+4
+
+a
+
+p_hnll_producla_newl 心 (n_h.l'_producls_newl . p_ln.ll_prodnct(!_nnl +
+n_half_product3_ex = p_half_productd_ex) / (n_half_product3_newl + n_half_product3_ex
+)
+
+n_half_product3_newl = n_half_product3_newl 十 n_half_product3_ex
+
+#todo: 半战品拆成需件 ( 仅拆前方留下半缉口次品 )
+n_partl_newl, n_part2_newl, n_part3_newl, p_partl_newl, p_part2_newl,
+p_partd_newl =\
+
+deal_product_bad3(n_half_productl_ex2 * p_half_productl_dismantle ,
+
+|p_partl_make, p_partl_make, p_partl_make|,
+P_halt_productl_make )
+n_partd_newl, 5L_Part5_new] n_part6_newl, p_partd_newl, p_part5_newl,
+p_parté_newl = \
+deal_product_bad3{n_half_product2_ex2 * p_half_product2_dismantle,
+|p_partd_make, p_part5_make, p_part6_make],
+P_half_product2_make )
+n_part7_newl, n_part8_newl, p_part7_newl, p_part8 newl =\
+deal_product_bad2(n_half_product3_ex2 » p_half_product3_dismantle, |
+p_part7_make, p_partS_make|,
+p_half_product3_make)
+# todo: 订算义妮荫拆解费
+w_1_new —= n_partl_newl * m_half_productl_dismantle 十 n_partd_new1 «
+m_half_product2_dismantle + n_part7_newl » m_half_product3_dismantle
+#todo: 得到当前雹件数 , 得到当前雹件次品率
+if n_partl_newl + n_partl_ex] == 0:
+P_partl_new1 = 0
+n_partl_new1 = 0
+else:
+
+p_partl_new1 = (n_partl_newl » p_partl_newl + n_partl_exl a p_partl_ex) / (
+n_partl_newl + n_partl_exl)
+
+n_partl_newl = n_part]l_newl + n_partl_exl
+
+if n_part2_newl 十 n_part2_exl == 0:
+
+p_part2_newl = 0
+
+n_part2_newl = 0
+
+else:
+
+p_part2_newl 二 (n_part2_new1 * p_part2 _newl 4+ n_part2 exl
+n_part2_newl + n_part2_exl)
+
+n_part2_newl = n_part2_newl + n_part2_ex]
+
+if n_partd_newl 十 n_part3_exl = 0:
+
+p_partd_newl = 0
+
+n_part3_new1 = 0
+
+else:
+
+p_part3_new1 = (n_part3_newl » p_part3_new1 + n_partd_exl = p_partd_ex) / [
+n_part3_newl + n_part3_ex1)
+
+n_part3_newl = n_part3_newl + n_part3_ex1
+
+if n_partd_newl + n_partd_exl = 0:
+
+p_partd_newl = 0
+
+p_part2_ex) / (
+
+n_partd_newl = 0
+else:
+p_partd_newl = (n_partd_newl = p_partd_newl + n_partd_exl = p_partd_ex) / (
+n_partd_newl + n_partd_exl)
+n_partd_newl = n_partd_newl + n_partd_ex]
+
+66
+
+<!-- MM_PAGE: 67 -->
+E
+
+E
+
+E
+
+a
+
+E
+
+61
+
+if n_part5_newl 十 n_part5_ex1 = 0:
+p_part5_new1 = 0
+n_pert5_new1 = 0
+else:
+p_part_newl = (n_part5_newl « p_part5_new1 + n_part5_exl
+n_part5_newl + n_part5_exl)
+n_parts_newl = n_part5_newl + n_part5_exl
+if n_part6_newl + n_part6_exl — 0:
+p_partt_new1 = 0
+n_phrt6_new1 = 0
+else:
+
+p_partd_ex) / (
+
+p_part6_new1 = (n_part6_newl * p_part6_new1 十 n_partG_ex1
+n_parté_newl + n_part6_exl)
+n_part6_newl = _part6_new1 十 n_Part6_eX1
+if n_part7_newl 十 n_part7_exl — 0:
+p_part7_new1 = 0
+n_part7_newl = 0
+else:
+
+p_parté_ex) / (
+
+p_part?_newl = (n_part7_newl » p_part7_newl + n_part7_exl
+
+P_part7_ex) / (
+n_part7_newl 十 n_part7_exl)
+n_part7_newl = n_part7_newl 十 n_part7_ex1
+if n_partS_newl 十 n_partS_ex1 — 0:
+p_part8_newl = 0
+n_part8_newl = 0
+else:
+p_part8_newl = (n_part8_newl 主 p_part8_newl 十 n_part8_exl
+n_partS_newl + n_partS_exl)
+n_part8_newl 二 n_partS_new1 十 n_partS_ex]
+if n_partl_new + n_part2_new + n_part3_new + n_partd_new 十 h_part5_new 十
+n_parté_new + n_part7_new 十 n_partS_new — 0 and n_half_product]_swap 十
+n_half_product2_swap + n_half_product3_swap == 0:
+break
+# print(n_partl_newl)
+# todo: 处理零件
+if n_partl_new > 0:
+n_partl_new, p_partl_make_new, n_partl_test = get_new_part(n_partl_newl,
+p_partl_newl, p_partl_test0)
+else:
+
+P_PartS_ex) /
+
+n_partl_new p_partl_make_new, n_partl_test = 0, 0, 0
+if n_part2_new > 0:n_part2_new , p_part2_make_new, n_part2_test = get_new_part|
+n_part2_newl, p_part2_newl, p_part2_test0)
+GlBQZ
+n_part2_new, p_part2_make_new, n_part2_test = 0, 0, 0
+if n_part3_newl > O:n_part3_new, p_part3_make_new, n_part3_test = get_new_part(
+n_part3_newl, p_Part3S_new1 , p_part3_test0)
+els :
+n_part3S_new ,p_part3_make_new, n_part3_test = 0, 0, 0
+if n_partd_newl > O:n_partd_new, p_partd_make_new, n_partd_test = get_new_part(
+n_partd_newl, p_partd_newl, p_partd_test0)
+else:
+n_partd_new, p_partd_make_new, n_partd_test = 0, 0, 0
+
+67
+
+<!-- MM_PAGE: 68 -->
+ess
+
+if n_part5_newl > 0:n_part5_new ,p_parti_majke_new, n_part5_test 二 get_new_part(
+D_part5_new1 , p_part5_newl , p_part5_test0】
+else:
+n_part5_new, p_parth_make_new, n_partd_test = 0, 0, 0
+if n_part6_newl > 0:n_parté_new, p_part6_make new, n_part6_test = get_new_part(
+n_part6_newl, p_part6_newl, p_part6_test0)
+else:
+n_part6_new, , p_part6_make_new, n__Part6_test = 0, 0, 0
+if n_part?_newl > 0:n_part7_new , p_part7_make_new, n_part7_test = get_new_part(
+n_part7_newl, p_part7_newl, p_part7_test0)
+else:
+n_part7_new, p_part7_make_new, n_part7_test = 0, 0, 0
+if n_partS_newl > O:n_part8_new, p_part8_make _new, n_partS_test = get_new_part(
+n_partS_newl, p_partS8_newl, p_partS_test0)
+else:
+n_partS_new, p_partS make new, n_partS_test = 0, 0, 0
+# todo: 计算检制赏
+# print{n_part]_test = m_part]l_test)
+w_l_new —= n_partl_test 气 m_partl_test + n_part2_test
+
+m_part2_test
+w_l_new - 一 n_part3_test 口 m_part3_test 十 n_partd_test
+
+zn_partd_test
+mm_part6_test
+Im_partS_test
+
+w_1_new —= n_part5_test + m_part5_test 十 _part6_test
+w_l_new - 一 n_part7_test + m_part7_test + n_partS_test
+
+# todo: 处运迭代
+
+# if n_part]_new 十 R_part2_new + n_part3_new 十 n_partd_new + n_parth_new 十
+n_part6_new + n_part7_new 十 n_part8_new — 0:
+
+# break
+
+# if n_half_produot]_swap 十 n_half_product2_swap 十 n_half_product3_swWap = 0:
+
+# break
+
+# print(n_partl_new)
+
+n_part]_swap = n_partl_new
+
+n_part2_swap = n_part2_new
+
+n_partd_swap = n_part3_new
+
+n_partd_swap
+
+n_parts_swap = n_part5_new
+
+n_part6_swap = n_part6_new
+
+0_part?_swap = n_part7_new
+
+n_part8_swap = n_part8_new
+
+D__half_productl_swap = n_half_productl_newl
+
+n_half_product2_swap = n_half_product2_newl
+
+n_half_product3_swap = n_half_product3_newl
+
+p_partl_swap 二 P_partl_make_new
+
+P_Part2_SWap = p_part2_make_new
+
+p_part3_swap = P_Part3_Imake_new
+
+p_partd_swap = p_partd_make_new
+
+p_pnrtS_swnp = p_wts_mlk'_nﬂv
+
+p_putﬁ_nlp = p_m_mlk@_m
+
+P_PartT_Swap = p_part7_make new
+
+p_partS_swap = p_partS_make_new
+
+P__half_productl_swap = p_half_productl_newl
+
+p_half_product2_swap = p_half_product2_newl
+
+n_partd_new
+
+68
+
+<!-- MM_PAGE: 69 -->
+™ P__half_product3_swap = p_half_productd_newl
+38 w_l = w_1_new
+
+d # print(f 最线得到的浑利清 ; fw_1_new} )
+
+2 # print( 口总献环数 ; count} )
+
+s} # print{ans_list)
+
+739) # if len(ans_list) == 1:
+
+:a0 # return ans_list [0]
+
+i 木识 ans_list[~2] > ans_list|~1]:
+
+re3 # return ans_list[-2]
+E # return ans_list|—1]
+
+744 return ans_list
+
+E
+
+d| 非非寻拖筏路
+
+ver|# # print(get_mns([1, 1, 1, 1, 1,1, D U L D T 0,0,0,0,11))
+rsl# # print ({1, 1, 1,1, 1,1, 1,1,1,1,1,0,0,0,0, 1))
+
+## print(get_mns([1, 1, 1, 1,1, 1, 1,1, 0,0, 0, 1, 1, 1, 1, 1]))
+wwo|# sns_maybe_list = list (product ([0, 1], repeat=16))
+
+非 ans_list = []
+
+mi|# count = 0
+
+mwz|# for maybe_list in ans_maybe_list:
+
+el # count 4= 1
+
+el # print{count)
+
+E ans_list.append (| maybe_list, get_ans{maybe list)])
+
+5r| 非 # print (sorted (ans_list, key=lambda x: x[1]))
+
+35 刑探 ans_list = |enum for enum in ans_list if enum[1]| >0]
+
+wol# ans_list = sorted(ans_list, key=lambda x: x[1])
+
+wol# for enum in ans_list:
+
+o # if enum|1] 一 2000000:
+
+振 print {enum)
+
+%
+
+b
+
+™
+
+4| 非展示策骆
+
+res| print (£ b (1, 1, 1, 1
+
+res| primt ("2 MM ([1. 1, 1,1
+I 5L Y L
+
+i), LK L EL YL
+
+e
+
+ri|x = |_+ 1 for _ in range(21)]
+
+iyl = get_ans([1, 1, 1, 1, 1, 1, 1,
+
+mily2 = get_ans([1, 1, 1, 1, 1, 1,
+
+o plt. figure( figsize=(10, 6})
+
+z plt subplot (111)
+
+5| plt-plot(x,y1,“red ,label=「 最途收箱 “,marker=「o 1
+
+el plt .plot(x,y2,color= 「blu “,label=「 全属最促 “ marker='D")
+
+77 plt.legend ()
+
+ol plt: 5itle ("M MM AR 变大扰动利裘上升尚线 )
+
+rra| plt .xlabel( 「 葛环次数 )
+
+sa| plt .ylabel( 「 冼刹谋 )
+
+™ plt.xlleh(x)
+
+| plt .grid (True) %\
+
+| plt .show () i 不标
+
+| print (y1) by .
+
+2 招 7 河 7 7 莲 P 途 1
+沥 B 3,4 1"
+
+1, 1, 1, 1, 1), 448518.046585434]
+1, 1,0, 0,0, 0, 1), 435188.3087616001]
+
+诊
+
+0, 0,0, 0, 1)) # 最速收敛
+1, 1, 1, 1, 九 ) 木全局最伐
+
+<!-- MM_PAGE: 70 -->
+| print (y2)
+
+ol # 正常
+
+7a| 十 [(4, 1, 0,0, 0,1, 1,1,0,0,0, 1,1, 1,1, 1), 448518.046585434|
+
+wal# [(1, 1, 0, 0, 0,1, 1,1, 1,1,1,0, 0,0, 0, 1), 435188.3087616001]
+
+ol # 鹰小
+
+wo# [(0, 1, 0,0, 1,1,1,1,0,0,0,1, 1, 1, 1, 1), 448401.9208575758|
+
+ool [(3, 3, 0,0, 1,1,1,1,1,1,1,0, 0,0, 0, 1), 436619.5888]
+
+el MK
+
+wrl# [(1, 1, 1, 1, 1,1,1,1,0,0,0,1, 1,1, 1, 1), 425153.860945869545]
+# (1, 1, 1,1,1,1,1,1,1,1,1,60,0,0, 0, 1), 421234.6082]
+
+题四代码
+
+565
+4%
+AN v
+E
+J <

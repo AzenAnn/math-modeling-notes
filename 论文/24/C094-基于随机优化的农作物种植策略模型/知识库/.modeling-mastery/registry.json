@@ -1,0 +1,1198 @@
+{
+  "schema_version": "1.0.0",
+  "papers": {
+    "paper-2024-c094": {
+      "ir": {
+        "schema_version": "1.0.0",
+        "paper_id": "paper-2024-c094",
+        "source": {
+          "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\C094.pdf",
+          "sha256": "c4c2268bc4cd6f60c6f0bfcf17e519ea50ab488f4f52fa3c15b145609474f301",
+          "parser": "pymupdf-ocr",
+          "parsed_at": "2026-09-04T17:38:17+00:00",
+          "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C094-基于随机优化的农作物种植策略模型\\workflow\\parsed\\normalized_paper.md",
+          "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C094-基于随机优化的农作物种植策略模型\\workflow\\parsed\\paper_structure.json"
+        },
+        "bibliographic": {
+          "title": "基于随机优化的农作物种植策略模型",
+          "authors": [],
+          "year": 2024,
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "award": "优秀论文",
+          "problem_id": "C",
+          "abstract": "本文研究最大化利用土地资源 , 建立栽种策珠优化模型 , 利用贪心算法、 随机抢动、 蔡 特卡洛、 灵数度检验等方法求解科学土地管理、 超额出售、 多因素时间波动 , 农作物替代 性、 互表性以及相关性等问额 .",
+          "keywords": [
+            "Linear Programming",
+            "Genetic Algorithm"
+          ],
+          "language": "zh-CN"
+        },
+        "problem": {
+          "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=c4c2268bc4cd6f60c6f0bfcf17e519ea50ab488f4f52fa3c15b145609474f301 --> # 基于随机优化的农作物种植策略模型 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 基于随机优化的农作物种植策略椿垣 摘要 本文研究最大化利用土地资源 , 建立栽种策珠优化模型 , 利用贪心算法、 随机抢动、 蔡 特卡洛、 灵数度检验等方法求解科学土地管理、 超额出售、 多因素时间波动 , 农作物替代 性、 互表性以及相关性等问额 . 针对问题一 ; 定义第 1 年的第 ? 季度时 , 在第 〗 块地种植第种作物种植面积为决策 变量 , 构建了以种植经济效益最大化为目标函数 , 可耕种地城面积、 实际可售量、 连作方 式、 地块及作物栽种等限制为约束的种植策略线性规别模型 , 为科学管理土地 , 满足种植 地不宜太分散的目标 , 传人参数 p、09, 分别约束每块土地最多种作物数量 , 每种作物最多 可种地块数量。 综合考虑 pP、q 尽可能小与收益尽可能大。 对骗目给出的数搬进行预处理 , 统一数据格式便于读取 , 并统计数据生成成本与产量的三纳数据表、 最怯 , 使用求解器求 解得 : 超出部分滞销结果为 40244799.20 元 , 超出部分折价结果为 56325297.78 元 ; 使用 贪心策略求解得 ; 超出部分潜销结果为 36848378.08 元 , 超出部分折价绪果为 46724871.84 元。 这两种求解方法各有优缺点 , 求解器求解结果更优 ",
+          "overall_objective": "启发式模式未可靠抽取总体目标。",
+          "subproblems": [
+            {
+              "id": "Q1",
+              "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "task_types": [
+                "allocation",
+                "scheduling",
+                "minimization",
+                "maximization"
+              ],
+              "inputs": [],
+              "outputs": [],
+              "constraints": [],
+              "evidence_ids": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "E-TEXT-P002-36616adc78",
+            "kind": "text",
+            "page": 2,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:2325-2378",
+            "quote": "问题一 : 假设各类农作物后续预期销量、 售价、 种植成本和留产量相较于 2023 年保持稚定 , 且当",
+            "char_start": 2325,
+            "char_end": 2378,
+            "content_hash": "36616adc78c4e216822e52557a05403acab8fe92809e0c5e2453d4038659be66",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-9e5bfbdae1",
+            "kind": "text",
+            "page": 4,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:3715-3739",
+            "quote": "1 假设当季种植的农作物在当季销售 , 无库存。",
+            "char_start": 3715,
+            "char_end": 3739,
+            "content_hash": "9e5bfbdae18aadbdc8fafe33a676dde4ad0e3b3aa33169b536a17c94c309a4d7",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-08437e3d93",
+            "kind": "text",
+            "page": 4,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:3741-3791",
+            "quote": "2, 假设问题一中每种农作物的未来预期销量、 种柳成本、 亩产量和唯价相较于 2023 年保持租定。",
+            "char_start": 3741,
+            "char_end": 3791,
+            "content_hash": "08437e3d9360dab1f3ffa117b8d3567bba62c71ae933db2f6246ef35aeb3b493",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-56fcca25cc",
+            "kind": "text",
+            "page": 4,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:3794-3821",
+            "quote": "假设问题二相羔销量、 售价等变量波动符合正态分布、",
+            "char_start": 3794,
+            "char_end": 3821,
+            "content_hash": "56fcca25cc162ae9573a592ca631ad20b900d38cb38a1439915ccb32f84ac981",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-2775a312d8",
+            "kind": "text",
+            "page": 6,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:5751-5805",
+            "quote": "根搬问题一假设 , 各类农作物后续预期销量、 售价、 种植成本和亩产量相较于 2023 年保持穆定 , 因",
+            "char_start": 5751,
+            "char_end": 5805,
+            "content_hash": "2775a312d82889a17899b04df9c0138186bbab20c658635c9e96c3341cec18c1",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-c8d0c636a7",
+            "kind": "text",
+            "page": 6,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:5858-5911",
+            "quote": "分析附件 2 中 2023 年销量与售价 , 可知不合情形下种裳得作物单价相等 , 即假设不合情形作物生",
+            "char_start": 5858,
+            "char_end": 5911,
+            "content_hash": "c8d0c636a7a5dca5446171f8109d6407cdf1a4f84db0f00942dbb53aae45d6b0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-be127d3b95",
+            "kind": "text",
+            "page": 19,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:16751-16789",
+            "quote": "固面做出假设 , 如果农作物的预期销售量变化幅度与农作物的销售价格真同 -",
+            "char_start": 16751,
+            "char_end": 16789,
+            "content_hash": "be127d3b95b1af309bbd336cb44d2f6a9b5facb17b232c7920623ee1736ba7c2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-9625d1af65",
+            "kind": "text",
+            "page": 19,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:16881-16930",
+            "quote": "销量与种粹成本成负粉关、 从而做出假设 : 农作物的预期销售量变化与农作物种植虎本变化憨度成相反",
+            "char_start": 16881,
+            "char_end": 16930,
+            "content_hash": "9625d1af65f3b74aead1f8c0407e25248b84653303ba4c1e3243e14e833d37e5",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P022-cf821204d2",
+            "kind": "text",
+            "page": 22,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "assumption",
+            "locator": "char:18835-18884",
+            "quote": "本模型基于合理的假设和现实中的约不条件 , 充分考悟了不同地块类型、 作物特性、 种植或本、 市",
+            "char_start": 18835,
+            "char_end": 18884,
+            "content_hash": "cf821204d22e2850d15d1f73296fd787869a15bcd009fdb635e253b893c6374c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-2bbe2d4267",
+            "kind": "text",
+            "page": 1,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "model",
+            "locator": "char:273-318",
+            "quote": "本文研究最大化利用土地资源 , 建立栽种策珠优化模型 , 利用贪心算法、 随机抢动、 蔡",
+            "char_start": 273,
+            "char_end": 318,
+            "content_hash": "2bbe2d4267ba190dee8a480b9806f093688c130c235697570a518005c3738632",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-49607a8f8d",
+            "kind": "text",
+            "page": 1,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "model",
+            "locator": "char:1037-1077",
+            "quote": "对于超过部分滞销情况 , 使用藏特卡洛算法生或 100 组符合正态分布的随机",
+            "char_start": 1037,
+            "char_end": 1077,
+            "content_hash": "49607a8f8d602294bd7c456ce934a7818fb017b10345d36231d069803c454132",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-415d7903f2",
+            "kind": "text",
+            "page": 3,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "model",
+            "locator": "char:3463-3511",
+            "quote": "闭题三中 , 基于问题二构建的增加变量扰动的优化模型 , 进一步考虑农作物之闵的可替代性和互补",
+            "char_start": 3463,
+            "char_end": 3511,
+            "content_hash": "415d7903f2b77c0644f647ba43239572e74b579e324cc9bfe386cf58f40d784b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-db9b39d82e",
+            "kind": "text",
+            "page": 3,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "model",
+            "locator": "char:3511-3562",
+            "quote": "性 , 并线合考虑预期销售量与销售价格、 种植成本之间的相关性 , 从而使构建的种植笺略优化模型更加",
+            "char_start": 3511,
+            "char_end": 3562,
+            "content_hash": "db9b39d82e2f72af3d354249ed43e269c0d0e25aee9a7fa98c90762e61ecfe17",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P022-1fb065b390",
+            "kind": "text",
+            "page": 22,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "model",
+            "locator": "char:18884-18935",
+            "quote": "灾霁求等多种回素 , 构建了线性规划和随机优化模型、 通过求解器和责心算法两种方法 , 能够在有限土",
+            "char_start": 18884,
+            "char_end": 18935,
+            "content_hash": "1fb065b39044031e02ef46552ace37acceeeb299b465e0e4ee87ef1aca803305",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-a3eee51b28",
+            "kind": "text",
+            "page": 1,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "validation",
+            "locator": "char:318-363",
+            "quote": "特卡洛、 灵数度检验等方法求解科学土地管理、 超额出售、 多因素时间波动 , 农作物替代",
+            "char_start": 318,
+            "char_end": 363,
+            "content_hash": "a3eee51b28c158aee2cede94dabcbb321984dc95f79f773e4b0e5e555b710c52",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-f9e938b91e",
+            "kind": "text",
+            "page": 1,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "validation",
+            "locator": "char:1328-1374",
+            "quote": "目标函数对其晴换程序的灵敏度检测其替代性 , 最终选择用小麦替代谷子 , 青椒曾代辣椒 ,",
+            "char_start": 1328,
+            "char_end": 1374,
+            "content_hash": "f9e938b91eacf74671768e91c42be2cf023c44e730bf9c5b255fa40cb0177b9f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-FIGURE-P003-b8d354ec28",
+            "kind": "figure",
+            "page": 3,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "图 2",
+            "locator": "FIGURE-001",
+            "quote": "图 2 名题分析",
+            "char_start": 3679,
+            "char_end": 3682,
+            "content_hash": "b8d354ec287da60f8a842b2028cdabf611d7c1a5100959e3b9f6e054186558b5",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P014-58e23a9f33",
+            "kind": "figure",
+            "page": 14,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "图 5",
+            "locator": "FIGURE-002",
+            "quote": "图 5 贺心策略",
+            "char_start": 12271,
+            "char_end": 12274,
+            "content_hash": "58e23a9f33e57c979575ddd813274ea107c15428ca493780d62483dcbd7e84f1",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P017-215088e4c4",
+            "kind": "figure",
+            "page": 17,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "图 8",
+            "locator": "FIGURE-003",
+            "quote": "图 8 前十个变量序列结果可描化",
+            "char_start": 15040,
+            "char_end": 15043,
+            "content_hash": "215088e4c4bf3d8e3f98b5a2d466ccdf551a28cc095234b01dddd0b600055a2f",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P019-99c13cc4ec",
+            "kind": "figure",
+            "page": 19,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "图 7",
+            "locator": "FIGURE-004",
+            "quote": "图 7 相关性分析",
+            "char_start": 17009,
+            "char_end": 17012,
+            "content_hash": "99c13cc4ec6223887457a710513746072bf7de82d365177caef9cb88057dbc9d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P021-c7243baaae",
+            "kind": "figure",
+            "page": 21,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "图 8",
+            "locator": "FIGURE-005",
+            "quote": "图 8 前十个变量序列结果可视化",
+            "char_start": 18433,
+            "char_end": 18436,
+            "content_hash": "c7243baaae5a078e0a0d9b4ed3e4930e0e364bc68b50e9daccc9b5f6914fe9b6",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P007-526233ed3b",
+            "kind": "table",
+            "page": 7,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 2",
+            "locator": "TABLE-001",
+            "quote": "表 2 作物衫狞与对应缪号",
+            "char_start": 6945,
+            "char_end": 6948,
+            "content_hash": "526233ed3bb93ce964eb550a54b9e530718ec3cd06b7b340a37f673d9e16d0c4",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P013-2dee25368f",
+            "kind": "table",
+            "page": 13,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 3",
+            "locator": "TABLE-002",
+            "quote": "表 3 8、 4 对目标结黑影响 ( 情况一 ) 表 4 P、q 对目标结木影响 [ 情况二 )",
+            "char_start": 11758,
+            "char_end": 11761,
+            "content_hash": "2dee25368f37d15a77353235a00c59490113cca6c781e00663594399df2d163a",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P015-ccf49281dd",
+            "kind": "table",
+            "page": 15,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 5",
+            "locator": "TABLE-004",
+            "quote": "表 5 两种情况下两种求解方招总收入比较",
+            "char_start": 12718,
+            "char_end": 12721,
+            "content_hash": "ccf49281dd6a34a0e2f7082aa82e7c2e701e4212193f89d02fd777d4548ea2ea",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P018-5d083091e5",
+            "kind": "table",
+            "page": 18,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 7",
+            "locator": "TABLE-005",
+            "quote": "表 7 可晟代性分析",
+            "char_start": 15573,
+            "char_end": 15576,
+            "content_hash": "5d083091e5a11cdffe1fa395b83b51766fbb7941105330428b9a955df01b01f2",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P018-0eb89722a5",
+            "kind": "table",
+            "page": 18,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 8",
+            "locator": "TABLE-006",
+            "quote": "表 8 可晃代性分析",
+            "char_start": 15982,
+            "char_end": 15985,
+            "content_hash": "0eb89722a5fb984eeb6bfc36b9bd2f4317ea5e15c1b7b33f01652b2f54bb5bf5",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P021-57979d0b55",
+            "kind": "table",
+            "page": 21,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 9",
+            "locator": "TABLE-007",
+            "quote": "表 9 变量序列及其对应偷",
+            "char_start": 18156,
+            "char_end": 18159,
+            "content_hash": "57979d0b55c9c7236d83f9d5fee4afdaad402d9a4c68e1b66b9855a3f32de02f",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P021-095a9e5c23",
+            "kind": "table",
+            "page": 21,
+            "section": "基于随机优化的农作物种植策略模型",
+            "label": "表 10",
+            "locator": "TABLE-008",
+            "quote": "表 10 闯题二秒问题三的求解结果",
+            "char_start": 18728,
+            "char_end": 18732,
+            "content_hash": "095a9e5c234cb09d5aeb8aff3d563fa0e883ee09738c4cf80490fc70636bf6db",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TEXT-P024-6ca6399c17",
+            "kind": "text",
+            "page": 24,
+            "section": "|aedel = gp.¥edel{*Crop_Planting”)",
+            "label": "algorithm",
+            "locator": "page:24",
+            "quote": "史 gp quicksu=(Price[1] [x] » Z[t, 1, ¥] - gp.quicksu=(Cont[1)[§1[k] » X[t, &, 扎 , 知 for j ln ranga(J))",
+            "char_start": null,
+            "char_end": null,
+            "content_hash": "6ca6399c178a29bac58b30d5e2fbd56f51f036235fa9fed55097e256b4489997",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.82
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "A-001",
+            "statement": "问题一 : 假设各类农作物后续预期销量、 售价、 种植成本和留产量相较于 2023 年保持稚定 , 且当",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P002-36616adc78"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-002",
+            "statement": "1 假设当季种植的农作物在当季销售 , 无库存。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-9e5bfbdae1"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-003",
+            "statement": "2, 假设问题一中每种农作物的未来预期销量、 种柳成本、 亩产量和唯价相较于 2023 年保持租定。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-08437e3d93"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-004",
+            "statement": "假设问题二相羔销量、 售价等变量波动符合正态分布、",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-56fcca25cc"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-005",
+            "statement": "根搬问题一假设 , 各类农作物后续预期销量、 售价、 种植成本和亩产量相较于 2023 年保持穆定 , 因",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-2775a312d8"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-006",
+            "statement": "分析附件 2 中 2023 年销量与售价 , 可知不合情形下种裳得作物单价相等 , 即假设不合情形作物生",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-c8d0c636a7"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-007",
+            "statement": "固面做出假设 , 如果农作物的预期销售量变化幅度与农作物的销售价格真同 -",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P019-be127d3b95"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-008",
+            "statement": "销量与种粹成本成负粉关、 从而做出假设 : 农作物的预期销售量变化与农作物种植虎本变化憨度成相反",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P019-9625d1af65"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-009",
+            "statement": "本模型基于合理的假设和现实中的约不条件 , 充分考悟了不同地块类型、 作物特性、 种植或本、 市",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P022-cf821204d2"
+            ],
+            "provenance": "HEURISTIC"
+          }
+        ],
+        "variables": [],
+        "data": {
+          "sources": [],
+          "fields": [],
+          "data_types": [],
+          "preprocessing": [],
+          "missing_value_strategy": "",
+          "outlier_strategy": "",
+          "evidence_ids": []
+        },
+        "modeling_chain": [
+          {
+            "order": 1,
+            "subproblem_id": "Q1",
+            "model_id": "model-linearprogramming-5c5372fcf9",
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c"
+            ],
+            "input": "论文数据",
+            "output": "模型结果",
+            "rationale": "启发式检测到模型名称，建模链需人工核对。",
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          }
+        ],
+        "models": [
+          {
+            "id": "model-linearprogramming-5c5372fcf9",
+            "canonical_name": "Linear Programming",
+            "display_name": "Linear Programming",
+            "aliases": [
+              "线性规划",
+              "LP"
+            ],
+            "category": "optimization",
+            "task_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "role": "在线性目标和线性约束下求最优决策变量",
+            "description": "由参考目录识别，需结合论文证据复核。",
+            "assumptions": [],
+            "inputs": [
+              {
+                "name": "objective_coefficients",
+                "description": "目标函数系数",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "constraint_matrix",
+                "description": "约束系数矩阵",
+                "shape": "m×n",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "name": "decision_variables",
+                "description": "最优决策变量",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "objective_value",
+                "description": "最优目标值",
+                "shape": "scalar",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "equations": [],
+            "workflow": [
+              {
+                "order": 1,
+                "name": "定义决策变量及单位",
+                "description": "定义决策变量及单位",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-1fb065b390"
+                ]
+              },
+              {
+                "order": 2,
+                "name": "写出目标函数",
+                "description": "写出目标函数",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-1fb065b390"
+                ]
+              },
+              {
+                "order": 3,
+                "name": "将业务规则转换为线性约束",
+                "description": "将业务规则转换为线性约束",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-1fb065b390"
+                ]
+              },
+              {
+                "order": 4,
+                "name": "检查可行域与变量边界",
+                "description": "检查可行域与变量边界",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-1fb065b390"
+                ]
+              },
+              {
+                "order": 5,
+                "name": "调用求解器并解释影子价格或松弛量",
+                "description": "调用求解器并解释影子价格或松弛量",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P022-1fb065b390"
+                ]
+              }
+            ],
+            "parameters": [],
+            "solver_algorithm_ids": [],
+            "strengths": [
+              "可获得全局最优",
+              "求解器成熟",
+              "解释性较强"
+            ],
+            "weaknesses": [
+              "要求线性",
+              "整数决策需扩展为 MILP",
+              "对参数误差可能敏感"
+            ],
+            "use_when": [
+              "目标和约束可线性表达",
+              "决策变量连续"
+            ],
+            "avoid_when": [
+              "明显非线性关系无法合理线性化"
+            ],
+            "alternatives": [
+              "Integer Programming",
+              "Nonlinear Programming"
+            ],
+            "combinations": [
+              "Sensitivity Analysis",
+              "Scenario Analysis"
+            ],
+            "complexity": {
+              "time": "problem-dependent",
+              "space": "O(mn)",
+              "notes": "单纯形法最坏指数级，内点法有多项式界"
+            },
+            "validation_methods": [
+              "可行性检查",
+              "对偶/松弛分析",
+              "参数敏感性"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "algorithms": [
+          {
+            "id": "algorithm-geneticalgorithm-82b827f16c",
+            "canonical_name": "Genetic Algorithm",
+            "display_name": "Genetic Algorithm",
+            "aliases": [
+              "遗传算法",
+              "GA"
+            ],
+            "category": "optimization",
+            "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+            "inputs": [
+              "fitness function",
+              "encoding",
+              "constraints",
+              "population settings"
+            ],
+            "outputs": [
+              "best solution",
+              "best fitness",
+              "convergence history"
+            ],
+            "pseudocode": [
+              "初始化种群并修复不可行个体",
+              "计算适应度",
+              "根据选择策略生成父代",
+              "执行交叉与变异",
+              "进行精英保留与约束处理",
+              "达到停止条件后输出最优个体"
+            ],
+            "parameters": [
+              {
+                "name": "population_size",
+                "value": null,
+                "description": "种群规模",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "crossover_rate",
+                "value": null,
+                "description": "交叉概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "mutation_rate",
+                "value": null,
+                "description": "变异概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "按编码和约束生成初始可行种群",
+            "stopping_criteria": [
+              "最大迭代数",
+              "连续若干代最优值无改进"
+            ],
+            "complexity": {
+              "time": "O(G·P·C_f)",
+              "space": "O(P·d)",
+              "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "固定 seed 并多次独立运行"
+            },
+            "implementation_notes": [
+              "约束处理必须明确",
+              "保存收敛曲线",
+              "多次运行报告均值和方差"
+            ],
+            "failure_modes": [
+              "早熟收敛",
+              "编码不合理",
+              "适应度尺度失衡",
+              "参数未报告"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P024-6ca6399c17"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "validation": {
+          "methods": [],
+          "metrics": [],
+          "results": [],
+          "sensitivity_analysis": [],
+          "robustness_checks": [],
+          "evidence_ids": []
+        },
+        "limitations": [
+          "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+        ],
+        "innovations": [],
+        "case": {
+          "id": "case-2024-c094",
+          "title": "基于随机优化的农作物种植策略模型",
+          "domain": "unknown",
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "year": 2024,
+          "award": "优秀论文",
+          "problem_id": "C",
+          "problem_fingerprint": {
+            "problem_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "data_types": [],
+            "targets": [],
+            "constraints": [],
+            "domain_keywords": []
+          },
+          "subproblem_mapping": [
+            {
+              "subproblem_id": "Q1",
+              "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "model_ids": [
+                "model-linearprogramming-5c5372fcf9"
+              ],
+              "algorithm_ids": [
+                "algorithm-geneticalgorithm-82b827f16c"
+              ],
+              "data_flow": "",
+              "rationale": "启发式占位映射",
+              "evidence_ids": []
+            }
+          ],
+          "results": [],
+          "transferable_insights": [
+            "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+          ],
+          "pitfalls": [
+            "仅根据名称命中可能产生误判。"
+          ],
+          "innovations": [],
+          "evidence_ids": []
+        },
+        "code_recipes": [],
+        "quality": {
+          "evidence_coverage": 0.25,
+          "completeness": 0.25,
+          "code_reproducibility": 0.0,
+          "warnings": [
+            "LLM disabled: generated a heuristic IR skeleton.",
+            "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+            "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+          ],
+          "review_required": true
+        }
+      },
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "models": {
+    "model-linearprogramming-5c5372fcf9": {
+      "card": {
+        "id": "model-linearprogramming-5c5372fcf9",
+        "canonical_name": "Linear Programming",
+        "display_name": "Linear Programming",
+        "aliases": [
+          "线性规划",
+          "LP"
+        ],
+        "category": "optimization",
+        "task_types": [
+          "allocation",
+          "scheduling",
+          "minimization",
+          "maximization"
+        ],
+        "role": "在线性目标和线性约束下求最优决策变量",
+        "description": "由参考目录识别，需结合论文证据复核。",
+        "assumptions": [],
+        "inputs": [
+          {
+            "name": "objective_coefficients",
+            "description": "目标函数系数",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "constraint_matrix",
+            "description": "约束系数矩阵",
+            "shape": "m×n",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "outputs": [
+          {
+            "name": "decision_variables",
+            "description": "最优决策变量",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "objective_value",
+            "description": "最优目标值",
+            "shape": "scalar",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "equations": [],
+        "workflow": [
+          {
+            "order": 1,
+            "name": "定义决策变量及单位",
+            "description": "定义决策变量及单位",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          },
+          {
+            "order": 2,
+            "name": "写出目标函数",
+            "description": "写出目标函数",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          },
+          {
+            "order": 3,
+            "name": "将业务规则转换为线性约束",
+            "description": "将业务规则转换为线性约束",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          },
+          {
+            "order": 4,
+            "name": "检查可行域与变量边界",
+            "description": "检查可行域与变量边界",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          },
+          {
+            "order": 5,
+            "name": "调用求解器并解释影子价格或松弛量",
+            "description": "调用求解器并解释影子价格或松弛量",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P022-1fb065b390"
+            ]
+          }
+        ],
+        "parameters": [],
+        "solver_algorithm_ids": [],
+        "strengths": [
+          "可获得全局最优",
+          "求解器成熟",
+          "解释性较强"
+        ],
+        "weaknesses": [
+          "要求线性",
+          "整数决策需扩展为 MILP",
+          "对参数误差可能敏感"
+        ],
+        "use_when": [
+          "目标和约束可线性表达",
+          "决策变量连续"
+        ],
+        "avoid_when": [
+          "明显非线性关系无法合理线性化"
+        ],
+        "alternatives": [
+          "Integer Programming",
+          "Nonlinear Programming"
+        ],
+        "combinations": [
+          "Sensitivity Analysis",
+          "Scenario Analysis"
+        ],
+        "complexity": {
+          "time": "problem-dependent",
+          "space": "O(mn)",
+          "notes": "单纯形法最坏指数级，内点法有多项式界"
+        },
+        "validation_methods": [
+          "可行性检查",
+          "对偶/松弛分析",
+          "参数敏感性"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P022-1fb065b390"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-c094",
+          "title": "基于随机优化的农作物种植策略模型",
+          "evidence_ids": [
+            "E-TEXT-P022-1fb065b390"
+          ]
+        }
+      ]
+    }
+  },
+  "algorithms": {
+    "algorithm-geneticalgorithm-82b827f16c": {
+      "card": {
+        "id": "algorithm-geneticalgorithm-82b827f16c",
+        "canonical_name": "Genetic Algorithm",
+        "display_name": "Genetic Algorithm",
+        "aliases": [
+          "遗传算法",
+          "GA"
+        ],
+        "category": "optimization",
+        "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+        "inputs": [
+          "fitness function",
+          "encoding",
+          "constraints",
+          "population settings"
+        ],
+        "outputs": [
+          "best solution",
+          "best fitness",
+          "convergence history"
+        ],
+        "pseudocode": [
+          "初始化种群并修复不可行个体",
+          "计算适应度",
+          "根据选择策略生成父代",
+          "执行交叉与变异",
+          "进行精英保留与约束处理",
+          "达到停止条件后输出最优个体"
+        ],
+        "parameters": [
+          {
+            "name": "population_size",
+            "value": null,
+            "description": "种群规模",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "crossover_rate",
+            "value": null,
+            "description": "交叉概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "mutation_rate",
+            "value": null,
+            "description": "变异概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "按编码和约束生成初始可行种群",
+        "stopping_criteria": [
+          "最大迭代数",
+          "连续若干代最优值无改进"
+        ],
+        "complexity": {
+          "time": "O(G·P·C_f)",
+          "space": "O(P·d)",
+          "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "固定 seed 并多次独立运行"
+        },
+        "implementation_notes": [
+          "约束处理必须明确",
+          "保存收敛曲线",
+          "多次运行报告均值和方差"
+        ],
+        "failure_modes": [
+          "早熟收敛",
+          "编码不合理",
+          "适应度尺度失衡",
+          "参数未报告"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P024-6ca6399c17"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-c094",
+          "title": "基于随机优化的农作物种植策略模型",
+          "evidence_ids": [
+            "E-TEXT-P024-6ca6399c17"
+          ]
+        }
+      ]
+    }
+  },
+  "cases": {
+    "case-2024-c094": {
+      "card": {
+        "id": "case-2024-c094",
+        "title": "基于随机优化的农作物种植策略模型",
+        "domain": "unknown",
+        "competition": "高教社杯全国大学生数学建模竞赛",
+        "year": 2024,
+        "award": "优秀论文",
+        "problem_id": "C",
+        "problem_fingerprint": {
+          "problem_types": [
+            "allocation",
+            "scheduling",
+            "minimization",
+            "maximization"
+          ],
+          "data_types": [],
+          "targets": [],
+          "constraints": [],
+          "domain_keywords": []
+        },
+        "subproblem_mapping": [
+          {
+            "subproblem_id": "Q1",
+            "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+            "model_ids": [
+              "model-linearprogramming-5c5372fcf9"
+            ],
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c"
+            ],
+            "data_flow": "",
+            "rationale": "启发式占位映射",
+            "evidence_ids": []
+          }
+        ],
+        "results": [],
+        "transferable_insights": [
+          "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+        ],
+        "pitfalls": [
+          "仅根据名称命中可能产生误判。"
+        ],
+        "innovations": [],
+        "evidence_ids": []
+      },
+      "paper_id": "paper-2024-c094",
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "codes": {},
+  "updated_at": "2026-09-04T18:08:23+00:00"
+}

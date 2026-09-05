@@ -1,0 +1,1125 @@
+{
+  "paper": {
+    "title": "基于遗传算法的最优种植策略",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\C234.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P001-38cbc3c138",
+      "page": 1,
+      "type": "text",
+      "order": 1,
+      "original_text": "的真关性 , 本文假设前一年销售量作为今年的市场需求量 , 再利用供需关系 , 得到预",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P002-3606d622d6",
+      "page": 2,
+      "type": "text",
+      "order": 2,
+      "original_text": "为了得到 2023 年的销售量 , 假设 2023 农作物全部正常售出 , 然后",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-8564265e70",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设在一定范园内变化的随机变量服从均匀分布 , 如预期销售量、 亩产量等 ; 对于农",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P004-f99f4c8f85",
+      "page": 4,
+      "type": "text",
+      "order": 4,
+      "original_text": "1 假设 2023 年产销相等。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P004-7ef05cd48e",
+      "page": 4,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设每种农作物种植面积不小于种植地的一半。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P004-32b3009d24",
+      "page": 4,
+      "type": "text",
+      "order": 6,
+      "original_text": "假设农作物未来的预期销售量、 亩产量、 种植成本和销售价格的年变化率满足",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P004-52c4630c72",
+      "page": 4,
+      "type": "text",
+      "order": 7,
+      "original_text": "假设为丁管理方便 , 粮食类农作物在每块耕地上仅能种植一种。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P007-938b5c8565",
+      "page": 7,
+      "type": "text",
+      "order": 8,
+      "original_text": "得到 2023 年的预期销售量 , 本文假设 2023 年所有农作物全部卖出 , 其季汝总产量如",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P008-4382b3bc9a",
+      "page": 8,
+      "type": "text",
+      "order": 9,
+      "original_text": "示第 } 季第种农作物预期的销售量 , 根据假设 , 这里使用的 2023 年的销售量作为以",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P009-e037833d64",
+      "page": 9,
+      "type": "text",
+      "order": 10,
+      "original_text": "其中 , 根据实际土地划分与附件 2 所给情况 , 本文假设每种农作物种植面积不应",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P014-bfdc854df1",
+      "page": 14,
+      "type": "text",
+      "order": 11,
+      "original_text": "而题中假设 2023 的预期销售量作为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P014-7f92e19e80",
+      "page": 14,
+      "type": "text",
+      "order": 12,
+      "original_text": "再假设一种极端情况 ,2025、2027、2029 年的方案与 2023",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P017-a53b5eaef6",
+      "page": 17,
+      "type": "text",
+      "order": 13,
+      "original_text": "参考相关报道 , 本文假设蹄潼天气下 ; 对应季次蔬菀减产 3006Ml, 食用茧的减产",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P017-d39a04cb5c",
+      "page": 17,
+      "type": "text",
+      "order": 14,
+      "original_text": "旱农作物 , 参考祖关报道 , 本文假设干旱天气下 : 抗旱农作物湘产 1096, 对应季次非",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P021-f4fe77f0b8",
+      "page": 21,
+      "type": "text",
+      "order": 15,
+      "original_text": "由于文中假设 2023 年产销相同 , 本文假设以前一年销售量设定为今年的农作物",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P023-3c06307e9e",
+      "page": 23,
+      "type": "text",
+      "order": 16,
+      "original_text": "考虑不确定性国素时假设变量服从均匀分布 , 具有简单性和普造性。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P001-1b0c05e796",
+      "page": 1,
+      "type": "text",
+      "order": 17,
+      "original_text": "该优化模型 , 本文选择使用逻传算法求解 , 最终得到情况 1 一一超过部分滞销 , 造成",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P003-30ff25e045",
+      "page": 3,
+      "type": "text",
+      "order": 18,
+      "original_text": "年利润总和为目标函数的单变量线性规划模型 , 并采用启发式速传算法进行求解 , 再",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P012-56ff804b9c",
+      "page": 12,
+      "type": "text",
+      "order": 19,
+      "original_text": "综上 , 本文建立了以多村 2024 年 ~-2030 年总利润为目标的农作物最优策略模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P017-875ec684a5",
+      "page": 17,
+      "type": "text",
+      "order": 20,
+      "original_text": "针对不确定性 , 本文引入了变化率 e 怡 , 需要对厚模型的预期销量、 言产量、 种植",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P023-1cd980f456",
+      "page": 23,
+      "type": "text",
+      "order": 21,
+      "original_text": "求解模型时采用了遇传算法进行求解 , 并对算法进行了优化 , 收敛追度较快。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P024-23b1b53600",
+      "page": 24,
+      "type": "text",
+      "order": 22,
+      "original_text": "该地区所面临的可能情况 , 所建立的模型层层递进 , 非通过遗传算法进行求解 , 经",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P024-db864b49df",
+      "page": 24,
+      "type": "text",
+      "order": 23,
+      "original_text": "用士地资源的情况下建立的单目标规划模型以及求解所用算法可以推广到更一般的",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-FIGURE-P003-2bb90e0a79",
+      "page": 3,
+      "type": "figure",
+      "order": 24,
+      "original_text": "图 1 总思路图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-FIGURE-P005-bd083417e9",
+      "page": 5,
+      "type": "figure",
+      "order": 25,
+      "original_text": "图 2 农作物所需要耕地类型图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-FIGURE-P007-a07322efdf",
+      "page": 7,
+      "type": "figure",
+      "order": 26,
+      "original_text": "图 3 2023 年农作物每季次的预期销呈里医",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-FIGURE-P007-243dcc429e",
+      "page": 7,
+      "type": "figure",
+      "order": 27,
+      "original_text": "图 4 2023 年不同季次下农作物的单位利润图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-FIGURE-P013-173bc0ba57",
+      "page": 13,
+      "type": "figure",
+      "order": 28,
+      "original_text": "图 5 验证可行性流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-FIGURE-P014-c0446b4c48",
+      "page": 14,
+      "type": "figure",
+      "order": 29,
+      "original_text": "图 6 情况 1 进化曲线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-FIGURE-P014-0990d11d02",
+      "page": 14,
+      "type": "figure",
+      "order": 30,
+      "original_text": "图 7 2023 年 ~2030 年利渥折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-FIGURE-P015-a92f183d99",
+      "page": 15,
+      "type": "figure",
+      "order": 31,
+      "original_text": "图 8 情况 2 利消进化曲线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-FIGURE-P015-048bd0bb06",
+      "page": 15,
+      "type": "figure",
+      "order": 32,
+      "original_text": "图 9 利润量高年传各农作物销售量的柱状图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P016-d2a225c319",
+      "page": 16,
+      "type": "figure",
+      "order": 33,
+      "original_text": "图 10 农作物预期销售量、 周产量、 销售价格和种植成本年液动情况示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P017-d871ebf453",
+      "page": 17,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 11 寒潮影响的季次",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P017-3ed4454725",
+      "page": 17,
+      "type": "figure",
+      "order": 35,
+      "original_text": "图 12 干旱影响的季次",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P019-a6ded115d0",
+      "page": 19,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 13 方案 1 号的进化曲线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P020-b301940ea2",
+      "page": 20,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 14 A% 2 号的进化五线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P020-a693871003",
+      "page": 20,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 15 方秽 3 号的进化屹线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P020-00982e1a69",
+      "page": 20,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 16 利潞波动折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P023-4e59a0e935",
+      "page": 23,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 17 问题三与问题二方案年利润对比图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-TABLE-P005-ad0930a9b0",
+      "page": 5,
+      "type": "table",
+      "order": 41,
+      "original_text": "表 1 季次对应的季节表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-TABLE-P006-de206ef230",
+      "page": 6,
+      "type": "table",
+      "order": 42,
+      "original_text": "安产量、 种粹成本与销售价格 , 部分符选后的数据表如下表 1,2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TABLE-P006-6e80ef24f4",
+      "page": 6,
+      "type": "table",
+      "order": 43,
+      "original_text": "表 2 季次与农作物的南产量、 种植成本与销唯价格 〔 部分 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TABLE-P006-f507ed61c8",
+      "page": 6,
+      "type": "table",
+      "order": 44,
+      "original_text": "表 3 耕地类型与农作物的亮产量、 种桠成本与销售价格 〔 郑分 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TABLE-P017-ace664c82f",
+      "page": 17,
+      "type": "table",
+      "order": 45,
+      "original_text": "根据 5.3 所统计的季次对应季节表 1, 除单季外 , 寒潮主要影响季次示意图如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TABLE-P017-337646f530",
+      "page": 17,
+      "type": "table",
+      "order": 46,
+      "original_text": "根据 5.3 所统计的季次对应季节表 1, 除单季外 , 干晃主要影响农作物示意图如",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-TEXT-P027-4600f3b46d",
+      "page": 27,
+      "type": "text",
+      "order": 47,
+      "original_text": "Parenttihy = fun(Parent(i).x,Datal ,outpunt 2023, Sale, Stastic);",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S001",
+        "S017"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S002"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S003",
+        "S018",
+        "S024"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S004",
+        "S005",
+        "S006",
+        "S007"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S025",
+        "S041"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S042",
+        "S043",
+        "S044"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S008",
+        "S026",
+        "S027"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S009"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S010"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": []
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S019"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S028"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S011",
+        "S012",
+        "S029",
+        "S030"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S031",
+        "S032"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S033"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S013",
+        "S014",
+        "S020",
+        "S034",
+        "S035",
+        "S045",
+        "S046"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": []
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S036"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S037",
+        "S038",
+        "S039"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S015"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": []
+    },
+    {
+      "page": 23,
+      "block_ids": [
+        "S016",
+        "S021",
+        "S040"
+      ]
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S022",
+        "S023"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S047"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Linear Programming",
+      "translation": "Linear Programming",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    },
+    {
+      "term": "Genetic Algorithm",
+      "translation": "Genetic Algorithm",
+      "note": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解"
+    },
+    {
+      "term": "Simulated Annealing",
+      "translation": "Simulated Annealing",
+      "note": "允许以一定概率接受劣解，从而跳出局部最优"
+    }
+  ]
+}

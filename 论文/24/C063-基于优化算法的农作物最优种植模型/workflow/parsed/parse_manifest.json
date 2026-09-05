@@ -1,0 +1,12 @@
+{
+  "parser": "pymupdf-ocr",
+  "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\normalized_paper.md",
+  "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\paper_structure.json",
+  "page_map_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\page_map.json",
+  "figures_dir": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\figures",
+  "manifest_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\parse_manifest.json",
+  "warnings": [
+    "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+    "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "models": [],
+  "algorithms": [
+    {
+      "from": "Genetic Algorithm",
+      "to": "Genetic Algorithm",
+      "id": "algorithm-geneticalgorithm-82b827f16c",
+      "matched_reference": true
+    },
+    {
+      "from": "Particle Swarm Optimization",
+      "to": "Particle Swarm Optimization",
+      "id": "algorithm-particleswarmoptimization-1f1996630f",
+      "matched_reference": true
+    },
+    {
+      "from": "Simulated Annealing",
+      "to": "Simulated Annealing",
+      "id": "algorithm-simulatedannealing-8fb5c5797e",
+      "matched_reference": true
+    }
+  ],
+  "merged": []
+}

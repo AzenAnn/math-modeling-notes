@@ -1,0 +1,56 @@
+{
+  "paper": {
+    "code": "A242",
+    "title": "基于动态搜索的板凳龙运动状态及路线研究",
+    "pages": 58,
+    "source_file": "A242.pdf",
+    "title_source": "page_1"
+  },
+  "finished_at": "2026-09-04T18:08:23+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 91,
+    "models": 0,
+    "algorithms": 3,
+    "vault_notes": 6
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/基于动态搜索的板凳龙运动状态及路线研究.md",
+      "40_Competition-Cases/基于动态搜索的板凳龙运动状态及路线研究-案例.md",
+      "20_Algorithms/optimization/Genetic Algorithm.md",
+      "20_Algorithms/optimization/Particle Swarm Optimization.md",
+      "20_Algorithms/optimization/Simulated Annealing.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\知识库",
+    "note_count": 5,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\知识库",
+    "note_count": 6,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

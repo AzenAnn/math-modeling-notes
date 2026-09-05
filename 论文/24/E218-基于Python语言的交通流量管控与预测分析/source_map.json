@@ -1,0 +1,1438 @@
+{
+  "paper": {
+    "title": "基于Python语言的交通流量管控与预测分析",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\E218.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P003-8610c8d44a",
+      "page": 3,
+      "type": "text",
+      "order": 1,
+      "original_text": "假设问题二中黄灯对整个模型的影咿忽略不计 ;",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P003-08608f02a7",
+      "page": 3,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设问题二中平均停车时间为 2 小时 ( 每个停车位每小时有 0. 5 辆车离开 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-c3ae91c230",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设问题三仿真补拟中无变通事故发生。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P009-cc04a38435",
+      "page": 9,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设车辆在交叉口的转向比例是己知的 ( 逢过历史数据或交通规则推断》 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P042-ec2c4cc9e1",
+      "page": 42,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设的平均速度 (40 km/h = 11.11 nus)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P043-c762bca727",
+      "page": 43,
+      "type": "text",
+      "order": 6,
+      "original_text": "}# “ 假设的信号灯周期",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P056-92d98e4d85",
+      "page": 56,
+      "type": "text",
+      "order": 7,
+      "original_text": "假设我们使用数据集中的时间来估计到达率",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P056-a20ec0424d",
+      "page": 56,
+      "type": "text",
+      "order": 8,
+      "original_text": "假设我们计算的是整个五一假期",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P058-b72837021c",
+      "page": 58,
+      "type": "text",
+      "order": 9,
+      "original_text": "假设停车位数量 c = 600",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-2a78750bc7",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "本文建立信号灯优化模型 , 运用 K~- 均值聚类算法、 遗传算法和仿",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-c575dd39c0",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "然后建立 F- 均值粽类算法模型且运用方向流量公式估算直行和转弯车辆比例 , 最后使",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P001-273f413b2f",
+      "page": 1,
+      "type": "text",
+      "order": 12,
+      "original_text": "的流量划分为低峰期、 高峰期和平峰期 , 构建所有交叉路口的车流量模型和信号灯优化",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P001-466e4a9bba",
+      "page": 1,
+      "type": "text",
+      "order": 13,
+      "original_text": "模型 , 并设计绿波带进一步优化模型 , 然后采用遗传算法计算出每个路口的最优绿灯时",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P002-e8c940d15f",
+      "page": 2,
+      "type": "text",
+      "order": 14,
+      "original_text": "问题二 : 在保证车辆通信的前提下 , 建立优化模型 , 对经中路和纬中路上所",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P003-db5a7c3860",
+      "page": 3,
+      "type": "text",
+      "order": 15,
+      "original_text": "峥期、 高峰期和平峥期 , 然后建立数学模型估算直行和转弯车辆比例 , 最后运用",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P003-75cd965559",
+      "page": 3,
+      "type": "text",
+      "order": 16,
+      "original_text": "焰后建立排队论模型佶计停车的需求量 , 最终得到景区所需的临时停车位数量。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P005-b398132538",
+      "page": 5,
+      "type": "text",
+      "order": 17,
+      "original_text": "本问的数据较多 , 在建立模型前首先对数据进行预处理 , 发现附件 2 中的数",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P006-fdcc6b49be",
+      "page": 6,
+      "type": "text",
+      "order": 18,
+      "original_text": "5.1.3 建立 K- 均值聚类算法模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P014-249bd8de85",
+      "page": 14,
+      "type": "text",
+      "order": 19,
+      "original_text": "日与节假日 , 然后运用问题一建立的 k- 均值聚类算法模型 , 再对各交叉路口的总",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P015-319ee2e2a2",
+      "page": 15,
+      "type": "text",
+      "order": 20,
+      "original_text": "Step2: 建立交通流量模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P015-18e252efe7",
+      "page": 15,
+      "type": "text",
+      "order": 21,
+      "original_text": "使用交通流量模型对整个交通线路进行模拟和分析 , 计算出不同站点的车流",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P015-65c306eb5f",
+      "page": 15,
+      "type": "text",
+      "order": 22,
+      "original_text": "Step3: 建立信号灯优化模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P015-a8b7f4dc95",
+      "page": 15,
+      "type": "text",
+      "order": 23,
+      "original_text": "通过建立信号灯优化模型 , 优化信号灯的时间周期 , 提升整个交通系统的平",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P017-e82a5c0f3f",
+      "page": 17,
+      "type": "text",
+      "order": 24,
+      "original_text": "Steps: 建立遗传算法",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P018-1dc66f5e24",
+      "page": 18,
+      "type": "text",
+      "order": 25,
+      "original_text": "采用递传算法计算出舔个路口的最优绿灯时长及周期 , 得到交叉路口部分时",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P020-04170c35a3",
+      "page": 20,
+      "type": "text",
+      "order": 26,
+      "original_text": "出临时停车位的需求量 , 可使用排队论模型进行估算。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P021-d52824d007",
+      "page": 21,
+      "type": "text",
+      "order": 27,
+      "original_text": "Step3: 建立排队论模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P021-ec59e0077b",
+      "page": 21,
+      "type": "text",
+      "order": 28,
+      "original_text": "用排队论模型的 mymyc 模型 , 侬据题意建立以下模型 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P027-a9c24ab426",
+      "page": 27,
+      "type": "text",
+      "order": 29,
+      "original_text": "(L) 本文所使用的 K- 均值算法可以将车流量划分为不同类别 , 不需要手动",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P027-e6cc58540e",
+      "page": 27,
+      "type": "text",
+      "order": 30,
+      "original_text": "C1) 本文所使用的 K- 均值算法没有考虑车流量的时间连续性 , 只美注数据",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P001-ae42bebc31",
+      "page": 1,
+      "type": "text",
+      "order": 31,
+      "original_text": "长及周期 , 最后用仿真模拟检验优化祖型 , 其祖拟仿真网址为 nutps iwwio lanzo",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P003-f0889a1aa1",
+      "page": 3,
+      "type": "text",
+      "order": 32,
+      "original_text": "法计算出每个路口的最优绿灯时长及周期 , 最后用仿真模拟检验优化模型 , 推导",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-TEXT-P019-65ffe89dc0",
+      "page": 19,
+      "type": "text",
+      "order": 33,
+      "original_text": "5.2.6 误差分析与结论",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-TEXT-P019-11db4447df",
+      "page": 19,
+      "type": "text",
+      "order": 34,
+      "original_text": "而我们的理论平均最大违度约为 S0.4kmyh, 两者误差非常小 , 仅只有 1.14%6, 仿",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-TEXT-P027-829e71f640",
+      "page": 27,
+      "type": "text",
+      "order": 35,
+      "original_text": "型的仿真模拟检验时 , 没有模批所有的交叉路口 , 只对其中两个路口进行模拟仿",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P002-7f0c744de8",
+      "page": 2,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 2-1 小镇主要道路示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P002-1d43602346",
+      "page": 2,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 2-1 小镇主要道路示意图 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P006-1ae5e155b5",
+      "page": 6,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 5-3 非工作日不同时段的车流量",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P009-455289b185",
+      "page": 9,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 5-8 三个不同时段的细分时段汇总",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P010-d882f900e0",
+      "page": 10,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 5-10 非工作日进一步细分时段车流量汇总",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P012-eea0413873",
+      "page": 12,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 5-12 问题二流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P012-87fba2ad78",
+      "page": 12,
+      "type": "figure",
+      "order": 42,
+      "original_text": "图 5-12 问题二流程图 5.2.2 数据预处理 , 并进行可视化",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-FIGURE-P012-48c1b06eac",
+      "page": 12,
+      "type": "figure",
+      "order": 43,
+      "original_text": "图 5-13 环东路 - 纷中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-FIGURE-P012-16c4957693",
+      "page": 12,
+      "type": "figure",
+      "order": 44,
+      "original_text": "图 5-14 环西路 - 纵中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-FIGURE-P012-b231d31c7e",
+      "page": 12,
+      "type": "figure",
+      "order": 45,
+      "original_text": "图 5-15 经二路 - 纬中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-FIGURE-P013-33139ea34c",
+      "page": 13,
+      "type": "figure",
+      "order": 46,
+      "original_text": "图 5-17 经四路 - 纷中路图 5-18 经五路 - 纷中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-FIGURE-P013-620a67cac8",
+      "page": 13,
+      "type": "figure",
+      "order": 47,
+      "original_text": "图 5-19 经一路 - 纬中路图 $-20 经中路 - 环北路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-FIGURE-P013-deaf391195",
+      "page": 13,
+      "type": "figure",
+      "order": 48,
+      "original_text": "图 5-21 经中略 - 环南路图 5-22 经中路 - 纬一路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-FIGURE-P013-37a624a004",
+      "page": 13,
+      "type": "figure",
+      "order": 49,
+      "original_text": "图 5-23 经中路 - 纯中路图 5-24 纷中路 - 景区出入口",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-FIGURE-P018-4bc3f8178d",
+      "page": 18,
+      "type": "figure",
+      "order": 50,
+      "original_text": "图 5-33 经中路和纬中路的最优平均速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-FIGURE-P019-bf78d7c664",
+      "page": 19,
+      "type": "figure",
+      "order": 51,
+      "original_text": "图 5-34 仿真模拟路况、 交通流",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-FIGURE-P019-1a48e8f068",
+      "page": 19,
+      "type": "figure",
+      "order": 52,
+      "original_text": "图 5-35 两个路口的时间仿真模拉图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-FIGURE-P025-787ce4b510",
+      "page": 25,
+      "type": "figure",
+      "order": 53,
+      "original_text": "图 5-42 12 个路口的车流量密度可视化图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-FIGURE-P025-28095d44d6",
+      "page": 25,
+      "type": "figure",
+      "order": 54,
+      "original_text": "图 5-43 五一期间线行车辆数",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-TABLE-P007-58b2651296",
+      "page": 7,
+      "type": "table",
+      "order": 55,
+      "original_text": "表 5-5 工作日的进一步细分时段",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-TABLE-P014-7f4558dbdc",
+      "page": 14,
+      "type": "table",
+      "order": 56,
+      "original_text": "表 5-25 纬东路 - 纬中路 #* 526 环西路 - 纬中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-TABLE-P015-b8567efc8d",
+      "page": 15,
+      "type": "table",
+      "order": 57,
+      "original_text": "表 5-30 经中路 - 环南路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TABLE-P018-8b553faaa3",
+      "page": 18,
+      "type": "table",
+      "order": 58,
+      "original_text": "表 $.31 环东路 - 纬中路表 3-32 环西路 - 纬中路",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-TABLE-P020-bbafa07d26",
+      "page": 20,
+      "type": "table",
+      "order": 59,
+      "original_text": "表 5-36 郯分车输行车扬迹",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-TEXT-P038-12894eb5e8",
+      "page": 38,
+      "type": "text",
+      "order": 60,
+      "original_text": "pltLploterossing_data[「 小时丨 erossing data[「 总车流量 “].",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S010",
+        "S011",
+        "S012",
+        "S013",
+        "S031"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S014",
+        "S036",
+        "S037"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S015",
+        "S016",
+        "S032"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": []
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S017"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S018",
+        "S038"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S055"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": []
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S004",
+        "S039"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S040"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S041",
+        "S042",
+        "S043",
+        "S044",
+        "S045"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S046",
+        "S047",
+        "S048",
+        "S049"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S019",
+        "S056"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S020",
+        "S021",
+        "S022",
+        "S023",
+        "S057"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": []
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S024"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S025",
+        "S050",
+        "S058"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S033",
+        "S034",
+        "S051",
+        "S052"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S026",
+        "S059"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S027",
+        "S028"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": []
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": []
+    },
+    {
+      "page": 25,
+      "block_ids": [
+        "S053",
+        "S054"
+      ]
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S029",
+        "S030",
+        "S035"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": [
+        "S060"
+      ]
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": [
+        "S005"
+      ]
+    },
+    {
+      "page": 43,
+      "block_ids": [
+        "S006"
+      ]
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": [
+        "S007",
+        "S008"
+      ]
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": [
+        "S009"
+      ]
+    },
+    {
+      "page": 59,
+      "block_ids": []
+    },
+    {
+      "page": 60,
+      "block_ids": []
+    },
+    {
+      "page": 61,
+      "block_ids": []
+    },
+    {
+      "page": 62,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Linear Programming",
+      "translation": "Linear Programming",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    },
+    {
+      "term": "Genetic Algorithm",
+      "translation": "Genetic Algorithm",
+      "note": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解"
+    }
+  ]
+}

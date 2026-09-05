@@ -1,0 +1,922 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "paper-2024-e061",
+  "source": {
+    "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\E061.pdf",
+    "sha256": "36ee439c9cf7e33ed8dfa92b59ee4111d2a57be9eea172199378f4ae1b8a162c",
+    "parser": "pymupdf-ocr",
+    "parsed_at": "2026-09-04T17:40:24+00:00",
+    "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\workflow\\parsed\\normalized_paper.md",
+    "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\workflow\\parsed\\paper_structure.json"
+  },
+  "bibliographic": {
+    "title": "基于多目标优化的交通管理评估分析",
+    "authors": [],
+    "year": 2024,
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "award": "优秀论文",
+    "problem_id": "E",
+    "abstract": "交通拥堵问题己经日益严重 , 特别在旅游景区周围更加严重。 基于该区域京通流量 数据 , 分析该糗主要道路的交通现状 , 交通优化方案已经成为相关部门的急需。",
+    "keywords": [
+      "Particle Swarm Optimization"
+    ],
+    "language": "zh-CN"
+  },
+  "problem": {
+    "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=36ee439c9cf7e33ed8dfa92b59ee4111d2a57be9eea172199378f4ae1b8a162c --> # 基于多目标优化的交通管理评估分析 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 基于多目标优化的交通管理评估分析 摘要 交通拥堵问题己经日益严重 , 特别在旅游景区周围更加严重。 基于该区域京通流量 数据 , 分析该糗主要道路的交通现状 , 交通优化方案已经成为相关部门的急需。 针对问题一 , 通过对交通监控数据的聚合处理 , 统计了经中路 - 纬中路交叉口不同 时间的总车流量。 利用 K-WMeams 联类 “ 算法分析总车流量变化趋势 , 依据肘部法得出聚 类数为 39, 将时段划分为高峥、 中峥和低峰三类。 用粒子群优化 (PS0) “ 算法分配每个时 段的车流方向比例 , 侩据比例算出各方向 ( 直行、 左转、 右转 ) 的车流量 , 多欣迭代粒子 群优化算法 , 最终得出期每个时段内各个方向的平均车流量 《辆 / 时 ), 低峰时段所有 数据的最高值 30. 65, 最低值 9. 99, 均值 20. 34; 中峰时段所有数据的最高值 46. 25, 最低值 14. 79, 均值 32. 45; 高峰时段所有数据的最高值 371. 17, 最低值 117. 20, 均值 269. 08。 针对问题二 , 为了忧化经中路和纬中路交叉口的信号灯配置 , 使两条主路的车流速 度最大化 , 本文构建了基于马尔可夫决策过程 (MDP ) 的量化交通状态和信号灯的配",
+    "overall_objective": "启发式模式未可靠抽取总体目标。",
+    "subproblems": [
+      {
+        "id": "Q1",
+        "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "task_types": [
+          "unknown"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "constraints": [],
+        "evidence_ids": []
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E-TEXT-P003-c5bae2de5b",
+      "kind": "text",
+      "page": 3,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:3696-3722",
+      "quote": "- 假设在一天内车流量具有一定的周期性或时间段特性。",
+      "char_start": 3696,
+      "char_end": 3722,
+      "content_hash": "c5bae2de5b00172fb02085fe8577d0eb685a9e7bef7bf02cdb81efbf578f8689",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-de9c665a42",
+      "kind": "text",
+      "page": 3,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:3724-3758",
+      "quote": "假设可以根据柿些先验信息或历史数据 , 对车颐转弯的比例进行佼计。",
+      "char_start": 3724,
+      "char_end": 3758,
+      "content_hash": "de9c665a4273bbca28636c2162a2155ae0cd586223b1ff70a69533a29328ccd1",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-6d253209e3",
+      "kind": "text",
+      "page": 3,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:3765-3791",
+      "quote": "假设可以忽略行人、 非机动车等其他交通因索的憧响。",
+      "char_start": 3765,
+      "char_end": 3791,
+      "content_hash": "6d253209e352a1c015a81c98e8e9f6dced9c69a72c799581dcfa55539f11cf08",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P008-7f0ab5bd7a",
+      "kind": "text",
+      "page": 8,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:8723-8746",
+      "quote": "假设我们有 N 种可选的信号灯配时策略 :",
+      "char_start": 8723,
+      "char_end": 8746,
+      "content_hash": "7f0ab5bd7a34a5fcab6409d10cb41d6e6cdbeb42a55f68f5f048b0cc88d72057",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-5e8617990f",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:16625-16659",
+      "quote": "本模型在求解过程中做了若干假设 , 如忽秽了行人和非机动车的影响等。",
+      "char_start": 16625,
+      "char_end": 16659,
+      "content_hash": "5e8617990fae0f86e00c709a300bcf21a1dfb6aa735e0ea38aafff4f47afc498",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-b883db702b",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:16686-16708",
+      "quote": "通过对这些假设进行修正 《如考虐行人的存",
+      "char_start": 16686,
+      "char_end": 16708,
+      "content_hash": "b883db702bbf28381db523e4bfcfa48a6d1b2795a980824022619ce7ee47e4ec",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-d069231f95",
+      "kind": "text",
+      "page": 16,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "assumption",
+      "locator": "char:17217-17249",
+      "quote": "简化假设 : 忽翘行人和非机动车等因素可能导致实际应用中的语差。",
+      "char_start": 17217,
+      "char_end": 17249,
+      "content_hash": "d069231f956c325d218db10d17227a26b487a3b723a00b6c7c9dd46036718ba5",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-b7a4a8de2d",
+      "kind": "text",
+      "page": 1,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:809-855",
+      "quote": "策路模型 “, 采用深度 0 学习 (DQN) “ 算法来忽化每个时段的信号灯绿灯持维时间。",
+      "char_start": 809,
+      "char_end": 855,
+      "content_hash": "b7a4a8de2d244f7dc02fd335f5148be108c923880b5d6c3a739dc26040cff169",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-322768c099",
+      "kind": "text",
+      "page": 2,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:2284-2331",
+      "quote": "首先 , 使用统计学方法 , 如联类分析 , 找出车流量陶时间的变化规律 , 将一天划分为若",
+      "char_start": 2284,
+      "char_end": 2331,
+      "content_hash": "322768c099f4af3bf2b6b6a64a0016d63daf70e3f511ec3078623e5640efbaa3",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-43feed6185",
+      "kind": "text",
+      "page": 2,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:2375-2418",
+      "quote": "数据得出各个方向上直行、 左转、 右转的比例 , 通过引入智能优化算法自动调整模型参",
+      "char_start": 2375,
+      "char_end": 2418,
+      "content_hash": "43feed61850876c4c567cf924dd6c848e224713432865f3401c8241f4223d816",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-3db6a2a3e9",
+      "kind": "text",
+      "page": 2,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:2732-2757",
+      "quote": "我们可以使用交通流量数据和强化学习方法 , 建",
+      "char_start": 2732,
+      "char_end": 2757,
+      "content_hash": "3db6a2a3e9306744509ad875ae8c1923ac9e1f6388ffe2086d3a35ea37d5bcbd",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-95a3918cc8",
+      "kind": "text",
+      "page": 2,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:2858-2891",
+      "quote": "具体建模可以使用深度强化学习模型 ( 如 DOND , 将每个",
+      "char_start": 2858,
+      "char_end": 2891,
+      "content_hash": "95a3918cc863f3a4b2eeae50f0f6420f9bae0cbf82132f5b79858c1e1ede5e91",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P007-bc3a321068",
+      "kind": "text",
+      "page": 7,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:8146-8189",
+      "quote": "为了实现最优的信号灯配时策骆 , 本文使用深度 Q 学习 《DQN 模型来逼近 Q",
+      "char_start": 8146,
+      "char_end": 8189,
+      "content_hash": "bc3a3210687d820ba7b93746505700eb56e6c980e79dc6953d34cb58c116505a",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P013-fa56298740",
+      "kind": "text",
+      "page": 13,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:14047-14060",
+      "quote": "6.4.1 建立评估模型",
+      "char_start": 14047,
+      "char_end": 14060,
+      "content_hash": "fa56298740105661f441348988e2710f2acf9d916b2ee9c9d522b5265e9a2f20",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-4b6d74318a",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:16061-16093",
+      "quote": "复型中使用了粒二群优化算法来估计直行、 左转、 右转车流的比例。",
+      "char_start": 16061,
+      "char_end": 16093,
+      "content_hash": "4b6d74318af5992103b202bc5703a900e911507a1866317db9e0b4351aac5591",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-62c9dc01c7",
+      "kind": "text",
+      "page": 16,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:16807-16836",
+      "quote": "在优化过程中 , 使用了粒子群优化算法和淆度强化学习模型。",
+      "char_start": 16807,
+      "char_end": 16836,
+      "content_hash": "62c9dc01c78afd9c111ace86332088944fa88993e3acfbe5a5e827ad513c4692",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-d209b6a508",
+      "kind": "text",
+      "page": 16,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "model",
+      "locator": "char:17263-17309",
+      "quote": "马尔可夫犹策过程 (MDP) 的优化改进主要包括 : 引入强化学习算法 , 如 Q 学习和",
+      "char_start": 17263,
+      "char_end": 17309,
+      "content_hash": "d209b6a50822044c798f09d4ce8261a743d7fd7a92797afba67f041d6ce53c68",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-a4ff10cd5f",
+      "kind": "text",
+      "page": 6,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:6636-6677",
+      "quote": "适应度计算 : 使用目标函数计算当前比例组合的适应度 ( 即车流分配的误差 )。",
+      "char_start": 6636,
+      "char_end": 6677,
+      "content_hash": "a4ff10cd5fe61976dddc6274787c2104877b4fcd0a2061bf3788b5c7430d2555",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P009-5240728f3b",
+      "kind": "text",
+      "page": 9,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:9960-9988",
+      "quote": "损失函数为当前 Q 值与目标 Q 值之间的均方误差 ;",
+      "char_start": 9960,
+      "char_end": 9988,
+      "content_hash": "5240728f3b40245a8b725f123f4860ffe70b250551a7a7a434d6808cbd0fbc1b",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-172c0d1b6e",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15669-15686",
+      "quote": "七、 模型的灵敏度分析和误差分析",
+      "char_start": 15669,
+      "char_end": 15686,
+      "content_hash": "172c0d1b6ea3c28e6423eeabc8e7799ff9594d1792c6674f8a40b8c7239ca771",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-a9274544ca",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15687-15726",
+      "quote": "灵敏度分析旨在探索不同参数对模型结果的敏感程度 , 从而诉别出哪些参数对模型",
+      "char_start": 15687,
+      "char_end": 15726,
+      "content_hash": "a9274544ca65172535949d91df085d35bad00b1df9b5022b3840c4f14e069d36",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-b1a5a77c54",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15726-15762",
+      "quote": "的影响最大 , 而误差分析则帮助确定模型的预测误差源以及可能的改进方向",
+      "char_start": 15726,
+      "char_end": 15762,
+      "content_hash": "b1a5a77c54a4533361887e49c8aebdf41b78a40b14dd511a4344a2333802b433",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-161123ef4f",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15774-15815",
+      "quote": "灵敏度分析的核心是通过对模型辐入参数进行微小谋整 , 观察其对输出结果的影响 ,",
+      "char_start": 15774,
+      "char_end": 15815,
+      "content_hash": "161123ef4f468846ba1c68ba42456ffc36d4283c652e80869218010f06883688",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-fad6887e0a",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15857-15879",
+      "quote": "1 交通流量数据误差对信号灯优化的影响 :",
+      "char_start": 15857,
+      "char_end": 15879,
+      "content_hash": "fad6887e0a42c23171b12decac5a9da74c7000153baa59f8fdc1e2d7d2d52a6f",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-ee3d9788e0",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15880-15919",
+      "quote": "由于实际交通流量数据通常存在波动和不确定性 , 灵敏度分析可以通过模拟不同误",
+      "char_start": 15880,
+      "char_end": 15919,
+      "content_hash": "ee3d9788e0fad6facc969436ff7bd79ceb4fe08f15e62e790e66f99a0562b77c",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-7053f2f55e",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:15919-15945",
+      "quote": "差水平下的车流数据 , 评估信号灯配时策路的鲁棒性。",
+      "char_start": 15919,
+      "char_end": 15945,
+      "content_hash": "7053f2f55ed0b0cb68692afb2ce60744354acdd114917a2cda947b7b47d35dc8",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-f81b7640d3",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16044-16060",
+      "quote": "车流方向分配比例的灵敏度 ;",
+      "char_start": 16044,
+      "char_end": 16060,
+      "content_hash": "f81b7640d384ee0b6cf4702ae4199bd10b846939d9ae021a477e9e9503e73684",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-67f7d8268c",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16190-16205",
+      "quote": "误差对整体流量估计的影响最大。",
+      "char_start": 16190,
+      "char_end": 16205,
+      "content_hash": "67f7d8268c42749a92d541dba6062c97e90c4ab4d356607c3beef9f3ab2c21fd",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-7a005b0844",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16251-16269",
+      "quote": "在灵敏度分析中 , 可以在最优绿",
+      "char_start": 16251,
+      "char_end": 16269,
+      "content_hash": "7a005b08445b2ffc0dc7fc2be0855c5a553588280de4d712cd235004e1826f91",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-72532628c1",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16381-16411",
+      "quote": "论别模型的误差来源 , 并量化这些误差对模型预测结果的影响。",
+      "char_start": 16381,
+      "char_end": 16411,
+      "content_hash": "72532628c10c82b8165f55b73fa8a496a17e5134b94f6ef687f742a52221844c",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-06d33dd15b",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16434-16448",
+      "quote": "1 数据噪声引入的误差 :",
+      "char_start": 16434,
+      "char_end": 16448,
+      "content_hash": "06d33dd15b8847e343f1543b261950243c808acc1e97ee5a42bd3a873763aca0",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-c2b58e377a",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16487-16532",
+      "quote": "析中 , 可以通过增加不同程度的数据噪声 , 缪拟实际环境中的误差 , 分析这些噪声对车",
+      "char_start": 16487,
+      "char_end": 16532,
+      "content_hash": "c2b58e377a6d3509e7126e6dc3ee4d57901780af4289b1aa7f54d0aba11d7283",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-c148c2a8cd",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16582-16607",
+      "quote": "但崴声增加至 10% 以上肘 , 误差显著增大。",
+      "char_start": 16582,
+      "char_end": 16607,
+      "content_hash": "c148c2a8cde25e3fd4099d80d1d6aa7bad91d98801a3e7fa41bce7da1c7804dc",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-710628bfe3",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16665-16686",
+      "quote": "可能在实际情况下不成立 , 从而引入误差。",
+      "char_start": 16665,
+      "char_end": 16686,
+      "content_hash": "710628bfe3e421f6c81135169c488b632c3b8001567f57feb09e223a532b0fed",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P015-7e0cbfab7d",
+      "kind": "text",
+      "page": 15,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16708-16752",
+      "quote": "在或增加动态车流量变化 〉 , 可以分析误差的其体影响 , 并评估是否有必要在模型中引",
+      "char_start": 16708,
+      "char_end": 16752,
+      "content_hash": "7e0cbfab7d82f7fa5f9a3381df349aeb7650d64476ff5ca1a02ec454be6ecb83",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-4d20a4e672",
+      "kind": "text",
+      "page": 16,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16792-16806",
+      "quote": "算法收敏性导致的误差 :",
+      "char_start": 16792,
+      "char_end": 16806,
+      "content_hash": "4d20a4e67251e670c2e10fd77b3081ba7e15f9e40ca5b49816253ac7d3ae0de4",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-acedf59a7e",
+      "kind": "text",
+      "page": 16,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "validation",
+      "locator": "char:16891-16936",
+      "quote": "敛条件下的结果 , 发现当速代次数不足时 , 优化结果可能会候离最优值 , 进而导致误差。",
+      "char_start": 16891,
+      "char_end": 16936,
+      "content_hash": "acedf59a7e68a6435db7d36af60730ed4bd383136a994d188fd41ab62916661d",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-FIGURE-P004-853343972a",
+      "kind": "figure",
+      "page": 4,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "图 1",
+      "locator": "FIGURE-001",
+      "quote": "图 1 经中路 - 纬中路交叉口 24 小时车流量变化趋势",
+      "char_start": 4857,
+      "char_end": 4860,
+      "content_hash": "853343972af32adb6816765dd90a36129713b064d1fa18bf0ff43005a69a5895",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P005-e7d5a2894f",
+      "kind": "figure",
+      "page": 5,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "图 2",
+      "locator": "FIGURE-002",
+      "quote": "图 2 肘部法求解最佳联类数 k",
+      "char_start": 5303,
+      "char_end": 5306,
+      "content_hash": "e7d5a2894fec4bb7ce9e3ae653fa71ed034356ae7e34760b93a6916aa9ca9444",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P005-5be5757e59",
+      "kind": "figure",
+      "page": 5,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "图 3",
+      "locator": "FIGURE-003",
+      "quote": "图 3 聚类结果散点图",
+      "char_start": 5675,
+      "char_end": 5678,
+      "content_hash": "5be5757e599491a729ff1ea7b4f121340afc1f85326eea4c0c8f79945b1dbb78",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P005-c853238120",
+      "kind": "figure",
+      "page": 5,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "图\n\n5",
+      "locator": "FIGURE-004",
+      "quote": "图 3 聚类结果散点图 5",
+      "char_start": 5685,
+      "char_end": 5689,
+      "content_hash": "c85323812043eeb4ec14fd62ca051154afbc3994903a9a0491beff9cf51e1404",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-cd533772cb",
+      "kind": "figure",
+      "page": 13,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "图 5",
+      "locator": "FIGURE-005",
+      "quote": "图 5 每日巡游车梅折线图",
+      "char_start": 13377,
+      "char_end": 13380,
+      "content_hash": "cd533772cb074bb9bd8f00d43e82450fd19438b7419e0ffd9d81d0a3583d2eef",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P007-86e74f355f",
+      "kind": "table",
+      "page": 7,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "表 2",
+      "locator": "TABLE-001",
+      "quote": "表 2 各阡间段各方向来车数据",
+      "char_start": 7085,
+      "char_end": 7088,
+      "content_hash": "86e74f355fa9f28f36adfcdf7db16d7fed5a3c5832cbbedce371890cf45cc3c9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P010-c915c813b6",
+      "kind": "table",
+      "page": 10,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "表 2",
+      "locator": "TABLE-002",
+      "quote": "表 2 每个阡段内各个方向的信号灯相位时间表",
+      "char_start": 11566,
+      "char_end": 11569,
+      "content_hash": "c915c813b6012b68d40ca07a25fc3529831a4ab92379905c87e1b0b36a97e1fc",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P010-c63cc33aa6",
+      "kind": "table",
+      "page": 10,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "表 3",
+      "locator": "TABLE-003",
+      "quote": "表 3 每个阡段内各个方向的平均等待时间表",
+      "char_start": 11721,
+      "char_end": 11724,
+      "content_hash": "c63cc33aa6c1d51ff30e2f921baa4f2a36f0a5fd1dc2564428c876b0991eb92c",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P012-cac1123e3c",
+      "kind": "table",
+      "page": 12,
+      "section": "基于多目标优化的交通管理评估分析",
+      "label": "表 3",
+      "locator": "TABLE-004",
+      "quote": "表 3 每日巡游车辆统计",
+      "char_start": 13231,
+      "char_end": 13234,
+      "content_hash": "cac1123e3c2c5be4109783444f404c92c149b53facd4f93ddede312e8fe2f514",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "- 假设在一天内车流量具有一定的周期性或时间段特性。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-c5bae2de5b"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-002",
+      "statement": "假设可以根据柿些先验信息或历史数据 , 对车颐转弯的比例进行佼计。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-de9c665a42"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-003",
+      "statement": "假设可以忽略行人、 非机动车等其他交通因索的憧响。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-6d253209e3"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-004",
+      "statement": "假设我们有 N 种可选的信号灯配时策略 :",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P008-7f0ab5bd7a"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-005",
+      "statement": "本模型在求解过程中做了若干假设 , 如忽秽了行人和非机动车的影响等。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P015-5e8617990f"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-006",
+      "statement": "通过对这些假设进行修正 《如考虐行人的存",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P015-b883db702b"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-007",
+      "statement": "简化假设 : 忽翘行人和非机动车等因素可能导致实际应用中的语差。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P016-d069231f95"
+      ],
+      "provenance": "HEURISTIC"
+    }
+  ],
+  "variables": [],
+  "data": {
+    "sources": [],
+    "fields": [],
+    "data_types": [],
+    "preprocessing": [],
+    "missing_value_strategy": "",
+    "outlier_strategy": "",
+    "evidence_ids": []
+  },
+  "modeling_chain": [],
+  "models": [],
+  "algorithms": [
+    {
+      "id": "algorithm-particleswarmoptimization-1f1996630f",
+      "canonical_name": "Particle Swarm Optimization",
+      "display_name": "Particle Swarm Optimization",
+      "aliases": [
+        "粒子群优化",
+        "粒子群算法",
+        "PSO"
+      ],
+      "category": "optimization",
+      "purpose": "利用个体最优和群体最优引导连续空间搜索",
+      "inputs": [
+        "objective function",
+        "bounds",
+        "swarm settings"
+      ],
+      "outputs": [
+        "global best position",
+        "global best value",
+        "history"
+      ],
+      "pseudocode": [
+        "初始化粒子位置与速度",
+        "计算每个粒子的目标值",
+        "更新个体最优与全局最优",
+        "更新速度和位置并执行边界处理",
+        "达到停止条件后返回全局最优"
+      ],
+      "parameters": [
+        {
+          "name": "inertia_weight",
+          "value": null,
+          "description": "惯性权重",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "cognitive_coefficient",
+          "value": null,
+          "description": "个体学习因子",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "social_coefficient",
+          "value": null,
+          "description": "社会学习因子",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        }
+      ],
+      "initialization": "",
+      "stopping_criteria": [
+        "最大迭代数",
+        "全局最优长期无改进"
+      ],
+      "complexity": {
+        "time": "O(G·P·C_f)",
+        "space": "O(P·d)",
+        "notes": ""
+      },
+      "randomness": {
+        "uses_randomness": true,
+        "seed_required": true,
+        "notes": "固定 seed 并报告多次运行"
+      },
+      "implementation_notes": [
+        "边界处理方式必须说明",
+        "记录收敛曲线"
+      ],
+      "failure_modes": [
+        "群体过早聚集",
+        "速度爆炸",
+        "参数尺度与变量范围不匹配"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P016-62c9dc01c7"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "validation": {
+    "methods": [],
+    "metrics": [],
+    "results": [],
+    "sensitivity_analysis": [],
+    "robustness_checks": [],
+    "evidence_ids": []
+  },
+  "limitations": [
+    "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+  ],
+  "innovations": [],
+  "case": {
+    "id": "case-2024-e061",
+    "title": "基于多目标优化的交通管理评估分析",
+    "domain": "unknown",
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "year": 2024,
+    "award": "优秀论文",
+    "problem_id": "E",
+    "problem_fingerprint": {
+      "problem_types": [
+        "unknown"
+      ],
+      "data_types": [],
+      "targets": [],
+      "constraints": [],
+      "domain_keywords": []
+    },
+    "subproblem_mapping": [
+      {
+        "subproblem_id": "Q1",
+        "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "model_ids": [],
+        "algorithm_ids": [
+          "algorithm-particleswarmoptimization-1f1996630f"
+        ],
+        "data_flow": "",
+        "rationale": "启发式占位映射",
+        "evidence_ids": []
+      }
+    ],
+    "results": [],
+    "transferable_insights": [
+      "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+    ],
+    "pitfalls": [
+      "仅根据名称命中可能产生误判。"
+    ],
+    "innovations": [],
+    "evidence_ids": []
+  },
+  "code_recipes": [],
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  }
+}

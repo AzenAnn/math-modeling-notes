@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-09-04T18:08:22+00:00",
+  "results": [
+    {
+      "code": "A016",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 59,
+      "model_count": 0,
+      "algorithm_count": 0
+    },
+    {
+      "code": "A053",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 91,
+      "model_count": 0,
+      "algorithm_count": 1
+    },
+    {
+      "code": "A163",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 72,
+      "model_count": 0,
+      "algorithm_count": 0
+    },
+    {
+      "code": "A178",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 48,
+      "model_count": 0,
+      "algorithm_count": 0
+    },
+    {
+      "code": "A242",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 91,
+      "model_count": 0,
+      "algorithm_count": 3
+    },
+    {
+      "code": "B159",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 66,
+      "model_count": 2,
+      "algorithm_count": 0
+    },
+    {
+      "code": "B195",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 93,
+      "model_count": 1,
+      "algorithm_count": 3
+    },
+    {
+      "code": "B196",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 70,
+      "model_count": 3,
+      "algorithm_count": 1
+    },
+    {
+      "code": "C038",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 128,
+      "model_count": 0,
+      "algorithm_count": 1
+    },
+    {
+      "code": "C063",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 44,
+      "model_count": 1,
+      "algorithm_count": 1
+    },
+    {
+      "code": "C094",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 29,
+      "model_count": 1,
+      "algorithm_count": 1
+    },
+    {
+      "code": "C234",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 47,
+      "model_count": 1,
+      "algorithm_count": 2
+    },
+    {
+      "code": "D033",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 58,
+      "model_count": 1,
+      "algorithm_count": 0
+    },
+    {
+      "code": "E010",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 97,
+      "model_count": 0,
+      "algorithm_count": 2
+    },
+    {
+      "code": "E061",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 46,
+      "model_count": 0,
+      "algorithm_count": 1
+    },
+    {
+      "code": "E218",
+      "status": "analyzed",
+      "provider": "none",
+      "chunk_count": 0,
+      "warnings": [],
+      "evidence_count": 60,
+      "model_count": 1,
+      "algorithm_count": 1
+    }
+  ]
+}

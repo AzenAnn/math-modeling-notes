@@ -1,0 +1,54 @@
+{
+  "paper": {
+    "code": "A178",
+    "title": "板凳龙行进路径与速度控制优化",
+    "pages": 48,
+    "source_file": "A178.pdf",
+    "title_source": "inferred_from_abstract_title_missing_in_scan"
+  },
+  "finished_at": "2026-09-04T18:08:23+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 48,
+    "models": 0,
+    "algorithms": 0,
+    "vault_notes": 3
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。",
+      "扫描件首页缺少正式标题；当前标题由摘要主题推定。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/板凳龙行进路径与速度控制优化.md",
+      "40_Competition-Cases/板凳龙行进路径与速度控制优化-案例.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\知识库",
+    "note_count": 2,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\知识库",
+    "note_count": 3,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collection": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+  "source_directory": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文",
+  "paper_count": 16,
+  "page_count": 807,
+  "source_format": "scanned-pdf",
+  "ocr": {
+    "engine": "Tesseract",
+    "languages": "chi_sim+eng",
+    "dpi": 180,
+    "default_confidence": "medium"
+  },
+  "papers": [
+    {"code": "A016", "title": "基于几何模型的舞龙队位置和速度分析", "pages": 59, "source_file": "A016.pdf", "title_source": "page_1"},
+    {"code": "A053", "title": "基于目标优化的板凳龙形态调节", "pages": 62, "source_file": "A053.pdf", "title_source": "page_1"},
+    {"code": "A163", "title": "基于几何模型的板凳龙运动路径问题", "pages": 45, "source_file": "A163.pdf", "title_source": "page_1_ocr_corrected"},
+    {"code": "A178", "title": "板凳龙行进路径与速度控制优化", "pages": 48, "source_file": "A178.pdf", "title_source": "inferred_from_abstract_title_missing_in_scan"},
+    {"code": "A242", "title": "基于动态搜索的板凳龙运动状态及路线研究", "pages": 58, "source_file": "A242.pdf", "title_source": "page_1"},
+    {"code": "B159", "title": "生产过程中的决策优化设计", "pages": 36, "source_file": "B159.pdf", "title_source": "page_1"},
+    {"code": "B195", "title": "基于多阶段模拟仿真的生产决策问题", "pages": 70, "source_file": "B195.pdf", "title_source": "page_1"},
+    {"code": "B196", "title": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究", "pages": 28, "source_file": "B196.pdf", "title_source": "page_1"},
+    {"code": "C038", "title": "基于差分遗传算法的农作物种植策略优化", "pages": 61, "source_file": "C038.pdf", "title_source": "page_1"},
+    {"code": "C063", "title": "基于优化算法的农作物最优种植模型", "pages": 49, "source_file": "C063.pdf", "title_source": "page_1"},
+    {"code": "C094", "title": "基于随机优化的农作物种植策略模型", "pages": 58, "source_file": "C094.pdf", "title_source": "page_1_ocr_corrected"},
+    {"code": "C234", "title": "基于遗传算法的最优种植策略", "pages": 45, "source_file": "C234.pdf", "title_source": "page_1_ocr_corrected"},
+    {"code": "D033", "title": "反潜航空深弹命中概率的优化问题", "pages": 55, "source_file": "D033.pdf", "title_source": "page_1"},
+    {"code": "E010", "title": "交通流量管控", "pages": 39, "source_file": "E010.pdf", "title_source": "page_1"},
+    {"code": "E061", "title": "基于多目标优化的交通管理评估分析", "pages": 32, "source_file": "E061.pdf", "title_source": "page_1"},
+    {"code": "E218", "title": "基于Python语言的交通流量管控与预测分析", "pages": 62, "source_file": "E218.pdf", "title_source": "page_1"}
+  ]
+}

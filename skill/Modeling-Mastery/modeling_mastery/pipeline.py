@@ -32,6 +32,7 @@ def run_pipeline(
     check_octave: bool = False,
     project_root: Path | None = None,
     obsidian_root: Path | None = None,
+    paper_title_hint: str | None = None,
 ) -> dict[str, Any]:
     settings = settings or Settings.from_env()
     workspace = workspace.expanduser().resolve()
@@ -55,6 +56,7 @@ def run_pipeline(
         parsed_dir,
         backend=backend or settings.pdf_backend,
         mineru_backend=settings.mineru_backend,
+        title_hint=paper_title_hint,
     )
     report["stages"]["01_paper_ingest"] = parse_result.as_dict()
     report["warnings"].extend(parse_result.warnings)

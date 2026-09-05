@@ -268,6 +268,9 @@ class ClaudeCodeCLILLM(BaseLLM):
     ) -> LLMResult:
         del max_tokens  # Claude Code print mode does not expose a direct max-output-tokens flag.
         schema = schema_for_purpose(purpose)
+        # Claude Code currently rejects the draft 2020-12 meta-schema URI even
+        # though it accepts the concrete object/array constraints we use.
+        schema.pop("$schema", None)
         schema_text = json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
         args = [*self.command, "--print"]
         if self.bare:

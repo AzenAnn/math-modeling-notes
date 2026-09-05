@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-09-04T17:41:41+00:00",
+  "results": [
+    {
+      "code": "A016",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A016-基于几何模型的舞龙队位置和速度分析\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "A053",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A053-基于目标优化的板凳龙形态调节\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "A163",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A163-基于几何模型的板凳龙运动路径问题\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "A178",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "A242",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A242-基于动态搜索的板凳龙运动状态及路线研究\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "B159",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B159-生产过程中的决策优化设计\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "B195",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B195-基于多阶段模拟仿真的生产决策问题\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "B196",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "C038",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C038-基于差分遗传算法的农作物种植策略优化\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "C063",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C063-基于优化算法的农作物最优种植模型\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "C094",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C094-基于随机优化的农作物种植策略模型\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "C234",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C234-基于遗传算法的最优种植策略\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "D033",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "E010",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E010-交通流量管控\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "E061",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E061-基于多目标优化的交通管理评估分析\\workflow\\parsed\\normalized_paper.md"
+    },
+    {
+      "code": "E218",
+      "status": "parsed",
+      "parser": "pymupdf-ocr",
+      "warnings": [
+        "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+        "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+      ],
+      "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\workflow\\parsed\\normalized_paper.md"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-09-04T18:08:24+00:00",
+  "results": [
+    {
+      "code": "A016",
+      "status": "distilled",
+      "evidence": 59,
+      "models": 0,
+      "algorithms": 0,
+      "vault_notes": 3
+    },
+    {
+      "code": "A053",
+      "status": "distilled",
+      "evidence": 91,
+      "models": 0,
+      "algorithms": 1,
+      "vault_notes": 4
+    },
+    {
+      "code": "A163",
+      "status": "distilled",
+      "evidence": 72,
+      "models": 0,
+      "algorithms": 0,
+      "vault_notes": 3
+    },
+    {
+      "code": "A178",
+      "status": "distilled",
+      "evidence": 48,
+      "models": 0,
+      "algorithms": 0,
+      "vault_notes": 3
+    },
+    {
+      "code": "A242",
+      "status": "distilled",
+      "evidence": 91,
+      "models": 0,
+      "algorithms": 3,
+      "vault_notes": 6
+    },
+    {
+      "code": "B159",
+      "status": "distilled",
+      "evidence": 66,
+      "models": 2,
+      "algorithms": 0,
+      "vault_notes": 5
+    },
+    {
+      "code": "B195",
+      "status": "distilled",
+      "evidence": 93,
+      "models": 1,
+      "algorithms": 3,
+      "vault_notes": 7
+    },
+    {
+      "code": "B196",
+      "status": "distilled",
+      "evidence": 70,
+      "models": 3,
+      "algorithms": 1,
+      "vault_notes": 7
+    },
+    {
+      "code": "C038",
+      "status": "distilled",
+      "evidence": 128,
+      "models": 0,
+      "algorithms": 1,
+      "vault_notes": 4
+    },
+    {
+      "code": "C063",
+      "status": "distilled",
+      "evidence": 44,
+      "models": 1,
+      "algorithms": 1,
+      "vault_notes": 5
+    },
+    {
+      "code": "C094",
+      "status": "distilled",
+      "evidence": 29,
+      "models": 1,
+      "algorithms": 1,
+      "vault_notes": 5
+    },
+    {
+      "code": "C234",
+      "status": "distilled",
+      "evidence": 47,
+      "models": 1,
+      "algorithms": 2,
+      "vault_notes": 6
+    },
+    {
+      "code": "D033",
+      "status": "distilled",
+      "evidence": 58,
+      "models": 1,
+      "algorithms": 0,
+      "vault_notes": 4
+    },
+    {
+      "code": "E010",
+      "status": "distilled",
+      "evidence": 97,
+      "models": 0,
+      "algorithms": 2,
+      "vault_notes": 5
+    },
+    {
+      "code": "E061",
+      "status": "distilled",
+      "evidence": 46,
+      "models": 0,
+      "algorithms": 1,
+      "vault_notes": 4
+    },
+    {
+      "code": "E218",
+      "status": "distilled",
+      "evidence": 60,
+      "models": 1,
+      "algorithms": 1,
+      "vault_notes": 5
+    }
+  ]
+}

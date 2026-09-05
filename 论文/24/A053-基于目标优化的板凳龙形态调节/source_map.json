@@ -1,0 +1,2032 @@
+{
+  "paper": {
+    "title": "基于目标优化的板凳龙形态调节",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\A053.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P002-942cf34cf1",
+      "page": 2,
+      "type": "text",
+      "order": 1,
+      "original_text": "假设舞龙过程中不出现人为的位置扰动。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P002-dc5eb2b0e1",
+      "page": 2,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设各板凳可视为绕把手自由转动的理想刚体。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P002-3f27a8757d",
+      "page": 2,
+      "type": "text",
+      "order": 3,
+      "original_text": "3- 假设舞龙队在进入调头空间后立即开始调头",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P009-bcdd31c538",
+      "page": 9,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设 t 时刻树龙身 ( 龙尾 ) 的把手坐标可表示为 M:(ri(t),6i(t)), 在 (t + d6) 时刻",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P028-09cee534cf",
+      "page": 28,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设龙头位于调头边界处 , 求解怡好不发生磅撞的蝎距 , 结果约为 42 cm。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P030-0710ad8d71",
+      "page": 30,
+      "type": "text",
+      "order": 6,
+      "original_text": "假设调头曲线中的大圆弟的半径为 Rxaz, 小圆强的半径为笃堡 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P033-f2c1857602",
+      "page": 33,
+      "type": "text",
+      "order": 7,
+      "original_text": "假设在大圆学范围内 , 龙头接下来要走的弧对应的圆心角为 gl, 经过时间 t 后 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P033-4445088294",
+      "page": 33,
+      "type": "text",
+      "order": 8,
+      "original_text": "与龙头在大圆强上类似地 , 假设在大圆弧范围内 , 从 t 时刻开始 , 龙头接下来要",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P001-0087b652e4",
+      "page": 1,
+      "type": "text",
+      "order": 9,
+      "original_text": "针对问题一 , 我们建立舞龙队的运动状态模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-d33546f312",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "针对问题二 , 我们建立了碰撞检测模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-704a9bb5ca",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "针对问题三 , 我们建立了使龙头可到达调头空间的最小蟒距优化模型 , 首先 , 将",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P001-47ec7175be",
+      "page": 1,
+      "type": "text",
+      "order": 12,
+      "original_text": "陶后 , 我们在问题一的基础之上建立舞龙队的多段路径运动状态模型 . 首先我们",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P002-3dc911f2b7",
+      "page": 2,
+      "type": "text",
+      "order": 13,
+      "original_text": "现需要建立数学模型 , 解决下列问题 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P002-5e607fbc95",
+      "page": 2,
+      "type": "text",
+      "order": 14,
+      "original_text": "建立盘龙运动模型 , 求出 0 % 300 秒内 , 每",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P003-254f09ee01",
+      "page": 3,
+      "type": "text",
+      "order": 15,
+      "original_text": "硐撞问题转化为板凳所占矩形区域的重叠问题 , 进而建立出握入碰撞检测模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P004-80c712c209",
+      "page": 4,
+      "type": "text",
+      "order": 16,
+      "original_text": "更改 , 建立舞龙队调头运动模型 , 利用递推法求得了各把手的运动状态。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P012-e294e7d04f",
+      "page": 12,
+      "type": "text",
+      "order": 17,
+      "original_text": "的区间是单调的 , 因此我们采用二分法对解的位置进行搜索 , 具体流程如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P012-4aac945182",
+      "page": 12,
+      "type": "text",
+      "order": 18,
+      "original_text": "STEPI 确定使用二分法的区",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P016-0843870acb",
+      "page": 16,
+      "type": "text",
+      "order": 19,
+      "original_text": "转化为板凳所占矩形区域的重叠问题 , 进而建立出盘入殖撞检测模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P016-4668a142ee",
+      "page": 16,
+      "type": "text",
+      "order": 20,
+      "original_text": "然发生在龙头上 , 我们接下来采用反证法进行说明。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P023-9178730f6f",
+      "page": 23,
+      "type": "text",
+      "order": 21,
+      "original_text": "硐撞检测祖型为约束条件 , 建立以螺线嫡距为决策变量的单目标优化模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P026-6103739f32",
+      "page": 26,
+      "type": "text",
+      "order": 22,
+      "original_text": "最小距 , 我们采用精度逐渐提升的变步长遐历法 [2], 对镗距长度遍历 , 其体方法如",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P029-99634449c0",
+      "page": 29,
+      "type": "text",
+      "order": 23,
+      "original_text": "更改 , 建立舞龙队调头运动模型 , 利用递推法求得了各把亏的运动状态。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P031-3a8b3ea663",
+      "page": 31,
+      "type": "text",
+      "order": 24,
+      "original_text": "目建立最短调头曲线的单目标优化模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P032-b4843905b0",
+      "page": 32,
+      "type": "text",
+      "order": 25,
+      "original_text": "因为上述建立的单目标化模型祖对简单 , 为提高求解效率 , 所以我们采用遗历法",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P036-c1b81b9836",
+      "page": 36,
+      "type": "text",
+      "order": 26,
+      "original_text": "头在 t 时刻下的位置 (xu(t),y(5)) 推出 , 进而建立出舞龙队调头运动模型 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P037-9e4fc4ad7c",
+      "page": 37,
+      "type": "text",
+      "order": 27,
+      "original_text": "对于建立的舞龙队调头模型 , 我们采用途推法进行求解 , 其运算流程如下表所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P040-80883f6202",
+      "page": 40,
+      "type": "text",
+      "order": 28,
+      "original_text": "单目标优化问题 , 我们采用粒子群算法进行求解 , 其算法流程如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P001-865d09e9ba",
+      "page": 1,
+      "type": "text",
+      "order": 29,
+      "original_text": "最后 , 针对各把手的位置和速度特征进行了结果分析和灵敏度分析。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P016-b667204022",
+      "page": 16,
+      "type": "text",
+      "order": 30,
+      "original_text": "对于龙头速度进行土 5% 的谋整 , 通过计算龙身的追度变化的视对误差和绝对误差 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P028-f6da97cc06",
+      "page": 28,
+      "type": "text",
+      "order": 31,
+      "original_text": "经检验 , 依此螺距盗龙时 , 龙头与龙身在",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P033-ebdb8530c6",
+      "page": 33,
+      "type": "text",
+      "order": 32,
+      "original_text": "STEPY 检验是否到达遗历边界 : 当大园弥十径的值到达 300cm 时 , 结束算法并",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P004-d7f0edc6c5",
+      "page": 4,
+      "type": "figure",
+      "order": 33,
+      "original_text": "图 1 问题一的流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P005-2a4c17bf97",
+      "page": 5,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 2 极坐标系中的阿基米徵螺旋线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P005-e0ba3b97f1",
+      "page": 5,
+      "type": "figure",
+      "order": 35,
+      "original_text": "由图 2, 在极坐标系中 , 该螺距为 35cm 的阿基米德螺螺旋线可表示为 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P006-b617c2fcfb",
+      "page": 6,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 3 蟀旋线孟长的积分求解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P007-7858c1511d",
+      "page": 7,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 4 四和蝎旋线方程的联立",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P009-bade9dc5b4",
+      "page": 9,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 6 龙身与龙尾把手位置的递推",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P009-443e987479",
+      "page": 9,
+      "type": "figure",
+      "order": 39,
+      "original_text": "如图 6 所示 , 同时结合式 (55 (9) (10), 我们可以先根据龙头前把手的初始位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P012-3b18fb7853",
+      "page": 12,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 7 二分法求解龙头前把手位置流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P012-1010767c3a",
+      "page": 12,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 7 二分法求解龙头前把手位置流程图 12",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P014-ca2b326922",
+      "page": 14,
+      "type": "figure",
+      "order": 42,
+      "original_text": "图 8 利用 At 带来的微小弧长近似计算瞧时速率",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-FIGURE-P015-56ecd646b1",
+      "page": 15,
+      "type": "figure",
+      "order": 43,
+      "original_text": "图 9 把手路程差随时间变化的图像",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-FIGURE-P015-a1f65b367f",
+      "page": 15,
+      "type": "figure",
+      "order": 44,
+      "original_text": "图 10 第 i 炕板凳前把手 x 方向位移关于时间的变化",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-FIGURE-P016-ccc6fa6fca",
+      "page": 16,
+      "type": "figure",
+      "order": 45,
+      "original_text": "图 11 不同节点的运动速度随时间的变化关系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-FIGURE-P016-fcea60337f",
+      "page": 16,
+      "type": "figure",
+      "order": 46,
+      "original_text": "图 12 问题二的流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-FIGURE-P016-f3e2a6478a",
+      "page": 16,
+      "type": "figure",
+      "order": 47,
+      "original_text": "图 12 问题二的流程图 5. 2. 1 盘入碰撞检测模型的建立",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-FIGURE-P017-3c9380df0b",
+      "page": 17,
+      "type": "figure",
+      "order": 48,
+      "original_text": "图 13 板凳顶点的推导",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-FIGURE-P017-8720fd3f09",
+      "page": 17,
+      "type": "figure",
+      "order": 49,
+      "original_text": "对于把手 Mt(xt,yD , 我们对由 Mt 和 ML+ 确定的第 i 个板凳的顶点进行分析 . 如图 13",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-FIGURE-P018-d894c40f87",
+      "page": 18,
+      "type": "figure",
+      "order": 50,
+      "original_text": "图 13 投影轴向量的表示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-FIGURE-P018-b3da9480bb",
+      "page": 18,
+      "type": "figure",
+      "order": 51,
+      "original_text": "如图 13, 我们以矩形顶点 4 和 D 为例 , 可将向量 0 巾用 4 的坐标表示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-FIGURE-P019-13dfd0c2be",
+      "page": 19,
+      "type": "figure",
+      "order": 52,
+      "original_text": "图 14 利用分离轴定玖判断碌撞是否会发生",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-FIGURE-P020-fa409485ed",
+      "page": 20,
+      "type": "figure",
+      "order": 53,
+      "original_text": "i i * 图 15 区间重我区域的判断",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-FIGURE-P022-1b539ca056",
+      "page": 22,
+      "type": "figure",
+      "order": 54,
+      "original_text": "图 16 盘入硒捷检测模型的求解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-FIGURE-P022-2be2880e5d",
+      "page": 22,
+      "type": "figure",
+      "order": 55,
+      "original_text": "对碰撞局部进行放大 , 如图 17 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-FIGURE-P023-76bef955fe",
+      "page": 23,
+      "type": "figure",
+      "order": 56,
+      "original_text": "图 17 发生碰撷时盘龙的整体结构及碰撞局部放大",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-FIGURE-P023-4ad98c1870",
+      "page": 23,
+      "type": "figure",
+      "order": 57,
+      "original_text": "的可能性差别 , 我们将此处发生碰撞的前 2 s 时的盘龙整体结构画出 , 如图 18 所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-FIGURE-P023-a9f28e49a6",
+      "page": 23,
+      "type": "figure",
+      "order": 58,
+      "original_text": "图 18 发生碰撒前 2 s 时盗龙整机结构及磁撩局部放大",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-FIGURE-P023-188bda1559",
+      "page": 23,
+      "type": "figure",
+      "order": 59,
+      "original_text": "根据图 18, 我们可以看出 , 在龙身体结构的把手连接处 , 相邻板凳的空间更大 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-FIGURE-P024-b139b29543",
+      "page": 24,
+      "type": "figure",
+      "order": 60,
+      "original_text": "图 19 问题三求解流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S061",
+      "evidence_id": "E-FIGURE-P024-17a6e71f8e",
+      "page": 24,
+      "type": "figure",
+      "order": 61,
+      "original_text": "图 19 问题三求解流程图 5. 3 1 最小螺距单目标优化模型的建立",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S062",
+      "evidence_id": "E-FIGURE-P027-62dbbc2395",
+      "page": 27,
+      "type": "figure",
+      "order": 62,
+      "original_text": "图 20 大步长逾历搜索螺距",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S063",
+      "evidence_id": "E-FIGURE-P027-946344eb40",
+      "page": 27,
+      "type": "figure",
+      "order": 63,
+      "original_text": "图 21 小步长逼历搜索螺启 0",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S064",
+      "evidence_id": "E-FIGURE-P028-2693a20dde",
+      "page": 28,
+      "type": "figure",
+      "order": 64,
+      "original_text": "图 22 蝎附为 45.04cm, 时磁撞时刻示意图图 23 媒距为 45.04cm, 时磁撞时刻示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S065",
+      "evidence_id": "E-FIGURE-P028-2250a1cd79",
+      "page": 28,
+      "type": "figure",
+      "order": 65,
+      "original_text": "极径 r-4.5916 m 时 , 已与后面龙身的中部发生碌撞 , 求解及验证过程如图 24 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S066",
+      "evidence_id": "E-FIGURE-P029-26d55e32fa",
+      "page": 29,
+      "type": "figure",
+      "order": 66,
+      "original_text": "图 25 问题四的流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S067",
+      "evidence_id": "E-FIGURE-P029-65fca1123a",
+      "page": 29,
+      "type": "figure",
+      "order": 67,
+      "original_text": "图 25 问题四的流程图 5. 4 1 最短调头曲线长度单目标优化模型的建立",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S068",
+      "evidence_id": "E-FIGURE-P032-52231cc068",
+      "page": 32,
+      "type": "figure",
+      "order": 68,
+      "original_text": "图 26 龙头痛族方向约束示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S069",
+      "evidence_id": "E-FIGURE-P038-7e8c417a30",
+      "page": 38,
+      "type": "figure",
+      "order": 69,
+      "original_text": "图 27 第 12 s-13 s 又头部分的轭迹图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S070",
+      "evidence_id": "E-FIGURE-P038-c44b2b1451",
+      "page": 38,
+      "type": "figure",
+      "order": 70,
+      "original_text": "图 27 第 12 s-13 s 又头部分的轭迹图 5.5 问题五模型的建立与求解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S071",
+      "evidence_id": "E-FIGURE-P038-4d2466cd87",
+      "page": 38,
+      "type": "figure",
+      "order": 71,
+      "original_text": "图 28 问题五的流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S072",
+      "evidence_id": "E-FIGURE-P038-c202489bbb",
+      "page": 38,
+      "type": "figure",
+      "order": 72,
+      "original_text": "图 28 问题五的流程图 5. 5. 1 最大龙头速度单目标优化模型的建立",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S073",
+      "evidence_id": "E-FIGURE-P041-2d216443b6",
+      "page": 41,
+      "type": "figure",
+      "order": 73,
+      "original_text": "我们画出了运动全过程的最大速度与龙头速度的关系图 , 如图 27 所示 , 发现在",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S074",
+      "evidence_id": "E-FIGURE-P041-c1a4ff3ce3",
+      "page": 41,
+      "type": "figure",
+      "order": 74,
+      "original_text": "图 27 运动全过程的最大速度与龙头速度的关系图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S075",
+      "evidence_id": "E-TABLE-P003-626f9fe35f",
+      "page": 3,
+      "type": "table",
+      "order": 75,
+      "original_text": "表 1 符号说明",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S076",
+      "evidence_id": "E-TABLE-P013-d056d4cbe0",
+      "page": 13,
+      "type": "table",
+      "order": 76,
+      "original_text": "隐 60 s 龙头前把手的平面直角坐标数据 , 如表 2 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S077",
+      "evidence_id": "E-TABLE-P013-66ef0b3c05",
+      "page": 13,
+      "type": "table",
+      "order": 77,
+      "original_text": "表 2 从 0 -300 s 范围内每隔 60 s 龙头刑把手的平面直角坐标",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S078",
+      "evidence_id": "E-TABLE-P013-fa86fe091e",
+      "page": 13,
+      "type": "table",
+      "order": 78,
+      "original_text": "维直角坐标系。 根据题干要求 , 我们将这部分数据与表 2 合并 , 得到龙头前把手、 部",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S079",
+      "evidence_id": "E-TABLE-P013-343580bdbb",
+      "page": 13,
+      "type": "table",
+      "order": 79,
+      "original_text": "分龙身前把手和龙尾后把手的位置表格 , 如表 3 所示 , 在后面的结果展示与分析中给",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S080",
+      "evidence_id": "E-TABLE-P014-6f978a4038",
+      "page": 14,
+      "type": "table",
+      "order": 80,
+      "original_text": "围内钓隔 60s 对应的龙头前把手 , 部分龙身前把手及龙尾后把手的速度展示在表 4 中。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S081",
+      "evidence_id": "E-TABLE-P015-a564ffda2a",
+      "page": 15,
+      "type": "table",
+      "order": 81,
+      "original_text": "因表 3 中数据不直观 , 我们将 result1.xlsx 中的数据可视化处理 , 结果分析如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S082",
+      "evidence_id": "E-TABLE-P015-ce99045f85",
+      "page": 15,
+      "type": "table",
+      "order": 82,
+      "original_text": "| 各节速度必然衰减 , 这也在表 4 的数据 |",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S083",
+      "evidence_id": "E-TABLE-P015-8762138382",
+      "page": 15,
+      "type": "table",
+      "order": 83,
+      "original_text": "表 4 未发生碰撩时龙头前把手、 部分龙身前把手和龙尾后把手的速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S084",
+      "evidence_id": "E-TABLE-P016-c8566f7ef8",
+      "page": 16,
+      "type": "table",
+      "order": 84,
+      "original_text": "因表 4 中数据不直观 , 我们将 result1.xlsx 中的数据可视化处理 , 结果分析如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S085",
+      "evidence_id": "E-TABLE-P022-c19b7a69ea",
+      "page": 22,
+      "type": "table",
+      "order": 85,
+      "original_text": "前把手和龙尿后把手的位置和速度展示在表 5 中。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S086",
+      "evidence_id": "E-TABLE-P022-eb6bcba665",
+      "page": 22,
+      "type": "table",
+      "order": 86,
+      "original_text": "表 5 发生碰撞时龙头前把手、 部分龙身前把手和龙尾后把手的速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S087",
+      "evidence_id": "E-TABLE-P034-9b5c841676",
+      "page": 34,
+      "type": "table",
+      "order": 87,
+      "original_text": "为例 , 其受到几何关系约柱 , 龙头前后把手的位置可能出现的情况如表 7 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S088",
+      "evidence_id": "E-TABLE-P034-932fa0fe20",
+      "page": 34,
+      "type": "table",
+      "order": 88,
+      "original_text": "表 7 龙头上前后把手可能出现的位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S089",
+      "evidence_id": "E-TABLE-P037-def8e112f0",
+      "page": 37,
+      "type": "table",
+      "order": 89,
+      "original_text": "如表 6 和表 7 所示所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S090",
+      "evidence_id": "E-TABLE-P037-bf2180463c",
+      "page": 37,
+      "type": "table",
+      "order": 90,
+      "original_text": "表 6 谅头前后部分把手速度的展示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S091",
+      "evidence_id": "E-TEXT-P004-66c0d7a282",
+      "page": 4,
+      "type": "text",
+      "order": 91,
+      "original_text": "式为约束条件的单目标优化模型 , 并利用粒子群算法进行求解 , 搜索出满足约束条件",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S009",
+        "S010",
+        "S011",
+        "S012",
+        "S029"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S013",
+        "S014"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S015",
+        "S075"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S016",
+        "S033",
+        "S091"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S034",
+        "S035"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S036"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S037"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": []
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S004",
+        "S038",
+        "S039"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": []
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S017",
+        "S018",
+        "S040",
+        "S041"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S076",
+        "S077",
+        "S078",
+        "S079"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S042",
+        "S080"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S043",
+        "S044",
+        "S081",
+        "S082",
+        "S083"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S019",
+        "S020",
+        "S030",
+        "S045",
+        "S046",
+        "S047",
+        "S084"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S048",
+        "S049"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S050",
+        "S051"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S052"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S053"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": []
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S054",
+        "S055",
+        "S085",
+        "S086"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": [
+        "S021",
+        "S056",
+        "S057",
+        "S058",
+        "S059"
+      ]
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S060",
+        "S061"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": [
+        "S022"
+      ]
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S062",
+        "S063"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": [
+        "S005",
+        "S031",
+        "S064",
+        "S065"
+      ]
+    },
+    {
+      "page": 29,
+      "block_ids": [
+        "S023",
+        "S066",
+        "S067"
+      ]
+    },
+    {
+      "page": 30,
+      "block_ids": [
+        "S006"
+      ]
+    },
+    {
+      "page": 31,
+      "block_ids": [
+        "S024"
+      ]
+    },
+    {
+      "page": 32,
+      "block_ids": [
+        "S025",
+        "S068"
+      ]
+    },
+    {
+      "page": 33,
+      "block_ids": [
+        "S007",
+        "S008",
+        "S032"
+      ]
+    },
+    {
+      "page": 34,
+      "block_ids": [
+        "S087",
+        "S088"
+      ]
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": [
+        "S026"
+      ]
+    },
+    {
+      "page": 37,
+      "block_ids": [
+        "S027",
+        "S089",
+        "S090"
+      ]
+    },
+    {
+      "page": 38,
+      "block_ids": [
+        "S069",
+        "S070",
+        "S071",
+        "S072"
+      ]
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": [
+        "S028"
+      ]
+    },
+    {
+      "page": 41,
+      "block_ids": [
+        "S073",
+        "S074"
+      ]
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": []
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": []
+    },
+    {
+      "page": 59,
+      "block_ids": []
+    },
+    {
+      "page": 60,
+      "block_ids": []
+    },
+    {
+      "page": 61,
+      "block_ids": []
+    },
+    {
+      "page": 62,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Particle Swarm Optimization",
+      "translation": "Particle Swarm Optimization",
+      "note": "利用个体最优和群体最优引导连续空间搜索"
+    }
+  ]
+}

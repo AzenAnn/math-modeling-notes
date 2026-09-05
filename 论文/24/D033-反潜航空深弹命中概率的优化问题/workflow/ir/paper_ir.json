@@ -1,0 +1,1123 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "paper-2024-d033",
+  "source": {
+    "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\D033.pdf",
+    "sha256": "5bb37151e8c6023ed47b2dd1e553d6fb6d93ebeee0ad1d28feb12dc57a366904",
+    "parser": "pymupdf-ocr",
+    "parsed_at": "2026-09-04T17:40:23+00:00",
+    "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\normalized_paper.md",
+    "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\paper_structure.json"
+  },
+  "bibliographic": {
+    "title": "反潜航空深弹命中概率的优化问题",
+    "authors": [],
+    "year": 2024,
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "award": "优秀论文",
+    "problem_id": "D",
+    "abstract": "应用深水炸弹 ( 简称深弹》 反潜 , 曾是二战时期反潜的重要手段 , 随着现代军事技 术的发展 , 鱼雷通渐普代深弹成为现代反潜的主要武器。 但在海峡等海底地形较为复杂 的海域 , 由于价格低等优点 , 仍有一些国家在研究和使用深弹。 本文针对投弹命中概率 太小 , 以平面坐标系和深度来建立不同的投弹方案 , 探究使命中概率最大的方案。",
+    "keywords": [
+      "Monte Carlo Simulation"
+    ],
+    "language": "zh-CN"
+  },
+  "problem": {
+    "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=5bb37151e8c6023ed47b2dd1e553d6fb6d93ebeee0ad1d28feb12dc57a366904 --> # 反潜航空深弹命中概率的优化问题 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 反潜航空深弹命中概率的优化问题 摘要 应用深水炸弹 ( 简称深弹》 反潜 , 曾是二战时期反潜的重要手段 , 随着现代军事技 术的发展 , 鱼雷通渐普代深弹成为现代反潜的主要武器。 但在海峡等海底地形较为复杂 的海域 , 由于价格低等优点 , 仍有一些国家在研究和使用深弹。 本文针对投弹命中概率 太小 , 以平面坐标系和深度来建立不同的投弹方案 , 探究使命中概率最大的方案。 针对问题一 , 由条件可知 , 潜艇中心位置深度定位没有说差 , 且两水平定位的误差 相互独立且服从祖同的正态分布 , 可得两水平坐标联合概率密度函数。 为探究最大投弹 命中概率与投弹葛点平面坐标 (L,s) 及定深引信引爆深度 4 的关系 , 本间以 (L,s,d) 作为诀 策变量 , 根据定深引信引爆深度 4 与潜舫中心位置深度定位值义的不同关系分别讨论 5 种情形 , 得到每种情形的命中概率表达式 , 蝎z董皋1匾量宅寻出子【玉乏譬鳕亘-斋育中暮蔬率与壬蛋弹轲'暮己莺卧_`土藿_贾{]三羞′言| 爆深度的一般关系 , 受壬睿矗『矛导至l】兰l′\"____'[\"<【】T(霁【[′+ 五时 , 才可能有概率最太的投弹方 案 , 1|_乙日1君更子导誓妻乙蒡单)皂二丨<′置予′中暮魇彗濡』与誓壹暹曼单耆亭窒亳尘占j",
+    "overall_objective": "启发式模式未可靠抽取总体目标。",
+    "subproblems": [
+      {
+        "id": "Q1",
+        "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "task_types": [
+          "uncertainty_propagation",
+          "scenario_analysis",
+          "probability_estimation"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "constraints": [],
+        "evidence_ids": []
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E-TEXT-P003-d8cb88ec41",
+      "kind": "text",
+      "page": 3,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "assumption",
+      "locator": "char:3516-3534",
+      "quote": "假设潜艇采取静默时 , 立即静止",
+      "char_start": 3516,
+      "char_end": 3534,
+      "content_hash": "d8cb88ec410dce680c9b76c3c70887415249a1cc6259b2f93aaec7512f7b8b39",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-fb8141b581",
+      "kind": "text",
+      "page": 3,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "assumption",
+      "locator": "char:3536-3557",
+      "quote": "假设反潜攻击方在一定条件下知道潜艇航向",
+      "char_start": 3536,
+      "char_end": 3557,
+      "content_hash": "fb8141b581b7434adab6ca8956a0960a609bdd05da547065b9c44f0225480310",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-cbdca48220",
+      "kind": "text",
+      "page": 3,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "assumption",
+      "locator": "char:3559-3585",
+      "quote": "假设深弹之间互不影响 , 不会引起连镁爆炸等情况",
+      "char_start": 3559,
+      "char_end": 3585,
+      "content_hash": "cbdca48220f963a433a3b64951f5ffe3609a27de85ac1b417d795492f1d6b5ad",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-13547de55a",
+      "kind": "text",
+      "page": 4,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:3912-3962",
+      "quote": "的定位值瓜无误差的假设下 , 根据 4 与力的不同关系 , 分情形分析投弹落点 (f,s) 能够和",
+      "char_start": 3912,
+      "char_end": 3962,
+      "content_hash": "13547de55aa39da924c5f3ddb0cc603a6662fd3a6db69e3a93de6a93a06a7308",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P022-92aec74dd5",
+      "kind": "text",
+      "page": 22,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "assumption",
+      "locator": "char:15385-15414",
+      "quote": "(3) 模型建立基于潜艇瞬时静止假设 , 缺乏一定实际性",
+      "char_start": 15385,
+      "char_end": 15414,
+      "content_hash": "92aec74dd5c3dc677c2d8766125179e4374fef9c2918a725181e0bff4a230851",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P019-c8b4a0ba32",
+      "kind": "text",
+      "page": 19,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "model",
+      "locator": "char:13479-13506",
+      "quote": "由于 P( 少 ) 表述式复杂 , 只能采用数值解法。",
+      "char_start": 13479,
+      "char_end": 13506,
+      "content_hash": "c8b4a0ba32f50e9bf4d86b6eae1adc8f6c55f51cbb26dd9b6313618a958ef1dd",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-e91d211050",
+      "kind": "text",
+      "page": 23,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "model",
+      "locator": "char:15773-15804",
+      "quote": "反潜巡逯机使用航空自导深弹攻潜效能及方法研究 [ 小数字海",
+      "char_start": 15773,
+      "char_end": 15804,
+      "content_hash": "e91d211050a904e101bf3432f728da8d12164ebb87546a1c76cdeade13333fc2",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-bd2e42b8c9",
+      "kind": "text",
+      "page": 1,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:443-486",
+      "quote": "针对问题一 , 由条件可知 , 潜艇中心位置深度定位没有说差 , 且两水平定位的误差",
+      "char_start": 443,
+      "char_end": 486,
+      "content_hash": "bd2e42b8c9d3d282a51679f97c85239e0f992988c6ad5384b657328997fed2b1",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-fb72826d05",
+      "kind": "text",
+      "page": 1,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:994-1037",
+      "quote": "针对问题二 , 在问题一的基础上 , 增加考虑潜艇中心位置的深度定位误差问题 . 囡",
+      "char_start": 994,
+      "char_end": 1037,
+      "content_hash": "fb72826d0514c1686fa08c39a573d2247842ee63d82aa6f806efa947cdb03d35",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-207a0b53f4",
+      "kind": "text",
+      "page": 1,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:1037-1078",
+      "quote": "为深度方向误差与水平方向涉差相互独立 , 所以闰题一中所求的使得投弹佐中概率最大",
+      "char_start": 1037,
+      "char_end": 1078,
+      "content_hash": "207a0b53f4af44280c315c9d91b906f6babf2f8b0f4fb030f3d959aaf0534742",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-75398db6c0",
+      "kind": "text",
+      "page": 2,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:1780-1823",
+      "quote": "在一定条件下 , 反潜攻击方可知潜艇航向 , 由于存在定位误差 , 潜艇中心实际位置",
+      "char_start": 1780,
+      "char_end": 1823,
+      "content_hash": "75398db6c0773c0c04224370a1b38039dba3f115d296fb4e599fdfc09485fad5",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-01bce83112",
+      "kind": "text",
+      "page": 2,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:2151-2194",
+      "quote": "问题一 : 投射一枚深弹 , 潜艇中心位置深度已知且无误差 , 两个水平坐标定位均服",
+      "char_start": 2151,
+      "char_end": 2194,
+      "content_hash": "01bce8311299e46fd31003faded687511b813f311bbc1dc9f78a4327d1856cad",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-1e6dbcea93",
+      "kind": "text",
+      "page": 2,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:2343-2377",
+      "quote": "问题二 : 仍投射一娓深弹 , 但潜艇中心位置各方向的定位均有误差。",
+      "char_start": 2343,
+      "char_end": 2377,
+      "content_hash": "1e6dbcea93f606288db4c6ab04e9d001e8c78be1409968a2de7f5f5bb6d8d838",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-f8dc963a3d",
+      "kind": "text",
+      "page": 2,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:2663-2706",
+      "quote": "问题一 : 根据题目条件可知 , 湛艇中心位置的深度定位没有误差 , 两个水平坐标定",
+      "char_start": 2663,
+      "char_end": 2706,
+      "content_hash": "f8dc963a3dcc44581583b4582b6481d9dc9cda5a2632dcd429f705efd1955898",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-d0a29455ef",
+      "kind": "text",
+      "page": 3,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:3019-3062",
+      "quote": "问题二 : 与问题一不同 , 问题二在潜艇中心的源度方向上也存在误差 , 但由于深度",
+      "char_start": 3019,
+      "char_end": 3062,
+      "content_hash": "d0a29455ef811d8702f99eea8e115e9d282b46673e4e599f8f30825e35489343",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-87f92e8f6d",
+      "kind": "text",
+      "page": 3,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:3062-3103",
+      "quote": "方向的浩差与水平方向上的误差相互独立 , 所以问题一中所得到的水平方向方案仍然成",
+      "char_start": 3062,
+      "char_end": 3103,
+      "content_hash": "87f92e8f6d1a0ea3d71cf9d3c758582e58c1240c9b1805edce6db3e2a3ee18dc",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-5ba8154f63",
+      "kind": "text",
+      "page": 4,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:4147-4192",
+      "quote": "在目标坐标系中 , 潜艇中心位置的水平位置定位坐标为 (0.0) , 但由于测量误差 ,",
+      "char_start": 4147,
+      "char_end": 4192,
+      "content_hash": "5ba8154f632e128a550fe852691881a874e587079528d867d9911cdba8e5a7e4",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P014-1e2c13ee2a",
+      "kind": "text",
+      "page": 14,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "validation",
+      "locator": "char:9979-10018",
+      "quote": "如果潜艇中心的深度方向有误差 , 由于深度方向的误差与平面两个水平方向的误差",
+      "char_start": 9979,
+      "char_end": 10018,
+      "content_hash": "1e2c13ee2ae01491db61951f25d444e41b321eab0bba01d6d58982d101adb39d",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-FIGURE-P004-4a60da783a",
+      "kind": "figure",
+      "page": 4,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 1",
+      "locator": "FIGURE-001",
+      "quote": "卯图 1 所神",
+      "char_start": 4774,
+      "char_end": 4777,
+      "content_hash": "4a60da783a48b2017f280d92189ec4469bcbb6c780e5d5a0913fda46637bf1c1",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P005-cb9ec935a5",
+      "kind": "figure",
+      "page": 5,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 1",
+      "locator": "FIGURE-002",
+      "quote": "图 1 情形二引爆深度 4 位置示惹图",
+      "char_start": 4802,
+      "char_end": 4805,
+      "content_hash": "cb9ec935a56d01e08a123b4f6f48769493d1624ed7dfdf15ef481678837c2b19",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P005-c6b27d8156",
+      "kind": "figure",
+      "page": 5,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 2",
+      "locator": "FIGURE-003",
+      "quote": "如图 2 朋影部分所示",
+      "char_start": 5137,
+      "char_end": 5140,
+      "content_hash": "c6b27d8156adddef2d977591f74b5694f4bcc9c4aeae95c4bccc31433c400f85",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P006-f3e78d22db",
+      "kind": "figure",
+      "page": 6,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 3",
+      "locator": "FIGURE-004",
+      "quote": "如图 3 阳影部分所示",
+      "char_start": 5605,
+      "char_end": 5608,
+      "content_hash": "f3e78d22dbd3ecfd3cc0d67075b3a72d493aa11f3307393ddda68a3f21c79bea",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P006-788e0e7d92",
+      "kind": "figure",
+      "page": 6,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 3",
+      "locator": "FIGURE-005",
+      "quote": "图 3 情形三可和中范围区域口",
+      "char_start": 5617,
+      "char_end": 5620,
+      "content_hash": "788e0e7d92a800d0274eca60da4fd832d910e1e2078ca4c0fda7eac10911ee60",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P006-638ae98a7e",
+      "kind": "figure",
+      "page": 6,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 4",
+      "locator": "FIGURE-006",
+      "quote": "如图 4 所示",
+      "char_start": 5742,
+      "char_end": 5745,
+      "content_hash": "638ae98a7e99ce8736cdd03bfc72da4426089df69bdec764bfba815b626cd760",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P006-d654a1c91a",
+      "kind": "figure",
+      "page": 6,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 4",
+      "locator": "FIGURE-007",
+      "quote": "图 4 情形二引爆深度 4 位置示意图",
+      "char_start": 5750,
+      "char_end": 5753,
+      "content_hash": "d654a1c91a1a37e8bfd5058a9fa893ed670c9fdee4c2a4f5ba25a3064985eca5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-f3c17249d2",
+      "kind": "figure",
+      "page": 7,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 5",
+      "locator": "FIGURE-008",
+      "quote": "加图 5 阳影部分所示",
+      "char_start": 6134,
+      "char_end": 6137,
+      "content_hash": "f3c17249d27bbe45a8dc767ef6a34720f9eb643f8631ef566de949191123c2e2",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-1b96ad4770",
+      "kind": "figure",
+      "page": 7,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 5",
+      "locator": "FIGURE-009",
+      "quote": "图 5 情形四可命中范围区域 52,",
+      "char_start": 6146,
+      "char_end": 6149,
+      "content_hash": "1b96ad47702e867d0fd16da679f5dc8e74ba68c172120ded38761b12e9e817ef",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-5167533434",
+      "kind": "figure",
+      "page": 7,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 6",
+      "locator": "FIGURE-010",
+      "quote": "如图 6 阮影部分所示",
+      "char_start": 6361,
+      "char_end": 6364,
+      "content_hash": "5167533434633eb2722df600625e0d7b1b99063210007ce9bc78e75a7f03ac21",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-38074bbb08",
+      "kind": "figure",
+      "page": 7,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 6",
+      "locator": "FIGURE-011",
+      "quote": "图 6 情形五可何中范围区域 52:",
+      "char_start": 6373,
+      "char_end": 6376,
+      "content_hash": "38074bbb08408f8ef8ec30e00a3c5d9e588f2349647639a6a639c07448931eeb",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P008-da9fe474e2",
+      "kind": "figure",
+      "page": 8,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 2",
+      "locator": "FIGURE-012",
+      "quote": "共中 Q,,Q,,Q,,Q: 分别如图 2、 图 3、 图 5 与国 6 所示。",
+      "char_start": 6690,
+      "char_end": 6693,
+      "content_hash": "da9fe474e21ff3f87c459426b9ee058272b8ac01cac25fcc7e3fd9873b011ed5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P009-879d800a5e",
+      "kind": "figure",
+      "page": 9,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 7",
+      "locator": "FIGURE-015",
+      "quote": "图 7 可和中范围 92 5.0, 的重发图",
+      "char_start": 7189,
+      "char_end": 7192,
+      "content_hash": "879d800a5eb546a1a8bd72afb126a20be9e55ddc9d1ba9f6b43ea52eda1278e4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P009-2ef23e97f6",
+      "kind": "figure",
+      "page": 9,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 3",
+      "locator": "FIGURE-016",
+      "quote": "其中 Q 如图 3 所示。 |",
+      "char_start": 7498,
+      "char_end": 7501,
+      "content_hash": "2ef23e97f642a119fd332bda886edf985ecb12bca707e2f3d7c7a3e772ef660b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P009-e2ebf2af08",
+      "kind": "figure",
+      "page": 9,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 8",
+      "locator": "FIGURE-017",
+      "quote": "注 ; 引理 1 的几何意义如图 8 所示 , 即当定长度的积分区间的中点在原点时 , 积分",
+      "char_start": 7818,
+      "char_end": 7821,
+      "content_hash": "e2ebf2af080b7c2c9bac00195dae572d1d32d743813a54174ee6851e7cc89dbc",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P010-7150479110",
+      "kind": "figure",
+      "page": 10,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 8",
+      "locator": "FIGURE-018",
+      "quote": "图 8 正态分布示意图",
+      "char_start": 7881,
+      "char_end": 7884,
+      "content_hash": "7150479110e4aca3961607cafb61d43471f32412b53de22f6bd6fdf0a4ac3ef9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-d7b17048d3",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 3",
+      "locator": "FIGURE-019",
+      "quote": "证明 ; 将图 3 坐标系按逆时针族转 9 = '!9_菩蒙宫'至_j菖罗J卡i耆FJ苎王昼靠丑系.】蓦言j示l雪I刁〕饕萤雨髦晕薯蜃_...'薯弓元 「 表示 ,",
+      "char_start": 8434,
+      "char_end": 8437,
+      "content_hash": "d7b17048d3c78cf8ce6f5ea7503fddca67f914eb63d5c45712204fde864a9616",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-73e6ddfacd",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 9",
+      "locator": "FIGURE-020",
+      "quote": "纵轴用 “ 表示 ( 如图 9 )",
+      "char_start": 8521,
+      "char_end": 8524,
+      "content_hash": "73e6ddfacd5c01a02271f294da716409ce9534c7e362ed3799c6a203314a0e3b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-72eb89cc58",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 9",
+      "locator": "FIGURE-021",
+      "quote": "图 9 旋转后新坐标系",
+      "char_start": 8528,
+      "char_end": 8531,
+      "content_hash": "72eb89cc581edb4409ce974e9721524a7c2576aa7fcacc51021f7561920b79dc",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-a17abb5876",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 10",
+      "locator": "FIGURE-022",
+      "quote": "为方便观察 , 将新坐标系摆正如图 10。",
+      "char_start": 8649,
+      "char_end": 8653,
+      "content_hash": "a17abb58764feb120c8094b10116f33ff45eedf2b8c403c0cad02f4bd6219db5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-0010b11223",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 10",
+      "locator": "FIGURE-023",
+      "quote": "图 10 摄正后新坐标系",
+      "char_start": 8656,
+      "char_end": 8660,
+      "content_hash": "0010b112233bb040febc853f50da9fbecd168ba71bf74df4bd289c6bfa8f4b9b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-f79944251c",
+      "kind": "figure",
+      "page": 11,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 11",
+      "locator": "FIGURE-024",
+      "quote": "其他参数或边界曲线表达式如图 11 所示",
+      "char_start": 8743,
+      "char_end": 8747,
+      "content_hash": "f79944251cd126b0574b9d0471c46b0f19d41235ee22dacbb01a752cd8c9f7a3",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P012-32aea60363",
+      "kind": "figure",
+      "page": 12,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 11",
+      "locator": "FIGURE-025",
+      "quote": "图 11 边界曲线表达式示意图",
+      "char_start": 8796,
+      "char_end": 8800,
+      "content_hash": "32aea603632efcb4238943c81a58aa8f078b49b63e96f24ebd22bcdd17cf932e",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P014-83c3e5b57c",
+      "kind": "figure",
+      "page": 14,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 12",
+      "locator": "FIGURE-026",
+      "quote": "图 12 ),",
+      "char_start": 10209,
+      "char_end": 10213,
+      "content_hash": "83c3e5b57c62c8af9f9a622f9eceda30c5158df23e6079fdba89046a9a3460bf",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P015-e78c179540",
+      "kind": "figure",
+      "page": 15,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 12",
+      "locator": "FIGURE-027",
+      "quote": "图 12 d 与实际深度最小值 1 相对位置图",
+      "char_start": 10355,
+      "char_end": 10359,
+      "content_hash": "e78c17954070a061c1a891aa4fff6f4a24a8c22aa69b5ac6f8a30b7567411597",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P015-88bde50c2a",
+      "kind": "figure",
+      "page": 15,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 13",
+      "locator": "FIGURE-028",
+      "quote": "入到长方形区域 ,,( 如图 13 ) 时被命中 , 帜中概案为",
+      "char_start": 10732,
+      "char_end": 10736,
+      "content_hash": "88bde50c2af4c0462bab7ebc77978c2aa64453a84270b750763687506d1c8279",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P015-226bb25865",
+      "kind": "figure",
+      "page": 15,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 13",
+      "locator": "FIGURE-029",
+      "quote": "图 13 团区域 52,",
+      "char_start": 10809,
+      "char_end": 10813,
+      "content_hash": "226bb25865a91a800ba6adb40dbf5b706389b6ad685c78068528d41c1717b943",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-8adc19e483",
+      "kind": "figure",
+      "page": 16,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 14",
+      "locator": "FIGURE-030",
+      "quote": "“ = 川尻 -(a -= - 万 FJ 的圆盛 , 此时潜艇在水平中心位置萱入到区域 Q,,( 加图 14》",
+      "char_start": 10992,
+      "char_end": 10996,
+      "content_hash": "8adc19e4830870847998ee2797ae1d8ecc2a8e206317c4ec943235b7a0852f87",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-6392d6973e",
+      "kind": "figure",
+      "page": 16,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 14",
+      "locator": "FIGURE-031",
+      "quote": "图 14 国区域 ,",
+      "char_start": 11139,
+      "char_end": 11143,
+      "content_hash": "6392d6973efbb74ba55b3feaaa7c194e2f583456560ffd2c1ed8706ec3a9fd72",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-b84dfffa2b",
+      "kind": "figure",
+      "page": 16,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 15",
+      "locator": "FIGURE-032",
+      "quote": "炼和中 , 此时潜脱在水平中心位置落入到区域 582 〔 如图 15 5 时被命中 , 和中概率为",
+      "char_start": 11233,
+      "char_end": 11237,
+      "content_hash": "b84dfffa2bbc643b24f62e51db41932b3cfa2f4d0970eeff9c38b9e78b685b5d",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P017-83c4cbeb79",
+      "kind": "figure",
+      "page": 17,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 15",
+      "locator": "FIGURE-033",
+      "quote": "图 15 团区域 Q",
+      "char_start": 11418,
+      "char_end": 11422,
+      "content_hash": "83c4cbeb79f0c1e41bbddfb8c29beb0901fee4267e78e2dc1bcd6a7cc8110602",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P017-40a21e1797",
+      "kind": "figure",
+      "page": 17,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 16",
+      "locator": "FIGURE-034",
+      "quote": "心位置落入到区域 Q.,〔《如图 16》 时被命中 , 和中概率为",
+      "char_start": 11544,
+      "char_end": 11548,
+      "content_hash": "40a21e17970136bbb47817afd17a9d18f0af7762d085f50df3bd3db71dea3fdf",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P017-a10b5e384f",
+      "kind": "figure",
+      "page": 17,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 16",
+      "locator": "FIGURE-035",
+      "quote": "图 16 国区域口。",
+      "char_start": 11682,
+      "char_end": 11686,
+      "content_hash": "a10b5e384f9166163b492d3aa9e6a0872e5365ef9f8c1d191fc2c105f55e06b2",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P019-c6062b2431",
+      "kind": "figure",
+      "page": 19,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 17",
+      "locator": "FIGURE-036",
+      "quote": "BRSP4, , 结果如图 17 所示 , 可以确定使得概率最大的 4 在 [156.160] 之间",
+      "char_start": 13700,
+      "char_end": 13704,
+      "content_hash": "c6062b2431930b3a73ff193aa2b4ae751046eb9e8b4417a4b2f0f136b91d26b9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P019-d8af342096",
+      "kind": "figure",
+      "page": 19,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 18",
+      "locator": "FIGURE-037",
+      "quote": "2), 结果如图 18 , 得当定深引信引爆深度为 137.56m 吊和中潜艇概率最大 , 最大概率",
+      "char_start": 13813,
+      "char_end": 13817,
+      "content_hash": "d8af342096f62d319d03c969ffd3a79ede4d2b97efbca4dbc5b56719731ea1bd",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P020-c002dfd36a",
+      "kind": "figure",
+      "page": 20,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 17",
+      "locator": "FIGURE-038",
+      "quote": "图 17 [87.5.180] 内 f 的步长为 1 时和中潜艇的概率与 4 的关系",
+      "char_start": 13933,
+      "char_end": 13937,
+      "content_hash": "c002dfd36a25cac09eaef4ef7aed2989ff46edaddff2351cd810626b8ebf2883",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P020-16fcc9344d",
+      "kind": "figure",
+      "page": 20,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 18",
+      "locator": "FIGURE-039",
+      "quote": "图 18 [156.160] 内 d 的步长为 0.01 时余中潜艇的概率与 4 的关系",
+      "char_start": 14048,
+      "char_end": 14052,
+      "content_hash": "16fcc9344d1adcb09fe683c901009332e24c2045cbe6d061222539c01261ac33",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P020-03f97e57b8",
+      "kind": "figure",
+      "page": 20,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 19",
+      "locator": "FIGURE-040",
+      "quote": "【】F:上遇+'=董「L圭f】r 的情形。 炸弹编号如图 19 所示。 此时 1 号炸弹命中潜艇的概率与问题 2",
+      "char_start": 14422,
+      "char_end": 14426,
+      "content_hash": "03f97e57b8248b44b60308fd706cbbae0872c08dd1efae6a2474719c2e20f7d3",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-04d7a78d30",
+      "kind": "figure",
+      "page": 21,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "图 19",
+      "locator": "FIGURE-041",
+      "quote": "图 19 九枚炸弹命中范国相切的情玟及炸弹编号",
+      "char_start": 14529,
+      "char_end": 14533,
+      "content_hash": "04d7a78d3004ec2ee0b99acc2e7a8164cdeba19230245b7e44d23a8a9983aa53",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TEXT-P022-1ee14a5373",
+      "kind": "text",
+      "page": 22,
+      "section": "反潜航空深弹命中概率的优化问题",
+      "label": "model",
+      "locator": "page:22",
+      "quote": "蒙特卡洛模拟法计算航空自导深弹佐中概率 [.",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "1ee14a5373ae94c4f1e7b21cff55909d1b4082c2cfd3233caad7fa3239d2b6b9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "假设潜艇采取静默时 , 立即静止",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-d8cb88ec41"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-002",
+      "statement": "假设反潜攻击方在一定条件下知道潜艇航向",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-fb8141b581"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-003",
+      "statement": "假设深弹之间互不影响 , 不会引起连镁爆炸等情况",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-cbdca48220"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-004",
+      "statement": "(3) 模型建立基于潜艇瞬时静止假设 , 缺乏一定实际性",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P022-92aec74dd5"
+      ],
+      "provenance": "HEURISTIC"
+    }
+  ],
+  "variables": [],
+  "data": {
+    "sources": [],
+    "fields": [],
+    "data_types": [],
+    "preprocessing": [],
+    "missing_value_strategy": "",
+    "outlier_strategy": "",
+    "evidence_ids": []
+  },
+  "modeling_chain": [
+    {
+      "order": 1,
+      "subproblem_id": "Q1",
+      "model_id": "model-montecarlosimulation-748bbc93bd",
+      "algorithm_ids": [],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P022-1ee14a5373"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "model-montecarlosimulation-748bbc93bd",
+      "canonical_name": "Monte Carlo Simulation",
+      "display_name": "Monte Carlo Simulation",
+      "aliases": [
+        "蒙特卡洛模拟",
+        "Monte Carlo Method",
+        "随机模拟"
+      ],
+      "category": "simulation",
+      "task_types": [
+        "uncertainty_propagation",
+        "scenario_analysis",
+        "probability_estimation"
+      ],
+      "role": "通过重复随机采样近似复杂系统的分布、概率或期望",
+      "description": "由参考目录识别，需结合论文证据复核。",
+      "assumptions": [],
+      "inputs": [],
+      "outputs": [],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "定义随机输入和联合分布",
+          "description": "定义随机输入和联合分布",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "明确输出指标与事件",
+          "description": "明确输出指标与事件",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "固定随机种子并生成样本",
+          "description": "固定随机种子并生成样本",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "对每个样本运行模型",
+          "description": "对每个样本运行模型",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "统计均值、方差、分位数和置信区间",
+          "description": "统计均值、方差、分位数和置信区间",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "检查样本量收敛与分布假设敏感性",
+          "description": "检查样本量收敛与分布假设敏感性",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P022-1ee14a5373"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "适用复杂非线性系统",
+        "实现灵活",
+        "易并行"
+      ],
+      "weaknesses": [
+        "收敛速度通常为 O(N^-1/2)",
+        "结果依赖分布假设",
+        "计算量可能大"
+      ],
+      "use_when": [
+        "解析求解困难",
+        "输入具有不确定性",
+        "关注风险或概率"
+      ],
+      "avoid_when": [
+        "随机输入分布完全无法合理设定",
+        "单次仿真极其昂贵且无代理模型"
+      ],
+      "alternatives": [
+        "Latin Hypercube Sampling",
+        "Quasi-Monte Carlo",
+        "Bootstrap"
+      ],
+      "combinations": [
+        "Sensitivity Analysis",
+        "Surrogate Model"
+      ],
+      "complexity": {
+        "time": "O(N·C_f)",
+        "space": "O(N) or streaming O(1)",
+        "notes": "N 为样本数"
+      },
+      "validation_methods": [
+        "重复 seed",
+        "样本量收敛",
+        "置信区间",
+        "分布敏感性"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P022-1ee14a5373"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "algorithms": [],
+  "validation": {
+    "methods": [],
+    "metrics": [],
+    "results": [],
+    "sensitivity_analysis": [],
+    "robustness_checks": [],
+    "evidence_ids": []
+  },
+  "limitations": [
+    "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+  ],
+  "innovations": [],
+  "case": {
+    "id": "case-2024-d033",
+    "title": "反潜航空深弹命中概率的优化问题",
+    "domain": "unknown",
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "year": 2024,
+    "award": "优秀论文",
+    "problem_id": "D",
+    "problem_fingerprint": {
+      "problem_types": [
+        "uncertainty_propagation",
+        "scenario_analysis",
+        "probability_estimation"
+      ],
+      "data_types": [],
+      "targets": [],
+      "constraints": [],
+      "domain_keywords": []
+    },
+    "subproblem_mapping": [
+      {
+        "subproblem_id": "Q1",
+        "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "model_ids": [
+          "model-montecarlosimulation-748bbc93bd"
+        ],
+        "algorithm_ids": [],
+        "data_flow": "",
+        "rationale": "启发式占位映射",
+        "evidence_ids": []
+      }
+    ],
+    "results": [],
+    "transferable_insights": [
+      "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+    ],
+    "pitfalls": [
+      "仅根据名称命中可能产生误判。"
+    ],
+    "innovations": [],
+    "evidence_ids": []
+  },
+  "code_recipes": [],
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  }
+}

@@ -1,0 +1,1689 @@
+{
+  "schema_version": "1.0.0",
+  "papers": {
+    "paper-2024-c234": {
+      "ir": {
+        "schema_version": "1.0.0",
+        "paper_id": "paper-2024-c234",
+        "source": {
+          "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\C234.pdf",
+          "sha256": "7e893c9a81c34d7ecdad634f3a9b1d8a2889460098f9150f0311a026d08cd6a2",
+          "parser": "pymupdf-ocr",
+          "parsed_at": "2026-09-04T17:38:39+00:00",
+          "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C234-基于遗传算法的最优种植策略\\workflow\\parsed\\normalized_paper.md",
+          "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\C234-基于遗传算法的最优种植策略\\workflow\\parsed\\paper_structure.json"
+        },
+        "bibliographic": {
+          "title": "基于遗传算法的最优种植策略",
+          "authors": [],
+          "year": 2024,
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "award": "优秀论文",
+          "problem_id": "C",
+          "abstract": "山区耕地资源匪乏 , 因此为了提高乡村的经济效益 , 必须充分利用有限的耕地的 资源 , 而选择合适的农作物品种 , 指定最优种森策略是其关键之处 , 也是本文坚待解 决的问题。",
+          "keywords": [
+            "Linear Programming",
+            "Genetic Algorithm",
+            "Simulated Annealing"
+          ],
+          "language": "zh-CN"
+        },
+        "problem": {
+          "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=7e893c9a81c34d7ecdad634f3a9b1d8a2889460098f9150f0311a026d08cd6a2 --> # 基于遗传算法的最优种植策略 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 基于逯传算法的最优种植策略 摘要 山区耕地资源匪乏 , 因此为了提高乡村的经济效益 , 必须充分利用有限的耕地的 资源 , 而选择合适的农作物品种 , 指定最优种森策略是其关键之处 , 也是本文坚待解 决的问题。 问题一 ; 本文以森年菲耕地所种菪农作物的面积作为决策变量 , 建立以 2024 年到 2030 年利润总和为目标离数的优化模型。 该模型满足约东有 : 耕地面积限制、 种植面 积不宥太小、 种植地不能太分散、 轮作制度、 豆类种植要求、 各类型耕地种植农作物 类型限制、 大白菜、 白萝卜和红莪卜的季节性限制和食用菌种植环境要求。 为了求解 该优化模型 , 本文选择使用逻传算法求解 , 最终得到情况 1 一一超过部分滞销 , 造成 浪费的总利添为 ; 29276719.5 元 ; 情况 2 一一超过部分按 2023 年销售价格的 3084 降价 出售的总利润为 : 42837286.75 元 间题二 : 对于农作物未来预期销售量、 亩产量、 种植成本和销售价格的不确定性 , 本文引入满足均分分布的不确定因子 , 再利用对以上 4 种指标进行修正 ; 对于农作物 潜在的种植风险 , 综合该乡村地处华北山区 , 本文考虑了华北地区常出现的两种自然 灾害 , 分别为干旱与寒潮 , 其主要",
+          "overall_objective": "启发式模式未可靠抽取总体目标。",
+          "subproblems": [
+            {
+              "id": "Q1",
+              "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "task_types": [
+                "allocation",
+                "scheduling",
+                "minimization",
+                "maximization"
+              ],
+              "inputs": [],
+              "outputs": [],
+              "constraints": [],
+              "evidence_ids": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "E-TEXT-P001-38cbc3c138",
+            "kind": "text",
+            "page": 1,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:1233-1277",
+            "quote": "的真关性 , 本文假设前一年销售量作为今年的市场需求量 , 再利用供需关系 , 得到预",
+            "char_start": 1233,
+            "char_end": 1277,
+            "content_hash": "38cbc3c138864071bbe6c5a8f9ab3c43e7126c2fe8b32cb002ddc6ddc6090c7c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-3606d622d6",
+            "kind": "text",
+            "page": 2,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:2546-2588",
+            "quote": "为了得到 2023 年的销售量 , 假设 2023 农作物全部正常售出 , 然后",
+            "char_start": 2546,
+            "char_end": 2588,
+            "content_hash": "3606d622d6eac973aa66009b67b1989e68f32bf156b04d6858db1d587a607e7a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-8564265e70",
+            "kind": "text",
+            "page": 3,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:2986-3029",
+            "quote": "假设在一定范园内变化的随机变量服从均匀分布 , 如预期销售量、 亩产量等 ; 对于农",
+            "char_start": 2986,
+            "char_end": 3029,
+            "content_hash": "8564265e70b2e5378934f5f62eb46675ed45438bacf87217d604433ad9532b47",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-f99f4c8f85",
+            "kind": "text",
+            "page": 4,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:3729-3745",
+            "quote": "1 假设 2023 年产销相等。",
+            "char_start": 3729,
+            "char_end": 3745,
+            "content_hash": "f99f4c8f85a3c24e251b1acf8244601201a643aa566ae8a3d7956e40eecd63c0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-7ef05cd48e",
+            "kind": "text",
+            "page": 4,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:3748-3770",
+            "quote": "假设每种农作物种植面积不小于种植地的一半。",
+            "char_start": 3748,
+            "char_end": 3770,
+            "content_hash": "7ef05cd48e383626703c685d6277d6fb05b02bdb728be4c3fa392717a462d8c8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-32b3009d24",
+            "kind": "text",
+            "page": 4,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:3773-3811",
+            "quote": "假设农作物未来的预期销售量、 亩产量、 种植成本和销售价格的年变化率满足",
+            "char_start": 3773,
+            "char_end": 3811,
+            "content_hash": "32b3009d24d062eb416585244efb23493c77ea2ed36d8bce0f16cf53555eecef",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P004-52c4630c72",
+            "kind": "text",
+            "page": 4,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:3819-3850",
+            "quote": "假设为丁管理方便 , 粮食类农作物在每块耕地上仅能种植一种。",
+            "char_start": 3819,
+            "char_end": 3850,
+            "content_hash": "52c4630c725f7eb887cb1eb432658eeed5e3aed0795b46750c213b3302189840",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P007-938b5c8565",
+            "kind": "text",
+            "page": 7,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:6168-6217",
+            "quote": "得到 2023 年的预期销售量 , 本文假设 2023 年所有农作物全部卖出 , 其季汝总产量如",
+            "char_start": 6168,
+            "char_end": 6217,
+            "content_hash": "938b5c85651a226c979b411f16886c10a06863e771cbddfdac50e247becf22b2",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P008-4382b3bc9a",
+            "kind": "text",
+            "page": 8,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:7222-7269",
+            "quote": "示第 } 季第种农作物预期的销售量 , 根据假设 , 这里使用的 2023 年的销售量作为以",
+            "char_start": 7222,
+            "char_end": 7269,
+            "content_hash": "4382b3bc9ae1f95624b1da2031c1e09ed587d6980c26a5439673eef1bad3d4db",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P009-e037833d64",
+            "kind": "text",
+            "page": 9,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:8216-8258",
+            "quote": "其中 , 根据实际土地划分与附件 2 所给情况 , 本文假设每种农作物种植面积不应",
+            "char_start": 8216,
+            "char_end": 8258,
+            "content_hash": "e037833d64112c087debc9ff2562c111362c79538576889b361a6eca95885d07",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-bfdc854df1",
+            "kind": "text",
+            "page": 14,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:12096-12117",
+            "quote": "而题中假设 2023 的预期销售量作为",
+            "char_start": 12096,
+            "char_end": 12117,
+            "content_hash": "bfdc854df198208321860c1e463f2ff4dfc1d11b969b52f1b3c885ee596d3693",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P014-7f92e19e80",
+            "kind": "text",
+            "page": 14,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:12260-12298",
+            "quote": "再假设一种极端情况 ,2025、2027、2029 年的方案与 2023",
+            "char_start": 12260,
+            "char_end": 12298,
+            "content_hash": "7f92e19e8024c8cf602ab6761f7498fd4fd412bfd24d917eec4c156d0a611657",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-a53b5eaef6",
+            "kind": "text",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:13997-14042",
+            "quote": "参考相关报道 , 本文假设蹄潼天气下 ; 对应季次蔬菀减产 3006Ml, 食用茧的减产",
+            "char_start": 13997,
+            "char_end": 14042,
+            "content_hash": "a53b5eaef60d2c2a04c42cd1b3a0caf33d034124e37f7a0b1ab4b478ce36986f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-d39a04cb5c",
+            "kind": "text",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:14278-14326",
+            "quote": "旱农作物 , 参考祖关报道 , 本文假设干旱天气下 : 抗旱农作物湘产 1096, 对应季次非",
+            "char_start": 14278,
+            "char_end": 14326,
+            "content_hash": "d39a04cb5c06ab7705a2dbcd7159e2a54ed23e35e69e101c3103453098abcbc8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P021-f4fe77f0b8",
+            "kind": "text",
+            "page": 21,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:17753-17794",
+            "quote": "由于文中假设 2023 年产销相同 , 本文假设以前一年销售量设定为今年的农作物",
+            "char_start": 17753,
+            "char_end": 17794,
+            "content_hash": "f4fe77f0b838f99a2e173e699eb7bee1603698e05a623a4f75cd860893ea514d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P023-3c06307e9e",
+            "kind": "text",
+            "page": 23,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "assumption",
+            "locator": "char:18927-18960",
+            "quote": "考虑不确定性国素时假设变量服从均匀分布 , 具有简单性和普造性。",
+            "char_start": 18927,
+            "char_end": 18960,
+            "content_hash": "3c06307e9e23cf5d6e1596d29151fd5b2520dc7b2124c869e3c75bd438a96d4a",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-1b0c05e796",
+            "kind": "text",
+            "page": 1,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:531-577",
+            "quote": "该优化模型 , 本文选择使用逻传算法求解 , 最终得到情况 1 一一超过部分滞销 , 造成",
+            "char_start": 531,
+            "char_end": 577,
+            "content_hash": "1b0c05e796239d6547bad68ae935652681d5fd6b0e9f3fba7962ce25600e4066",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-30ff25e045",
+            "kind": "text",
+            "page": 3,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:3201-3243",
+            "quote": "年利润总和为目标函数的单变量线性规划模型 , 并采用启发式速传算法进行求解 , 再",
+            "char_start": 3201,
+            "char_end": 3243,
+            "content_hash": "30ff25e045fcf4e77cb3692f11c3891b1dbfcd466213caf37ae8dd512b9b828f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P012-56ff804b9c",
+            "kind": "text",
+            "page": 12,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:10419-10465",
+            "quote": "综上 , 本文建立了以多村 2024 年 ~-2030 年总利润为目标的农作物最优策略模型",
+            "char_start": 10419,
+            "char_end": 10465,
+            "content_hash": "56ff804b9cd56c5ec5c201cac0bfadcf172da988c9fb60ba7164221aaa1d322e",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-875ec684a5",
+            "kind": "text",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:14415-14460",
+            "quote": "针对不确定性 , 本文引入了变化率 e 怡 , 需要对厚模型的预期销量、 言产量、 种植",
+            "char_start": 14415,
+            "char_end": 14460,
+            "content_hash": "875ec684a57a6637be4d132fad8a09729aa45fe8f722d9d7d53f37d83c2ea2dd",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P023-1cd980f456",
+            "kind": "text",
+            "page": 23,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:19126-19165",
+            "quote": "求解模型时采用了遇传算法进行求解 , 并对算法进行了优化 , 收敛追度较快。",
+            "char_start": 19126,
+            "char_end": 19165,
+            "content_hash": "1cd980f4562f39c6577d86a99ee7cd22d4a0a0b5562ade269042b509e7f12510",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P024-23b1b53600",
+            "kind": "text",
+            "page": 24,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:19505-19548",
+            "quote": "该地区所面临的可能情况 , 所建立的模型层层递进 , 非通过遗传算法进行求解 , 经",
+            "char_start": 19505,
+            "char_end": 19548,
+            "content_hash": "23b1b53600c138efd322a7f26464e6d804b13f7ea11ab96b99479d3038c8c35c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P024-db864b49df",
+            "kind": "text",
+            "page": 24,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "model",
+            "locator": "char:19590-19627",
+            "quote": "用士地资源的情况下建立的单目标规划模型以及求解所用算法可以推广到更一般的",
+            "char_start": 19590,
+            "char_end": 19627,
+            "content_hash": "db864b49dfb7d51325b04ff7fc9bc9adae32eb7377ef4378bbea3cfaacf55150",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-FIGURE-P003-2bb90e0a79",
+            "kind": "figure",
+            "page": 3,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 1",
+            "locator": "FIGURE-001",
+            "quote": "图 1 总思路图",
+            "char_start": 3691,
+            "char_end": 3694,
+            "content_hash": "2bb90e0a79f2dc29737972a022b738380a0866e0ada9ea52961d809077da5a29",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P005-bd083417e9",
+            "kind": "figure",
+            "page": 5,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 2",
+            "locator": "FIGURE-002",
+            "quote": "图 2 农作物所需要耕地类型图",
+            "char_start": 4787,
+            "char_end": 4790,
+            "content_hash": "bd083417e9e5322b2516adeec44afe1d2429bd9648f87b05a7b6e045ecee0e58",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P007-a07322efdf",
+            "kind": "figure",
+            "page": 7,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 3",
+            "locator": "FIGURE-003",
+            "quote": "图 3 2023 年农作物每季次的预期销呈里医",
+            "char_start": 6223,
+            "char_end": 6226,
+            "content_hash": "a07322efdf435a99f4786972dc4d540345b2c8673067908e133b98c8269532cc",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P007-243dcc429e",
+            "kind": "figure",
+            "page": 7,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 4",
+            "locator": "FIGURE-004",
+            "quote": "图 4 2023 年不同季次下农作物的单位利润图",
+            "char_start": 6350,
+            "char_end": 6353,
+            "content_hash": "243dcc429ed089db5d82c8b53019c9aa72d461c77284b8cb867136683dce773b",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P013-173bc0ba57",
+            "kind": "figure",
+            "page": 13,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 5",
+            "locator": "FIGURE-005",
+            "quote": "图 5 验证可行性流程图",
+            "char_start": 11239,
+            "char_end": 11242,
+            "content_hash": "173bc0ba5737099e5fa644e8d47115f29240250c85655e09ffaaaed7c260b60a",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P014-c0446b4c48",
+            "kind": "figure",
+            "page": 14,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 6",
+            "locator": "FIGURE-006",
+            "quote": "图 6 情况 1 进化曲线图",
+            "char_start": 11941,
+            "char_end": 11944,
+            "content_hash": "c0446b4c4845ec85448e22b206841ea6a8ed93ffcef692e3b905e8687352a286",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P014-0990d11d02",
+            "kind": "figure",
+            "page": 14,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 7",
+            "locator": "FIGURE-007",
+            "quote": "图 7 2023 年 ~2030 年利渥折线图",
+            "char_start": 12008,
+            "char_end": 12011,
+            "content_hash": "0990d11d026429bba28b96608b1afe21e55574f3ffaa08364447536a61750fd1",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P015-a92f183d99",
+            "kind": "figure",
+            "page": 15,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 8",
+            "locator": "FIGURE-008",
+            "quote": "图 8 情况 2 利消进化曲线",
+            "char_start": 12544,
+            "char_end": 12547,
+            "content_hash": "a92f183d99f7ca49f6895ebcd95daeeeaf2c4743ed48aeb4c7913ac93aa5a178",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P015-048bd0bb06",
+            "kind": "figure",
+            "page": 15,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 9",
+            "locator": "FIGURE-009",
+            "quote": "图 9 利润量高年传各农作物销售量的柱状图",
+            "char_start": 12670,
+            "char_end": 12673,
+            "content_hash": "048bd0bb06a2e2e6aa263f82ba876b87dac9315f0b915e2e40993ea822cf89c3",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P016-d2a225c319",
+            "kind": "figure",
+            "page": 16,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 10",
+            "locator": "FIGURE-010",
+            "quote": "图 10 农作物预期销售量、 周产量、 销售价格和种植成本年液动情况示意图",
+            "char_start": 13176,
+            "char_end": 13180,
+            "content_hash": "d2a225c319baff117306977cdaea4db96bd0a864d9f42d77d4f189c68cff4499",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P017-d871ebf453",
+            "kind": "figure",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 11",
+            "locator": "FIGURE-011",
+            "quote": "图 11 寒潮影响的季次",
+            "char_start": 13984,
+            "char_end": 13988,
+            "content_hash": "d871ebf453e051585259b21fd5eeab7def6c84aa8538a25e93f604d5e1ab2699",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P017-3ed4454725",
+            "kind": "figure",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 12",
+            "locator": "FIGURE-012",
+            "quote": "图 12 干旱影响的季次",
+            "char_start": 14220,
+            "char_end": 14224,
+            "content_hash": "3ed4454725ff8ec37ef3be39b3c12cb15a5682c779022e4db3a78e382d97ca14",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P019-a6ded115d0",
+            "kind": "figure",
+            "page": 19,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 13",
+            "locator": "FIGURE-013",
+            "quote": "图 13 方案 1 号的进化曲线",
+            "char_start": 16137,
+            "char_end": 16141,
+            "content_hash": "a6ded115d02e9a99f7b80b7e0ee175e87b7526582c6d87f51f85afd68ad4254e",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P020-b301940ea2",
+            "kind": "figure",
+            "page": 20,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 14",
+            "locator": "FIGURE-014",
+            "quote": "图 14 A% 2 号的进化五线",
+            "char_start": 16221,
+            "char_end": 16225,
+            "content_hash": "b301940ea2522dbe0aa05078e226f34994624e6500cde2b1168660d7e7eeae3f",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P020-a693871003",
+            "kind": "figure",
+            "page": 20,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 15",
+            "locator": "FIGURE-015",
+            "quote": "图 15 方秽 3 号的进化屹线",
+            "char_start": 16281,
+            "char_end": 16285,
+            "content_hash": "a693871003ba19288bd416f458d458030c8475ee0f3c91c7fb4cd98650c289e9",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P020-00982e1a69",
+            "kind": "figure",
+            "page": 20,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 16",
+            "locator": "FIGURE-016",
+            "quote": "图 16 利潞波动折线图",
+            "char_start": 16491,
+            "char_end": 16495,
+            "content_hash": "00982e1a69bde22872c4fdc56c51752c20975c4bbd9ef461ba9f255a0fee50ce",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P023-4e59a0e935",
+            "kind": "figure",
+            "page": 23,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "图 17",
+            "locator": "FIGURE-017",
+            "quote": "图 17 问题三与问题二方案年利润对比图",
+            "char_start": 18788,
+            "char_end": 18792,
+            "content_hash": "4e59a0e935989275ade4fc62762104fc39d5f25c5d3080bf08e5fce5d46461bc",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P005-ad0930a9b0",
+            "kind": "table",
+            "page": 5,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 1",
+            "locator": "TABLE-001",
+            "quote": "表 1 季次对应的季节表",
+            "char_start": 5181,
+            "char_end": 5184,
+            "content_hash": "ad0930a9b0cf2eac88265221fe443a6b07562dc067307c48739406b281579155",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P006-de206ef230",
+            "kind": "table",
+            "page": 6,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 1",
+            "locator": "TABLE-002",
+            "quote": "安产量、 种粹成本与销售价格 , 部分符选后的数据表如下表 1,2",
+            "char_start": 5397,
+            "char_end": 5400,
+            "content_hash": "de206ef230642ff73bad8603594d19f24b0bfd9c5531223965f6d427a9c95e58",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P006-6e80ef24f4",
+            "kind": "table",
+            "page": 6,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 2",
+            "locator": "TABLE-003",
+            "quote": "表 2 季次与农作物的南产量、 种植成本与销唯价格 〔 部分 )",
+            "char_start": 5404,
+            "char_end": 5407,
+            "content_hash": "6e80ef24f434789b1084ca765e4d8b3731aa5b43c02947ee37acf4f288c4f60d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P006-f507ed61c8",
+            "kind": "table",
+            "page": 6,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 3",
+            "locator": "TABLE-004",
+            "quote": "表 3 耕地类型与农作物的亮产量、 种桠成本与销售价格 〔 郑分 )",
+            "char_start": 5804,
+            "char_end": 5807,
+            "content_hash": "f507ed61c8e0d9f960c820de67ff80dc97c3a0ccb56923f46494494137ea9b32",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P017-ace664c82f",
+            "kind": "table",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 1",
+            "locator": "TABLE-005",
+            "quote": "根据 5.3 所统计的季次对应季节表 1, 除单季外 , 寒潮主要影响季次示意图如下 :",
+            "char_start": 13924,
+            "char_end": 13927,
+            "content_hash": "ace664c82fd87511c061c8c3a4cd0db67d58e634ea2ad10f95ee3f4da1edd5f9",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P017-337646f530",
+            "kind": "table",
+            "page": 17,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "表 1",
+            "locator": "TABLE-006",
+            "quote": "根据 5.3 所统计的季次对应季节表 1, 除单季外 , 干晃主要影响农作物示意图如",
+            "char_start": 14156,
+            "char_end": 14159,
+            "content_hash": "337646f530d7777f1323fa6871e2e191f5271eff104ae5e55c9bba808f32908d",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TEXT-P027-4600f3b46d",
+            "kind": "text",
+            "page": 27,
+            "section": "基于遗传算法的最优种植策略",
+            "label": "algorithm",
+            "locator": "page:27",
+            "quote": "Parenttihy = fun(Parent(i).x,Datal ,outpunt 2023, Sale, Stastic);",
+            "char_start": null,
+            "char_end": null,
+            "content_hash": "4600f3b46dcc52c509e1c4605f8318f55cce9a03dc3505601b051f032d60e2c3",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.82
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "A-001",
+            "statement": "的真关性 , 本文假设前一年销售量作为今年的市场需求量 , 再利用供需关系 , 得到预",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P001-38cbc3c138"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-002",
+            "statement": "为了得到 2023 年的销售量 , 假设 2023 农作物全部正常售出 , 然后",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P002-3606d622d6"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-003",
+            "statement": "假设在一定范园内变化的随机变量服从均匀分布 , 如预期销售量、 亩产量等 ; 对于农",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-8564265e70"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-004",
+            "statement": "1 假设 2023 年产销相等。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-f99f4c8f85"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-005",
+            "statement": "假设每种农作物种植面积不小于种植地的一半。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-7ef05cd48e"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-006",
+            "statement": "假设农作物未来的预期销售量、 亩产量、 种植成本和销售价格的年变化率满足",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-32b3009d24"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-007",
+            "statement": "假设为丁管理方便 , 粮食类农作物在每块耕地上仅能种植一种。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P004-52c4630c72"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-008",
+            "statement": "得到 2023 年的预期销售量 , 本文假设 2023 年所有农作物全部卖出 , 其季汝总产量如",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P007-938b5c8565"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-009",
+            "statement": "示第 } 季第种农作物预期的销售量 , 根据假设 , 这里使用的 2023 年的销售量作为以",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P008-4382b3bc9a"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-010",
+            "statement": "其中 , 根据实际土地划分与附件 2 所给情况 , 本文假设每种农作物种植面积不应",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P009-e037833d64"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-011",
+            "statement": "而题中假设 2023 的预期销售量作为",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P014-bfdc854df1"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-012",
+            "statement": "再假设一种极端情况 ,2025、2027、2029 年的方案与 2023",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P014-7f92e19e80"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-013",
+            "statement": "参考相关报道 , 本文假设蹄潼天气下 ; 对应季次蔬菀减产 3006Ml, 食用茧的减产",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P017-a53b5eaef6"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-014",
+            "statement": "旱农作物 , 参考祖关报道 , 本文假设干旱天气下 : 抗旱农作物湘产 1096, 对应季次非",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P017-d39a04cb5c"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-015",
+            "statement": "由于文中假设 2023 年产销相同 , 本文假设以前一年销售量设定为今年的农作物",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P021-f4fe77f0b8"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-016",
+            "statement": "考虑不确定性国素时假设变量服从均匀分布 , 具有简单性和普造性。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P023-3c06307e9e"
+            ],
+            "provenance": "HEURISTIC"
+          }
+        ],
+        "variables": [],
+        "data": {
+          "sources": [],
+          "fields": [],
+          "data_types": [],
+          "preprocessing": [],
+          "missing_value_strategy": "",
+          "outlier_strategy": "",
+          "evidence_ids": []
+        },
+        "modeling_chain": [
+          {
+            "order": 1,
+            "subproblem_id": "Q1",
+            "model_id": "model-linearprogramming-5c5372fcf9",
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c",
+              "algorithm-simulatedannealing-8fb5c5797e"
+            ],
+            "input": "论文数据",
+            "output": "模型结果",
+            "rationale": "启发式检测到模型名称，建模链需人工核对。",
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          }
+        ],
+        "models": [
+          {
+            "id": "model-linearprogramming-5c5372fcf9",
+            "canonical_name": "Linear Programming",
+            "display_name": "Linear Programming",
+            "aliases": [
+              "线性规划",
+              "LP"
+            ],
+            "category": "optimization",
+            "task_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "role": "在线性目标和线性约束下求最优决策变量",
+            "description": "由参考目录识别，需结合论文证据复核。",
+            "assumptions": [],
+            "inputs": [
+              {
+                "name": "objective_coefficients",
+                "description": "目标函数系数",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "constraint_matrix",
+                "description": "约束系数矩阵",
+                "shape": "m×n",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "name": "decision_variables",
+                "description": "最优决策变量",
+                "shape": "n",
+                "unit": "",
+                "required": true
+              },
+              {
+                "name": "objective_value",
+                "description": "最优目标值",
+                "shape": "scalar",
+                "unit": "",
+                "required": true
+              }
+            ],
+            "equations": [],
+            "workflow": [
+              {
+                "order": 1,
+                "name": "定义决策变量及单位",
+                "description": "定义决策变量及单位",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P003-30ff25e045"
+                ]
+              },
+              {
+                "order": 2,
+                "name": "写出目标函数",
+                "description": "写出目标函数",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P003-30ff25e045"
+                ]
+              },
+              {
+                "order": 3,
+                "name": "将业务规则转换为线性约束",
+                "description": "将业务规则转换为线性约束",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P003-30ff25e045"
+                ]
+              },
+              {
+                "order": 4,
+                "name": "检查可行域与变量边界",
+                "description": "检查可行域与变量边界",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P003-30ff25e045"
+                ]
+              },
+              {
+                "order": 5,
+                "name": "调用求解器并解释影子价格或松弛量",
+                "description": "调用求解器并解释影子价格或松弛量",
+                "inputs": [],
+                "outputs": [],
+                "evidence_ids": [
+                  "E-TEXT-P003-30ff25e045"
+                ]
+              }
+            ],
+            "parameters": [],
+            "solver_algorithm_ids": [],
+            "strengths": [
+              "可获得全局最优",
+              "求解器成熟",
+              "解释性较强"
+            ],
+            "weaknesses": [
+              "要求线性",
+              "整数决策需扩展为 MILP",
+              "对参数误差可能敏感"
+            ],
+            "use_when": [
+              "目标和约束可线性表达",
+              "决策变量连续"
+            ],
+            "avoid_when": [
+              "明显非线性关系无法合理线性化"
+            ],
+            "alternatives": [
+              "Integer Programming",
+              "Nonlinear Programming"
+            ],
+            "combinations": [
+              "Sensitivity Analysis",
+              "Scenario Analysis"
+            ],
+            "complexity": {
+              "time": "problem-dependent",
+              "space": "O(mn)",
+              "notes": "单纯形法最坏指数级，内点法有多项式界"
+            },
+            "validation_methods": [
+              "可行性检查",
+              "对偶/松弛分析",
+              "参数敏感性"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "algorithms": [
+          {
+            "id": "algorithm-geneticalgorithm-82b827f16c",
+            "canonical_name": "Genetic Algorithm",
+            "display_name": "Genetic Algorithm",
+            "aliases": [
+              "遗传算法",
+              "GA"
+            ],
+            "category": "optimization",
+            "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+            "inputs": [
+              "fitness function",
+              "encoding",
+              "constraints",
+              "population settings"
+            ],
+            "outputs": [
+              "best solution",
+              "best fitness",
+              "convergence history"
+            ],
+            "pseudocode": [
+              "初始化种群并修复不可行个体",
+              "计算适应度",
+              "根据选择策略生成父代",
+              "执行交叉与变异",
+              "进行精英保留与约束处理",
+              "达到停止条件后输出最优个体"
+            ],
+            "parameters": [
+              {
+                "name": "population_size",
+                "value": null,
+                "description": "种群规模",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "crossover_rate",
+                "value": null,
+                "description": "交叉概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "mutation_rate",
+                "value": null,
+                "description": "变异概率",
+                "range": "[0,1]",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "按编码和约束生成初始可行种群",
+            "stopping_criteria": [
+              "最大迭代数",
+              "连续若干代最优值无改进"
+            ],
+            "complexity": {
+              "time": "O(G·P·C_f)",
+              "space": "O(P·d)",
+              "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "固定 seed 并多次独立运行"
+            },
+            "implementation_notes": [
+              "约束处理必须明确",
+              "保存收敛曲线",
+              "多次运行报告均值和方差"
+            ],
+            "failure_modes": [
+              "早熟收敛",
+              "编码不合理",
+              "适应度尺度失衡",
+              "参数未报告"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P024-23b1b53600"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          },
+          {
+            "id": "algorithm-simulatedannealing-8fb5c5797e",
+            "canonical_name": "Simulated Annealing",
+            "display_name": "Simulated Annealing",
+            "aliases": [
+              "模拟退火",
+              "SA"
+            ],
+            "category": "optimization",
+            "purpose": "允许以一定概率接受劣解，从而跳出局部最优",
+            "inputs": [
+              "objective function",
+              "initial solution",
+              "neighborhood",
+              "cooling schedule"
+            ],
+            "outputs": [
+              "best solution",
+              "best objective",
+              "history"
+            ],
+            "pseudocode": [
+              "生成初始解并设定初始温度",
+              "在邻域中生成候选解",
+              "更优则接受，较差则按 Metropolis 概率接受",
+              "按降温策略更新温度",
+              "达到停止条件后返回历史最优解"
+            ],
+            "parameters": [
+              {
+                "name": "initial_temperature",
+                "value": null,
+                "description": "初始温度",
+                "range": "paper-specific",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              },
+              {
+                "name": "cooling_rate",
+                "value": null,
+                "description": "降温系数",
+                "range": "(0,1)",
+                "evidence_ids": [],
+                "provenance": "AI_INFERRED"
+              }
+            ],
+            "initialization": "生成一个可行初始解",
+            "stopping_criteria": [
+              "温度低于阈值",
+              "达到最大迭代数",
+              "长期无改进"
+            ],
+            "complexity": {
+              "time": "O(K·C_f)",
+              "space": "O(d)",
+              "notes": "K 为候选解评估次数"
+            },
+            "randomness": {
+              "uses_randomness": true,
+              "seed_required": true,
+              "notes": "多次运行检查稳定性"
+            },
+            "implementation_notes": [
+              "邻域设计决定搜索能力",
+              "温度尺度要与目标差值匹配"
+            ],
+            "failure_modes": [
+              "降温过快",
+              "初始温度过低",
+              "邻域无法覆盖可行域"
+            ],
+            "evidence_ids": [
+              "E-TEXT-P027-4600f3b46d"
+            ],
+            "provenance": "HEURISTIC",
+            "confidence": 0.58
+          }
+        ],
+        "validation": {
+          "methods": [],
+          "metrics": [],
+          "results": [],
+          "sensitivity_analysis": [],
+          "robustness_checks": [],
+          "evidence_ids": []
+        },
+        "limitations": [
+          "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+        ],
+        "innovations": [],
+        "case": {
+          "id": "case-2024-c234",
+          "title": "基于遗传算法的最优种植策略",
+          "domain": "unknown",
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "year": 2024,
+          "award": "优秀论文",
+          "problem_id": "C",
+          "problem_fingerprint": {
+            "problem_types": [
+              "allocation",
+              "scheduling",
+              "minimization",
+              "maximization"
+            ],
+            "data_types": [],
+            "targets": [],
+            "constraints": [],
+            "domain_keywords": []
+          },
+          "subproblem_mapping": [
+            {
+              "subproblem_id": "Q1",
+              "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "model_ids": [
+                "model-linearprogramming-5c5372fcf9"
+              ],
+              "algorithm_ids": [
+                "algorithm-geneticalgorithm-82b827f16c",
+                "algorithm-simulatedannealing-8fb5c5797e"
+              ],
+              "data_flow": "",
+              "rationale": "启发式占位映射",
+              "evidence_ids": []
+            }
+          ],
+          "results": [],
+          "transferable_insights": [
+            "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+          ],
+          "pitfalls": [
+            "仅根据名称命中可能产生误判。"
+          ],
+          "innovations": [],
+          "evidence_ids": []
+        },
+        "code_recipes": [],
+        "quality": {
+          "evidence_coverage": 0.25,
+          "completeness": 0.25,
+          "code_reproducibility": 0.0,
+          "warnings": [
+            "LLM disabled: generated a heuristic IR skeleton.",
+            "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+            "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+          ],
+          "review_required": true
+        }
+      },
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "models": {
+    "model-linearprogramming-5c5372fcf9": {
+      "card": {
+        "id": "model-linearprogramming-5c5372fcf9",
+        "canonical_name": "Linear Programming",
+        "display_name": "Linear Programming",
+        "aliases": [
+          "线性规划",
+          "LP"
+        ],
+        "category": "optimization",
+        "task_types": [
+          "allocation",
+          "scheduling",
+          "minimization",
+          "maximization"
+        ],
+        "role": "在线性目标和线性约束下求最优决策变量",
+        "description": "由参考目录识别，需结合论文证据复核。",
+        "assumptions": [],
+        "inputs": [
+          {
+            "name": "objective_coefficients",
+            "description": "目标函数系数",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "constraint_matrix",
+            "description": "约束系数矩阵",
+            "shape": "m×n",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "outputs": [
+          {
+            "name": "decision_variables",
+            "description": "最优决策变量",
+            "shape": "n",
+            "unit": "",
+            "required": true
+          },
+          {
+            "name": "objective_value",
+            "description": "最优目标值",
+            "shape": "scalar",
+            "unit": "",
+            "required": true
+          }
+        ],
+        "equations": [],
+        "workflow": [
+          {
+            "order": 1,
+            "name": "定义决策变量及单位",
+            "description": "定义决策变量及单位",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          },
+          {
+            "order": 2,
+            "name": "写出目标函数",
+            "description": "写出目标函数",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          },
+          {
+            "order": 3,
+            "name": "将业务规则转换为线性约束",
+            "description": "将业务规则转换为线性约束",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          },
+          {
+            "order": 4,
+            "name": "检查可行域与变量边界",
+            "description": "检查可行域与变量边界",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          },
+          {
+            "order": 5,
+            "name": "调用求解器并解释影子价格或松弛量",
+            "description": "调用求解器并解释影子价格或松弛量",
+            "inputs": [],
+            "outputs": [],
+            "evidence_ids": [
+              "E-TEXT-P003-30ff25e045"
+            ]
+          }
+        ],
+        "parameters": [],
+        "solver_algorithm_ids": [],
+        "strengths": [
+          "可获得全局最优",
+          "求解器成熟",
+          "解释性较强"
+        ],
+        "weaknesses": [
+          "要求线性",
+          "整数决策需扩展为 MILP",
+          "对参数误差可能敏感"
+        ],
+        "use_when": [
+          "目标和约束可线性表达",
+          "决策变量连续"
+        ],
+        "avoid_when": [
+          "明显非线性关系无法合理线性化"
+        ],
+        "alternatives": [
+          "Integer Programming",
+          "Nonlinear Programming"
+        ],
+        "combinations": [
+          "Sensitivity Analysis",
+          "Scenario Analysis"
+        ],
+        "complexity": {
+          "time": "problem-dependent",
+          "space": "O(mn)",
+          "notes": "单纯形法最坏指数级，内点法有多项式界"
+        },
+        "validation_methods": [
+          "可行性检查",
+          "对偶/松弛分析",
+          "参数敏感性"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P003-30ff25e045"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-c234",
+          "title": "基于遗传算法的最优种植策略",
+          "evidence_ids": [
+            "E-TEXT-P003-30ff25e045"
+          ]
+        }
+      ]
+    }
+  },
+  "algorithms": {
+    "algorithm-geneticalgorithm-82b827f16c": {
+      "card": {
+        "id": "algorithm-geneticalgorithm-82b827f16c",
+        "canonical_name": "Genetic Algorithm",
+        "display_name": "Genetic Algorithm",
+        "aliases": [
+          "遗传算法",
+          "GA"
+        ],
+        "category": "optimization",
+        "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+        "inputs": [
+          "fitness function",
+          "encoding",
+          "constraints",
+          "population settings"
+        ],
+        "outputs": [
+          "best solution",
+          "best fitness",
+          "convergence history"
+        ],
+        "pseudocode": [
+          "初始化种群并修复不可行个体",
+          "计算适应度",
+          "根据选择策略生成父代",
+          "执行交叉与变异",
+          "进行精英保留与约束处理",
+          "达到停止条件后输出最优个体"
+        ],
+        "parameters": [
+          {
+            "name": "population_size",
+            "value": null,
+            "description": "种群规模",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "crossover_rate",
+            "value": null,
+            "description": "交叉概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "mutation_rate",
+            "value": null,
+            "description": "变异概率",
+            "range": "[0,1]",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "按编码和约束生成初始可行种群",
+        "stopping_criteria": [
+          "最大迭代数",
+          "连续若干代最优值无改进"
+        ],
+        "complexity": {
+          "time": "O(G·P·C_f)",
+          "space": "O(P·d)",
+          "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "固定 seed 并多次独立运行"
+        },
+        "implementation_notes": [
+          "约束处理必须明确",
+          "保存收敛曲线",
+          "多次运行报告均值和方差"
+        ],
+        "failure_modes": [
+          "早熟收敛",
+          "编码不合理",
+          "适应度尺度失衡",
+          "参数未报告"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P024-23b1b53600"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-c234",
+          "title": "基于遗传算法的最优种植策略",
+          "evidence_ids": [
+            "E-TEXT-P024-23b1b53600"
+          ]
+        }
+      ]
+    },
+    "algorithm-simulatedannealing-8fb5c5797e": {
+      "card": {
+        "id": "algorithm-simulatedannealing-8fb5c5797e",
+        "canonical_name": "Simulated Annealing",
+        "display_name": "Simulated Annealing",
+        "aliases": [
+          "模拟退火",
+          "SA"
+        ],
+        "category": "optimization",
+        "purpose": "允许以一定概率接受劣解，从而跳出局部最优",
+        "inputs": [
+          "objective function",
+          "initial solution",
+          "neighborhood",
+          "cooling schedule"
+        ],
+        "outputs": [
+          "best solution",
+          "best objective",
+          "history"
+        ],
+        "pseudocode": [
+          "生成初始解并设定初始温度",
+          "在邻域中生成候选解",
+          "更优则接受，较差则按 Metropolis 概率接受",
+          "按降温策略更新温度",
+          "达到停止条件后返回历史最优解"
+        ],
+        "parameters": [
+          {
+            "name": "initial_temperature",
+            "value": null,
+            "description": "初始温度",
+            "range": "paper-specific",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          },
+          {
+            "name": "cooling_rate",
+            "value": null,
+            "description": "降温系数",
+            "range": "(0,1)",
+            "evidence_ids": [],
+            "provenance": "AI_INFERRED"
+          }
+        ],
+        "initialization": "生成一个可行初始解",
+        "stopping_criteria": [
+          "温度低于阈值",
+          "达到最大迭代数",
+          "长期无改进"
+        ],
+        "complexity": {
+          "time": "O(K·C_f)",
+          "space": "O(d)",
+          "notes": "K 为候选解评估次数"
+        },
+        "randomness": {
+          "uses_randomness": true,
+          "seed_required": true,
+          "notes": "多次运行检查稳定性"
+        },
+        "implementation_notes": [
+          "邻域设计决定搜索能力",
+          "温度尺度要与目标差值匹配"
+        ],
+        "failure_modes": [
+          "降温过快",
+          "初始温度过低",
+          "邻域无法覆盖可行域"
+        ],
+        "evidence_ids": [
+          "E-TEXT-P027-4600f3b46d"
+        ],
+        "provenance": "HEURISTIC",
+        "confidence": 0.58
+      },
+      "sources": [
+        {
+          "paper_id": "paper-2024-c234",
+          "title": "基于遗传算法的最优种植策略",
+          "evidence_ids": [
+            "E-TEXT-P027-4600f3b46d"
+          ]
+        }
+      ]
+    }
+  },
+  "cases": {
+    "case-2024-c234": {
+      "card": {
+        "id": "case-2024-c234",
+        "title": "基于遗传算法的最优种植策略",
+        "domain": "unknown",
+        "competition": "高教社杯全国大学生数学建模竞赛",
+        "year": 2024,
+        "award": "优秀论文",
+        "problem_id": "C",
+        "problem_fingerprint": {
+          "problem_types": [
+            "allocation",
+            "scheduling",
+            "minimization",
+            "maximization"
+          ],
+          "data_types": [],
+          "targets": [],
+          "constraints": [],
+          "domain_keywords": []
+        },
+        "subproblem_mapping": [
+          {
+            "subproblem_id": "Q1",
+            "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+            "model_ids": [
+              "model-linearprogramming-5c5372fcf9"
+            ],
+            "algorithm_ids": [
+              "algorithm-geneticalgorithm-82b827f16c",
+              "algorithm-simulatedannealing-8fb5c5797e"
+            ],
+            "data_flow": "",
+            "rationale": "启发式占位映射",
+            "evidence_ids": []
+          }
+        ],
+        "results": [],
+        "transferable_insights": [
+          "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+        ],
+        "pitfalls": [
+          "仅根据名称命中可能产生误判。"
+        ],
+        "innovations": [],
+        "evidence_ids": []
+      },
+      "paper_id": "paper-2024-c234",
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "codes": {},
+  "updated_at": "2026-09-04T18:08:23+00:00"
+}

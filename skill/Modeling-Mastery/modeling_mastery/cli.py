@@ -361,6 +361,7 @@ def skill_run_command(
         check_octave=check_octave,
         project_root=find_project_root(),
         obsidian_root=obsidian_root,
+        paper_title_hint=paper_title,
     )
     report["skill_host"] = selected
     if layout_data:
@@ -405,6 +406,7 @@ def pipeline_command(
         check_octave=check_octave,
         project_root=find_project_root(),
         obsidian_root=obsidian_root,
+        paper_title_hint=paper_title,
     )
     if layout_data:
         report["paper_workspace"] = layout_data

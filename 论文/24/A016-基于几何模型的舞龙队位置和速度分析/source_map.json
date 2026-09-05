@@ -1,0 +1,1398 @@
+{
+  "paper": {
+    "title": "基于几何模型的舞龙队位置和速度分析",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\A016.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P004-9ccfa7cab9",
+      "page": 4,
+      "type": "text",
+      "order": 1,
+      "original_text": "1 理想化连接 : 板凳之间通过把手连接 , 假设连接是理想的 , 不会因为弯曲而产生任何",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P004-2f8ea6973a",
+      "page": 4,
+      "type": "text",
+      "order": 2,
+      "original_text": "刚体假设 : 每一节板凳视为刚体 , 长度固定 , 不会发生形变。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P004-985597bd51",
+      "page": 4,
+      "type": "text",
+      "order": 3,
+      "original_text": "忽略外部干扰 : 假设在整个运动过程中 , 板凳龙不受风力、 地面摩擦或其他外力的影",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P006-a4b1a27e73",
+      "page": 6,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设把手从第 t 秒运动到第 ¢, 秒 , 得到运动距离 ! 为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P025-1b523a19d4",
+      "page": 25,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设在树一时刻 , 前一个把手位于第二区域 , 我们需要计算出该点与盘入螺线和圆",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P031-ff12b9e160",
+      "page": 31,
+      "type": "text",
+      "order": 6,
+      "original_text": "(1) 模型假设板凳龙的运动是在理想条件下进行的 , 忽路了外邱环境因素如风力、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P001-e19d7f321b",
+      "page": 1,
+      "type": "text",
+      "order": 7,
+      "original_text": "本文从螺线方程出发 , 利用几何分析等方法建立计算把手位置和速度的模型 , 并",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P001-80309c4469",
+      "page": 1,
+      "type": "text",
+      "order": 8,
+      "original_text": "外考虑特殊情况 , 建立碰撞检测模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P003-f4286bf5fe",
+      "page": 3,
+      "type": "text",
+      "order": 9,
+      "original_text": "并建立关于把手极角的函数关系式 , 然后用改变步长逐步逼近的方法求解 : 对于各把手",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P003-486f9e8a47",
+      "page": 3,
+      "type": "text",
+      "order": 10,
+      "original_text": "最后用问题一建立的模型方",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P007-22bd8fdb11",
+      "page": 7,
+      "type": "text",
+      "order": 11,
+      "original_text": "这里我们采用逐步逗近的方法来求解 9:, 步骤如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P009-5ab5c8ad5c",
+      "page": 9,
+      "type": "text",
+      "order": 12,
+      "original_text": "这里我们采用逐步逢近的方法来求解 9i+t , 步骤如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P010-9e4c11e198",
+      "page": 10,
+      "type": "text",
+      "order": 13,
+      "original_text": "基于此我们建立模型求解把手速度。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P012-10aece8301",
+      "page": 12,
+      "type": "text",
+      "order": 14,
+      "original_text": "首先借助坐标和向量得到如果目标点落在板凳内的情况 , 建立判断碌撞的模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P012-37418c387d",
+      "page": 12,
+      "type": "text",
+      "order": 15,
+      "original_text": "题一建立的模型方法推出该时刻所有把手的位置与速度。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P012-6511f156d5",
+      "page": 12,
+      "type": "text",
+      "order": 16,
+      "original_text": "通过确定每一块板凳的区域以及目标点的选取 , 建立硬撞检测模型 -",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P014-9242c84ca1",
+      "page": 14,
+      "type": "text",
+      "order": 17,
+      "original_text": "为了判断目标点 P 是否落入周围板凳的苑图内 , 我们采用投影长度判定的方法 , 如",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P018-0435a91881",
+      "page": 18,
+      "type": "text",
+      "order": 18,
+      "original_text": "借劭问题二建立的模型 , 计算第 3 块板凳到第 223 块板凳的范围 , 判断整个过程中龙头",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P031-04e2181d12",
+      "page": 31,
+      "type": "text",
+      "order": 19,
+      "original_text": "Q) 在求解过程中 , 模型采用了逐步遁近和缩短步长的方法 , 这种方法确保了结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P031-df90ab3d2b",
+      "page": 31,
+      "type": "text",
+      "order": 20,
+      "original_text": "(3) 祖型将整个板凳龙的运动过程分为多个部分 , 并分别建立了数学模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P007-1dd6503a9f",
+      "page": 7,
+      "type": "text",
+      "order": 21,
+      "original_text": "步长小于设定的最小步长 , 说明误差小于最小步长的 2 借 ,92 足够接近实际值 , 则结束",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P009-0d2aa3be26",
+      "page": 9,
+      "type": "text",
+      "order": 22,
+      "original_text": "若步长小于设定的最小步长 , 说昂误差小于最小步长的 2 17, 64, 足够接近实际值 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P026-fc35222772",
+      "page": 26,
+      "type": "text",
+      "order": 23,
+      "original_text": "若步长小于设定的最小步长 , 说明误差小于最小步长的 2 借 , 6i+at 足够接近实际",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P030-c808bdbfee",
+      "page": 30,
+      "type": "text",
+      "order": 24,
+      "original_text": "由于我们是通过逐步逗近的方法求解把手的位置 , 因此存在一定误差 s , 主要来源",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P030-570fb5b653",
+      "page": 30,
+      "type": "text",
+      "order": 25,
+      "original_text": "我们选择减半步长 , 这通常意味着每次追代后 , 误差至少减半 , 降低了时间复杂度 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P030-cf977e244a",
+      "page": 30,
+      "type": "text",
+      "order": 26,
+      "original_text": "然是该预测位置与实际位置之间的距离小于当前步长 , 即误差值小于当前步长。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P030-b5ee805378",
+      "page": 30,
+      "type": "text",
+      "order": 27,
+      "original_text": "因此 , 逐步逼近法在适当选择 2min 的情况下 , 可以有效地遁近精确解 , 并且误差 s",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P031-ba8393699b",
+      "page": 31,
+      "type": "text",
+      "order": 28,
+      "original_text": "地面摩擦、 舞龙队员的操作误差等。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-FIGURE-P006-6a24de8a3e",
+      "page": 6,
+      "type": "figure",
+      "order": 29,
+      "original_text": "图 1. 较短时间内的行动技迹",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-FIGURE-P006-f52f2053dc",
+      "page": 6,
+      "type": "figure",
+      "order": 30,
+      "original_text": "由于 d49 极小 , 因此 di 可看成线段 , 构成如图 2 所示的三角形 , 对其应用余弦定理",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-FIGURE-P011-c5d0dfc811",
+      "page": 11,
+      "type": "figure",
+      "order": 31,
+      "original_text": "图 3. 相邻把手情况分析图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-FIGURE-P013-8ba98613b9",
+      "page": 13,
+      "type": "figure",
+      "order": 32,
+      "original_text": "图 4 对板凳的具体分析图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P014-9dc873cddc",
+      "page": 14,
+      "type": "figure",
+      "order": 33,
+      "original_text": "图 5. 碰撞示例",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P014-14d171e7f7",
+      "page": 14,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 6. 易发生碰撞的点",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P014-273af30d3e",
+      "page": 14,
+      "type": "figure",
+      "order": 35,
+      "original_text": "图 7. 向量分析图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P017-fee6232e6f",
+      "page": 17,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 9. 蕾|懂Z藿ii鳗<肇zl戛柬P】置薯薰鄙",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P018-9d02c6ebe7",
+      "page": 18,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 10. 搜寻最小螺距流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P018-d95aab15be",
+      "page": 18,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 10. 搜寻最小螺距流程图 18",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P019-3d4e2c5a0e",
+      "page": 19,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 11. 盘入和盘出的大致路径",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P020-6526c39b4d",
+      "page": 20,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 12. 调头区域圆弧分析图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P021-4d07c7fb99",
+      "page": 21,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 13. 辅助线分析示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P022-63b947b276",
+      "page": 22,
+      "type": "figure",
+      "order": 42,
+      "original_text": "图 14. 关键点位置示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-FIGURE-P022-2eb4313701",
+      "page": 22,
+      "type": "figure",
+      "order": 43,
+      "original_text": "图 14. 关键点位置示意图 1. 确定位置 P, 和 Ps",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-FIGURE-P024-3e71cfa14a",
+      "page": 24,
+      "type": "figure",
+      "order": 44,
+      "original_text": "图 16. 龙头前把手位置变化示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-FIGURE-P025-5e8a84dd22",
+      "page": 25,
+      "type": "figure",
+      "order": 45,
+      "original_text": "图 17. 龙头前把手从区域 2 到 3",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-FIGURE-P026-1e05ae1070",
+      "page": 26,
+      "type": "figure",
+      "order": 46,
+      "original_text": "图 18. 把手位于圆弧情况分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-FIGURE-P029-0afb84c7b2",
+      "page": 29,
+      "type": "figure",
+      "order": 47,
+      "original_text": "图 19. 速度短阵三维图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-FIGURE-P031-71fae5dac5",
+      "page": 31,
+      "type": "figure",
+      "order": 48,
+      "original_text": "图 20. 终止时刻随螺线的螺距和把手间践的变化曲线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-TABLE-P001-344e7f1639",
+      "page": 1,
+      "type": "table",
+      "order": 49,
+      "original_text": "依次推导。 将结果存入文件 result1.xlsx, 展示部分结果在表 1 和表 2。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-TABLE-P001-904870333e",
+      "page": 1,
+      "type": "table",
+      "order": 50,
+      "original_text": "结果在表 3 和表 4",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-TABLE-P001-f39d82dd61",
+      "page": 1,
+      "type": "table",
+      "order": 51,
+      "original_text": "分析计算得到速度结果。 将结果存入文件 result4.xlsx, 展示部分结果在表 6 和表 7。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-TABLE-P010-59780c9612",
+      "page": 10,
+      "type": "table",
+      "order": 52,
+      "original_text": "表 1 问题一把手的位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-TABLE-P012-44f409e565",
+      "page": 12,
+      "type": "table",
+      "order": 53,
+      "original_text": "表 2. 问题一把手的速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-TABLE-P016-65ca378854",
+      "page": 16,
+      "type": "table",
+      "order": 54,
+      "original_text": "表 3. 终止时刻部分把手位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-TABLE-P017-c4ede6fd5d",
+      "page": 17,
+      "type": "table",
+      "order": 55,
+      "original_text": "表 4 终止时刻部分把手速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-TABLE-P019-7b7d6e1185",
+      "page": 19,
+      "type": "table",
+      "order": 56,
+      "original_text": "表 5. 逐步遇近最小螺距",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-TABLE-P027-f8912c25b1",
+      "page": 27,
+      "type": "table",
+      "order": 57,
+      "original_text": "表 6. 问题四部分把手位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TABLE-P028-83e93bbadc",
+      "page": 28,
+      "type": "table",
+      "order": 58,
+      "original_text": "表 6 问题四部分把手位置 ( 续 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-TABLE-P028-c69549123c",
+      "page": 28,
+      "type": "table",
+      "order": 59,
+      "original_text": "表 7. 问题四部分把手速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S007",
+        "S008",
+        "S049",
+        "S050",
+        "S051"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": []
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S009",
+        "S010"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": []
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S004",
+        "S029",
+        "S030"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S011",
+        "S021"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": []
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S012",
+        "S022"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S013",
+        "S052"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S031"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S014",
+        "S015",
+        "S016",
+        "S053"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S032"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S017",
+        "S033",
+        "S034",
+        "S035"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": []
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S054"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S036",
+        "S055"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S018",
+        "S037",
+        "S038"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S039",
+        "S056"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S040"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S041"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S042",
+        "S043"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S044"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": [
+        "S005",
+        "S045"
+      ]
+    },
+    {
+      "page": 26,
+      "block_ids": [
+        "S023",
+        "S046"
+      ]
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S057"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": [
+        "S058",
+        "S059"
+      ]
+    },
+    {
+      "page": 29,
+      "block_ids": [
+        "S047"
+      ]
+    },
+    {
+      "page": 30,
+      "block_ids": [
+        "S024",
+        "S025",
+        "S026",
+        "S027"
+      ]
+    },
+    {
+      "page": 31,
+      "block_ids": [
+        "S006",
+        "S019",
+        "S020",
+        "S028",
+        "S048"
+      ]
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": []
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": []
+    },
+    {
+      "page": 59,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": []
+}

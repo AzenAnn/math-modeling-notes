@@ -1,0 +1,12 @@
+{
+  "parser": "pymupdf-ocr",
+  "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\normalized_paper.md",
+  "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\paper_structure.json",
+  "page_map_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\page_map.json",
+  "figures_dir": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\figures",
+  "manifest_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\D033-反潜航空深弹命中概率的优化问题\\workflow\\parsed\\parse_manifest.json",
+  "warnings": [
+    "Scanned PDF processed with Tesseract OCR (chi_sim+eng, 180 dpi); formulae, symbols, and numeric values require source-image verification.",
+    "Full-page scan images were not copied into figures/ as figure crops; use the source PDF to verify OCR-sensitive equations, tables, and diagrams."
+  ]
+}

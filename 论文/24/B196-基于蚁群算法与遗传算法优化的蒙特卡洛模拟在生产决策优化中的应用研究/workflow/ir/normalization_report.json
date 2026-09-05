@@ -1,0 +1,31 @@
+{
+  "models": [
+    {
+      "from": "Linear Programming",
+      "to": "Linear Programming",
+      "id": "model-linearprogramming-5c5372fcf9",
+      "matched_reference": true
+    },
+    {
+      "from": "Monte Carlo Simulation",
+      "to": "Monte Carlo Simulation",
+      "id": "model-montecarlosimulation-748bbc93bd",
+      "matched_reference": true
+    },
+    {
+      "from": "Hypothesis Testing",
+      "to": "Hypothesis Testing",
+      "id": "model-hypothesistesting-cfe3d9969d",
+      "matched_reference": true
+    }
+  ],
+  "algorithms": [
+    {
+      "from": "Genetic Algorithm",
+      "to": "Genetic Algorithm",
+      "id": "algorithm-geneticalgorithm-82b827f16c",
+      "matched_reference": true
+    }
+  ],
+  "merged": []
+}

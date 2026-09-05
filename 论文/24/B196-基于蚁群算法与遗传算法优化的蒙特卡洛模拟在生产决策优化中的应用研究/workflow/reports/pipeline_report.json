@@ -1,0 +1,57 @@
+{
+  "paper": {
+    "code": "B196",
+    "title": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+    "pages": 28,
+    "source_file": "B196.pdf",
+    "title_source": "page_1"
+  },
+  "finished_at": "2026-09-04T18:08:23+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 70,
+    "models": 3,
+    "algorithms": 1,
+    "vault_notes": 7
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究.md",
+      "40_Competition-Cases/基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究-案例.md",
+      "10_Models/optimization/Linear Programming.md",
+      "10_Models/simulation/Monte Carlo Simulation.md",
+      "10_Models/statistics/Hypothesis Testing.md",
+      "20_Algorithms/optimization/Genetic Algorithm.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\知识库",
+    "note_count": 6,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\知识库",
+    "note_count": 7,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

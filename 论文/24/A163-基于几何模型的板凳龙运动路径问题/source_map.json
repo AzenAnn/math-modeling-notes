@@ -1,0 +1,1589 @@
+{
+  "paper": {
+    "title": "基于几何模型的板凳龙运动路径问题",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\A163.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P002-ecd10efef2",
+      "page": 2,
+      "type": "text",
+      "order": 1,
+      "original_text": "假设有一由 223 节板凳组成的板凳龙 , 其中第 1 节为龙头 , 接着 221 节龙身 , 最后 1 节",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P008-54ae09b8ff",
+      "page": 8,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设在树一时刻下 , 树一板凯 , 具前后把手中心距离为 !, 其前把手中心位置坐",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P008-90f9fcdac3",
+      "page": 8,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设诙板凯后把手中心位置此时的升标",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P008-6343865c8f",
+      "page": 8,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设在某一时刻下 , 如图 4.9 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P011-413c86d0db",
+      "page": 11,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设 { 时刻下龙头前把手中心位置坐标为 (zt,), 极角为万 4 , 根据问题一的位",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P014-4f451e6f1c",
+      "page": 14,
+      "type": "text",
+      "order": 6,
+      "original_text": "假设两圆弧的半径比为 X 时 , 调头路径如图 4.16 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P016-fb13d80732",
+      "page": 16,
+      "type": "text",
+      "order": 7,
+      "original_text": "假设树一时刻 , 某一板凤 , 其前后把手中心距离为 1, 其前把手中心位置坐标为 (ri,) 已",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P018-4731642749",
+      "page": 18,
+      "type": "text",
+      "order": 8,
+      "original_text": "假设树一时刻 , 某一板凳 , 其前后把手中心距离为 !, 其前把手中心位置坐标为 (z,) 已",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P001-53401f021e",
+      "page": 1,
+      "type": "text",
+      "order": 9,
+      "original_text": "本文将盘入螺线转化为极坐标方程 , 采用积分的方法建立起龙头前把手所处位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-6204b9f2b3",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "进而采用几何方法 , 计算",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-ebc0a0f929",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "刻龙头前把手中心坐标位于调头空间内和谍头空间外的两个螺距 , 再使用十分法 , 精确",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P003-aa87c0e325",
+      "page": 3,
+      "type": "text",
+      "order": 12,
+      "original_text": "通过建立合适的数学模型 , 求解出从 t = 0s 至 t =",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P005-80add7be90",
+      "page": 5,
+      "type": "text",
+      "order": 13,
+      "original_text": "再采用十分法 , 精确求解满足要求的",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P006-d77b0130da",
+      "page": 6,
+      "type": "text",
+      "order": 14,
+      "original_text": "最后根据问题一中的思路 , 采用关联速度的方法 , 根据前把手的速度得到",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P006-e317ec4a14",
+      "page": 6,
+      "type": "text",
+      "order": 15,
+      "original_text": "再采用十分法 , 利用编程求解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P008-d30f78829e",
+      "page": 8,
+      "type": "text",
+      "order": 16,
+      "original_text": "联立式 (1)、 式 (2), 采用二分求零点的方法可解得 p2 与仪 , 进而通过坐标转化公式 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P013-799d0604ed",
+      "page": 13,
+      "type": "text",
+      "order": 17,
+      "original_text": "通过问题一、 问题二中建立的模型 , 不难发现 , 在其他条件不变的情况下 , 每个时",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P024-1afc0a3c72",
+      "page": 24,
+      "type": "text",
+      "order": 18,
+      "original_text": "中心昔中心对称 , 故可采用类似于情况一的方法求解后把手中心的坐标。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P025-b7797fefef",
+      "page": 25,
+      "type": "text",
+      "order": 19,
+      "original_text": "对于其他情况 , 本文使用相应的方法得到了相应的速度迭代公式。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-FIGURE-P002-82b1943e4b",
+      "page": 2,
+      "type": "figure",
+      "order": 20,
+      "original_text": "部分的详细尺寸数据与连接方式如图 1.1、1.2、1.3 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-FIGURE-P002-bc2c172caf",
+      "page": 2,
+      "type": "figure",
+      "order": 21,
+      "original_text": "图 1.1: 龙头俯视数据图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-FIGURE-P002-b3741880a0",
+      "page": 2,
+      "type": "figure",
+      "order": 22,
+      "original_text": "图 1.2: 龙身、 龙尾俯视数据图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-FIGURE-P002-fffe06999c",
+      "page": 2,
+      "type": "figure",
+      "order": 23,
+      "original_text": "图 1.3: 板凳连接方式正视图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-FIGURE-P003-6bff2cdf65",
+      "page": 3,
+      "type": "figure",
+      "order": 24,
+      "original_text": "螺线的起点以及方向如图 1.4 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-FIGURE-P003-17c8528ba1",
+      "page": 3,
+      "type": "figure",
+      "order": 25,
+      "original_text": "图 1.4 盘入螺线示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-FIGURE-P003-da90e4acd9",
+      "page": 3,
+      "type": "figure",
+      "order": 26,
+      "original_text": "图 1.4 盘入螺线示意图 2. 舞龙队继续向内盗入问题一中的螺线 , 求解在何时刻舞龙队不能再继续盘入 , 卵",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-FIGURE-P003-0cd968cac0",
+      "page": 3,
+      "type": "figure",
+      "order": 27,
+      "original_text": "够沿着盘入螺线盘入到调头空间的边界。 调头空间如图 1.5 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-FIGURE-P003-8ed0746c95",
+      "page": 3,
+      "type": "figure",
+      "order": 28,
+      "original_text": "图 1.5: 调头空间示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-FIGURE-P003-c4c54695f2",
+      "page": 3,
+      "type": "figure",
+      "order": 29,
+      "original_text": "图 1.5: 调头空间示意图 4. 对于给定螺距 4 = 1.7m 的盘入螺线 , 沿用问题三中对调头空间的设定 , 舞龙队需",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-FIGURE-P004-9c0485714f",
+      "page": 4,
+      "type": "figure",
+      "order": 30,
+      "original_text": "图 2.6: 板凳龙盗入示意图 ( 橙色矩形为板凤 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-FIGURE-P005-0da6047960",
+      "page": 5,
+      "type": "figure",
+      "order": 31,
+      "original_text": "对于问题四的第二问 , 首先有掉头路径如图 2.7 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-FIGURE-P005-b7b21448f0",
+      "page": 5,
+      "type": "figure",
+      "order": 32,
+      "original_text": "图 2.7: 调头空间 ( 黄色 ) 内掉头路径示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P008-50ad663b3e",
+      "page": 8,
+      "type": "figure",
+      "order": 33,
+      "original_text": "如图 4.8 所示的三角形中 , 通过余弦定理可得到知下公式 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P008-b49d83afa0",
+      "page": 8,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 4.8: 前后把手相对位置示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P008-6343865c8f",
+      "page": 8,
+      "type": "figure",
+      "order": 35,
+      "original_text": "假设在某一时刻下 , 如图 4.9 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P009-4795c33236",
+      "page": 9,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 4.9: 前后把手速度示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P010-44d35c04ca",
+      "page": 10,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 4.10: 1 万 300s 时舞龙队位置示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P011-716f4b52c7",
+      "page": 11,
+      "type": "figure",
+      "order": 38,
+      "original_text": "直线分别为 az、aa, 由对称性 ,h 与 as、aa 的夹角均为 , 如图 4.11 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P011-b2fdd0b7ba",
+      "page": 11,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 4.11: 板凳示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P013-6ae662c114",
+      "page": 13,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 4.12: 盘入终止时刻舞龙队位置示意图 413: 盘入终止时刻舞龙队位置示意",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P014-c0b6434a21",
+      "page": 14,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 4.14: 最小螺距下最接近碍撞时刻示图 4.15: 最小蝎距下最接近碰撞时刻示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P014-4f451e6f1c",
+      "page": 14,
+      "type": "figure",
+      "order": 42,
+      "original_text": "假设两圆弧的半径比为 X 时 , 调头路径如图 4.16 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-FIGURE-P014-8e23e783cb",
+      "page": 14,
+      "type": "figure",
+      "order": 43,
+      "original_text": "图 4.16: 谋头路径示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-FIGURE-P014-2237618031",
+      "page": 14,
+      "type": "figure",
+      "order": 44,
+      "original_text": "图 4.16: 谋头路径示意图 14",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-FIGURE-P016-5e4fd359c5",
+      "page": 16,
+      "type": "figure",
+      "order": 45,
+      "original_text": "2. 当该点位于第一段圆弧时 , 引入判断角 , 如图 4.17 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-FIGURE-P016-6dd466870f",
+      "page": 16,
+      "type": "figure",
+      "order": 46,
+      "original_text": "图 4.17: 情况二判断角示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-FIGURE-P017-d0911641ab",
+      "page": 17,
+      "type": "figure",
+      "order": 47,
+      "original_text": "3. 当该点位于第二段圆弧时 , 此时的判断角 p 如图 4.18 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-FIGURE-P017-2a41a7f963",
+      "page": 17,
+      "type": "figure",
+      "order": 48,
+      "original_text": "图 4.18: 情况三判断角示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-FIGURE-P017-9ef24e7041",
+      "page": 17,
+      "type": "figure",
+      "order": 49,
+      "original_text": "A 当该点位于盘出螺线时 , 此时的判断角 p 如图 4.19 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-FIGURE-P018-cfa09e5bc1",
+      "page": 18,
+      "type": "figure",
+      "order": 50,
+      "original_text": "图 4.19: 情况四判断角示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-FIGURE-P019-19f7ea90c2",
+      "page": 19,
+      "type": "figure",
+      "order": 51,
+      "original_text": "图 4.20: 情况二示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-FIGURE-P019-71cd166ac5",
+      "page": 19,
+      "type": "figure",
+      "order": 52,
+      "original_text": "3. 当板凳的前后把手中心均位于第一段圆弧 , 如图 4.21 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-FIGURE-P020-9f5ba05698",
+      "page": 20,
+      "type": "figure",
+      "order": 53,
+      "original_text": "图 4.21: 情况三示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-FIGURE-P020-174f0b196e",
+      "page": 20,
+      "type": "figure",
+      "order": 54,
+      "original_text": ". 当板凳的前后把手中心位于第二段圆弧 , 后把手中心位于第一段圆孟 , 如图 4.22 所",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-FIGURE-P021-aa6b1de1e4",
+      "page": 21,
+      "type": "figure",
+      "order": 55,
+      "original_text": "图 4.22: 情况四示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-FIGURE-P021-6ce185fa67",
+      "page": 21,
+      "type": "figure",
+      "order": 56,
+      "original_text": "5. 当板凳的前后把手中心均位于第二段圆弧 , 如图 4.23 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-FIGURE-P022-1075e79930",
+      "page": 22,
+      "type": "figure",
+      "order": 57,
+      "original_text": "图 4.23: 情况五示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-FIGURE-P022-ab747453e4",
+      "page": 22,
+      "type": "figure",
+      "order": 58,
+      "original_text": "6. 当板凯的前后把手中心位于盘出螺线 , 后把手中心位于第二段圆弧 , 如图 4.24 所",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-FIGURE-P023-c2610bd0c1",
+      "page": 23,
+      "type": "figure",
+      "order": 59,
+      "original_text": "图 4.24: 情况六示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-FIGURE-P025-a5e44aa828",
+      "page": 25,
+      "type": "figure",
+      "order": 60,
+      "original_text": "图 4.25: 速度迭代示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S061",
+      "evidence_id": "E-FIGURE-P026-b17c051190",
+      "page": 26,
+      "type": "figure",
+      "order": 61,
+      "original_text": "图 4.26: t = 20s 时舞龙队位置示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S062",
+      "evidence_id": "E-FIGURE-P027-2871bf310a",
+      "page": 27,
+      "type": "figure",
+      "order": 62,
+      "original_text": "图 4.27: 0 一 100s 内舞龙队所有把手最大速度随时间变化示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S063",
+      "evidence_id": "E-FIGURE-P028-07c968cf91",
+      "page": 28,
+      "type": "figure",
+      "order": 63,
+      "original_text": "图 4.28: 龙头进入盘出螺线的过程中 , 各节龙身前把手的最大途度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S064",
+      "evidence_id": "E-FIGURE-P028-e9eada7e76",
+      "page": 28,
+      "type": "figure",
+      "order": 64,
+      "original_text": "分析图 4.28 发现 , 第三至第七节龙身前把手的速度在此过程中达到最大 , 因此本文",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S065",
+      "evidence_id": "E-FIGURE-P028-74673d2dfe",
+      "page": 28,
+      "type": "figure",
+      "order": 65,
+      "original_text": "图 4.29: 龙头进入盘出螺线的过程中 , 第三节龙身前把手的速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S066",
+      "evidence_id": "E-TABLE-P006-f4c53fe242",
+      "page": 6,
+      "type": "table",
+      "order": 66,
+      "original_text": "所使用的符号及说明如表 3.1 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S067",
+      "evidence_id": "E-TABLE-P007-60d75dc5c4",
+      "page": 7,
+      "type": "table",
+      "order": 67,
+      "original_text": "表 3.1: 符号说明",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S068",
+      "evidence_id": "E-TABLE-P010-01aabe8d23",
+      "page": 10,
+      "type": "table",
+      "order": 68,
+      "original_text": "表 4.2: 位置结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S069",
+      "evidence_id": "E-TABLE-P011-8085419eb3",
+      "page": 11,
+      "type": "table",
+      "order": 69,
+      "original_text": "表 4.3: 速度结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S070",
+      "evidence_id": "E-TABLE-P013-81479c2f17",
+      "page": 13,
+      "type": "table",
+      "order": 70,
+      "original_text": "表 4.4: 位置结毙表 4 5: 速度结根",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S071",
+      "evidence_id": "E-TABLE-P026-e88643486a",
+      "page": 26,
+      "type": "table",
+      "order": 71,
+      "original_text": "表 4.6: 位置结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S072",
+      "evidence_id": "E-TABLE-P027-cadfa48881",
+      "page": 27,
+      "type": "table",
+      "order": 72,
+      "original_text": "表 47: 速度结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S009",
+        "S010",
+        "S011"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S001",
+        "S020",
+        "S021",
+        "S022",
+        "S023"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S012",
+        "S024",
+        "S025",
+        "S026",
+        "S027",
+        "S028",
+        "S029"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S030"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S013",
+        "S031",
+        "S032"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S014",
+        "S015",
+        "S066"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S067"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S002",
+        "S003",
+        "S004",
+        "S016",
+        "S033",
+        "S034",
+        "S035"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S036"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S037",
+        "S068"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S005",
+        "S038",
+        "S039",
+        "S069"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": []
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S017",
+        "S040",
+        "S070"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S006",
+        "S041",
+        "S042",
+        "S043",
+        "S044"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": []
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S007",
+        "S045",
+        "S046"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S047",
+        "S048",
+        "S049"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S008",
+        "S050"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S051",
+        "S052"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S053",
+        "S054"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S055",
+        "S056"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S057",
+        "S058"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": [
+        "S059"
+      ]
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S018"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": [
+        "S019",
+        "S060"
+      ]
+    },
+    {
+      "page": 26,
+      "block_ids": [
+        "S061",
+        "S071"
+      ]
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S062",
+        "S072"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": [
+        "S063",
+        "S064",
+        "S065"
+      ]
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": []
+}

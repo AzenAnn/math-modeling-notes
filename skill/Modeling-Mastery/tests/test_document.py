@@ -5,7 +5,11 @@ from pathlib import Path
 
 import pytest
 
-from modeling_mastery.document import _merge_markdown_pages_with_geometry, parse_document
+from modeling_mastery.document import (
+    _merge_markdown_pages_with_geometry,
+    _normalize_ocr_text,
+    parse_document,
+)
 from modeling_mastery.ir_builder import build_paper_ir
 
 
@@ -83,3 +87,18 @@ def test_page_marked_ocr_text_keeps_pdf_geometry() -> None:
         (595.0, 842.0),
         (612.0, 792.0),
     ]
+
+
+def test_normalize_ocr_text_removes_artificial_cjk_spacing() -> None:
+    source = "基 于 几 何 模 型\n\nresult1.xlsx, 表 1 。"
+    assert _normalize_ocr_text(source) == "基于几何模型\n\nresult1.xlsx, 表 1。"
+
+
+def test_title_hint_is_added_as_heading(tmp_path: Path) -> None:
+    source = tmp_path / "paper.md"
+    source.write_text("摘要正文", encoding="utf-8")
+    result = parse_document(source, tmp_path / "out", backend="markdown", title_hint="正式题目")
+    normalized = result.normalized_markdown.read_text(encoding="utf-8")
+    structure = json.loads(result.structure_json.read_text(encoding="utf-8"))
+    assert "# 正式题目" in normalized
+    assert structure["sections"][0]["title"] == "正式题目"

@@ -1,0 +1,2744 @@
+{
+  "paper": {
+    "title": "基于差分遗传算法的农作物种植策略优化",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\C038.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P002-48437688cc",
+      "page": 2,
+      "type": "text",
+      "order": 1,
+      "original_text": "问题一 : 依据附件 1 和附件 2 的数据 , 假设未来各种农作物的预期销售量、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P003-10e0db0758",
+      "page": 3,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设农作物之间的可替代性和互补性关系可以进行量化。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-1f47711de7",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "- 假设在满足豆类作物种植要求的基础上 , 逅地区土壤肥力保持不变。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P004-f37659c6d2",
+      "page": 4,
+      "type": "text",
+      "order": 4,
+      "original_text": "问题一的核心在于利用附件 1 和附件 2 中的数据 , 假设未来各类农作物的预",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P015-f5f2aa7fff",
+      "page": 15,
+      "type": "text",
+      "order": 5,
+      "original_text": "说 , 模型假设各类作物的预计销售量、 周产量、 种植成本和销售价格相对于 2023",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P027-3f28c48f8c",
+      "page": 27,
+      "type": "text",
+      "order": 6,
+      "original_text": "小节假设超出预期销售量的产量部分将面临滞销风险 , 基于此对损失和收益进行",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P034-773d705fc0",
+      "page": 34,
+      "type": "text",
+      "order": 7,
+      "original_text": "拒绾原假设 , 即各类农作物的种植面积、 预期销售量、 销售价格、 种植成本均一",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P034-36002515db",
+      "page": 34,
+      "type": "text",
+      "order": 8,
+      "original_text": "兵体来说 , 假设需要比较的两个变量为 X 和 Y, 各包含 n 个样本值 , 则分别将",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P039-26ed04d50e",
+      "page": 39,
+      "type": "text",
+      "order": 9,
+      "original_text": "小节假设 , 超出预期销售量的产量将面临港销风险 , 基于这一假设 , 对损失与收",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-ce8d567b00",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "次 , 以及 2023 年的种植情况、 周产量、 种祺成本和销售单价等数据 , 建立数学模型 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-881d0487b4",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "采用基于差分进化的改进速传算法 (DEGA3 , 对渤销和 309%6 降价出售两种情境进行",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P001-3cb7cc4c1f",
+      "page": 1,
+      "type": "text",
+      "order": 12,
+      "original_text": "化与风险控制的 CVaR 种植策略优化模型 , 接着 , 利用引入 CVaR 的 DEGA 算法求",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P001-f0ad695a17",
+      "page": 1,
+      "type": "text",
+      "order": 13,
+      "original_text": "利用引入 CVaR 的 DEGA 算法 , 得出了",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P002-1e32cf8611",
+      "page": 2,
+      "type": "text",
+      "order": 14,
+      "original_text": "因此 , 针对这些复杂的耕作条件和限制 , 我们希望构建合适的数学模型 , 综",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P002-f08e37c807",
+      "page": 2,
+      "type": "text",
+      "order": 15,
+      "original_text": "附件信息 , 建立数学模型 , 分析以下问题 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P005-a7d32be94f",
+      "page": 5,
+      "type": "text",
+      "order": 16,
+      "original_text": "随后 , 本节构建以七年总利涧最大化为目标的农作物种植策略优化模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P005-384247b315",
+      "page": 5,
+      "type": "text",
+      "order": 17,
+      "original_text": "接下来 , 采用基于差分进化算法的改进遍传算法 , 针对超出预期销售量的作",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P010-94edfe383e",
+      "page": 10,
+      "type": "text",
+      "order": 18,
+      "original_text": "本小节探讨了如何构建利润最大化的农作物种植策骁优化模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P010-72d9fb7d99",
+      "page": 10,
+      "type": "text",
+      "order": 19,
+      "original_text": "然后建立数学模型进行优化求解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P010-30cd1e26c0",
+      "page": 10,
+      "type": "text",
+      "order": 20,
+      "original_text": "在建立农作物种棣策略优化模型时 , 决策变量是祖型的核心组成部分 , 用于",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P011-2343449354",
+      "page": 11,
+      "type": "text",
+      "order": 21,
+      "original_text": "这个二元变量的引入 , 使得模型能够对作物的种植与否进行有效控制 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P012-b4f884820a",
+      "page": 12,
+      "type": "text",
+      "order": 22,
+      "original_text": "此约柬的引入确保了在模型中 , 只有当某块地选择种植特定作物时 , 才会分",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P016-4e57a7bc65",
+      "page": 16,
+      "type": "text",
+      "order": 23,
+      "original_text": "固此 , 根据以上约束条件与目标函数建立的农作物种植策略优化模型为 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P017-aec4df27d8",
+      "page": 17,
+      "type": "text",
+      "order": 24,
+      "original_text": "在种群初始化时 , 采用反向数组法选择适应度较低的种群作",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P017-f53c97f581",
+      "page": 17,
+      "type": "text",
+      "order": 25,
+      "original_text": "势 , 本文采用基于差分进化算法的改进遗传算法 《DEGA 算法》 , 有效提升了在",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P017-57f0cbff2d",
+      "page": 17,
+      "type": "text",
+      "order": 26,
+      "original_text": "基于各类作物的亩均利润及耕地条件 , 构建三次样条拟吾模型 , 用以拟合作物种",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P018-6d5769c54e",
+      "page": 18,
+      "type": "text",
+      "order": 27,
+      "original_text": "本文采用实数编码方法 , 对生成种群的个体随机选取待操作染色体 Nioos Nzpos",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P018-b4136da26b",
+      "page": 18,
+      "type": "text",
+      "order": 28,
+      "original_text": "改进算法中 , 选择操作即采用逼传算法中的轮盘赌方式整合变异后生成的种",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P024-f267e41f7e",
+      "page": 24,
+      "type": "text",
+      "order": 29,
+      "original_text": "随后 , 本节采用基于差分进化的改进逸传算法 (DEGA) 对滞销和 5004 降价",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P024-e9f1d5a4e5",
+      "page": 24,
+      "type": "text",
+      "order": 30,
+      "original_text": "些基于问题一的 12 个约束条件 , 引入条件风险价值 (CCVaR) 优化方法 , 构建包",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P024-2fb724f06c",
+      "page": 24,
+      "type": "text",
+      "order": 31,
+      "original_text": "的 CVaR 种苑策略优化模型 , 随后 , 使用引入 CVaR 的 DEGA 算法求解适用于所",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P024-9fb840ab63",
+      "page": 24,
+      "type": "text",
+      "order": 32,
+      "original_text": "引入 CVaR 的 DEGA 算法求解全局最优解 , 最终得出了适用于所有不确定性情",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-TEXT-P026-e4f340803b",
+      "page": 26,
+      "type": "text",
+      "order": 33,
+      "original_text": "化种植策略至关重要 , 本小节通过建立吊产量波动模型 , 将每年吉产量的变化范",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-TEXT-P027-0897657f61",
+      "page": 27,
+      "type": "text",
+      "order": 34,
+      "original_text": "综上所述 , 通过引入这些不确定性因素 , 优化模型能够更加精准地反映未来",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-TEXT-P027-5c16b82f6c",
+      "page": 27,
+      "type": "text",
+      "order": 35,
+      "original_text": "为此 , 在第一问的约柬条件基础上 , 本节引入 CVaR 方法 , 构建新的目标函",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-TEXT-P028-c6c9806257",
+      "page": 28,
+      "type": "text",
+      "order": 36,
+      "original_text": "因此 , 根据以上约束条件与目标函数建立的 CVaR 种植策骅优化模型为 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-TEXT-P029-2d7d2ca4c1",
+      "page": 29,
+      "type": "text",
+      "order": 37,
+      "original_text": "同时有效控制凤险的全局最优解 E 引入 CVaR 的 DEGA 算法的基本步骤如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-TEXT-P029-ccfea13e7e",
+      "page": 29,
+      "type": "text",
+      "order": 38,
+      "original_text": "图 14 引入 CVaR 的 DEGA 算法的基本步骑",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-TEXT-P030-d66de0596b",
+      "page": 30,
+      "type": "text",
+      "order": 39,
+      "original_text": "算法 , 使用 Python 对 CVaR 种植策略优化模型进行求解 , 最终得出该乡村在",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-TEXT-P031-0429d0d659",
+      "page": 31,
+      "type": "text",
+      "order": 40,
+      "original_text": "接着 , 本小节展示了基于引入 CVaR 的 DEGA 算法在考虑不确定性和未考",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-TEXT-P032-039365cad0",
+      "page": 32,
+      "type": "text",
+      "order": 41,
+      "original_text": "基于引入 CWaR 的 DEGA 算法的优化分析 , 成功求解",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-TEXT-P033-5f9715e2cd",
+      "page": 33,
+      "type": "text",
+      "order": 42,
+      "original_text": "约不 , 构建考虑相关性因素的 CVaR 种植策略优化模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TEXT-P037-f5d0b6bb9c",
+      "page": 37,
+      "type": "text",
+      "order": 43,
+      "original_text": "价格与种植成本之间的相关性约果引入问题二的模型 , 构建了考虑相关因素的",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TEXT-P037-9ad2213818",
+      "page": 37,
+      "type": "text",
+      "order": 44,
+      "original_text": "最终 , 通过引入 CVaR 的 DEGA 算法对祖型进行求解 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TEXT-P038-9b8abaf0e5",
+      "page": 38,
+      "type": "text",
+      "order": 45,
+      "original_text": "售量、 销售价格与种植成本之间的祖关性约东引入模型 , 通过相关性分析方法进",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TEXT-P041-4d2ecb288b",
+      "page": 41,
+      "type": "text",
+      "order": 46,
+      "original_text": "性、 互补性以及预期销售量、 销售价格与种植成本的相关性引入优化模型 , 有效",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-TEXT-P042-8aeafb1fc0",
+      "page": 42,
+      "type": "text",
+      "order": 47,
+      "original_text": "最终构建了一个考虑相关性因袁的 CVaR 种植策略优化模型 , 通过使用包含",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-TEXT-P042-a584911bbc",
+      "page": 42,
+      "type": "text",
+      "order": 48,
+      "original_text": "本芸将对所构建的考虑相关因素的 CVaR 种植策酮优化模型进行深入分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-TEXT-P044-3c5741db7a",
+      "page": 44,
+      "type": "text",
+      "order": 49,
+      "original_text": "本节将对所构建的农作物种植策略优化模型进行全面评价 , 重点评估其在实",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-TEXT-P044-2e4d8fa9b8",
+      "page": 44,
+      "type": "text",
+      "order": 50,
+      "original_text": "(2) 模型引入了条件风险价值优化方法 , 有助于提升整个模型的稳健性 , 能",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-TEXT-P044-7544618311",
+      "page": 44,
+      "type": "text",
+      "order": 51,
+      "original_text": "本文建立的考虑相关性因素的 CVWaR 种植笆路优化模型可以推广到不园地",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-TEXT-P046-4af022b42e",
+      "page": 46,
+      "type": "text",
+      "order": 52,
+      "original_text": "引入 CVaR 的 DEGA 算法的主体程序 ....",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-TEXT-P056-4b9fc6e66b",
+      "page": 56,
+      "type": "text",
+      "order": 53,
+      "original_text": "附录 4 引入 CVaR 的 DEGA 算法的主体程序",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-TEXT-P001-7342631f25",
+      "page": 1,
+      "type": "text",
+      "order": 54,
+      "original_text": "型进行灵敏度分析 , 考虑所有不确定性因袁后的总利润与问题三中的利润差距极小 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-TEXT-P034-7a569ed944",
+      "page": 34,
+      "type": "text",
+      "order": 55,
+      "original_text": "属于小样本 , 因此林用 Shapiro-Wilk 检验来判断每个变量是否符合正态分布。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-TEXT-P034-df0073561e",
+      "page": 34,
+      "type": "text",
+      "order": 56,
+      "original_text": "$-W 检验的结果显示各个变量的显著性 P 值均小于 0.05, 水平员现显著性 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-TEXT-P034-44a76ad655",
+      "page": 34,
+      "type": "text",
+      "order": 57,
+      "original_text": "Spearman 相关系数也称为袭相关系数 , 用于检验时间序列变化趋势是否存",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TEXT-P042-25b0701376",
+      "page": 42,
+      "type": "text",
+      "order": 58,
+      "original_text": "与检验 , 重点包含灵敏度分析。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-TEXT-P042-b823e30f30",
+      "page": 42,
+      "type": "text",
+      "order": 59,
+      "original_text": "鲁棒性 , 远为模型的进一步忽化及实际应用提供了可靠的移学依据。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-TEXT-P042-1fcc76fb16",
+      "page": 42,
+      "type": "text",
+      "order": 60,
+      "original_text": "1 基于鲁棚优化的灵敏度分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S061",
+      "evidence_id": "E-TEXT-P042-3de6882cbc",
+      "page": 42,
+      "type": "text",
+      "order": 61,
+      "original_text": "本小节基于鲁棒忽化方法进行灵敏度分析 , 考虑了四个不确定性因素均为最",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S062",
+      "evidence_id": "E-TEXT-P043-6fcfcfda9b",
+      "page": 43,
+      "type": "text",
+      "order": 62,
+      "original_text": "7.2 基于动态调参的灵敏度分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S063",
+      "evidence_id": "E-TEXT-P044-8cd8bf96d8",
+      "page": 44,
+      "type": "text",
+      "order": 63,
+      "original_text": "首先 , 通过鲁粽优化方法对模型进行灵敏度分析 , 结果表明 , 在考",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S064",
+      "evidence_id": "E-FIGURE-P003-a30e3b4e99",
+      "page": 3,
+      "type": "figure",
+      "order": 64,
+      "original_text": "图 1 总体思路框架",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S065",
+      "evidence_id": "E-FIGURE-P005-a1d3657010",
+      "page": 5,
+      "type": "figure",
+      "order": 65,
+      "original_text": "图 2 问题一的思维框架",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S066",
+      "evidence_id": "E-FIGURE-P006-16e8f7c6cb",
+      "page": 6,
+      "type": "figure",
+      "order": 66,
+      "original_text": "图 3 _露天耕地结构 〔 左》 与大糊耕地结构 ( 右》 分布图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S067",
+      "evidence_id": "E-FIGURE-P006-b9395e4da2",
+      "page": 6,
+      "type": "figure",
+      "order": 67,
+      "original_text": "由图 3 可知 , 读乡村现有露天耕地总面积为 1201 亨 , 分布在 34 个地坡中 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S068",
+      "evidence_id": "E-FIGURE-P007-caf48b7df1",
+      "page": 7,
+      "type": "figure",
+      "order": 68,
+      "original_text": "制定农业发展规划提供数据支持。 具体而言 , 图 4 展示了 2023 年各类农作物的",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S069",
+      "evidence_id": "E-FIGURE-P007-3057db5184",
+      "page": 7,
+      "type": "figure",
+      "order": 69,
+      "original_text": "图 4 2023 年各类农作物总产量排名",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S070",
+      "evidence_id": "E-FIGURE-P007-be36fdf29e",
+      "page": 7,
+      "type": "figure",
+      "order": 70,
+      "original_text": "由图 4 可知 , 在 2023 年中 , 程食作物的产量居于主导地位 , 其中小麦、 玉",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S071",
+      "evidence_id": "E-FIGURE-P008-375ab1d3cd",
+      "page": 8,
+      "type": "figure",
+      "order": 71,
+      "original_text": "由图 5 可知 , 平早地的粮食作物亩产量普遂较高 , 尤其是南瓜和红赘 , 展现",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S072",
+      "evidence_id": "E-FIGURE-P008-87c88b35bc",
+      "page": 8,
+      "type": "figure",
+      "order": 72,
+      "original_text": "图 5 不同耕地条件下主要粮食作物亩产量对比",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S073",
+      "evidence_id": "E-FIGURE-P008-788a966787",
+      "page": 8,
+      "type": "figure",
+      "order": 73,
+      "original_text": "此外 , 图 56 展示了在水泳地、 普通大棚、 智慧大棚第一季和第二季四种条件",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S074",
+      "evidence_id": "E-FIGURE-P008-36a6eaf4bf",
+      "page": 8,
+      "type": "figure",
+      "order": 74,
+      "original_text": "由图 6 可矫 , 普通太棚和智慧太栅第一季的蔬菜亩产量整体较高 , 尤其是黄",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S075",
+      "evidence_id": "E-FIGURE-P009-92a978a654",
+      "page": 9,
+      "type": "figure",
+      "order": 75,
+      "original_text": "图 6 不同耕地条件下主要薏菜作物亩产量对比",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S076",
+      "evidence_id": "E-FIGURE-P009-cf3620a452",
+      "page": 9,
+      "type": "figure",
+      "order": 76,
+      "original_text": "类、 薏菜类和食用菜类三大类作物 , 如图 7 所示。 该图直观地展示了各类作物之",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S077",
+      "evidence_id": "E-FIGURE-P009-4bcb7380a1",
+      "page": 9,
+      "type": "figure",
+      "order": 77,
+      "original_text": "图 7 2023 年各类农作物平均窗利涧排功",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S078",
+      "evidence_id": "E-FIGURE-P010-d16aeee76a",
+      "page": 10,
+      "type": "figure",
+      "order": 78,
+      "original_text": "由图 7 可矫 , 粮贪类作物的亩均利润整伴俯低 , 其中红薯和养麦的利润视对",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S079",
+      "evidence_id": "E-FIGURE-P010-2406e85a2f",
+      "page": 10,
+      "type": "figure",
+      "order": 79,
+      "original_text": "综上所述 , 图 7 清晰地晚示了不同类别农作物的亩均利润差异。 粮食类作物",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S080",
+      "evidence_id": "E-FIGURE-P019-8c91f7a363",
+      "page": 19,
+      "type": "figure",
+      "order": 80,
+      "original_text": "传兼法的流程如图 8 所示 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S081",
+      "evidence_id": "E-FIGURE-P019-d098d9412d",
+      "page": 19,
+      "type": "figure",
+      "order": 81,
+      "original_text": "图 8 基于差分进化算法的改进遗传算法的基本步骤",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S082",
+      "evidence_id": "E-FIGURE-P020-64cb8d8efc",
+      "page": 20,
+      "type": "figure",
+      "order": 82,
+      "original_text": "首先 , 本小节维制了 2024 年滞销情境下的最优种祺方案 , 如图 9 所示。 图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S083",
+      "evidence_id": "E-FIGURE-P020-a21625724d",
+      "page": 20,
+      "type": "figure",
+      "order": 83,
+      "original_text": "由图 9 可知 , 粮食作物在 ABC 类地块的种植总面积较太 , 特别是小麦、 莽",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S084",
+      "evidence_id": "E-FIGURE-P021-8e5260e7af",
+      "page": 21,
+      "type": "figure",
+      "order": 84,
+      "original_text": "图 9 二′':)2晕li亭I亡害胥蜃蝠_】十庸i野竟1=晟『 |:】丨l譬壹壹〕寞了案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S085",
+      "evidence_id": "E-FIGURE-P021-ffaab8e9af",
+      "page": 21,
+      "type": "figure",
+      "order": 85,
+      "original_text": "接着 , 本小节绘制了 2024 年 50%5 降价情境下的最优种植方案 , 如图 10 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S086",
+      "evidence_id": "E-FIGURE-P021-9903871528",
+      "page": 21,
+      "type": "figure",
+      "order": 86,
+      "original_text": "由图 10 中可以看出 , ABC 娄地块的单季农作物种植总面积较大 , 尤其是玉",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S087",
+      "evidence_id": "E-FIGURE-P022-45873d9738",
+      "page": 22,
+      "type": "figure",
+      "order": 87,
+      "original_text": "图 10 2024 年 5096 降价情境下最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S088",
+      "evidence_id": "E-FIGURE-P022-f880b0884c",
+      "page": 22,
+      "type": "figure",
+      "order": 88,
+      "original_text": "首先 , 图 11 展示了 2024-2030 年在滞销情境与 30“4 降价情境下各年度的利",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S089",
+      "evidence_id": "E-FIGURE-P022-2d4c208a71",
+      "page": 22,
+      "type": "figure",
+      "order": 89,
+      "original_text": "由图 11 可知 , 在湛销情境下 , 年利涧整体保持相对稳定 , 虽有小幅波动 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S090",
+      "evidence_id": "E-FIGURE-P023-35c2e2056a",
+      "page": 23,
+      "type": "figure",
+      "order": 90,
+      "original_text": "图 11 2024-2030 年各年度利润折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S091",
+      "evidence_id": "E-FIGURE-P023-340ceae68d",
+      "page": 23,
+      "type": "figure",
+      "order": 91,
+      "original_text": "物种植策略优化过程中 , 累计利润随迭代次数变化的收敛曲线。 图 12 直观呈现",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S092",
+      "evidence_id": "E-FIGURE-P023-f605abb44d",
+      "page": 23,
+      "type": "figure",
+      "order": 92,
+      "original_text": "图 12 湾销与 5084 降价情境下的累计利淘收敏曲线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S093",
+      "evidence_id": "E-FIGURE-P023-daf0e4a8a0",
+      "page": 23,
+      "type": "figure",
+      "order": 93,
+      "original_text": "从图 12 中可以看出 ,50% 6 降价情境下的累计利涧增长速度显著快于滞销情",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S094",
+      "evidence_id": "E-FIGURE-P025-394830b844",
+      "page": 25,
+      "type": "figure",
+      "order": 94,
+      "original_text": "图 13 问题二的思维框架",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S095",
+      "evidence_id": "E-FIGURE-P029-ccfea13e7e",
+      "page": 29,
+      "type": "figure",
+      "order": 95,
+      "original_text": "图 14 引入 CVaR 的 DEGA 算法的基本步骑",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S096",
+      "evidence_id": "E-FIGURE-P030-380dc32198",
+      "page": 30,
+      "type": "figure",
+      "order": 96,
+      "original_text": "本小节绘制了 2024 年考虚不确定性因素的最优种植方案 , 如图 15 所示 , 图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S097",
+      "evidence_id": "E-FIGURE-P030-da43817a8a",
+      "page": 30,
+      "type": "figure",
+      "order": 97,
+      "original_text": "图 15 2024 年考虐不确定性因素的最优种楠方室",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S098",
+      "evidence_id": "E-FIGURE-P031-360f4544c8",
+      "page": 31,
+      "type": "figure",
+      "order": 98,
+      "original_text": "首先 , 图 16 展示了 2024-2030 年在考虑不确定性和未考虎不确定性两种情",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S099",
+      "evidence_id": "E-FIGURE-P031-e9e5b192a4",
+      "page": 31,
+      "type": "figure",
+      "order": 99,
+      "original_text": "图 16 考虑不确定性因素的 2024~2030 年各年度利涧折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S100",
+      "evidence_id": "E-FIGURE-P031-bf50b4e891",
+      "page": 31,
+      "type": "figure",
+      "order": 100,
+      "original_text": "由图 16 可知 , 在考虑不确定性情境下 , 年利润整体保持相对稳定 , 虫有轻",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S101",
+      "evidence_id": "E-FIGURE-P031-6b5f97aec2",
+      "page": 31,
+      "type": "figure",
+      "order": 101,
+      "original_text": "的收敛曲线。 图 17 直观呈现了两种情境下的利润增长差异。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S102",
+      "evidence_id": "E-FIGURE-P032-1e698b3039",
+      "page": 32,
+      "type": "figure",
+      "order": 102,
+      "original_text": "图 17 考虑不确定性因素的累计利涓收敛曲线",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S103",
+      "evidence_id": "E-FIGURE-P032-a735c64159",
+      "page": 32,
+      "type": "figure",
+      "order": 103,
+      "original_text": "从图 17 中可以看出 , 未考虑不确定性情境下的累计利涧增长达度显著快于",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S104",
+      "evidence_id": "E-FIGURE-P033-3440b5d45d",
+      "page": 33,
+      "type": "figure",
+      "order": 104,
+      "original_text": "图 18 问题三的思纳框架",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S105",
+      "evidence_id": "E-FIGURE-P034-dab5ab430d",
+      "page": 34,
+      "type": "figure",
+      "order": 105,
+      "original_text": "图 19 展示了 2024~2030 年期间 , 各类农作物的种植面积随时间的变化趋势 -",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S106",
+      "evidence_id": "E-FIGURE-P034-c23fa2eaad",
+      "page": 34,
+      "type": "figure",
+      "order": 106,
+      "original_text": "从图 19 中可以看出 , 棕些作物的种植面积随时间的变化晕现出明显的反向",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S107",
+      "evidence_id": "E-FIGURE-P035-e64fb1fdfa",
+      "page": 35,
+      "type": "figure",
+      "order": 107,
+      "original_text": "图 19 “ 各类农作物的种植面积随时间变化的怪势",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S108",
+      "evidence_id": "E-FIGURE-P035-f724648261",
+      "page": 35,
+      "type": "figure",
+      "order": 108,
+      "original_text": "植面积数据进行了视关性分析 , 并绘制了农作物相关性热力图 , 如图 20 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S109",
+      "evidence_id": "E-FIGURE-P036-9ea102f3c4",
+      "page": 36,
+      "type": "figure",
+      "order": 109,
+      "original_text": "图 20 “ 各类农作物种植面积的祖羔性热力国",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S110",
+      "evidence_id": "E-FIGURE-P036-b3b440bb4a",
+      "page": 36,
+      "type": "figure",
+      "order": 110,
+      "original_text": "从图 20 中可以看出 , 部分农作物之间存在明显的负相关关系。 例如 , 茭豆",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S111",
+      "evidence_id": "E-FIGURE-P036-231b33d575",
+      "page": 36,
+      "type": "figure",
+      "order": 111,
+      "original_text": "数据 , 计算了 8pearman 相关系数 , 并绘制了相关性热力图 , 如图 21 所示。 图中",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S112",
+      "evidence_id": "E-FIGURE-P037-86af947f8b",
+      "page": 37,
+      "type": "figure",
+      "order": 112,
+      "original_text": "图 21 预期销售量与销售价格、 种植成本之间的相关性热力图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S113",
+      "evidence_id": "E-FIGURE-P037-e23d7a39e0",
+      "page": 37,
+      "type": "figure",
+      "order": 113,
+      "original_text": "从图 21 中可以看出 , 亩产量与种植成本之间的相关性较强 , 相关系数为 0.56,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S114",
+      "evidence_id": "E-FIGURE-P041-18091a994d",
+      "page": 41,
+      "type": "figure",
+      "order": 114,
+      "original_text": "首先 , 图 22 展示了 2024~2030 年在考虑相关性和来考虑相关性两种情境下",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S115",
+      "evidence_id": "E-FIGURE-P041-e35ee438bc",
+      "page": 41,
+      "type": "figure",
+      "order": 115,
+      "original_text": "图 22 考虑相关因素的 2024-2030 年各年度利涧折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S116",
+      "evidence_id": "E-FIGURE-P041-51039685fd",
+      "page": 41,
+      "type": "figure",
+      "order": 116,
+      "original_text": "从图 22 中可以看出 , 考虑相关因素后各年度的年利涠朋显高于未考虑相关",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S117",
+      "evidence_id": "E-FIGURE-P041-ce3a2a616a",
+      "page": 41,
+      "type": "figure",
+      "order": 117,
+      "original_text": "图 23 考虐祖关因素的各类农作物利涂条形图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S118",
+      "evidence_id": "E-FIGURE-P042-a99003008a",
+      "page": 42,
+      "type": "figure",
+      "order": 118,
+      "original_text": "从图 23 中可以看出 , 小麦和茄子的利润显著高于其他作物 , 特别是在考虚",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S119",
+      "evidence_id": "E-FIGURE-P043-7c3aea9d92",
+      "page": 43,
+      "type": "figure",
+      "order": 119,
+      "original_text": "图 24 “ 考虑相美团素的各类农作物利涓条形图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S120",
+      "evidence_id": "E-FIGURE-P043-2387975768",
+      "page": 43,
+      "type": "figure",
+      "order": 120,
+      "original_text": "图 25 考虐相关固素的各类农作物利涓条形图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S121",
+      "evidence_id": "E-FIGURE-P043-35af9aa5ac",
+      "page": 43,
+      "type": "figure",
+      "order": 121,
+      "original_text": "图 25 考虐相关固素的各类农作物利涓条形图 42",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S122",
+      "evidence_id": "E-FIGURE-P048-876e316f82",
+      "page": 48,
+      "type": "figure",
+      "order": 122,
+      "original_text": "图 26 “2024 年考虑不确定性因素的最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S123",
+      "evidence_id": "E-FIGURE-P049-ed4ec5fe93",
+      "page": 49,
+      "type": "figure",
+      "order": 123,
+      "original_text": "图 28 2026 年考虎不确定性因素的最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S124",
+      "evidence_id": "E-FIGURE-P050-d9e23516b2",
+      "page": 50,
+      "type": "figure",
+      "order": 124,
+      "original_text": "图 29 2027 年考虎不确定性因素的最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S125",
+      "evidence_id": "E-FIGURE-P050-d9201127a2",
+      "page": 50,
+      "type": "figure",
+      "order": 125,
+      "original_text": "图 30 2028 年考虑不硬定性因素的最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S126",
+      "evidence_id": "E-FIGURE-P051-c012f4307c",
+      "page": 51,
+      "type": "figure",
+      "order": 126,
+      "original_text": "图 32 2030 年考虎不确定性因素的最优种植方案",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S127",
+      "evidence_id": "E-TABLE-P019-64cd141fbd",
+      "page": 19,
+      "type": "table",
+      "order": 127,
+      "original_text": "具体而言 , 表 1 展示了 2023 年各农作物在不同种植季次中的部分实际产量",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S128",
+      "evidence_id": "E-TABLE-P020-d3655f6658",
+      "page": 20,
+      "type": "table",
+      "order": 128,
+      "original_text": "由表 1 可知 , 不同作物的产量存在显着差异。 例如 , 单季种植的黄豆、 玉米、",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S010",
+        "S011",
+        "S012",
+        "S013",
+        "S054"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S001",
+        "S014",
+        "S015"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S002",
+        "S003",
+        "S064"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S004"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S016",
+        "S017",
+        "S065"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S066",
+        "S067"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S068",
+        "S069",
+        "S070"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S071",
+        "S072",
+        "S073",
+        "S074"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S075",
+        "S076",
+        "S077"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S018",
+        "S019",
+        "S020",
+        "S078",
+        "S079"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S021"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S022"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": []
+    },
+    {
+      "page": 14,
+      "block_ids": []
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S005"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S023"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S024",
+        "S025",
+        "S026"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S027",
+        "S028"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S080",
+        "S081",
+        "S127"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S082",
+        "S083",
+        "S128"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S084",
+        "S085",
+        "S086"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S087",
+        "S088",
+        "S089"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": [
+        "S090",
+        "S091",
+        "S092",
+        "S093"
+      ]
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S029",
+        "S030",
+        "S031",
+        "S032"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": [
+        "S094"
+      ]
+    },
+    {
+      "page": 26,
+      "block_ids": [
+        "S033"
+      ]
+    },
+    {
+      "page": 27,
+      "block_ids": [
+        "S006",
+        "S034",
+        "S035"
+      ]
+    },
+    {
+      "page": 28,
+      "block_ids": [
+        "S036"
+      ]
+    },
+    {
+      "page": 29,
+      "block_ids": [
+        "S037",
+        "S038",
+        "S095"
+      ]
+    },
+    {
+      "page": 30,
+      "block_ids": [
+        "S039",
+        "S096",
+        "S097"
+      ]
+    },
+    {
+      "page": 31,
+      "block_ids": [
+        "S040",
+        "S098",
+        "S099",
+        "S100",
+        "S101"
+      ]
+    },
+    {
+      "page": 32,
+      "block_ids": [
+        "S041",
+        "S102",
+        "S103"
+      ]
+    },
+    {
+      "page": 33,
+      "block_ids": [
+        "S042",
+        "S104"
+      ]
+    },
+    {
+      "page": 34,
+      "block_ids": [
+        "S007",
+        "S008",
+        "S055",
+        "S056",
+        "S057",
+        "S105",
+        "S106"
+      ]
+    },
+    {
+      "page": 35,
+      "block_ids": [
+        "S107",
+        "S108"
+      ]
+    },
+    {
+      "page": 36,
+      "block_ids": [
+        "S109",
+        "S110",
+        "S111"
+      ]
+    },
+    {
+      "page": 37,
+      "block_ids": [
+        "S043",
+        "S044",
+        "S112",
+        "S113"
+      ]
+    },
+    {
+      "page": 38,
+      "block_ids": [
+        "S045"
+      ]
+    },
+    {
+      "page": 39,
+      "block_ids": [
+        "S009"
+      ]
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": [
+        "S046",
+        "S114",
+        "S115",
+        "S116",
+        "S117"
+      ]
+    },
+    {
+      "page": 42,
+      "block_ids": [
+        "S047",
+        "S048",
+        "S058",
+        "S059",
+        "S060",
+        "S061",
+        "S118"
+      ]
+    },
+    {
+      "page": 43,
+      "block_ids": [
+        "S062",
+        "S119",
+        "S120",
+        "S121"
+      ]
+    },
+    {
+      "page": 44,
+      "block_ids": [
+        "S049",
+        "S050",
+        "S051",
+        "S063"
+      ]
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": [
+        "S052"
+      ]
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": [
+        "S122"
+      ]
+    },
+    {
+      "page": 49,
+      "block_ids": [
+        "S123"
+      ]
+    },
+    {
+      "page": 50,
+      "block_ids": [
+        "S124",
+        "S125"
+      ]
+    },
+    {
+      "page": 51,
+      "block_ids": [
+        "S126"
+      ]
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    },
+    {
+      "page": 56,
+      "block_ids": [
+        "S053"
+      ]
+    },
+    {
+      "page": 57,
+      "block_ids": []
+    },
+    {
+      "page": 58,
+      "block_ids": []
+    },
+    {
+      "page": 59,
+      "block_ids": []
+    },
+    {
+      "page": 60,
+      "block_ids": []
+    },
+    {
+      "page": 61,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Genetic Algorithm",
+      "translation": "Genetic Algorithm",
+      "note": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解"
+    }
+  ]
+}

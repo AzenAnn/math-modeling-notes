@@ -1,0 +1,1364 @@
+{
+  "paper": {
+    "title": "反潜航空深弹命中概率的优化问题",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\D033.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P003-d8cb88ec41",
+      "page": 3,
+      "type": "text",
+      "order": 1,
+      "original_text": "假设潜艇采取静默时 , 立即静止",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P003-fb8141b581",
+      "page": 3,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设反潜攻击方在一定条件下知道潜艇航向",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-cbdca48220",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设深弹之间互不影响 , 不会引起连镁爆炸等情况",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P004-13547de55a",
+      "page": 4,
+      "type": "text",
+      "order": 4,
+      "original_text": "的定位值瓜无误差的假设下 , 根据 4 与力的不同关系 , 分情形分析投弹落点 (f,s) 能够和",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P022-92aec74dd5",
+      "page": 22,
+      "type": "text",
+      "order": 5,
+      "original_text": "(3) 模型建立基于潜艇瞬时静止假设 , 缺乏一定实际性",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P019-c8b4a0ba32",
+      "page": 19,
+      "type": "text",
+      "order": 6,
+      "original_text": "由于 P( 少 ) 表述式复杂 , 只能采用数值解法。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P023-e91d211050",
+      "page": 23,
+      "type": "text",
+      "order": 7,
+      "original_text": "反潜巡逯机使用航空自导深弹攻潜效能及方法研究 [ 小数字海",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P001-bd2e42b8c9",
+      "page": 1,
+      "type": "text",
+      "order": 8,
+      "original_text": "针对问题一 , 由条件可知 , 潜艇中心位置深度定位没有说差 , 且两水平定位的误差",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P001-fb72826d05",
+      "page": 1,
+      "type": "text",
+      "order": 9,
+      "original_text": "针对问题二 , 在问题一的基础上 , 增加考虑潜艇中心位置的深度定位误差问题 . 囡",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-207a0b53f4",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "为深度方向误差与水平方向涉差相互独立 , 所以闰题一中所求的使得投弹佐中概率最大",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P002-75398db6c0",
+      "page": 2,
+      "type": "text",
+      "order": 11,
+      "original_text": "在一定条件下 , 反潜攻击方可知潜艇航向 , 由于存在定位误差 , 潜艇中心实际位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P002-01bce83112",
+      "page": 2,
+      "type": "text",
+      "order": 12,
+      "original_text": "问题一 : 投射一枚深弹 , 潜艇中心位置深度已知且无误差 , 两个水平坐标定位均服",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P002-1e6dbcea93",
+      "page": 2,
+      "type": "text",
+      "order": 13,
+      "original_text": "问题二 : 仍投射一娓深弹 , 但潜艇中心位置各方向的定位均有误差。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P002-f8dc963a3d",
+      "page": 2,
+      "type": "text",
+      "order": 14,
+      "original_text": "问题一 : 根据题目条件可知 , 湛艇中心位置的深度定位没有误差 , 两个水平坐标定",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P003-d0a29455ef",
+      "page": 3,
+      "type": "text",
+      "order": 15,
+      "original_text": "问题二 : 与问题一不同 , 问题二在潜艇中心的源度方向上也存在误差 , 但由于深度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P003-87f92e8f6d",
+      "page": 3,
+      "type": "text",
+      "order": 16,
+      "original_text": "方向的浩差与水平方向上的误差相互独立 , 所以问题一中所得到的水平方向方案仍然成",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P004-5ba8154f63",
+      "page": 4,
+      "type": "text",
+      "order": 17,
+      "original_text": "在目标坐标系中 , 潜艇中心位置的水平位置定位坐标为 (0.0) , 但由于测量误差 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P014-1e2c13ee2a",
+      "page": 14,
+      "type": "text",
+      "order": 18,
+      "original_text": "如果潜艇中心的深度方向有误差 , 由于深度方向的误差与平面两个水平方向的误差",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-FIGURE-P004-4a60da783a",
+      "page": 4,
+      "type": "figure",
+      "order": 19,
+      "original_text": "卯图 1 所神",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-FIGURE-P005-cb9ec935a5",
+      "page": 5,
+      "type": "figure",
+      "order": 20,
+      "original_text": "图 1 情形二引爆深度 4 位置示惹图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-FIGURE-P005-c6b27d8156",
+      "page": 5,
+      "type": "figure",
+      "order": 21,
+      "original_text": "如图 2 朋影部分所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-FIGURE-P006-f3e78d22db",
+      "page": 6,
+      "type": "figure",
+      "order": 22,
+      "original_text": "如图 3 阳影部分所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-FIGURE-P006-788e0e7d92",
+      "page": 6,
+      "type": "figure",
+      "order": 23,
+      "original_text": "图 3 情形三可和中范围区域口",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-FIGURE-P006-638ae98a7e",
+      "page": 6,
+      "type": "figure",
+      "order": 24,
+      "original_text": "如图 4 所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-FIGURE-P006-d654a1c91a",
+      "page": 6,
+      "type": "figure",
+      "order": 25,
+      "original_text": "图 4 情形二引爆深度 4 位置示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-FIGURE-P007-f3c17249d2",
+      "page": 7,
+      "type": "figure",
+      "order": 26,
+      "original_text": "加图 5 阳影部分所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-FIGURE-P007-1b96ad4770",
+      "page": 7,
+      "type": "figure",
+      "order": 27,
+      "original_text": "图 5 情形四可命中范围区域 52,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-FIGURE-P007-5167533434",
+      "page": 7,
+      "type": "figure",
+      "order": 28,
+      "original_text": "如图 6 阮影部分所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-FIGURE-P007-38074bbb08",
+      "page": 7,
+      "type": "figure",
+      "order": 29,
+      "original_text": "图 6 情形五可何中范围区域 52:",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-FIGURE-P008-da9fe474e2",
+      "page": 8,
+      "type": "figure",
+      "order": 30,
+      "original_text": "共中 Q,,Q,,Q,,Q: 分别如图 2、 图 3、 图 5 与国 6 所示。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-FIGURE-P009-879d800a5e",
+      "page": 9,
+      "type": "figure",
+      "order": 31,
+      "original_text": "图 7 可和中范围 92 5.0, 的重发图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-FIGURE-P009-2ef23e97f6",
+      "page": 9,
+      "type": "figure",
+      "order": 32,
+      "original_text": "其中 Q 如图 3 所示。 |",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P009-e2ebf2af08",
+      "page": 9,
+      "type": "figure",
+      "order": 33,
+      "original_text": "注 ; 引理 1 的几何意义如图 8 所示 , 即当定长度的积分区间的中点在原点时 , 积分",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P010-7150479110",
+      "page": 10,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 8 正态分布示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P011-d7b17048d3",
+      "page": 11,
+      "type": "figure",
+      "order": 35,
+      "original_text": "证明 ; 将图 3 坐标系按逆时针族转 9 = '!9_菩蒙宫'至_j菖罗J卡i耆FJ苎王昼靠丑系.】蓦言j示l雪I刁〕饕萤雨髦晕薯蜃_...'薯弓元 「 表示 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P011-73e6ddfacd",
+      "page": 11,
+      "type": "figure",
+      "order": 36,
+      "original_text": "纵轴用 “ 表示 ( 如图 9 )",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P011-72eb89cc58",
+      "page": 11,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 9 旋转后新坐标系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P011-a17abb5876",
+      "page": 11,
+      "type": "figure",
+      "order": 38,
+      "original_text": "为方便观察 , 将新坐标系摆正如图 10。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P011-0010b11223",
+      "page": 11,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 10 摄正后新坐标系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P011-f79944251c",
+      "page": 11,
+      "type": "figure",
+      "order": 40,
+      "original_text": "其他参数或边界曲线表达式如图 11 所示",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P012-32aea60363",
+      "page": 12,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 11 边界曲线表达式示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P014-83c3e5b57c",
+      "page": 14,
+      "type": "figure",
+      "order": 42,
+      "original_text": "图 12 ),",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-FIGURE-P015-e78c179540",
+      "page": 15,
+      "type": "figure",
+      "order": 43,
+      "original_text": "图 12 d 与实际深度最小值 1 相对位置图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-FIGURE-P015-88bde50c2a",
+      "page": 15,
+      "type": "figure",
+      "order": 44,
+      "original_text": "入到长方形区域 ,,( 如图 13 ) 时被命中 , 帜中概案为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-FIGURE-P015-226bb25865",
+      "page": 15,
+      "type": "figure",
+      "order": 45,
+      "original_text": "图 13 团区域 52,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-FIGURE-P016-8adc19e483",
+      "page": 16,
+      "type": "figure",
+      "order": 46,
+      "original_text": "“ = 川尻 -(a -= - 万 FJ 的圆盛 , 此时潜艇在水平中心位置萱入到区域 Q,,( 加图 14》",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-FIGURE-P016-6392d6973e",
+      "page": 16,
+      "type": "figure",
+      "order": 47,
+      "original_text": "图 14 国区域 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-FIGURE-P016-b84dfffa2b",
+      "page": 16,
+      "type": "figure",
+      "order": 48,
+      "original_text": "炼和中 , 此时潜脱在水平中心位置落入到区域 582 〔 如图 15 5 时被命中 , 和中概率为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-FIGURE-P017-83c4cbeb79",
+      "page": 17,
+      "type": "figure",
+      "order": 49,
+      "original_text": "图 15 团区域 Q",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-FIGURE-P017-40a21e1797",
+      "page": 17,
+      "type": "figure",
+      "order": 50,
+      "original_text": "心位置落入到区域 Q.,〔《如图 16》 时被命中 , 和中概率为",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-FIGURE-P017-a10b5e384f",
+      "page": 17,
+      "type": "figure",
+      "order": 51,
+      "original_text": "图 16 国区域口。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-FIGURE-P019-c6062b2431",
+      "page": 19,
+      "type": "figure",
+      "order": 52,
+      "original_text": "BRSP4, , 结果如图 17 所示 , 可以确定使得概率最大的 4 在 [156.160] 之间",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-FIGURE-P019-d8af342096",
+      "page": 19,
+      "type": "figure",
+      "order": 53,
+      "original_text": "2), 结果如图 18 , 得当定深引信引爆深度为 137.56m 吊和中潜艇概率最大 , 最大概率",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-FIGURE-P020-c002dfd36a",
+      "page": 20,
+      "type": "figure",
+      "order": 54,
+      "original_text": "图 17 [87.5.180] 内 f 的步长为 1 时和中潜艇的概率与 4 的关系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-FIGURE-P020-16fcc9344d",
+      "page": 20,
+      "type": "figure",
+      "order": 55,
+      "original_text": "图 18 [156.160] 内 d 的步长为 0.01 时余中潜艇的概率与 4 的关系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-FIGURE-P020-03f97e57b8",
+      "page": 20,
+      "type": "figure",
+      "order": 56,
+      "original_text": "【】F:上遇+'=董「L圭f】r 的情形。 炸弹编号如图 19 所示。 此时 1 号炸弹命中潜艇的概率与问题 2",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-FIGURE-P021-04d7a78d30",
+      "page": 21,
+      "type": "figure",
+      "order": 57,
+      "original_text": "图 19 九枚炸弹命中范国相切的情玟及炸弹编号",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TEXT-P022-1ee14a5373",
+      "page": 22,
+      "type": "text",
+      "order": 58,
+      "original_text": "蒙特卡洛模拟法计算航空自导深弹佐中概率 [.",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S008",
+        "S009",
+        "S010"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S011",
+        "S012",
+        "S013",
+        "S014"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S015",
+        "S016"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S004",
+        "S017",
+        "S019"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S020",
+        "S021"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S022",
+        "S023",
+        "S024",
+        "S025"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S026",
+        "S027",
+        "S028",
+        "S029"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S030"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S031",
+        "S032",
+        "S033"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S034"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S035",
+        "S036",
+        "S037",
+        "S038",
+        "S039",
+        "S040"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S041"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": []
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S018",
+        "S042"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S043",
+        "S044",
+        "S045"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S046",
+        "S047",
+        "S048"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S049",
+        "S050",
+        "S051"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": []
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S006",
+        "S052",
+        "S053"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S054",
+        "S055",
+        "S056"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": [
+        "S057"
+      ]
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S005",
+        "S058"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": [
+        "S007"
+      ]
+    },
+    {
+      "page": 24,
+      "block_ids": []
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    },
+    {
+      "page": 49,
+      "block_ids": []
+    },
+    {
+      "page": 50,
+      "block_ids": []
+    },
+    {
+      "page": 51,
+      "block_ids": []
+    },
+    {
+      "page": 52,
+      "block_ids": []
+    },
+    {
+      "page": 53,
+      "block_ids": []
+    },
+    {
+      "page": 54,
+      "block_ids": []
+    },
+    {
+      "page": 55,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Monte Carlo Simulation",
+      "translation": "Monte Carlo Simulation",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    }
+  ]
+}

@@ -1,0 +1,1443 @@
+{
+  "paper": {
+    "title": "生产过程中的决策优化设计",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\B159.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P001-ae4b9ddd5e",
+      "page": 1,
+      "type": "text",
+      "order": 1,
+      "original_text": "立了假设检验问题 , 进而得到了是否接收零配件的条件。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P001-1961bbddbc",
+      "page": 1,
+      "type": "text",
+      "order": 2,
+      "original_text": "用检测花销与假设检验效昂 ( 运用假设检验功效函数衡量 ) 之间相互制约的关系 , 建立决策函",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P001-2be1d4b0d2",
+      "page": 1,
+      "type": "text",
+      "order": 3,
+      "original_text": "关键识 : 假设检验状态 - 决策模型动态规划算法贝叶斯估计共轻先验分布",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P003-405260abde",
+      "page": 3,
+      "type": "text",
+      "order": 4,
+      "original_text": "的假设检验问题可使用简单陆机抽样抽取检测样本 , 由于企业需要做检测成本与格测效果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P003-3386f83da5",
+      "page": 3,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设检验的功效函数表现假设检验的效果 , 将二者线性组合为决策函数 , 寻找使得决策函数",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P004-238915ed47",
+      "page": 4,
+      "type": "text",
+      "order": 6,
+      "original_text": "假设一 : 所有决策为确定性决策 , 适用于生产线上所有相庆节点。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P004-ef84fdb2dd",
+      "page": 4,
+      "type": "text",
+      "order": 7,
+      "original_text": "假设二 : 退回成品拆解后 , 若无法确定相应雾件或半成品是否为次品 , 则必须进行检测。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P004-aecac7cd10",
+      "page": 4,
+      "type": "text",
+      "order": 8,
+      "original_text": "在颖率学派偷设检验的理论体系下 , 原假设和备择偎设的地位存在差异 , 本问题中企业",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P004-25f4c0cb8c",
+      "page": 4,
+      "type": "text",
+      "order": 9,
+      "original_text": "对于拒收与接收的态度也存在差异 , 故可以利用假设检验的思想处理该问题以 , 而 (1) 和 (2)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P004-90c49f9703",
+      "page": 4,
+      "type": "text",
+      "order": 10,
+      "original_text": "两个情形下 , 不仅仅只有显著性水平的差别 , 原假设与备择假设互相相反 , 故在下文中分开",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P005-57f3717f83",
+      "page": 5,
+      "type": "text",
+      "order": 11,
+      "original_text": "收这批零件 “ , 可得到假设检验问题 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P005-af3038f04e",
+      "page": 5,
+      "type": "text",
+      "order": 12,
+      "original_text": "该假设检验问题的旺著性水平 u = 0.05。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P005-f7f9d7abf5",
+      "page": 5,
+      "type": "text",
+      "order": 13,
+      "original_text": "根据假设检验的思想 , 次品率不超过 10% 的标称值",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P005-fb996521ae",
+      "page": 5,
+      "type": "text",
+      "order": 14,
+      "original_text": "但是拒绝了原假设的概率 ( 即犯第一类错误的概家 ) 必须控制在 u = 0.05 之下 , 满趸以上耐",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P005-258efc7731",
+      "page": 5,
+      "type": "text",
+      "order": 15,
+      "original_text": "求的前提下 , 尽量控例次品率超过 10% 的标称值但是接受原假设的概率 ( 印犯第二类锦误的",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P005-ca93637576",
+      "page": 5,
+      "type": "text",
+      "order": 16,
+      "original_text": "原假设成立的边界条件为 p = 0.1, 在此条件下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P005-c50a21336d",
+      "page": 5,
+      "type": "text",
+      "order": 17,
+      "original_text": "武式为判定方法 , 若根据样本计算出的 X 落入上述集合中 , 则拒绝原假设 , 拒收这批零",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P005-4dc66868b6",
+      "page": 5,
+      "type": "text",
+      "order": 18,
+      "original_text": "为衡量假设检验的好坏 , 下计算该假设检验的功效函数 K(n, 办 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P006-1952d5a904",
+      "page": 6,
+      "type": "text",
+      "order": 19,
+      "original_text": "若根据样本计算出的 R 落入上述集合中 , 则拒绝原假设 , 拒收这批零件 ; 反之 , 若 R 蔬",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P006-329918d636",
+      "page": 6,
+      "type": "text",
+      "order": 20,
+      "original_text": "入上述集合的补集中 , 则接受原假设 , 接收这批零件。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P006-86ffde0160",
+      "page": 6,
+      "type": "text",
+      "order": 21,
+      "original_text": "上文提到 , n 的迪取实际上就是检测花销与假设检验效果之间的权衡 , 为衡量假设检验",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P007-89e412e57a",
+      "page": 7,
+      "type": "text",
+      "order": 22,
+      "original_text": "作为样本量为 n 时假设检验效果的街量因素 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P007-8178ccd485",
+      "page": 7,
+      "type": "text",
+      "order": 23,
+      "original_text": "其中 , 81 表示备择假设的参数空间 , f(p) 为 p 的先验分布密度函数 , 在本文中可侵定 p 的先骋",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P007-339668256c",
+      "page": 7,
+      "type": "text",
+      "order": 24,
+      "original_text": "备择假设历 5 一 01 Hyp<01",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P008-bec3d25fee",
+      "page": 8,
+      "type": "text",
+      "order": 25,
+      "original_text": "零配件的次品会永远处于流水线中永远不会袖丢弃 , 故做出如下假设 : 当企业的决策为对",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P008-5cb2ca493e",
+      "page": 8,
+      "type": "text",
+      "order": 26,
+      "original_text": "检测戏本、 装配成本以及调换损失、 拆解费用的关系 , 由于上述假设的存在 , 是否对不合格",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P015-4c500e1b95",
+      "page": 15,
+      "type": "text",
+      "order": 27,
+      "original_text": "假设零件刑采购成本为 A 则总采购成本为 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P018-1ae1fe2112",
+      "page": 18,
+      "type": "text",
+      "order": 28,
+      "original_text": "在问题四的假设下 , 为衡量次品率真值的不确定性 , 本文运用贝叶斯统计 “ 的思想 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P019-0ff461e715",
+      "page": 19,
+      "type": "text",
+      "order": 29,
+      "original_text": "运用 R 语言计算积分 , 得到在问题四假设下 , 各种决策策略生成一个合格成品的平炊利",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P022-014c59c40b",
+      "page": 22,
+      "type": "text",
+      "order": 30,
+      "original_text": "优点 : 综合考虑了假设检验效果与检测花费 , 得到的最佳样本量较为合理。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P002-15614d5b6a",
+      "page": 2,
+      "type": "text",
+      "order": 31,
+      "original_text": "捷收这批零配件 , 企业需要使用抽祥检测方法进行验证干自行承拙检测费用 . 现需设计标称",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P003-3b55ff7cc7",
+      "page": 3,
+      "type": "text",
+      "order": 32,
+      "original_text": "出的 8 个零配件和 3 个半成品 , 问题二使用的对每种决策方案求利润期望的方法对应的决",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-TEXT-P003-a2476fac3c",
+      "page": 3,
+      "type": "text",
+      "order": 33,
+      "original_text": "一个多阶段决策问题 , 建立状态 - 决策模城 , 并通过动态规划算法来求鲆最优策路及决策指",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-TEXT-P001-516c2dca85",
+      "page": 1,
+      "type": "text",
+      "order": 34,
+      "original_text": "经过灵敏度检验 , 先验分布超参数的选取对利涧",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-TEXT-P002-44da13eb6a",
+      "page": 2,
+      "type": "text",
+      "order": 35,
+      "original_text": "问题一 “ 为了检验供应商供应的雳酣件次品率是否超过供应商给出的标称值 , 进而决定是否",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-TEXT-P003-17f3df3153",
+      "page": 3,
+      "type": "text",
+      "order": 36,
+      "original_text": "间题四为衡量次品率取值可能存在的 “ 误差 “, 可利用贝叶斯估计 , 选用共绊先验分布 Beta",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-TEXT-P004-a233dfcfb6",
+      "page": 4,
+      "type": "text",
+      "order": 37,
+      "original_text": "使用简单随机抽样检验次咬率 , 俊定共抽取 n 个样本东每一个样本是否为次品独立吟分",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-TEXT-P005-cfc4e7040b",
+      "page": 5,
+      "type": "text",
+      "order": 38,
+      "original_text": "如果检验的次数较小 , 则蛟然节省了花费 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-TEXT-P005-da3262977a",
+      "page": 5,
+      "type": "text",
+      "order": 39,
+      "original_text": "但是导致犯第二类错误的概率较大 , 可见 , 选择合适的检验次数实际上是在检测花销与犯",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-TEXT-P005-988cffa1f8",
+      "page": 5,
+      "type": "text",
+      "order": 40,
+      "original_text": "甾于 n 的取傲较大 , 可根据如下方式构造检验统计量亘利用其淋进正态性质 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-TEXT-P006-669a75dfc8",
+      "page": 6,
+      "type": "text",
+      "order": 41,
+      "original_text": "K(n,p) 越大则犯第二类错误的概率越低 , 信设检验的效果越好。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-TEXT-P009-7858e4a787",
+      "page": 9,
+      "type": "text",
+      "order": 42,
+      "original_text": "根据是否检验零配件分为如下两种情况 GXG):",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TEXT-P009-14eb3951b8",
+      "page": 9,
+      "type": "text",
+      "order": 43,
+      "original_text": "团若对零配件 i 进行检验 , 则生产出能够进入下一流程的零配件 ( 对于检验雳配件而言 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TEXT-P009-516549db8c",
+      "page": 9,
+      "type": "text",
+      "order": 44,
+      "original_text": "@ 若不对雾配件进行检验 , 则生产出能够进入下一流程的零醉件所需的生产次数 5t = 1。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TEXT-P019-504470285f",
+      "page": 19,
+      "type": "text",
+      "order": 45,
+      "original_text": "其中 nl,nz,ma 分别表示零配件 1、 零配件 2、 成昂的检验样本量 , 决定 p,pz,Ps 的后验分布 ;",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TEXT-P019-997edc026f",
+      "page": 19,
+      "type": "text",
+      "order": 46,
+      "original_text": "K(miP) 为问题一中便设检验的功效函数 , r(p) 为 p",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-TEXT-P024-b3470b3195",
+      "page": 24,
+      "type": "text",
+      "order": 47,
+      "original_text": "灵敏度检验代码 .R 灵敏度检验代码",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-TEXT-P024-1d2c954631",
+      "page": 24,
+      "type": "text",
+      "order": 48,
+      "original_text": "附录 6 灵敏度检验代码",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S049",
+      "evidence_id": "E-FIGURE-P022-6bf9fe34f1",
+      "page": 22,
+      "type": "figure",
+      "order": 49,
+      "original_text": "图 2 q 变动对期望影响裕",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S050",
+      "evidence_id": "E-FIGURE-P022-957f1ffa9a",
+      "page": 22,
+      "type": "figure",
+      "order": 50,
+      "original_text": "图 3 『 变动对期望影响表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S051",
+      "evidence_id": "E-FIGURE-P036-5362ad7745",
+      "page": 36,
+      "type": "figure",
+      "order": 51,
+      "original_text": "170 # 将绽果诚剖成敞点图 171 plot(beta0_values,results,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S052",
+      "evidence_id": "E-TABLE-P007-66c55ec26b",
+      "page": 7,
+      "type": "table",
+      "order": 52,
+      "original_text": "表 1 问题一结果总结表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S053",
+      "evidence_id": "E-TABLE-P008-762128c000",
+      "page": 8,
+      "type": "table",
+      "order": 53,
+      "original_text": "表 2 16 种决策方案及对应编号表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S054",
+      "evidence_id": "E-TABLE-P011-a2d522aa2d",
+      "page": 11,
+      "type": "table",
+      "order": 54,
+      "original_text": "表 3 16 种决策方案生成单件合格成响总花销期望表达式",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S055",
+      "evidence_id": "E-TABLE-P013-e5b79eb076",
+      "page": 13,
+      "type": "table",
+      "order": 55,
+      "original_text": "表 4 6 积情况 16 种决策方案对应的利涧期望值袍",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S056",
+      "evidence_id": "E-TABLE-P013-bf4400f9bc",
+      "page": 13,
+      "type": "table",
+      "order": 56,
+      "original_text": "表 5 6 种情况最终冲策方案及决策指标值表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S057",
+      "evidence_id": "E-TABLE-P018-e71b0599c6",
+      "page": 18,
+      "type": "table",
+      "order": 57,
+      "original_text": "表 6 春终决策方案表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S058",
+      "evidence_id": "E-TABLE-P019-4c4e4e0b08",
+      "page": 19,
+      "type": "table",
+      "order": 58,
+      "original_text": "表 7 问题二 6 种情况 16 种决策方案对应的利消期望值表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S059",
+      "evidence_id": "E-TABLE-P019-e58b6454eb",
+      "page": 19,
+      "type": "table",
+      "order": 59,
+      "original_text": "表 7 问题二 6 种情况 16 种决策方案对应的利消期望值表 19",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S060",
+      "evidence_id": "E-TABLE-P020-fac7dfdcf0",
+      "page": 20,
+      "type": "table",
+      "order": 60,
+      "original_text": "表 8 问题二 6 种情况最终决策方案及决策指标值表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S061",
+      "evidence_id": "E-TABLE-P024-c5c62eac82",
+      "page": 24,
+      "type": "table",
+      "order": 61,
+      "original_text": "表 1 支捧文件目录",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S062",
+      "evidence_id": "E-TABLE-P024-44e68ddad9",
+      "page": 24,
+      "type": "table",
+      "order": 62,
+      "original_text": "表 2 附录目录",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S063",
+      "evidence_id": "E-TABLE-P033-1ecf6f1ed5",
+      "page": 33,
+      "type": "table",
+      "order": 63,
+      "original_text": "201 & 国数列表 202 “functions <- list(jjjc, jjbe, jijb, jjbb, jbjb, jbbb, bjjb, bjbb. bbjb, bbbb,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S064",
+      "evidence_id": "E-TABLE-P033-3468e331e6",
+      "page": 33,
+      "type": "table",
+      "order": 64,
+      "original_text": "235 多添加一个工作表 236 addworksheet(wb, \"Results\")",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S065",
+      "evidence_id": "E-TABLE-P033-4fd3416da5",
+      "page": 33,
+      "type": "table",
+      "order": 65,
+      "original_text": "237 # 驰入矩降到工作表 238 writeData(wb, “Results”, results_matrix)",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S066",
+      "evidence_id": "E-TEXT-P019-165d7f7a51",
+      "page": 19,
+      "type": "text",
+      "order": 66,
+      "original_text": "′薯`(′_I(】'll翼,2,薹)3))=_[ / j, (plpz,p3) Pl(pl)9z(pz)pa(pa)dpldpzdps",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S034"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S031",
+        "S035"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S004",
+        "S005",
+        "S032",
+        "S033",
+        "S036"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S010",
+        "S037"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015",
+        "S016",
+        "S017",
+        "S018",
+        "S038",
+        "S039",
+        "S040"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S019",
+        "S020",
+        "S021",
+        "S041"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S022",
+        "S023",
+        "S024",
+        "S052"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S025",
+        "S026",
+        "S053"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S042",
+        "S043",
+        "S044"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": []
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S054"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": []
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S055",
+        "S056"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": []
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S027"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": []
+    },
+    {
+      "page": 17,
+      "block_ids": []
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S028",
+        "S057"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S029",
+        "S045",
+        "S046",
+        "S058",
+        "S059",
+        "S066"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": [
+        "S060"
+      ]
+    },
+    {
+      "page": 21,
+      "block_ids": []
+    },
+    {
+      "page": 22,
+      "block_ids": [
+        "S030",
+        "S049",
+        "S050"
+      ]
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": [
+        "S047",
+        "S048",
+        "S061",
+        "S062"
+      ]
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": [
+        "S063",
+        "S064",
+        "S065"
+      ]
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": [
+        "S051"
+      ]
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Linear Programming",
+      "translation": "Linear Programming",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    },
+    {
+      "term": "Hypothesis Testing",
+      "translation": "Hypothesis Testing",
+      "note": "由参考目录识别，需结合论文证据复核。"
+    }
+  ]
+}

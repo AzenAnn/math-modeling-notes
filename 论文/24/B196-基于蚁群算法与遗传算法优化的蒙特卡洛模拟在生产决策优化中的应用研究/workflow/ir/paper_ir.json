@@ -1,0 +1,1784 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "paper-2024-b196",
+  "source": {
+    "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\B196.pdf",
+    "sha256": "81fff797ec7569523532a22ee843c69f3fa12ee665d9a1efdc4a30c68197b9cf",
+    "parser": "pymupdf-ocr",
+    "parsed_at": "2026-09-04T17:35:09+00:00",
+    "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\workflow\\parsed\\normalized_paper.md",
+    "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\B196-基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究\\workflow\\parsed\\paper_structure.json"
+  },
+  "bibliographic": {
+    "title": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+    "authors": [],
+    "year": 2024,
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "award": "优秀论文",
+    "problem_id": "B",
+    "abstract": "在当前市场竞争愈发严峻的大环境下 , 企业如何在确保产品品质的前提下有效降 低生产成本 , 已成为其持续发展与立足市场的核心议题。 本文以一家电子产品制造企 业为例 , 深入分析其在生产流程中需要做出的策骅选择。",
+    "keywords": [
+      "Linear Programming",
+      "Monte Carlo Simulation",
+      "Hypothesis Testing",
+      "Genetic Algorithm"
+    ],
+    "language": "zh-CN"
+  },
+  "problem": {
+    "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=81fff797ec7569523532a22ee843c69f3fa12ee665d9a1efdc4a30c68197b9cf --> # 基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化 中的应用研究 摘要 在当前市场竞争愈发严峻的大环境下 , 企业如何在确保产品品质的前提下有效降 低生产成本 , 已成为其持续发展与立足市场的核心议题。 本文以一家电子产品制造企 业为例 , 深入分析其在生产流程中需要做出的策骅选择。 问题一中 , 针对供应商提供的零配件次品率 , 我们设计了基于正态分布近似的抽 样检测方案。 首先 , 假设合格品和次品分别以 0 和 1 来标定 , 则可认为次品的分布服 从二项分布规律。 接着 , 根据棣莉弗 - 拉普拉斯定理 , 结合生产问题的具体背景 , 将 次品率的分布近似认为是正态分布。 由于数学期望己知而方差未知 , 我们将其构造为 《分布 , 以便进行假设检验。 通过设定原假设和备择假设 , 选择显著性水平 , 并根据 抽样检测结果计算 t 统计量 , 我们可以判断次品率是否超过标称值 . 最终得到 , 在 90% 的置信度下 , 需要抽取 1600 个零配件进行检测 , 若不超过 176 个次品 , 则可以接受 这批零配件用于生产 ; 在 95%6 的置信度下 , 需要拙取 2646 个零配件进行检测 , 若不 超过 291 个次品 , 则可以接受。",
+    "overall_objective": "启发式模式未可靠抽取总体目标。",
+    "subproblems": [
+      {
+        "id": "Q1",
+        "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "task_types": [
+          "allocation",
+          "scheduling",
+          "minimization",
+          "maximization",
+          "uncertainty_propagation",
+          "scenario_analysis",
+          "probability_estimation",
+          "hypothesis_testing",
+          "inference",
+          "comparison"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "constraints": [],
+        "evidence_ids": []
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E-TEXT-P001-509f3f2515",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:463-504",
+      "quote": "首先 , 假设合格品和次品分别以 0 和 1 来标定 , 则可认为次品的分布服",
+      "char_start": 463,
+      "char_end": 504,
+      "content_hash": "509f3f2515791b263e9e54378ca2f4dd223fd1417c2b97dd8c7e7f8ab3868066",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-6e072ffe60",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:607-637",
+      "quote": "通过设定原假设和备择假设 , 选择显著性水平 , 并根据",
+      "char_start": 607,
+      "char_end": 637,
+      "content_hash": "6e072ffe60df5ce2495762c33bafc824147bdc42e4ed1aaa708e2d460636b565",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-7c59f7f7c0",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:1761-1797",
+      "quote": "关键词 : 假设检验蓉特卡洛模拟蚁群算法遗传算法精英策略 3 a 原则",
+      "char_start": 1761,
+      "char_end": 1797,
+      "content_hash": "7c59f7f7c048de01cb43c03268937ad4c3ce26bde31295f2504245409b404933",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-47596037db",
+      "kind": "text",
+      "page": 2,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:2810-2846",
+      "quote": "假设问题二和问题三中零配件、 半成品和成品的次品率均是通过抽样检测方法",
+      "char_start": 2810,
+      "char_end": 2846,
+      "content_hash": "47596037dbb67eb0fc972ceaaeb11d50c07c3665b33a6f80749d802fde4378c4",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-254667fdc1",
+      "kind": "text",
+      "page": 3,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:2997-3041",
+      "quote": "根据题意 , 我们假设合格品与次品分别以 0 和 1 来标定 , 建立了一个二项分布来",
+      "char_start": 2997,
+      "char_end": 3041,
+      "content_hash": "254667fdc1e2b84f2642ff9f1a35dc4231f6e25c16e648771380b63452f59d14",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-f45e4e1edf",
+      "kind": "text",
+      "page": 3,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:3187-3232",
+      "quote": "法得知其方差 o2, 故通过假设检验的方法将次品分布构造为 t 分布 , 从而确定在相应",
+      "char_start": 3187,
+      "char_end": 3232,
+      "content_hash": "f45e4e1edfc24f4f1076c3638ec7f02516db82ecb0c1ec181caca3dedcba16ea",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-3b20b66b18",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:6478-6510",
+      "quote": "对于抽检方案的选择 , 我们采用了假设检验 0 的方法进行分析。",
+      "char_start": 6478,
+      "char_end": 6510,
+      "content_hash": "3b20b66b18143663813ca1cfb5f9ba7c35b5a88bc1c7c0420b3080c59be4812f",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-73515242c5",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:6512-6549",
+      "quote": "假设检验是一种统计方法 , 用于通过样本数据对有关总体参数的假设进行检验。",
+      "char_start": 6512,
+      "char_end": 6549,
+      "content_hash": "73515242c5ab92e4cbdd0b3b836f00e89bd21dce6cd0fcb55916964c06d68989",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-be82151bb1",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:6567-6611",
+      "quote": "1) 提出假设 : 首先 , 设定一个原假设 (H0), 通常表示没有效应或无差异的情",
+      "char_start": 6567,
+      "char_end": 6611,
+      "content_hash": "be82151bb107058c34d845a732e5503940c94fea64a9dfb8f1457c6e2a1d7723",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-8272585cf9",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:6611-6640",
+      "quote": "况 , 以及一个备择假设 (Hl), 表示存在效应或差异。",
+      "char_start": 6611,
+      "char_end": 6640,
+      "content_hash": "8272585cf95c17979d3fa927530c48ad579736ebb38af66f06fa8ebd297dcf5c",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-612ed4fe59",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:6768-6814",
+      "quote": "4) 计算 p 值 : 利用样本数据计算 p 值 , 即在原假设为真的前提下 , 观察到当",
+      "char_start": 6768,
+      "char_end": 6814,
+      "content_hash": "612ed4fe59d016677430e3c8334273d1d84a69540270bfe5f77f48492ba37cbf",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-a064c05313",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:6873-6912",
+      "quote": "平 , 则拒绝原假设 , 认为结果具有统计显著性 ; 否则 , 不拒绝原假设",
+      "char_start": 6873,
+      "char_end": 6912,
+      "content_hash": "a064c05313d3184d0f39dfa07764c8d1f106587ba40944b3a89f6d5b374e55a8",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-ed7f14c0f0",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:6913-6934",
+      "quote": "据此 , 我们设定原假设和备择假设为 :",
+      "char_start": 6913,
+      "char_end": 6934,
+      "content_hash": "ed7f14c0f0ca74a447443e0749f35f8ee3b3173346a59673e2a344255da9704d",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-b353a0bc2e",
+      "kind": "text",
+      "page": 11,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:10811-10853",
+      "quote": "我们使用决策得到的利润作为该决策点的 “ 食物 “, 假设蚂蚁数量为 m, 城市数",
+      "char_start": 10811,
+      "char_end": 10853,
+      "content_hash": "b353a0bc2e23b79c51249cc248603f9c9ecf8b4d6a6985f1b31bff30e493b76a",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P012-6efcc2d5de",
+      "kind": "text",
+      "page": 12,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:11742-11786",
+      "quote": "基于这些决策进行模投计算 , 假设采购的零件 1 和零件 2 数量相同 , 我们得到各",
+      "char_start": 11742,
+      "char_end": 11786,
+      "content_hash": "6efcc2d5de504e1f7d8915ea97cb178105edf1c7833cf2b9129b6cb63cf36676",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-274db98fca",
+      "kind": "text",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:17319-17363",
+      "quote": "为正态分布 , 构造了服从 t 分布的了统计量对产品进行假设检验 , 最后得出在不同信",
+      "char_start": 17319,
+      "char_end": 17363,
+      "content_hash": "274db98fca9734480ae3c0d58f278bffd2428692a217a6baa38c4fc0db4cfc17",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-fd102deea6",
+      "kind": "text",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:18128-18156",
+      "quote": "在假设检验 959% 信度和 90% 信度下 , 铁",
+      "char_start": 18128,
+      "char_end": 18156,
+      "content_hash": "fd102deea6115b22a5b1d58dc19f9f15c99151c235d719ff025332609dd86e19",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-7a36ab909c",
+      "kind": "text",
+      "page": 23,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:19944-19985",
+      "quote": "(D) 模型假设 : 模型进行了一些简化假设 , 例如前三问中零件和成品的次品率",
+      "char_start": 19944,
+      "char_end": 19985,
+      "content_hash": "7a36ab909cdb6a93fa0564fe5c29910804b7abede6e6ad72a0c53be4e7c2732e",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-75439fc4ed",
+      "kind": "text",
+      "page": 23,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "assumption",
+      "locator": "char:20005-20026",
+      "quote": "这些假设可能会影响模型的精确度和适用范",
+      "char_start": 20005,
+      "char_end": 20026,
+      "content_hash": "75439fc4ed23bb8cdf2b87303ea2a60e188ad6e52e85afa000df1c217328bddb",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P024-da4df919bf",
+      "kind": "text",
+      "page": 24,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:20553-20574",
+      "quote": "假设检验方法分析及应用 [ 长春大学学",
+      "char_start": 20553,
+      "char_end": 20574,
+      "content_hash": "da4df919bf5285341be6a8a1e3ec2017b43e4b9bb820ffa3b44ffc78bbdf9559",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-cbbca5de7e",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:808-850",
+      "quote": "问题二中 , 针对企业生产过程中的决策问题 , 我们建立了决策树模型 , 并采用蒙",
+      "char_start": 808,
+      "char_end": 850,
+      "content_hash": "cbbca5de7eedf8c8225b87d2bbbfc586ea81be008b85f36af3321233bc121a15",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-e329849700",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:1024-1066",
+      "quote": "提高求解效率和解的质量 , 我们引入了蚁群算法对蒙特卡洛模拟进行优化 , 通过信息",
+      "char_start": 1024,
+      "char_end": 1066,
+      "content_hash": "e329849700222f9581a05f3ee0b596f1517fa88d0d3e708cdbec63342d3f199f",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-cf8babdf1a",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:1271-1309",
+      "quote": "方案首先 , 建立了决策树模型 , 并采用蒙特卡洛模拟方法进行初步决策分析。",
+      "char_start": 1271,
+      "char_end": 1309,
+      "content_hash": "cf8babdf1a07117410182a66bf3e5b5802ac1c69c0a272956c7ebd590c91c6d6",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-221bc1793b",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:1315-1355",
+      "quote": "引入逃传算法进行优化 , 通过追代接索策略在解空间中寻找问题的最优解或近似最优",
+      "char_start": 1315,
+      "char_end": 1355,
+      "content_hash": "221bc1793b05883d4d1162dfd61fe7789e3e204efcc0a335c58cdcbb88c1be5a",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-be3b33f553",
+      "kind": "text",
+      "page": 2,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:2087-2111",
+      "quote": "对此 , 我们需要建立数学模型解决下列问题 :",
+      "char_start": 2087,
+      "char_end": 2111,
+      "content_hash": "be3b33f5539f2eb8245081568954a50d3f02b2a2c38b53fef61b20f724a92157",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P002-bf5462c926",
+      "kind": "text",
+      "page": 2,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:2162-2200",
+      "quote": "企业准备采用拙样检测方法决定是否接收从供应商购买的这批零配件 , 检测费用",
+      "char_start": 2162,
+      "char_end": 2200,
+      "content_hash": "bf5462c9260560355d9e22730353b53b8df921c54d3b75335e13308518948f10",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-533bc004ec",
+      "kind": "text",
+      "page": 3,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:3364-3404",
+      "quote": "为了深入剖析生产流程的运作机制及各决策节点的影响 , 本研究采用了决策树分析法",
+      "char_start": 3364,
+      "char_end": 3404,
+      "content_hash": "533bc004ec38c2b1c0524504a4a2fea681f0addb79b66beb5445396d7ea100b4",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-96a8298cee",
+      "kind": "text",
+      "page": 3,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:3526-3564",
+      "quote": "鉴于本问题的路径数量有限 , 我们采用了蒙特卡洛模拟方法进行详尽的利涌分析。",
+      "char_start": 3526,
+      "char_end": 3564,
+      "content_hash": "96a8298cee8c84d6f20fc4ef6898bb6a2d6552b2c869755cceb31dc327221365",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-91e3fa138a",
+      "kind": "text",
+      "page": 3,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:3625-3665",
+      "quote": "为了进一步优化模型 , 我们引入了蚁群算法对蒙特卡洛模拟进行优化 , 通过信息",
+      "char_start": 3625,
+      "char_end": 3665,
+      "content_hash": "91e3fa138a1831c5da38d9d2be779651f03f90c90034f508f7cf9119ae612dc7",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P017-59d434f91a",
+      "kind": "text",
+      "page": 17,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:15234-15257",
+      "quote": "遗传过程我们采用单点交叉法对基因重组进行模拟。",
+      "char_start": 15234,
+      "char_end": 15257,
+      "content_hash": "59d434f91a69f66a7074944eae2831f1f0cc4610c826b560a440ab9a8098d76e",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P018-c2919856d6",
+      "kind": "text",
+      "page": 18,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "char:16186-16227",
+      "quote": "我们采用随机化方法生成了包含 100 个个体的初始种群 , 并对该种群执行了三十",
+      "char_start": 16186,
+      "char_end": 16227,
+      "content_hash": "c2919856d60508b6fab06dc074410fadc45d00c571e06af48bef01f990ec36e9",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-3aa82d9a85",
+      "kind": "text",
+      "page": 1,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:592-607",
+      "quote": "《分布 , 以便进行假设检验。",
+      "char_start": 592,
+      "char_end": 607,
+      "content_hash": "3aa82d9a85e87252d620e6a764a8dcc52f9988360ba77b806317e495829f1e70",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-172e0e54ad",
+      "kind": "text",
+      "page": 4,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:4597-4623",
+      "quote": "为了确保决策的鲁棒性 , 即在不同次品率波动下仍",
+      "char_start": 4597,
+      "char_end": 4623,
+      "content_hash": "172e0e54addf8e3605d3e0923d5249e61a9996300b3e35e4e6f98469a3fef66a",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-80034407f1",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:6642-6684",
+      "quote": "(2) 选择检验统计量 : 根据研究问题和数据类型 , 选择适当的统计检验方法 ,",
+      "char_start": 6642,
+      "char_end": 6684,
+      "content_hash": "80034407f10124a93be5c21bb930c0d97f5521a7b6bf483d23762742e49734a4",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-991e7cc41b",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:6684-6709",
+      "quote": "如 t 检验、 卡方检验等 , 并计算检验统计量。",
+      "char_start": 6684,
+      "char_end": 6709,
+      "content_hash": "991e7cc41b347136abfdc88b98dfcea37873f3caf1635267eb575e930418cef0",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-d218d103f8",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:7223-7237",
+      "quote": "我们设定了一个误差允许范",
+      "char_start": 7223,
+      "char_end": 7237,
+      "content_hash": "d218d103f834b9d49ef22a591bfbeca3ec03ea359afa735e0bf00a8ae74954d8",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-ff484bc851",
+      "kind": "text",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:7237-7272",
+      "quote": "围 , 即均值误差需控制在 10% 以内 , 以此作为误差接受的标准。",
+      "char_start": 7237,
+      "char_end": 7272,
+      "content_hash": "ff484bc85123030faa957c7f85e55eaed57295311421ed27a0783762ab342de0",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P007-5f43d4b255",
+      "kind": "text",
+      "page": 7,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:7847-7889",
+      "quote": "在处理问题二时 , 我们将其抽象化为四个关键的决策节点 : 零件 1 的质量检验、",
+      "char_start": 7847,
+      "char_end": 7889,
+      "content_hash": "5f43d4b255bb495d4081f15c3b5bec2e78f8a5c9ebcb3c4869d35f07ff3c0bda",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P007-db095e45f2",
+      "kind": "text",
+      "page": 7,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:7889-7928",
+      "quote": "零件 2 的质量检验、 最终产品的质量检验 , 以及对于不合裂成品的拆解处理。",
+      "char_start": 7889,
+      "char_end": 7928,
+      "content_hash": "db095e45f2ef525923c15a4c3f432196a6b194b8cb68c13f24980f3eba605abc",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-98b6c06e44",
+      "kind": "text",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:17234-17253",
+      "quote": "4 抽样检测条件下决策的鲁棒性分析",
+      "char_start": 17234,
+      "char_end": 17253,
+      "content_hash": "98b6c06e4455f42a3a72365ff297e83a88d071aff4abc546e9d1f5db611b1e61",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-1c03411803",
+      "kind": "text",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:18004-18024",
+      "quote": "因此对问题进行鲁棒性分析是十分必要的。",
+      "char_start": 18004,
+      "char_end": 18024,
+      "content_hash": "1c03411803a60326b22cf254b074c2dda33207499c5ebfd8887e823520bc8f1c",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-f3c483580e",
+      "kind": "text",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:18027-18058",
+      "quote": "4 2 基于 3a 准则的企业生产过程中简单决策鲁棒性分析",
+      "char_start": 18027,
+      "char_end": 18058,
+      "content_hash": "f3c483580ee63b55c79c456adcd04fbbb3f7bc974fe8df0b3a8f3844c04f8fc1",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P022-6b1087f3f5",
+      "kind": "text",
+      "page": 22,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:18927-18973",
+      "quote": "决策对次品率变化的鲁棒性好 , 情况 3、5、 6 的最优决策比例受次品率影响较为明显 ,",
+      "char_start": 18927,
+      "char_end": 18973,
+      "content_hash": "6b1087f3f58d127b3e69f792e086e0532d9ab857d66ec949219617e4ca7d0204",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P022-2a6ebbc134",
+      "kind": "text",
+      "page": 22,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "validation",
+      "locator": "char:19061-19089",
+      "quote": "3 基于 3o 准则的企业生产过程中多决策鲁棒性分析",
+      "char_start": 19061,
+      "char_end": 19089,
+      "content_hash": "2a6ebbc1340f40e56c220bb1d99444401e5f3e9a698666e494fcbdaff53bc536",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-FIGURE-P006-4f104bad64",
+      "kind": "figure",
+      "page": 6,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 1",
+      "locator": "FIGURE-001",
+      "quote": "图 1 t(m) 分布分位点示意图",
+      "char_start": 6459,
+      "char_end": 6462,
+      "content_hash": "4f104bad642d05df51a0a1c57ce18cb49e4968eb8e7c86a4b9969f5a70bfd87c",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-dfc7b7645e",
+      "kind": "figure",
+      "page": 7,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 2",
+      "locator": "FIGURE-002",
+      "quote": "图 2 抽检次数 n 和样本均值 t 的关系图",
+      "char_start": 7420,
+      "char_end": 7423,
+      "content_hash": "dfc7b7645ef24bb57fbe3998deb1fe00e70cf85d863cfeefb27d4c2b6218da53",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-d62fc82376",
+      "kind": "figure",
+      "page": 7,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 3",
+      "locator": "FIGURE-003",
+      "quote": "图 3 决策树法的一般步骤流程图",
+      "char_start": 7829,
+      "char_end": 7832,
+      "content_hash": "d62fc823766d821153b0c0ee3e476ce56e67c3c293921f4ca89aaf3e11f93567",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P008-6aa52f6791",
+      "kind": "figure",
+      "page": 8,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 4",
+      "locator": "FIGURE-004",
+      "quote": "图 4 问题二决策树法分析流程图",
+      "char_start": 8214,
+      "char_end": 8217,
+      "content_hash": "6aa52f6791fdc1b352ad9cd1098323dc48023170ac00fe35d6c40ace027d3234",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P010-db61c6b18f",
+      "kind": "figure",
+      "page": 10,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 5",
+      "locator": "FIGURE-005",
+      "quote": "图 5 蒙特卡洛算法的步骤具体实现",
+      "char_start": 10341,
+      "char_end": 10344,
+      "content_hash": "db61c6b18f1189527645269a206edda2364dc5b439e5f83dc56711f087dd02b4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P012-35a326c71d",
+      "kind": "figure",
+      "page": 12,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 6",
+      "locator": "FIGURE-006",
+      "quote": "图 6 问题二中六中情况的决策热点图",
+      "char_start": 11529,
+      "char_end": 11532,
+      "content_hash": "35a326c71d85589f74093017c0554bbcfb810504b442899302721fcddb536a2d",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-3699736f60",
+      "kind": "figure",
+      "page": 13,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 7",
+      "locator": "FIGURE-007",
+      "quote": "图 7 问题三决策树法分析流程图",
+      "char_start": 12384,
+      "char_end": 12387,
+      "content_hash": "3699736f60a29770830f1b12ffe6e3cb062e462c90865f599baaab8fee815324",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-ad0ed3e968",
+      "kind": "figure",
+      "page": 13,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图\n\n5",
+      "locator": "FIGURE-008",
+      "quote": "图 7 问题三决策树法分析流程图 5. 3. 2 利润分析",
+      "char_start": 12399,
+      "char_end": 12403,
+      "content_hash": "ad0ed3e968f69799e5aa98e907530c7b07389a4d8e6351a9c082711b8fa35eef",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-096dd1f0e6",
+      "kind": "figure",
+      "page": 16,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 8",
+      "locator": "FIGURE-009",
+      "quote": "图 8 追传算法的具体步骤",
+      "char_start": 14668,
+      "char_end": 14671,
+      "content_hash": "096dd1f0e64431db4e937629492f1fd0e8ebbaec3cbfec6ef257b53bfbe67c76",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P017-4f8b204080",
+      "kind": "figure",
+      "page": 17,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 9",
+      "locator": "FIGURE-010",
+      "quote": "图 9 可行鲍域示意图",
+      "char_start": 15031,
+      "char_end": 15034,
+      "content_hash": "4f8b20408017ae3961b093a4ce63c38fa799bae134c4514ddfb7ebd3270e53d8",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P018-a5d8581463",
+      "kind": "figure",
+      "page": 18,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 10",
+      "locator": "FIGURE-011",
+      "quote": "图 10 每代最优个体变化图",
+      "char_start": 16305,
+      "char_end": 16309,
+      "content_hash": "a5d8581463cf24101cc7c237844f65f6f11b69c2d3edd0fc6759008372bbb72a",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P018-d932fea69c",
+      "kind": "figure",
+      "page": 18,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 11",
+      "locator": "FIGURE-012",
+      "quote": "图 11 三维种群迭代过程图",
+      "char_start": 16407,
+      "char_end": 16411,
+      "content_hash": "d932fea69c4a6b6e00b89a586867cee3ba368eee41833a3832b25d03906fc3b4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P019-170a0de65a",
+      "kind": "figure",
+      "page": 19,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 12",
+      "locator": "FIGURE-013",
+      "quote": "图 12 最优决策与其他决策对比图",
+      "char_start": 17128,
+      "char_end": 17132,
+      "content_hash": "170a0de65a677c9e30c46781887d29f2dd4be29ba09f6b92b366f20b70ab8ad5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P020-f9788c0949",
+      "kind": "figure",
+      "page": 20,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 13",
+      "locator": "FIGURE-014",
+      "quote": "图 13 3 准则",
+      "char_start": 17813,
+      "char_end": 17817,
+      "content_hash": "f9788c094902902b0e395e32e5e241395f6de9dabf77e0c529d840f954f50812",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-d008dac0a5",
+      "kind": "figure",
+      "page": 21,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 14",
+      "locator": "FIGURE-015",
+      "quote": "图 14 问题二 95%4 信度下最优决策分布",
+      "char_start": 18296,
+      "char_end": 18300,
+      "content_hash": "d008dac0a533ad7ac0886302506ee45b40d512896ee422dd7d02f287974b6e98",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-8d36cb620e",
+      "kind": "figure",
+      "page": 21,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 15",
+      "locator": "FIGURE-016",
+      "quote": "图 15 问题二 90%4 信度下最优决策分布",
+      "char_start": 18408,
+      "char_end": 18412,
+      "content_hash": "8d36cb620e2d3a38016d5dbe24a36a9b2fcdfd3af902f421472c0de55561f417",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-b353503538",
+      "kind": "figure",
+      "page": 21,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 6",
+      "locator": "FIGURE-017",
+      "quote": "对比原问题二的图 6 可以看出 , 在 p = t + 3a 的情形下 , 部分最优决策发生",
+      "char_start": 18439,
+      "char_end": 18442,
+      "content_hash": "b35350353843cd678bbf2515e1ee31838e48e26b03d6d85bda8db28841ace1de",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-b158f330e6",
+      "kind": "figure",
+      "page": 21,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 16",
+      "locator": "FIGURE-018",
+      "quote": "图 16 原决策与 90%6 信度下 60 种最优决策选择率对比",
+      "char_start": 18611,
+      "char_end": 18615,
+      "content_hash": "b158f330e6bd8dd838bf1fc5cfdf14f4ab9c38f0c9c90319e421e87387f891a4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P022-181bd12740",
+      "kind": "figure",
+      "page": 22,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "图 17",
+      "locator": "FIGURE-019",
+      "quote": "图 17 不同情形下的最优决策组合",
+      "char_start": 19328,
+      "char_end": 19332,
+      "content_hash": "181bd127402f9f6312303f2f60db7211b5bcb61adb554d7738ec625e4d57a154",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P012-02ff8bd135",
+      "kind": "table",
+      "page": 12,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "表 1",
+      "locator": "TABLE-001",
+      "quote": "表 1 问题二中六种情况的决策",
+      "char_start": 11688,
+      "char_end": 11691,
+      "content_hash": "02ff8bd13537e6f76e626b600e0f5667ece4356de86ced241d42ab3d853cbb36",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P012-ae9ef9540b",
+      "kind": "table",
+      "page": 12,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "表 2",
+      "locator": "TABLE-002",
+      "quote": "表 2 问题二中六种情况的最优决策平均利润值",
+      "char_start": 11835,
+      "char_end": 11838,
+      "content_hash": "ae9ef9540bee44f60ab4ff449fdcb0f80826552f1995d492a8fd993a0f1dc1df",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P019-326e7f438d",
+      "kind": "table",
+      "page": 19,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "表 3",
+      "locator": "TABLE-003",
+      "quote": "表 3 问题三中所给情况的最优决策",
+      "char_start": 16605,
+      "char_end": 16608,
+      "content_hash": "326e7f438dd18f41f1f340d3c30eaab25e4128f2b499b609fa71f96f1097d322",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P022-6639c9f4e4",
+      "kind": "table",
+      "page": 22,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "表 1",
+      "locator": "TABLE-004",
+      "quote": "不同信度下的最优决策如下表所示 , 与第二问的表 1 对比可知 , 情况 1、 2、4 的",
+      "char_start": 18904,
+      "char_end": 18907,
+      "content_hash": "6639c9f4e4784fac435d83c8599f8fbc53ec94c750c6de6c0d47e3170167cbdf",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P022-072785d0d1",
+      "kind": "table",
+      "page": 22,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "表 4",
+      "locator": "TABLE-005",
+      "quote": "表 4 9504 信度与 9006 信度下最优决策",
+      "char_start": 18992,
+      "char_end": 18995,
+      "content_hash": "072785d0d1d5e8990d55e5c80eaff786c7521d4598bef522cf6aef8aa4714fa5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TEXT-P005-735af443b8",
+      "kind": "text",
+      "page": 5,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "model",
+      "locator": "page:5",
+      "quote": "B(Lp), 则 XL, 元 , ... 服从中心极限定理 , 即",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "735af443b8d22b4dd6d77399d86d0b171f5979ff6574e1f15a96835e88e9878c",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    },
+    {
+      "id": "E-TEXT-P016-6d07ca119a",
+      "kind": "text",
+      "page": 16,
+      "section": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+      "label": "algorithm",
+      "locator": "page:16",
+      "quote": "遗传算法 I (Genetic Algorithm, GA) 是一种启发式搜索算法 , 其灵感来源于",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "6d07ca119aa1b0ad7d319cfc78a8a5395a1cf4050546215fa210de1ce561742a",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "首先 , 假设合格品和次品分别以 0 和 1 来标定 , 则可认为次品的分布服",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P001-509f3f2515"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-002",
+      "statement": "通过设定原假设和备择假设 , 选择显著性水平 , 并根据",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P001-6e072ffe60"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-003",
+      "statement": "假设问题二和问题三中零配件、 半成品和成品的次品率均是通过抽样检测方法",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P002-47596037db"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-004",
+      "statement": "根据题意 , 我们假设合格品与次品分别以 0 和 1 来标定 , 建立了一个二项分布来",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P003-254667fdc1"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-005",
+      "statement": "1) 提出假设 : 首先 , 设定一个原假设 (H0), 通常表示没有效应或无差异的情",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P006-be82151bb1"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-006",
+      "statement": "况 , 以及一个备择假设 (Hl), 表示存在效应或差异。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P006-8272585cf9"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-007",
+      "statement": "4) 计算 p 值 : 利用样本数据计算 p 值 , 即在原假设为真的前提下 , 观察到当",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P006-612ed4fe59"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-008",
+      "statement": "平 , 则拒绝原假设 , 认为结果具有统计显著性 ; 否则 , 不拒绝原假设",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P006-a064c05313"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-009",
+      "statement": "据此 , 我们设定原假设和备择假设为 :",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P006-ed7f14c0f0"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-010",
+      "statement": "我们使用决策得到的利润作为该决策点的 “ 食物 “, 假设蚂蚁数量为 m, 城市数",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P011-b353a0bc2e"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-011",
+      "statement": "基于这些决策进行模投计算 , 假设采购的零件 1 和零件 2 数量相同 , 我们得到各",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P012-6efcc2d5de"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-012",
+      "statement": "(D) 模型假设 : 模型进行了一些简化假设 , 例如前三问中零件和成品的次品率",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P023-7a36ab909c"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-013",
+      "statement": "这些假设可能会影响模型的精确度和适用范",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P023-75439fc4ed"
+      ],
+      "provenance": "HEURISTIC"
+    }
+  ],
+  "variables": [],
+  "data": {
+    "sources": [],
+    "fields": [],
+    "data_types": [],
+    "preprocessing": [],
+    "missing_value_strategy": "",
+    "outlier_strategy": "",
+    "evidence_ids": []
+  },
+  "modeling_chain": [
+    {
+      "order": 1,
+      "subproblem_id": "Q1",
+      "model_id": "model-linearprogramming-5c5372fcf9",
+      "algorithm_ids": [
+        "algorithm-geneticalgorithm-82b827f16c"
+      ],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P005-735af443b8"
+      ]
+    },
+    {
+      "order": 2,
+      "subproblem_id": "Q1",
+      "model_id": "model-montecarlosimulation-748bbc93bd",
+      "algorithm_ids": [
+        "algorithm-geneticalgorithm-82b827f16c"
+      ],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P001-e329849700"
+      ]
+    },
+    {
+      "order": 3,
+      "subproblem_id": "Q1",
+      "model_id": "model-hypothesistesting-cfe3d9969d",
+      "algorithm_ids": [
+        "algorithm-geneticalgorithm-82b827f16c"
+      ],
+      "input": "论文数据",
+      "output": "模型结果",
+      "rationale": "启发式检测到模型名称，建模链需人工核对。",
+      "evidence_ids": [
+        "E-TEXT-P006-3b20b66b18"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "model-linearprogramming-5c5372fcf9",
+      "canonical_name": "Linear Programming",
+      "display_name": "Linear Programming",
+      "aliases": [
+        "线性规划",
+        "LP"
+      ],
+      "category": "optimization",
+      "task_types": [
+        "allocation",
+        "scheduling",
+        "minimization",
+        "maximization"
+      ],
+      "role": "在线性目标和线性约束下求最优决策变量",
+      "description": "由参考目录识别，需结合论文证据复核。",
+      "assumptions": [],
+      "inputs": [
+        {
+          "name": "objective_coefficients",
+          "description": "目标函数系数",
+          "shape": "n",
+          "unit": "",
+          "required": true
+        },
+        {
+          "name": "constraint_matrix",
+          "description": "约束系数矩阵",
+          "shape": "m×n",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "name": "decision_variables",
+          "description": "最优决策变量",
+          "shape": "n",
+          "unit": "",
+          "required": true
+        },
+        {
+          "name": "objective_value",
+          "description": "最优目标值",
+          "shape": "scalar",
+          "unit": "",
+          "required": true
+        }
+      ],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "定义决策变量及单位",
+          "description": "定义决策变量及单位",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P005-735af443b8"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "写出目标函数",
+          "description": "写出目标函数",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P005-735af443b8"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "将业务规则转换为线性约束",
+          "description": "将业务规则转换为线性约束",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P005-735af443b8"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "检查可行域与变量边界",
+          "description": "检查可行域与变量边界",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P005-735af443b8"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "调用求解器并解释影子价格或松弛量",
+          "description": "调用求解器并解释影子价格或松弛量",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P005-735af443b8"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "可获得全局最优",
+        "求解器成熟",
+        "解释性较强"
+      ],
+      "weaknesses": [
+        "要求线性",
+        "整数决策需扩展为 MILP",
+        "对参数误差可能敏感"
+      ],
+      "use_when": [
+        "目标和约束可线性表达",
+        "决策变量连续"
+      ],
+      "avoid_when": [
+        "明显非线性关系无法合理线性化"
+      ],
+      "alternatives": [
+        "Integer Programming",
+        "Nonlinear Programming"
+      ],
+      "combinations": [
+        "Sensitivity Analysis",
+        "Scenario Analysis"
+      ],
+      "complexity": {
+        "time": "problem-dependent",
+        "space": "O(mn)",
+        "notes": "单纯形法最坏指数级，内点法有多项式界"
+      },
+      "validation_methods": [
+        "可行性检查",
+        "对偶/松弛分析",
+        "参数敏感性"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P005-735af443b8"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    },
+    {
+      "id": "model-montecarlosimulation-748bbc93bd",
+      "canonical_name": "Monte Carlo Simulation",
+      "display_name": "Monte Carlo Simulation",
+      "aliases": [
+        "蒙特卡洛模拟",
+        "Monte Carlo Method",
+        "随机模拟"
+      ],
+      "category": "simulation",
+      "task_types": [
+        "uncertainty_propagation",
+        "scenario_analysis",
+        "probability_estimation"
+      ],
+      "role": "通过重复随机采样近似复杂系统的分布、概率或期望",
+      "description": "由参考目录识别，需结合论文证据复核。",
+      "assumptions": [],
+      "inputs": [],
+      "outputs": [],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "定义随机输入和联合分布",
+          "description": "定义随机输入和联合分布",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "明确输出指标与事件",
+          "description": "明确输出指标与事件",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "固定随机种子并生成样本",
+          "description": "固定随机种子并生成样本",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "对每个样本运行模型",
+          "description": "对每个样本运行模型",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "统计均值、方差、分位数和置信区间",
+          "description": "统计均值、方差、分位数和置信区间",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "检查样本量收敛与分布假设敏感性",
+          "description": "检查样本量收敛与分布假设敏感性",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P001-e329849700"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "适用复杂非线性系统",
+        "实现灵活",
+        "易并行"
+      ],
+      "weaknesses": [
+        "收敛速度通常为 O(N^-1/2)",
+        "结果依赖分布假设",
+        "计算量可能大"
+      ],
+      "use_when": [
+        "解析求解困难",
+        "输入具有不确定性",
+        "关注风险或概率"
+      ],
+      "avoid_when": [
+        "随机输入分布完全无法合理设定",
+        "单次仿真极其昂贵且无代理模型"
+      ],
+      "alternatives": [
+        "Latin Hypercube Sampling",
+        "Quasi-Monte Carlo",
+        "Bootstrap"
+      ],
+      "combinations": [
+        "Sensitivity Analysis",
+        "Surrogate Model"
+      ],
+      "complexity": {
+        "time": "O(N·C_f)",
+        "space": "O(N) or streaming O(1)",
+        "notes": "N 为样本数"
+      },
+      "validation_methods": [
+        "重复 seed",
+        "样本量收敛",
+        "置信区间",
+        "分布敏感性"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P001-e329849700"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    },
+    {
+      "id": "model-hypothesistesting-cfe3d9969d",
+      "canonical_name": "Hypothesis Testing",
+      "display_name": "Hypothesis Testing",
+      "aliases": [
+        "假设检验",
+        "显著性检验",
+        "statistical hypothesis test"
+      ],
+      "category": "statistics",
+      "task_types": [
+        "hypothesis_testing",
+        "inference",
+        "comparison"
+      ],
+      "role": "在给定显著性水平下判断样本证据是否反对原假设",
+      "description": "由参考目录识别，需结合论文证据复核。",
+      "assumptions": [],
+      "inputs": [],
+      "outputs": [],
+      "equations": [],
+      "workflow": [
+        {
+          "order": 1,
+          "name": "定义原假设与备择假设",
+          "description": "定义原假设与备择假设",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P006-3b20b66b18"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "选择与数据和假设匹配的检验统计量",
+          "description": "选择与数据和假设匹配的检验统计量",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P006-3b20b66b18"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "检查独立性、分布和方差等前提",
+          "description": "检查独立性、分布和方差等前提",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P006-3b20b66b18"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "计算统计量与 p 值或临界域",
+          "description": "计算统计量与 p 值或临界域",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P006-3b20b66b18"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "报告效应量和置信区间",
+          "description": "报告效应量和置信区间",
+          "inputs": [],
+          "outputs": [],
+          "evidence_ids": [
+            "E-TEXT-P006-3b20b66b18"
+          ]
+        }
+      ],
+      "parameters": [],
+      "solver_algorithm_ids": [],
+      "strengths": [
+        "统计推断框架清晰",
+        "可量化证据强度"
+      ],
+      "weaknesses": [
+        "p 值容易误读",
+        "多重比较和低检验功效会误导"
+      ],
+      "use_when": [
+        "需要比较群体或验证关系",
+        "有明确可检验假设"
+      ],
+      "avoid_when": [
+        "样本选择偏差严重",
+        "检验前提不满足且无稳健替代"
+      ],
+      "alternatives": [
+        "Bootstrap",
+        "Permutation Test",
+        "Bayesian Inference"
+      ],
+      "combinations": [
+        "Effect Size",
+        "Confidence Interval",
+        "Multiple Testing Correction"
+      ],
+      "complexity": {
+        "time": "test-dependent",
+        "space": "O(n)",
+        "notes": ""
+      },
+      "validation_methods": [
+        "前提检验",
+        "效应量",
+        "检验功效",
+        "多重比较校正"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P006-3b20b66b18"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "algorithm-geneticalgorithm-82b827f16c",
+      "canonical_name": "Genetic Algorithm",
+      "display_name": "Genetic Algorithm",
+      "aliases": [
+        "遗传算法",
+        "GA"
+      ],
+      "category": "optimization",
+      "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+      "inputs": [
+        "fitness function",
+        "encoding",
+        "constraints",
+        "population settings"
+      ],
+      "outputs": [
+        "best solution",
+        "best fitness",
+        "convergence history"
+      ],
+      "pseudocode": [
+        "初始化种群并修复不可行个体",
+        "计算适应度",
+        "根据选择策略生成父代",
+        "执行交叉与变异",
+        "进行精英保留与约束处理",
+        "达到停止条件后输出最优个体"
+      ],
+      "parameters": [
+        {
+          "name": "population_size",
+          "value": null,
+          "description": "种群规模",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "crossover_rate",
+          "value": null,
+          "description": "交叉概率",
+          "range": "[0,1]",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "mutation_rate",
+          "value": null,
+          "description": "变异概率",
+          "range": "[0,1]",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        }
+      ],
+      "initialization": "按编码和约束生成初始可行种群",
+      "stopping_criteria": [
+        "最大迭代数",
+        "连续若干代最优值无改进"
+      ],
+      "complexity": {
+        "time": "O(G·P·C_f)",
+        "space": "O(P·d)",
+        "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+      },
+      "randomness": {
+        "uses_randomness": true,
+        "seed_required": true,
+        "notes": "固定 seed 并多次独立运行"
+      },
+      "implementation_notes": [
+        "约束处理必须明确",
+        "保存收敛曲线",
+        "多次运行报告均值和方差"
+      ],
+      "failure_modes": [
+        "早熟收敛",
+        "编码不合理",
+        "适应度尺度失衡",
+        "参数未报告"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P016-6d07ca119a"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "validation": {
+    "methods": [],
+    "metrics": [],
+    "results": [],
+    "sensitivity_analysis": [],
+    "robustness_checks": [],
+    "evidence_ids": []
+  },
+  "limitations": [
+    "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+  ],
+  "innovations": [],
+  "case": {
+    "id": "case-2024-b196",
+    "title": "基于蚁群算法与遗传算法优化的蒙特卡洛模拟在生产决策优化中的应用研究",
+    "domain": "unknown",
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "year": 2024,
+    "award": "优秀论文",
+    "problem_id": "B",
+    "problem_fingerprint": {
+      "problem_types": [
+        "allocation",
+        "scheduling",
+        "minimization",
+        "maximization",
+        "uncertainty_propagation",
+        "scenario_analysis",
+        "probability_estimation",
+        "hypothesis_testing",
+        "inference",
+        "comparison"
+      ],
+      "data_types": [],
+      "targets": [],
+      "constraints": [],
+      "domain_keywords": []
+    },
+    "subproblem_mapping": [
+      {
+        "subproblem_id": "Q1",
+        "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "model_ids": [
+          "model-linearprogramming-5c5372fcf9",
+          "model-montecarlosimulation-748bbc93bd",
+          "model-hypothesistesting-cfe3d9969d"
+        ],
+        "algorithm_ids": [
+          "algorithm-geneticalgorithm-82b827f16c"
+        ],
+        "data_flow": "",
+        "rationale": "启发式占位映射",
+        "evidence_ids": []
+      }
+    ],
+    "results": [],
+    "transferable_insights": [
+      "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+    ],
+    "pitfalls": [
+      "仅根据名称命中可能产生误判。"
+    ],
+    "innovations": [],
+    "evidence_ids": []
+  },
+  "code_recipes": [],
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  }
+}

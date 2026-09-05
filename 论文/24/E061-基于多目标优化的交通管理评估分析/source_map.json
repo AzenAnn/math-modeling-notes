@@ -1,0 +1,1037 @@
+{
+  "paper": {
+    "title": "基于多目标优化的交通管理评估分析",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\E061.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P003-c5bae2de5b",
+      "page": 3,
+      "type": "text",
+      "order": 1,
+      "original_text": "- 假设在一天内车流量具有一定的周期性或时间段特性。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P003-de9c665a42",
+      "page": 3,
+      "type": "text",
+      "order": 2,
+      "original_text": "假设可以根据柿些先验信息或历史数据 , 对车颐转弯的比例进行佼计。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-6d253209e3",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设可以忽略行人、 非机动车等其他交通因索的憧响。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P008-7f0ab5bd7a",
+      "page": 8,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设我们有 N 种可选的信号灯配时策略 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P015-5e8617990f",
+      "page": 15,
+      "type": "text",
+      "order": 5,
+      "original_text": "本模型在求解过程中做了若干假设 , 如忽秽了行人和非机动车的影响等。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P015-b883db702b",
+      "page": 15,
+      "type": "text",
+      "order": 6,
+      "original_text": "通过对这些假设进行修正 《如考虐行人的存",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P016-d069231f95",
+      "page": 16,
+      "type": "text",
+      "order": 7,
+      "original_text": "简化假设 : 忽翘行人和非机动车等因素可能导致实际应用中的语差。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P001-b7a4a8de2d",
+      "page": 1,
+      "type": "text",
+      "order": 8,
+      "original_text": "策路模型 “, 采用深度 0 学习 (DQN) “ 算法来忽化每个时段的信号灯绿灯持维时间。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P002-322768c099",
+      "page": 2,
+      "type": "text",
+      "order": 9,
+      "original_text": "首先 , 使用统计学方法 , 如联类分析 , 找出车流量陶时间的变化规律 , 将一天划分为若",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P002-43feed6185",
+      "page": 2,
+      "type": "text",
+      "order": 10,
+      "original_text": "数据得出各个方向上直行、 左转、 右转的比例 , 通过引入智能优化算法自动调整模型参",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P002-3db6a2a3e9",
+      "page": 2,
+      "type": "text",
+      "order": 11,
+      "original_text": "我们可以使用交通流量数据和强化学习方法 , 建",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P002-95a3918cc8",
+      "page": 2,
+      "type": "text",
+      "order": 12,
+      "original_text": "具体建模可以使用深度强化学习模型 ( 如 DOND , 将每个",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P007-bc3a321068",
+      "page": 7,
+      "type": "text",
+      "order": 13,
+      "original_text": "为了实现最优的信号灯配时策骆 , 本文使用深度 Q 学习 《DQN 模型来逼近 Q",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P013-fa56298740",
+      "page": 13,
+      "type": "text",
+      "order": 14,
+      "original_text": "6.4.1 建立评估模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P015-4b6d74318a",
+      "page": 15,
+      "type": "text",
+      "order": 15,
+      "original_text": "复型中使用了粒二群优化算法来估计直行、 左转、 右转车流的比例。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P016-62c9dc01c7",
+      "page": 16,
+      "type": "text",
+      "order": 16,
+      "original_text": "在优化过程中 , 使用了粒子群优化算法和淆度强化学习模型。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P016-d209b6a508",
+      "page": 16,
+      "type": "text",
+      "order": 17,
+      "original_text": "马尔可夫犹策过程 (MDP) 的优化改进主要包括 : 引入强化学习算法 , 如 Q 学习和",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P006-a4ff10cd5f",
+      "page": 6,
+      "type": "text",
+      "order": 18,
+      "original_text": "适应度计算 : 使用目标函数计算当前比例组合的适应度 ( 即车流分配的误差 )。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P009-5240728f3b",
+      "page": 9,
+      "type": "text",
+      "order": 19,
+      "original_text": "损失函数为当前 Q 值与目标 Q 值之间的均方误差 ;",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P015-172c0d1b6e",
+      "page": 15,
+      "type": "text",
+      "order": 20,
+      "original_text": "七、 模型的灵敏度分析和误差分析",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P015-a9274544ca",
+      "page": 15,
+      "type": "text",
+      "order": 21,
+      "original_text": "灵敏度分析旨在探索不同参数对模型结果的敏感程度 , 从而诉别出哪些参数对模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P015-b1a5a77c54",
+      "page": 15,
+      "type": "text",
+      "order": 22,
+      "original_text": "的影响最大 , 而误差分析则帮助确定模型的预测误差源以及可能的改进方向",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P015-161123ef4f",
+      "page": 15,
+      "type": "text",
+      "order": 23,
+      "original_text": "灵敏度分析的核心是通过对模型辐入参数进行微小谋整 , 观察其对输出结果的影响 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P015-fad6887e0a",
+      "page": 15,
+      "type": "text",
+      "order": 24,
+      "original_text": "1 交通流量数据误差对信号灯优化的影响 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P015-ee3d9788e0",
+      "page": 15,
+      "type": "text",
+      "order": 25,
+      "original_text": "由于实际交通流量数据通常存在波动和不确定性 , 灵敏度分析可以通过模拟不同误",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P015-7053f2f55e",
+      "page": 15,
+      "type": "text",
+      "order": 26,
+      "original_text": "差水平下的车流数据 , 评估信号灯配时策路的鲁棒性。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P015-f81b7640d3",
+      "page": 15,
+      "type": "text",
+      "order": 27,
+      "original_text": "车流方向分配比例的灵敏度 ;",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P015-67f7d8268c",
+      "page": 15,
+      "type": "text",
+      "order": 28,
+      "original_text": "误差对整体流量估计的影响最大。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-TEXT-P015-7a005b0844",
+      "page": 15,
+      "type": "text",
+      "order": 29,
+      "original_text": "在灵敏度分析中 , 可以在最优绿",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-TEXT-P015-72532628c1",
+      "page": 15,
+      "type": "text",
+      "order": 30,
+      "original_text": "论别模型的误差来源 , 并量化这些误差对模型预测结果的影响。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-TEXT-P015-06d33dd15b",
+      "page": 15,
+      "type": "text",
+      "order": 31,
+      "original_text": "1 数据噪声引入的误差 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-TEXT-P015-c2b58e377a",
+      "page": 15,
+      "type": "text",
+      "order": 32,
+      "original_text": "析中 , 可以通过增加不同程度的数据噪声 , 缪拟实际环境中的误差 , 分析这些噪声对车",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-TEXT-P015-c148c2a8cd",
+      "page": 15,
+      "type": "text",
+      "order": 33,
+      "original_text": "但崴声增加至 10% 以上肘 , 误差显著增大。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-TEXT-P015-710628bfe3",
+      "page": 15,
+      "type": "text",
+      "order": 34,
+      "original_text": "可能在实际情况下不成立 , 从而引入误差。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-TEXT-P015-7e0cbfab7d",
+      "page": 15,
+      "type": "text",
+      "order": 35,
+      "original_text": "在或增加动态车流量变化 〉 , 可以分析误差的其体影响 , 并评估是否有必要在模型中引",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-TEXT-P016-4d20a4e672",
+      "page": 16,
+      "type": "text",
+      "order": 36,
+      "original_text": "算法收敏性导致的误差 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-TEXT-P016-acedf59a7e",
+      "page": 16,
+      "type": "text",
+      "order": 37,
+      "original_text": "敛条件下的结果 , 发现当速代次数不足时 , 优化结果可能会候离最优值 , 进而导致误差。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P004-853343972a",
+      "page": 4,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 1 经中路 - 纬中路交叉口 24 小时车流量变化趋势",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P005-e7d5a2894f",
+      "page": 5,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 2 肘部法求解最佳联类数 k",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P005-5be5757e59",
+      "page": 5,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 3 聚类结果散点图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P005-c853238120",
+      "page": 5,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 3 聚类结果散点图 5",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-FIGURE-P013-cd533772cb",
+      "page": 13,
+      "type": "figure",
+      "order": 42,
+      "original_text": "图 5 每日巡游车梅折线图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TABLE-P007-86e74f355f",
+      "page": 7,
+      "type": "table",
+      "order": 43,
+      "original_text": "表 2 各阡间段各方向来车数据",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TABLE-P010-c915c813b6",
+      "page": 10,
+      "type": "table",
+      "order": 44,
+      "original_text": "表 2 每个阡段内各个方向的信号灯相位时间表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TABLE-P010-c63cc33aa6",
+      "page": 10,
+      "type": "table",
+      "order": 45,
+      "original_text": "表 3 每个阡段内各个方向的平均等待时间表",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TABLE-P012-cac1123e3c",
+      "page": 12,
+      "type": "table",
+      "order": 46,
+      "original_text": "表 3 每日巡游车辆统计",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S008"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S009",
+        "S010",
+        "S011",
+        "S012"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S001",
+        "S002",
+        "S003"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S038"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S039",
+        "S040",
+        "S041"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S018"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S013",
+        "S043"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S004"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S019"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S044",
+        "S045"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": []
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S046"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": [
+        "S014",
+        "S042"
+      ]
+    },
+    {
+      "page": 14,
+      "block_ids": []
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S005",
+        "S006",
+        "S015",
+        "S020",
+        "S021",
+        "S022",
+        "S023",
+        "S024",
+        "S025",
+        "S026",
+        "S027",
+        "S028",
+        "S029",
+        "S030",
+        "S031",
+        "S032",
+        "S033",
+        "S034",
+        "S035"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S007",
+        "S016",
+        "S017",
+        "S036",
+        "S037"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": []
+    },
+    {
+      "page": 18,
+      "block_ids": []
+    },
+    {
+      "page": 19,
+      "block_ids": []
+    },
+    {
+      "page": 20,
+      "block_ids": []
+    },
+    {
+      "page": 21,
+      "block_ids": []
+    },
+    {
+      "page": 22,
+      "block_ids": []
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": []
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": [
+    {
+      "term": "Particle Swarm Optimization",
+      "translation": "Particle Swarm Optimization",
+      "note": "利用个体最优和群体最优引导连续空间搜索"
+    }
+  ]
+}

@@ -1,0 +1,1137 @@
+{
+  "paper": {
+    "title": "板凳龙行进路径与速度控制优化",
+    "venue": "2024年高教社杯全国大学生数学建模竞赛优秀论文",
+    "source_type": "pdf",
+    "language": "zh-CN",
+    "source_path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\A178.pdf"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "evidence_id": "E-TEXT-P001-0260cfaac1",
+      "page": 1,
+      "type": "text",
+      "order": 1,
+      "original_text": "伸长等假设得到各把手位置及逐度的递推关系。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S002",
+      "evidence_id": "E-TEXT-P002-ea54635609",
+      "page": 2,
+      "type": "text",
+      "order": 2,
+      "original_text": "针对问题一 , 我们假设龙头把手沿等距螺线运动 , 通过缨距确定螺线的极坐标方",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S003",
+      "evidence_id": "E-TEXT-P003-7d952b6081",
+      "page": 3,
+      "type": "text",
+      "order": 3,
+      "original_text": "假设板凯不可伸长 , 即沿板凤方向各点速度相同。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S004",
+      "evidence_id": "E-TEXT-P003-bdf4a9fbfb",
+      "page": 3,
+      "type": "text",
+      "order": 4,
+      "original_text": "假设各把手中心始终位于螺线上 , 忽略其他因紧影响。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S005",
+      "evidence_id": "E-TEXT-P003-053b973c60",
+      "page": 3,
+      "type": "text",
+      "order": 5,
+      "original_text": "假设 “ 板凯龙 “ 在行进过程中不会倒退。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S006",
+      "evidence_id": "E-TEXT-P003-f5d4880cbe",
+      "page": 3,
+      "type": "text",
+      "order": 6,
+      "original_text": "4 假设板凳始终平行于地面 , 不会发生倾斜 , 简化为二维运动模垣。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S007",
+      "evidence_id": "E-TEXT-P005-8bcf5cc7df",
+      "page": 5,
+      "type": "text",
+      "order": 7,
+      "original_text": "记上文中的螺线方程 (4〉 为 F(z,y)=0, 根据假设 , 各把手中心均位于蝎线上 ,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S008",
+      "evidence_id": "E-TEXT-P006-b99a936e9a",
+      "page": 6,
+      "type": "text",
+      "order": 8,
+      "original_text": "由于假设板凤不可伸缩 , 因此第 $ 节板凤前把手中心沿板凳方向的分速度与第 4 十 1",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S009",
+      "evidence_id": "E-TEXT-P012-ed33b3288c",
+      "page": 12,
+      "type": "text",
+      "order": 9,
+      "original_text": "根据假设 ,“ 板凳龙 “ 在行进过",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S010",
+      "evidence_id": "E-TEXT-P001-5b82be39f1",
+      "page": 1,
+      "type": "text",
+      "order": 10,
+      "original_text": "针对问题一 , 我们针对 “ 板凳龙 “ 的远动构建了一个数学模型 , 通过螺线轨迹搂述",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S011",
+      "evidence_id": "E-TEXT-P001-c0c2a5b03f",
+      "page": 1,
+      "type": "text",
+      "order": 11,
+      "original_text": "接着建立碰撞判断模型 , 并利用叉楷法判断点是否位于三角形内",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S012",
+      "evidence_id": "E-TEXT-P001-65bc100167",
+      "page": 1,
+      "type": "text",
+      "order": 12,
+      "original_text": "接着 , 采用二分法求解最小螺距 , 通过不暹缉",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S013",
+      "evidence_id": "E-TEXT-P001-74ea6ce183",
+      "page": 1,
+      "type": "text",
+      "order": 13,
+      "original_text": "们采用了二分法对逅时间段进行搜索 , 通过不状迭代逼近 , 得到了龙头的最大行进速度",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S014",
+      "evidence_id": "E-TEXT-P003-ed0dd8fcf3",
+      "page": 3,
+      "type": "text",
+      "order": 14,
+      "original_text": "的行进过程进行仿真模拟 , 利用叉乘法建立板凯龙的碰撞判朐模型 , 最终 , 对估计区",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S015",
+      "evidence_id": "E-TEXT-P003-048ac57767",
+      "page": 3,
+      "type": "text",
+      "order": 15,
+      "original_text": "最后我们采用二分法求解满足最大速度条件的最小蝉距 , 通过迪代调",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S016",
+      "evidence_id": "E-TEXT-P003-db713c94dc",
+      "page": 3,
+      "type": "text",
+      "order": 16,
+      "original_text": "分别建立了视应的运动方程 , 并基于问题一中位置和迷度的递推模型 , 通",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S017",
+      "evidence_id": "E-TEXT-P003-4924e0b377",
+      "page": 3,
+      "type": "text",
+      "order": 17,
+      "original_text": "附近的一段时间区间内 , 并采用二分法求解龙头行进的最大递度。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S018",
+      "evidence_id": "E-TEXT-P011-05ebdd7034",
+      "page": 11,
+      "type": "text",
+      "order": 18,
+      "original_text": "在此基础上 , 采用二分法 F! 来求解最小螺距 , 具体步骠如下 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S019",
+      "evidence_id": "E-TEXT-P017-86dd3c091e",
+      "page": 17,
+      "type": "text",
+      "order": 19,
+      "original_text": "由上述分析 , 建立优化模型 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S020",
+      "evidence_id": "E-TEXT-P017-674e260be2",
+      "page": 17,
+      "type": "text",
+      "order": 20,
+      "original_text": "我们采用二分法迹行求解。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S021",
+      "evidence_id": "E-TEXT-P011-eb484bdf92",
+      "page": 11,
+      "type": "text",
+      "order": 21,
+      "original_text": "返过二分法求解得最小螺距为 0.4000m , 误差掠制在 0.0001m 之内。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S022",
+      "evidence_id": "E-TEXT-P017-8f47d11eb1",
+      "page": 17,
+      "type": "text",
+      "order": 22,
+      "original_text": "解得龙头的最大行迹违度为 1.2462mys, 其中误差控券在 0.0001 mys 之内。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S023",
+      "evidence_id": "E-TEXT-P018-1ff2b2dab2",
+      "page": 18,
+      "type": "text",
+      "order": 23,
+      "original_text": "为检验运动模型的正确性 , 本节针对问题一对位置和速度模型分别进行验证。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S024",
+      "evidence_id": "E-TEXT-P018-6b5cb56b90",
+      "page": 18,
+      "type": "text",
+      "order": 24,
+      "original_text": "计算其结果 , 与问题一的求解结果进行比较 , 计算误差 :",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S025",
+      "evidence_id": "E-TEXT-P018-6b8aad527b",
+      "page": 18,
+      "type": "text",
+      "order": 25,
+      "original_text": "近似圆算法和精确算法误差",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S026",
+      "evidence_id": "E-TEXT-P018-4355a8c26f",
+      "page": 18,
+      "type": "text",
+      "order": 26,
+      "original_text": "图 13 求解结果位置误差",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S027",
+      "evidence_id": "E-TEXT-P018-8370e7450a",
+      "page": 18,
+      "type": "text",
+      "order": 27,
+      "original_text": "果进行比软 , 计算误差 , 最大误差数量级为 10-amys,",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S028",
+      "evidence_id": "E-TEXT-P019-55ba7341fe",
+      "page": 19,
+      "type": "text",
+      "order": 28,
+      "original_text": "考虚到实际问题中的隔机因裸存在误差。",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S029",
+      "evidence_id": "E-FIGURE-P004-bf2838e2c0",
+      "page": 4,
+      "type": "figure",
+      "order": 29,
+      "original_text": "图 1 龙头运动模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S030",
+      "evidence_id": "E-FIGURE-P005-8439727570",
+      "page": 5,
+      "type": "figure",
+      "order": 30,
+      "original_text": "图 2 把手速度模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S031",
+      "evidence_id": "E-FIGURE-P006-244135cdf0",
+      "page": 6,
+      "type": "figure",
+      "order": 31,
+      "original_text": "300s 时刻板凤龙位置图 10.0 - l",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S032",
+      "evidence_id": "E-FIGURE-P006-a1b7b7e712",
+      "page": 6,
+      "type": "figure",
+      "order": 32,
+      "original_text": "图 3 300s“ 板凤龙 “ 位置",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S033",
+      "evidence_id": "E-FIGURE-P008-c990518779",
+      "page": 8,
+      "type": "figure",
+      "order": 33,
+      "original_text": "图 4 同心四轨迹碰揽示惶图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S034",
+      "evidence_id": "E-FIGURE-P009-c463e27d99",
+      "page": 9,
+      "type": "figure",
+      "order": 34,
+      "original_text": "图 6 碰撩判断模型",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S035",
+      "evidence_id": "E-FIGURE-P010-c6d42adcb2",
+      "page": 10,
+      "type": "figure",
+      "order": 35,
+      "original_text": "图 7 判断碰撞算法流程图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S036",
+      "evidence_id": "E-FIGURE-P010-0fe7b3fb54",
+      "page": 10,
+      "type": "figure",
+      "order": 36,
+      "original_text": "图 7 判断碰撞算法流程图 6.3 模型求解结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S037",
+      "evidence_id": "E-FIGURE-P011-57b2b3b9a0",
+      "page": 11,
+      "type": "figure",
+      "order": 37,
+      "original_text": "图 8 调头空间示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S038",
+      "evidence_id": "E-FIGURE-P012-f84e48cc14",
+      "page": 12,
+      "type": "figure",
+      "order": 38,
+      "original_text": "图 9 调头空间内几何关系示意图",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S039",
+      "evidence_id": "E-FIGURE-P015-5a954a2c64",
+      "page": 15,
+      "type": "figure",
+      "order": 39,
+      "original_text": "图 10 最大速度随时问变化情况",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S040",
+      "evidence_id": "E-FIGURE-P016-3b81c142cd",
+      "page": 16,
+      "type": "figure",
+      "order": 40,
+      "original_text": "图 11 探究曲率半径与速度变化之闽的关系",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S041",
+      "evidence_id": "E-FIGURE-P018-4355a8c26f",
+      "page": 18,
+      "type": "figure",
+      "order": 41,
+      "original_text": "图 13 求解结果位置误差",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S042",
+      "evidence_id": "E-TABLE-P003-717bf4f3a5",
+      "page": 3,
+      "type": "table",
+      "order": 42,
+      "original_text": "表 1 符驭说明",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S043",
+      "evidence_id": "E-TABLE-P007-69c0ee5a96",
+      "page": 7,
+      "type": "table",
+      "order": 43,
+      "original_text": "表 2 特殊节点位置结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S044",
+      "evidence_id": "E-TABLE-P007-12083c4063",
+      "page": 7,
+      "type": "table",
+      "order": 44,
+      "original_text": "表 3 特殊节点速度结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S045",
+      "evidence_id": "E-TABLE-P010-9b64336bdc",
+      "page": 10,
+      "type": "table",
+      "order": 45,
+      "original_text": "表 4 特殊节点位置结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S046",
+      "evidence_id": "E-TABLE-P010-53e0064633",
+      "page": 10,
+      "type": "table",
+      "order": 46,
+      "original_text": "表 5 特殊节点速度结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S047",
+      "evidence_id": "E-TABLE-P014-8eff3878dd",
+      "page": 14,
+      "type": "table",
+      "order": 47,
+      "original_text": "表 6 特殊节点位置结果",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    },
+    {
+      "id": "S048",
+      "evidence_id": "E-TABLE-P015-5e0cdc4761",
+      "page": 15,
+      "type": "table",
+      "order": 48,
+      "original_text": "表 7 鳙穹...`歹牙妄昔t氨r^善支i蔓囊度纤j身'戛",
+      "translation": "",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "confidence": "medium",
+      "refs": [],
+      "insert_after": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "block_ids": [
+        "S001",
+        "S010",
+        "S011",
+        "S012",
+        "S013"
+      ]
+    },
+    {
+      "page": 2,
+      "block_ids": [
+        "S002"
+      ]
+    },
+    {
+      "page": 3,
+      "block_ids": [
+        "S003",
+        "S004",
+        "S005",
+        "S006",
+        "S014",
+        "S015",
+        "S016",
+        "S017",
+        "S042"
+      ]
+    },
+    {
+      "page": 4,
+      "block_ids": [
+        "S029"
+      ]
+    },
+    {
+      "page": 5,
+      "block_ids": [
+        "S007",
+        "S030"
+      ]
+    },
+    {
+      "page": 6,
+      "block_ids": [
+        "S008",
+        "S031",
+        "S032"
+      ]
+    },
+    {
+      "page": 7,
+      "block_ids": [
+        "S043",
+        "S044"
+      ]
+    },
+    {
+      "page": 8,
+      "block_ids": [
+        "S033"
+      ]
+    },
+    {
+      "page": 9,
+      "block_ids": [
+        "S034"
+      ]
+    },
+    {
+      "page": 10,
+      "block_ids": [
+        "S035",
+        "S036",
+        "S045",
+        "S046"
+      ]
+    },
+    {
+      "page": 11,
+      "block_ids": [
+        "S018",
+        "S021",
+        "S037"
+      ]
+    },
+    {
+      "page": 12,
+      "block_ids": [
+        "S009",
+        "S038"
+      ]
+    },
+    {
+      "page": 13,
+      "block_ids": []
+    },
+    {
+      "page": 14,
+      "block_ids": [
+        "S047"
+      ]
+    },
+    {
+      "page": 15,
+      "block_ids": [
+        "S039",
+        "S048"
+      ]
+    },
+    {
+      "page": 16,
+      "block_ids": [
+        "S040"
+      ]
+    },
+    {
+      "page": 17,
+      "block_ids": [
+        "S019",
+        "S020",
+        "S022"
+      ]
+    },
+    {
+      "page": 18,
+      "block_ids": [
+        "S023",
+        "S024",
+        "S025",
+        "S026",
+        "S027",
+        "S041"
+      ]
+    },
+    {
+      "page": 19,
+      "block_ids": [
+        "S028"
+      ]
+    },
+    {
+      "page": 20,
+      "block_ids": []
+    },
+    {
+      "page": 21,
+      "block_ids": []
+    },
+    {
+      "page": 22,
+      "block_ids": []
+    },
+    {
+      "page": 23,
+      "block_ids": []
+    },
+    {
+      "page": 24,
+      "block_ids": []
+    },
+    {
+      "page": 25,
+      "block_ids": []
+    },
+    {
+      "page": 26,
+      "block_ids": []
+    },
+    {
+      "page": 27,
+      "block_ids": []
+    },
+    {
+      "page": 28,
+      "block_ids": []
+    },
+    {
+      "page": 29,
+      "block_ids": []
+    },
+    {
+      "page": 30,
+      "block_ids": []
+    },
+    {
+      "page": 31,
+      "block_ids": []
+    },
+    {
+      "page": 32,
+      "block_ids": []
+    },
+    {
+      "page": 33,
+      "block_ids": []
+    },
+    {
+      "page": 34,
+      "block_ids": []
+    },
+    {
+      "page": 35,
+      "block_ids": []
+    },
+    {
+      "page": 36,
+      "block_ids": []
+    },
+    {
+      "page": 37,
+      "block_ids": []
+    },
+    {
+      "page": 38,
+      "block_ids": []
+    },
+    {
+      "page": 39,
+      "block_ids": []
+    },
+    {
+      "page": 40,
+      "block_ids": []
+    },
+    {
+      "page": 41,
+      "block_ids": []
+    },
+    {
+      "page": 42,
+      "block_ids": []
+    },
+    {
+      "page": 43,
+      "block_ids": []
+    },
+    {
+      "page": 44,
+      "block_ids": []
+    },
+    {
+      "page": 45,
+      "block_ids": []
+    },
+    {
+      "page": 46,
+      "block_ids": []
+    },
+    {
+      "page": 47,
+      "block_ids": []
+    },
+    {
+      "page": 48,
+      "block_ids": []
+    }
+  ],
+  "figures": [],
+  "glossary": []
+}

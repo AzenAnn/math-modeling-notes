@@ -1,0 +1,1828 @@
+{
+  "schema_version": "1.0.0",
+  "paper_id": "paper-2024-e010",
+  "source": {
+    "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\E010.pdf",
+    "sha256": "8deb4f66a27ade7381c5df41d28b8a4827b445be8ae9c489df1a2bcda7b83c18",
+    "parser": "pymupdf-ocr",
+    "parsed_at": "2026-09-04T17:40:08+00:00",
+    "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E010-交通流量管控\\workflow\\parsed\\normalized_paper.md",
+    "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E010-交通流量管控\\workflow\\parsed\\paper_structure.json"
+  },
+  "bibliographic": {
+    "title": "交通流量管控",
+    "authors": [],
+    "year": 2024,
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "award": "优秀论文",
+    "problem_id": "E",
+    "abstract": "随着城市道路交通拥堵问题日渐严重 , 不仅影响了道路的通行效率 , 也成为地方经 济发展和百姓幸福感的一个 “ 痧点 “。 本文主要研究交通流量管控问题 , 给出了对应问题 的具体解决方法方案。",
+    "keywords": [
+      "Genetic Algorithm",
+      "Simulated Annealing"
+    ],
+    "language": "zh-CN"
+  },
+  "problem": {
+    "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=8deb4f66a27ade7381c5df41d28b8a4827b445be8ae9c489df1a2bcda7b83c18 --> # 交通流量管控 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 交通流量管控 摘要 随着城市道路交通拥堵问题日渐严重 , 不仅影响了道路的通行效率 , 也成为地方经 济发展和百姓幸福感的一个 “ 痧点 “。 本文主要研究交通流量管控问题 , 给出了对应问题 的具体解决方法方案。 针对问题一 , 首先进行数据整理与清洗 , 根据附件 2 中的数据 , 提取经中路 - 纷中 跟交叉口的车流数据。 通过绘制交叉口流量变化曲绪 , 解析了交叉口流量的日变和时变 特征 , 结合方差分析判断工作日和非工作日交通流最差异性 , 发现工作日与非工作日流 量特征没有显著差异。 根据交通流量变化规律 , 采用 K-means 聚类、DBSCAN 紫类和 高斯混合 《GMM》 职类三种不同算法对交叉口流量时段进行划分 , 得到交叉口流量变 化四个阶段 , 其中 7,00 至 20: 00 交通流量相对平稚并没有显著高峰期。 最后 , 输选 检测器正常工作期间交叉口各相位历史数据 , 基于极限柱度提升树算法 (GXGBoost) 对 经中路 - 纬中路交叉口各个相位的交通量进行估计 , 预测结果误差较小、 针对问题二 , 通过车牌匹配对经中路 - 纬中路交叉口各相位流量进行转向识别 , 获取 交叉口车辆左转、 直行和右转路径 , 以工作日晚高峰期间为例 , 提取各交叉口流量数据 , 方法一采",
+    "overall_objective": "启发式模式未可靠抽取总体目标。",
+    "subproblems": [
+      {
+        "id": "Q1",
+        "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "task_types": [
+          "unknown"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "constraints": [],
+        "evidence_ids": []
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E-TEXT-P001-0ece1d8581",
+      "kind": "text",
+      "page": 1,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:895-939",
+      "quote": "方法二假设整体车流平均速度与 “ 绿灯时长与周期时长的比值 “ 成反比 , 设置约束",
+      "char_start": 895,
+      "char_end": 939,
+      "content_hash": "0ece1d8581574fa9100e4530c6e86d67dcc976af428dddd5ee34db18872af0ff",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-33c0f81f92",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:4349-4390",
+      "quote": "为了方便模型的建立与模型的可行性 , 我们这果首先对模型提出一些假设 , 使得模",
+      "char_start": 4349,
+      "char_end": 4390,
+      "content_hash": "33c0f81f926915c3517d34d5295277188f173bb651bac95a0892ed9b542a6abd",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-0bb01423fd",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4410-4451",
+      "quote": "1、 数据真实性假设 : 假设所有提供的数据都是准确和可靠的 , 这为模型的建立",
+      "char_start": 4410,
+      "char_end": 4451,
+      "content_hash": "0bb01423fd9108259050194153e7b7882f7a079877024f954a739a3544fabd41",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-6e5b046228",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4465-4508",
+      "quote": "2、 车辆流量均匀性假设 : 在短时间内 , 车流量的变化被认为是相对平稳的 , 这",
+      "char_start": 4465,
+      "char_end": 4508,
+      "content_hash": "6e5b046228ab99d862253ad2b6c40388d5fe2dd61cd7f416fdc56e7089e86256",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-c85af77ece",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4542-4580",
+      "quote": "3、 车辆行为一致性假设 : 假设车辆在交叉口的转弯和直行行为有一定的规律",
+      "char_start": 4542,
+      "char_end": 4580,
+      "content_hash": "c85af77ecef538a5175efd5f55d9af54ce3d88845122aa68b18ef85d2f5a30c7",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P005-15b111902b",
+      "kind": "text",
+      "page": 5,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4631-4672",
+      "quote": "4, 停车位需求线性增长假设 : 假设停车位的需求与游客数量员线性关系 , 这使",
+      "char_start": 4631,
+      "char_end": 4672,
+      "content_hash": "15b111902b717b93a9ff1d0f221268cbb28783afc5c4750f35f5ab970e3f8391",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P005-78f8485ae9",
+      "kind": "text",
+      "page": 5,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4708-4749",
+      "quote": "5、 巡勒车辆识别假设 : 通过论别在特定区域内频嚣低速行驶的车辆 , 可以佼计",
+      "char_start": 4708,
+      "char_end": 4749,
+      "content_hash": "78f8485ae99a6cf5f1f8104ef5d32b6e1393bac42a7d7f3e4165a6f081a0dc0d",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P005-1ca16131b9",
+      "kind": "text",
+      "page": 5,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:4778-4817",
+      "quote": "6、 信号灯控制对车速的线性影响假设 , 假设信号灯的等待时间与车辆平均通行",
+      "char_start": 4778,
+      "char_end": 4817,
+      "content_hash": "1ca16131b9138951373eb67280d2d3b7e97cc71a15e654e9df1d9f09b4452bf5",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P009-2618bdfab3",
+      "kind": "text",
+      "page": 9,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:8493-8536",
+      "quote": "高斯混合模型 《GMM) : 是一种基于概率的聚类方法 , 它假设数据由多个高斯分布",
+      "char_start": 8493,
+      "char_end": 8536,
+      "content_hash": "2618bdfab306a9c9c0835d5c3ab0c6c6286158fdee30750e839400be7a2c5f40",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P014-fd4bbff800",
+      "kind": "text",
+      "page": 14,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:12170-12223",
+      "quote": "针对问题 3, 假设各交灵口各相位的通行能力为 2100 辆 /h, 释用韦伯斯特 ( Webster》",
+      "char_start": 12170,
+      "char_end": 12223,
+      "content_hash": "fd4bbff800f1a7fffcea9a8d200dcc8946ec733fb12569695b21aa124668c424",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-7e1813c839",
+      "kind": "text",
+      "page": 16,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:14470-14512",
+      "quote": "针对问题 3, 假设通过调整信号方案中各相位绿灯时长 , 降低车辅停驶汝数、 凑少",
+      "char_start": 14470,
+      "char_end": 14512,
+      "content_hash": "7e1813c839101727b4be11fce31eb91c2eafbf5b0a0757102758594245bc8b9e",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P016-e04c3eb91c",
+      "kind": "text",
+      "page": 16,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:14638-14677",
+      "quote": "根据假设 , 车流的平均速度与 “ 彗灯时长与周期时长的比值 “ 成反比 :",
+      "char_start": 14638,
+      "char_end": 14677,
+      "content_hash": "e04c3eb91c4af8f48d2087676a2c5489d631d9fa9febdd5d146b3fb031055095",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P021-ef1aa44da9",
+      "kind": "text",
+      "page": 21,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:18716-18763",
+      "quote": "步骤 9: 计算停车位需求 : 假设每粮车平均停车时间为 4 小时 , 假期总时长为 5 天",
+      "char_start": 18716,
+      "char_end": 18763,
+      "content_hash": "ef1aa44da9dbcb6bd04813bc38cdf382b1359270fd3874637cd3713715de84b9",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-586c10560f",
+      "kind": "text",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:20495-20521",
+      "quote": "计算每辆车的平均速度 , 假设速度与时间差成反比。",
+      "char_start": 20495,
+      "char_end": 20521,
+      "content_hash": "586c10560f628afe9775af93012592e5eff24cc5aed22dfa5aae82cf6a77e15a",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P024-726dd0ae4a",
+      "kind": "text",
+      "page": 24,
+      "section": "交通流量管控",
+      "label": "assumption",
+      "locator": "char:20851-20883",
+      "quote": "假设每辅车平均停车时间为 4 小时 , 假期总时长为 5 R",
+      "char_start": 20851,
+      "char_end": 20883,
+      "content_hash": "726dd0ae4a51ac2efd3be8e5ebc6947446e7d51a59d566313693f7caab3860a7",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P031-4bd1a733f2",
+      "kind": "text",
+      "page": 31,
+      "section": "应用 K-means 联类",
+      "label": "assumption",
+      "locator": "char:26469-26519",
+      "quote": "kmeans = KMeans(n_clusters=3) # 假设我们想要将一天分为 4 个时段",
+      "char_start": 26469,
+      "char_end": 26519,
+      "content_hash": "4bd1a733f276012ff76d0edcf1e0064ed87115c0bff05b55ad942bd766fabd89",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P032-61037922b3",
+      "kind": "text",
+      "page": 32,
+      "section": "可视化学个方向的交通量",
+      "label": "assumption",
+      "locator": "char:27177-27238",
+      "quote": "directions = pivot_data.columns[1:] # 假设第一个列是 「 小时 “, 其伽的是方向",
+      "char_start": 27177,
+      "char_end": 27238,
+      "content_hash": "61037922b38f926dc4ac474c9b291dfd0591c35fc4105cedc2a7dffd024bda0c",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P033-a3712590fc",
+      "kind": "text",
+      "page": 33,
+      "section": "假设我们只关注每小时的交通量总和",
+      "label": "assumption",
+      "locator": "char:28338-28401",
+      "quote": "labels = may_datagroupby( 小时 )[ 方向 ]first0Owvalues # 假设每个小时的方向",
+      "char_start": 28338,
+      "char_end": 28401,
+      "content_hash": "a3712590fc93175b8cb16c069d23d39e8e9d90d0ec975e0f0d84326c942da9a6",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P034-0a7df4defd",
+      "kind": "text",
+      "page": 34,
+      "section": "创建 GMM 实例",
+      "label": "assumption",
+      "locator": "char:29864-29894",
+      "quote": "n_components =3 # 假设我们想要聚类的时段",
+      "char_start": 29864,
+      "char_end": 29894,
+      "content_hash": "0a7df4defde8c686b05d303352f6f1c4787fe76ec5a20decda745bfdbb684ea9",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-b5ddc2e6de",
+      "kind": "text",
+      "page": 1,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:802-841",
+      "quote": "方法一采用韦伯斯特 (Webster) 信号配时方法计算单点信号控制最优方案。",
+      "char_start": 802,
+      "char_end": 841,
+      "content_hash": "b5ddc2e6de1ecb070f3402fa8a71b5e909e1353a2b93584c0b58f8c0a6d66278",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-10d08bcd89",
+      "kind": "text",
+      "page": 1,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:939-982",
+      "quote": "条件 , 以经中路和纬中路两条主路车辆平均速度最大为目标构建规划模型 , 通过遗传算",
+      "char_start": 939,
+      "char_end": 982,
+      "content_hash": "10d08bcd89614b8dbd92fbc731c834ea40673e5fe1a5089d68b98643518f63a0",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-65e997340c",
+      "kind": "text",
+      "page": 3,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:2498-2517",
+      "quote": "使用统计方法 〔 如移动平均或时间",
+      "char_start": 2498,
+      "char_end": 2517,
+      "content_hash": "65e997340c928a51c1e3ae4686d0e64aaa18dd16788f2840eeb40013c74d8b67",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-39ee9b4cae",
+      "kind": "text",
+      "page": 3,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:2563-2600",
+      "quote": "建立一个基于时间的车流量模型 , 考虑工作日和周末的差弃 , 以及特殊",
+      "char_start": 2563,
+      "char_end": 2600,
+      "content_hash": "39ee9b4cae5689480ebe2c6cc352797b4fc842dcbb242dd4b075269025d0ccbc",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-835d5dd443",
+      "kind": "text",
+      "page": 3,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:3041-3068",
+      "quote": "的实际车流量 , 使用转询控制模型动态谋节信号灯配时。",
+      "char_start": 3041,
+      "char_end": 3068,
+      "content_hash": "835d5dd443ce8d577bb4860b5b2a694e832194d37e14bd0fd630dde275c42f64",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P003-7604fe7201",
+      "kind": "text",
+      "page": 3,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:3339-3360",
+      "quote": "进而构建一个基于车流量的交通灯控制模型。",
+      "char_start": 3339,
+      "char_end": 3360,
+      "content_hash": "7604fe72019202c2294c24841a7ff22c0b1e41805f2ead2f13cf9c0280406d67",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-fd74b5dd48",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:3899-3914",
+      "quote": "可使用排队论模型或蒙特卡洛",
+      "char_start": 3899,
+      "char_end": 3914,
+      "content_hash": "fd74b5dd48951e9a7cd4bf36d0f3978452e74cd5edc09840355feaee88a83a15",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-7558fd48dc",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:4508-4540",
+      "quote": "有助于使用统计方法来估计车流量 , 而不需要考虑极蝎或异常情况。",
+      "char_start": 4508,
+      "char_end": 4540,
+      "content_hash": "7558fd48dc737e2dee80b7975b95cae4a73adbdbd4282c3cd8996fa67002b494",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P006-72fe0090b2",
+      "kind": "text",
+      "page": 6,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:5285-5333",
+      "quote": "据交通流量变化规律 , 采用 K-means、DBSCAN 和高斯混合模型三种不同聚类算法对流",
+      "char_start": 5285,
+      "char_end": 5333,
+      "content_hash": "72fe0090b2d97f2703af7577409aa71e6419d30e93d4353b7671daede64a41ab",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P009-0ddee08b74",
+      "kind": "text",
+      "page": 9,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:8692-8733",
+      "quote": "使用 Python 对上述模型进行交通量的时段划分求解 , 算法流程见附件 1.",
+      "char_start": 8692,
+      "char_end": 8733,
+      "content_hash": "0ddee08b744d96c27027b800a281eea242d137ece66e7f3b189e21ed00c75109",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-bfdcec75f9",
+      "kind": "text",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:10146-10192",
+      "quote": "使用 Python 对流量预测模型求解 , 通过 xgbXGBRegressor 来训练",
+      "char_start": 10146,
+      "char_end": 10192,
+      "content_hash": "bfdcec75f9e9b368bd738daad6dbc82787094f8a28f096cc87a3b4013f3cc57d",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-1c8f37dc7b",
+      "kind": "text",
+      "page": 20,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:18188-18238",
+      "quote": "步骤 4: 计算时间差 : 使用 「groupby“ 方法对数据按车牌号分组 , 然后对每组数据的",
+      "char_start": 18188,
+      "char_end": 18238,
+      "content_hash": "1c8f37dc7be36c2e6af55aacc2f243d6c15031859a006ac85d7929e1dffc663f",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P020-018d25a9e6",
+      "kind": "text",
+      "page": 20,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:18238-18272",
+      "quote": "“ 时间 「 列使用 “diff0「 方法计算时间差 , 单位为秒。",
+      "char_start": 18238,
+      "char_end": 18272,
+      "content_hash": "018d25a9e664aaa7256efd1b41d91528e5f8280ca479a3c4d2c8b9964d4b933e",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P021-854689fba6",
+      "kind": "text",
+      "page": 21,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:18649-18699",
+      "quote": "步骤 8: 统计巡游十靼数量 : 使用 -nunique()「 方法统计数据集中巡游车鞭的唯一车牌",
+      "char_start": 18649,
+      "char_end": 18699,
+      "content_hash": "854689fba68f72feac547f7bdea67863489c0f1fe7bfdd88c4386c1976f979c2",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-e7ec5226d0",
+      "kind": "text",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:20358-20408",
+      "quote": "步骤 4: 计算时间差 : 使用 groupby 方法对数据按车牌号分组 , 然后对每组数据的 「",
+      "char_start": 20358,
+      "char_end": 20408,
+      "content_hash": "e7ec5226d0daf61a9858b7bdb5b31b2ce3dced54787e7c660d53bc794d255725",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-d975b82910",
+      "kind": "text",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:20408-20438",
+      "quote": "时间 “ 列使用 diff0 方法计算时间莹 , 单位为秋。",
+      "char_start": 20408,
+      "char_end": 20438,
+      "content_hash": "d975b82910baadf5bcaaeea7add8dc7cecd673c77f7617267ccdc4f08b121d5f",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P023-c42224ce2d",
+      "kind": "text",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:20575-20619",
+      "quote": "使用 groupby 方法对数据按车牌号分组 , 然后对每组数据的 「 低速 「 列",
+      "char_start": 20575,
+      "char_end": 20619,
+      "content_hash": "c42224ce2de3f965170e21c885f74ef556ba320bbe087a09db2827c0a3deda13",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P024-1ce2c28e78",
+      "kind": "text",
+      "page": 24,
+      "section": "交通流量管控",
+      "label": "model",
+      "locator": "char:20776-20811",
+      "quote": "统计巡游车鞘数量 : 使用 「munique() 方法统计数据集中",
+      "char_start": 20776,
+      "char_end": 20811,
+      "content_hash": "1ce2c28e7805d9301a450d7a2bb5a7d2e71a0a3f7da49a19ce882d9b0420e8ca",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P001-2713f0d253",
+      "kind": "text",
+      "page": 1,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:674-711",
+      "quote": "经中路 - 纬中路交叉口各个相位的交通量进行估计 , 预测结果误差较小、",
+      "char_start": 674,
+      "char_end": 711,
+      "content_hash": "2713f0d25324e5495ec43176e87c3ac89fcdf4b6f9e0d3bb9cfd7d9c7b16e24e",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P004-aa39e41445",
+      "kind": "text",
+      "page": 4,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:4116-4159",
+      "quote": "环西路 - 纬中路离开的约束条件 , 可以通过对比实验或偷设检验来评价管控措施的效果",
+      "char_start": 4116,
+      "char_end": 4159,
+      "content_hash": "aa39e414456ab499343399dd68d92a1913c328ba22996c5156a41041fc07176b",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-309c0f326a",
+      "kind": "text",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:9955-9997",
+      "quote": "训练揽失是椿型预测值与真实值之间差异的度量 , 通常使用玩方误差 (MSE) 作为",
+      "char_start": 9955,
+      "char_end": 9997,
+      "content_hash": "309c0f326a87bea678cfbc8f97f5ac749b2d6eb00ec64b05bd5cf2cea976fdda",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-be2ddf5598",
+      "kind": "text",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:10192-10260",
+      "quote": "模型 , 其中 objective= reg「squarederror 指定回归任务和平方误差损失函数 , randomi state",
+      "char_start": 10192,
+      "char_end": 10260,
+      "content_hash": "be2ddf5598b2748b610de0501fd2366851e4b52c5f12b4f46ea1577693da0f59",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-977ecf922c",
+      "kind": "text",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:10317-10363",
+      "quote": "最后得到模型预测结果如图 3 所示 , 并输出模型检验参数 MSE、RMSE、MAE 和",
+      "char_start": 10317,
+      "char_end": 10363,
+      "content_hash": "977ecf922cc6e33416b5f47b9e8e6151c0a4d8af3b7ed914d5dcb9c23b5f9638",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-TEXT-P011-3cd3f05884",
+      "kind": "text",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "validation",
+      "locator": "char:10385-10444",
+      "quote": "模型检验结果 MSE<2851.33、RMSE-=53.39、MAE-38.45、R2 =0.95,R2 值表明模型",
+      "char_start": 10385,
+      "char_end": 10444,
+      "content_hash": "3cd3f05884a44a9d852fd25d116f7a6f2dacddbc9d83831ddc99ad532b949eff",
+      "provenance": "HEURISTIC",
+      "confidence": 0.55
+    },
+    {
+      "id": "E-FIGURE-P007-18fbe805d5",
+      "kind": "figure",
+      "page": 7,
+      "section": "交通流量管控",
+      "label": "图 1",
+      "locator": "FIGURE-001",
+      "quote": "这四周的交灵口流量分别按日进行统计 , 得到交通量日变和时变规律如图 1 所示。",
+      "char_start": 6572,
+      "char_end": 6575,
+      "content_hash": "18fbe805d5a69eae9f4bcce2ae733a428712606e0f487c1b2988c3aa0f193f71",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-40d24c3099",
+      "kind": "figure",
+      "page": 7,
+      "section": "交通流量管控",
+      "label": "图 1",
+      "locator": "FIGURE-002",
+      "quote": "图 1 交叉口流量日变与时变曲线图",
+      "char_start": 6595,
+      "char_end": 6598,
+      "content_hash": "40d24c30999d3ac4eef18770713c31437c53ca7f20a52a4701431d28705b9046",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P007-be65bbfbc8",
+      "kind": "figure",
+      "page": 7,
+      "section": "交通流量管控",
+      "label": "图 1",
+      "locator": "FIGURE-003",
+      "quote": "由图 1 可知 , 工作日周一至周五取叉口的交通流量变化规律基本一致 ; 非工作日周",
+      "char_start": 6623,
+      "char_end": 6626,
+      "content_hash": "be65bbfbc8d158c9373334271fa48b4409810680e74e3d578e6ad6a3011f4dd6",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P009-52d3252c5c",
+      "kind": "figure",
+      "page": 9,
+      "section": "交通流量管控",
+      "label": "图 2",
+      "locator": "FIGURE-004",
+      "quote": "划分。 三个联类模型得到的时段分类结果如图 2 所示。",
+      "char_start": 8803,
+      "char_end": 8806,
+      "content_hash": "52d3252c5cab35d07f7d66660faf75aa777b76ce149384e1d36030227beaa4ee",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P010-7e07f3ef6f",
+      "kind": "figure",
+      "page": 10,
+      "section": "交通流量管控",
+      "label": "图 2",
+      "locator": "FIGURE-005",
+      "quote": "图 2 交叉口流量时段划分棣类分析结果",
+      "char_start": 9000,
+      "char_end": 9003,
+      "content_hash": "7e07f3ef6fd4679ab1f1739deddcadb597842b921f637570b0989c052f64ea9f",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P010-c0126a550b",
+      "kind": "figure",
+      "page": 10,
+      "section": "交通流量管控",
+      "label": "图 2",
+      "locator": "FIGURE-006",
+      "quote": "由图 2 可知 , 不同聚类分析结果均将交叉口流量时段划分为 4 个筱 , 揭示了车流量",
+      "char_start": 9022,
+      "char_end": 9025,
+      "content_hash": "c0126a550be6e4c76564a7950265ee9e0939309e811c31f0ccc215d19cce185a",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-2f75c4a5c2",
+      "kind": "figure",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "图 3",
+      "locator": "FIGURE-007",
+      "quote": "化。 最后得到模型预测结果如图 3 所示 , 并输出模型检验参数 MSE、RMSE、MAE 和",
+      "char_start": 10329,
+      "char_end": 10332,
+      "content_hash": "2f75c4a5c2519af08497ee4ac2eb8dd9ebc3b59161236d551b9857e863f27745",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P011-da56a59741",
+      "kind": "figure",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "图 3",
+      "locator": "FIGURE-008",
+      "quote": "图 3 交叉口各相位流量预测结果",
+      "char_start": 10368,
+      "char_end": 10371,
+      "content_hash": "da56a597411c74e0c83e2347c4d41bf709dd5a55d4224dff3ae0251dc3409ca7",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P012-3ff31868cc",
+      "kind": "figure",
+      "page": 12,
+      "section": "交通流量管控",
+      "label": "图 4",
+      "locator": "FIGURE-009",
+      "quote": "图 4 交叉口流量转向识别方法",
+      "char_start": 11384,
+      "char_end": 11387,
+      "content_hash": "3ff31868cc42b81cfdef7364a5a098e1a32807f5b3e1201529f79b6804ebaf69",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-e13c6f70f0",
+      "kind": "figure",
+      "page": 13,
+      "section": "交通流量管控",
+      "label": "图 4",
+      "locator": "FIGURE-010",
+      "quote": "行和右转路径。 车牌匹配和路径识别方法如图 4 所示。",
+      "char_start": 11530,
+      "char_end": 11533,
+      "content_hash": "e13c6f70f002d77174306797b983921e2d4992a56e22d1f6affea7b1161dfb23",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-5266ec994d",
+      "kind": "figure",
+      "page": 13,
+      "section": "交通流量管控",
+      "label": "图 5",
+      "locator": "FIGURE-011",
+      "quote": "口一一经中路 - 纬中路交叉口高峰小时各相位转向变通流量如图 5 所示。",
+      "char_start": 11706,
+      "char_end": 11709,
+      "content_hash": "5266ec994d59410a5a283395c884a399c9d8248d678f3151e8b245053e08c0d4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P013-4be81ec086",
+      "kind": "figure",
+      "page": 13,
+      "section": "交通流量管控",
+      "label": "图 5",
+      "locator": "FIGURE-012",
+      "quote": "图 5 经中路 - 纬中路交叉口流量流向图",
+      "char_start": 11715,
+      "char_end": 11718,
+      "content_hash": "4be81ec0868e5818a617404cad344e12c398ecacec487debb1ecb8ab1da667aa",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-0308d0c163",
+      "kind": "figure",
+      "page": 16,
+      "section": "交通流量管控",
+      "label": "图 6",
+      "locator": "FIGURE-013",
+      "quote": "干线协调控制方案时距图如图 6 所示。",
+      "char_start": 14422,
+      "char_end": 14425,
+      "content_hash": "0308d0c163ae3414a8c1ef9ec457354cab6ed003bb2eeef4ee32bac9853078a2",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-537b7a1796",
+      "kind": "figure",
+      "page": 16,
+      "section": "交通流量管控",
+      "label": "图 6",
+      "locator": "FIGURE-014",
+      "quote": "图 6 各交叉口时距图",
+      "char_start": 14431,
+      "char_end": 14434,
+      "content_hash": "537b7a1796bf09b4579fc0cea9baf9b046f220c885ae24196ed995cb0c81b2fd",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P016-5dec8d09ad",
+      "kind": "figure",
+      "page": 16,
+      "section": "交通流量管控",
+      "label": "图\n523",
+      "locator": "FIGURE-015",
+      "quote": "图 6 各交叉口时距图 523 基于遇传算法的最大车速求解 〔 方法二 )",
+      "char_start": 14441,
+      "char_end": 14446,
+      "content_hash": "5dec8d09adba40a4727287dfd7feb3824686b1220e830a04671364fcb6ee8ce4",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P018-dfcecad0ff",
+      "kind": "figure",
+      "page": 18,
+      "section": "交通流量管控",
+      "label": "图 7",
+      "locator": "FIGURE-016",
+      "quote": "图 7 遗传算法迭代过程",
+      "char_start": 15890,
+      "char_end": 15893,
+      "content_hash": "dfcecad0ff2b39d770d37689bf368aa0f2e32feb3a5d89156e377d7640be124b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P018-b76d15cf55",
+      "kind": "figure",
+      "page": 18,
+      "section": "交通流量管控",
+      "label": "图 8",
+      "locator": "FIGURE-017",
+      "quote": "进一步统计优化前后各取叉口各相位车流违度 , 如图 8 所示。 优化后整体平均车速",
+      "char_start": 16451,
+      "char_end": 16454,
+      "content_hash": "b76d15cf55b20bc18405d029bd1183a71c7f6f8cf0e8fa0bfeb7b5036100c907",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P019-b7714d4059",
+      "kind": "figure",
+      "page": 19,
+      "section": "交通流量管控",
+      "label": "图 8",
+      "locator": "FIGURE-018",
+      "quote": "图 8 'cl【查′罄匕冉胃']旨丰罩〕了邑翼l芦士盒」~迂墓王竟董嘈〕{七I二",
+      "char_start": 16703,
+      "char_end": 16706,
+      "content_hash": "b7714d4059f25153591625f39162ea85dec6b64b81a9579c0cac2a06e569b792",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P019-3e3177899b",
+      "kind": "figure",
+      "page": 19,
+      "section": "交通流量管控",
+      "label": "图 9",
+      "locator": "FIGURE-019",
+      "quote": "针对已知交发口数据和变通管制方案如图 9 所示。 对现有数据进行对应时段和交叉",
+      "char_start": 16783,
+      "char_end": 16786,
+      "content_hash": "3e3177899b087fa749e9bab529fb549c0a5eccdc4eac8576678cb7ea6bad8ecc",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-92c338f649",
+      "kind": "figure",
+      "page": 21,
+      "section": "交通流量管控",
+      "label": "图 10",
+      "locator": "FIGURE-020",
+      "quote": "运行代码 , 得到停车位需求估算结果 , 如图 10 所示。",
+      "char_start": 18987,
+      "char_end": 18991,
+      "content_hash": "92c338f649ab2266c34ac689ad4015b96d0a362cfeb9e070c2d9bcf54c411334",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P021-ee5b742a9d",
+      "kind": "figure",
+      "page": 21,
+      "section": "交通流量管控",
+      "label": "图 10",
+      "locator": "FIGURE-021",
+      "quote": "图 10 停车位计算结果",
+      "char_start": 18997,
+      "char_end": 19001,
+      "content_hash": "ee5b742a9ddf9ef4baf373772c57b118a4e8214f442195731b83d58091d6c27e",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P022-5b817e9fd3",
+      "kind": "figure",
+      "page": 22,
+      "section": "交通流量管控",
+      "label": "图 11",
+      "locator": "FIGURE-022",
+      "quote": "图 11 巡游车辆平均时变图",
+      "char_start": 19240,
+      "char_end": 19244,
+      "content_hash": "5b817e9fd32c5c0cf8c0d539b4e10a4ac941e30a7ac973383f3f29324aed3fb0",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P022-bab6369b9b",
+      "kind": "figure",
+      "page": 22,
+      "section": "交通流量管控",
+      "label": "图 11",
+      "locator": "FIGURE-023",
+      "quote": "通过计算得到巡游车辆随时间的变化状况 , 如图 11 所示 , 根据当前结果 , 可以发",
+      "char_start": 19278,
+      "char_end": 19282,
+      "content_hash": "bab6369b9bb1d47bc288b1aea262ea42f5c0e3dd0fd151e91c5f800e95dcaa85",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P022-d60974bb25",
+      "kind": "figure",
+      "page": 22,
+      "section": "交通流量管控",
+      "label": "图 12",
+      "locator": "FIGURE-024",
+      "quote": "于一小时且小于十二个小时的车辆频次 , 进行数据的归纳和可视化 , 结果如图 12 所示 ,",
+      "char_start": 19749,
+      "char_end": 19753,
+      "content_hash": "d60974bb2516c9298e1b7b9ffcffc881d4befd10034af3bb12c1a55c0cdeb188",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P023-9845b514ed",
+      "kind": "figure",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "图 12",
+      "locator": "FIGURE-025",
+      "quote": "图 12 长停车车辆平均时变图",
+      "char_start": 19875,
+      "char_end": 19879,
+      "content_hash": "9845b514ed6ccdb2673d944145e7dc0608b13163af549e33922771dcd2671f63",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P023-55fea216a6",
+      "kind": "figure",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "图 13",
+      "locator": "FIGURE-026",
+      "quote": "其作为平均停车的参考时长值 , 进行后续停车总需求时的计算。 得到的计算结果如图 13",
+      "char_start": 19970,
+      "char_end": 19974,
+      "content_hash": "55fea216a6585a8d518197862ed9d59b2ab774245cef6b4b8ecd0ffeb79f50ca",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P023-c7bbf837f6",
+      "kind": "figure",
+      "page": 23,
+      "section": "交通流量管控",
+      "label": "图 13",
+      "locator": "FIGURE-027",
+      "quote": "图 13 停留车辅平均时",
+      "char_start": 19980,
+      "char_end": 19984,
+      "content_hash": "c7bbf837f6ac180f915e513bf74211e025a493389275f56b26d7b18209e188ba",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P024-32cf521f06",
+      "kind": "figure",
+      "page": 24,
+      "section": "交通流量管控",
+      "label": "图 12",
+      "locator": "FIGURE-028",
+      "quote": "个停车位。 根据上述内容可知 , 结合囹 11 和图 12 的结果 , 我们发现在 0 时到 9 时停放",
+      "char_start": 20994,
+      "char_end": 20998,
+      "content_hash": "32cf521f0642ab2d2f3f0ae83ca6652d90e341804e9001f7b9e877e228dca7e9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P025-627dc4c979",
+      "kind": "figure",
+      "page": 25,
+      "section": "交通流量管控",
+      "label": "图 15",
+      "locator": "FIGURE-029",
+      "quote": "图 15 箱选五一黄金周数据结果",
+      "char_start": 21769,
+      "char_end": 21773,
+      "content_hash": "627dc4c9796014cbaa5c40be150baf66fb79211262de711a7937af99147f7099",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P025-6c7dd9c1da",
+      "kind": "figure",
+      "page": 25,
+      "section": "交通流量管控",
+      "label": "图 18",
+      "locator": "FIGURE-030",
+      "quote": "图 18 2024 年 4 月 30 日拥堵情况",
+      "char_start": 21907,
+      "char_end": 21911,
+      "content_hash": "6c7dd9c1da623fa60a6f3617e51721ee27581d4cb90c9c0e216e060d0632247b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-FIGURE-P026-2c6857418f",
+      "kind": "figure",
+      "page": 26,
+      "section": "交通流量管控",
+      "label": "图 20",
+      "locator": "FIGURE-031",
+      "quote": "图 20 巡游车辆数量随时间变化",
+      "char_start": 22028,
+      "char_end": 22032,
+      "content_hash": "2c6857418f61fc8e618c53af9290181f299f83aaf8fb523494fb3bfd9b105302",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P006-b749faaf13",
+      "kind": "table",
+      "page": 6,
+      "section": "交通流量管控",
+      "label": "表 1",
+      "locator": "TABLE-001",
+      "quote": "提取的样例数据如表 1 所示。",
+      "char_start": 5462,
+      "char_end": 5465,
+      "content_hash": "b749faaf131d50b6381dbe2e69dda0c39c7dbfd1c6945943ee483b4da94457aa",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P006-6007be2d40",
+      "kind": "table",
+      "page": 6,
+      "section": "交通流量管控",
+      "label": "表 1",
+      "locator": "TABLE-002",
+      "quote": "表 1 原始数据样例 ( 示例 )",
+      "char_start": 5470,
+      "char_end": 5473,
+      "content_hash": "6007be2d4068570bb1611bc7262da9efa9be0a9c32c2e561890c9245ebb95101",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P006-ca1c5b7ca2",
+      "kind": "table",
+      "page": 6,
+      "section": "交通流量管控",
+      "label": "表 2",
+      "locator": "TABLE-003",
+      "quote": "24 小时的车流量进行时间序列统计。 交叉口每日各时间段交通量统计结果如表 2。",
+      "char_start": 6070,
+      "char_end": 6073,
+      "content_hash": "ca1c5b7ca28b5523e530ed633d30d9d5dd3073ba6093964211c68b92bf4f6290",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P006-add3c06e25",
+      "kind": "table",
+      "page": 6,
+      "section": "交通流量管控",
+      "label": "表 2",
+      "locator": "TABLE-004",
+      "quote": "表 2 每日各小时流量统计结果表 ( 示例 )",
+      "char_start": 6076,
+      "char_end": 6079,
+      "content_hash": "add3c06e25c7c5f373a47bce83271d46b40927c20a508dbbabee21b2cc92b04f",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P011-559fd59b7e",
+      "kind": "table",
+      "page": 11,
+      "section": "交通流量管控",
+      "label": "表 3",
+      "locator": "TABLE-005",
+      "quote": "直行、 转弯》 车流量的估算结果具体如表 3 所示。",
+      "char_start": 10599,
+      "char_end": 10602,
+      "content_hash": "559fd59b7e8a3d37cd098abdf9ad86e5022d89d539be20582fd254c77c8bbdcf",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P012-96b4e305ce",
+      "kind": "table",
+      "page": 12,
+      "section": "交通流量管控",
+      "label": "表 3",
+      "locator": "TABLE-006",
+      "quote": "表 3 不同时段各个祖位车流量",
+      "char_start": 10629,
+      "char_end": 10632,
+      "content_hash": "96b4e305cea3a188891380cbb829c5f735bca2554bed005d0b3e7e2de5478aae",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P013-c95135cab6",
+      "kind": "table",
+      "page": 13,
+      "section": "交通流量管控",
+      "label": "表 4",
+      "locator": "TABLE-007",
+      "quote": "提取该时间段各交叉口晚高峰四个相位的交通流量如表 4 所示。",
+      "char_start": 11760,
+      "char_end": 11763,
+      "content_hash": "c95135cab613f8d9958eb23abf531fd2c9500742fa6ce070f716634bfd94e473",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P013-fefdf5237f",
+      "kind": "table",
+      "page": 13,
+      "section": "交通流量管控",
+      "label": "表 4",
+      "locator": "TABLE-008",
+      "quote": "表 4 晚高峰各交叉口各相位流量",
+      "char_start": 11768,
+      "char_end": 11771,
+      "content_hash": "fefdf5237f68bab0f438e90b730eb06362e3bfa36c1281bebe71e3e95cea3372",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P014-f9caa4db94",
+      "kind": "table",
+      "page": 14,
+      "section": "交通流量管控",
+      "label": "表 5",
+      "locator": "TABLE-009",
+      "quote": "如表 5 所示。",
+      "char_start": 12707,
+      "char_end": 12710,
+      "content_hash": "f9caa4db94d73ae76c092b718869758e708467639e89ff367925482bed58b994",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P014-3b0bd8f1da",
+      "kind": "table",
+      "page": 14,
+      "section": "交通流量管控",
+      "label": "表 5",
+      "locator": "TABLE-010",
+      "quote": "表 5 各交叉口最佳信号配时方案",
+      "char_start": 12715,
+      "char_end": 12718,
+      "content_hash": "3b0bd8f1da85d6b6a0fcbba990e146bb561d143ca725dd77201b06dc16434f9c",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P015-63971d66d6",
+      "kind": "table",
+      "page": 15,
+      "section": "交通流量管控",
+      "label": "表\n\n6",
+      "locator": "TABLE-011",
+      "quote": "根据交叉口闽距 , 方案目标以自由流车迁行驶通过各个交叉口 , 得到各相位差如表 6 所示。",
+      "char_start": 13506,
+      "char_end": 13510,
+      "content_hash": "63971d66d694d4d1bc8f8b30194f2a9633ab91c537f4c645ff94d24ac7e4b94d",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P015-e76fa01a16",
+      "kind": "table",
+      "page": 15,
+      "section": "交通流量管控",
+      "label": "表 6",
+      "locator": "TABLE-012",
+      "quote": "表 6 蚱中路交叉口相位差",
+      "char_start": 13515,
+      "char_end": 13518,
+      "content_hash": "e76fa01a161ae3684dad1b12b5f88da12bd55c1d04324e294181dc8307769841",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P015-5ba5e63dc9",
+      "kind": "table",
+      "page": 15,
+      "section": "交通流量管控",
+      "label": "表 5",
+      "locator": "TABLE-013",
+      "quote": "根据表 5 中各交叉口各相位流量比 , 设置绿波控制方案公共周期范围为 80s 至 120s,",
+      "char_start": 13871,
+      "char_end": 13874,
+      "content_hash": "5ba5e63dc98fb096fc24642e841271e3cdb79e9f0c056167d2fed0c6497973c9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P015-bb7a050f36",
+      "kind": "table",
+      "page": 15,
+      "section": "交通流量管控",
+      "label": "表 7",
+      "locator": "TABLE-014",
+      "quote": "各个相位绿灯时长如表 7 所示。",
+      "char_start": 14018,
+      "char_end": 14021,
+      "content_hash": "bb7a050f36ac74f393ff9f78c30852c99370ca260b663b26cd9147430a86a87b",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P015-840acc4a42",
+      "kind": "table",
+      "page": 15,
+      "section": "交通流量管控",
+      "label": "表 7",
+      "locator": "TABLE-015",
+      "quote": "表 7 各京叉口相位与信号配时方案表",
+      "char_start": 14026,
+      "char_end": 14029,
+      "content_hash": "840acc4a42ef2653b86d67d94d924ba40aad7730b1f5dec2ee83bd235e02175d",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P017-369bf593cf",
+      "kind": "table",
+      "page": 17,
+      "section": "交通流量管控",
+      "label": "表 8",
+      "locator": "TABLE-016",
+      "quote": "进行选代优化 , 辐出结果。 其中 , 遗传算法超参数初始化如表 8 所示 , 种群迭代过程如",
+      "char_start": 15682,
+      "char_end": 15685,
+      "content_hash": "369bf593cf35d5b03ea39369c4b3b21ce68f62a0ad1dd7e89fb4a4c02f84a070",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P017-de8c64bfe1",
+      "kind": "table",
+      "page": 17,
+      "section": "交通流量管控",
+      "label": "表 8",
+      "locator": "TABLE-017",
+      "quote": "表 8 迹传算法超参数初始化",
+      "char_start": 15709,
+      "char_end": 15712,
+      "content_hash": "de8c64bfe11602c5cd0e6a7f107fca5d5ef18dfbbf7ae555f0242118074bc7ee",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P018-fb218f44c9",
+      "kind": "table",
+      "page": 18,
+      "section": "交通流量管控",
+      "label": "表 9",
+      "locator": "TABLE-018",
+      "quote": "基于遍传算法得到各交叉口信号绿灯时长的优化结果如表 9 所示。",
+      "char_start": 15936,
+      "char_end": 15939,
+      "content_hash": "fb218f44c9b31748f853eefe6fa60e2a464321402eb5a616e4e3f2d468403782",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P018-d1590717e6",
+      "kind": "table",
+      "page": 18,
+      "section": "交通流量管控",
+      "label": "表 9",
+      "locator": "TABLE-019",
+      "quote": "表 9 各相位绿灯时长优化结果",
+      "char_start": 15944,
+      "char_end": 15947,
+      "content_hash": "d1590717e6a6e497c1eb200b3ac71ab98fafbce5914ddbbfb84818c75e5232a7",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P020-a8eb6dbc8d",
+      "kind": "table",
+      "page": 20,
+      "section": "交通流量管控",
+      "label": "表 7",
+      "locator": "TABLE-020",
+      "quote": "的数据条 , 按照车牌号、 时间、 方向和交叉口进行分组。 提取的样例数据如表 7 所示。",
+      "char_start": 17175,
+      "char_end": 17178,
+      "content_hash": "a8eb6dbc8d73d18639a0e5d750b7aae7e7dab0155f0794bf953cc1f7f2d4c9b9",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TABLE-P020-93abb76e30",
+      "kind": "table",
+      "page": 20,
+      "section": "交通流量管控",
+      "label": "表 7",
+      "locator": "TABLE-021",
+      "quote": "表 7 提取数据样例 ( 示例 )",
+      "char_start": 17183,
+      "char_end": 17186,
+      "content_hash": "93abb76e30ce78f9cd6274253e3d7477f9bb18be1410b483fc9fe2713377cffc",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.95
+    },
+    {
+      "id": "E-TEXT-P017-3e82e52d27",
+      "kind": "text",
+      "page": 17,
+      "section": "交通流量管控",
+      "label": "algorithm",
+      "locator": "page:17",
+      "quote": "利用遗传算法进行求解 , 步骤如下 :",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "3e82e52d27e709b312cf41f695d414f1d9e844176c494f257a9dba1f1b3484c5",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    },
+    {
+      "id": "E-TEXT-P030-9037dbea85",
+      "kind": "text",
+      "page": 30,
+      "section": "准备 ANOVA 测试的数据",
+      "label": "algorithm",
+      "locator": "page:30",
+      "quote": "group_label = 「Monday-Friday「 if day < 5 else 「Saturday if day == 5 else \"Sun-",
+      "char_start": null,
+      "char_end": null,
+      "content_hash": "9037dbea8502a3b97f7b87b4c137feef2c4ff704fba4b2fb08629e934bc2c010",
+      "provenance": "PAPER_EXPLICIT",
+      "confidence": 0.82
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A-001",
+      "statement": "方法二假设整体车流平均速度与 “ 绿灯时长与周期时长的比值 “ 成反比 , 设置约束",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P001-0ece1d8581"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-002",
+      "statement": "1、 数据真实性假设 : 假设所有提供的数据都是准确和可靠的 , 这为模型的建立",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P004-0bb01423fd"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-003",
+      "statement": "2、 车辆流量均匀性假设 : 在短时间内 , 车流量的变化被认为是相对平稳的 , 这",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P004-6e5b046228"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-004",
+      "statement": "3、 车辆行为一致性假设 : 假设车辆在交叉口的转弯和直行行为有一定的规律",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P004-c85af77ece"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-005",
+      "statement": "4, 停车位需求线性增长假设 : 假设停车位的需求与游客数量员线性关系 , 这使",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P005-15b111902b"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-006",
+      "statement": "5、 巡勒车辆识别假设 : 通过论别在特定区域内频嚣低速行驶的车辆 , 可以佼计",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P005-78f8485ae9"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-007",
+      "statement": "6、 信号灯控制对车速的线性影响假设 , 假设信号灯的等待时间与车辆平均通行",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P005-1ca16131b9"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-008",
+      "statement": "高斯混合模型 《GMM) : 是一种基于概率的聚类方法 , 它假设数据由多个高斯分布",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P009-2618bdfab3"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-009",
+      "statement": "针对问题 3, 假设各交灵口各相位的通行能力为 2100 辆 /h, 释用韦伯斯特 ( Webster》",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P014-fd4bbff800"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-010",
+      "statement": "针对问题 3, 假设通过调整信号方案中各相位绿灯时长 , 降低车辅停驶汝数、 凑少",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P016-7e1813c839"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-011",
+      "statement": "根据假设 , 车流的平均速度与 “ 彗灯时长与周期时长的比值 “ 成反比 :",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P016-e04c3eb91c"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-012",
+      "statement": "步骤 9: 计算停车位需求 : 假设每粮车平均停车时间为 4 小时 , 假期总时长为 5 天",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P021-ef1aa44da9"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-013",
+      "statement": "计算每辆车的平均速度 , 假设速度与时间差成反比。",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P023-586c10560f"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-014",
+      "statement": "假设每辅车平均停车时间为 4 小时 , 假期总时长为 5 R",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P024-726dd0ae4a"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-015",
+      "statement": "kmeans = KMeans(n_clusters=3) # 假设我们想要将一天分为 4 个时段",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P031-4bd1a733f2"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-016",
+      "statement": "directions = pivot_data.columns[1:] # 假设第一个列是 「 小时 “, 其伽的是方向",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P032-61037922b3"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-017",
+      "statement": "labels = may_datagroupby( 小时 )[ 方向 ]first0Owvalues # 假设每个小时的方向",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P033-a3712590fc"
+      ],
+      "provenance": "HEURISTIC"
+    },
+    {
+      "id": "A-018",
+      "statement": "n_components =3 # 假设我们想要聚类的时段",
+      "rationale": "由关键词规则抽取，需人工核对假设边界。",
+      "impact": "",
+      "evidence_ids": [
+        "E-TEXT-P034-0a7df4defd"
+      ],
+      "provenance": "HEURISTIC"
+    }
+  ],
+  "variables": [],
+  "data": {
+    "sources": [],
+    "fields": [],
+    "data_types": [],
+    "preprocessing": [],
+    "missing_value_strategy": "",
+    "outlier_strategy": "",
+    "evidence_ids": []
+  },
+  "modeling_chain": [],
+  "models": [],
+  "algorithms": [
+    {
+      "id": "algorithm-geneticalgorithm-82b827f16c",
+      "canonical_name": "Genetic Algorithm",
+      "display_name": "Genetic Algorithm",
+      "aliases": [
+        "遗传算法",
+        "GA"
+      ],
+      "category": "optimization",
+      "purpose": "通过选择、交叉和变异在复杂搜索空间中寻找近似最优解",
+      "inputs": [
+        "fitness function",
+        "encoding",
+        "constraints",
+        "population settings"
+      ],
+      "outputs": [
+        "best solution",
+        "best fitness",
+        "convergence history"
+      ],
+      "pseudocode": [
+        "初始化种群并修复不可行个体",
+        "计算适应度",
+        "根据选择策略生成父代",
+        "执行交叉与变异",
+        "进行精英保留与约束处理",
+        "达到停止条件后输出最优个体"
+      ],
+      "parameters": [
+        {
+          "name": "population_size",
+          "value": null,
+          "description": "种群规模",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "crossover_rate",
+          "value": null,
+          "description": "交叉概率",
+          "range": "[0,1]",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "mutation_rate",
+          "value": null,
+          "description": "变异概率",
+          "range": "[0,1]",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        }
+      ],
+      "initialization": "按编码和约束生成初始可行种群",
+      "stopping_criteria": [
+        "最大迭代数",
+        "连续若干代最优值无改进"
+      ],
+      "complexity": {
+        "time": "O(G·P·C_f)",
+        "space": "O(P·d)",
+        "notes": "G 迭代数，P 种群规模，C_f 适应度计算代价"
+      },
+      "randomness": {
+        "uses_randomness": true,
+        "seed_required": true,
+        "notes": "固定 seed 并多次独立运行"
+      },
+      "implementation_notes": [
+        "约束处理必须明确",
+        "保存收敛曲线",
+        "多次运行报告均值和方差"
+      ],
+      "failure_modes": [
+        "早熟收敛",
+        "编码不合理",
+        "适应度尺度失衡",
+        "参数未报告"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P017-3e82e52d27"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    },
+    {
+      "id": "algorithm-simulatedannealing-8fb5c5797e",
+      "canonical_name": "Simulated Annealing",
+      "display_name": "Simulated Annealing",
+      "aliases": [
+        "模拟退火",
+        "SA"
+      ],
+      "category": "optimization",
+      "purpose": "允许以一定概率接受劣解，从而跳出局部最优",
+      "inputs": [
+        "objective function",
+        "initial solution",
+        "neighborhood",
+        "cooling schedule"
+      ],
+      "outputs": [
+        "best solution",
+        "best objective",
+        "history"
+      ],
+      "pseudocode": [
+        "生成初始解并设定初始温度",
+        "在邻域中生成候选解",
+        "更优则接受，较差则按 Metropolis 概率接受",
+        "按降温策略更新温度",
+        "达到停止条件后返回历史最优解"
+      ],
+      "parameters": [
+        {
+          "name": "initial_temperature",
+          "value": null,
+          "description": "初始温度",
+          "range": "paper-specific",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        },
+        {
+          "name": "cooling_rate",
+          "value": null,
+          "description": "降温系数",
+          "range": "(0,1)",
+          "evidence_ids": [],
+          "provenance": "AI_INFERRED"
+        }
+      ],
+      "initialization": "生成一个可行初始解",
+      "stopping_criteria": [
+        "温度低于阈值",
+        "达到最大迭代数",
+        "长期无改进"
+      ],
+      "complexity": {
+        "time": "O(K·C_f)",
+        "space": "O(d)",
+        "notes": "K 为候选解评估次数"
+      },
+      "randomness": {
+        "uses_randomness": true,
+        "seed_required": true,
+        "notes": "多次运行检查稳定性"
+      },
+      "implementation_notes": [
+        "邻域设计决定搜索能力",
+        "温度尺度要与目标差值匹配"
+      ],
+      "failure_modes": [
+        "降温过快",
+        "初始温度过低",
+        "邻域无法覆盖可行域"
+      ],
+      "evidence_ids": [
+        "E-TEXT-P030-9037dbea85"
+      ],
+      "provenance": "HEURISTIC",
+      "confidence": 0.58
+    }
+  ],
+  "validation": {
+    "methods": [],
+    "metrics": [],
+    "results": [],
+    "sensitivity_analysis": [],
+    "robustness_checks": [],
+    "evidence_ids": []
+  },
+  "limitations": [
+    "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+  ],
+  "innovations": [],
+  "case": {
+    "id": "case-2024-e010",
+    "title": "交通流量管控",
+    "domain": "unknown",
+    "competition": "高教社杯全国大学生数学建模竞赛",
+    "year": 2024,
+    "award": "优秀论文",
+    "problem_id": "E",
+    "problem_fingerprint": {
+      "problem_types": [
+        "unknown"
+      ],
+      "data_types": [],
+      "targets": [],
+      "constraints": [],
+      "domain_keywords": []
+    },
+    "subproblem_mapping": [
+      {
+        "subproblem_id": "Q1",
+        "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+        "model_ids": [],
+        "algorithm_ids": [
+          "algorithm-geneticalgorithm-82b827f16c",
+          "algorithm-simulatedannealing-8fb5c5797e"
+        ],
+        "data_flow": "",
+        "rationale": "启发式占位映射",
+        "evidence_ids": []
+      }
+    ],
+    "results": [],
+    "transferable_insights": [
+      "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+    ],
+    "pitfalls": [
+      "仅根据名称命中可能产生误判。"
+    ],
+    "innovations": [],
+    "evidence_ids": []
+  },
+  "code_recipes": [],
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  }
+}

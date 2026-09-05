@@ -1,0 +1,55 @@
+{
+  "paper": {
+    "code": "E218",
+    "title": "基于Python语言的交通流量管控与预测分析",
+    "pages": 62,
+    "source_file": "E218.pdf",
+    "title_source": "page_1"
+  },
+  "finished_at": "2026-09-04T18:08:24+00:00",
+  "parser": "pymupdf-ocr",
+  "semantic_provider": "recorded in build_ir_report.json",
+  "counts": {
+    "evidence": 60,
+    "models": 1,
+    "algorithms": 1,
+    "vault_notes": 5
+  },
+  "quality": {
+    "evidence_coverage": 0.25,
+    "completeness": 0.25,
+    "code_reproducibility": 0.0,
+    "warnings": [
+      "LLM disabled: generated a heuristic IR skeleton.",
+      "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+      "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。"
+    ],
+    "review_required": true
+  },
+  "vault": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\知识库",
+    "obsidian_root": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库",
+    "created_or_updated": [
+      "50_Papers/基于Python语言的交通流量管控与预测分析.md",
+      "40_Competition-Cases/基于Python语言的交通流量管控与预测分析-案例.md",
+      "10_Models/optimization/Linear Programming.md",
+      "20_Algorithms/optimization/Genetic Algorithm.md",
+      "00_Home/Modeling-Mastery 首页.md"
+    ],
+    "warnings": []
+  },
+  "dedup": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\知识库",
+    "note_count": 4,
+    "exact_duplicate_groups": [],
+    "fuzzy_candidates": [],
+    "advice": "Modeling-Mastery writes canonical notes idempotently. Review fuzzy candidates manually before merging user-authored content."
+  },
+  "index": {
+    "vault": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\知识库",
+    "note_count": 5,
+    "index_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\知识库\\.modeling-mastery\\index.json",
+    "index_db": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\E218-基于Python语言的交通流量管控与预测分析\\知识库\\.modeling-mastery\\modeling_index.sqlite3",
+    "fts5": true
+  }
+}

@@ -1,0 +1,938 @@
+{
+  "schema_version": "1.0.0",
+  "papers": {
+    "paper-2024-a178": {
+      "ir": {
+        "schema_version": "1.0.0",
+        "paper_id": "paper-2024-a178",
+        "source": {
+          "path": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\2024年高教社杯全国大学生数学建模竞赛优秀论文\\A178.pdf",
+          "sha256": "ecd6b763b758f15b8f82c4783f8f0d4335666ac674371215497c3c6585799b2e",
+          "parser": "pymupdf-ocr",
+          "parsed_at": "2026-09-04T17:32:45+00:00",
+          "normalized_markdown": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\workflow\\parsed\\normalized_paper.md",
+          "structure_json": "C:\\Users\\28962\\Desktop\\数模\\数学建模仓库\\论文\\24\\A178-板凳龙行进路径与速度控制优化\\workflow\\parsed\\paper_structure.json"
+        },
+        "bibliographic": {
+          "title": "板凳龙行进路径与速度控制优化",
+          "authors": [],
+          "year": 2024,
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "award": "优秀论文",
+          "problem_id": "A",
+          "abstract": "“ 板凯龙 “, 亦称作 “ 盘龙 “, 在浙江与福建地区广为流传 , 作为一种传统的民俗文 化活动而备受推崇。 本论文旨在深入探讨并优化 “ 板凳龙 “ 表演的行进路径与送度掠制 , 以提升其表演的艺术性和观赔性。",
+          "keywords": [],
+          "language": "zh-CN"
+        },
+        "problem": {
+          "background": "<!-- Modeling-Mastery normalized document | parser=pymupdf-ocr | source_sha256=ecd6b763b758f15b8f82c4783f8f0d4335666ac674371215497c3c6585799b2e --> # 板凳龙行进路径与速度控制优化 <!-- generated-by: Modeling-Mastery/PyMuPDF-Tesseract-OCR --> <!-- MM_PAGE: 1 --> 摘要 “ 板凯龙 “, 亦称作 “ 盘龙 “, 在浙江与福建地区广为流传 , 作为一种传统的民俗文 化活动而备受推崇。 本论文旨在深入探讨并优化 “ 板凳龙 “ 表演的行进路径与送度掠制 , 以提升其表演的艺术性和观赔性。 针对问题一 , 我们针对 “ 板凳龙 “ 的远动构建了一个数学模型 , 通过螺线轨迹搂述 “ 板凳龙 “ 的行进过程。 首先 , 我们基于意线的极坐标方程 , 确定各把手的运动轨迹。 接着利用微元法得到龙头运动的微分方程 , 然后基于板凯把手均位于懈线上、 板凳不可 伸长等假设得到各把手位置及逐度的递推关系。 最终 , 将问题一的参数代入计算 , 利用 数值方法求解 0s-300 s 每秒的各节龙身位置与速度 , 并将 0s、60s、120s、180s、240s、 300s 时 , 龙头前把手、 龙头后面第 1、 S1、101、1S1、201 节龙身前把扎和龙尾后把扎 的运动数据记录在表 (2〉 与表 (3) 中。 针对问题二 , 我们首先将 “ 板凯龙 “ 的螺线转迹简化为两个同心圆 , 利用几何关系 得到碰播的大致时刻。 接着建立碰撞判断模型 , 并利用叉楷法判断点是否位于三角形内 部 , 从而判断两极凳是否祖播。 在模型求解时 , 我们首先根据同心圆近似碰撞模型计",
+          "overall_objective": "启发式模式未可靠抽取总体目标。",
+          "subproblems": [
+            {
+              "id": "Q1",
+              "statement": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "task_types": [
+                "unknown"
+              ],
+              "inputs": [],
+              "outputs": [],
+              "constraints": [],
+              "evidence_ids": []
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "id": "E-TEXT-P001-0260cfaac1",
+            "kind": "text",
+            "page": 1,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:498-519",
+            "quote": "伸长等假设得到各把手位置及逐度的递推关系。",
+            "char_start": 498,
+            "char_end": 519,
+            "content_hash": "0260cfaac13be2343715223a4415e7620587b0b3ae0eb6e4100bee98a7cd7168",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P002-ea54635609",
+            "kind": "text",
+            "page": 2,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:2953-2993",
+            "quote": "针对问题一 , 我们假设龙头把手沿等距螺线运动 , 通过缨距确定螺线的极坐标方",
+            "char_start": 2953,
+            "char_end": 2993,
+            "content_hash": "ea5463560977824afb52fe88395e0298185cebfae4a6c5df43d9529e1683d6c8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-7d952b6081",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:3944-3969",
+            "quote": "假设板凯不可伸长 , 即沿板凤方向各点速度相同。",
+            "char_start": 3944,
+            "char_end": 3969,
+            "content_hash": "7d952b60813eb327e028c7f0d01fba0b2d0571a3a3c44803538901c1a7c18046",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-bdf4a9fbfb",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:3972-3999",
+            "quote": "假设各把手中心始终位于螺线上 , 忽略其他因紧影响。",
+            "char_start": 3972,
+            "char_end": 3999,
+            "content_hash": "bdf4a9fbfb2811e9d988a1d1b03e8a9a0265ad184535ad1328a594d447bed243",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-053b973c60",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:4002-4025",
+            "quote": "假设 “ 板凯龙 “ 在行进过程中不会倒退。",
+            "char_start": 4002,
+            "char_end": 4025,
+            "content_hash": "053b973c6032b4621464a0a2eca247415aabfa7c2549f18b948a3d134b950815",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-f5d4880cbe",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:4026-4061",
+            "quote": "4 假设板凳始终平行于地面 , 不会发生倾斜 , 简化为二维运动模垣。",
+            "char_start": 4026,
+            "char_end": 4061,
+            "content_hash": "f5d4880cbe4da25d8405dc564b555aa611fff0ae7d629f41f1dc748fc27c42ff",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P005-8bcf5cc7df",
+            "kind": "text",
+            "page": 5,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:5098-5145",
+            "quote": "记上文中的螺线方程 (4〉 为 F(z,y)=0, 根据假设 , 各把手中心均位于蝎线上 ,",
+            "char_start": 5098,
+            "char_end": 5145,
+            "content_hash": "8bcf5cc7dfd198120602fe1897f8a00d55956bb99343f4ed60ee57fe56dbfee8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P006-b99a936e9a",
+            "kind": "text",
+            "page": 6,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:5820-5865",
+            "quote": "由于假设板凤不可伸缩 , 因此第 $ 节板凤前把手中心沿板凳方向的分速度与第 4 十 1",
+            "char_start": 5820,
+            "char_end": 5865,
+            "content_hash": "b99a936e9a14af335cd3ce6ce17d14f521faae38a21e8e19c3632228d3bded1c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P012-ed33b3288c",
+            "kind": "text",
+            "page": 12,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "assumption",
+            "locator": "char:11543-11563",
+            "quote": "根据假设 ,“ 板凳龙 “ 在行进过",
+            "char_start": 11543,
+            "char_end": 11563,
+            "content_hash": "ed33b3288ce1926ed09a371d1c97ab0123025516e11c8ef5eea49f04ed49b878",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-5b82be39f1",
+            "kind": "text",
+            "page": 1,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:364-409",
+            "quote": "针对问题一 , 我们针对 “ 板凳龙 “ 的远动构建了一个数学模型 , 通过螺线轨迹搂述",
+            "char_start": 364,
+            "char_end": 409,
+            "content_hash": "5b82be39f108e4c8323134d89ef86e1801ae649f65ca75d6966f4867b320665f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-c0c2a5b03f",
+            "kind": "text",
+            "page": 1,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:732-764",
+            "quote": "接着建立碰撞判断模型 , 并利用叉楷法判断点是否位于三角形内",
+            "char_start": 732,
+            "char_end": 764,
+            "content_hash": "c0c2a5b03f53f0cfdca6caca5c6a417d3aaf89b2e302c4880cb6f168312fcf5c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-65bc100167",
+            "kind": "text",
+            "page": 1,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:1021-1047",
+            "quote": "接着 , 采用二分法求解最小螺距 , 通过不暹缉",
+            "char_start": 1021,
+            "char_end": 1047,
+            "content_hash": "65bc10016773ec1edefa508a6907e4e00d05938675112cdca530369dc7f3fb2c",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P001-74ea6ce183",
+            "kind": "text",
+            "page": 1,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:1636-1679",
+            "quote": "们采用了二分法对逅时间段进行搜索 , 通过不状迭代逼近 , 得到了龙头的最大行进速度",
+            "char_start": 1636,
+            "char_end": 1679,
+            "content_hash": "74ea6ce183a0cfc627621cb9b1c52535642f3245af657dfe9ecd80d7d28cc20f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-ed0dd8fcf3",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:3326-3370",
+            "quote": "的行进过程进行仿真模拟 , 利用叉乘法建立板凯龙的碰撞判朐模型 , 最终 , 对估计区",
+            "char_start": 3326,
+            "char_end": 3370,
+            "content_hash": "ed0dd8fcf3c2bec4f015b0ac6539f45b0bdbfed877ec7fd9361bd73f54e9f6e7",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-048ac57767",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:3456-3490",
+            "quote": "最后我们采用二分法求解满足最大速度条件的最小蝉距 , 通过迪代调",
+            "char_start": 3456,
+            "char_end": 3490,
+            "content_hash": "048ac57767b4fb7baeff467c0a8ed155b4f754509d2769fa51d4806f6578a856",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-db713c94dc",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:3663-3700",
+            "quote": "分别建立了视应的运动方程 , 并基于问题一中位置和迷度的递推模型 , 通",
+            "char_start": 3663,
+            "char_end": 3700,
+            "content_hash": "db713c94dc217c106a98ac7eb5a8fa412e17b0382e271174ea085f939b38e441",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P003-4924e0b377",
+            "kind": "text",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:3901-3932",
+            "quote": "附近的一段时间区间内 , 并采用二分法求解龙头行进的最大递度。",
+            "char_start": 3901,
+            "char_end": 3932,
+            "content_hash": "4924e0b3778ff2753c29aafe6b208875b675f48a560b91e7e8afbff56408ec79",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P011-05ebdd7034",
+            "kind": "text",
+            "page": 11,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:10072-10108",
+            "quote": "在此基础上 , 采用二分法 F! 来求解最小螺距 , 具体步骠如下 :",
+            "char_start": 10072,
+            "char_end": 10108,
+            "content_hash": "05ebdd70343d1820b7f636a6e7b2d5001e702a5c08565cc9395b694c2d88f38f",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-86dd3c091e",
+            "kind": "text",
+            "page": 17,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:15636-15653",
+            "quote": "由上述分析 , 建立优化模型 :",
+            "char_start": 15636,
+            "char_end": 15653,
+            "content_hash": "86dd3c091ef65cc6d3987b3f2bf371acde8dc6e26ae4f78b4a531a9a5db22cac",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-674e260be2",
+            "kind": "text",
+            "page": 17,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "model",
+            "locator": "char:15910-15922",
+            "quote": "我们采用二分法迹行求解。",
+            "char_start": 15910,
+            "char_end": 15922,
+            "content_hash": "674e260be222b52c7b61906b900e1d1bc9d38b3c375796a658bd3c8c95e44a4d",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P011-eb484bdf92",
+            "kind": "text",
+            "page": 11,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:10401-10442",
+            "quote": "返过二分法求解得最小螺距为 0.4000m , 误差掠制在 0.0001m 之内。",
+            "char_start": 10401,
+            "char_end": 10442,
+            "content_hash": "eb484bdf92be2e7d6d20e350f30f697089bd2b4ae5e0bb6a05af7c729dc5bde3",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P017-8f47d11eb1",
+            "kind": "text",
+            "page": 17,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16215-16261",
+            "quote": "解得龙头的最大行迹违度为 1.2462mys, 其中误差控券在 0.0001 mys 之内。",
+            "char_start": 16215,
+            "char_end": 16261,
+            "content_hash": "8f47d11eb10bc75b1b9543756c5ad9a683357692e5210168967185a536a7c919",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-1ff2b2dab2",
+            "kind": "text",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16296-16332",
+            "quote": "为检验运动模型的正确性 , 本节针对问题一对位置和速度模型分别进行验证。",
+            "char_start": 16296,
+            "char_end": 16332,
+            "content_hash": "1ff2b2dab26555390bc844604fe11bf9b7f24ed3715c73d052bee5f30ea83657",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-6b5cb56b90",
+            "kind": "text",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16462-16493",
+            "quote": "计算其结果 , 与问题一的求解结果进行比较 , 计算误差 :",
+            "char_start": 16462,
+            "char_end": 16493,
+            "content_hash": "6b5cb56b908256d8882f0e78f7150345c185b8c493b7e6fa05e67ef21ab96ade",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-6b8aad527b",
+            "kind": "text",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16571-16584",
+            "quote": "近似圆算法和精确算法误差",
+            "char_start": 16571,
+            "char_end": 16584,
+            "content_hash": "6b8aad527b5cd414142fc5ec811ed2e14fd6e0dea8533f3fb22a723db3b2cdc0",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-4355a8c26f",
+            "kind": "text",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16626-16640",
+            "quote": "图 13 求解结果位置误差",
+            "char_start": 16626,
+            "char_end": 16640,
+            "content_hash": "4355a8c26f007f6fe2aae72c5f5471941f3c9ac0e9cf488cf67dc1ad9ddabf5b",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P018-8370e7450a",
+            "kind": "text",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:16827-16860",
+            "quote": "果进行比软 , 计算误差 , 最大误差数量级为 10-amys,",
+            "char_start": 16827,
+            "char_end": 16860,
+            "content_hash": "8370e7450a8c841616b57988032b48a6ab03629a171b95757c0d2ef454d34949",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-TEXT-P019-55ba7341fe",
+            "kind": "text",
+            "page": 19,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "validation",
+            "locator": "char:17151-17170",
+            "quote": "考虚到实际问题中的隔机因裸存在误差。",
+            "char_start": 17151,
+            "char_end": 17170,
+            "content_hash": "55ba7341fe8e76f0a1ad711e79e2821b51caaa0c4239af5f35eb53ca06f9d6a8",
+            "provenance": "HEURISTIC",
+            "confidence": 0.55
+          },
+          {
+            "id": "E-FIGURE-P004-bf2838e2c0",
+            "kind": "figure",
+            "page": 4,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 1",
+            "locator": "FIGURE-001",
+            "quote": "图 1 龙头运动模型",
+            "char_start": 4681,
+            "char_end": 4684,
+            "content_hash": "bf2838e2c0c27b788175a4d113a18382978914ca7419cc569521b10b7f7fee04",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P005-8439727570",
+            "kind": "figure",
+            "page": 5,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 2",
+            "locator": "FIGURE-002",
+            "quote": "图 2 把手速度模型",
+            "char_start": 5584,
+            "char_end": 5587,
+            "content_hash": "8439727570e707e860c6c797e281a1c08a79a1a9bc5b01d3023e6c310f649c26",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P006-244135cdf0",
+            "kind": "figure",
+            "page": 6,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图\n\n10.0",
+            "locator": "FIGURE-003",
+            "quote": "300s 时刻板凤龙位置图 10.0 - l",
+            "char_start": 6081,
+            "char_end": 6088,
+            "content_hash": "244135cdf045c2c9c6beafd8f1428378d29aebcb7b15e775acfb07c1da541fd4",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P006-a1b7b7e712",
+            "kind": "figure",
+            "page": 6,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 3",
+            "locator": "FIGURE-004",
+            "quote": "图 3 300s“ 板凤龙 “ 位置",
+            "char_start": 6177,
+            "char_end": 6180,
+            "content_hash": "a1b7b7e7125b893d63ccf5648efe1c4b165d1a2aab6266e667c231fe3fcc9f72",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P008-c990518779",
+            "kind": "figure",
+            "page": 8,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 4",
+            "locator": "FIGURE-005",
+            "quote": "图 4 同心四轨迹碰揽示惶图",
+            "char_start": 7919,
+            "char_end": 7922,
+            "content_hash": "c99051877997a81c3505eb932afe16d58c4ee6911157edb62ffd594769cebf71",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P009-c463e27d99",
+            "kind": "figure",
+            "page": 9,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 6",
+            "locator": "FIGURE-006",
+            "quote": "图 6 碰撩判断模型",
+            "char_start": 8707,
+            "char_end": 8710,
+            "content_hash": "c463e27d99d29d229fdbf97587ca8ee666a6fc326ebb7799c07e6730a32c30a0",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P010-c6d42adcb2",
+            "kind": "figure",
+            "page": 10,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 7",
+            "locator": "FIGURE-007",
+            "quote": "图 7 判断碰撞算法流程图",
+            "char_start": 9301,
+            "char_end": 9304,
+            "content_hash": "c6d42adcb268cb61314823c7d974344f55d8fe5bdb40c58719f4ac31671fd538",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P010-0fe7b3fb54",
+            "kind": "figure",
+            "page": 10,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图\n\n6.3",
+            "locator": "FIGURE-008",
+            "quote": "图 7 判断碰撞算法流程图 6.3 模型求解结果",
+            "char_start": 9313,
+            "char_end": 9319,
+            "content_hash": "0fe7b3fb54571dc92075c0a733fd72d23bece372aec0f8e5b320b91aa60b6735",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P011-57b2b3b9a0",
+            "kind": "figure",
+            "page": 11,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 8",
+            "locator": "FIGURE-009",
+            "quote": "图 8 调头空间示意图",
+            "char_start": 10497,
+            "char_end": 10500,
+            "content_hash": "57b2b3b9a059455ae6b6d5ab741f2d02df0455dc932ba605e454fca3d7a6bf40",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P012-f84e48cc14",
+            "kind": "figure",
+            "page": 12,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 9",
+            "locator": "FIGURE-010",
+            "quote": "图 9 调头空间内几何关系示意图",
+            "char_start": 11127,
+            "char_end": 11130,
+            "content_hash": "f84e48cc14b890d03e90350c28a8ec34b1e251a82b93b680198351372aa0953e",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P015-5a954a2c64",
+            "kind": "figure",
+            "page": 15,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 10",
+            "locator": "FIGURE-011",
+            "quote": "图 10 最大速度随时问变化情况",
+            "char_start": 14683,
+            "char_end": 14687,
+            "content_hash": "5a954a2c64015506d13705d69894bd335f6fa95cfadf94d0ba36ee53aa876fe3",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P016-3b81c142cd",
+            "kind": "figure",
+            "page": 16,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 11",
+            "locator": "FIGURE-012",
+            "quote": "图 11 探究曲率半径与速度变化之闽的关系",
+            "char_start": 14864,
+            "char_end": 14868,
+            "content_hash": "3b81c142cd9bf14b2e980da5c6f45091c0ff4b9ef1b1c5dbd04e6d9483c8faf3",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-FIGURE-P018-4355a8c26f",
+            "kind": "figure",
+            "page": 18,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "图 13",
+            "locator": "FIGURE-013",
+            "quote": "图 13 求解结果位置误差",
+            "char_start": 16626,
+            "char_end": 16630,
+            "content_hash": "4355a8c26f007f6fe2aae72c5f5471941f3c9ac0e9cf488cf67dc1ad9ddabf5b",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P003-717bf4f3a5",
+            "kind": "table",
+            "page": 3,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 1",
+            "locator": "TABLE-001",
+            "quote": "表 1 符驭说明",
+            "char_start": 4070,
+            "char_end": 4073,
+            "content_hash": "717bf4f3a57ac99df47b77228c4e2f5c9f109b71a65298a8e1eab6933631448b",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P007-69c0ee5a96",
+            "kind": "table",
+            "page": 7,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 2",
+            "locator": "TABLE-002",
+            "quote": "表 2 特殊节点位置结果",
+            "char_start": 6338,
+            "char_end": 6341,
+            "content_hash": "69c0ee5a9631a61b91944f67c5c7986f902a0029bef14fc5b3d50b3fccb41715",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P007-12083c4063",
+            "kind": "table",
+            "page": 7,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 3",
+            "locator": "TABLE-003",
+            "quote": "表 3 特殊节点速度结果",
+            "char_start": 7085,
+            "char_end": 7088,
+            "content_hash": "12083c4063816f236695390caf7eb860f5f7a1302c4521f3b890de2793acc641",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P010-9b64336bdc",
+            "kind": "table",
+            "page": 10,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 4",
+            "locator": "TABLE-004",
+            "quote": "表 4 特殊节点位置结果",
+            "char_start": 9555,
+            "char_end": 9558,
+            "content_hash": "9b64336bdcca00933380c1f8f2cd5ba18a0d30d8e277284bd0c83f47d859413f",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P010-53e0064633",
+            "kind": "table",
+            "page": 10,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 5",
+            "locator": "TABLE-005",
+            "quote": "表 5 特殊节点速度结果",
+            "char_start": 9700,
+            "char_end": 9703,
+            "content_hash": "53e0064633f7d952995cf503d5ad051b4269a9d90b571336808504333d712f3a",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P014-8eff3878dd",
+            "kind": "table",
+            "page": 14,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 6",
+            "locator": "TABLE-006",
+            "quote": "表 6 特殊节点位置结果",
+            "char_start": 13419,
+            "char_end": 13422,
+            "content_hash": "8eff3878dd47391389f08e5d3b1a5a2d6142797f94a304137185ad2669dbc79e",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          },
+          {
+            "id": "E-TABLE-P015-5e0cdc4761",
+            "kind": "table",
+            "page": 15,
+            "section": "板凳龙行进路径与速度控制优化",
+            "label": "表 7",
+            "locator": "TABLE-007",
+            "quote": "表 7 鳙穹...`歹牙妄昔t氨r^善支i蔓囊度纤j身'戛",
+            "char_start": 14126,
+            "char_end": 14129,
+            "content_hash": "5e0cdc47611ed3e7a6a0e279c0b936b7af9169510f5cc7d2fcc36a6e5993b09f",
+            "provenance": "PAPER_EXPLICIT",
+            "confidence": 0.95
+          }
+        ],
+        "assumptions": [
+          {
+            "id": "A-001",
+            "statement": "伸长等假设得到各把手位置及逐度的递推关系。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P001-0260cfaac1"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-002",
+            "statement": "针对问题一 , 我们假设龙头把手沿等距螺线运动 , 通过缨距确定螺线的极坐标方",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P002-ea54635609"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-003",
+            "statement": "假设板凯不可伸长 , 即沿板凤方向各点速度相同。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-7d952b6081"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-004",
+            "statement": "假设各把手中心始终位于螺线上 , 忽略其他因紧影响。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-bdf4a9fbfb"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-005",
+            "statement": "假设 “ 板凯龙 “ 在行进过程中不会倒退。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-053b973c60"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-006",
+            "statement": "4 假设板凳始终平行于地面 , 不会发生倾斜 , 简化为二维运动模垣。",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P003-f5d4880cbe"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-007",
+            "statement": "记上文中的螺线方程 (4〉 为 F(z,y)=0, 根据假设 , 各把手中心均位于蝎线上 ,",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P005-8bcf5cc7df"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-008",
+            "statement": "由于假设板凤不可伸缩 , 因此第 $ 节板凤前把手中心沿板凳方向的分速度与第 4 十 1",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P006-b99a936e9a"
+            ],
+            "provenance": "HEURISTIC"
+          },
+          {
+            "id": "A-009",
+            "statement": "根据假设 ,“ 板凳龙 “ 在行进过",
+            "rationale": "由关键词规则抽取，需人工核对假设边界。",
+            "impact": "",
+            "evidence_ids": [
+              "E-TEXT-P012-ed33b3288c"
+            ],
+            "provenance": "HEURISTIC"
+          }
+        ],
+        "variables": [],
+        "data": {
+          "sources": [],
+          "fields": [],
+          "data_types": [],
+          "preprocessing": [],
+          "missing_value_strategy": "",
+          "outlier_strategy": "",
+          "evidence_ids": []
+        },
+        "modeling_chain": [],
+        "models": [],
+        "algorithms": [],
+        "validation": {
+          "methods": [],
+          "metrics": [],
+          "results": [],
+          "sensitivity_analysis": [],
+          "robustness_checks": [],
+          "evidence_ids": []
+        },
+        "limitations": [
+          "当前结果由离线启发式规则生成，不能替代语义分析和人工复核。"
+        ],
+        "innovations": [],
+        "case": {
+          "id": "case-2024-a178",
+          "title": "板凳龙行进路径与速度控制优化",
+          "domain": "unknown",
+          "competition": "高教社杯全国大学生数学建模竞赛",
+          "year": 2024,
+          "award": "优秀论文",
+          "problem_id": "A",
+          "problem_fingerprint": {
+            "problem_types": [
+              "unknown"
+            ],
+            "data_types": [],
+            "targets": [],
+            "constraints": [],
+            "domain_keywords": []
+          },
+          "subproblem_mapping": [
+            {
+              "subproblem_id": "Q1",
+              "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+              "model_ids": [],
+              "algorithm_ids": [],
+              "data_flow": "",
+              "rationale": "启发式占位映射",
+              "evidence_ids": []
+            }
+          ],
+          "results": [],
+          "transferable_insights": [
+            "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+          ],
+          "pitfalls": [
+            "仅根据名称命中可能产生误判。"
+          ],
+          "innovations": [],
+          "evidence_ids": []
+        },
+        "code_recipes": [],
+        "quality": {
+          "evidence_coverage": 0.25,
+          "completeness": 0.25,
+          "code_reproducibility": 0.0,
+          "warnings": [
+            "LLM disabled: generated a heuristic IR skeleton.",
+            "源 PDF 为扫描件；全文由 Tesseract chi_sim+eng 以 180 dpi OCR。",
+            "公式、上下标、变量、表格与精确数值必须回看源 PDF 页面复核。",
+            "扫描件首页缺少正式标题；当前标题由摘要主题推定。"
+          ],
+          "review_required": true
+        }
+      },
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "models": {},
+  "algorithms": {},
+  "cases": {
+    "case-2024-a178": {
+      "card": {
+        "id": "case-2024-a178",
+        "title": "板凳龙行进路径与速度控制优化",
+        "domain": "unknown",
+        "competition": "高教社杯全国大学生数学建模竞赛",
+        "year": 2024,
+        "award": "优秀论文",
+        "problem_id": "A",
+        "problem_fingerprint": {
+          "problem_types": [
+            "unknown"
+          ],
+          "data_types": [],
+          "targets": [],
+          "constraints": [],
+          "domain_keywords": []
+        },
+        "subproblem_mapping": [
+          {
+            "subproblem_id": "Q1",
+            "task": "离线启发式模式未可靠拆分子问题，请人工或使用 LLM 补全。",
+            "model_ids": [],
+            "algorithm_ids": [],
+            "data_flow": "",
+            "rationale": "启发式占位映射",
+            "evidence_ids": []
+          }
+        ],
+        "results": [],
+        "transferable_insights": [
+          "使用 LLM 模式或人工补全问题拆分、模型作用和算法参数。"
+        ],
+        "pitfalls": [
+          "仅根据名称命中可能产生误判。"
+        ],
+        "innovations": [],
+        "evidence_ids": []
+      },
+      "paper_id": "paper-2024-a178",
+      "updated_at": "2026-09-04T18:08:23+00:00"
+    }
+  },
+  "codes": {},
+  "updated_at": "2026-09-04T18:08:23+00:00"
+}
